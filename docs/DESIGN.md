@@ -162,6 +162,27 @@ Brian is a proud Canadian who hates all Italian food. He wants to become Champio
 - **Watch out for Fire.** Abomasnow, Sawsbuck, and Ninetales are all weak to it. Bibarel and Swanna can switch in against Fire types; give the others coverage moves.
 - Earlier battles use pre-evolved forms (Ducklett, Snover, Bidoof, Stantler, Deerling, Alolan Vulpix) as the team grows.
 
+## Villain teams: Sauce vs. Boil
+
+Decided: Team Aqua and Team Magma become two halves of the same pasta dish, fighting over which comes first: the sauce or the noodles.
+
+Team Marinara (replaces Team Aqua). Wants to flood the world with marinara sauce. Kyogre's endless rain becomes a downpour of sauce.
+Team Al Dente (replaces Team Magma). Wants to boil the oceans away and turn the whole world into one giant pot of cooking pasta. Groudon's heat brings the water to a boil.
+
+What this touches:
+
+Team names in all dialogue, signs, and trainer classes (for example, "Team Marinara Grunt").
+Recolored grunt and admin sprites to match each team.
+Story dialogue for both leaders and their admins.
+
+Status:
+
+- **Done:** team names in all dialogue and signs; trainer classes TEAM MARINARA, MARINARA ADMIN, MARINARA LEADER, TEAM AL DENTE, AL DENTE ADMIN, AL DENTE LEADER; hideouts renamed MARINARA HIDEOUT and AL DENTE HIDEOUT; the Magma Emblem key item is now the Al Dente Emblem. Leader and admin names (Archie, Maxie, etc.) are unchanged.
+- **Not started:** recolored grunt and admin sprites (art), and new sauce/boil story dialogue for the leaders and admins (needs Joe's direction on what they say).
+- Note: Kyogre's cave is MARINARA CAVE, sharing a name with Team Marinara. That fits the theme, but rename the cave if it gets confusing.
+
+Open (idea to consider): both teams want more pasta, while Brian wants it gone. He could show up during their schemes, furious, giving the player a rare moment where they're on the same side.
+
 ## Retrotopia cast
 
 | Person | Replaces | Role in the game |
@@ -263,6 +284,9 @@ A yes/no choice at New Game that randomizes Pokémon for that save file. It must
 | --- | --- | --- |
 | Pasta town names | Text, signs, Town Map | Done |
 | Pasta landmark names | Text, Town Map | Done |
+| Villain teams: Marinara and Al Dente (names) | Text, trainer classes | Done |
+| Villain teams: recolored sprites | Palette edits | Not started |
+| Villain teams: sauce vs. boil story dialogue | Dialogue | Not started |
 | Pasta region name: Pastalia (replaces Hoenn) | Text, plus 2 PokéNav graphics | Text done; PokéNav "HOENN MAP" art still to redraw |
 | Starters: Rowlet, Scorbunny, Froakie | Script and data change | Done |
 | Nurse Joy Jammie Dodger heal (plus blackout cookie) | One shared script change | Done |
