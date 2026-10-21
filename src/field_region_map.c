@@ -218,7 +218,7 @@ static void PrintRegionMapSecName(void)
     if (sFieldRegionMapHandler->regionMap.mapSecType != MAPSECTYPE_NONE)
     {
         FillWindowPixelBuffer(WIN_MAPSEC_NAME, PIXEL_FILL(1));
-        AddTextPrinterParameterized(WIN_MAPSEC_NAME, FONT_NORMAL, sFieldRegionMapHandler->regionMap.mapSecName, 0, 1, 0, NULL);
+        AddTextPrinterParameterized(WIN_MAPSEC_NAME, GetFontIdToFit(sFieldRegionMapHandler->regionMap.mapSecName, FONT_NORMAL, -1, 96), sFieldRegionMapHandler->regionMap.mapSecName, 0, 1, 0, NULL);
         ScheduleBgCopyTilemapToVram(WIN_MAPSEC_NAME);
     }
     else

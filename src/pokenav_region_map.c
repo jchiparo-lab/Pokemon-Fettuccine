@@ -565,7 +565,7 @@ static void UpdateMapSecInfoWindow(struct Pokenav_RegionMapGfx *state)
     case MAPSECTYPE_CITY_CANFLY:
         FillWindowPixelBuffer(state->infoWindowId, PIXEL_FILL(1));
         PutWindowRectTilemap(state->infoWindowId, 0, 0, 12, 2);
-        AddTextPrinterParameterized(state->infoWindowId, FONT_NARROW, regionMap->mapSecName, 0, 1, TEXT_SKIP_DRAW, NULL);
+        AddTextPrinterParameterized(state->infoWindowId, GetFontIdToFit(regionMap->mapSecName, FONT_NARROW, -1, 96), regionMap->mapSecName, 0, 1, TEXT_SKIP_DRAW, NULL);
         DrawCityMap(state, regionMap->mapSecId, regionMap->posWithinMapSec);
         CopyWindowToVram(state->infoWindowId, COPYWIN_FULL);
         SetCityZoomTextInvisibility(FALSE);
@@ -573,7 +573,7 @@ static void UpdateMapSecInfoWindow(struct Pokenav_RegionMapGfx *state)
     case MAPSECTYPE_CITY_CANTFLY:
         FillWindowPixelBuffer(state->infoWindowId, PIXEL_FILL(1));
         PutWindowRectTilemap(state->infoWindowId, 0, 0, 12, 2);
-        AddTextPrinterParameterized(state->infoWindowId, FONT_NARROW, regionMap->mapSecName, 0, 1, TEXT_SKIP_DRAW, NULL);
+        AddTextPrinterParameterized(state->infoWindowId, GetFontIdToFit(regionMap->mapSecName, FONT_NARROW, -1, 96), regionMap->mapSecName, 0, 1, TEXT_SKIP_DRAW, NULL);
         FillBgTilemapBufferRect(1, 0x1041, 17, 6, 12, 11, 17);
         CopyWindowToVram(state->infoWindowId, COPYWIN_FULL);
         SetCityZoomTextInvisibility(TRUE);
@@ -582,7 +582,7 @@ static void UpdateMapSecInfoWindow(struct Pokenav_RegionMapGfx *state)
     case MAPSECTYPE_BATTLE_FRONTIER:
         FillWindowPixelBuffer(state->infoWindowId, PIXEL_FILL(1));
         PutWindowTilemap(state->infoWindowId);
-        AddTextPrinterParameterized(state->infoWindowId, FONT_NARROW, regionMap->mapSecName, 0, 1, TEXT_SKIP_DRAW, NULL);
+        AddTextPrinterParameterized(state->infoWindowId, GetFontIdToFit(regionMap->mapSecName, FONT_NARROW, -1, 96), regionMap->mapSecName, 0, 1, TEXT_SKIP_DRAW, NULL);
         PrintLandmarkNames(state, regionMap->mapSecId, regionMap->posWithinMapSec);
         CopyWindowToVram(state->infoWindowId, COPYWIN_FULL);
         SetCityZoomTextInvisibility(TRUE);

@@ -1416,7 +1416,7 @@ static void ShowSaveInfoWindow(void)
     // Print region name
     yOffset = 1;
     BufferSaveMenuText(SAVE_MENU_LOCATION, gStringVar4, TEXT_COLOR_GREEN);
-    AddTextPrinterParameterized(sSaveInfoWindowId, FONT_NORMAL, gStringVar4, 0, yOffset, TEXT_SKIP_DRAW, NULL);
+    AddTextPrinterParameterized(sSaveInfoWindowId, GetFontIdToFit(gStringVar4, FONT_NORMAL, -1, 112), gStringVar4, 0, yOffset, TEXT_SKIP_DRAW, NULL);
 
     // Print player name
     yOffset += 16;

@@ -50,7 +50,7 @@ struct RegionMap {
     /*0x000*/ mapsec_u16_t mapSecId;
     /*0x002*/ u8 mapSecType;
     /*0x003*/ u8 posWithinMapSec;
-    /*0x004*/ u8 mapSecName[20];
+    /*0x004*/ u8 mapSecName[32];
     /*0x018*/ u8 (*inputCallback)(void);
     /*0x01c*/ struct Sprite *cursorSprite;
     /*0x020*/ struct Sprite *playerIconSprite;

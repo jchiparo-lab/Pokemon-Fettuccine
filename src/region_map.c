@@ -2074,7 +2074,7 @@ static void DrawFlyDestTextWindow(void)
                     namePrinted = TRUE;
                     ClearStdWindowAndFrameToTransparent(WIN_MAPSEC_NAME, FALSE);
                     DrawStdFrameWithCustomTileAndPalette(WIN_MAPSEC_NAME_TALL, FALSE, 101, 13);
-                    AddTextPrinterParameterized(WIN_MAPSEC_NAME_TALL, FONT_NORMAL, sFlyMap->regionMap.mapSecName, 0, 1, 0, NULL);
+                    AddTextPrinterParameterized(WIN_MAPSEC_NAME_TALL, GetFontIdToFit(sFlyMap->regionMap.mapSecName, FONT_NORMAL, -1, 96), sFlyMap->regionMap.mapSecName, 0, 1, 0, NULL);
                     name = sMultiNameFlyDestinations[i].name[sFlyMap->regionMap.posWithinMapSec];
                     AddTextPrinterParameterized(WIN_MAPSEC_NAME_TALL, FONT_NORMAL, name, GetStringRightAlignXOffset(FONT_NORMAL, name, 96), 17, 0, NULL);
                     ScheduleBgCopyTilemapToVram(0);
@@ -2095,7 +2095,7 @@ static void DrawFlyDestTextWindow(void)
                 // Window is already drawn, just empty it
                 FillWindowPixelBuffer(WIN_MAPSEC_NAME, PIXEL_FILL(1));
             }
-            AddTextPrinterParameterized(WIN_MAPSEC_NAME, FONT_NORMAL, sFlyMap->regionMap.mapSecName, 0, 1, 0, NULL);
+            AddTextPrinterParameterized(WIN_MAPSEC_NAME, GetFontIdToFit(sFlyMap->regionMap.mapSecName, FONT_NORMAL, -1, 96), sFlyMap->regionMap.mapSecName, 0, 1, 0, NULL);
             ScheduleBgCopyTilemapToVram(0);
             sDrawFlyDestTextWindow = FALSE;
         }
