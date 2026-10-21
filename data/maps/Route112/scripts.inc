@@ -129,11 +129,11 @@ Route112_Text_NotEasyToGetBackToLavaridge:
 	.string "LASAGNARIDGE.$"
 
 Route112_Text_MtChimneyCableCarSign:
-	.string "MT. CHIMNEY CABLE CAR\n"
+	.string "MT. CALZONE CABLE CAR\n"
 	.string "“A short walk {UP_ARROW} way!”$"
 
 Route112_Text_MtChimneySign:
-	.string "MT. CHIMNEY\p"
+	.string "MT. CALZONE\p"
 	.string "“For LASAGNARIDGE TOWN or the summit,\n"
 	.string "please take the CABLE CAR.”$"
 

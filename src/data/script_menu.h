@@ -774,9 +774,9 @@ static const struct MenuAction MultichoiceList_BattleTowerFeelings[] =
 
 static const struct MenuAction MultichoiceList_WheresRayquaza[] =
 {
-    {COMPOUND_STRING("CAVE OF ORIGIN")},
-    {COMPOUND_STRING("MT. PYRE")},
-    {COMPOUND_STRING("SKY PILLAR")},
+    {COMPOUND_STRING("CAVE OF OREGANO")},
+    {COMPOUND_STRING("MT. PENNE")},
+    {COMPOUND_STRING("SKY BREADSTICK")},
     {COMPOUND_STRING("Don't remember")},
 };
 

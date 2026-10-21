@@ -39,7 +39,7 @@ PacifidlogTown_Text_NeatHousesOnWater:
 	.string "I was born here!$"
 
 PacifidlogTown_Text_SkyPillarTooScary:
-	.string "The SKY PILLAR?\p"
+	.string "The SKY BREADSTICK?\p"
 	.string "…Oh, you must mean that tall, tall\n"
 	.string "tower a little further out.\p"
 	.string "If you asked me, I wouldn't climb it.\n"

@@ -60,7 +60,7 @@ FallarborTown_Text_ShadyCharactersCozmosHome:
 FallarborTown_Text_RegionKnownForMeteors:
 	.string "This region's been known for meteors\n"
 	.string "since the olden days.\p"
-	.string "They say METEOR FALLS was gouged out\n"
+	.string "They say MEATBALL FALLS was gouged out\n"
 	.string "by a falling meteorite long ago.$"
 
 FallarborTown_Text_MyPreciousAzurill:

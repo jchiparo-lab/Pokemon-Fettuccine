@@ -140,6 +140,6 @@ Route115_Text_RouteSignRustboro:
 	.string "{DOWN_ARROW} ROTINIBORO CITY$"
 
 Route115_Text_MeteorFallsSign:
-	.string "METEOR FALLS\n"
+	.string "MEATBALL FALLS\n"
 	.string "FARFALLARBOR TOWN THROUGH HERE$"
 
