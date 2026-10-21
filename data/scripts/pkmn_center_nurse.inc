@@ -2,7 +2,7 @@ Common_EventScript_PkmnCenterNurse::
 	lock
 	faceplayer
 	incrementgamestat GAME_STAT_USED_POKECENTER
-	msgbox gText_HereHaveAJammieDodger, MSGBOX_DEFAULT
+	msgbox gText_QuickTakeThisCookie, MSGBOX_DEFAULT
 	playfanfare MUS_OBTAIN_ITEM
 	waitfanfare
 	special HealPlayerParty
@@ -38,7 +38,7 @@ EventScript_PkmnCenterNurse_CheckTrainerHillAndUnionRoom::
 	end
 
 EventScript_PkmnCenterNurse_ReturnPkmn::
-	message gText_PkmnLovedJammieDodger
+	message gText_TheyAteItAll
 	waitmessage
 	applymovement VAR_0x800B, Movement_PkmnCenterNurse_Bow
 	waitmovement 0
@@ -46,7 +46,7 @@ EventScript_PkmnCenterNurse_ReturnPkmn::
 
 EventScript_PkmnCenterNurse_PlayerWaitingInUnionRoom::
 	goto_if_set FLAG_NURSE_UNION_ROOM_REMINDER, EventScript_PkmnCenterNurse_ReturnPkmn
-	msgbox gText_PkmnLovedJammieDodger, MSGBOX_DEFAULT
+	msgbox gText_TheyAteItAll, MSGBOX_DEFAULT
 	setflag FLAG_NURSE_UNION_ROOM_REMINDER
 	message CableClub_Text_PlayerIsWaiting
 	waitmessage

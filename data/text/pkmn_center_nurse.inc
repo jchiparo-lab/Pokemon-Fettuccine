@@ -50,9 +50,9 @@ gText_ThankYouForWaiting::
 gText_WeHopeToSeeYouAgain2::
 	.string "We hope to see you again!$"
 
-gText_HereHaveAJammieDodger::
-	.string "Here, have a Jammie Dodger!$"
+gText_QuickTakeThisCookie::
+	.string "QUICK! TAKE THIS COOKIE!$"
 
-gText_PkmnLovedJammieDodger::
-	.string "Seems like your POKéMON\n"
-	.string "loved it!$"
+gText_TheyAteItAll::
+	.string "Looks like they ate it all,\n"
+	.string "that was a close one...$"
