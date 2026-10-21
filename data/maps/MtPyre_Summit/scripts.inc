@@ -482,11 +482,11 @@ MtPyre_Summit_Text_Grunt4PostBattle:
 	.string "with us members and our leader.$"
 
 MtPyre_Summit_Text_ArchieWeGotTheOrbLetsGo:
-	.string "ARCHIE: TEAM AL DENTE's MAXIE got\n"
+	.string "MARZANO: TEAM AL DENTE's BOLLITO got\n"
 	.string "ahead of us, but we also got what we\l"
 	.string "wanted.\p"
 	.string "The RED ORB preserved at MT. PENNE…\n"
-	.string "I, ARCHIE, now have it in my possession!\p"
+	.string "I, MARZANO, now have it in my possession!\p"
 	.string "Fufufu… Now we can bring our ultimate\n"
 	.string "objective to fruition!\p"
 	.string "Okay, TEAM!\n"
@@ -585,7 +585,7 @@ MtPyre_Summit_Text_WellThatTooIsFine:
 	.string "Well, that, too, is fine…$"
 
 MtPyre_Summit_Text_MaxieSilence:
-	.string "MAXIE: {PLAYER}…\p"
+	.string "BOLLITO: {PLAYER}…\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …$"
 

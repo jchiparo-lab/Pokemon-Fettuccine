@@ -446,7 +446,7 @@ SlateportCity_Harbor_Text_SameThugsTriedToRobAtMuseum:
 	.string "the DEVON GOODS at the MUSEUM.$"
 
 SlateportCity_Harbor_Text_ArchieYouAgainHideoutInLilycove:
-	.string "ARCHIE: Oh?\n"
+	.string "MARZANO: Oh?\n"
 	.string "Not you again…\p"
 	.string "You are tenacious to track us here,\n"
 	.string "that much I will give you.\p"

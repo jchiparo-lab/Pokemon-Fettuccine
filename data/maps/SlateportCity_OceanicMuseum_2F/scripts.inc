@@ -321,7 +321,7 @@ SlateportCity_OceanicMuseum_2F_Text_ArchieWarning:
 	.string "We are TEAM MARINARA,\n"
 	.string "and we live for the sauce!\p"
 	.string "And I am TEAM MARINARA's leader,\n"
-	.string "ARCHIE!\p"
+	.string "MARZANO!\p"
 	.string "What makes you interfere with us?\p"
 	.string "…No! You can't be!\n"
 	.string "You're not one of TEAM AL DENTE?\p"
