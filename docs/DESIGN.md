@@ -10,13 +10,14 @@ Workflow rule: build and test after every change, and `git commit` each working 
 
 ## Region
 
-The game takes place in **Hoenn only**. Johto and Kanto were considered and cut to keep the scope manageable.
+The game takes place in one region, **Pastalia** (Hoenn renamed; pasta + Italia). Johto and Kanto were considered and cut to keep the scope manageable.
 
-- **Open:** rename the region from Hoenn to a pasta-themed name. Choose the name before implementing.
+- **Decided and done:** the region is called **PASTALIA** in all dialogue, the Pokédex ("PASTALIA DEX"), the PokéNav, the Town Map title, and the diploma.
+- **Still to do (art):** two PokéNav graphics have "HOENN MAP" drawn into the pixels: `graphics/pokenav/options/hoenn_map.png` and `graphics/pokenav/left_headers/hoenn_map.png`. They need "PASTALIA MAP" (or similar) redrawn in Aseprite.
 
 ## Town names
 
-Every Hoenn town gets a pasta-themed name that echoes the original. Update the location name, signs, NPC dialogue, the Town Map, and Fly destinations.
+Every town gets a pasta-themed name that echoes the original. Update the location name, signs, NPC dialogue, the Town Map, and Fly destinations.
 
 **Done.** Names appear in all dialogue, signs, popups, the Town Map, Fly map, PokéNav, and save screen. Long names automatically switch to a narrower font on the Town Map, Fly map, PokéNav map, and save screen. Town sign slogans are unchanged. Internal map names (what Porymap shows, e.g. `LittlerootTown`) keep their original names.
 
@@ -262,7 +263,7 @@ A yes/no choice at New Game that randomizes Pokémon for that save file. It must
 | --- | --- | --- |
 | Pasta town names | Text, signs, Town Map | Done |
 | Pasta landmark names | Text, Town Map | Done |
-| Pasta region name (replaces Hoenn) | Text | Open: name not chosen |
+| Pasta region name: Pastalia (replaces Hoenn) | Text, plus 2 PokéNav graphics | Text done; PokéNav "HOENN MAP" art still to redraw |
 | Starters: Rowlet, Scorbunny, Froakie | Script and data change | Done |
 | Nurse Joy Jammie Dodger heal (plus blackout cookie) | One shared script change | Done |
 | Retro Salvage Games shops (Jason, orange roofs) | Sprite recolor, palette, tiles, dialogue | Not started |
