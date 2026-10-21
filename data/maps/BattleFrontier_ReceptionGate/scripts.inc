@@ -299,13 +299,13 @@ BattleFrontier_ReceptionGate_Text_FirstTimeHereThisWay:
 
 BattleFrontier_ReceptionGate_Text_WelcomeToBattleFrontier:
 	.string "The front lines of POKéMON battling!\n"
-	.string "Welcome to the BATTLE FRONTIER!$"
+	.string "Welcome to the BUCATINI FRONTIER!$"
 
 BattleFrontier_ReceptionGate_Text_IssueFrontierPass:
 	.string "For a first-time visitor, we issue\n"
 	.string "the FRONTIER PASS.\p"
 	.string "It's for use at all the facilities\n"
-	.string "in the BATTLE FRONTIER.\p"
+	.string "in the BUCATINI FRONTIER.\p"
 	.string "Here you are!$"
 
 BattleFrontier_ReceptionGate_Text_ObtainedFrontierPass:
@@ -317,7 +317,7 @@ BattleFrontier_ReceptionGate_Text_PlacedTrainerCardInFrontierPass:
 	.string "in the FRONTIER PASS.$"
 
 BattleFrontier_ReceptionGate_Text_EnjoyBattleFrontier:
-	.string "We hope you enjoy all that the BATTLE\n"
+	.string "We hope you enjoy all that the BUCATINI\n"
 	.string "FRONTIER has to offer!$"
 
 BattleFrontier_ReceptionGate_Text_IfItIsntPlayerYouCame:
@@ -340,14 +340,14 @@ BattleFrontier_ReceptionGate_Text_ScottGreatToSeeYouHere:
 
 BattleFrontier_ReceptionGate_Text_YourGuideToFacilities:
 	.string "I'm your guide to the various facilities\n"
-	.string "here in the BATTLE FRONTIER.$"
+	.string "here in the BUCATINI FRONTIER.$"
 
 BattleFrontier_ReceptionGate_Text_LearnAboutWhich2:
 	.string "Which would you like to learn about?$"
 
 BattleFrontier_ReceptionGate_Text_BattleTowerInfo:
 	.string "It is the gigantic tower considered\n"
-	.string "to be the BATTLE FRONTIER's symbol.\p"
+	.string "to be the BUCATINI FRONTIER's symbol.\p"
 	.string "There are four kinds of BATTLE ROOMS\n"
 	.string "in the tower for SINGLE, DOUBLE, MULTI,\l"
 	.string "and LINK MULTI BATTLES.$"
@@ -363,14 +363,14 @@ BattleFrontier_ReceptionGate_Text_BattleDomeInfo:
 
 BattleFrontier_ReceptionGate_Text_BattlePalaceInfo:
 	.string "The BATTLE PALACE is the red building\n"
-	.string "on the right of the BATTLE FRONTIER.\p"
+	.string "on the right of the BUCATINI FRONTIER.\p"
 	.string "There are two kinds of BATTLE HALLS\n"
 	.string "for SINGLE and DOUBLE BATTLES.$"
 
 BattleFrontier_ReceptionGate_Text_BattleArenaInfo:
 	.string "The BATTLE ARENA is the dojo-like\n"
 	.string "building at the center-right of\l"
-	.string "the BATTLE FRONTIER.\p"
+	.string "the BUCATINI FRONTIER.\p"
 	.string "An event called the Set KO Tourney\n"
 	.string "takes place at the BATTLE ARENA.$"
 
@@ -386,7 +386,7 @@ BattleFrontier_ReceptionGate_Text_BattleFactoryInfo:
 BattleFrontier_ReceptionGate_Text_BattlePikeInfo:
 	.string "The BATTLE PIKE is the building shaped\n"
 	.string "like a POKéMON at the center-left of\l"
-	.string "the BATTLE FRONTIER.\p"
+	.string "the BUCATINI FRONTIER.\p"
 	.string "An event called the Battle Choice\n"
 	.string "is conducted there.$"
 
@@ -402,26 +402,26 @@ BattleFrontier_ReceptionGate_Text_RankingHallInfo:
 	.string "There, you may see the most fantastic\n"
 	.string "records left by the TRAINERS that\l"
 	.string "took on the many challenges of\l"
-	.string "the BATTLE FRONTIER.$"
+	.string "the BUCATINI FRONTIER.$"
 
 BattleFrontier_ReceptionGate_Text_ExchangeCornerInfo:
 	.string "The EXCHANGE SERVICE CORNER is near\n"
 	.string "the BATTLE TOWER.\p"
-	.string "The Battle Points you have earned in\n"
-	.string "the BATTLE FRONTIER may be exchanged\l"
-	.string "for fabulous prizes there.$"
+	.string "The Battle Points you have earned in the\n"
+	.string "BUCATINI FRONTIER may be exchanged for\l"
+	.string "fabulous prizes there.$"
 
 BattleFrontier_ReceptionGate_Text_YourGuideToRules:
 	.string "I'm your guide to the basic rules that\n"
-	.string "are common to all the challenges\l"
-	.string "offered by the facilities in the BATTLE\l"
+	.string "are common to all the challenges offered\l"
+	.string "by the facilities in the BUCATINI\l"
 	.string "FRONTIER.$"
 
 BattleFrontier_ReceptionGate_Text_LearnAboutWhat:
 	.string "What would you like to learn about?$"
 
 BattleFrontier_ReceptionGate_Text_LevelModeInfo:
-	.string "All the challenges at the BATTLE\n"
+	.string "All the challenges at the BUCATINI\n"
 	.string "FRONTIER's facilities come in\l"
 	.string "two courses--Level 50 and Open Level.$"
 
@@ -432,7 +432,7 @@ BattleFrontier_ReceptionGate_Text_Level50Info:
 	.string "no TRAINER you face will have any\l"
 	.string "POKéMON below Level 50.\p"
 	.string "This course is the entry level for\n"
-	.string "battles at the BATTLE FRONTIER.\p"
+	.string "battles at the BUCATINI FRONTIER.\p"
 	.string "To begin, we hope you will challenge\n"
 	.string "this course.$"
 
@@ -458,7 +458,7 @@ BattleFrontier_ReceptionGate_Text_MonEntryInfo:
 	.string "permitted.$"
 
 BattleFrontier_ReceptionGate_Text_HoldItemsInfo:
-	.string "When entering a challenge at a BATTLE\n"
+	.string "When entering a challenge at a BUCATINI\n"
 	.string "FRONTIER facility, POKéMON may not\l"
 	.string "be holding the same kind of item.\p"
 	.string "Please make sure that all POKéMON\n"
@@ -473,7 +473,7 @@ BattleFrontier_ReceptionGate_Text_LearnAboutWhich1:
 
 BattleFrontier_ReceptionGate_Text_SymbolsInfo:
 	.string "There are seven facilities at\n"
-	.string "the BATTLE FRONTIER.\p"
+	.string "the BUCATINI FRONTIER.\p"
 	.string "TRAINERS who gain recognition for\n"
 	.string "their abilities may be rewarded with\l"
 	.string "symbols from each of the facilities.\p"
@@ -489,7 +489,7 @@ BattleFrontier_ReceptionGate_Text_RecordedBattleInfo:
 	.string "You may record a battle you had with\n"
 	.string "a friend or friends.\p"
 	.string "Or you may record a battle conducted\n"
-	.string "at the BATTLE FRONTIER excluding\l"
+	.string "at the BUCATINI FRONTIER excluding\l"
 	.string "matches at the BATTLE PIKE or\l"
 	.string "the BATTLE PYRAMID.\p"
 	.string "You may choose to record your match\n"
@@ -498,7 +498,7 @@ BattleFrontier_ReceptionGate_Text_RecordedBattleInfo:
 BattleFrontier_ReceptionGate_Text_BattlePointsInfo:
 	.string "Battle Points are rewards given to\n"
 	.string "TRAINERS who battled outstandingly\l"
-	.string "at the BATTLE FRONTIER.\p"
+	.string "at the BUCATINI FRONTIER.\p"
 	.string "You may trade in your Battle Points\n"
 	.string "for prizes at the EXCHANGE SERVICE\l"
 	.string "CORNER.$"

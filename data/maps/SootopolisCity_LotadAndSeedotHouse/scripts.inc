@@ -105,7 +105,7 @@ SootopolisCity_LotadAndSeedotHouse_EventScript_LotadSizeRecord::
 
 SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigSeedot:
 	.string "Do you know the POKéMON SEEDOT?\n"
-	.string "It's hardly ever seen in SOOTOPOLIS.\p"
+	.string "It's hardly ever seen in SUGOPOLIS.\p"
 	.string "Anyway, I love big SEEDOT.\n"
 	.string "The bigger the better.\p"
 	.string "But my younger brother, he says that\n"
@@ -154,7 +154,7 @@ SootopolisCity_LotadAndSeedotHouse_Text_BiggestSeedotInHistory:
 
 SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigLotad:
 	.string "Do you know the POKéMON LOTAD?\n"
-	.string "It's rarely seen in SOOTOPOLIS.\p"
+	.string "It's rarely seen in SUGOPOLIS.\p"
 	.string "I love, I mean love, big LOTAD!\p"
 	.string "My big brother says that SEEDOT is\n"
 	.string "bigger.\p"

@@ -213,7 +213,7 @@ BattleFrontier_ScottsHouse_Text_WelcomeToBattleFrontier:
 	.string "SCOTT: Well, hello and welcome!\n"
 	.string "Heheh… Sorry about the cramped space.\p"
 	.string "Anyway, {PLAYER}{KUN}, let me formally\n"
-	.string "welcome you to the BATTLE FRONTIER.\p"
+	.string "welcome you to the BUCATINI FRONTIER.\p"
 	.string "This is my dream come true.\n"
 	.string "It took me years and years, but I've\l"
 	.string "finally given shape to my dream.$"
@@ -243,7 +243,7 @@ BattleFrontier_ScottsHouse_Text_ExplainBattlePoints:
 	.string "SCOTT: You can check your Battle\n"
 	.string "Points on your FRONTIER PASS.\p"
 	.string "The more success you have here at\n"
-	.string "the BATTLE FRONTIER, the more Battle\l"
+	.string "the BUCATINI FRONTIER, the more Battle\l"
 	.string "Points you will collect.\p"
 	.string "Use your Battle Points the way you\n"
 	.string "see fit, like trading them for items.$"
@@ -280,12 +280,12 @@ BattleFrontier_ScottsHouse_Text_MayFindWildMonsInFrontier:
 	.string "a POKéDEX as well.\p"
 	.string "Well, guess what?\p"
 	.string "You may run into wild POKéMON in\n"
-	.string "the BATTLE FRONTIER somewhere…\l"
+	.string "the BUCATINI FRONTIER somewhere…\l"
 	.string "Fufufu!$"
 
 BattleFrontier_ScottsHouse_Text_YouveCollectedAllSilverSymbols:
 	.string "SCOTT: Are you enjoying things in\n"
-	.string "the BATTLE FRONTIER?\p"
+	.string "the BUCATINI FRONTIER?\p"
 	.string "…Wait a second…\n"
 	.string "Oh!\p"
 	.string "Your FRONTIER PASS!\n"
@@ -300,7 +300,7 @@ BattleFrontier_ScottsHouse_Text_YouveCollectedAllSilverSymbols:
 
 BattleFrontier_ScottsHouse_Text_YouveCollectedAllGoldSymbols:
 	.string "SCOTT: I hope you're enjoying\n"
-	.string "everything in the BATTLE FRONTIER.\p"
+	.string "everything in the BUCATINI FRONTIER.\p"
 	.string "…Wait a second…\n"
 	.string "Oh, my disbelieving eyes!\p"
 	.string "Your FRONTIER PASS!\n"

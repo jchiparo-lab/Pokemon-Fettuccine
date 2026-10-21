@@ -34,7 +34,7 @@ VerdanturfTown_PokemonCenter_1F_Text_FaithInYourPokemon:
 
 VerdanturfTown_PokemonCenter_1F_Text_VisitForBattleTent:
 	.string "The reason why anyone would visit\n"
-	.string "VERDANTURF…\p"
+	.string "VERMITURF…\p"
 	.string "It's the BATTLE TENT. It goes without\n"
 	.string "saying.\p"
 	.string "Or is there somebody here that you\n"

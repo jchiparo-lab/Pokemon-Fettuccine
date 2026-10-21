@@ -394,7 +394,7 @@ Route120_Text_StevenGiveDevonScope:
 	.string "STEVEN: I see…\n"
 	.string "Your battle style is intriguing.\p"
 	.string "Your POKéMON have obviously grown\n"
-	.string "since I first met you in DEWFORD.\p"
+	.string "since I first met you in DOUGHFORD.\p"
 	.string "I'd like you to have this\n"
 	.string "DEVON SCOPE.\p"
 	.string "Who knows, there may be other\n"
@@ -422,7 +422,7 @@ Kecleon_Text_UseDevonScopeMonAttacked:
 
 Route120_Text_RouteSignFortree:
 	.string "ROUTE 120\n"
-	.string "{LEFT_ARROW} FORTREE CITY$"
+	.string "{LEFT_ARROW} FORTELLINI CITY$"
 
 Route120_Text_RouteSign121:
 	.string "{RIGHT_ARROW} ROUTE 121\n"

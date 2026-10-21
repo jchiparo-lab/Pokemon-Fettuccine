@@ -18,13 +18,13 @@ struct LandmarkList
 static const u8 LandmarkName_MagmaHideout[] = _("MAGMA HIDEOUT"); //Unused
 
 static const struct Landmark Landmark_FlowerShop = {COMPOUND_STRING("FLOWER SHOP"), FLAG_LANDMARK_FLOWER_SHOP};
-static const struct Landmark Landmark_PetalburgWoods = {COMPOUND_STRING("PETALBURG WOODS"), -1};
+static const struct Landmark Landmark_PetalburgWoods = {COMPOUND_STRING("PESTOBURG WOODS"), -1};
 static const struct Landmark Landmark_MrBrineysCottage = {COMPOUND_STRING("MR. BRINEY'S COTTAGE"), FLAG_LANDMARK_MR_BRINEY_HOUSE};
 static const struct Landmark Landmark_AbandonedShip = {COMPOUND_STRING("ABANDONED SHIP"), FLAG_LANDMARK_ABANDONED_SHIP};
 static const struct Landmark Landmark_SeashoreHouse = {COMPOUND_STRING("SEASHORE HOUSE"), FLAG_LANDMARK_SEASHORE_HOUSE};
-static const struct Landmark Landmark_SlateportBeach = {COMPOUND_STRING("SLATEPORT BEACH"), -1};
+static const struct Landmark Landmark_SlateportBeach = {COMPOUND_STRING("SPAGHETTIPORT BEACH"), -1};
 static const struct Landmark Landmark_CyclingRoad = {COMPOUND_STRING("CYCLING ROAD"), -1};
-static const struct Landmark Landmark_NewMauville = {COMPOUND_STRING("NEW MAUVILLE"), FLAG_LANDMARK_NEW_MAUVILLE};
+static const struct Landmark Landmark_NewMauville = {COMPOUND_STRING("NEW MACAROVILLE"), FLAG_LANDMARK_NEW_MAUVILLE};
 static const struct Landmark Landmark_TrickHouse = {COMPOUND_STRING("TRICK HOUSE"), FLAG_LANDMARK_TRICK_HOUSE};
 static const struct Landmark Landmark_OldLadysRestShop = {COMPOUND_STRING("OLD LADY'S REST STOP"), FLAG_LANDMARK_OLD_LADY_REST_SHOP};
 static const struct Landmark Landmark_Desert = {COMPOUND_STRING("DESERT"), -1};
@@ -34,7 +34,7 @@ static const struct Landmark Landmark_GlassWorkshop = {COMPOUND_STRING("GLASS WO
 static const struct Landmark Landmark_WeatherInstitute = {COMPOUND_STRING("WEATHER INSTITUTE"), -1};
 static const struct Landmark Landmark_MeteorFalls = {COMPOUND_STRING("METEOR FALLS"), -1};
 static const struct Landmark Landmark_TunnelersRestHouse = {COMPOUND_STRING("TUNNELER'S RESTHOUSE"), FLAG_LANDMARK_TUNNELERS_REST_HOUSE};
-static const struct Landmark Landmark_RusturfTunnel = {COMPOUND_STRING("RUSTURF TUNNEL"), -1};
+static const struct Landmark Landmark_RusturfTunnel = {COMPOUND_STRING("ROTITURF TUNNEL"), -1};
 static const struct Landmark Landmark_PokemonDayCare = {COMPOUND_STRING("POKéMON DAY CARE"), FLAG_LANDMARK_POKEMON_DAYCARE};
 static const struct Landmark Landmark_SafariZoneEntrance = {COMPOUND_STRING("SAFARI ZONE ENTRANCE"), -1};
 static const struct Landmark Landmark_MtPyre = {COMPOUND_STRING("MT. PYRE"), -1};

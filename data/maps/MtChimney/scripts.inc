@@ -751,7 +751,7 @@ MtChimney_Text_MachineMakesNoResponse:
 
 MtChimney_Text_RouteSign:
 	.string "{DOWN_ARROW} JAGGED PATH\n"
-	.string "LAVARIDGE TOWN AHEAD$"
+	.string "LASAGNARIDGE TOWN AHEAD$"
 
 MtChimney_Text_ShelbyIntro:
 	.string "I've been to the hot springs and\n"
@@ -833,7 +833,7 @@ MtChimney_Text_SawyerDefeat:
 	.string "Oh, you're a real firebrand, too!$"
 
 MtChimney_Text_SawyerPostBattle:
-	.string "I think I need a dip in LAVARIDGE\n"
+	.string "I think I need a dip in LASAGNARIDGE\n"
 	.string "HOT SPRING with the locals!$"
 
 MtChimney_Text_SawyerRegister:

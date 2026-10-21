@@ -605,7 +605,7 @@ BattleFrontier_BattleDomeLobby_Text_LastWinnerWasTough:
 	.string "on the monitor beside the PC.$"
 
 BattleFrontier_OutsideWest_Text_LongDreamedAboutBattleFrontier:
-	.string "The BATTLE FRONTIER…\n"
+	.string "The BUCATINI FRONTIER…\n"
 	.string "I've long dreamed about a place like it.$"
 
 @ Functionally unused

@@ -49,7 +49,7 @@ DewfordTown_House2_Text_ExplainSilkScarf:
 
 DewfordTown_House2_Text_BrawlySoCool:
 	.string "Wow, you bothered to cross the sea\n"
-	.string "to visit DEWFORD?\p"
+	.string "to visit DOUGHFORD?\p"
 	.string "Did you maybe come here because you\n"
 	.string "heard about BRAWLY?\p"
 	.string "He's so cool…\n"

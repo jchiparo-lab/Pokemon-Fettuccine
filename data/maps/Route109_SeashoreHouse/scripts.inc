@@ -153,7 +153,7 @@ Route109_SeashoreHouse_Text_DwayneDefeated:
 	.string "I can accept that loss, matey!$"
 
 Route109_SeashoreHouse_Text_DwaynePostBattle:
-	.string "Whenever I'm in SLATEPORT, I enjoy\n"
+	.string "Whenever I'm in SPAGHETTIPORT, I enjoy\n"
 	.string "hot battles and ice-cold SODA POP!$"
 
 Route109_SeashoreHouse_Text_JohannaIntro:

@@ -25,7 +25,7 @@ DewfordTown_House1_Text_LotToBeSaidForLivingOnIsland:
 	.string "POKéMON and the family.$"
 
 DewfordTown_House1_Text_LifeGoesSlowlyOnIsland:
-	.string "I left the major port of SLATEPORT\n"
+	.string "I left the major port of SPAGHETTIPORT\n"
 	.string "CITY when I married my husband here.\p"
 	.string "Life goes by slowly on this little\n"
 	.string "island. But being surrounded by the\l"

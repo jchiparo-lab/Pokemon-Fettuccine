@@ -1374,7 +1374,8 @@ gText_MomOrDadMightLikeThisProgram::
 	.string "Better get going!$"
 
 gText_WhichFloorWouldYouLike::
-	.string "Welcome to LILYCOVE DEPARTMENT STORE.\p"
+	.string "Welcome to LINGUICOVE DEPARTMENT\n"
+	.string "STORE.\p"
 	.string "Which floor would you like?$"
 
 gText_SandstormIsVicious::

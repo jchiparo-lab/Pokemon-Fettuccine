@@ -260,7 +260,7 @@ MeteorFalls_1F_1R_Text_BeSeeingYouTeamAqua:
 
 MeteorFalls_1F_1R_Text_ArchieSeenYouBefore:
 	.string "ARCHIE: Didn't I see you before?\n"
-	.string "At SLATEPORT's MUSEUM?\p"
+	.string "At SPAGHETTIPORT's MUSEUM?\p"
 	.string "Ah, so your name is {PLAYER}.\p"
 	.string "At the time, I thought you were one\n"
 	.string "of TEAM MAGMA's goons.\p"

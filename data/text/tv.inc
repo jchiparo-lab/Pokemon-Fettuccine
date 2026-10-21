@@ -1209,17 +1209,17 @@ gTVTodaysRivalTrainerText02::
 
 gTVTodaysRivalTrainerText03::
 	.string "Our rival hasn't obtained a single\n"
-	.string "BATTLE FRONTIER Symbol yet.$"
+	.string "BUCATINI FRONTIER Symbol yet.$"
 
 gTVTodaysRivalTrainerText04::
-	.string "Let's see how many BATTLE FRONTIER\n"
+	.string "Let's see how many BUCATINI FRONTIER\n"
 	.string "Symbols our rival has.\p"
 	.string "Gold Symbols: {STR_VAR_1}!\n"
 	.string "Silver Symbols: {STR_VAR_2}!$"
 
 gTVTodaysRivalTrainerText05::
 	.string "Our rival has collected {STR_VAR_1} Battle\n"
-	.string "Point(s) at the BATTLE FRONTIER.$"
+	.string "Point(s) at the BUCATINI FRONTIER.$"
 
 gTVTodaysRivalTrainerText06::
 	.string "So, how did you measure up in\n"
@@ -1230,17 +1230,17 @@ gTVTodaysRivalTrainerText06::
 	.string "and ahead of our rivals!$"
 
 TrendWatcher_Text_Intro::
-	.string "DEWFORD TREND-WATCHER NETWORK!\p"
+	.string "DOUGHFORD TREND-WATCHER NETWORK!\p"
 	.string "MC: Wassup?\n"
 	.string "We'll keep it real with the latest on\l"
-	.string "what's hip and happening in DEWFORD.\p"
+	.string "what's hip and happening in DOUGHFORD.\p"
 	.string "Our guest today is this old cat whose\n"
 	.string "claim to fame is being the authority\l"
-	.string "on all things in DEWFORD.\p"
+	.string "on all things in DOUGHFORD.\p"
 	.string "Old man: Glad to be here.\p"
 	.string "MC: Let's cut to the chase, right on.\p"
 	.string "What's your word on what's groovin'\n"
-	.string "the good folks of DEWFORD?\p"
+	.string "the good folks of DOUGHFORD?\p"
 	.string "Old man: {STR_VAR_1} {STR_VAR_2}.\p"
 	.string "MC: {STR_VAR_1} {STR_VAR_2},\n"
 	.string "you say?\p"
@@ -1254,12 +1254,12 @@ TrendWatcher_Text_Intro::
 @ Identical to below, may have been different in other languages
 TrendWatcher_Text_MaleTaughtMePhrase::
 	.string "Old man: {STR_VAR_1} {STR_VAR_2}\n"
-	.string "was what {STR_VAR_3} from LITTLEROOT\l"
+	.string "was what {STR_VAR_3} from LIL RAGU\l"
 	.string "taught me as being trendy…$"
 
 TrendWatcher_Text_FemaleTaughtMePhrase::
 	.string "Old man: {STR_VAR_1} {STR_VAR_2}\n"
-	.string "was what {STR_VAR_3} from LITTLEROOT\l"
+	.string "was what {STR_VAR_3} from LIL RAGU\l"
 	.string "taught me as being trendy…$"
 
 TrendWatcher_Text_PhraseWasHopeless::
@@ -1288,7 +1288,8 @@ TrendWatcher_Text_Outro::
 	.string "MC: …Uh… So, there you have it,\n"
 	.string "all you trendy, hep cats out there!\p"
 	.string "{STR_VAR_1} {STR_VAR_2}…uh…\n"
-	.string "Didn't get hip or happening in DEWFORD!\p"
+	.string "Didn't get hip or happening in\l"
+	.string "DOUGHFORD!\p"
 	.string "My time is up. Catch you on the fly!\p"
 	.string "Old man: {STR_VAR_1} {STR_VAR_2}!$"
 
@@ -1591,7 +1592,7 @@ gTVPokemonLotteryWinnerFlashReportText00::
 	.string "WINNER FLASH REPORT!\p"
 	.string "Hello! We're coming at you live from\n"
 	.string "the POKéMON LOTTERY CORNER on\l"
-	.string "the ground floor of the LILYCOVE\l"
+	.string "the ground floor of the LINGUICOVE\l"
 	.string "DEPARTMENT STORE!\p"
 	.string "Like it always happens, another\n"
 	.string "lucky TRAINER appeared today!\p"
@@ -1603,10 +1604,10 @@ gTVPokemonLotteryWinnerFlashReportText00::
 	.string "Congratulations!\p"
 	.string "Viewers, don't just watch,\n"
 	.string "get in on the action!\p"
-	.string "All of us at the LILYCOVE DEPARTMENT\n"
+	.string "All of us at the LINGUICOVE DEPARTMENT\n"
 	.string "STORE look forward to your next visit!\p"
 	.string "This has been a live broadcast from\n"
-	.string "the LILYCOVE DEPARTMENT STORE,\l"
+	.string "the LINGUICOVE DEPARTMENT STORE,\l"
 	.string "offering you the greatest selection\l"
 	.string "in all HOENN!$"
 
@@ -1883,7 +1884,7 @@ gTVPokemonNewsBattleFrontierText00::
 	.string "Greetings!\n"
 	.string "It's time for POKéMON NEWS.\p"
 	.string "We've got some uplifting news from\n"
-	.string "the BATTLE FRONTIER.$"
+	.string "the BUCATINI FRONTIER.$"
 
 gTVPokemonNewsBattleFrontierText01::
 	.string "The TRAINER {STR_VAR_1} set a new\n"

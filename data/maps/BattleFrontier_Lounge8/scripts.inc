@@ -32,7 +32,7 @@ BattleFrontier_Lounge8_Text_KnowAboutFrontierBrains:
 	.string "BRAINS?\p"
 	.string "That's what SCOTT calls the seven\n"
 	.string "special TRAINERS that run the seven\l"
-	.string "facilities in the BATTLE FRONTIER.$"
+	.string "facilities in the BUCATINI FRONTIER.$"
 
 BattleFrontier_Lounge8_Text_ToldMeIHaveTalentForBattling:
 	.string "At the BATTLE TOWER, an older girl\n"
