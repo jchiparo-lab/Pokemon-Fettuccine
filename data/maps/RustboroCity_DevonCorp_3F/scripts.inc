@@ -230,8 +230,9 @@ RustboroCity_DevonCorp_3F_Text_MrStoneExplainPokenavRestUp:
 	.string "You can check the locations of\n"
 	.string "DOUGHFORD and SPAGHETTIPORT easily!\p"
 	.string "By the way, I've heard that sinister\n"
-	.string "criminals--MAGMA and AQUA, I believe--\l"
-	.string "have been making trouble far and wide.\p"
+	.string "criminals--AL DENTE and MARINARA,\l"
+	.string "I believe--have been making trouble\l"
+	.string "far and wide.\p"
 	.string "I think it would be best if you rested\n"
 	.string "up before you go on your way.$"
 

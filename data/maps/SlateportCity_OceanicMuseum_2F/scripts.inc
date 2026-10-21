@@ -285,7 +285,7 @@ SlateportCity_OceanicMuseum_2F_Text_SternWhoAreYou:
 	.string "Who are you people?$"
 
 SlateportCity_OceanicMuseum_2F_Text_WereTeamAqua:
-	.string "We're TEAM AQUA!\p"
+	.string "We're TEAM MARINARA!\p"
 	.string "Our BOSS wants those parts!\n"
 	.string "Shut your yap and fork them over!$"
 
@@ -317,20 +317,20 @@ SlateportCity_OceanicMuseum_2F_Text_CameToSeeWhatsTakingSoLong:
 	.string "simps are held up by a mere child?$"
 
 SlateportCity_OceanicMuseum_2F_Text_ArchieWarning:
-	.string "We are TEAM AQUA,\n"
+	.string "We are TEAM MARINARA,\n"
 	.string "and we love the sea!\p"
-	.string "And I am TEAM AQUA's leader,\n"
+	.string "And I am TEAM MARINARA's leader,\n"
 	.string "ARCHIE!\p"
 	.string "What makes you interfere with us?\p"
 	.string "…No! You can't be!\n"
-	.string "You're not one of TEAM MAGMA?\p"
+	.string "You're not one of TEAM AL DENTE?\p"
 	.string "Wait, that can't be right.\n"
 	.string "You're not dressed for the part.\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
 	.string "POKéMON, people… All life depends on\n"
 	.string "the sea.\p"
-	.string "So, TEAM AQUA is dedicated to\n"
+	.string "So, TEAM MARINARA is dedicated to\n"
 	.string "the expansion of the sea.\p"
 	.string "Don't you agree? What we are doing\n"
 	.string "is a magnificent undertaking.\p"

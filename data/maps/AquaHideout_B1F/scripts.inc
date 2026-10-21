@@ -144,13 +144,14 @@ AquaHideout_B1F_Text_Grunt5Defeat:
 
 AquaHideout_B1F_Text_Grunt5PostBattle:
 	.string "If you scurry too much, other TEAM\n"
-	.string "AQUA members might get you.$"
+	.string "MARINARA members might get you.$"
 
 AquaHideout_B1F_Text_Grunt7Intro:
 	.string "Hey!\n"
 	.string "You there!\p"
 	.string "Which do you think is cooler?\n"
-	.string "TEAM AQUA's uniform or TEAM MAGMA's?$"
+	.string "TEAM MARINARA's uniform or\l"
+	.string "TEAM AL DENTE's?$"
 
 AquaHideout_B1F_Text_Grunt7Defeat:
 	.string "I lost in a cool way…$"

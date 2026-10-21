@@ -1099,7 +1099,7 @@ RustboroCity_Text_HelpMeIWasRobbed:
 	.string "Oh, it's you!\p"
 	.string "You're that fantastic TRAINER who\n"
 	.string "helped me in PESTOBURG WOODS!\p"
-	.string "Help me! I was robbed by TEAM AQUA!\n"
+	.string "Help me! I was robbed by TEAM MARINARA!\n"
 	.string "I have to get the DEVON GOODS back!\p"
 	.string "If I don't…\n"
 	.string "I'm going to be in serious trouble.$"

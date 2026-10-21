@@ -302,7 +302,7 @@ MossdeepCity_SpaceCenter_1F_Text_RocketLaunchDemandsPerfection:
 	.string "Why? It's a dream that never ends.$"
 
 MossdeepCity_SpaceCenter_1F_Text_MagmaHaveSightsOnSpaceCenter:
-	.string "Those MAGMA thugs have their sights\n"
+	.string "Those AL DENTE thugs have their sights\n"
 	.string "set on our SPACE CENTER.\p"
 	.string "But we can't allow anything that minor\n"
 	.string "to interfere with our rocket launch!$"
@@ -318,13 +318,13 @@ MossdeepCity_SpaceCenter_1F_Text_HoennFamousForMeteorShowers:
 	.string "its meteor showers for a long time.$"
 
 MossdeepCity_SpaceCenter_1F_Text_MagmaCantStealFuelTakeThis:
-	.string "TEAM MAGMA can't be allowed to steal\n"
+	.string "TEAM AL DENTE can't be allowed to steal\n"
 	.string "the rocket fuel.\p"
 	.string "Oh, by the way, you can have this stone\n"
 	.string "I found on the beach.$"
 
 MossdeepCity_SpaceCenter_1F_Text_CantStrollOnBeachWithMagma:
-	.string "With TEAM MAGMA around, I guess\n"
+	.string "With TEAM AL DENTE around, I guess\n"
 	.string "strolls on the beach aren't safe.$"
 
 MossdeepCity_SpaceCenter_1F_Text_DidPokemonComeFromSpace:
@@ -332,9 +332,9 @@ MossdeepCity_SpaceCenter_1F_Text_DidPokemonComeFromSpace:
 	.string "from space. Could it be true?$"
 
 MossdeepCity_SpaceCenter_1F_Text_AquaShouldBeatMagma:
-	.string "TEAM AQUA should take care of\n"
-	.string "TEAM MAGMA!\p"
-	.string "But if they did that, TEAM AQUA will\n"
+	.string "TEAM MARINARA should take care of\n"
+	.string "TEAM AL DENTE!\p"
+	.string "But if they did that, TEAM MARINARA will\n"
 	.string "become bold and brazen, won't they?$"
 
 MossdeepCity_SpaceCenter_1F_Text_RocketsBoggleMyMind:
@@ -345,15 +345,15 @@ MossdeepCity_SpaceCenter_1F_Text_RocketsBoggleMyMind:
 MossdeepCity_SpaceCenter_1F_Text_MagmaWantsToSpoilMyDream:
 	.string "A giant chunk of metal bursts through\n"
 	.string "the skies and flies into space…\p"
-	.string "But TEAM MAGMA wants to spoil\n"
+	.string "But TEAM AL DENTE wants to spoil\n"
 	.string "that dream of mine!\p"
 	.string "I'm not having any of that!$"
 
 MossdeepCity_SpaceCenter_1F_Text_StevenMagmaCantBeAllowedToTakeFuel:
 	.string "STEVEN: {PLAYER}{KUN}, have you read that\n"
 	.string "proclamation already?\p"
-	.string "TEAM MAGMA is coming after the rocket\n"
-	.string "fuel on this island.\p"
+	.string "TEAM AL DENTE is coming after the\n"
+	.string "rocket fuel on this island.\p"
 	.string "I don't know what they'd need it for,\n"
 	.string "but they can't be allowed to take it.\p"
 	.string "I'll keep an eye on things for\n"
@@ -421,4 +421,4 @@ MossdeepCity_SpaceCenter_1F_Text_MagmaIntentToStealNotice:
 	.string "“Please don't try to stop us.\n"
 	.string "We will take the fuel no matter what.\p"
 	.string "“Let there be more land!\n"
-	.string "                                          TEAM MAGMA”$"
+	.string "                                          TEAM AL DENTE”$"
