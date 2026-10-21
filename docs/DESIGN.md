@@ -12,9 +12,15 @@ Workflow rule: build and test after every change, and `git commit` each working 
 
 The game takes place in **Hoenn only**. Johto and Kanto were considered and cut to keep the scope manageable.
 
+- **Open:** rename the region from Hoenn to a pasta-themed name. Choose the name before implementing.
+
 ## Town names
 
-Every Hoenn town gets a pasta-themed name that echoes the original. Update the location name, signs, NPC dialogue, the Town Map, and Fly destinations. The in-game location name has a character limit; check that the longer names (Fettuccine Grande, Spaghettiport) fit.
+Every Hoenn town gets a pasta-themed name that echoes the original. Update the location name, signs, NPC dialogue, the Town Map, and Fly destinations.
+
+**Done.** Names appear in all dialogue, signs, popups, the Town Map, Fly map, PokéNav, and save screen. Long names automatically switch to a narrower font on the Town Map, Fly map, PokéNav map, and save screen. Town sign slogans are unchanged. Internal map names (what Porymap shows, e.g. `LittlerootTown`) keep their original names.
+
+- **Known issue:** the map-name popup is too narrow for FETTUCCINE GRANDE CITY, so it is cut off there. Fixing it needs wider popup frame art (a later sprite task).
 
 | Original | New name | Pasta reference |
 | --- | --- | --- |
@@ -35,6 +41,23 @@ Every Hoenn town gets a pasta-themed name that echoes the original. Update the l
 | Pacifidlog Town | Paccheridlog Town | Paccheri |
 | Ever Grande City | Fettuccine Grande City | Fettuccine (the title) |
 | Battle Frontier | Bucatini Frontier | Bucatini |
+| Petalburg Woods | Pestoburg Woods | Pesto (matches Pestoburg) |
+| New Mauville | New Macaroville | Macaroni (matches Macaroville) |
+| Rusturf Tunnel | Rotiturf Tunnel | Rotini + Vermiturf |
+
+## Landmark names
+
+**Done.** Key landmarks also get pasta names, in location names, the PokéNav, and dialogue.
+
+| Original | New name | Pasta reference |
+| --- | --- | --- |
+| Mt. Chimney | Mt. Calzone | Calzone (oozing like lava) |
+| Mt. Pyre | Mt. Penne | Penne |
+| Meteor Falls | Meatball Falls | Meatballs |
+| Cave of Origin | Cave of Oregano | Oregano |
+| Sky Pillar | Sky Breadstick | Breadstick |
+| Terra Cave (Groudon) | Terramisu Cave | Tiramisu |
+| Marine Cave (Kyogre) | Marinara Cave | Marinara |
 
 ## Starters
 
@@ -52,6 +75,10 @@ Balance notes:
 - None of them can Mega Evolve, because the new Megas from Legends Z-A are excluded for now.
 - Roxanne's Rock types are tough for Rowlet and Scorbunny; consider slightly lower levels for her team or an easy early catch with a type advantage.
 - Scorbunny has the easiest time against Brian and Rowlet the hardest; tweak Brian's moves or levels based on the player's starter (Emerald already varies the rival's team by starter).
+
+**Done.** Birch's bag offers Rowlet (left), Scorbunny (middle), and Froakie (right). The woman in the Pestoburg Pokémon Center who explains your starter's type is updated too.
+
+- **Until the Brian feature is done,** the rival's teams still use Treecko, Torchic, and Mudkip.
 
 ## Shops and Pokémon Centers
 
@@ -71,6 +98,9 @@ Balance notes:
 - Sequence: she says **"Here, have a Jammie Dodger!"**, the **"item obtained" fanfare** plays, the party is healed, and she says **"Seems like your Pokémon loved it!"**
 - **Decided:** The healing machine animation is skipped.
 - This is one shared script, so the change applies to every Pokémon Center at once.
+- **Decided:** after the player blacks out and wakes up in a Pokémon Center, Nurse Joy says **"QUICK! TAKE THIS COOKIE!"**, the "item obtained" fanfare plays, the party is healed (no healing machine), and she says **"Looks like they ate it all, that was a close one..."** This replaces the usual "restore your Pokémon" and Potion-tip lines.
+- Blacking out before reaching the first Pokémon Center (Mom heals you at home) is unchanged.
+- **Done** (both the normal and blackout versions).
 
 ## Characters and sprites
 
@@ -191,16 +221,18 @@ All built into pokeemerald-expansion; the work is deciding where things appear.
 
 - **Mega Evolution.** Built in. Key Stone from Sam in Granite Cave. Mega Stone locations will be decided by Joe later; don't place them without asking. **Decided:** the new Megas from Legends Z-A are excluded for now.
 - **Primal Reversion (Kyogre and Groudon).** Built in; triggers when they hold the Blue Orb or Red Orb. **Decided:** the orbs come from the elderly couple at the Mt. Pyre summit, as in Omega Ruby/Alpha Sapphire (Emerald never gives them to the player).
-- **Double wild battles.** Config option with an adjustable encounter chance.
+- **Double wild battles.** Config option with an adjustable encounter chance. **Done:** 15% chance; always a single battle when the player has only one usable Pokémon.
 - **1v2 / 2v1 battles.** Supported by the engine; set up per trainer encounter in event scripts.
 
 ## Battle UI and speed
 
 Mostly quality-of-life config options. Feature names change between expansion versions, so read `include/config/` and report what this copy offers before editing.
 
-- **Poké Ball quick menu** ("last used ball" shortcut).
-- **Move description menu** in the fight menu.
-- **Shortcut to Run** in wild battles.
+**Done** except faster AI. Most were already on by default; Run shortcut and skipping the intro slide were turned on. Simultaneous HP reduction is built in (confirmed in playtest). Faster AI has no speed setting: it means choosing simpler AI flags for ordinary trainers, measured with `DEBUG_AI_DELAY_TIMER`.
+
+- **Poké Ball quick menu** ("last used ball" shortcut). R throws the last ball; hold R and press the D-Pad to switch.
+- **Move description menu** in the fight menu. Press L while choosing a move.
+- **Shortcut to Run** in wild battles. B jumps the cursor to Run.
 - **Faster battle intro.**
 - **Faster HP drain.**
 - **Simultaneous HP reduction** for spread moves in doubles.
@@ -208,10 +240,10 @@ Mostly quality-of-life config options. Feature names change between expansion ve
 
 ## Overworld and menus
 
-- **HMs are not permanent.** HM moves can be forgotten like normal moves. **Decided:** field moves only need the badge plus the HM in the bag; no Pokémon has to know the move.
-- **Move relearner in the party menu.** A "Relearn" option on each Pokémon. Check whether this expansion version includes it; if not, it's a custom menu addition.
+- **HMs are not permanent.** HM moves can be forgotten like normal moves. **Decided:** field moves only need the badge plus the HM in the bag; no Pokémon has to know the move. Forgetting HMs is **done** (config). Using field moves without knowing them is still custom work.
+- **Move relearner in the party menu.** A "Relearn" option on each Pokémon. This version already has a relearner on the summary screen's moves page. **Decided:** add it as a party-menu option anyway (custom).
 - **PC access anywhere via a bag item.** A key item that opens the storage system. Likely custom.
-- **"Move" as the default PC option.** Storage opens straight into Move mode. Small code change.
+- **"Move" as the default PC option.** Storage opens straight into Move mode. Small code change. "Move Pokémon" is already the first PC menu option, with the cursor on it; skipping the menu entirely would be a further small change.
 
 ## Randomizer option at game start
 
@@ -228,31 +260,33 @@ A yes/no choice at New Game that randomizes Pokémon for that save file. It must
 
 | Feature | Type of work | Status |
 | --- | --- | --- |
-| Pasta town names | Text, signs, Town Map | Not started |
-| Starters: Rowlet, Scorbunny, Froakie | Script and data change | Not started |
-| Nurse Joy Jammie Dodger heal | One shared script change | Not started |
+| Pasta town names | Text, signs, Town Map | Done |
+| Pasta landmark names | Text, Town Map | Done |
+| Pasta region name (replaces Hoenn) | Text | Open: name not chosen |
+| Starters: Rowlet, Scorbunny, Froakie | Script and data change | Done |
+| Nurse Joy Jammie Dodger heal (plus blackout cookie) | One shared script change | Done |
 | Retro Salvage Games shops (Jason, orange roofs) | Sprite recolor, palette, tiles, dialogue | Not started |
 | Main character sprites (Ethan and Kris) | Community sprites, no recolor | Not started |
-| Brian as rival (sprites, name, logic, anti-pasta story) | Art plus code and dialogue | Not started |
+| Brian as rival (sprites, name, logic, anti-pasta story) | Art plus code and dialogue | Not started (rival teams still use old Hoenn starters) |
 | Brian replaces Wally (Petalburg catch, Mauville, Victory Road) | Scripts and dialogue | Not started |
 | Brian as Champion, Wallace outside the Elite Four | Scripts, trainer data, dialogue | Not started |
 | Retrotopia cast: Alan (Birch), Sam (Steven), Joe (designer) | Custom sprites, scripts, dialogue | Not started |
 | All Pokémon through Gen IX | Built in; plan placement | Not started |
 | Items, abilities, move effects through Gen IX | Built in; plan placement | Not started |
-| Physical/special split | Built in | Not started |
+| Physical/special split | Built in | Done (built in) |
 | Mega Evolution (Key Stone from Sam in Granite Cave) | Built in; place Key Stone and Mega Stones | Not started |
 | Primal Reversion | Built in; place Blue/Red Orbs | Not started |
-| Double wild battles | Config toggle | Not started |
+| Double wild battles | Config toggle | Done (config, 15%) |
 | 1v2 / 2v1 battles | Event scripting | Not started |
-| Poké Ball quick menu | Config toggle | Not started |
-| Move description menu | Verify in config | Not started |
-| Shortcut to Run | Verify in config | Not started |
-| Faster battle intro | Config toggle | Not started |
-| Faster HP drain | Config toggle | Not started |
-| Simultaneous HP reduction | Verify in config | Not started |
+| Poké Ball quick menu | Config toggle | Done (built in) |
+| Move description menu | Verify in config | Done (built in) |
+| Shortcut to Run | Verify in config | Done (config) |
+| Faster battle intro | Config toggle | Done (config) |
+| Faster HP drain | Config toggle | Done (built in) |
+| Simultaneous HP reduction | Verify in config | Done (built in) |
 | Faster AI calculations | Config plus tuning | Not started |
-| Non-permanent HMs | Config toggle | Not started |
-| Move relearner in party menu | Verify, else custom | Not started |
+| Non-permanent HMs | Config toggle | Partly done: HMs forgettable (config); field moves without knowing the move still custom |
+| Move relearner in party menu | Custom (party-menu option) | Not started (summary-screen relearner already exists) |
 | PC access via bag item, "Move" default in storage | Custom (small) | Not started |
 | Randomizer at New Game | Custom (large) | Not started |
 
@@ -260,10 +294,10 @@ A yes/no choice at New Game that randomizes Pokémon for that save file. It must
 
 Work from easiest to hardest so there's always a playable build.
 
-1. Build pokeemerald-expansion unchanged and confirm it runs in mGBA. (Intel Mac with MacPorts, not Homebrew.)
-2. Audit `include/config/` and report which "Verify" features exist in this version.
-3. Turn on the config toggles (battle speed, double wilds, HMs) and playtest.
-4. Small visible changes: town names, Nurse Joy, starters.
+1. ~~Build pokeemerald-expansion unchanged and confirm it runs in mGBA. (Intel Mac with MacPorts, not Homebrew.)~~ **Done.** devkitARM 16.1.0; the hack lives on the `fettuccine` git branch, based on upstream commit `90c30f02ae`.
+2. ~~Audit `include/config/` and report which "Verify" features exist in this version.~~ **Done.**
+3. ~~Turn on the config toggles (battle speed, double wilds, HMs) and playtest.~~ **Done.** Legends Z-A Megas turned off.
+4. ~~Small visible changes: town names, Nurse Joy, starters.~~ **Done**, plus landmark names.
 5. Script the Key Stone (Sam in Granite Cave), Mega Stones, and Orbs into the story.
 6. Story and character changes: Brian (rival, Wally, Champion), the Retrotopia cast, Retro Salvage Games.
 7. Small custom features: PC item and Move-default storage; party-menu relearner if needed.
