@@ -255,8 +255,8 @@ MeteorFalls_1F_1R_Text_BeSeeingYouTeamAqua:
 	.string "Heh, it doesn't matter!\p"
 	.string "We've got the METEORITE, so off to\n"
 	.string "MT. CALZONE we go!\p"
-	.string "Hehehe! Be seeing you, you TEAM\n"
-	.string "MARINARA dingbats!$"
+	.string "Hehehe! Be seeing you, you soggy\n"
+	.string "sauce-slingers!$"
 
 MeteorFalls_1F_1R_Text_ArchieSeenYouBefore:
 	.string "ARCHIE: Didn't I see you before?\n"
@@ -268,10 +268,10 @@ MeteorFalls_1F_1R_Text_ArchieSeenYouBefore:
 	.string "You're one odd kid.\p"
 	.string "TEAM AL DENTE is a dangerous group of\n"
 	.string "total fanatics.\p"
-	.string "They engage in destruction, claiming\n"
-	.string "to expand the land mass.\p"
+	.string "They would bring every sea in the\n"
+	.string "world to a boil, just to cook it.\p"
 	.string "They are the rivals to us,\n"
-	.string "the sea-loving TEAM MARINARA!$"
+	.string "the sauce-loving TEAM MARINARA!$"
 
 MeteorFalls_1F_1R_Text_BossWeShouldChaseMagma:
 	.string "BOSS, we should give chase to\n"

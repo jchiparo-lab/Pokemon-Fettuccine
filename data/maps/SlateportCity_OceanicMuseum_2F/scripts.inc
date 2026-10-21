@@ -291,11 +291,12 @@ SlateportCity_OceanicMuseum_2F_Text_WereTeamAqua:
 
 SlateportCity_OceanicMuseum_2F_Text_Grunt1Defeat:
 	.string "Awaaaah!\n"
-	.string "A kid beat me!$"
+	.string "I got sauced by a kid!$"
 
 SlateportCity_OceanicMuseum_2F_Text_BossGoingToBeFurious:
 	.string "Oh, man, what a disaster…\n"
-	.string "The BOSS is going to be furious…$"
+	.string "The BOSS is gonna be so saucy…\p"
+	.string "I mean, furious!$"
 
 SlateportCity_OceanicMuseum_2F_Text_LetMeTakeCareOfThis:
 	.string "Humph, sniveling wimp!\n"
@@ -303,13 +304,13 @@ SlateportCity_OceanicMuseum_2F_Text_LetMeTakeCareOfThis:
 
 SlateportCity_OceanicMuseum_2F_Text_Grunt2Defeat:
 	.string "What?!\n"
-	.string "I lost, too!$"
+	.string "I got drained, too!$"
 
 SlateportCity_OceanicMuseum_2F_Text_MeddlingKid:
 	.string "Now what? If we don't get the parts,\n"
 	.string "we're in for it!\p"
-	.string "Arrgh, I didn't count on being meddled\n"
-	.string "with by some meddling kid!$"
+	.string "Arrgh, I didn't count on some kid\n"
+	.string "stirring the pot!$"
 
 SlateportCity_OceanicMuseum_2F_Text_CameToSeeWhatsTakingSoLong:
 	.string "I came to see what was taking so\n"
@@ -318,7 +319,7 @@ SlateportCity_OceanicMuseum_2F_Text_CameToSeeWhatsTakingSoLong:
 
 SlateportCity_OceanicMuseum_2F_Text_ArchieWarning:
 	.string "We are TEAM MARINARA,\n"
-	.string "and we love the sea!\p"
+	.string "and we live for the sauce!\p"
 	.string "And I am TEAM MARINARA's leader,\n"
 	.string "ARCHIE!\p"
 	.string "What makes you interfere with us?\p"
@@ -328,12 +329,14 @@ SlateportCity_OceanicMuseum_2F_Text_ArchieWarning:
 	.string "You're not dressed for the part.\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
-	.string "POKéMON, people… All life depends on\n"
-	.string "the sea.\p"
+	.string "Look at this world. Plain. Dry.\n"
+	.string "Like noodles no one bothered to dress.\p"
+	.string "POKéMON, people… Every living thing\n"
+	.string "is waiting for its sauce.\p"
 	.string "So, TEAM MARINARA is dedicated to\n"
-	.string "the expansion of the sea.\p"
-	.string "Don't you agree? What we are doing\n"
-	.string "is a magnificent undertaking.\p"
+	.string "covering the world in marinara.\p"
+	.string "Let the seas run red and rich!\n"
+	.string "Is that not a magnificent undertaking?\p"
 	.string "Ah, fine…\n"
 	.string "You're still too young to understand\l"
 	.string "our noble objective.\p"

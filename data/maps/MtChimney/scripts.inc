@@ -556,20 +556,20 @@ MtChimney_Text_MaxieIntro:
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
 	.string "I'd heard ARCHIE bemoaning a child\n"
-	.string "who's been meddling in TEAM MARINARA's\l"
-	.string "affairs.\p"
+	.string "who's been meddling in TEAM\l"
+	.string "MARINARA's affairs.\p"
 	.string "It must be you he meant.\p"
 	.string "Humph! So you're thinking of\n"
 	.string "interfering with us, TEAM AL DENTE?\p"
 	.string "Now you listen.\n"
-	.string "Long ago, living things used the\l"
-	.string "land to live and grow.\p"
-	.string "That is why land is all important!\n"
-	.string "It is the cradle of all!\p"
-	.string "That is why TEAM AL DENTE is dedicated\n"
-	.string "to the expansion of the land mass.\p"
-	.string "It is for further advancement of\n"
-	.string "humankind and POKéMON!\p"
+	.string "Pasta is hard and brittle until it\l"
+	.string "meets boiling water.\p"
+	.string "Heat is what makes it tender.\n"
+	.string "Heat is what makes it whole.\p"
+	.string "That is why TEAM AL DENTE will bring\n"
+	.string "every sea in the world to a boil.\p"
+	.string "One great pot, perfectly cooked, for\n"
+	.string "humankind and POKéMON alike!\p"
 	.string "And for that, we need the power of\n"
 	.string "what sleeps within this mountain…\p"
 	.string "Oh! There was no need for you to\n"
@@ -647,20 +647,20 @@ MtChimney_Text_MeteoritesPackAmazingPower:
 MtChimney_Text_YouBetterNotMessWithUs:
 	.string "You'd better not mess with us!\p"
 	.string "We're trying to awaken that thing\n"
-	.string "for the benefit of everyone!$"
+	.string "so everyone gets a hot meal!$"
 
 MtChimney_Text_AquasNameSimilar:
 	.string "We're TEAM AL DENTE!\p"
 	.string "They're TEAM MARINARA!\p"
-	.string "It totally annoys me that they'd\n"
-	.string "use a name like ours!$"
+	.string "They want sauce before the noodles\n"
+	.string "are even cooked! Disgusting!$"
 
 MtChimney_Text_DouseThemInFire:
 	.string "Yeah!\n"
-	.string "Douse them in fire!$"
+	.string "Turn up the heat!$"
 
 MtChimney_Text_KeepMakingMoreLand:
-	.string "We're going to keep making more land!$"
+	.string "We're gonna keep the pot boiling!$"
 
 MtChimney_Text_Bufoh:
 	.string "Bufoh!$"
@@ -672,8 +672,10 @@ MtChimney_Text_ArchieGoStopTeamMagma:
 	.string "of TEAM AL DENTE are up to!\p"
 	.string "They're trying to inject the stolen\n"
 	.string "METEORITE's power into the volcano!\p"
-	.string "Doing something like that will cause\n"
-	.string "the volcano's eruption!$"
+	.string "If it erupts, the heat will set the\n"
+	.string "seas boiling!\p"
+	.string "Boiling water and not a drop of\n"
+	.string "sauce… Unthinkable!$"
 
 MtChimney_Text_ArchieIHaveMyHandsFull:
 	.string "ARCHIE: Grrr…\p"
@@ -685,8 +687,8 @@ MtChimney_Text_ArchieIHaveMyHandsFull:
 MtChimney_Text_ArchieThankYou:
 	.string "ARCHIE: {PLAYER}!\n"
 	.string "Thank you!\p"
-	.string "With your help, we thwarted TEAM\n"
-	.string "AL DENTE's destructive plan!\p"
+	.string "With your help, we thwarted\n"
+	.string "TEAM AL DENTE's destructive plan!\p"
 	.string "But… You…\n"
 	.string "Whose side are you on?\p"
 	.string "Ah, it doesn't matter.\p"
@@ -699,14 +701,14 @@ MtChimney_Text_MagmaOutnumbersUs:
 	.string "We can't keep up with them!$"
 
 MtChimney_Text_LessHabitatForWaterPokemon:
-	.string "If they expand the land, there'll be\n"
-	.string "less habitats for WATER POKéMON!$"
+	.string "If they boil the seas, the WATER\n"
+	.string "POKéMON will get poached!$"
 
 MtChimney_Text_MagmasNameSimilar:
 	.string "We're TEAM MARINARA!\p"
 	.string "They're TEAM AL DENTE!\p"
-	.string "It burns me up that they'd use such\n"
-	.string "a confusing name!$"
+	.string "All they do is boil stuff!\n"
+	.string "Boiling isn't a personality!$"
 
 MtChimney_Text_Bushaa:
 	.string "Bushaa!$"
