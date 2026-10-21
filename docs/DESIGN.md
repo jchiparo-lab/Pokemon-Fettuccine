@@ -177,7 +177,9 @@ Story dialogue for both leaders and their admins.
 
 Status:
 
-- **Done:** team names in all dialogue and signs; trainer classes TEAM MARINARA, MARINARA ADMIN, MARINARA LEADER, TEAM AL DENTE, AL DENTE ADMIN, AL DENTE LEADER; hideouts renamed MARINARA HIDEOUT and AL DENTE HIDEOUT; the Magma Emblem key item is now the Al Dente Emblem. Leader and admin names (Archie, Maxie, etc.) are unchanged.
+- **Done:** team names in all dialogue and signs; trainer classes TEAM MARINARA, MARINARA ADMIN, MARINARA LEADER, TEAM AL DENTE, AL DENTE ADMIN, AL DENTE LEADER; hideouts renamed MARINARA HIDEOUT and AL DENTE HIDEOUT; the Magma Emblem key item is now the Al Dente Emblem. Admin names (Shelly, Matt, Tabitha, Courtney) are unchanged.
+- **Done:** leaders renamed. Archie is now **MARZANO** (San Marzano, the marinara tomato) and Maxie is now **BOLLITO** (Italian for "boiled").
+- **Done:** sauce-vs-boil dialogue for the first key scenes: Archie's introduction at the Oceanic Museum, Meatball Falls, and Maxie's introduction at the Mt. Calzone summit. Joe may revise these lines later. Remaining scenes, in story order: Weather Institute, Mt. Penne summit, the two hideouts, Mostaccideep Space Center, Seafloor Cavern, Sugopolis.
 - **Not started:** recolored grunt and admin sprites (art), and new sauce/boil story dialogue for the leaders and admins (needs Joe's direction on what they say).
 - **Decided:** dialogue tone is mostly serious for leaders and admins (sincere villains whose worldview is built on pasta), with the jokes and puns going to the grunts.
 - **Decided:** rewrite key scenes first, starting with the leader introductions (Archie at the Oceanic Museum, Maxie at Meatball Falls), then the other scenes one at a time.
@@ -287,7 +289,8 @@ A yes/no choice at New Game that randomizes Pokémon for that save file. It must
 | Pasta landmark names | Text, Town Map | Done |
 | Villain teams: Marinara and Al Dente (names) | Text, trainer classes | Done |
 | Villain teams: recolored sprites | Palette edits | Not started |
-| Villain teams: sauce vs. boil story dialogue | Dialogue | Not started |
+| Villain teams: sauce vs. boil story dialogue | Dialogue | In progress (leader introductions done) |
+| Villain leaders renamed: Marzano and Bollito | Text, trainer data | Done |
 | Pasta region name: Pastalia (replaces Hoenn) | Text, plus 2 PokéNav graphics | Text done; PokéNav "HOENN MAP" art still to redraw |
 | Starters: Rowlet, Scorbunny, Froakie | Script and data change | Done |
 | Nurse Joy Jammie Dodger heal (plus blackout cookie) | One shared script change | Done |
