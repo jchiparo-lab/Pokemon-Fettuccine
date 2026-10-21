@@ -58,7 +58,7 @@ Every town gets a pasta-themed name that echoes the original. Update the locatio
 | Cave of Origin | Cave of Oregano | Oregano |
 | Sky Pillar | Sky Breadstick | Breadstick |
 | Terra Cave (Groudon) | Terramisu Cave | Tiramisu |
-| Marine Cave (Kyogre) | Marinara Cave | Marinara |
+| Marine Cave (Kyogre) | Marsala Cave | Marsala sauce (renamed from Marinara Cave to avoid clashing with Team Marinara) |
 
 ## Starters
 
@@ -179,9 +179,10 @@ Status:
 
 - **Done:** team names in all dialogue and signs; trainer classes TEAM MARINARA, MARINARA ADMIN, MARINARA LEADER, TEAM AL DENTE, AL DENTE ADMIN, AL DENTE LEADER; hideouts renamed MARINARA HIDEOUT and AL DENTE HIDEOUT; the Magma Emblem key item is now the Al Dente Emblem. Leader and admin names (Archie, Maxie, etc.) are unchanged.
 - **Not started:** recolored grunt and admin sprites (art), and new sauce/boil story dialogue for the leaders and admins (needs Joe's direction on what they say).
-- Note: Kyogre's cave is MARINARA CAVE, sharing a name with Team Marinara. That fits the theme, but rename the cave if it gets confusing.
+- **Decided:** dialogue tone is mostly serious for leaders and admins (sincere villains whose worldview is built on pasta), with the jokes and puns going to the grunts.
+- **Decided:** rewrite key scenes first, starting with the leader introductions (Archie at the Oceanic Museum, Maxie at Meatball Falls), then the other scenes one at a time.
 
-Open (idea to consider): both teams want more pasta, while Brian wants it gone. He could show up during their schemes, furious, giving the player a rare moment where they're on the same side.
+**Decided:** Brian does not show up during the teams' schemes. (Considered: both teams want more pasta while Brian wants it gone, so he could have appeared furious, on the player's side. Dropped.)
 
 ## Retrotopia cast
 
