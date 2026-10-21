@@ -830,7 +830,7 @@ OneIsland_PokemonCenter_1F_Text_ManagedToLinkWithHoennThankYou::
 	.string "{PLAYER}…\n"
 	.string "{PLAYER}, I did it!\p"
 	.string "I've managed to link up with\n"
-	.string "TRAINERS in the HOENN region!\p"
+	.string "TRAINERS in the PASTALIA region!\p"
 	.string "Finally, the Network Machine is\n"
 	.string "fully operational!\p"
 	.string "{PLAYER}, I owe it all to you!\p"
@@ -914,7 +914,7 @@ OneIsland_PokemonCenter_1F_Text_MachineLinkedWithKantoAndHoenn::
 	.string "Network Machine\n"
 	.string "Link Level 2\p"
 	.string "Link established with the KANTO\n"
-	.string "and HOENN regions.$"
+	.string "and PASTALIA regions.$"
 
 OneIsland_PokemonCenter_1F_Text_ObtainedTriPass::
 	.string "Obtained the TRI-PASS!$"

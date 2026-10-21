@@ -952,7 +952,8 @@ Route109_Text_PaulNotEnoughPokemon:
 
 Route109_Text_MelIntro:
 	.string "MEL: We're, like, totally in love.\n"
-	.string "Our romance is heating up all of HOENN!$"
+	.string "Our romance is heating up all of\l"
+	.string "PASTALIA!$"
 
 Route109_Text_MelDefeated:
 	.string "MEL: We lost, and it's my fault!\n"

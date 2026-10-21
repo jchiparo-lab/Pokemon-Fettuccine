@@ -552,12 +552,12 @@ MtPyre_Summit_Text_WillYouHearOutMyTale:
 	.string "MT. PENNE is where we calm the spirits\n"
 	.string "of POKéMON that have passed on…\p"
 	.string "This is a high place where one can\n"
-	.string "see all of HOENN…\p"
+	.string "see all of PASTALIA…\p"
 	.string "The disembodied spirits of POKéMON\n"
 	.string "must find solace here…\p"
 	.string "Is it coincidence that you are here…\p"
 	.string "Will you hear out my tale? A tale long\n"
-	.string "told in the HOENN region?$"
+	.string "told in the PASTALIA region?$"
 
 MtPyre_Summit_Text_GroudonKyogreTale:
 	.string "It happened long, long ago…\p"
@@ -590,11 +590,11 @@ MtPyre_Summit_Text_MaxieSilence:
 
 MtPyre_Summit_Text_HearTheNewLegendOfHoenn:
 	.string "It is my role to pass on the legends\n"
-	.string "of HOENN to future generations.\p"
+	.string "of PASTALIA to future generations.\p"
 	.string "And the crisis that just ended in\n"
 	.string "SUGOPOLIS rewrote a legend…\p"
 	.string "Have you the time to hear the new\n"
-	.string "legend of HOENN?$"
+	.string "legend of PASTALIA?$"
 
 MtPyre_Summit_Text_HoennTrioTale:
 	.string "It happened long, long ago…\p"

@@ -2456,8 +2456,8 @@ MatchCall_Text_May14::
 
 MatchCall_Text_May15::
 	.string "MAY: There isn't a single TRAINER\n"
-	.string "left in HOENN who doesn't know who\l"
-	.string "you are, {PLAYER}{KUN}!\p"
+	.string "left in PASTALIA who doesn't know\l"
+	.string "who you are, {PLAYER}{KUN}!\p"
 	.string "When I tell people that I'm friends\n"
 	.string "with you, {PLAYER}{KUN}, they're all\l"
 	.string "surprised!$"
@@ -2582,8 +2582,8 @@ MatchCall_Text_Brendan14::
 
 MatchCall_Text_Brendan15::
 	.string "BRENDAN: There isn't a TRAINER in\n"
-	.string "all of HOENN who doesn't know who\l"
-	.string "you are, {PLAYER}!\p"
+	.string "all of PASTALIA who doesn't know\l"
+	.string "who you are, {PLAYER}!\p"
 	.string "When I tell people that I'm friends\n"
 	.string "with you, {PLAYER}, they get pretty\l"
 	.string "envious!$"

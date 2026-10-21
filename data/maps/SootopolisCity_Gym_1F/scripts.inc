@@ -189,7 +189,7 @@ SootopolisCity_Gym_1F_Text_GymGuideAdvice:
 
 SootopolisCity_Gym_1F_Text_GymGuidePostVictory:
 	.string "Yow! You've beaten even JUAN, who\n"
-	.string "was supposedly the best in all HOENN!\p"
+	.string "was supposedly the best in all PASTALIA!\p"
 	.string "Okay! Check out your TRAINER CARD.\p"
 	.string "If you've gotten all the BADGES, you're\n"
 	.string "set for the POKéMON LEAGUE challenge!$"
@@ -259,17 +259,18 @@ SootopolisCity_Gym_1F_Text_RegisteredJuan:
 
 SootopolisCity_Gym_1F_Text_JuanPostBattle:
 	.string "The TRAINERS who have gathered all\n"
-	.string "the GYM BADGES of HOENN should make\l"
+	.string "the GYM BADGES of PASTALIA should make\l"
 	.string "way to the ultimate destination.\p"
 	.string "The POKéMON LEAGUE.\p"
 	.string "Travel to the easternmost reaches of\n"
-	.string "HOENN, to the island FETTUCCINE GRANDE.\p"
+	.string "PASTALIA, to the island FETTUCCINE\l"
+	.string "GRANDE.\p"
 	.string "There, you shall find the POKéMON\n"
 	.string "LEAGUE.$"
 
 SootopolisCity_Gym_1F_Text_GoGetFortreeBadge:
 	.string "There remains but one BADGE to\n"
-	.string "obtain in HOENN.\p"
+	.string "obtain in PASTALIA.\p"
 	.string "If you wish to challenge the POKéMON\n"
 	.string "LEAGUE, you must obtain the last\l"
 	.string "BADGE from the GYM in FORTELLINI.$"
