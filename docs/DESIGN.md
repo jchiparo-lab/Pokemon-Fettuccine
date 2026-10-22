@@ -247,7 +247,7 @@ All built into pokeemerald-expansion; the work is deciding where things appear.
 
 ## Battle mechanics
 
-- **Mega Evolution.** Built in. Key Stone from Sam in Granite Cave (the player needs the MEGA RING item to Mega Evolve; that scene is not scripted yet). **Decided:** the new Megas from Legends Z-A are excluded for now.
+- **Mega Evolution.** Built in. **Done:** Steven (Sam) gives the **Key Stone** in Granite Cave, right after TM Steel Wing, and hints that a Mega Stone is hidden in the same cave (the Aggronite). The engine's Mega Ring item is renamed Key Stone, in the bag and in the battle line "…is reacting to [trainer]'s Key Stone!". Its bag icon is still the ring art (a stone icon would be an art task). **Decided:** the new Megas from Legends Z-A are excluded for now.
   - **Decided: no Mega Stone is locked behind the post-game.** Every stone is obtainable before the final battle with Brian. Stones are found as item balls, and each appears around when its Pokémon can reach its final form.
   - **Done: every Mega-capable Pokémon is now obtainable before Brian** (see "Pokémon added for Mega Evolution" below), so all 46 non-Z-A Mega Stones are in the game.
   - **Decided: Marzano Mega Evolves Camerupt** (Space Center double battle) and **Parmigiano Mega Evolves Sharpedo** (Seafloor Cavern).
@@ -381,7 +381,7 @@ A yes/no choice at New Game that randomizes Pokémon for that save file. It must
 | All Pokémon through Gen IX | Built in; plan placement | Not started |
 | Items, abilities, move effects through Gen IX | Built in; plan placement | Not started |
 | Physical/special split | Built in | Done (built in) |
-| Mega Evolution (Key Stone from Sam in Granite Cave) | Built in; place Key Stone and Mega Stones | In progress (all Mega Stones and Mega-capable Pokémon placed; Key Stone scene next) |
+| Mega Evolution (Key Stone from Sam in Granite Cave) | Built in; place Key Stone and Mega Stones | Done |
 | Primal Reversion | Built in; place Blue/Red Orbs | Not started |
 | Double wild battles | Config toggle | Done (config, 15%) |
 | 1v2 / 2v1 battles | Event scripting | Not started |
