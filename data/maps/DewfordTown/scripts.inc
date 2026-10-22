@@ -789,3 +789,60 @@ DewfordTown_Text_YeahDefinitionOfInRightNow:
 	.string "Yeah, absolutely right!\p"
 	.string "“{STR_VAR_1}” is the\n"
 	.string "definition of “in” right now.$"
+
+@ Fettuccine: Riolu egg gift
+DewfordTown_EventScript_RioluEggBlackBelt::
+	lock
+	faceplayer
+	goto_if_set FLAG_RECEIVED_RIOLU_EGG, DewfordTown_EventScript_RioluEggReceived
+	msgbox DewfordTown_Text_RioluEggOffer, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, DewfordTown_EventScript_RioluEggDeclined
+	getpartysize
+	goto_if_eq VAR_RESULT, PARTY_SIZE, DewfordTown_EventScript_RioluEggNoRoom
+	setflag FLAG_RECEIVED_RIOLU_EGG
+	playfanfare MUS_OBTAIN_ITEM
+	message DewfordTown_Text_ReceivedRioluEgg
+	waitfanfare
+	giveegg SPECIES_RIOLU
+	msgbox DewfordTown_Text_RioluEggAdvice, MSGBOX_DEFAULT
+	release
+	end
+
+DewfordTown_EventScript_RioluEggReceived::
+	msgbox DewfordTown_Text_RioluEggAdvice, MSGBOX_DEFAULT
+	release
+	end
+
+DewfordTown_EventScript_RioluEggDeclined::
+	msgbox DewfordTown_Text_RioluEggDeclined, MSGBOX_DEFAULT
+	release
+	end
+
+DewfordTown_EventScript_RioluEggNoRoom::
+	msgbox DewfordTown_Text_RioluEggNoRoom, MSGBOX_DEFAULT
+	release
+	end
+
+DewfordTown_Text_RioluEggOffer:
+	.string "Hoo-hah! I train with my POKéMON\n"
+	.string "every morning by the sea.\p"
+	.string "This EGG came from my partner.\n"
+	.string "It needs a TRAINER with a strong\l"
+	.string "spirit to hatch it.\p"
+	.string "Will you take it?$"
+
+DewfordTown_Text_ReceivedRioluEgg:
+	.string "{PLAYER} received the EGG.$"
+
+DewfordTown_Text_RioluEggAdvice:
+	.string "Treat that POKéMON with kindness.\n"
+	.string "A strong bond brings out its\l"
+	.string "true power!$"
+
+DewfordTown_Text_RioluEggDeclined:
+	.string "Hoo… Come back when your spirit\n"
+	.string "is ready.$"
+
+DewfordTown_Text_RioluEggNoRoom:
+	.string "Your party is full!\n"
+	.string "Make room, then come back.$"

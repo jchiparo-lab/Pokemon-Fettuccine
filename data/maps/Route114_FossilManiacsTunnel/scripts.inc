@@ -34,6 +34,7 @@ Route114_FossilManiacsTunnel_EventScript_ManiacMentionCaveIn::
 Route114_FossilManiacsTunnel_EventScript_FossilManiac::
 	lock
 	faceplayer
+	goto_if_unset FLAG_RECEIVED_OLD_AMBER, Route114_FossilManiacsTunnel_EventScript_GiveOldAmber
 	goto_if_set FLAG_RECEIVED_REVIVED_FOSSIL_MON, Route114_FossilManiacsTunnel_EventScript_PlayerRevivedFossil
 	checkitem ITEM_ROOT_FOSSIL
 	goto_if_eq VAR_RESULT, TRUE, Route114_FossilManiacsTunnel_EventScript_PlayerHasFossil
@@ -89,3 +90,24 @@ Route114_FossilManiacsTunnel_Text_NotSafeThatWay:
 	.string "But I've left it alone because I don't\n"
 	.string "think there are any FOSSILS there…$"
 
+@ Fettuccine: Old Amber gift, revived into Aerodactyl at DEVON
+Route114_FossilManiacsTunnel_EventScript_GiveOldAmber::
+	msgbox Route114_FossilManiacsTunnel_Text_TakeOldAmber, MSGBOX_DEFAULT
+	giveitem ITEM_OLD_AMBER
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_RECEIVED_OLD_AMBER
+	msgbox Route114_FossilManiacsTunnel_Text_DevonCanReviveAmber, MSGBOX_DEFAULT
+	release
+	end
+
+Route114_FossilManiacsTunnel_Text_TakeOldAmber:
+	.string "Fossils, fossils, fossils!\n"
+	.string "I can never get enough of them!\p"
+	.string "Here, a fellow fan should have this.\n"
+	.string "It's a piece of OLD AMBER.$"
+
+Route114_FossilManiacsTunnel_Text_DevonCanReviveAmber:
+	.string "There's a POKéMON sealed inside!\p"
+	.string "I hear the DEVON CORPORATION in\n"
+	.string "ROTINIBORO can bring fossils back\l"
+	.string "to life. Give it a try!$"

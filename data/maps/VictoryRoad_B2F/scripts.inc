@@ -106,3 +106,24 @@ VictoryRoad_B2F_Text_DiannePostBattle:
 	.string "You do have guts! I like that!\n"
 	.string "Keep it going!$"
 
+@ Fettuccine: Mewtwo one-time encounter. If it isn't caught, it stays so the player can try again.
+VictoryRoad_B2F_EventScript_Mewtwo::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_MEWTWO, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_MEWTWO, 70
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	dowildbattle
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_CAUGHT, VictoryRoad_B2F_EventScript_CaughtMewtwo
+	release
+	end
+
+VictoryRoad_B2F_EventScript_CaughtMewtwo::
+	setflag FLAG_HIDE_VICTORY_ROAD_MEWTWO
+	goto Common_EventScript_RemoveStaticPokemon
+	end

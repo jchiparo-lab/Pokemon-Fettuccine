@@ -78,10 +78,10 @@
 #define FLAG_ITEM_ROUTE_123_LINKING_CORD    0x38
 #define FLAG_ITEM_NEW_MAUVILLE_METAL_COAT    0x39
 #define FLAG_ITEM_ROUTE_121_METAL_COAT    0x3A
-#define FLAG_UNUSED_0x03B    0x3B // Unused Flag
-#define FLAG_UNUSED_0x03C    0x3C // Unused Flag
-#define FLAG_UNUSED_0x03D    0x3D // Unused Flag
-#define FLAG_UNUSED_0x03E    0x3E // Unused Flag
+#define FLAG_RECEIVED_OLD_AMBER    0x3B
+#define FLAG_RECEIVED_RIOLU_EGG    0x3C
+#define FLAG_HIDE_METEOR_FALLS_DIANCIE    0x3D
+#define FLAG_HIDE_VICTORY_ROAD_MEWTWO    0x3E
 #define FLAG_UNUSED_0x03F    0x3F // Unused Flag
 #define FLAG_UNUSED_0x040    0x40 // Unused Flag
 #define FLAG_UNUSED_0x041    0x41 // Unused Flag
