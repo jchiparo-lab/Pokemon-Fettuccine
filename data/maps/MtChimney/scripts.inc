@@ -614,9 +614,10 @@ MtChimney_Text_TabithaPostBattle:
 MtChimney_Text_Grunt2Intro:
 	.string "We of TEAM MARINARA are working\n"
 	.string "hard for everyone's sake.\p"
-	.string "Like, if that thing's power made more\n"
-	.string "land, there'd be more places to live.\p"
-	.string "Everyone'd be happy!$"
+	.string "Like, once that thing wakes up, every\n"
+	.string "volcano will pour out red sauce.\p"
+	.string "Spaghetti night for the whole world,\n"
+	.string "forever! Everyone'd be happy!$"
 
 MtChimney_Text_Grunt2Defeat:
 	.string "Hunh?\n"
@@ -629,16 +630,17 @@ MtChimney_Text_Grunt2PostBattle:
 	.string "in our way?$"
 
 MtChimney_Text_Grunt1Intro:
-	.string "If there were more land, I'd be able\n"
-	.string "to get a big house of my own!\p"
-	.string "I'm going to build it on hardened lava!$"
+	.string "Once this volcano erupts, rivers of\n"
+	.string "marinara will flow down the slopes!\p"
+	.string "I'm going to build a big house right\n"
+	.string "on the bank, with a bread-dunking dock!$"
 
 MtChimney_Text_Grunt1Defeat:
-	.string "My dream of a big house…$"
+	.string "My dream of a sauce-side house…$"
 
 MtChimney_Text_Grunt1PostBattle:
-	.string "A kid like you, you ought to be\n"
-	.string "splashing about in the waves!$"
+	.string "A kid like you ought to be at home\n"
+	.string "eating plain buttered noodles!$"
 
 MtChimney_Text_TeamAquaAlwaysMessingWithPlans:
 	.string "That annoying TEAM ALFREDO…\n"
