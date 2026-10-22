@@ -162,27 +162,29 @@ Brian is a proud Canadian who hates all Italian food. He wants to become Champio
 - **Watch out for Fire.** Abomasnow, Sawsbuck, and Ninetales are all weak to it. Bibarel and Swanna can switch in against Fire types; give the others coverage moves.
 - Earlier battles use pre-evolved forms (Ducklett, Snover, Bidoof, Stantler, Deerling, Alolan Vulpix) as the team grows.
 
-## Villain teams: Sauce vs. Boil
+## Villain teams: White Sauce vs. Red Sauce
 
-Decided: Team Aqua and Team Magma become two halves of the same pasta dish, fighting over which comes first: the sauce or the noodles.
+Decided: Team Aqua and Team Magma become two rival sauce fanatics, each convinced theirs is the one true sauce. (This replaced the earlier "sauce vs. boil" theme, Team Marinara vs. Team Al Dente.)
 
-Team Marinara (replaces Team Aqua). Wants to flood the world with marinara sauce. Kyogre's endless rain becomes a downpour of sauce.
-Team Al Dente (replaces Team Magma). Wants to boil the oceans away and turn the whole world into one giant pot of cooking pasta. Groudon's heat brings the water to a boil.
+**Team Alfredo** (replaces Team Aqua). Obsessed with white sauce: Alfredo and sauces like it. Wants to wake Kyogre and flood the world with their ideal sauce.
+**Team Marinara** (replaces Team Magma). Passionate about red sauce: marinara and sauces like it. Wants to wake Groudon so the world's volcanoes spray red sauce everywhere.
 
 What this touches:
 
-Team names in all dialogue, signs, and trainer classes (for example, "Team Marinara Grunt").
+Team names in all dialogue, signs, and trainer classes (for example, "Team Alfredo Grunt").
 Recolored grunt and admin sprites to match each team.
 Story dialogue for both leaders and their admins.
 
 Status:
 
-- **Done:** team names in all dialogue and signs; trainer classes TEAM MARINARA, MARINARA ADMIN, MARINARA LEADER, TEAM AL DENTE, AL DENTE ADMIN, AL DENTE LEADER; hideouts renamed MARINARA HIDEOUT and AL DENTE HIDEOUT; the Magma Emblem key item is now the Al Dente Emblem. Admin names (Shelly, Matt, Tabitha, Courtney) are unchanged.
-- **Done:** leaders renamed. Archie is now **MARZANO** (San Marzano, the marinara tomato) and Maxie is now **BOLLITO** (Italian for "boiled").
-- **Done:** sauce-vs-boil dialogue for the first key scenes: Archie's introduction at the Oceanic Museum, Meatball Falls, and Maxie's introduction at the Mt. Calzone summit. Joe may revise these lines later. Remaining scenes, in story order: Weather Institute, Mt. Penne summit, the two hideouts, Mostaccideep Space Center, Seafloor Cavern, Sugopolis.
-- **Not started:** recolored grunt and admin sprites (art), and new sauce/boil story dialogue for the leaders and admins (needs Joe's direction on what they say).
-- **Decided:** dialogue tone is mostly serious for leaders and admins (sincere villains whose worldview is built on pasta), with the jokes and puns going to the grunts.
-- **Decided:** rewrite key scenes first, starting with the leader introductions (Archie at the Oceanic Museum, Maxie at Meatball Falls), then the other scenes one at a time.
+- **Done:** team names in all dialogue and signs; trainer classes TEAM ALFREDO, ALFREDO ADMIN, ALFREDO LEADER, TEAM MARINARA, MARINARA ADMIN, MARINARA LEADER; hideouts renamed ALFREDO HIDEOUT and MARINARA HIDEOUT; the Magma Emblem key item is now the Marinara Emblem. Admin names (Shelly, Matt, Tabitha, Courtney) are unchanged.
+- **Done:** leaders renamed. Archie is now **PARMIGIANO** (Parmesan, the cheese in Alfredo) and Maxie is now **MARZANO** (San Marzano, the marinara tomato). These replace the earlier names Marzano (Archie) and Bollito (Maxie).
+- **Done:** white-vs-red dialogue for the first key scenes: the Oceanic Museum, Meatball Falls, and the Mt. Calzone summit, plus the grunts' jokes there. Joe may revise these lines later. Remaining scenes, in story order: Weather Institute, Mt. Penne summit, the two hideouts, Mostaccideep Space Center, Seafloor Cavern, Sugopolis. They still use Emerald's "more land / more sea" plot with the new names.
+- **Not started:** recolored sprites (art). Team Marinara can keep Team Magma's red outfits. Team Alfredo's grunt, admin, and leader sprites need a white or cream recolor instead of blue.
+- **Not started: Kyogre recolored cream instead of blue** (art). Covers its battle sprites and overworld sprites (the asleep, front, and side views used in the Seafloor Cavern and Sugopolis scenes). Check which palettes are shared before changing them.
+- **Decided:** dialogue tone is mostly serious for leaders and admins (sincere villains whose worldview is built on sauce), with the jokes and puns going to the grunts.
+- **Decided: keep Team Alfredo's dialogue free of innuendo.** White sauce is easy to read as a sexual joke, so lean on butter, cheese, Parmesan, and "Alfredo sauce" rather than "cream". Avoid pairing white sauce or cream with words like squirt, spray, shoot, load, slurp, swallow, thick, sticky, or "all over", and with bodies or faces. Team Marinara's red sauce can erupt and spray; Team Alfredo's sauce floods and covers.
+- **Decided:** rewrite key scenes first, starting with the leader introductions, then the other scenes one at a time.
 
 **Decided:** Brian does not show up during the teams' schemes. (Considered: both teams want more pasta while Brian wants it gone, so he could have appeared furious, on the player's side. Dropped.)
 
@@ -287,10 +289,11 @@ A yes/no choice at New Game that randomizes Pokémon for that save file. It must
 | --- | --- | --- |
 | Pasta town names | Text, signs, Town Map | Done |
 | Pasta landmark names | Text, Town Map | Done |
-| Villain teams: Marinara and Al Dente (names) | Text, trainer classes | Done |
+| Villain teams: Alfredo and Marinara (names) | Text, trainer classes | Done |
 | Villain teams: recolored sprites | Palette edits | Not started |
-| Villain teams: sauce vs. boil story dialogue | Dialogue | In progress (leader introductions done) |
-| Villain leaders renamed: Marzano and Bollito | Text, trainer data | Done |
+| Kyogre recolored cream | Palette edits, possibly pixel edits | Not started |
+| Villain teams: white vs. red sauce story dialogue | Dialogue | In progress (museum, Meatball Falls, Mt. Calzone done) |
+| Villain leaders renamed: Parmigiano and Marzano | Text, trainer data | Done |
 | Pasta region name: Pastalia (replaces Hoenn) | Text, plus 2 PokéNav graphics | Text done; PokéNav "HOENN MAP" art still to redraw |
 | Starters: Rowlet, Scorbunny, Froakie | Script and data change | Done |
 | Nurse Joy Jammie Dodger heal (plus blackout cookie) | One shared script change | Done |
