@@ -562,14 +562,17 @@ MtChimney_Text_MaxieIntro:
 	.string "Humph! So you're thinking of\n"
 	.string "interfering with us, TEAM MARINARA?\p"
 	.string "Now you listen.\n"
-	.string "Pasta is hard and brittle until it\l"
-	.string "meets boiling water.\p"
-	.string "Heat is what makes it tender.\n"
-	.string "Heat is what makes it whole.\p"
-	.string "That is why TEAM MARINARA will bring\n"
-	.string "every sea in the world to a boil.\p"
-	.string "One great pot, perfectly cooked, for\n"
-	.string "humankind and POKéMON alike!\p"
+	.string "A tomato is nothing until it meets\l"
+	.string "the fire.\p"
+	.string "Heat is what deepens it.\n"
+	.string "Heat is what makes it a sauce.\p"
+	.string "That is why TEAM MARINARA will wake\n"
+	.string "the fire that sleeps beneath the land.\p"
+	.string "Every volcano in the world will pour\n"
+	.string "forth rich, red sauce…\p"
+	.string "One great feast, simmered to\n"
+	.string "perfection, for humankind and\l"
+	.string "POKéMON alike!\p"
 	.string "And for that, we need the power of\n"
 	.string "what sleeps within this mountain…\p"
 	.string "Oh! There was no need for you to\n"
@@ -652,15 +655,15 @@ MtChimney_Text_YouBetterNotMessWithUs:
 MtChimney_Text_AquasNameSimilar:
 	.string "We're TEAM MARINARA!\p"
 	.string "They're TEAM ALFREDO!\p"
-	.string "They want sauce before the noodles\n"
-	.string "are even cooked! Disgusting!$"
+	.string "They put cream sauce on EVERYTHING!\n"
+	.string "Disgusting!$"
 
 MtChimney_Text_DouseThemInFire:
 	.string "Yeah!\n"
 	.string "Turn up the heat!$"
 
 MtChimney_Text_KeepMakingMoreLand:
-	.string "We're gonna keep the pot boiling!$"
+	.string "We're gonna keep the sauce simmering!$"
 
 MtChimney_Text_Bufoh:
 	.string "Bufoh!$"
@@ -672,10 +675,10 @@ MtChimney_Text_ArchieGoStopTeamMagma:
 	.string "of TEAM MARINARA are up to!\p"
 	.string "They're trying to inject the stolen\n"
 	.string "METEORITE's power into the volcano!\p"
-	.string "If it erupts, the heat will set the\n"
-	.string "seas boiling!\p"
-	.string "Boiling water and not a drop of\n"
-	.string "sauce… Unthinkable!$"
+	.string "If it erupts, it'll spew tomato\n"
+	.string "sauce across the land!\p"
+	.string "Red sauce everywhere, and not a\n"
+	.string "drop of cream… Unthinkable!$"
 
 MtChimney_Text_ArchieIHaveMyHandsFull:
 	.string "PARMIGIANO: Grrr…\p"
@@ -701,14 +704,14 @@ MtChimney_Text_MagmaOutnumbersUs:
 	.string "We can't keep up with them!$"
 
 MtChimney_Text_LessHabitatForWaterPokemon:
-	.string "If they boil the seas, the WATER\n"
-	.string "POKéMON will get poached!$"
+	.string "If that volcano blows, the seas\n"
+	.string "will turn into tomato soup!$"
 
 MtChimney_Text_MagmasNameSimilar:
 	.string "We're TEAM ALFREDO!\p"
 	.string "They're TEAM MARINARA!\p"
-	.string "All they do is boil stuff!\n"
-	.string "Boiling isn't a personality!$"
+	.string "Tomatoes, tomatoes, tomatoes!\n"
+	.string "Tomatoes aren't a personality!$"
 
 MtChimney_Text_Bushaa:
 	.string "Bushaa!$"

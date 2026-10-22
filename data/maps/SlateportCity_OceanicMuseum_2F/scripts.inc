@@ -319,7 +319,7 @@ SlateportCity_OceanicMuseum_2F_Text_CameToSeeWhatsTakingSoLong:
 
 SlateportCity_OceanicMuseum_2F_Text_ArchieWarning:
 	.string "We are TEAM ALFREDO,\n"
-	.string "and we live for the sauce!\p"
+	.string "keepers of the one true sauce!\p"
 	.string "And I am TEAM ALFREDO's leader,\n"
 	.string "PARMIGIANO!\p"
 	.string "What makes you interfere with us?\p"
@@ -334,8 +334,8 @@ SlateportCity_OceanicMuseum_2F_Text_ArchieWarning:
 	.string "POKéMON, people… Every living thing\n"
 	.string "is waiting for its sauce.\p"
 	.string "So, TEAM ALFREDO is dedicated to\n"
-	.string "covering the world in marinara.\p"
-	.string "Let the seas run red and rich!\n"
+	.string "blanketing the world in cream sauce.\p"
+	.string "Let the seas run white and rich!\n"
 	.string "Is that not a magnificent undertaking?\p"
 	.string "Ah, fine…\n"
 	.string "You're still too young to understand\l"

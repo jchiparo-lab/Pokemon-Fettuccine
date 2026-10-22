@@ -428,7 +428,7 @@ MtPyre_Summit_Text_Grunt1Intro:
 
 MtPyre_Summit_Text_Grunt1Defeat:
 	.string "I thought you were one of those\n"
-	.string "noodle-boilers who happened\l"
+	.string "tomato-heads who happened\l"
 	.string "to come back…$"
 
 MtPyre_Summit_Text_Grunt1PostBattle:
