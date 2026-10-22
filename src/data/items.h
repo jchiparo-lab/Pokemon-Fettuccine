@@ -15066,7 +15066,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Scroll of Darkness"),
         .pluralName = ITEM_PLURAL_NAME("Scrolls of Darkness"),
-        .price = 0,
+        .price = 3000, // Fettuccine: sold at the Lilycove evolution counter
         .description = COMPOUND_STRING(
             "A peculiar scroll\n"
             "that makes certain\n"
@@ -15085,7 +15085,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Scroll of Waters"),
         .pluralName = ITEM_PLURAL_NAME("Scrolls of Waters"),
-        .price = 0,
+        .price = 3000, // Fettuccine: sold at the Lilycove evolution counter
         .description = COMPOUND_STRING(
             "A peculiar scroll\n"
             "that makes certain\n"
