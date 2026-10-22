@@ -322,7 +322,7 @@ All built into pokeemerald-expansion; the work is deciding where things appear.
 | Mewtwo | One-time encounter, Lv 70, Victory Road B2F |
 
 Diancie and Mewtwo stay put if the player knocks them out or runs, so they can be retried.
-- **Primal Reversion (Kyogre and Groudon).** Built in; triggers when they hold the Blue Orb or Red Orb. **Decided:** the orbs come from the elderly couple at the Mt. Pyre summit, as in Omega Ruby/Alpha Sapphire (Emerald never gives them to the player).
+- **Primal Reversion (Kyogre and Groudon).** Built in; triggers when they hold the Blue Orb or Red Orb. **Decided:** the orbs come from the elderly couple at the Mt. Pyre summit, as in Omega Ruby/Alpha Sapphire (Emerald never gives them to the player). **Done:** after Marzano and Parmigiano return the orbs (after Sugopolis, before the Elite Four), the old woman gives the player both orbs. If the bag is full, she offers them again later.
 - **Double wild battles.** Config option with an adjustable encounter chance. **Done:** 15% chance; always a single battle when the player has only one usable Pokémon.
 - **1v2 / 2v1 battles.** Supported by the engine; set up per trainer encounter in event scripts.
 
@@ -382,7 +382,7 @@ A yes/no choice at New Game that randomizes Pokémon for that save file. It must
 | Items, abilities, move effects through Gen IX | Built in; plan placement | Not started |
 | Physical/special split | Built in | Done (built in) |
 | Mega Evolution (Mega Ring from Sam in Granite Cave) | Built in; place Mega Ring and Mega Stones | Done |
-| Primal Reversion | Built in; place Blue/Red Orbs | Not started |
+| Primal Reversion | Built in; place Blue/Red Orbs | Done (orbs given at Mt. Penne) |
 | Double wild battles | Config toggle | Done (config, 15%) |
 | 1v2 / 2v1 battles | Event scripting | Not started |
 | Poké Ball quick menu | Config toggle | Done (built in) |
