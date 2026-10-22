@@ -655,8 +655,8 @@ MtChimney_Text_YouBetterNotMessWithUs:
 MtChimney_Text_AquasNameSimilar:
 	.string "We're TEAM MARINARA!\p"
 	.string "They're TEAM ALFREDO!\p"
-	.string "They put cream sauce on EVERYTHING!\n"
-	.string "Disgusting!$"
+	.string "They put butter and cheese on\n"
+	.string "EVERYTHING! Disgusting!$"
 
 MtChimney_Text_DouseThemInFire:
 	.string "Yeah!\n"
@@ -678,7 +678,7 @@ MtChimney_Text_ArchieGoStopTeamMagma:
 	.string "If it erupts, it'll spew tomato\n"
 	.string "sauce across the land!\p"
 	.string "Red sauce everywhere, and not a\n"
-	.string "drop of cream… Unthinkable!$"
+	.string "speck of parmesan… Unthinkable!$"
 
 MtChimney_Text_ArchieIHaveMyHandsFull:
 	.string "PARMIGIANO: Grrr…\p"

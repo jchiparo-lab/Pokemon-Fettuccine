@@ -255,8 +255,8 @@ MeteorFalls_1F_1R_Text_BeSeeingYouTeamAqua:
 	.string "Heh, it doesn't matter!\p"
 	.string "We've got the METEORITE, so off to\n"
 	.string "MT. CALZONE we go!\p"
-	.string "Hehehe! Be seeing you, you curdled\n"
-	.string "cream-slurpers!$"
+	.string "Hehehe! Be seeing you, you\n"
+	.string "butter-brained cheese-heads!$"
 
 MeteorFalls_1F_1R_Text_ArchieSeenYouBefore:
 	.string "PARMIGIANO: Didn't I see you before?\n"
@@ -271,7 +271,7 @@ MeteorFalls_1F_1R_Text_ArchieSeenYouBefore:
 	.string "They would make every volcano in the\n"
 	.string "world erupt with tomato sauce.\p"
 	.string "They are the rivals to us,\n"
-	.string "the cream-loving TEAM ALFREDO!$"
+	.string "the noble TEAM ALFREDO!$"
 
 MeteorFalls_1F_1R_Text_BossWeShouldChaseMagma:
 	.string "BOSS, we should give chase to\n"
