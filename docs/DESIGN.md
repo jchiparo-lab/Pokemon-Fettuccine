@@ -248,9 +248,9 @@ All built into pokeemerald-expansion; the work is deciding where things appear.
 
 - **Mega Evolution.** Built in. Key Stone from Sam in Granite Cave (the player needs the MEGA RING item to Mega Evolve; that scene is not scripted yet). **Decided:** the new Megas from Legends Z-A are excluded for now.
   - **Decided: no Mega Stone is locked behind the post-game.** Every stone is obtainable before the final battle with Brian. Stones are found as item balls, and each appears around when its Pokémon can reach its final form.
-  - **Decided: stones for Pokémon that can't be caught yet are left out** until the Gen I–IX placement plan puts those Pokémon in the world: Venusaur, Charizard (X and Y), Blastoise, Beedrill, Pidgeot, Slowbro, Gengar, Kangaskhan, Aerodactyl, Mewtwo (X and Y), Steelix, Scizor, Tyranitar, Sceptile, Blaziken, Swampert, Medicham, Lopunny, Garchomp, Lucario, Abomasnow, Audino, Diancie. When one is placed, put its stone in the story near it.
+  - **Done: every Mega-capable Pokémon is now obtainable before Brian** (see "Pokémon added for Mega Evolution" below), so all 46 non-Z-A Mega Stones are in the game.
   - **Decided: Marzano Mega Evolves Camerupt** (Space Center double battle) and **Parmigiano Mega Evolves Sharpedo** (Seafloor Cavern).
-  - **Done: 22 Mega Stones placed.** Joe may move any of them in Porymap.
+  - **Done: all Mega Stones placed.** 39 are item balls (Joe may move any of them in Porymap), and Prof. Birch (Alan) gives the 7 starter stones.
 
 | Stone | Where | Unlocked by |
 | --- | --- | --- |
@@ -273,9 +273,54 @@ All built into pokeemerald-expansion; the work is deciding where things appear.
 | Latiasite, Latiosite | Routes 132 and 133, near Paccheridlog | Late game |
 | Salamencite | Meatball Falls B1F (back room) | Waterfall |
 | Mawilite | Victory Road B1F | Victory Road |
+| Beedrillite | Route 110 | After Gym 3 |
+| Lopunnite, Audinite | Vermiturf Town, by the Pokémon Center | Mid-game |
+| Gengarite | Mt. Penne 6F | Mid-game |
+| Medichamite | Route 118 | After Gym 5 |
+| Aerodactylite | Route 111 desert | Go-Goggles |
+| Pidgeotite | Fortellini City, by the Gym | Fortellini |
+| Scizorite | Route 120 | After Fortellini |
+| Lucarionite | Route 121 | After Gym 6 |
+| Slowbronite | Linguicove City | Linguicove |
+| Kangaskhanite | Safari Zone South | Linguicove |
+| Abomasite | Shoal Cave, ice room | Mostaccideep area |
+| Diancite | Meatball Falls B1F (back room), next to Diancie | Waterfall |
+| Steelixite, Garchompite, Tyranitarite | Victory Road | Victory Road |
+| Mewtwonite X and Y | Victory Road, near Mewtwo | Victory Road |
+| Sceptilite, Blazikenite, Swampertite, Venusaurite, Charizardite X and Y, Blastoisinite | Gift from Prof. Birch (Alan) at his lab | He calls right after Scott's call, once you have 6 badges |
 
   - **Done: Safari Zone expansion open from the start** (Mareep and Houndour live there; in Emerald it opened after the Hall of Fame).
   - **Done: the Latias/Latios roamer starts after the Sugopolis crisis,** when Wallace gives HM Waterfall and mentions reports of a rare red or blue Pokémon (picked at random). In Emerald it started after the Hall of Fame.
+  - **Done: Beldum is offered by Steven (Sam) with HM Dive** after the Space Center, instead of after the Hall of Fame.
+  - **Done: trade evolutions without trading.** Two Linking Cords (Routes 110 and 123) evolve Kadabra, Haunter and other trade Pokémon. `I_USE_EVO_HELD_ITEMS_FROM_BAG` is on, so held-item trade evolutions (Metal Coat, Dragon Scale, Electirizer…) work by using the item from the bag. Two Metal Coats are placed (New Macaroville, Route 121) for Steelix and Scizor.
+
+### Pokémon added for Mega Evolution
+
+**Decided:** these Pokémon were added so every Mega Stone is usable before the final battle with Brian. New wild Pokémon take over a slot of a species that already appears two or more times in that area, so every Gen 3 Pokémon stays where it was in Emerald.
+
+| Pokémon | Where |
+| --- | --- |
+| Weedle | Pestoburg Woods |
+| Pidgey | Routes 102, 103, 104 |
+| Bulbasaur, Buneary, Audino | Route 117 (rare) |
+| Slowpoke | Route 117 (surfing), Shoal Cave (surfing) |
+| Onix | Granite Cave 1F, Rotiturf Tunnel |
+| Snover | Shoal Cave, ice room |
+| Gastly | Mt. Penne 1F–6F |
+| Meditite | Mt. Penne outside and summit |
+| Larvitar, Gible | Route 111 desert (rare) |
+| Scyther, Treecko | Route 119 (rare) |
+| Torchic | Fiery Path (rare) |
+| Charmander | Route 112 (rare) |
+| Squirtle | Route 118 (surfing) |
+| Mudkip | Route 120 (rare) |
+| Kangaskhan | Safari Zone South |
+| Riolu | Egg from a Black Belt next to the Doughford Gym |
+| Aerodactyl | Old Amber from the Fossil Maniac (Route 114), revived at Devon in Rotiniboro |
+| Diancie | One-time encounter, Lv 50, Meatball Falls B1F back room |
+| Mewtwo | One-time encounter, Lv 70, Victory Road B2F |
+
+Diancie and Mewtwo stay put if the player knocks them out or runs, so they can be retried.
 - **Primal Reversion (Kyogre and Groudon).** Built in; triggers when they hold the Blue Orb or Red Orb. **Decided:** the orbs come from the elderly couple at the Mt. Pyre summit, as in Omega Ruby/Alpha Sapphire (Emerald never gives them to the player).
 - **Double wild battles.** Config option with an adjustable encounter chance. **Done:** 15% chance; always a single battle when the player has only one usable Pokémon.
 - **1v2 / 2v1 battles.** Supported by the engine; set up per trainer encounter in event scripts.
@@ -335,7 +380,7 @@ A yes/no choice at New Game that randomizes Pokémon for that save file. It must
 | All Pokémon through Gen IX | Built in; plan placement | Not started |
 | Items, abilities, move effects through Gen IX | Built in; plan placement | Not started |
 | Physical/special split | Built in | Done (built in) |
-| Mega Evolution (Key Stone from Sam in Granite Cave) | Built in; place Key Stone and Mega Stones | In progress (Mega Stones placed; Key Stone scene next) |
+| Mega Evolution (Key Stone from Sam in Granite Cave) | Built in; place Key Stone and Mega Stones | In progress (all Mega Stones and Mega-capable Pokémon placed; Key Stone scene next) |
 | Primal Reversion | Built in; place Blue/Red Orbs | Not started |
 | Double wild battles | Config toggle | Done (config, 15%) |
 | 1v2 / 2v1 battles | Event scripting | Not started |
