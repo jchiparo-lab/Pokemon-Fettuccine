@@ -69,14 +69,14 @@ Route119_WeatherInstitute_1F_EventScript_Grunt4::
 	end
 
 Route119_WeatherInstitute_1F_Text_Grunt1Intro:
-	.string "The BOSS got interested in\n"
-	.string "the research they have going here,\l"
-	.string "so he sent us out.\p"
-	.string "You quit meddling!$"
+	.string "The BOSS got interested in the rain\n"
+	.string "research they have going here.\p"
+	.string "Just imagine rain made of ALFREDO\n"
+	.string "sauce! You quit meddling!$"
 
 Route119_WeatherInstitute_1F_Text_Grunt1Defeat:
 	.string "Blast it…\n"
-	.string "Blasted by a kid…$"
+	.string "Grated by a kid…$"
 
 Route119_WeatherInstitute_1F_Text_Grunt1PostBattle:
 	.string "Our BOSS knows everything.\p"
@@ -84,8 +84,8 @@ Route119_WeatherInstitute_1F_Text_Grunt1PostBattle:
 	.string "about what he's thinking?$"
 
 Route119_WeatherInstitute_1F_Text_Grunt4Intro:
-	.string "Huh?\n"
-	.string "What's a kid doing here?$"
+	.string "Huh? What's a kid doing here?\n"
+	.string "Are you the lunch delivery?$"
 
 Route119_WeatherInstitute_1F_Text_Grunt4Defeat:
 	.string "Huh?\n"

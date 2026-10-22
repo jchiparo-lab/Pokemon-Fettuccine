@@ -569,7 +569,9 @@ Route119_Text_StayAwayFromWeatherInstitute:
 	.string "INSTITUTE. It's not safe.$"
 
 Route119_Text_DontGoNearWeatherInstitute:
-	.string "Lookout duty is surprisingly boring.\p"
+	.string "Lookout duty is surprisingly boring.\n"
+	.string "I'd give anything for a bowl of\l"
+	.string "fettuccine ALFREDO right now.\p"
 	.string "Hey, you! Please don't go near the\n"
 	.string "WEATHER INSTITUTE.$"
 

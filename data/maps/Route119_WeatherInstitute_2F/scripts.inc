@@ -213,13 +213,13 @@ Route119_WeatherInstitute_2F_Text_Grunt2Defeat:
 
 Route119_WeatherInstitute_2F_Text_Grunt2PostBattle:
 	.string "If the POKéMON they made here can\n"
-	.string "control the weather freely, then we of\l"
-	.string "TEAM ALFREDO definitely need it!$"
+	.string "control the weather, we can make it\l"
+	.string "rain ALFREDO sauce on every town!$"
 
 Route119_WeatherInstitute_2F_Text_Grunt3Intro:
 	.string "We're TEAM ALFREDO!\n"
 	.string "We appear wherever anything rare is\l"
-	.string "found!$"
+	.string "found! Like a well-aged PARMESAN!$"
 
 Route119_WeatherInstitute_2F_Text_Grunt3Defeat:
 	.string "You got me!$"
@@ -236,7 +236,8 @@ Route119_WeatherInstitute_2F_Text_Grunt5Intro:
 	.string "We were here to get it first!$"
 
 Route119_WeatherInstitute_2F_Text_Grunt5Defeat:
-	.string "Oh, will you look at my POKéMON?$"
+	.string "Oh, will you look at my POKéMON?\n"
+	.string "Soggy as overcooked fettuccine…$"
 
 Route119_WeatherInstitute_2F_Text_Grunt5PostBattle:
 	.string "Humph, so what?\n"
@@ -250,6 +251,9 @@ Route119_WeatherInstitute_2F_Text_ShellyIntro:
 	.string "TEAM ALFREDO's affairs?\p"
 	.string "You're either absolutely fearless,\n"
 	.string "simply ignorant, or both!\p"
+	.string "Soon the skies will pour ALFREDO\n"
+	.string "sauce, and every plain noodle in the\l"
+	.string "world will finally be dressed!\p"
 	.string "You're so cute, you're disgusting!\n"
 	.string "I'll put you down, kiddy!$"
 
@@ -258,8 +262,9 @@ Route119_WeatherInstitute_2F_Text_ShellyDefeat:
 	.string "You're disgustingly strong!$"
 
 Route119_WeatherInstitute_2F_Text_ShellyPostBattle:
-	.string "It's bad enough to have TEAM MARINARA\n"
-	.string "blunder about, but now there's you!\p"
+	.string "It's bad enough having TEAM MARINARA\n"
+	.string "slop tomato all over the place, but\l"
+	.string "now there's you!\p"
 	.string "What makes you want to sniff around\n"
 	.string "in our business, anyway?$"
 
