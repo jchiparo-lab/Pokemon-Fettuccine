@@ -385,6 +385,18 @@ extern const u8 Debug_EventScript_Script_5[];
 extern const u8 Debug_EventScript_Script_6[];
 extern const u8 Debug_EventScript_Script_7[];
 extern const u8 Debug_EventScript_Script_8[];
+extern const u8 Debug_StoryBeat_OceanicMuseum[];
+extern const u8 Debug_StoryBeat_MeteorFalls[];
+extern const u8 Debug_StoryBeat_MtChimney[];
+extern const u8 Debug_StoryBeat_WeatherInstitute[];
+extern const u8 Debug_StoryBeat_MtPyreOrbs[];
+extern const u8 Debug_StoryBeat_MagmaHideout[];
+extern const u8 Debug_StoryBeat_AquaHideout[];
+extern const u8 Debug_StoryBeat_SpaceCenter[];
+extern const u8 Debug_StoryBeat_SeafloorCavern[];
+extern const u8 Debug_StoryBeat_SootopolisClash[];
+extern const u8 Debug_StoryBeat_SootopolisRayquaza[];
+extern const u8 Debug_StoryBeat_MtPyreReturn[];
 extern const u8 DebugScript_DaycareMonsNotCompatible[];
 extern const u8 DebugScript_OneDaycareMons[];
 extern const u8 DebugScript_ZeroDaycareMons[];
@@ -687,6 +699,23 @@ static const struct DebugMenuOption sDebugMenu_Actions_Scripts[] =
     { NULL }
 };
 
+static const struct DebugMenuOption sDebugMenu_Actions_StoryBeats[] =
+{
+    { COMPOUND_STRING("Oceanic Museum"),      DebugAction_ExecuteScript, Debug_StoryBeat_OceanicMuseum },
+    { COMPOUND_STRING("Meatball Falls"),      DebugAction_ExecuteScript, Debug_StoryBeat_MeteorFalls },
+    { COMPOUND_STRING("Mt. Calzone"),         DebugAction_ExecuteScript, Debug_StoryBeat_MtChimney },
+    { COMPOUND_STRING("Weather Institute"),   DebugAction_ExecuteScript, Debug_StoryBeat_WeatherInstitute },
+    { COMPOUND_STRING("Mt. Penne: orbs"),     DebugAction_ExecuteScript, Debug_StoryBeat_MtPyreOrbs },
+    { COMPOUND_STRING("Al Dente Hideout"),    DebugAction_ExecuteScript, Debug_StoryBeat_MagmaHideout },
+    { COMPOUND_STRING("Marinara Hideout"),    DebugAction_ExecuteScript, Debug_StoryBeat_AquaHideout },
+    { COMPOUND_STRING("Space Center"),        DebugAction_ExecuteScript, Debug_StoryBeat_SpaceCenter },
+    { COMPOUND_STRING("Seafloor Cavern"),     DebugAction_ExecuteScript, Debug_StoryBeat_SeafloorCavern },
+    { COMPOUND_STRING("Sugopolis: clash"),    DebugAction_ExecuteScript, Debug_StoryBeat_SootopolisClash },
+    { COMPOUND_STRING("Sugopolis: Rayquaza"), DebugAction_ExecuteScript, Debug_StoryBeat_SootopolisRayquaza },
+    { COMPOUND_STRING("Mt. Penne: return"),   DebugAction_ExecuteScript, Debug_StoryBeat_MtPyreReturn },
+    { NULL }
+};
+
 static const struct DebugMenuOption sDebugMenu_Actions_Trainers[] =
 {
     { COMPOUND_STRING("Choose trainer from map"), DebugAction_Selection_Init, &sTrainerFromMapSelection},
@@ -775,6 +804,7 @@ static const struct DebugMenuOption sDebugMenu_Actions_Main[] =
     { COMPOUND_STRING("Give X…"),       DebugAction_OpenSubMenu, sDebugMenu_Actions_Give, },
     { COMPOUND_STRING("Player…"),       DebugAction_OpenSubMenu, sDebugMenu_Actions_Player, },
     { COMPOUND_STRING("Scripts…"),      DebugAction_OpenSubMenu, sDebugMenu_Actions_Scripts, },
+    { COMPOUND_STRING("Story beats…"),  DebugAction_OpenSubMenu, sDebugMenu_Actions_StoryBeats, },
     { COMPOUND_STRING("Trainers…"),     DebugAction_OpenSubMenuTrainers, sDebugMenu_Actions_Trainers, },
     { COMPOUND_STRING("Encounters…"),   DebugAction_OpenSubMenu, sDebugMenu_Actions_Encounters, },
     { COMPOUND_STRING("Flags & Vars…"), DebugAction_OpenSubMenuFlagsVars, sDebugMenu_Actions_Flags, },
