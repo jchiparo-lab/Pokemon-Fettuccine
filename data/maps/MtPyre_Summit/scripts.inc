@@ -427,8 +427,9 @@ MtPyre_Summit_Text_Grunt1Intro:
 	.string "We can't fall behind!$"
 
 MtPyre_Summit_Text_Grunt1Defeat:
-	.string "I thought you were one of the MAGMAS\n"
-	.string "who happened to come back…$"
+	.string "I thought you were one of those\n"
+	.string "noodle-boilers who happened\l"
+	.string "to come back…$"
 
 MtPyre_Summit_Text_Grunt1PostBattle:
 	.string "Yeah, so you are strong…\n"

@@ -304,7 +304,7 @@ SlateportCity_OceanicMuseum_2F_Text_LetMeTakeCareOfThis:
 
 SlateportCity_OceanicMuseum_2F_Text_Grunt2Defeat:
 	.string "What?!\n"
-	.string "I got drained, too!$"
+	.string "I got sauced, too!$"
 
 SlateportCity_OceanicMuseum_2F_Text_MeddlingKid:
 	.string "Now what? If we don't get the parts,\n"
