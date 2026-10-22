@@ -284,9 +284,9 @@ Route128_Text_StevenWhatIsHappening:
 Route128_Text_StevenWholeWorldWillDrown:
 	.string "This is terrible…\p"
 	.string "After the scorching heat wave ended,\n"
-	.string "this deluge began.\p"
+	.string "this deluge of sauce began.\p"
 	.string "If this doesn't stop, all of PASTALIA…\n"
-	.string "No, the whole world will drown.\p"
+	.string "No, the whole world will drown in it.\p"
 	.string "This huge rain cloud is spreading\n"
 	.string "from above SUGOPOLIS…\p"
 	.string "What in the world is taking place there?\p"

@@ -69,8 +69,8 @@ SeafloorCavern_Entrance_Text_HearMagmaNearMossdeep:
 	.string "TEAM MARINARA!\p"
 	.string "Speaking of TEAM MARINARA, I hear they\n"
 	.string "were spotted near MOSTACCIDEEP.\p"
-	.string "That bunch of goons, they sure don't\n"
-	.string "look good near the sea!$"
+	.string "That bunch of goons, they'd turn the\n"
+	.string "whole sea into minestrone!$"
 
 SeafloorCavern_Entrance_Text_HearMagmaNearMossdeepShort:
 	.string "A punk like you, do you really think\n"
@@ -81,6 +81,6 @@ SeafloorCavern_Entrance_Text_HearMagmaNearMossdeepShort:
 	.string "TEAM MARINARA!\p"
 	.string "Speaking of TEAM MARINARA, I hear they\n"
 	.string "were spotted near MOSTACCIDEEP.\p"
-	.string "That bunch of goons, they sure don't\n"
-	.string "look good near the sea!$"
+	.string "That bunch of goons, they'd turn the\n"
+	.string "whole sea into minestrone!$"
 

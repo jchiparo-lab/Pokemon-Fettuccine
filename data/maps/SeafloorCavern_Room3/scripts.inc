@@ -32,9 +32,9 @@ SeafloorCavern_Room3_Text_ShellyPostBattle:
 	.string "You're so darn strong.\p"
 	.string "It's terribly disappointing that you're\n"
 	.string "not a TEAM ALFREDO member.\p"
-	.string "You could have enjoyed the fabulous\n"
-	.string "world our BOSS has promised as\l"
-	.string "one of us…$"
+	.string "You could have enjoyed the fabulous,\n"
+	.string "buttery world our BOSS has promised\l"
+	.string "as one of us…$"
 
 SeafloorCavern_Room3_Text_Grunt5Intro:
 	.string "For our dream to become real, we need\n"
