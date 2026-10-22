@@ -84,21 +84,21 @@
 #define FLAG_HIDE_VICTORY_ROAD_MEWTWO    0x3E
 #define FLAG_BIRCH_STARTER_MEGA_STONES_READY    0x3F
 #define FLAG_RECEIVED_STARTER_MEGA_STONES    0x40
-#define FLAG_UNUSED_0x041    0x41 // Unused Flag
-#define FLAG_UNUSED_0x042    0x42 // Unused Flag
-#define FLAG_UNUSED_0x043    0x43 // Unused Flag
-#define FLAG_UNUSED_0x044    0x44 // Unused Flag
-#define FLAG_UNUSED_0x045    0x45 // Unused Flag
-#define FLAG_UNUSED_0x046    0x46 // Unused Flag
-#define FLAG_UNUSED_0x047    0x47 // Unused Flag
-#define FLAG_UNUSED_0x048    0x48 // Unused Flag
-#define FLAG_UNUSED_0x049    0x49 // Unused Flag
-#define FLAG_UNUSED_0x04A    0x4A // Unused Flag
-#define FLAG_UNUSED_0x04B    0x4B // Unused Flag
-#define FLAG_UNUSED_0x04C    0x4C // Unused Flag
-#define FLAG_UNUSED_0x04D    0x4D // Unused Flag
-#define FLAG_UNUSED_0x04E    0x4E // Unused Flag
-#define FLAG_UNUSED_0x04F    0x4F // Unused Flag
+#define FLAG_ITEM_ROUTE_110_BEEDRILLITE    0x41
+#define FLAG_ITEM_FORTREE_CITY_PIDGEOTITE    0x42
+#define FLAG_ITEM_VERDANTURF_TOWN_LOPUNNITE    0x43
+#define FLAG_ITEM_VERDANTURF_TOWN_AUDINITE    0x44
+#define FLAG_ITEM_MT_PYRE_6F_GENGARITE    0x45
+#define FLAG_ITEM_ROUTE_118_MEDICHAMITE    0x46
+#define FLAG_ITEM_ROUTE_111_AERODACTYLITE    0x47
+#define FLAG_ITEM_ROUTE_120_SCIZORITE    0x48
+#define FLAG_ITEM_LILYCOVE_CITY_SLOWBRONITE    0x49
+#define FLAG_ITEM_SAFARI_ZONE_SOUTH_KANGASKHANITE    0x4A
+#define FLAG_ITEM_ROUTE_121_LUCARIONITE    0x4B
+#define FLAG_ITEM_SHOAL_CAVE_ICE_ROOM_ABOMASITE    0x4C
+#define FLAG_ITEM_METEOR_FALLS_B1F_2R_DIANCITE    0x4D
+#define FLAG_ITEM_VICTORY_ROAD_1F_STEELIXITE    0x4E
+#define FLAG_ITEM_VICTORY_ROAD_1F_GARCHOMPITE    0x4F
 
 // Scripts
 #define FLAG_HIDE_SKY_PILLAR_TOP_RAYQUAZA_STILL  0x50
@@ -106,8 +106,8 @@
 #define FLAG_RESCUED_BIRCH                       0x52
 #define FLAG_LEGENDARIES_IN_SOOTOPOLIS           0x53
 
-#define FLAG_UNUSED_0x054                    0x54  // Unused Flag
-#define FLAG_UNUSED_0x055                    0x55  // Unused Flag
+#define FLAG_ITEM_VICTORY_ROAD_1F_MEWTWONITE_Y    0x54
+#define FLAG_ITEM_VICTORY_ROAD_B1F_TYRANITARITE    0x55
 
 #define FLAG_HIDE_CONTEST_POKE_BALL          0x56  // Always set after new game, object it hides is added directly
 #define FLAG_MET_RIVAL_MOM                   0x57
@@ -128,7 +128,7 @@
 #define FLAG_MOSSDEEP_GYM_SWITCH_3           0x66 //
 #define FLAG_MOSSDEEP_GYM_SWITCH_4           0x67 //
 
-#define FLAG_UNUSED_0x068                    0x68  // Unused Flag
+#define FLAG_ITEM_VICTORY_ROAD_B2F_MEWTWONITE_X    0x68
 
 #define FLAG_OCEANIC_MUSEUM_MET_REPORTER     0x69
 #define FLAG_RECEIVED_HM_STRENGTH            0x6A
