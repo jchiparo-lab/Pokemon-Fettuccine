@@ -107,8 +107,8 @@ Route112_EventScript_Shayla::
 	end
 
 Route112_Text_LeaderGoingToAwakenThing:
-	.string "Hey, man, is our leader really going\n"
-	.string "to awaken that thing?$"
+	.string "Hey, man, is our leader really gonna\n"
+	.string "make the volcanoes erupt marinara?$"
 
 Route112_Text_YeahWeNeedMeteorite:
 	.string "Sounds like it, yeah. But I heard\n"
@@ -120,7 +120,9 @@ Route112_Text_OhThatsWhyCrewWentToFallarbor:
 
 Route112_Text_CantLetAnyonePassUntilTheyreBack:
 	.string "You got it. And until they come back,\n"
-	.string "we're not to let anyone pass, right.$"
+	.string "we're not to let anyone pass, right.\p"
+	.string "Except the garlic bread delivery.\n"
+	.string "I'm starving.$"
 
 Route112_Text_NotEasyToGetBackToLavaridge:
 	.string "Eh, I'd like to get to MACAROVILLE, but\n"
