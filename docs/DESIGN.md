@@ -179,7 +179,7 @@ Status:
 
 - **Done:** team names in all dialogue and signs; trainer classes TEAM ALFREDO, ALFREDO ADMIN, ALFREDO LEADER, TEAM MARINARA, MARINARA ADMIN, MARINARA LEADER; hideouts renamed ALFREDO HIDEOUT and MARINARA HIDEOUT; the Magma Emblem key item is now the Marinara Emblem. Admin names (Shelly, Matt, Tabitha, Courtney) are unchanged.
 - **Done:** leaders renamed. Archie is now **PARMIGIANO** (Parmesan, the cheese in Alfredo) and Maxie is now **MARZANO** (San Marzano, the marinara tomato). These replace the earlier names Marzano (Archie) and Bollito (Maxie).
-- **Done:** white-vs-red dialogue for the Oceanic Museum, Meatball Falls, Mt. Calzone (including the Route 112 cable car guards), the Weather Institute (including the Route 119 bridge lookouts), the Mt. Penne summit (orb theft and the old couple's legends), and both hideouts (including the Team Alfredo lines around Linguicove), plus the grunts' jokes there. The Pokédex entries for Groudon, Kyogre, their Primal forms, and Rayquaza also tell the sauce legend. Joe may revise these lines later. Remaining scenes, in story order: Mostaccideep Space Center, Seafloor Cavern, Sugopolis. They still use Emerald's "more land / more sea" plot with the new names.
+- **Done:** white-vs-red dialogue for the Oceanic Museum, Meatball Falls, Mt. Calzone (including the Route 112 cable car guards), the Weather Institute (including the Route 119 bridge lookouts), the Mt. Penne summit (orb theft and the old couple's legends), and both hideouts (including the Team Alfredo lines around Linguicove), the Mostaccideep Space Center, plus the grunts' jokes there. The Pokédex entries for Groudon, Kyogre, their Primal forms, and Rayquaza also tell the sauce legend. Joe may revise these lines later. Remaining scenes, in story order: Seafloor Cavern, Sugopolis. They still use Emerald's "more land / more sea" plot with the new names.
 - **Not started:** recolored sprites (art). Team Marinara can keep Team Magma's red outfits. Team Alfredo's grunt, admin, and leader sprites need a white or cream recolor instead of blue.
 - **Not started: Kyogre recolored cream instead of blue** (art). Covers its battle sprites and overworld sprites (the asleep, front, and side views used in the Seafloor Cavern and Sugopolis scenes). Check which palettes are shared before changing them.
 - **Decided:** dialogue tone is mostly serious for leaders and admins (sincere villains whose worldview is built on sauce), with the jokes and puns going to the grunts.
@@ -292,7 +292,7 @@ A yes/no choice at New Game that randomizes Pokémon for that save file. It must
 | Villain teams: Alfredo and Marinara (names) | Text, trainer classes | Done |
 | Villain teams: recolored sprites | Palette edits | Not started |
 | Kyogre recolored cream | Palette edits, possibly pixel edits | Not started |
-| Villain teams: white vs. red sauce story dialogue | Dialogue | In progress (museum through both hideouts done; Space Center next) |
+| Villain teams: white vs. red sauce story dialogue | Dialogue | In progress (museum through Space Center done; Seafloor Cavern next) |
 | Villain leaders renamed: Parmigiano and Marzano | Text, trainer data | Done |
 | Pasta region name: Pastalia (replaces Hoenn) | Text, plus 2 PokéNav graphics | Text done; PokéNav "HOENN MAP" art still to redraw |
 | Starters: Rowlet, Scorbunny, Froakie | Script and data change | Done |
