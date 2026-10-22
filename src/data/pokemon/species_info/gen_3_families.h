@@ -12773,9 +12773,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .weight = 3520,
         .description = COMPOUND_STRING(
             "Kyogre has appeared in mythology as the\n"
-            "creator of the sea. After long years of\n"
-            "feuding with Groudon, it took to sleep at\n"
-            "the bottom of the sea."),
+            "creator of the white sauce seas. After\n"
+            "long years of feuding with Groudon, it\n"
+            "took to sleep at the bottom of the sea."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 614,
@@ -12847,10 +12847,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 98,
         .weight = 4300,
         .description = COMPOUND_STRING(
-            "When Kyogre roared, water poured forth\n"
-            "and the seas spread outward.\n"
-            "Dark clouds enshrouded the world,\n"
-            "and the deluge fell upon all…"),
+            "When Kyogre roared, buttery white sauce\n"
+            "poured forth and the seas spread outward.\n"
+            "Rich clouds enshrouded the world, and a\n"
+            "deluge of sauce fell upon all…"),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 515,
@@ -12930,7 +12930,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
             "Groudon has appeared in mythology as the\n"
             "creator of the land. It sleeps in magma\n"
             "underground and is said to make volcanoes\n"
-            "erupt on awakening."),
+            "erupt with red sauce on awakening."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 515,
@@ -13002,10 +13002,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 50,
         .weight = 9997,
         .description = COMPOUND_STRING(
-            "When Groudon howled, the earth swelled and\n"
-            "the land grew wide. The sun blazed atop\n"
-            "and all the world around the creature\n"
-            "was enveloped in incandescent heat."),
+            "When Groudon howled, the volcanoes burst\n"
+            "and red sauce flowed across the land.\n"
+            "The sun blazed atop, and the whole world\n"
+            "simmered in incandescent heat."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 515,
@@ -13083,10 +13083,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 70,
         .weight = 2065,
         .description = COMPOUND_STRING(
-            "A Pokémon that flies endlessly in the\n"
-            "ozone layer. It is said it would descend\n"
-            "to the ground if Kyogre and Groudon\n"
-            "were to fight."),
+            "A basil-green Pokémon that flies\n"
+            "endlessly in the ozone layer. It is said\n"
+            "it would descend to the ground if Kyogre\n"
+            "and Groudon were to fight."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 448,
