@@ -41,6 +41,10 @@ MossdeepCity_StevensHouse_EventScript_StevenGivesDive::
 	setflag FLAG_RECEIVED_HM_DIVE
 	setflag FLAG_OMIT_DIVE_FROM_STEVEN_LETTER
 	msgbox MossdeepCity_StevensHouse_Text_ExplainDive, MSGBOX_DEFAULT
+	@ Fettuccine: Beldum is offered here instead of after the Hall of Fame
+	msgbox MossdeepCity_StevensHouse_Text_TakeBeldumOnDesk, MSGBOX_DEFAULT
+	clearflag FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_BELDUM_POKEBALL
+	addobject LOCALID_STEVENS_HOUSE_BALL
 	closemessage
 	delay 20
 	applymovement LOCALID_STEVENS_HOUSE_STEVEN, MossdeepCity_StevensHouse_Movement_StevenReturn
@@ -166,6 +170,13 @@ MossdeepCity_StevensHouse_Text_ExplainDive:
 	.string "DIVE again.\p"
 	.string "In some places, it won't be possible\n"
 	.string "for you to surface, though.$"
+
+MossdeepCity_StevensHouse_Text_TakeBeldumOnDesk:
+	.string "One more thing.\p"
+	.string "The POKé BALL on my desk holds\n"
+	.string "a BELDUM, my favorite POKéMON.\p"
+	.string "I'd like you to have it.\n"
+	.string "Raise it well, {PLAYER}{KUN}.$"
 
 MossdeepCity_StevensHouse_Text_UnderwateCavernBetweenMossdeepSootopolis:
 	.string "STEVEN: Apparently, there's an\n"
