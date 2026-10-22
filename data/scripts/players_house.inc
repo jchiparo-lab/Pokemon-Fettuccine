@@ -450,6 +450,7 @@ PlayersHouse_1F_EventScript_GetSSTicketAndSeeLatiTV::
 	delay 20
 	msgbox PlayersHouse_1F_Text_DadShouldStayLonger, MSGBOX_DEFAULT
 	closemessage
+	goto_if_set FLAG_LATIOS_OR_LATIAS_ROAMING, PlayersHouse_1F_EventScript_SkipLatiNews @ Fettuccine: roamer already started in Sugopolis
 	setflag FLAG_SYS_TV_LATIAS_LATIOS
 	special TurnOnTVScreen
 	delay 60
@@ -473,6 +474,7 @@ PlayersHouse_1F_EventScript_GetSSTicketAndSeeLatiTV::
 	copyvar VAR_ROAMER_POKEMON, VAR_RESULT
 	msgbox PlayersHouse_1F_Text_StillUnknownPokemon, MSGBOX_DEFAULT
 	closemessage
+PlayersHouse_1F_EventScript_SkipLatiNews:
 	setvar VAR_LITTLEROOT_HOUSES_STATE_MAY, 4
 	setvar VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 4
 	releaseall

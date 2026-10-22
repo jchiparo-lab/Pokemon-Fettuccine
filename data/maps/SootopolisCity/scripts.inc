@@ -1285,12 +1285,36 @@ SootopolisCity_EventScript_GiveWaterfall::
 	giveitem ITEM_HM_WATERFALL
 	setflag FLAG_RECEIVED_HM_WATERFALL
 	msgbox SootopolisCity_Text_ExplainWaterfallGoToGym, MSGBOX_DEFAULT
+	call SootopolisCity_EventScript_StartLatiRoamer
 	closemessage
 	call_if_eq VAR_FACING, DIR_NORTH, SootopolisCity_EventScript_WallaceMoveFromGym
 	call_if_eq VAR_FACING, DIR_EAST, SootopolisCity_EventScript_WallaceMoveFromGym
 	call_if_eq VAR_FACING, DIR_WEST, SootopolisCity_EventScript_WallaceMoveFromGymWest
 	release
 	end
+
+@ Fettuccine: the Lati roamer starts here instead of after the Hall of Fame,
+@ so Latias or Latios can be caught before the final battle with Brian.
+SootopolisCity_EventScript_StartLatiRoamer::
+	goto_if_set FLAG_LATIOS_OR_LATIAS_ROAMING, SootopolisCity_EventScript_StartLatiRoamerEnd
+	msgbox SootopolisCity_Text_WallaceRareMonReports, MSGBOX_DEFAULT
+	random 2
+	copyvar VAR_0x8004, VAR_RESULT
+	special InitRoamer
+	copyvar VAR_ROAMER_POKEMON, VAR_0x8004
+	setflag FLAG_LATIOS_OR_LATIAS_ROAMING
+	call_if_eq VAR_0x8004, 0, SootopolisCity_EventScript_WallaceRoamerRed
+	call_if_ne VAR_0x8004, 0, SootopolisCity_EventScript_WallaceRoamerBlue
+SootopolisCity_EventScript_StartLatiRoamerEnd:
+	return
+
+SootopolisCity_EventScript_WallaceRoamerRed::
+	msgbox SootopolisCity_Text_WallaceRoamerRed, MSGBOX_DEFAULT
+	return
+
+SootopolisCity_EventScript_WallaceRoamerBlue::
+	msgbox SootopolisCity_Text_WallaceRoamerBlue, MSGBOX_DEFAULT
+	return
 
 SootopolisCity_EventScript_WallaceMoveFromGym::
 	applymovement LOCALID_SOOTOPOLIS_WALLACE, SootopolisCity_Movement_WallaceMoveFromGym
@@ -1683,6 +1707,22 @@ SootopolisCity_Text_ThankYouForHelpAcceptThis:
 	.string "On behalf of the people, I thank you.\p"
 	.string "This is a gift from me.\n"
 	.string "Please accept it.$"
+
+SootopolisCity_Text_WallaceRareMonReports:
+	.string "WALLACE: One more thing, {PLAYER}{KUN}.\p"
+	.string "Since the skies cleared, people all\n"
+	.string "over PASTALIA have reported a rare\l"
+	.string "POKéMON flying past.\p"
+	.string "No one has managed to catch it.\n"
+	.string "It's far too quick.$"
+
+SootopolisCity_Text_WallaceRoamerRed:
+	.string "Everyone agrees on one thing,\n"
+	.string "though. It was red.$"
+
+SootopolisCity_Text_WallaceRoamerBlue:
+	.string "Everyone agrees on one thing,\n"
+	.string "though. It was blue.$"
 
 SootopolisCity_Text_ExplainWaterfallGoToGym:
 	.string "That HIDDEN MACHINE contains\n"
