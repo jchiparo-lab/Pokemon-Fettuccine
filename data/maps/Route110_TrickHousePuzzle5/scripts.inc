@@ -958,7 +958,7 @@ Route110_TrickHousePuzzle5_Text_Mechadoll2Quiz2:
 Route110_TrickHousePuzzle5_Text_Mechadoll2Quiz3:
 	.string "MECHADOLL 2 QUIZ.\p"
 	.string "Which of these POKéMON did\n"
-	.string "TEAM MARINARA use in\l"
+	.string "TEAM ALFREDO use in\l"
 	.string "PESTOBURG FOREST?$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll3Intro:

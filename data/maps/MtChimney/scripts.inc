@@ -551,22 +551,22 @@ MtChimney_Text_MeteoriteWillActivateVolcano:
 	.string "Fufufu…$"
 
 MtChimney_Text_MaxieIntro:
-	.string "BOLLITO: Hm?\n"
+	.string "MARZANO: Hm?\n"
 	.string "Who are you?\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
-	.string "I'd heard MARZANO bemoaning a child\n"
+	.string "I'd heard PARMIGIANO bemoaning a child\n"
 	.string "who's been meddling in TEAM\l"
-	.string "MARINARA's affairs.\p"
+	.string "ALFREDO's affairs.\p"
 	.string "It must be you he meant.\p"
 	.string "Humph! So you're thinking of\n"
-	.string "interfering with us, TEAM AL DENTE?\p"
+	.string "interfering with us, TEAM MARINARA?\p"
 	.string "Now you listen.\n"
 	.string "Pasta is hard and brittle until it\l"
 	.string "meets boiling water.\p"
 	.string "Heat is what makes it tender.\n"
 	.string "Heat is what makes it whole.\p"
-	.string "That is why TEAM AL DENTE will bring\n"
+	.string "That is why TEAM MARINARA will bring\n"
 	.string "every sea in the world to a boil.\p"
 	.string "One great pot, perfectly cooked, for\n"
 	.string "humankind and POKéMON alike!\p"
@@ -580,13 +580,13 @@ MtChimney_Text_MaxieIntro:
 
 MtChimney_Text_MaxieDefeat:
 	.string "What?!\p"
-	.string "I, BOLLITO, was caught off guard?!$"
+	.string "I, MARZANO, was caught off guard?!$"
 
 MtChimney_Text_MaxieYouHaventSeenLastOfMagma:
-	.string "BOLLITO: But, enough.\n"
+	.string "MARZANO: But, enough.\n"
 	.string "I will back off this time.\p"
 	.string "But don't think that this is the last\n"
-	.string "you've seen of TEAM AL DENTE.\p"
+	.string "you've seen of TEAM MARINARA.\p"
 	.string "Fufufu…\p"
 	.string "Even without the METEORITE, if we\n"
 	.string "obtain that ORB… Fufufu…$"
@@ -609,8 +609,8 @@ MtChimney_Text_TabithaPostBattle:
 	.string "Hehehe…$"
 
 MtChimney_Text_Grunt2Intro:
-	.string "We of TEAM AL DENTE are working hard for\n"
-	.string "everyone's sake.\p"
+	.string "We of TEAM MARINARA are working\n"
+	.string "hard for everyone's sake.\p"
 	.string "Like, if that thing's power made more\n"
 	.string "land, there'd be more places to live.\p"
 	.string "Everyone'd be happy!$"
@@ -638,7 +638,7 @@ MtChimney_Text_Grunt1PostBattle:
 	.string "splashing about in the waves!$"
 
 MtChimney_Text_TeamAquaAlwaysMessingWithPlans:
-	.string "That annoying TEAM MARINARA…\n"
+	.string "That annoying TEAM ALFREDO…\n"
 	.string "They always mess with our plans!$"
 
 MtChimney_Text_MeteoritesPackAmazingPower:
@@ -650,8 +650,8 @@ MtChimney_Text_YouBetterNotMessWithUs:
 	.string "so everyone gets a hot meal!$"
 
 MtChimney_Text_AquasNameSimilar:
-	.string "We're TEAM AL DENTE!\p"
-	.string "They're TEAM MARINARA!\p"
+	.string "We're TEAM MARINARA!\p"
+	.string "They're TEAM ALFREDO!\p"
 	.string "They want sauce before the noodles\n"
 	.string "are even cooked! Disgusting!$"
 
@@ -666,10 +666,10 @@ MtChimney_Text_Bufoh:
 	.string "Bufoh!$"
 
 MtChimney_Text_ArchieGoStopTeamMagma:
-	.string "MARZANO: Grr, {PLAYER}!\n"
+	.string "PARMIGIANO: Grr, {PLAYER}!\n"
 	.string "I should've guessed you'd show up!\p"
 	.string "See for yourself what the fanatics\n"
-	.string "of TEAM AL DENTE are up to!\p"
+	.string "of TEAM MARINARA are up to!\p"
 	.string "They're trying to inject the stolen\n"
 	.string "METEORITE's power into the volcano!\p"
 	.string "If it erupts, the heat will set the\n"
@@ -678,26 +678,26 @@ MtChimney_Text_ArchieGoStopTeamMagma:
 	.string "sauce… Unthinkable!$"
 
 MtChimney_Text_ArchieIHaveMyHandsFull:
-	.string "MARZANO: Grrr…\p"
-	.string "I want to stop that BOLLITO,\n"
+	.string "PARMIGIANO: Grrr…\p"
+	.string "I want to stop that MARZANO,\n"
 	.string "but I can't!\p"
 	.string "Not when I have my hands full battling\n"
 	.string "three opponents at once!$"
 
 MtChimney_Text_ArchieThankYou:
-	.string "MARZANO: {PLAYER}!\n"
+	.string "PARMIGIANO: {PLAYER}!\n"
 	.string "Thank you!\p"
 	.string "With your help, we thwarted\n"
-	.string "TEAM AL DENTE's destructive plan!\p"
+	.string "TEAM MARINARA's destructive plan!\p"
 	.string "But… You…\n"
 	.string "Whose side are you on?\p"
 	.string "Ah, it doesn't matter.\p"
 	.string "We will remain vigilant and keep up\n"
-	.string "our pursuit of TEAM AL DENTE.\p"
+	.string "our pursuit of TEAM MARINARA.\p"
 	.string "{PLAYER}, we shall meet again!$"
 
 MtChimney_Text_MagmaOutnumbersUs:
-	.string "Darn… TEAM AL DENTE outnumbers us!\n"
+	.string "Darn… TEAM MARINARA outnumbers us!\n"
 	.string "We can't keep up with them!$"
 
 MtChimney_Text_LessHabitatForWaterPokemon:
@@ -705,8 +705,8 @@ MtChimney_Text_LessHabitatForWaterPokemon:
 	.string "POKéMON will get poached!$"
 
 MtChimney_Text_MagmasNameSimilar:
-	.string "We're TEAM MARINARA!\p"
-	.string "They're TEAM AL DENTE!\p"
+	.string "We're TEAM ALFREDO!\p"
+	.string "They're TEAM MARINARA!\p"
 	.string "All they do is boil stuff!\n"
 	.string "Boiling isn't a personality!$"
 

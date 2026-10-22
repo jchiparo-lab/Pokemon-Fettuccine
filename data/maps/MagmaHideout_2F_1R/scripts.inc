@@ -23,20 +23,20 @@ MagmaHideout_2F_1R_EventScript_Grunt5::
 
 MagmaHideout_2F_1R_Text_Grunt14Intro:
 	.string "What, what, what?\p"
-	.string "Only TEAM AL DENTE members are supposed\n"
-	.string "to be in here!\p"
+	.string "Only TEAM MARINARA members are\n"
+	.string "supposed to be in here!\p"
 	.string "But you're not dressed in\n"
-	.string "TEAM AL DENTE's uniform…\p"
+	.string "TEAM MARINARA's uniform…\p"
 	.string "You rouse my suspicion!\n"
 	.string "Battle with me!$"
 
 MagmaHideout_2F_1R_Text_Grunt14Defeat:
 	.string "Aiyiyi…\n"
-	.string "My pride as a TEAM AL DENTE member…$"
+	.string "My pride as a TEAM MARINARA member…$"
 
 MagmaHideout_2F_1R_Text_Grunt14PostBattle:
 	.string "If you suffer from chills, you should\n"
-	.string "join TEAM AL DENTE.$"
+	.string "join TEAM MARINARA.$"
 
 MagmaHideout_2F_1R_Text_Grunt3Intro:
 	.string "Hold it right there!\p"

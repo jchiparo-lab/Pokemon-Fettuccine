@@ -342,12 +342,12 @@ MossdeepCity_Text_SpaceCenterLaunchingRockets:
 
 MossdeepCity_Text_MossdeepTargetedByMagma:
 	.string "I heard from a SAILOR buddy that\n"
-	.string "TEAM MARINARA set up shop in\l"
+	.string "TEAM ALFREDO set up shop in\l"
 	.string "LINGUICOVE.\p"
 	.string "I also heard that someone came along\n"
 	.string "and wiped the floor with them!\p"
 	.string "But MOSTACCIDEEP here's been targeted\n"
-	.string "by that TEAM AL DENTE.\p"
+	.string "by that TEAM MARINARA.\p"
 	.string "If you want to know what they're up to,\n"
 	.string "go visit the SPACE CENTER.$"
 

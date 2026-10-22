@@ -43,8 +43,8 @@ Underwater_SeafloorCavern_EventScript_CheckStolenSub::
 Underwater_SeafloorCavern_Text_SubExplorer1:
 	.string "“SUBMARINE EXPLORER 1” is painted\n"
 	.string "on the hull.\p"
-	.string "This is the submarine TEAM MARINARA\n"
+	.string "This is the submarine TEAM ALFREDO\n"
 	.string "stole in SPAGHETTIPORT!\p"
-	.string "TEAM MARINARA must have gone\n"
+	.string "TEAM ALFREDO must have gone\n"
 	.string "ashore here.$"
 

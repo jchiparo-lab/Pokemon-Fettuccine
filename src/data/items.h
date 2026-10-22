@@ -14619,12 +14619,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MAGMA_EMBLEM] =
     {
-        .name = ITEM_NAME("Al Dente Emblem"),
+        .name = ITEM_NAME("Marinara Emblem"),
         .price = 0,
         .description = COMPOUND_STRING(
             "A medal-like item in\n"
             "the same shape as\n"
-            "Team Al Dente's mark."),
+            "Team Marinara's mark."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,

@@ -27,7 +27,7 @@ MagmaHideout_3F_1R_Text_Grunt16Intro:
 	.string "We joined so we can help our leader\n"
 	.string "achieve his fantastic vision.\p"
 	.string "I don't care if you're with\n"
-	.string "TEAM MARINARA or if you're just\l"
+	.string "TEAM ALFREDO or if you're just\l"
 	.string "some kid passing by.\p"
 	.string "No one interferes with us and gets\n"
 	.string "away with it!$"
@@ -38,7 +38,7 @@ MagmaHideout_3F_1R_Text_Grunt16Defeat:
 
 MagmaHideout_3F_1R_Text_Grunt16PostBattle:
 	.string "Listen to me.\n"
-	.string "TEAM AL DENTE is right!\p"
-	.string "Don't listen to TEAM MARINARA.\n"
+	.string "TEAM MARINARA is right!\p"
+	.string "Don't listen to TEAM ALFREDO.\n"
 	.string "Don't believe their lies!$"
 

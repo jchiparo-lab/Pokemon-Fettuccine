@@ -422,7 +422,7 @@ MtPyre_Summit_EventScript_Grunt4::
 	end
 
 MtPyre_Summit_Text_Grunt1Intro:
-	.string "No! Those TEAM AL DENTE goons got\n"
+	.string "No! Those TEAM MARINARA goons got\n"
 	.string "here ahead of us!\p"
 	.string "We can't fall behind!$"
 
@@ -439,13 +439,13 @@ MtPyre_Summit_Text_Grunt2Intro:
 	.string "Hah!\n"
 	.string "Too bad for you!\p"
 	.string "If you came earlier, you only would've\n"
-	.string "had to battle the wimpy TEAM AL DENTE.\p"
+	.string "had to battle the wimpy TEAM MARINARA.\p"
 	.string "But since you arrived now, you have\n"
 	.string "to take on us toughies!$"
 
 MtPyre_Summit_Text_Grunt2Defeat:
 	.string "Urgh… I should've let you take on\n"
-	.string "TEAM AL DENTE first…$"
+	.string "TEAM MARINARA first…$"
 
 MtPyre_Summit_Text_Grunt2PostBattle:
 	.string "You don't know anything!\n"
@@ -459,7 +459,7 @@ MtPyre_Summit_Text_Grunt3Intro:
 
 MtPyre_Summit_Text_Grunt3Defeat:
 	.string "If you're going to mess with anyone,\n"
-	.string "let it be TEAM AL DENTE…$"
+	.string "let it be TEAM MARINARA…$"
 
 MtPyre_Summit_Text_Grunt3PostBattle:
 	.string "Heh, it doesn't matter!\n"
@@ -469,13 +469,13 @@ MtPyre_Summit_Text_Grunt3PostBattle:
 
 MtPyre_Summit_Text_Grunt4Intro:
 	.string "Oh, I know!\n"
-	.string "You tried to join TEAM AL DENTE,\l"
+	.string "You tried to join TEAM MARINARA,\l"
 	.string "but they wouldn't have you!\p"
 	.string "Well, don't think that we'll let you\n"
-	.string "join our TEAM MARINARA!$"
+	.string "join our TEAM ALFREDO!$"
 
 MtPyre_Summit_Text_Grunt4Defeat:
-	.string "If you want to join TEAM MARINARA that\n"
+	.string "If you want to join TEAM ALFREDO that\n"
 	.string "badly, we can consider it…$"
 
 MtPyre_Summit_Text_Grunt4PostBattle:
@@ -483,11 +483,12 @@ MtPyre_Summit_Text_Grunt4PostBattle:
 	.string "with us members and our leader.$"
 
 MtPyre_Summit_Text_ArchieWeGotTheOrbLetsGo:
-	.string "MARZANO: TEAM AL DENTE's BOLLITO got\n"
-	.string "ahead of us, but we also got what we\l"
-	.string "wanted.\p"
+	.string "PARMIGIANO: TEAM MARINARA's MARZANO\n"
+	.string "got ahead of us, but we also got\l"
+	.string "what we wanted.\p"
 	.string "The RED ORB preserved at MT. PENNE…\n"
-	.string "I, MARZANO, now have it in my possession!\p"
+	.string "I, PARMIGIANO, now have it in my\l"
+	.string "possession!\p"
 	.string "Fufufu… Now we can bring our ultimate\n"
 	.string "objective to fruition!\p"
 	.string "Okay, TEAM!\n"
@@ -504,7 +505,7 @@ MtPyre_Summit_Text_BothOrbsTakenMagmaLeftThis:
 	.string "the two ORBS?\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
-	.string "Oh, yes. Was it TEAM AL DENTE who came\n"
+	.string "Oh, yes. Was it TEAM MARINARA who came\n"
 	.string "and took the BLUE ORB first?\p"
 	.string "Well, in their haste, they left this\n"
 	.string "behind.\p"
@@ -586,7 +587,7 @@ MtPyre_Summit_Text_WellThatTooIsFine:
 	.string "Well, that, too, is fine…$"
 
 MtPyre_Summit_Text_MaxieSilence:
-	.string "BOLLITO: {PLAYER}…\p"
+	.string "MARZANO: {PLAYER}…\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …$"
 

@@ -67,7 +67,7 @@ FallarborTown_CozmosHouse_EventScript_CozmoIsHappy::
 FallarborTown_CozmosHouse_Text_MeteoriteWillNeverBeMineNow:
 	.string "PROF. COZMO: Oh…\n"
 	.string "I never should have let myself be\l"
-	.string "conned into telling TEAM AL DENTE where\l"
+	.string "conned into telling TEAM MARINARA where\l"
 	.string "you can find METEORITES…\p"
 	.string "That METEORITE from MEATBALL FALLS…\n"
 	.string "It's never going to be mine now…$"
@@ -77,7 +77,7 @@ FallarborTown_CozmosHouse_Text_IsThatMeteoriteMayIHaveIt:
 	.string "Hah?\p"
 	.string "That item…\p"
 	.string "Could it be?\p"
-	.string "Is it the METEORITE that TEAM AL DENTE\n"
+	.string "Is it the METEORITE that TEAM MARINARA\n"
 	.string "took from MEATBALL FALLS?\p"
 	.string "Please, may I have it?\p"
 	.string "I'm not asking for it for free.\n"
@@ -106,7 +106,7 @@ FallarborTown_CozmosHouse_Text_MayIHaveMeteorite:
 FallarborTown_CozmosHouse_Text_CozmoWentToMeteorFalls:
 	.string "PROF. COZMO went off to MEATBALL FALLS\n"
 	.string "on ROUTE 114 with some people from\l"
-	.string "TEAM AL DENTE.$"
+	.string "TEAM MARINARA.$"
 
 FallarborTown_CozmosHouse_Text_FeelSorryForCozmo:
 	.string "Poor PROF. COZMO…\n"

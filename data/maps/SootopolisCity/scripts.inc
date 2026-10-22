@@ -1570,14 +1570,14 @@ SootopolisCity_Text_YouBroughtFlyingMon:
 	.string "Well, aren't you amazing!$"
 
 SootopolisCity_Text_GroudonPleaseStop:
-	.string "BOLLITO: G… GROUDON…\n"
+	.string "MARZANO: G… GROUDON…\n"
 	.string "Please! Stop what you're doing!\p"
 	.string "I know the extent of your power now!\p"
 	.string "If you keep going, all PASTALIA, not just\n"
 	.string "SUGOPOLIS, will be utterly ruined!$"
 
 SootopolisCity_Text_AfterAllOurScheming:
-	.string "BOLLITO: So the super-ancient POKéMON\n"
+	.string "MARZANO: So the super-ancient POKéMON\n"
 	.string "weren't only GROUDON and KYOGRE…\p"
 	.string "After all our fruitless scheming and\n"
 	.string "frantic efforts, that one POKéMON's\l"
@@ -1587,7 +1587,7 @@ SootopolisCity_Text_AfterAllOurScheming:
 	.string "Fuhahaha…$"
 
 SootopolisCity_Text_KyogreCalmDown:
-	.string "MARZANO: KYOGRE! What's wrong?!\n"
+	.string "PARMIGIANO: KYOGRE! What's wrong?!\n"
 	.string "Look over here! It's the RED ORB!\l"
 	.string "Calm down! KYOGRE!\p"
 	.string "… … … … … …\n"
@@ -1596,7 +1596,7 @@ SootopolisCity_Text_KyogreCalmDown:
 	.string "It's not responding at all!$"
 
 SootopolisCity_Text_TryingMeaninglessToPokemon:
-	.string "MARZANO: KYOGRE and GROUDON both\n"
+	.string "PARMIGIANO: KYOGRE and GROUDON both\n"
 	.string "flew off to who knows where.\p"
 	.string "The weather in PASTALIA has returned\n"
 	.string "to its normal state…\p"
@@ -1652,8 +1652,8 @@ SootopolisCity_Text_SoThatsRayquaza:
 	.string "POKéMON would flee from it in fear…$"
 
 SootopolisCity_Text_MaxieArchieLeft:
-	.string "STEVEN: It looks like both BOLLITO and\n"
-	.string "MARZANO have gone away somewhere.\p"
+	.string "STEVEN: It looks like both MARZANO and\n"
+	.string "PARMIGIANO have gone away somewhere.\p"
 	.string "Perhaps they've gone to MT. PENNE to\n"
 	.string "return those ORBS…$"
 
@@ -1667,8 +1667,8 @@ SootopolisCity_Text_HaventYouScaledSkyPillar:
 
 SootopolisCity_Text_AquaMagmaDidntMeanHarm:
 	.string "WALLACE: {PLAYER}{KUN}…\p"
-	.string "The leaders of TEAM AL DENTE and\n"
-	.string "MARINARA, I don't think they meant\l"
+	.string "The leaders of TEAM MARINARA and\n"
+	.string "ALFREDO, I don't think they meant\l"
 	.string "harm.\p"
 	.string "It wouldn't hurt to hear what they\n"
 	.string "have to say for themselves.$"

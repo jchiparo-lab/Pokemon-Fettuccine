@@ -591,7 +591,7 @@ Level: 37
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ARCHIE ===
-Name: MARZANO
+Name: PARMIGIANO
 Class: Aqua Leader
 Pic: Aqua Leader Archie
 Gender: Male
@@ -11004,7 +11004,7 @@ Level: 15
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_MAXIE_MAGMA_HIDEOUT ===
-Name: BOLLITO
+Name: MARZANO
 Class: Magma Leader
 Pic: Magma Leader Maxie
 Gender: Male
@@ -11026,7 +11026,7 @@ Level: 39
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_MAXIE_MT_CHIMNEY ===
-Name: BOLLITO
+Name: MARZANO
 Class: Magma Leader
 Pic: Magma Leader Maxie
 Gender: Male
@@ -13530,7 +13530,7 @@ Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MAXIE_MOSSDEEP ===
-Name: BOLLITO
+Name: MARZANO
 Class: Magma Leader
 Pic: Magma Leader Maxie
 Gender: Male

@@ -106,7 +106,7 @@ Debug_StoryBeat_MtPyreOrbs::
 	waitstate
 	end
 
-@ Al Dente Hideout: arrive on the floor with Groudon; talk to the leader.
+@ Marinara Hideout: arrive on the floor with Groudon; talk to the leader.
 Debug_StoryBeat_MagmaHideout::
 	call Debug_StoryBeat_EnsureParty
 	clearflag FLAG_GROUDON_AWAKENED_MAGMA_HIDEOUT
@@ -122,7 +122,7 @@ Debug_StoryBeat_MagmaHideout::
 	waitstate
 	end
 
-@ Marinara Hideout: walk left toward Matt and the submarine.
+@ Alfredo Hideout: walk left toward Matt and the submarine.
 Debug_StoryBeat_AquaHideout::
 	call Debug_StoryBeat_EnsureParty
 	clearflag FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE
@@ -133,7 +133,7 @@ Debug_StoryBeat_AquaHideout::
 	waitstate
 	end
 
-@ Mostaccideep: walk right toward the Al Dente group outside the Space Center.
+@ Mostaccideep: walk right toward the Marinara group outside the Space Center.
 Debug_StoryBeat_SpaceCenter::
 	call Debug_StoryBeat_EnsureParty
 	setvar VAR_MOSSDEEP_CITY_STATE, 1

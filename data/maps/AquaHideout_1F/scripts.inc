@@ -52,7 +52,7 @@ AquaHideout_1F_EventScript_Grunt1Defeated::
 
 AquaHideout_1F_Text_OurBossIsSnatchingSomething:
 	.string "What? What? What do you want with \n"
-	.string "TEAM MARINARA?\p"
+	.string "TEAM ALFREDO?\p"
 	.string "Our BOSS isn't here! He's gone off to\n"
 	.string "snatch something important!\p"
 	.string "… …\n"
@@ -62,15 +62,15 @@ AquaHideout_1F_Text_OurBossIsSnatchingSomething:
 
 AquaHideout_1F_Text_WhereMightMagmaHideoutBe:
 	.string "What? What?\n"
-	.string "Are you a TEAM AL DENTE grunt?\p"
-	.string "I hear that TEAM AL DENTE is trying to\n"
+	.string "Are you a TEAM MARINARA grunt?\p"
+	.string "I hear that TEAM MARINARA is trying to\n"
 	.string "awaken an awesome POKéMON at their\l"
 	.string "HIDEOUT.\p"
 	.string "But where might their HIDEOUT be?$"
 
 AquaHideout_1F_Text_BossWentToJackASubmarine:
 	.string "What? What? What do you want with \n"
-	.string "TEAM MARINARA?\p"
+	.string "TEAM ALFREDO?\p"
 	.string "Our BOSS isn't here!\n"
 	.string "He's gone off to jack a submarine!\p"
 	.string "… …\n"
@@ -80,7 +80,7 @@ AquaHideout_1F_Text_BossWentToJackASubmarine:
 
 AquaHideout_1F_Text_BossIsOnRoute122:
 	.string "What? What? What do you want with \n"
-	.string "TEAM MARINARA?\p"
+	.string "TEAM ALFREDO?\p"
 	.string "Our BOSS isn't here! He's on his way to\n"
 	.string "MT. PENNE on ROUTE 122!\p"
 	.string "… …\n"
@@ -90,14 +90,14 @@ AquaHideout_1F_Text_BossIsOnRoute122:
 
 AquaHideout_1F_Text_TeamMagmaAtMtChimney:
 	.string "What? What?\n"
-	.string "Are you a TEAM AL DENTE grunt?\p"
-	.string "I hear that TEAM AL DENTE is after\n"
+	.string "Are you a TEAM MARINARA grunt?\p"
+	.string "I hear that TEAM MARINARA is after\n"
 	.string "an awesome POKéMON at MT. CALZONE.\p"
 	.string "But what is that POKéMON like?$"
 
 AquaHideout_1F_Text_BossIsInSlateportCity:
 	.string "What? What? What do you want with\n"
-	.string "TEAM MARINARA?\p"
+	.string "TEAM ALFREDO?\p"
 	.string "Our BOSS isn't here!\n"
 	.string "He's on his way to SPAGHETTIPORT CITY!\p"
 	.string "… …\n"

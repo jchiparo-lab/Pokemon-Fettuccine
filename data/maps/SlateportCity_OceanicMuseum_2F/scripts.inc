@@ -285,7 +285,7 @@ SlateportCity_OceanicMuseum_2F_Text_SternWhoAreYou:
 	.string "Who are you people?$"
 
 SlateportCity_OceanicMuseum_2F_Text_WereTeamAqua:
-	.string "We're TEAM MARINARA!\p"
+	.string "We're TEAM ALFREDO!\p"
 	.string "Our BOSS wants those parts!\n"
 	.string "Shut your yap and fork them over!$"
 
@@ -318,13 +318,13 @@ SlateportCity_OceanicMuseum_2F_Text_CameToSeeWhatsTakingSoLong:
 	.string "simps are held up by a mere child?$"
 
 SlateportCity_OceanicMuseum_2F_Text_ArchieWarning:
-	.string "We are TEAM MARINARA,\n"
+	.string "We are TEAM ALFREDO,\n"
 	.string "and we live for the sauce!\p"
-	.string "And I am TEAM MARINARA's leader,\n"
-	.string "MARZANO!\p"
+	.string "And I am TEAM ALFREDO's leader,\n"
+	.string "PARMIGIANO!\p"
 	.string "What makes you interfere with us?\p"
 	.string "…No! You can't be!\n"
-	.string "You're not one of TEAM AL DENTE?\p"
+	.string "You're not one of TEAM MARINARA?\p"
 	.string "Wait, that can't be right.\n"
 	.string "You're not dressed for the part.\p"
 	.string "… … … … … …\n"
@@ -333,7 +333,7 @@ SlateportCity_OceanicMuseum_2F_Text_ArchieWarning:
 	.string "Like noodles no one bothered to dress.\p"
 	.string "POKéMON, people… Every living thing\n"
 	.string "is waiting for its sauce.\p"
-	.string "So, TEAM MARINARA is dedicated to\n"
+	.string "So, TEAM ALFREDO is dedicated to\n"
 	.string "covering the world in marinara.\p"
 	.string "Let the seas run red and rich!\n"
 	.string "Is that not a magnificent undertaking?\p"

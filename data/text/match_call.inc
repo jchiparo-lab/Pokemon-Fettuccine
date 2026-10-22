@@ -2535,7 +2535,7 @@ MatchCall_Text_Brendan9::
 	.string "But around JAGGED PASS, I ran into\n"
 	.string "some nasty-looking characters.\p"
 	.string "Those creeps…\n"
-	.string "I think they were TEAM AL DENTE.$"
+	.string "I think they were TEAM MARINARA.$"
 
 MatchCall_Text_Brendan10::
 	.string "BRENDAN: Hi, {PLAYER}!\n"
@@ -2674,7 +2674,7 @@ MatchCall_Text_Scott4::
 	.string "SCOTT: Hi, {PLAYER}{KUN}!\p"
 	.string "I've been hearing about these odd\n"
 	.string "gangs being a nuisance.\p"
-	.string "TEAM AL DENTE and TEAM MARINARA,\n"
+	.string "TEAM MARINARA and TEAM ALFREDO,\n"
 	.string "I think they were.\p"
 	.string "I would think there'd be some\n"
 	.string "skilled TRAINERS among them.\p"
@@ -2745,7 +2745,7 @@ MatchCall_Text_Norman4::
 
 MatchCall_Text_Norman5::
 	.string "DAD: Oh, hi, {PLAYER}!\p"
-	.string "What's that? AL DENTE EMBLEM?\n"
+	.string "What's that? MARINARA EMBLEM?\n"
 	.string "I don't know what that's about.\p"
 	.string "But with a name like that, it may\n"
 	.string "be somehow linked to a volcano!$"

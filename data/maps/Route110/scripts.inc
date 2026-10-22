@@ -739,7 +739,7 @@ Route110_Movement_BirchExit4:
 	step_end
 
 Route110_Text_WeCantTalkAboutAquaActivities:
-	.string "TEAM MARINARA's activities…\n"
+	.string "TEAM ALFREDO's activities…\n"
 	.string "We can't talk about them yet.$"
 
 Route110_Text_KickUpARuckus:
@@ -748,10 +748,10 @@ Route110_Text_KickUpARuckus:
 
 Route110_Text_MyFirstJobInAqua:
 	.string "This is my first job after joining\n"
-	.string "TEAM MARINARA. It's a little scary.$"
+	.string "TEAM ALFREDO. It's a little scary.$"
 
 Route110_Text_AquaActionsBringSmiles:
-	.string "TEAM MARINARA's actions should bring\n"
+	.string "TEAM ALFREDO's actions should bring\n"
 	.string "smiles to people's faces!$"
 
 Route110_Text_MayLetsBattle:
@@ -916,10 +916,10 @@ Route110_Text_CyclingRoadSign:
 	.string "SEASIDE CYCLING ROAD$"
 
 Route110_Text_AquaWasHere:
-	.string "“TEAM MARINARA was here!”\p"
+	.string "“TEAM ALFREDO was here!”\p"
 	.string "Someone painted that onto this sign,\n"
 	.string "but then someone else painted over it.\p"
-	.string "“TEAM AL DENTE rules!” is what it\n"
+	.string "“TEAM MARINARA rules!” is what it\n"
 	.string "says now.$"
 
 Route110_Text_Route103Sign:

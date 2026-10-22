@@ -242,7 +242,7 @@ Route128_EventScript_Carlee::
 	end
 
 Route128_Text_ArchieWhatHappened:
-	.string "MARZANO: What happened…\n"
+	.string "PARMIGIANO: What happened…\n"
 	.string "What is this wretched scene…\p"
 	.string "Did I…make a horrible mistake?$"
 
@@ -251,8 +251,8 @@ Route128_Text_ArchieIOnlyWanted:
 	.string "I only wanted…$"
 
 Route128_Text_MaxieDoYouUnderstandNow:
-	.string "BOLLITO: Do you understand now,\n"
-	.string "MARZANO?\p"
+	.string "MARZANO: Do you understand now,\n"
+	.string "PARMIGIANO?\p"
 	.string "Do you finally see how disastrous\n"
 	.string "your dream turned out to be?\p"
 	.string "We have to hurry! We have to do\n"
@@ -260,19 +260,19 @@ Route128_Text_MaxieDoYouUnderstandNow:
 	.string "completely out of control!$"
 
 Route128_Text_MaxieResposibilityFallsToArchieAndMe:
-	.string "BOLLITO: {PLAYER}, don't say anything.\p"
+	.string "MARZANO: {PLAYER}, don't say anything.\p"
 	.string "I know that I have no right to be\n"
-	.string "critical of MARZANO…\p"
+	.string "critical of PARMIGIANO…\p"
 	.string "But the way things are now, I doubt\n"
 	.string "that we humans will be capable of\l"
 	.string "doing anything about it.\p"
 	.string "But neither can we stand by and\n"
 	.string "just watch helplessly.\p"
 	.string "The responsibility for putting an end\n"
-	.string "to this falls to MARZANO and me…$"
+	.string "to this falls to PARMIGIANO and me…$"
 
 Route128_Text_MaxieThisDefiesBelief:
-	.string "BOLLITO: This defies belief…\p"
+	.string "MARZANO: This defies belief…\p"
 	.string "Those super-ancient POKéMON…\p"
 	.string "Their power is unbelievable.\n"
 	.string "They've upset the balance of nature…$"

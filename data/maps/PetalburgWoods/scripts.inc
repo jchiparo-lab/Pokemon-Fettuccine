@@ -342,7 +342,7 @@ PetalburgWoods_Text_YouHaveToHelpMe:
 PetalburgWoods_Text_NoOneCrossesTeamAqua:
 	.string "Hunh? What do you think you're doing?\n"
 	.string "What, you're going to protect him?\p"
-	.string "No one who crosses TEAM MARINARA\n"
+	.string "No one who crosses TEAM ALFREDO\n"
 	.string "gets any mercy, not even a kid!\p"
 	.string "Come on and battle me!$"
 
@@ -351,11 +351,11 @@ PetalburgWoods_Text_YoureKiddingMe:
 
 PetalburgWoods_Text_YouveGotSomeNerve:
 	.string "Grrr… You've got some nerve\n"
-	.string "meddling with TEAM MARINARA!\l"
+	.string "meddling with TEAM ALFREDO!\l"
 	.string "Come on and battle me again!\p"
 	.string "I wish I could say that, but I'm out of\n"
 	.string "POKéMON…\p"
-	.string "And, hey, we of TEAM MARINARA are also\n"
+	.string "And, hey, we of TEAM ALFREDO are also\n"
 	.string "after something in ROTINIBORO.\p"
 	.string "I'll let you go today!$"
 
@@ -368,7 +368,7 @@ PetalburgWoods_Text_ThatWasAwfullyClose:
 	.string "my thanks!$"
 
 PetalburgWoods_Text_TeamAquaAfterSomethingInRustboro:
-	.string "Didn't that TEAM MARINARA thug say\n"
+	.string "Didn't that TEAM ALFREDO thug say\n"
 	.string "they were after something in\l"
 	.string "ROTINIBORO, too?$"
 
