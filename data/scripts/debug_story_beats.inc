@@ -3,11 +3,21 @@
 @ villain scene, then warps the player next to it. For playtesting only: it
 @ rewinds or skips story progress, so use it on a throwaway save.
 
-@ Gives a strong Pokémon if the party is empty, so every scene's battles work.
+@ Gives all badges, so high-level Pokémon obey, and a strong Pokémon if the
+@ party is empty, so every scene's battles work. Aura Sphere covers the Dark
+@ types that Psystrike can't hit.
 Debug_StoryBeat_EnsureParty:
+	setflag FLAG_BADGE01_GET
+	setflag FLAG_BADGE02_GET
+	setflag FLAG_BADGE03_GET
+	setflag FLAG_BADGE04_GET
+	setflag FLAG_BADGE05_GET
+	setflag FLAG_BADGE06_GET
+	setflag FLAG_BADGE07_GET
+	setflag FLAG_BADGE08_GET
 	getpartysize
 	goto_if_ne VAR_RESULT, 0, Debug_StoryBeat_EnsureParty_Done
-	givemon SPECIES_MEWTWO, 70, ITEM_NONE
+	givemon SPECIES_MEWTWO, 70, ITEM_NONE, move1 = MOVE_PSYSTRIKE, move2 = MOVE_AURA_SPHERE, move3 = MOVE_ICE_BEAM, move4 = MOVE_FLAMETHROWER
 	setflag FLAG_SYS_POKEMON_GET
 Debug_StoryBeat_EnsureParty_Done:
 	return
