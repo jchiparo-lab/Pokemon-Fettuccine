@@ -164,8 +164,27 @@ MtPyre_Summit_EventScript_OldLady::
 MtPyre_Summit_EventScript_OldLadyOrbsReturned::
 	msgbox MtPyre_Summit_Text_ThoseTwoMenReturnedOrbs, MSGBOX_DEFAULT
 	setflag FLAG_RETURNED_RED_OR_BLUE_ORB
+	call MtPyre_Summit_EventScript_GiveOrbs
 	release
 	end
+
+@ Fettuccine: the old lady gives both ORBS for Primal Reversion, as in ORAS.
+@ If the bag is full she offers them again the next time the player talks to her.
+MtPyre_Summit_EventScript_GiveOrbs::
+	msgbox MtPyre_Summit_Text_OrbsShouldGoWithYou, MSGBOX_DEFAULT
+	checkitemspace ITEM_RED_ORB
+	goto_if_eq VAR_RESULT, FALSE, MtPyre_Summit_EventScript_GiveOrbsBagFull
+	checkitemspace ITEM_BLUE_ORB
+	goto_if_eq VAR_RESULT, FALSE, MtPyre_Summit_EventScript_GiveOrbsBagFull
+	giveitem ITEM_RED_ORB
+	giveitem ITEM_BLUE_ORB
+	setflag FLAG_RECEIVED_PRIMAL_ORBS
+	msgbox MtPyre_Summit_Text_ExplainOrbs, MSGBOX_DEFAULT
+	return
+
+MtPyre_Summit_EventScript_GiveOrbsBagFull::
+	msgbox MtPyre_Summit_Text_OrbsBagFull, MSGBOX_DEFAULT
+	return
 
 MtPyre_Summit_EventScript_OldLadyLegendariesAwake::
 	msgbox MtPyre_Summit_Text_GroudonKyogreAwakened, MSGBOX_DEFAULT
@@ -173,6 +192,7 @@ MtPyre_Summit_EventScript_OldLadyLegendariesAwake::
 	end
 
 MtPyre_Summit_EventScript_OldLadyAfterOrbsReturned::
+	call_if_unset FLAG_RECEIVED_PRIMAL_ORBS, MtPyre_Summit_EventScript_GiveOrbs
 	msgbox MtPyre_Summit_Text_SuperAncientPokemonTaughtUs, MSGBOX_DEFAULT
 	release
 	end
@@ -541,6 +561,24 @@ MtPyre_Summit_Text_ThoseTwoMenReturnedOrbs:
 	.string "back to return them on their own.\p"
 	.string "Those men…\n"
 	.string "Perhaps they are not so evil after all…$"
+
+MtPyre_Summit_Text_OrbsShouldGoWithYou:
+	.string "Yet I wonder if the ORBS truly\n"
+	.string "belong on this mountain…\p"
+	.string "You stood before the super-ancient\n"
+	.string "POKéMON and did not run.\p"
+	.string "I believe the ORBS should go\n"
+	.string "with you.$"
+
+MtPyre_Summit_Text_ExplainOrbs:
+	.string "If GROUDON holds the RED ORB, or\n"
+	.string "KYOGRE the BLUE ORB, their ancient\l"
+	.string "power will return in battle.\p"
+	.string "Use that power wisely, child.$"
+
+MtPyre_Summit_Text_OrbsBagFull:
+	.string "Oh, your BAG is too full to carry\n"
+	.string "them. Come back when you have room.$"
 
 MtPyre_Summit_Text_SuperAncientPokemonTaughtUs:
 	.string "The red of the land, the white of\n"
