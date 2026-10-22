@@ -420,5 +420,5 @@ MossdeepCity_SpaceCenter_1F_Text_MagmaIntentToStealNotice:
 	.string "rocket fuel.\p"
 	.string "“Please don't try to stop us.\n"
 	.string "We will take the fuel no matter what.\p"
-	.string "“Let there be more land!\n"
+	.string "“Let the volcanoes run red!\n"
 	.string "                                          TEAM MARINARA”$"

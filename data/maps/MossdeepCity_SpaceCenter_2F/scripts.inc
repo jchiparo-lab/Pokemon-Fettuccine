@@ -399,8 +399,8 @@ MossdeepCity_SpaceCenter_2F_Text_Grunt7Intro:
 	.string "But I'm not about to let you do that!$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt7Defeat:
-	.string "We should've taken a break…\n"
-	.string "That's what we should've done…$"
+	.string "We should've taken a lunch break…\n"
+	.string "Spaghetti and meatballs…$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt6PostBattle:
 	.string "Three of us here, and look at the sorry\n"
@@ -439,7 +439,8 @@ MossdeepCity_SpaceCenter_2F_Text_MaxieUseFuelToEruptVolcano:
 	.string "for that slag heap of a mountain!\p"
 	.string "So we'll use the fuel's power to make\n"
 	.string "the volcano erupt!\p"
-	.string "It will be savage!$"
+	.string "Even without GROUDON, the mountain\n"
+	.string "will pour forth its red sauce!$"
 
 MossdeepCity_SpaceCenter_2F_Text_StevenAreYouReadyToBattle:
 	.string "STEVEN: {PLAYER}{KUN}!\n"
@@ -452,8 +453,9 @@ MossdeepCity_SpaceCenter_2F_Text_StevenHurryGetReadyQuickly:
 	.string "Get ready quickly!$"
 
 MossdeepCity_SpaceCenter_2F_Text_JustWantToExpandLand:
-	.string "All I want…\n"
-	.string "I just want to expand the land mass…$"
+	.string "All I want…\p"
+	.string "I just want the world to know\n"
+	.string "the taste of true red sauce…$"
 
 MossdeepCity_SpaceCenter_Text_TabithaDefeat:
 	.string "I'm with our leader…$"
@@ -463,15 +465,15 @@ MossdeepCity_SpaceCenter_2F_Text_MaxieWeFailedIsAquaAlsoMisguided:
 	.string "erupt…\p"
 	.string "We failed to control GROUDON after\n"
 	.string "we had awoken it…\p"
-	.string "Is our goal to expand the land\n"
+	.string "Is our dream of a world in red sauce\n"
 	.string "misguided?\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
 	.string "If…\n"
 	.string "If we, TEAM MARINARA, are wrong…\l"
 	.string "… … … … … …\p"
-	.string "Then might TEAM ALFREDO's goal to\n"
-	.string "expand the sea also be equally\l"
+	.string "Then might TEAM ALFREDO's dream of\n"
+	.string "a world in white sauce be equally\l"
 	.string "misguided?$"
 
 MossdeepCity_SpaceCenter_2F_Text_MaxieWeWillGiveUp:
