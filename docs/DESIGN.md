@@ -242,6 +242,7 @@ All built into pokeemerald-expansion; the work is deciding where things appear.
 
 - **All Pokémon through Gen IX.** **Decided:** every Gen 3 Pokémon stays where it is in Emerald. Where the other generations appear, and the regional Dex order, will be planned later.
 - **Every item, ability, and move effect through Gen IX.** Still to plan: where items are found or sold, and which TMs exist.
+  - **Done: evolution counter.** A third clerk on the Linguicove Department Store's 3rd floor sells all 51 items any Pokémon uses to evolve: every evolution stone, the Linking Cord, every held trade item (Metal Coat, King's Rock, Dragon Scale, Up-Grade…), and the newer items (apples, teacups, sweets, Galarica items, armors, Black Augurite, Peat Block, Metal Alloy, both Scrolls). The Scrolls had no price, so they now cost ¥3,000.
 - **Physical/special split.** Built in and on by default.
 
 ## Battle mechanics
