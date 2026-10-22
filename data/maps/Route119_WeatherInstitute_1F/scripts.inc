@@ -124,8 +124,9 @@ Route119_WeatherInstitute_1F_Text_NoticingAbnormalWeather:
 Route119_WeatherInstitute_1F_Text_WhatWereAquasUpTo:
 	.string "Hello!\n"
 	.string "We've been saved by your actions!\p"
-	.string "What I don't understand is what on\n"
-	.string "earth TEAM MARINARA was up to.$"
+	.string "What I don't understand is what\n"
+	.string "on earth the sauce-slingers\l"
+	.string "were up to.$"
 
 Route119_WeatherInstitute_1F_Text_TakeRestInBed:
 	.string "There's a bed…\n"
