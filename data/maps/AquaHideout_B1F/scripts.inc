@@ -122,7 +122,7 @@ AquaHideout_B1F_Text_Grunt2PostBattle:
 
 AquaHideout_B1F_Text_Grunt3Intro:
 	.string "Fuel supply loaded A-OK!\n"
-	.string "In-cruise snacks loaded A-OK!\p"
+	.string "Garlic bread loaded A-OK!\p"
 	.string "Nothing left to do but KO a pesky\n"
 	.string "meddler!$"
 

@@ -562,8 +562,8 @@ LilycoveCity_Text_DontGoNearCaveInCove:
 	.string "I'm an adult, so you just listen to me!$"
 
 LilycoveCity_Text_IfWorldBecomesOurs:
-	.string "If this whole wide world becomes ours,\n"
-	.string "TEAM ALFREDO's, it will be a happier\l"
+	.string "Once the whole wide world is covered\n"
+	.string "in ALFREDO sauce, it'll be a happier\l"
 	.string "place for POKéMON, too.$"
 
 LilycoveCity_Text_WailmerLeapOutOfWater:
@@ -650,7 +650,7 @@ LilycoveCity_Text_TeamAquaRenovatedCavern:
 	.string "but then that TEAM ALFREDO lot came\l"
 	.string "along and made their renovations.\p"
 	.string "They call themselves\n"
-	.string "the “nature-loving TEAM ALFREDO”!\p"
+	.string "the “refined TEAM ALFREDO”!\p"
 	.string "But what they do and what they say\n"
 	.string "don't match at all!$"
 

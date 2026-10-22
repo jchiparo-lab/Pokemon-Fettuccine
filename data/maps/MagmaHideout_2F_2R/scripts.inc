@@ -55,7 +55,7 @@ MagmaHideout_2F_2R_Text_Grunt7Intro:
 
 MagmaHideout_2F_2R_Text_Grunt7Defeat:
 	.string "You're a fiery battler.\n"
-	.string "Just like a volcano!$"
+	.string "Like a fresh pot of arrabbiata!$"
 
 MagmaHideout_2F_2R_Text_Grunt7PostBattle:
 	.string "You just happened to win this time,\n"

@@ -141,7 +141,7 @@ MagmaHideout_4F_Text_Grunt11PostBattle:
 MagmaHideout_4F_Text_Grunt12Intro:
 	.string "Fuhahaha!\n"
 	.string "Soon! Very soon!\l"
-	.string "Our grand objective will be achieved!$"
+	.string "Every volcano will run red with sauce!$"
 
 MagmaHideout_4F_Text_Grunt12Defeat:
 	.string "Grrr…\n"
@@ -188,7 +188,9 @@ MagmaHideout_4F_Text_MaxieAwakenGroudon:
 	.string "I have brought you the BLUE ORB.\n"
 	.string "Let its shine awaken you!\p"
 	.string "And show me…\n"
-	.string "Show me the full extent of your power!$"
+	.string "Show me the full extent of your power!\p"
+	.string "Let every volcano in the world pour\n"
+	.string "forth rich, red sauce!$"
 
 MagmaHideout_4F_Text_MaxieGroudonWhatsWrong:
 	.string "MARZANO: GROUDON!\n"

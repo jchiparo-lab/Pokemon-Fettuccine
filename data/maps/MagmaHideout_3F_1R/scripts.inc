@@ -39,6 +39,7 @@ MagmaHideout_3F_1R_Text_Grunt16Defeat:
 MagmaHideout_3F_1R_Text_Grunt16PostBattle:
 	.string "Listen to me.\n"
 	.string "TEAM MARINARA is right!\p"
+	.string "Red sauce is the one true sauce!\p"
 	.string "Don't listen to TEAM ALFREDO.\n"
 	.string "Don't believe their lies!$"
 

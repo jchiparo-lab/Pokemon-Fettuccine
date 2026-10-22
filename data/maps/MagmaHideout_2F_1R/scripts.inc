@@ -36,7 +36,8 @@ MagmaHideout_2F_1R_Text_Grunt14Defeat:
 
 MagmaHideout_2F_1R_Text_Grunt14PostBattle:
 	.string "If you suffer from chills, you should\n"
-	.string "join TEAM MARINARA.$"
+	.string "join TEAM MARINARA.\p"
+	.string "We serve everything piping hot!$"
 
 MagmaHideout_2F_1R_Text_Grunt3Intro:
 	.string "Hold it right there!\p"
