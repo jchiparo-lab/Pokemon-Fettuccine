@@ -1414,8 +1414,8 @@ SootopolisCity_Text_WhatIsThatGreenPokemon:
 SootopolisCity_Text_WhereDidLegendariesGo:
 	.string "GROUDON and KYOGRE…\n"
 	.string "Where did they go?\p"
-	.string "Will they cause droughts or downpours\n"
-	.string "somewhere else?$"
+	.string "Will they cause droughts or floods of\n"
+	.string "sauce somewhere else?$"
 
 SootopolisCity_Text_TwoPokemonArentAngry:
 	.string "I just get this sense somehow that\n"
@@ -1443,7 +1443,7 @@ SootopolisCity_Text_ThatWasWicked:
 
 SootopolisCity_Text_GoRedAndBlueMon:
 	.string "Go for it, red POKéMON!\n"
-	.string "Don't back off, blue POKéMON!$"
+	.string "Don't back off, white POKéMON!$"
 
 SootopolisCity_Text_DoYouKnowMonNames:
 	.string "… … … … … …\p"
@@ -1452,13 +1452,15 @@ SootopolisCity_Text_DoYouKnowMonNames:
 
 SootopolisCity_Text_GreenOneSettlesThings:
 	.string "I was wondering which one would win,\n"
-	.string "the red one or the blue one, but, oh no,\l"
+	.string "the red one or the white one, but, oh no,\l"
 	.string "it's the green one that settles things!\p"
-	.string "Talk about a huge turn of events!$"
+	.string "Talk about a huge turn of events!\p"
+	.string "Red, white and green… Just like\n"
+	.string "a plate of caprese salad!$"
 
 SootopolisCity_Text_SeeingLegendWithOwnEyes:
 	.string "There's an ancient legend that claims\n"
-	.string "the land and sea were shaped by\l"
+	.string "the world was once buried in sauce by\l"
 	.string "a colossal battle between POKéMON.\p"
 	.string "Well, I'm seeing that happen with\n"
 	.string "my very own eyes!\p"
@@ -1467,7 +1469,7 @@ SootopolisCity_Text_SeeingLegendWithOwnEyes:
 
 SootopolisCity_Text_SawLegendWithOwnEyes:
 	.string "There's an ancient legend that claims\n"
-	.string "the land and sea were shaped by\l"
+	.string "the world was once buried in sauce by\l"
 	.string "a colossal battle between POKéMON.\p"
 	.string "Well, I saw that happen with\n"
 	.string "my very own eyes!\p"
@@ -1556,7 +1558,7 @@ SootopolisCity_Text_WeatherWentWild:
 	.string "The weather was clear this morning,\n"
 	.string "but…\p"
 	.string "All of a sudden, dark clouds brewed up,\n"
-	.string "rain started falling in sheets, and\l"
+	.string "sauce started falling in sheets, and\l"
 	.string "there was thunder and lightning, too.\p"
 	.string "The weather just went completely\n"
 	.string "wild!\p"
