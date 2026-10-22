@@ -439,7 +439,7 @@ MtPyre_Summit_Text_Grunt2Intro:
 	.string "Hah!\n"
 	.string "Too bad for you!\p"
 	.string "If you came earlier, you only would've\n"
-	.string "had to battle the wimpy TEAM MARINARA.\p"
+	.string "had to battle the watery TEAM MARINARA.\p"
 	.string "But since you arrived now, you have\n"
 	.string "to take on us toughies!$"
 
@@ -479,8 +479,8 @@ MtPyre_Summit_Text_Grunt4Defeat:
 	.string "badly, we can consider it…$"
 
 MtPyre_Summit_Text_Grunt4PostBattle:
-	.string "We have a great combination going\n"
-	.string "with us members and our leader.$"
+	.string "Us members and our leader go together\n"
+	.string "like butter and PARMESAN!$"
 
 MtPyre_Summit_Text_ArchieWeGotTheOrbLetsGo:
 	.string "PARMIGIANO: TEAM MARINARA's MARZANO\n"
@@ -491,6 +491,8 @@ MtPyre_Summit_Text_ArchieWeGotTheOrbLetsGo:
 	.string "possession!\p"
 	.string "Fufufu… Now we can bring our ultimate\n"
 	.string "objective to fruition!\p"
+	.string "Every sea in the world will become\n"
+	.string "one great tide of ALFREDO sauce!\p"
 	.string "Okay, TEAM!\n"
 	.string "We're pulling out!$"
 
