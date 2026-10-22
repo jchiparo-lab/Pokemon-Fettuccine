@@ -269,7 +269,7 @@ SeafloorCavern_Room9_Text_ArchieWhatRainingTooHard:
 	.string "Good… That should have happened.\n"
 	.string "That is why we awakened KYOGRE,\l"
 	.string "to realize TEAM ALFREDO's vision of\l"
-	.string "a world flooded with our sauce.\p"
+	.string "a world flooded with ALFREDO sauce.\p"
 	.string "What?!\p"
 	.string "The sauce is coming down far harder\n"
 	.string "than we envisioned? You're in danger?\p"
