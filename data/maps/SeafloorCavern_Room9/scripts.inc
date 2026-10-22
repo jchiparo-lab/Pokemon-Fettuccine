@@ -265,7 +265,7 @@ SeafloorCavern_Room9_Text_ArchieAMessageFromOutside:
 SeafloorCavern_Room9_Text_ArchieWhatRainingTooHard:
 	.string "PARMIGIANO: Yes, what is it?\p"
 	.string "Hm…\n"
-	.string "It's raining ALFREDO sauce?\p"
+	.string "It's raining sauce?\p"
 	.string "Good… That should have happened.\n"
 	.string "That is why we awakened KYOGRE,\l"
 	.string "to realize TEAM ALFREDO's vision of\l"
