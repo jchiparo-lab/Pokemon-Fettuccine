@@ -156,7 +156,7 @@ Brian is a proud Canadian who hates all Italian food. He wants to become Champio
 
 - **Swanna is his ace,** saved for last, and its shiny Canada goose colors are the big reveal. Give it an ace build (highest level, perfect IVs, a good item and strong moveset); its stats are modest for an ace, so consider buffing its base stats.
 - **Swanna is also his day-one partner.** Players never see the rival pick a starter, so Ducklett is his first Pokémon and the one he uses in the Route 103 battle. Bidoof joins later.
-- **Abomasnow Mega Evolves** in later battles, so Brian needs a Key Stone in the story.
+- **Abomasnow Mega Evolves** in later battles, so Brian needs a Mega Ring in the story (story flavor only: trainers Mega Evolve without one).
 - **Lock Sawsbuck to its Autumn form** in his trainer data.
 - **Decided: Brian's Swanna is recolored as a Canada goose:** black head and neck, a white chinstrap patch, a gray-brown body, a pale chest, and a black beak and tail. Same approach as Sam's Metagross: Brian's Swanna is shiny in his trainer data, and Swanna's shiny palette gets the goose colors, so any shiny Swanna the player finds is a Canada goose too. Because the white chinstrap and black neck may share a color with the rest of the body, the sprite probably needs a few pixel edits in Aseprite as well as the palette change. Brian's Ducklett stays normal-colored in earlier battles, so the goose colors are a surprise when it evolves.
 - **Watch out for Fire.** Abomasnow, Sawsbuck, and Ninetales are all weak to it. Bibarel and Swanna can switch in against Fire types; give the others coverage moves.
@@ -193,7 +193,7 @@ Status:
 | Person | Replaces | Role in the game |
 | --- | --- | --- |
 | Alan | Professor Birch | Gives the player their starter and introduces the world |
-| Sam | Steven Stone | Kind mentor, gives the player the Key Stone, secret post-game boss |
+| Sam | Steven Stone | Kind mentor, gives the player the Mega Ring, secret post-game boss |
 | Joe | Game designer (Cove Lily Motel, Linguicove) | Awards the diploma for completing the Pokédex |
 | Brian | The rival, Wally, and Wallace (Champion) | See Brian's story |
 | Jason | Every shopkeeper | Runs every Retro Salvage Games shop |
@@ -211,7 +211,7 @@ Status:
 
 - The heart of Retrotopia: kind and always looking out for the player.
 - Instead of rare stones, Sam collects rare Wisconsin cheeses.
-- **Decided:** Sam gives the player the **Key Stone in Granite Cave** when they first meet him. Spread Mega Stones across the rest of the game so players can't Mega Evolve something powerful too early.
+- **Decided:** Sam gives the player the **Mega Ring in Granite Cave** when they first meet him. Spread Mega Stones across the rest of the game so players can't Mega Evolve something powerful too early.
 - Steven's post-game battle at Meteor Falls becomes Sam's.
 
 #### Sam's team (post-game battle)
@@ -247,7 +247,7 @@ All built into pokeemerald-expansion; the work is deciding where things appear.
 
 ## Battle mechanics
 
-- **Mega Evolution.** Built in. **Done:** Steven (Sam) gives the **Key Stone** in Granite Cave, right after TM Steel Wing, and hints that a Mega Stone is hidden in the same cave (the Aggronite). The engine's Mega Ring item is renamed Key Stone, in the bag and in the battle line "…is reacting to [trainer]'s Key Stone!". Its bag icon is still the ring art (a stone icon would be an art task). **Decided:** the new Megas from Legends Z-A are excluded for now.
+- **Mega Evolution.** Built in. **Done:** Steven (Sam) gives the **Mega Ring** in Granite Cave, right after TM Steel Wing, and hints that a Mega Stone is hidden in the same cave (the Aggronite). **Decided:** the item keeps the engine's name, Mega Ring (Joe briefly tried "Key Stone" and switched back). **Decided:** the new Megas from Legends Z-A are excluded for now.
   - **Decided: no Mega Stone is locked behind the post-game.** Every stone is obtainable before the final battle with Brian. Stones are found as item balls, and each appears around when its Pokémon can reach its final form.
   - **Done: every Mega-capable Pokémon is now obtainable before Brian** (see "Pokémon added for Mega Evolution" below), so all 46 non-Z-A Mega Stones are in the game.
   - **Decided: Marzano Mega Evolves Camerupt** (Space Center double battle) and **Parmigiano Mega Evolves Sharpedo** (Seafloor Cavern).
@@ -381,7 +381,7 @@ A yes/no choice at New Game that randomizes Pokémon for that save file. It must
 | All Pokémon through Gen IX | Built in; plan placement | Not started |
 | Items, abilities, move effects through Gen IX | Built in; plan placement | Not started |
 | Physical/special split | Built in | Done (built in) |
-| Mega Evolution (Key Stone from Sam in Granite Cave) | Built in; place Key Stone and Mega Stones | Done |
+| Mega Evolution (Mega Ring from Sam in Granite Cave) | Built in; place Mega Ring and Mega Stones | Done |
 | Primal Reversion | Built in; place Blue/Red Orbs | Not started |
 | Double wild battles | Config toggle | Done (config, 15%) |
 | 1v2 / 2v1 battles | Event scripting | Not started |
@@ -405,7 +405,7 @@ Work from easiest to hardest so there's always a playable build.
 2. ~~Audit `include/config/` and report which "Verify" features exist in this version.~~ **Done.**
 3. ~~Turn on the config toggles (battle speed, double wilds, HMs) and playtest.~~ **Done.** Legends Z-A Megas turned off.
 4. ~~Small visible changes: town names, Nurse Joy, starters.~~ **Done**, plus landmark names.
-5. Script the Key Stone (Sam in Granite Cave), Mega Stones, and Orbs into the story.
+5. Script the Mega Ring (Sam in Granite Cave), Mega Stones, and Orbs into the story.
 6. Story and character changes: Brian (rival, Wally, Champion), the Retrotopia cast, Retro Salvage Games.
 7. Small custom features: PC item and Move-default storage; party-menu relearner if needed.
 8. Sprites (as art becomes available).
