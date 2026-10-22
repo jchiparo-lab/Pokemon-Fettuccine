@@ -11,6 +11,10 @@ GraniteCave_StevensRoom_EventScript_Steven::
 	msgbox GraniteCave_StevensRoom_Text_ThankYouTakeThis, MSGBOX_DEFAULT
 	giveitem ITEM_TM_STEEL_WING
 	call_if_eq VAR_RESULT, FALSE, GraniteCave_StevensRoom_EventScript_BagFull
+	@ Fettuccine: Steven (Sam) gives the Key Stone here
+	msgbox GraniteCave_StevensRoom_Text_TakeKeyStone, MSGBOX_DEFAULT
+	giveitem ITEM_MEGA_RING
+	msgbox GraniteCave_StevensRoom_Text_ExplainKeyStone, MSGBOX_DEFAULT
 	msgbox GraniteCave_StevensRoom_Text_CouldBecomeChampionLetsRegister, MSGBOX_DEFAULT
 	closemessage
 	delay 30
@@ -117,3 +121,17 @@ GraniteCave_StevensRoom_Text_OhBagIsFull:
 	.string "Oh, your BAG is full…\n"
 	.string "That's too bad, then.$"
 
+GraniteCave_StevensRoom_Text_TakeKeyStone:
+	.string "STEVEN: Oh, and one more thing.\p"
+	.string "I found this stone on my travels.\n"
+	.string "I'd like you to have it.$"
+
+GraniteCave_StevensRoom_Text_ExplainKeyStone:
+	.string "STEVEN: That's a KEY STONE.\p"
+	.string "When a POKéMON holds its MEGA STONE,\n"
+	.string "the KEY STONE lets it MEGA EVOLVE\l"
+	.string "in battle.\p"
+	.string "MEGA STONES are hidden all over\n"
+	.string "PASTALIA.\p"
+	.string "In fact, I hear there's one deep\n"
+	.string "inside this very cave…$"
