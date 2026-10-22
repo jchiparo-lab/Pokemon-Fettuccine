@@ -126,6 +126,8 @@ Route119_WeatherInstitute_2F_EventScript_ExplainCastform::
 
 Route119_WeatherInstitute_2F_EventScript_ScientistMentionWeather::
 	goto_if_set FLAG_SYS_GAME_CLEAR, Route119_WeatherInstitute_2F_EventScript_TryStartAbnormalWeather
+	@ Fettuccine: Terra Cave and Marine Cave open once the ORBS are returned to Mt. Pyre
+	goto_if_ge VAR_MT_PYRE_STATE, 3, Route119_WeatherInstitute_2F_EventScript_TryStartAbnormalWeather
 	msgbox Route119_WeatherInstitute_2F_Text_ChangingWeatherRidiculous, MSGBOX_DEFAULT
 	release
 	end

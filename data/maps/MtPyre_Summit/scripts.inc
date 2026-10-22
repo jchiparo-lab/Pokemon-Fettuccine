@@ -574,7 +574,11 @@ MtPyre_Summit_Text_ExplainOrbs:
 	.string "If GROUDON holds the RED ORB, or\n"
 	.string "KYOGRE the BLUE ORB, their ancient\l"
 	.string "power will return in battle.\p"
-	.string "Use that power wisely, child.$"
+	.string "Use that power wisely, child.\p"
+	.string "They say strange weather has been\n"
+	.string "seen around PASTALIA of late.\p"
+	.string "The WEATHER INSTITUTE on ROUTE 119\n"
+	.string "may know where those two now rest.$"
 
 MtPyre_Summit_Text_OrbsBagFull:
 	.string "Oh, your BAG is too full to carry\n"
