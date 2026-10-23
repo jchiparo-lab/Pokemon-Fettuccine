@@ -33,7 +33,7 @@ Every town gets a pasta-themed name that echoes the original. Update the locatio
 | Dewford Town | Ditalinford Town | Ditalini |
 | Slateport City | Spaghettiport City | Spaghetti |
 | Mauville City | Macaroville City | Macaroni |
-| Verdanturf Town | Vermiturf Town | Vermicelli |
+| Verdanturf Town | Cavatapurf Town | Cavatappi |
 | Fallarbor Town | Farfallarbor Town | Farfalle |
 | Lavaridge Town | Lasagnaridge Town | Lasagna |
 | Fortree City | Fortellini City | Tortellini |
@@ -45,7 +45,7 @@ Every town gets a pasta-themed name that echoes the original. Update the locatio
 | Battle Frontier | Bucatini Frontier | Bucatini |
 | Petalburg Woods | Pestoburg Woods | Pesto (matches Pestoburg) |
 | New Mauville | New Macaroville | Macaroni (matches Macaroville) |
-| Rusturf Tunnel | Rotiturf Tunnel | Rotini + Vermiturf |
+| Rusturf Tunnel | Rotipurf Tunnel | Rotini + Cavatapurf |
 
 ## Landmark names
 
@@ -276,7 +276,7 @@ All built into pokeemerald-expansion; the work is deciding where things appear.
 | Salamencite | Meatball Falls B1F (back room) | Waterfall |
 | Mawilite | Victory Road B1F | Victory Road |
 | Beedrillite | Route 110 | After Gym 3 |
-| Lopunnite, Audinite | Vermiturf Town, by the Pokémon Center | Mid-game |
+| Lopunnite, Audinite | Cavatapurf Town, by the Pokémon Center | Mid-game |
 | Gengarite | Mt. Penne 6F | Mid-game |
 | Medichamite | Route 118 | After Gym 5 |
 | Aerodactylite | Route 111 desert | Go-Goggles |
@@ -306,7 +306,7 @@ All built into pokeemerald-expansion; the work is deciding where things appear.
 | Pidgey | Routes 102, 103, 104 |
 | Bulbasaur, Buneary, Audino | Route 117 (rare) |
 | Slowpoke | Route 117 (surfing), Shoal Cave (surfing) |
-| Onix | Granite Cave 1F, Rotiturf Tunnel |
+| Onix | Granite Cave 1F, Rotipurf Tunnel |
 | Snover | Shoal Cave, ice room |
 | Gastly | Mt. Penne 1F–6F |
 | Meditite | Mt. Penne outside and summit |

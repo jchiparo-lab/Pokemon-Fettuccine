@@ -518,7 +518,7 @@ MauvilleCity_Text_WallyDefeat:
 
 MauvilleCity_Text_WallyIllGoBackToVerdanturf:
 	.string "WALLY: UNCLE…\n"
-	.string "I'll go back to VERMITURF…$"
+	.string "I'll go back to CAVATAPURF…$"
 
 MauvilleCity_Text_ThankYouNotEnoughToBattle:
 	.string "{PLAYER}, thank you.\n"
@@ -540,7 +540,7 @@ MauvilleCity_Text_UncleVisitUsSometime:
 	.string "that you must be the TRAINER who kept\l"
 	.string "an eye out for WALLY when he caught\l"
 	.string "his POKéMON.\p"
-	.string "Why don't you visit us in VERMITURF\n"
+	.string "Why don't you visit us in CAVATAPURF\n"
 	.string "sometime?\l"
 	.string "I'm sure WALLY would enjoy it.$"
 

@@ -445,8 +445,8 @@ Route116_Text_RouteSignRustboro:
 	.string "{LEFT_ARROW} ROTINIBORO CITY$"
 
 Route116_Text_RusturfTunnelSign:
-	.string "ROTITURF TUNNEL\n"
-	.string "“Linking ROTINIBORO and VERMITURF\p"
+	.string "ROTIPURF TUNNEL\n"
+	.string "“Linking ROTINIBORO and CAVATAPURF\p"
 	.string "“The tunnel project has been\n"
 	.string "canceled.”$"
 

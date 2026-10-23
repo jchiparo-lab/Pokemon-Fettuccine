@@ -2367,9 +2367,9 @@ MatchCall_Text_May3::
 
 MatchCall_Text_May4::
 	.string "MAY: {PLAYER}{KUN}?\p"
-	.string "ROTITURF TUNNEL…\n"
+	.string "ROTIPURF TUNNEL…\n"
 	.string "They named it that because it\l"
-	.string "joins ROTINIBORO and VERMITURF.$"
+	.string "joins ROTINIBORO and CAVATAPURF.$"
 
 MatchCall_Text_May5::
 	.string "MAY: {PLAYER}{KUN}, how are you?\p"
@@ -2493,9 +2493,9 @@ MatchCall_Text_Brendan3::
 
 MatchCall_Text_Brendan4::
 	.string "BRENDAN: This voice… {PLAYER}?\p"
-	.string "They gave ROTITURF TUNNEL its name\n"
+	.string "They gave ROTIPURF TUNNEL its name\n"
 	.string "because it joins ROTINIBORO and\l"
-	.string "VERMITURF.\p"
+	.string "CAVATAPURF.\p"
 	.string "Did you know that?$"
 
 MatchCall_Text_Brendan5::
@@ -2597,13 +2597,13 @@ MatchCall_Text_Wally1::
 
 MatchCall_Text_Wally2::
 	.string "WALLY: {PLAYER}, hello!\p"
-	.string "After ROTITURF TUNNEL went\n"
+	.string "After ROTIPURF TUNNEL went\n"
 	.string "through, WANDA's been very happy!$"
 
 MatchCall_Text_Wally3::
 	.string "WALLY: Oh, {PLAYER}!\p"
 	.string "I… I left my uncle's place in\n"
-	.string "VERMITURF without telling anyone.\p"
+	.string "CAVATAPURF without telling anyone.\p"
 	.string "I wonder if he's furious with me…\p"
 	.string "{PLAYER}, you understand how\n"
 	.string "I feel, don't you?$"
@@ -2891,7 +2891,7 @@ MatchCall_Text_MrStone3::
 MatchCall_Text_MrStone4::
 	.string "MR. STONE: Oh! {PLAYER}{KUN}!\p"
 	.string "Did you know that DEVON was\n"
-	.string "digging the ROTITURF TUNNEL?\p"
+	.string "digging the ROTIPURF TUNNEL?\p"
 	.string "But we shut down the operation to\n"
 	.string "protect the POKéMON in the area.\p"
 	.string "It's a no-brainer, really.\p"

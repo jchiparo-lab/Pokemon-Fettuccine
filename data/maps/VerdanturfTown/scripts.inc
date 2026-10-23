@@ -106,7 +106,7 @@ VerdanturfTown_Text_EasyToGetToRustboroNow:
 	.string "new DEVON products in ROTINIBORO now.$"
 
 VerdanturfTown_Text_TownSign:
-	.string "VERMITURF TOWN\p"
+	.string "CAVATAPURF TOWN\p"
 	.string "“The windswept highlands with the\n"
 	.string "sweet fragrance of grass.”$"
 
@@ -114,12 +114,12 @@ VerdanturfTown_Text_WandasHouse:
 	.string "WANDA'S HOUSE$"
 
 VerdanturfTown_Text_BattleTentSign:
-	.string "BATTLE TENT VERMITURF SITE\n"
+	.string "BATTLE TENT CAVATAPURF SITE\n"
 	.string "“Feast Your Eyes on Battles!”$"
 
 VerdanturfTown_Text_RusturfTunnelSign:
-	.string "ROTITURF TUNNEL\n"
-	.string "“Linking ROTINIBORO and VERMITURF\p"
+	.string "ROTIPURF TUNNEL\n"
+	.string "“Linking ROTINIBORO and CAVATAPURF\p"
 	.string "“The tunnel project has been\n"
 	.string "canceled.”$"
 

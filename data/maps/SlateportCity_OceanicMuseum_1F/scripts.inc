@@ -291,7 +291,7 @@ SlateportCity_OceanicMuseum_1F_Text_RememberMeTakeThis:
 	.string "What are you doing here?\p"
 	.string "Me? I'm the TEAM ALFREDO member\n"
 	.string "you thumped before, remember?\l"
-	.string "Back in ROTITURF TUNNEL?\p"
+	.string "Back in ROTIPURF TUNNEL?\p"
 	.string "Here, take this!\n"
 	.string "You have to forgive me!$"
 

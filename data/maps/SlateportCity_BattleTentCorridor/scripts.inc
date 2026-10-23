@@ -207,7 +207,7 @@ SlateportCity_ContestHall_Text_JudgeWouldntDoToMissContest:
 	.string "I see that you're a TRAINER!\p"
 	.string "Then, it just wouldn't do for you\n"
 	.string "to miss a POKéMON CONTEST!\p"
-	.string "Get a CONTEST PASS in VERMITURF\n"
+	.string "Get a CONTEST PASS in CAVATAPURF\n"
 	.string "CITY and enter anytime!$"
 
 @ Unused

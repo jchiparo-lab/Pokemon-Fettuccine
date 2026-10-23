@@ -231,7 +231,7 @@ Route117_Text_AirIsTastyHere:
 
 Route117_Text_RouteSignVerdanturf:
 	.string "ROUTE 117\n"
-	.string "{LEFT_ARROW} VERMITURF TOWN$"
+	.string "{LEFT_ARROW} CAVATAPURF TOWN$"
 
 Route117_Text_RouteSignMauville:
 	.string "ROUTE 117\n"

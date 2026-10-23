@@ -1160,7 +1160,7 @@ PetalburgCity_Gym_Text_DadOhYoureWallyRight:
 
 PetalburgCity_Gym_Text_WallyIveNeverCaughtAPokemon:
 	.string "WALLY: I'm going to go stay with my\n"
-	.string "relatives in VERMITURF TOWN.\p"
+	.string "relatives in CAVATAPURF TOWN.\p"
 	.string "I thought I would be lonely by myself,\n"
 	.string "so I wanted to take a POKéMON along.\p"
 	.string "But I've never caught a POKéMON before.\n"

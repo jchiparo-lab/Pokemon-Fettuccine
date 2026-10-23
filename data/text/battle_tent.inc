@@ -119,16 +119,16 @@ FallarborTown_BattleTentLobby_Text_LookingForwardToArrival:
 
 VerdanturfTown_BattleTentLobby_Text_WelcomeToBattleTent:
 	.string "I welcome you to the BATTLE TENT\n"
-	.string "VERMITURF SITE!\p"
+	.string "CAVATAPURF SITE!\p"
 	.string "Here, the TRAINER's trust toward\n"
 	.string "POKéMON is tested.$"
 
 VerdanturfTown_BattleTentLobby_Text_TakeChallenge:
-	.string "Do you wish to take the VERMITURF\n"
+	.string "Do you wish to take the CAVATAPURF\n"
 	.string "BATTLE TENT challenge?$"
 
 VerdanturfTown_BattleTentLobby_Text_ExplainVerdanturfTent:
-	.string "In the VERMITURF BATTLE TENT,\n"
+	.string "In the CAVATAPURF BATTLE TENT,\n"
 	.string "there is one crucial rule that must\l"
 	.string "be obeyed.\p"
 	.string "TRAINERS are permitted only to switch\n"
@@ -358,7 +358,7 @@ SlateportCity_BattleTentLobby_Text_ExplainMonRules:
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_RulesAreListed2:
-	.string "The VERMITURF BATTLE TENT\n"
+	.string "The CAVATAPURF BATTLE TENT\n"
 	.string "rules are listed.$"
 
 @ Unused
@@ -367,7 +367,7 @@ VerdanturfTown_BattleTentLobby_Text_ReadWhichHeading:
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_ExplainBasicRules:
-	.string "Here at the VERMITURF BATTLE TENT,\n"
+	.string "Here at the CAVATAPURF BATTLE TENT,\n"
 	.string "POKéMON are required to think and\l"
 	.string "battle by themselves.\p"
 	.string "Unlike in the wild, POKéMON that live\n"
@@ -429,5 +429,5 @@ BattleTentLobby_Text_ExplainLevelRules:
 	.string "have any POKéMON below Level 30.$"
 
 VerdanturfTown_BattleTentLobby_Text_RulesAreListed:
-	.string "The VERMITURF BATTLE TENT\n"
+	.string "The CAVATAPURF BATTLE TENT\n"
 	.string "rules are listed.$"
