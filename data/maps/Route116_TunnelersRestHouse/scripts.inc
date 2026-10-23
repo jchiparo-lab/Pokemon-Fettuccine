@@ -51,7 +51,7 @@ Route116_TunnelersRestHouse_Text_ManDiggingHisWayToVerdanturf:
 Route116_TunnelersRestHouse_Text_GetToVerdanturfWithoutTunnel:
 	.string "To get to VERMITURF without using this\n"
 	.string "TUNNEL, you'd have to cross the sea to\l"
-	.string "DOUGHFORD, sail on to SPAGHETTIPORT,\l"
+	.string "DITALINFORD, sail on to SPAGHETTIPORT,\l"
 	.string "then travel through MACAROVILLE.$"
 
 Route116_TunnelersRestHouse_Text_TunnelHasGoneThrough:

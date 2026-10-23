@@ -206,9 +206,9 @@ RustboroCity_DevonCorp_3F_Text_MrStoneIHaveFavor:
 	.string "I understand that you're delivering a\n"
 	.string "package to SPAGHETTIPORT's SHIPYARD.\p"
 	.string "Well, on the way, could you stop off in\n"
-	.string "DOUGHFORD TOWN?\p"
+	.string "DITALINFORD TOWN?\p"
 	.string "I was hoping that you'd deliver a\n"
-	.string "LETTER to STEVEN in DOUGHFORD.$"
+	.string "LETTER to STEVEN in DITALINFORD.$"
 
 RustboroCity_DevonCorp_3F_Text_MrStoneWantYouToHaveThis:
 	.string "MR. STONE: Now, you should know that\n"
@@ -228,7 +228,7 @@ RustboroCity_DevonCorp_3F_Text_MrStoneExplainPokenavRestUp:
 	.string "TRAINER on an adventure.\p"
 	.string "It has a map of the PASTALIA region.\p"
 	.string "You can check the locations of\n"
-	.string "DOUGHFORD and SPAGHETTIPORT easily!\p"
+	.string "DITALINFORD and SPAGHETTIPORT easily!\p"
 	.string "By the way, I've heard that sinister\n"
 	.string "criminals--MARINARA and ALFREDO,\l"
 	.string "I believe--have been making trouble\l"

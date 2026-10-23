@@ -1300,7 +1300,7 @@ MatchCall_PersonalizedText58::
 
 MatchCall_PersonalizedText59::
 	.string "This is {STR_VAR_1}!\p"
-	.string "I went to DOUGHFORD's GYM again\n"
+	.string "I went to DITALINFORD's GYM again\n"
 	.string "for training.\p"
 	.string "BRAWLY, the GYM LEADER, seems\n"
 	.string "to be tougher now.\p"
@@ -2093,7 +2093,7 @@ MatchCall_Text_Brawly_PreparingPostGame::
 MatchCall_Text_Brawly_RematchReady::
 	.string "BRAWLY: Hey, {PLAYER}{KUN}!\n"
 	.string "My GYM's ready for action!\p"
-	.string "Come back to DOUGHFORD anytime\n"
+	.string "Come back to DITALINFORD anytime\n"
 	.string "for another challenge!$"
 
 MatchCall_Text_Brawly_PostRematch::
@@ -2311,7 +2311,7 @@ MatchCall_Text_MayRayquazaCall:
 	.string "… … … … … …\n"
 	.string "… … … … … Beep!\p"
 	.string "MAY: Hi, {PLAYER}{KUN}!\p"
-	.string "I was just in PACCHERIDLOG a little\n"
+	.string "I was just in RAVIOLOG a little\n"
 	.string "while ago.\p"
 	.string "I saw a giant green POKéMON\n"
 	.string "flying high in the sky.\p"
@@ -2326,7 +2326,7 @@ MatchCall_Text_BrendanRayquazaCall:
 	.string "… … … … … …\n"
 	.string "… … … … … Beep!\p"
 	.string "BRENDAN: Hey, {PLAYER}!\n"
-	.string "I was in PACCHERIDLOG just now.\p"
+	.string "I was in RAVIOLOG just now.\p"
 	.string "I saw this huge green POKéMON\n"
 	.string "flying across the sky.\p"
 	.string "I've never seen anything that\n"
@@ -2346,7 +2346,7 @@ MatchCall_Text_May1::
 MatchCall_Text_May2::
 	.string "MAY: Hi, {PLAYER}{KUN}!\p"
 	.string "You know how little towns like\n"
-	.string "PESTOBURG and DOUGHFORD have\l"
+	.string "PESTOBURG and DITALINFORD have\l"
 	.string "GYMS?\p"
 	.string "For some reason, the big port of\n"
 	.string "SPAGHETTIPORT doesn't have a GYM.\p"
@@ -2473,7 +2473,7 @@ MatchCall_Text_Brendan1::
 MatchCall_Text_Brendan2::
 	.string "BRENDAN: Hey, {PLAYER}!\p"
 	.string "I don't get how little towns like\n"
-	.string "PESTOBURG and DOUGHFORD have GYMS.\p"
+	.string "PESTOBURG and DITALINFORD have GYMS.\p"
 	.string "I mean, not when the big port of\n"
 	.string "SPAGHETTIPORT doesn't have a GYM.\p"
 	.string "When they finally build a GYM there,\n"
@@ -2873,7 +2873,7 @@ MatchCall_Text_MrStone2::
 	.string "What's wrong? Have you forgotten\n"
 	.string "about that little errand of mine?\p"
 	.string "I need you to deliver my letter\n"
-	.string "to STEVEN in DOUGHFORD.\p"
+	.string "to STEVEN in DITALINFORD.\p"
 	.string "After that, deliver our parcel to\n"
 	.string "CAPT. STERN in SPAGHETTIPORT.\p"
 	.string "You remember, don't you?\p"

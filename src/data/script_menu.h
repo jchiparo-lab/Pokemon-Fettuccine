@@ -78,7 +78,7 @@ static const struct MenuAction MultichoiceList_StatusInfo[] =
 
 static const struct MenuAction MultichoiceList_BrineyOffDewford[] =
 {
-    {COMPOUND_STRING("DOUGHFORD")},
+    {COMPOUND_STRING("DITALINFORD")},
     {gText_Exit},
 };
 

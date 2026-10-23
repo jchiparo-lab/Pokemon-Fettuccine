@@ -628,26 +628,26 @@ DewfordTown_EventScript_PhraseNotTrendyEnough::
 	end
 
 DewfordTown_Text_TinyIslandCommunity:
-	.string "DOUGHFORD is a tiny island community.\n"
+	.string "DITALINFORD is a tiny island community.\n"
 	.string "If something gets trendy here,\l"
 	.string "everyone picks up on it right away.$"
 
 DewfordTown_Text_TownSign:
-	.string "DOUGHFORD TOWN\n"
+	.string "DITALINFORD TOWN\n"
 	.string "“A tiny island in the blue sea.”$"
 
 DewfordTown_Text_GymSign:
-	.string "DOUGHFORD TOWN POKéMON GYM\n"
+	.string "DITALINFORD TOWN POKéMON GYM\n"
 	.string "LEADER: BRAWLY\l"
 	.string "“A big wave in fighting!”$"
 
 DewfordTown_Text_HallSign:
-	.string "DOUGHFORD HALL\n"
+	.string "DITALINFORD HALL\n"
 	.string "“Everyone's information exchange!”$"
 
 Route104_Text_LandedInDewfordDeliverLetter:
 	.string "MR. BRINEY: Ahoy!\n"
-	.string "We've hit land in DOUGHFORD.\p"
+	.string "We've hit land in DITALINFORD.\p"
 	.string "I suppose you're off to deliver that\n"
 	.string "LETTER to, who was it now, STEVEN!$"
 
@@ -668,7 +668,7 @@ DewfordTown_Text_GoDeliverIllBeWaiting:
 
 DewfordTown_Text_BrineyLandedInDewford:
 	.string "MR. BRINEY: Ahoy!\n"
-	.string "We've hit land in DOUGHFORD!\p"
+	.string "We've hit land in DITALINFORD!\p"
 	.string "You just go on and tell me whenever\n"
 	.string "you want to set sail again!$"
 

@@ -481,8 +481,8 @@ RusturfTunnel_Text_WhyCantTheyKeepDigging:
 
 RusturfTunnel_Text_ToGetToVerdanturf:
 	.string "To get from ROTINIBORO to VERMITURF,\n"
-	.string "you need to go to DOUGHFORD, then pass\l"
-	.string "through SPAGHETTIPORT and\l"
+	.string "you need to go to DITALINFORD, then\l"
+	.string "pass through SPAGHETTIPORT and\l"
 	.string "MACAROVILLE…$"
 
 RusturfTunnel_Text_YouShatteredBoulderTakeHM:

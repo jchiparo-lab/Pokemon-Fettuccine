@@ -30,7 +30,7 @@ Every town gets a pasta-themed name that echoes the original. Update the locatio
 | Oldale Town | Orzodale Town | Orzo |
 | Petalburg City | Pestoburg City | Pesto |
 | Rustboro City | Rotiniboro City | Rotini |
-| Dewford Town | Doughford Town | Pasta dough |
+| Dewford Town | Ditalinford Town | Ditalini |
 | Slateport City | Spaghettiport City | Spaghetti |
 | Mauville City | Macaroville City | Macaroni |
 | Verdanturf Town | Vermiturf Town | Vermicelli |
@@ -40,7 +40,7 @@ Every town gets a pasta-themed name that echoes the original. Update the locatio
 | Lilycove City | Linguicove City | Linguine |
 | Mossdeep City | Mostaccideep City | Mostaccioli |
 | Sootopolis City | Sugopolis City | Sugo (sauce) |
-| Pacifidlog Town | Paccheridlog Town | Paccheri |
+| Pacifidlog Town | Raviolog Town | Ravioli |
 | Ever Grande City | Fettuccine Grande City | Fettuccine (the title) |
 | Battle Frontier | Bucatini Frontier | Bucatini |
 | Petalburg Woods | Pestoburg Woods | Pesto (matches Pestoburg) |
@@ -272,7 +272,7 @@ All built into pokeemerald-expansion; the work is deciding where things appear.
 | Metagrossite | Sam's house, Mostaccideep | Mostaccideep (Beldum is a gift there after the Space Center) |
 | Gyaradosite | Sugopolis City, by the Pokémon Center | Dive |
 | Sablenite | Cave of Oregano 1F | Sugopolis |
-| Latiasite, Latiosite | Routes 132 and 133, near Paccheridlog | Late game |
+| Latiasite, Latiosite | Routes 132 and 133, near Raviolog | Late game |
 | Salamencite | Meatball Falls B1F (back room) | Waterfall |
 | Mawilite | Victory Road B1F | Victory Road |
 | Beedrillite | Route 110 | After Gym 3 |
@@ -317,7 +317,7 @@ All built into pokeemerald-expansion; the work is deciding where things appear.
 | Squirtle | Route 118 (surfing) |
 | Mudkip | Route 120 (rare) |
 | Kangaskhan | Safari Zone South |
-| Riolu | Egg from a Black Belt next to the Doughford Gym |
+| Riolu | Egg from a Black Belt next to the Ditalinford Gym |
 | Aerodactyl | Old Amber from the Fossil Maniac (Route 114), revived at Devon in Rotiniboro |
 | Diancie | One-time encounter, Lv 50, Meatball Falls B1F back room |
 | Mewtwo | One-time encounter, Lv 70, Victory Road B2F |

@@ -646,14 +646,14 @@ Route107_Text_TonyRematchPostBattle:
 
 Route107_Text_DeniseIntro:
 	.string "Do you know a little town called\n"
-	.string "DOUGHFORD?$"
+	.string "DITALINFORD?$"
 
 Route107_Text_DeniseDefeated:
 	.string "I hate this!$"
 
 Route107_Text_DenisePostBattle:
 	.string "A weird saying is getting really\n"
-	.string "trendy at DOUGHFORD HALL.$"
+	.string "trendy at DITALINFORD HALL.$"
 
 Route107_Text_BethIntro:
 	.string "Did you want to battle me?\n"
@@ -4432,7 +4432,7 @@ Route131_Text_ReliDefeat:
 	.string "worked together…$"
 
 Route131_Text_ReliPostBattle:
-	.string "RELI: The people of PACCHERIDLOG are\n"
+	.string "RELI: The people of RAVIOLOG are\n"
 	.string "together with the sea and POKéMON from\l"
 	.string "the time they are born.$"
 
@@ -4449,10 +4449,10 @@ Route131_Text_IanDefeat:
 	.string "but we still couldn't win…$"
 
 Route131_Text_IanPostBattle:
-	.string "IAN: You know how PACCHERIDLOG is\n"
+	.string "IAN: You know how RAVIOLOG is\n"
 	.string "a floating town?\p"
 	.string "So, wherever there is the sea,\n"
-	.string "that's a part of PACCHERIDLOG!$"
+	.string "that's a part of RAVIOLOG!$"
 
 Route131_Text_IanNotEnoughMons:
 	.string "IAN: If you have two POKéMON,\n"
@@ -4472,7 +4472,7 @@ Route131_Text_TaliaPostBattle:
 	.string "Why don't you go take a look?$"
 
 Route131_Text_KevinIntro:
-	.string "The people of PACCHERIDLOG are\n"
+	.string "The people of RAVIOLOG are\n"
 	.string "a peaceful bunch.\p"
 	.string "They never get angry.\n"
 	.string "That goes for me, too.$"
