@@ -14,6 +14,7 @@ The game takes place in one region, **Pastalia** (Hoenn renamed; pasta + Italia)
 
 - **Decided and done:** the region is called **PASTALIA** in all dialogue, the Pokédex ("PASTALIA DEX"), the PokéNav, the Town Map title, and the diploma.
 - **Still to do (art):** two PokéNav graphics have "HOENN MAP" drawn into the pixels: `graphics/pokenav/options/hoenn_map.png` and `graphics/pokenav/left_headers/hoenn_map.png`. They need "PASTALIA MAP" (or similar) redrawn in Aseprite.
+- **Still to do (art):** the Pokédex list screen draws "HOENN" from `graphics/pokedex/interface.png` (the label just above "NATIONAL", about two-thirds of the way down the sheet). It needs "PASTALIA" redrawn in the same space; it's 8 letters instead of 5, so it may need a narrower font.
 
 ## Town names
 
@@ -369,7 +370,7 @@ A yes/no choice at New Game that randomizes Pokémon for that save file. It must
 | Kyogre recolored cream | Palette edits, possibly pixel edits | Not started |
 | Villain teams: white vs. red sauce story dialogue | Dialogue | Done |
 | Villain leaders renamed: Parmigiano and Marzano | Text, trainer data | Done |
-| Pasta region name: Pastalia (replaces Hoenn) | Text, plus 2 PokéNav graphics | Text done; PokéNav "HOENN MAP" art still to redraw |
+| Pasta region name: Pastalia (replaces Hoenn) | Text, plus 2 PokéNav graphics and 1 Pokédex graphic | Text done; PokéNav "HOENN MAP" and Pokédex "HOENN" art still to redraw |
 | Starters: Rowlet, Scorbunny, Froakie | Script and data change | Done |
 | Nurse Joy Jammie Dodger heal (plus blackout cookie) | One shared script change | Done |
 | Retro Salvage Games shops (Jason, orange roofs) | Sprite recolor, palette, tiles, dialogue | Not started |
