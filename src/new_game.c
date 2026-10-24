@@ -204,6 +204,8 @@ void NewGameInitData(void)
     ClearBag();
     NewGameInitPCItems();
     AddBagItem(ITEM_SHINY_CHARM, 1);
+    FlagSet(FLAG_SYS_B_DASH);
+    FlagSet(FLAG_RECEIVED_RUNNING_SHOES);
     ClearPokeblocks();
     ClearDecorationInventories();
     InitEasyChatPhrases();
