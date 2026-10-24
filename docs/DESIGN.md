@@ -182,6 +182,7 @@ Brian is a proud Canadian who hates all Italian food. He wants to become Champio
 - New text: "It's a Super Nintendo. Brian's copy of Time Toggle is in it... a mediocre RPG that certain people won't stop calling the greatest game ever made." Break it to fit the text box with `\n` and `\p`.
 - Change only the rival's-room GameCube. The player's bedroom GameCube has its own secret (see "Secret minigame: Pocket Knight Adventures").
 - The boy and girl houses swap roles depending on the player's gender, so check whether they share a script and apply the change wherever Brian's room is used.
+- **Done:** both houses share one GameCube script, so each house now checks the player's gender and shows the Super Nintendo text only in Brian's room.
 
 ## Villain teams: White Sauce vs. Red Sauce
 
@@ -288,9 +289,7 @@ Every Pokémon is from Gens 1–3 and has a cheese connection.
 - His final scene is the post-game invitation to the Bucatini Frontier, where he declares the player "just cool enough."
 - Starting point: search `data/maps/` for every line Scott speaks and list each one with its map and story order before rewriting.
 
-**Open:**
-
-- [ ] Final dialogue for each scene (Joe will draft or approve)
+**Done:** new dialogue (approved by Joe) in all 13 Scott scenes and PokéNav calls 1, 4, 5 and 7 (calls 2, 3 and 6 are unchanged). His PokéNav profile tag is **BIG JOE**. The Macaroville and Route 119 lines refer to the pasta-hating rival, and call 1 mentions Retro Salvage Games, so both will fully make sense once the Brian and shop features are done.
 
 ## Joe's cousins
 
@@ -512,8 +511,8 @@ A yes/no choice at New Game that randomizes Pokémon for that save file. It must
 | Brian as rival (sprites, name, logic, anti-pasta story) | Art plus code and dialogue | Not started (rival teams still use old Hoenn starters) |
 | Brian replaces Wally (Petalburg catch, Mauville, Victory Road) | Scripts and dialogue | Not started |
 | Brian as Champion, Mike (replaces Wallace) outside the Elite Four | Scripts, trainer data, dialogue, custom sprites | Not started |
-| Brian's room SNES / Time Toggle text | Text edit | Not started |
-| Joe Q replaces Scott | Dialogue rewrite (keeps Scott's sprite) | Name done; dialogue rewrite not started |
+| Brian's room SNES / Time Toggle text | Text edit | Done |
+| Joe Q replaces Scott | Dialogue rewrite (keeps Scott's sprite) | Name and dialogue done (keeps Scott's sprite) |
 | New themed teams for all trainers and Gym Leaders (Gens 1–9, Megas from gym 3) | Trainer data | Done |
 | Trainer names from the Retrotopia community | Text (waiting on Joe's list) | Not started |
 | Retrotopia cast: Alan (Birch), Sam (Steven), Joe Fettuccine (designer) | Custom sprites, scripts, dialogue | Not started |
