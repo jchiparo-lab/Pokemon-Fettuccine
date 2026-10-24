@@ -749,12 +749,10 @@ PetalburgCity_Text_AreYouATrainer:
 
 PetalburgCity_Text_WellMaybeNot:
 	.string "… … … … … …\p"
-	.string "Well, maybe not.\n"
-	.string "Your clothes aren't all that dirty.\p"
-	.string "You're either a rookie TRAINER,\n"
-	.string "or maybe you're just an ordinary kid.$"
+	.string "Hmm… Not quite cool enough.\n"
+	.string "Yet.$"
 
 PetalburgCity_Text_ImLookingForTalentedTrainers:
-	.string "I'm roaming the land in search of\n"
-	.string "talented TRAINERS.\p"
-	.string "I'm sorry to have taken your time.$"
+	.string "I'm out scouting TRAINERS who are\n"
+	.string "just cool enough.\p"
+	.string "Sorry to take your time!$"

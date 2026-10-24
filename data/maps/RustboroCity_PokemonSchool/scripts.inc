@@ -304,8 +304,11 @@ RustboroCity_PokemonSchool_Text_StudentsNotes:
 RustboroCity_PokemonSchool_Text_ScottMetAlreadyCut:
 	.string "Hello? Didn't we meet before?\n"
 	.string "I think back in PESTOBURG CITY.\p"
-	.string "Let me introduce myself.\n"
-	.string "My name's JOE Q.\p"
+	.string "Name's JOE Q. You've probably\n"
+	.string "heard of me.\p"
+	.string "… … … No?\p"
+	.string "Well, I was kind of a big deal\n"
+	.string "in DOWNRIVER.\p"
 	.string "I've been traveling everywhere in\n"
 	.string "search of outstanding TRAINERS.\p"
 	.string "More specifically, I'm looking for\n"
@@ -318,9 +321,9 @@ RustboroCity_PokemonSchool_Text_ScottMetAlreadyCut:
 	.string "this town has CUT.$"
 
 RustboroCity_PokemonSchool_Text_StudentTalentLevelUnknown:
-	.string "JOE Q: Hmm…\p"
-	.string "The talent levels of the students here\n"
-	.string "are unknown. The potential's there.$"
+	.string "JOE Q: Coming to you live from the\n"
+	.string "POKéMON SCHOOL…\p"
+	.string "Sorry. Old radio habit.$"
 
 RustboroCity_PokemonSchool_Text_ScottStoneBadge:
 	.string "JOE Q: Oh, what's that?\p"
@@ -334,8 +337,11 @@ RustboroCity_PokemonSchool_Text_ScottStoneBadge:
 RustboroCity_PokemonSchool_Text_ScottMetAlreadyStoneBadge:
 	.string "Hello? Didn't we meet before?\n"
 	.string "I think back in PESTOBURG CITY.\p"
-	.string "Let me introduce myself.\n"
-	.string "My name's JOE Q.\p"
+	.string "Name's JOE Q. You've probably\n"
+	.string "heard of me.\p"
+	.string "… … … No?\p"
+	.string "Well, I was kind of a big deal\n"
+	.string "in DOWNRIVER.\p"
 	.string "I've been traveling everywhere in\n"
 	.string "search of outstanding TRAINERS.\p"
 	.string "More specifically, I'm looking for\n"

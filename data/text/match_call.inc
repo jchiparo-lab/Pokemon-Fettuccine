@@ -2641,14 +2641,10 @@ MatchCall_Text_Wally7::
 
 MatchCall_Text_Scott1::
 	.string "JOE Q: Howdy, {PLAYER}{KUN}!\p"
-	.string "You know how POKéMON can be found\n"
-	.string "everywhere?\p"
-	.string "Like in the mountains, in the sea,\n"
-	.string "in tall grass anywhere?\p"
-	.string "Just like POKéMON, you can find\n"
-	.string "TRAINERS everywhere, too.\p"
-	.string "As a result, I have to hurry\n"
-	.string "everywhere, too. Busy, busy!$"
+	.string "I saw you near RETRO SALVAGE GAMES.\p"
+	.string "As your big cousin…\n"
+	.string "Okay, not your cousin…\p"
+	.string "Put the wallet down.$"
 
 MatchCall_Text_Scott2::
 	.string "JOE Q: I'm on ROUTE 119 right now.\n"
@@ -2675,15 +2671,18 @@ MatchCall_Text_Scott4::
 	.string "I think they were.\p"
 	.string "I would think there'd be some\n"
 	.string "skilled TRAINERS among them.\p"
-	.string "…But if they're thugs…$"
+	.string "But two gangs fighting over SAUCE?\n"
+	.string "Sounds like a cash grab with extra\l"
+	.string "steps.$"
 
 MatchCall_Text_Scott5::
 	.string "JOE Q: Oh, hi, {PLAYER}{KUN}.\p"
 	.string "Might there be tough TRAINERS\n"
 	.string "at the bottom of the sea?\p"
 	.string "I can't go check for myself.\n"
-	.string "I can't swim, for one.\l"
-	.string "And I don't raise POKéMON…$"
+	.string "I can't swim.\p"
+	.string "I'd play the ocean on easy mode\n"
+	.string "if I could.$"
 
 MatchCall_Text_Scott6::
 	.string "JOE Q: Hi, hi, {PLAYER}{KUN}!\p"
@@ -2706,7 +2705,9 @@ MatchCall_Text_Scott7::
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
 	.string "JOE Q appears to be out of\n"
-	.string "the POKéNAV's service area…$"
+	.string "the POKéNAV's service area…\p"
+	.string "Faint HELI ATTACK 2 sounds\n"
+	.string "can be heard.$"
 
 MatchCall_Text_Norman1::
 	.string "DAD: In ROTINIBORO, there's a man\n"

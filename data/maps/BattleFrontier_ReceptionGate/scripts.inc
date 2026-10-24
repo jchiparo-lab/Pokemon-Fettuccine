@@ -329,14 +329,14 @@ BattleFrontier_ReceptionGate_Text_OhMrScottGoodDay:
 	.string "Good day to you, sir!$"
 
 BattleFrontier_ReceptionGate_Text_ScottGreatToSeeYouHere:
-	.string "JOE Q: It's great to see you here,\n"
-	.string "it really is!\p"
+	.string "JOE Q: Glad you made it!\n"
+	.string "It's great to see you here.\p"
 	.string "I hope you'll take your time and\n"
 	.string "explore everywhere.\p"
 	.string "Naturally, I hope you'll also experience\n"
 	.string "the pure essence of battling.\p"
-	.string "I also have my quarters here, so feel\n"
-	.string "free to visit if you have time.$"
+	.string "My quarters are nearby, so feel free\n"
+	.string "to visit. Bring snacks.$"
 
 BattleFrontier_ReceptionGate_Text_YourGuideToFacilities:
 	.string "I'm your guide to the various facilities\n"

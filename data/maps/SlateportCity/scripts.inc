@@ -1314,8 +1314,9 @@ SlateportCity_Text_YouDroveTeamAquaAway:
 	.string "I'm sure I met you somewhere before.\p"
 	.string "Have I introduced myself to you?\n"
 	.string "If not, my name's JOE Q.\p"
-	.string "I just saw TEAM ALFREDO run away from\n"
-	.string "here like they were stung.\p"
+	.string "I just saw TEAM ALFREDO run off like\n"
+	.string "my army in AGE OF EMPIRES.\p"
+	.string "Loved that game. Never once won.\p"
 	.string "Let me guess--you drove them away?$"
 
 SlateportCity_Text_MaybeThisTrainer:
@@ -1325,8 +1326,9 @@ SlateportCity_Text_MaybeThisTrainer:
 SlateportCity_Text_LetsRegisterEachOther:
 	.string "JOE Q: All right! I think you're going\n"
 	.string "to become a good friend.\p"
-	.string "So, let's register each other in our\n"
-	.string "POKéNAVS.\p"
+	.string "Let's swap POKéNAV numbers.\p"
+	.string "Consider yourself backed at my usual\n"
+	.string "tier… the bare minimum.\p"
 	.string "… … … … … …$"
 
 SlateportCity_Text_RegisteredScott:
@@ -1346,8 +1348,6 @@ SlateportCity_Text_TakingBattleTentChallenge:
 	.string "If it isn't {PLAYER}{KUN}!\p"
 	.string "{PLAYER}{KUN}, let me guess--you're going\n"
 	.string "to take the BATTLE TENT challenge?\p"
-	.string "Yeah! That's a good idea!\n"
-	.string "That's a really great idea!\p"
-	.string "After all, a tough TRAINER is\n"
-	.string "the perfect fit for the BATTLE TENT!\p"
-	.string "Give it your best effort!$"
+	.string "Thousands of hours on the air taught\n"
+	.string "me one thing: dead air is the enemy.\p"
+	.string "Keep those battles moving!$"

@@ -212,6 +212,8 @@ BattleFrontier_ScottsHouse_EventScript_ScottFaceAwayWest::
 BattleFrontier_ScottsHouse_Text_WelcomeToBattleFrontier:
 	.string "JOE Q: Well, hello and welcome!\n"
 	.string "Heheh… Sorry about the cramped space.\p"
+	.string "Corporate job by day,\n"
+	.string "BUCATINI FRONTIER by night.\p"
 	.string "Anyway, {PLAYER}{KUN}, let me formally\n"
 	.string "welcome you to the BUCATINI FRONTIER.\p"
 	.string "This is my dream come true.\n"
@@ -246,7 +248,9 @@ BattleFrontier_ScottsHouse_Text_ExplainBattlePoints:
 	.string "the BUCATINI FRONTIER, the more Battle\l"
 	.string "Points you will collect.\p"
 	.string "Use your Battle Points the way you\n"
-	.string "see fit, like trading them for items.$"
+	.string "see fit, like trading them for items.\p"
+	.string "Spend them wisely.\n"
+	.string "Vote with your wallet!$"
 
 BattleFrontier_ScottsHouse_Text_ExpectingGreatThings:
 	.string "I'm expecting great things from you!$"
@@ -308,6 +312,8 @@ BattleFrontier_ScottsHouse_Text_YouveCollectedAllGoldSymbols:
 	.string "of gold symbols!\p"
 	.string "That's more than stupendous!\n"
 	.string "You're incredible, just as I suspected!\p"
+	.string "You went beyond just cool enough.\n"
+	.string "Don't let it go to your head.\p"
 	.string "… … … … … …\p"
 	.string "{PLAYER}, you've got to accept this!\p"
 	.string "I think you will be able to\n"

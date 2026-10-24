@@ -93,7 +93,8 @@ EverGrandeCity_PokemonCenter_1F_Text_ScottHappyForYou:
 	.string "You made my cheering worthwhile!\p"
 	.string "{PLAYER}{KUN}, if you were to become\n"
 	.string "the POKéMON LEAGUE CHAMPION…\p"
-	.string "I'll get in touch with you then.\p"
+	.string "I'll call. And trust me, a call from\n"
+	.string "me is kind of a big deal.\p"
 	.string "Okay, {PLAYER}{KUN}.\n"
 	.string "Go for greatness!$"
 
