@@ -280,8 +280,8 @@ Every Pokémon is from Gens 1–3 and has a cheese connection.
 
 | Leader | Type | First battle (ace last) | Rematch additions |
 | --- | --- | --- | --- |
-| Roxanne | Rock | Rolycoly, Nacli, Tyrunt | Lycanroc, Archeops, Tyranitar |
-| Brawly | Fighting | Timburr, Mienfoo, Crabrawler | Pangoro, Sawk, Annihilape |
+| Roxanne | Rock | Rolycoly, Nacli, Tyrunt | **Mega Aerodactyl** (rematches only), Lycanroc, Tyranitar |
+| Brawly | Fighting | Timburr, Mienfoo, Crabrawler | **Mega Medicham** (rematches only), Pangoro, Annihilape |
 | Wattson | Electric | Joltik, Helioptile, Dedenne, **Mega Manectric** | Pawmot, Vikavolt, Kilowattrel |
 | Flannery | Fire | Litleo, Salandit, Torracat, **Mega Houndoom** | Centiskorch, Armarouge |
 | Norman | Normal | Oinkologne, Furret, Ambipom, **Mega Kangaskhan** | Bewear, Ursaluna, Snorlax |
