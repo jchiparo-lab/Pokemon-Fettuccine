@@ -15,6 +15,7 @@
 #include "string_util.h"
 #include "task.h"
 #include "text.h"
+#include "trig.h"
 #include "window.h"
 #include "constants/rgb.h"
 #include "constants/songs.h"
@@ -26,7 +27,7 @@
 //   1. Name check and placeholder title screen
 //   2. Scrolling level and parallax background
 //   3. Player movement: run, jump (hold A to jump higher), B rocket dash
-//   4. Obstacles and enemies (todo)
+//   4. Spikes, walker and flyer enemies (stomp or dash through them), score
 //   5. Win/lose and the Master Ball reward (todo)
 //   6. Polish (todo)
 //
@@ -50,6 +51,17 @@
 #define DASH_SPEED        0x400
 #define DASH_FRAMES       14
 #define CAMERA_LEAD       100 // how far from the left edge the camera keeps the player
+#define INVINCIBLE_FRAMES 90  // flicker after getting hit
+
+// Enemies
+#define MAX_ENEMIES       16
+#define ENEMY_SIZE        12 // square hitbox
+#define WALKER_SPEED      0x80
+#define FLYER_BOB         12 // pixels up and down
+#define STOMP_BOUNCE      0x380
+#define STOMP_MARGIN      8  // how close to the enemy's top counts as landing on it
+#define ENEMY_ACTIVE_MARGIN 32 // enemies this far offscreen keep moving
+#define SCORE_PER_ENEMY   100
 
 // The level BG is 64 tiles wide and wraps, so new columns are drawn into it
 // as the camera scrolls.
@@ -108,7 +120,33 @@ enum {
     KFRAME_BOOST,
 };
 
-#define TAG_KNIGHT 0x7100
+#define TAG_KNIGHT  0x7100
+#define TAG_ENEMIES 0x7101
+
+enum {
+    ENEMY_WALKER,
+    ENEMY_FLYER,
+};
+
+// Frames in graphics/pocket_knight/enemies.png (16x16 each, stacked)
+enum {
+    EFRAME_WALKER1,
+    EFRAME_WALKER2,
+    EFRAME_FLYER1,
+    EFRAME_FLYER2,
+};
+
+struct PocketKnightEnemy
+{
+    s32 x; // top-left of the hitbox, in 1/256ths of a pixel
+    s32 y;
+    s32 homeY;
+    s32 velX;
+    u8 type;
+    u8 spriteId;
+    bool8 alive;
+    u8 timer;
+};
 
 struct PocketKnight
 {
@@ -129,6 +167,10 @@ struct PocketKnight
     bool8 canDash;
     u8 dashTimer;
     u8 animTimer;
+    u8 invincibleTimer;
+    u8 numEnemies;
+    u16 score;
+    struct PocketKnightEnemy enemies[MAX_ENEMIES];
 };
 
 static EWRAM_DATA struct PocketKnight *sPocketKnight = NULL;
@@ -148,8 +190,9 @@ static const u8 sSecretName[] = _("Joe F.");
 
 static const u8 sText_TitleTop[] = _("POCKET KNIGHT");
 static const u8 sText_TitleBottom[] = _("ADVENTURES");
+static const u8 sText_TitleControls[] = _("A: JUMP  B: BOOST  START: QUIT");
 static const u8 sText_TitlePrompt[] = _("A: START   B: QUIT");
-static const u8 sText_Hud[] = _("A: JUMP  B: BOOST  START: QUIT");
+static const u8 sText_Score[] = _("SCORE ");
 
 static const u32 sLevelTiles_Gfx[] = INCBIN_U32("graphics/pocket_knight/level_tiles.4bpp");
 static const u16 sLevelTiles_Pal[] = INCBIN_U16("graphics/pocket_knight/level_tiles.gbapal");
@@ -159,8 +202,13 @@ static const u16 sScenery_Pal[] = INCBIN_U16("graphics/pocket_knight/background.
 static const u32 sKnight_Gfx[] = INCBIN_U32("graphics/pocket_knight/knight.4bpp");
 static const u16 sKnight_Pal[] = INCBIN_U16("graphics/pocket_knight/knight.gbapal");
 
+static const u32 sEnemies_Gfx[] = INCBIN_U32("graphics/pocket_knight/enemies.4bpp");
+static const u16 sEnemies_Pal[] = INCBIN_U16("graphics/pocket_knight/enemies.gbapal");
+
 static const struct SpriteSheet sSpriteSheet_Knight = {sKnight_Gfx, sizeof(sKnight_Gfx), TAG_KNIGHT};
 static const struct SpritePalette sSpritePalette_Knight = {sKnight_Pal, TAG_KNIGHT};
+static const struct SpriteSheet sSpriteSheet_Enemies = {sEnemies_Gfx, sizeof(sEnemies_Gfx), TAG_ENEMIES};
+static const struct SpritePalette sSpritePalette_Enemies = {sEnemies_Pal, TAG_ENEMIES};
 
 static const struct OamData sOam_Knight =
 {
@@ -173,6 +221,17 @@ static const struct SpriteTemplate sSpriteTemplate_Knight =
 {
     .tileTag = TAG_KNIGHT,
     .paletteTag = TAG_KNIGHT,
+    .oam = &sOam_Knight,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCallbackDummy,
+};
+
+static const struct SpriteTemplate sSpriteTemplate_Enemy =
+{
+    .tileTag = TAG_ENEMIES,
+    .paletteTag = TAG_ENEMIES,
     .oam = &sOam_Knight,
     .anims = gDummySpriteAnimTable,
     .images = NULL,
@@ -239,9 +298,9 @@ static const struct WindowTemplate sWindowTemplates[] =
     [WIN_PROMPT] = {
         .bg = BG_TEXT,
         .tilemapLeft = 2,
-        .tilemapTop = 14,
+        .tilemapTop = 13,
         .width = 26,
-        .height = 2,
+        .height = 4,
         .paletteNum = PAL_TEXT,
         .baseBlock = 1 + 26 * 4
     },
@@ -252,7 +311,7 @@ static const struct WindowTemplate sWindowTemplates[] =
         .width = 30,
         .height = 2,
         .paletteNum = PAL_TEXT,
-        .baseBlock = 1 + 26 * 4 + 26 * 2
+        .baseBlock = 1 + 26 * 4 + 26 * 4
     },
     DUMMY_WIN_TEMPLATE
 };
@@ -289,7 +348,8 @@ static void PrintTitleScreen(void)
     ShowWindow(WIN_TITLE);
 
     FillWindowPixelBuffer(WIN_PROMPT, PIXEL_FILL(0));
-    PrintCentered(WIN_PROMPT, sText_TitlePrompt, 1, sTextColors_White);
+    PrintCentered(WIN_PROMPT, sText_TitleControls, 1, sTextColors_White);
+    PrintCentered(WIN_PROMPT, sText_TitlePrompt, 17, sTextColors_White);
     ShowWindow(WIN_PROMPT);
 
     ScheduleBgCopyTilemapToVram(BG_TEXT);
@@ -297,10 +357,11 @@ static void PrintTitleScreen(void)
 
 static void PrintHud(void)
 {
-    ClearWindowTilemap(WIN_TITLE);
-    ClearWindowTilemap(WIN_PROMPT);
+    u8 *end = StringCopy(gStringVar4, sText_Score);
+
+    ConvertIntToDecimalStringN(end, sPocketKnight->score, STR_CONV_MODE_LEADING_ZEROS, 5);
     FillWindowPixelBuffer(WIN_HUD, PIXEL_FILL(0));
-    AddTextPrinterParameterized3(WIN_HUD, FONT_NORMAL, 4, 1, sTextColors_White, TEXT_SKIP_DRAW, sText_Hud);
+    AddTextPrinterParameterized3(WIN_HUD, FONT_NORMAL, 4, 1, sTextColors_White, TEXT_SKIP_DRAW, gStringVar4);
     ShowWindow(WIN_HUD);
     ScheduleBgCopyTilemapToVram(BG_TEXT);
 }
@@ -427,6 +488,11 @@ static bool32 IsSolidAt(s32 px, s32 py)
     return sLevelLayout[row][col] == '#' || sLevelLayout[row][col] == '=';
 }
 
+static bool32 IsSpikesAt(s32 px, s32 py)
+{
+    return GetLevelChar(px >> 3, py >> 3) == '^';
+}
+
 static void FindPlayerStart(void)
 {
     s32 col, row;
@@ -456,6 +522,14 @@ static void ResetPlayer(void)
     sPocketKnight->facingLeft = FALSE;
     sPocketKnight->canDash = TRUE;
     sPocketKnight->dashTimer = 0;
+}
+
+// For now a hit sends the player back to the start; lives come in step 5
+static void HurtPlayer(void)
+{
+    PlaySE(SE_NOT_EFFECTIVE);
+    ResetPlayer();
+    sPocketKnight->invincibleTimer = INVINCIBLE_FRAMES;
 }
 
 static void MovePlayerX(void)
@@ -592,6 +666,7 @@ static void UpdatePlayerSprite(void)
 
     sprite->oam.tileNum = sprite->sheetTileStart + frame * 4;
     sprite->oam.matrixNum = sPocketKnight->facingLeft ? ST_OAM_HFLIP : 0;
+    sprite->invisible = (sPocketKnight->invincibleTimer / 4) % 2;
 
     // The 16x16 sprite is centered on its x/y; the hitbox sits at its bottom middle
     sprite->x = (sPocketKnight->x >> 8) + PLAYER_WIDTH / 2 - sPocketKnight->cameraX;
@@ -604,12 +679,160 @@ static void UpdatePlayer(void)
     MovePlayerX();
     MovePlayerY();
 
-    // Fell into a pit: back to the start for now
+    if (sPocketKnight->invincibleTimer)
+        sPocketKnight->invincibleTimer--;
+
     if ((sPocketKnight->y >> 8) > POCKET_KNIGHT_LEVEL_HEIGHT * 8)
-        ResetPlayer();
+    {
+        // Fell into a pit
+        HurtPlayer();
+    }
+    else if (!sPocketKnight->invincibleTimer)
+    {
+        s32 left = sPocketKnight->x >> 8;
+        s32 bottom = (sPocketKnight->y >> 8) + PLAYER_HEIGHT - 1;
+
+        if (IsSpikesAt(left + 2, bottom) || IsSpikesAt(left + PLAYER_WIDTH - 3, bottom))
+            HurtPlayer();
+    }
 
     UpdateCamera();
     UpdatePlayerSprite();
+}
+
+// Enemies
+
+static void SpawnEnemies(void)
+{
+    s32 col, row;
+
+    sPocketKnight->numEnemies = 0;
+    for (row = 0; row < POCKET_KNIGHT_LEVEL_HEIGHT; row++)
+    {
+        for (col = 0; col < POCKET_KNIGHT_LEVEL_WIDTH; col++)
+        {
+            struct PocketKnightEnemy *enemy;
+            u8 c = sLevelLayout[row][col];
+
+            if ((c != 'E' && c != 'Y') || sPocketKnight->numEnemies >= MAX_ENEMIES)
+                continue;
+
+            enemy = &sPocketKnight->enemies[sPocketKnight->numEnemies++];
+            enemy->type = (c == 'E') ? ENEMY_WALKER : ENEMY_FLYER;
+            // Centered on the tile, standing on its bottom edge
+            enemy->x = (col * 8 + 4 - ENEMY_SIZE / 2) << 8;
+            enemy->y = ((row + 1) * 8 - ENEMY_SIZE) << 8;
+            enemy->homeY = enemy->y;
+            enemy->velX = -WALKER_SPEED;
+            enemy->alive = TRUE;
+            enemy->timer = col * 16; // so the flyers don't all bob in sync
+            enemy->spriteId = CreateSprite(&sSpriteTemplate_Enemy, 0, 0, 1);
+            gSprites[enemy->spriteId].invisible = TRUE;
+        }
+    }
+}
+
+static void MoveWalker(struct PocketKnightEnemy *enemy)
+{
+    s32 left = enemy->x >> 8;
+    s32 top = enemy->y >> 8;
+    s32 bottom = top + ENEMY_SIZE - 1;
+    s32 front = (enemy->velX > 0) ? left + ENEMY_SIZE : left - 1;
+
+    // Turn around at walls and at the edge of a ledge
+    if (IsSolidAt(front, top + ENEMY_SIZE / 2) || !IsSolidAt(front, bottom + 1))
+        enemy->velX = -enemy->velX;
+    else
+        enemy->x += enemy->velX;
+}
+
+static void DefeatEnemy(struct PocketKnightEnemy *enemy)
+{
+    enemy->alive = FALSE;
+    gSprites[enemy->spriteId].invisible = TRUE;
+    sPocketKnight->score += SCORE_PER_ENEMY;
+    PrintHud();
+}
+
+static void CheckEnemyHitsPlayer(struct PocketKnightEnemy *enemy)
+{
+    s32 pLeft = sPocketKnight->x >> 8;
+    s32 pTop = sPocketKnight->y >> 8;
+    s32 pBottom = pTop + PLAYER_HEIGHT - 1;
+    s32 eLeft = enemy->x >> 8;
+    s32 eTop = enemy->y >> 8;
+
+    if (pLeft + PLAYER_WIDTH <= eLeft || eLeft + ENEMY_SIZE <= pLeft
+     || pBottom < eTop || eTop + ENEMY_SIZE <= pTop)
+        return; // not touching
+
+    if (sPocketKnight->dashTimer)
+    {
+        // Rocket dash plows straight through
+        PlaySE(SE_SUPER_EFFECTIVE);
+        DefeatEnemy(enemy);
+    }
+    else if (sPocketKnight->velY > 0 && pBottom - eTop < STOMP_MARGIN)
+    {
+        // Landed on top: stomp and bounce, with the dash recharged
+        PlaySE(SE_M_DOUBLE_SLAP);
+        DefeatEnemy(enemy);
+        sPocketKnight->velY = -STOMP_BOUNCE;
+        sPocketKnight->canDash = TRUE;
+    }
+    else if (!sPocketKnight->invincibleTimer)
+    {
+        HurtPlayer();
+    }
+}
+
+static void UpdateEnemies(void)
+{
+    u32 i;
+
+    for (i = 0; i < sPocketKnight->numEnemies; i++)
+    {
+        struct PocketKnightEnemy *enemy = &sPocketKnight->enemies[i];
+        struct Sprite *sprite = &gSprites[enemy->spriteId];
+        s32 screenX;
+        u32 frame;
+
+        if (!enemy->alive)
+            continue;
+
+        screenX = (enemy->x >> 8) - sPocketKnight->cameraX;
+        if (screenX < -ENEMY_ACTIVE_MARGIN || screenX > DISPLAY_WIDTH + ENEMY_ACTIVE_MARGIN)
+        {
+            sprite->invisible = TRUE;
+            continue;
+        }
+
+        enemy->timer++;
+        if (enemy->type == ENEMY_WALKER)
+        {
+            MoveWalker(enemy);
+            frame = (enemy->timer / 8) % 2 ? EFRAME_WALKER2 : EFRAME_WALKER1;
+        }
+        else
+        {
+            enemy->y = enemy->homeY + (Sin(enemy->timer * 2 % 256, FLYER_BOB) << 8);
+            frame = (enemy->timer / 4) % 2 ? EFRAME_FLYER2 : EFRAME_FLYER1;
+        }
+
+        CheckEnemyHitsPlayer(enemy);
+        if (!enemy->alive)
+            continue;
+
+        sprite->invisible = FALSE;
+        sprite->oam.tileNum = sprite->sheetTileStart + frame * 4;
+        sprite->oam.matrixNum = (enemy->velX > 0) ? ST_OAM_HFLIP : 0;
+        sprite->x = (enemy->x >> 8) + ENEMY_SIZE / 2 - sPocketKnight->cameraX;
+        // The art's feet (walker) or body (flyer) line up with the bottom of the hitbox
+        if (enemy->type == ENEMY_WALKER)
+            sprite->y = (enemy->y >> 8) + ENEMY_SIZE - 7;
+        else
+            sprite->y = (enemy->y >> 8) + 5;
+    }
 }
 
 static void LoadLevel(void)
@@ -624,9 +847,12 @@ static void LoadLevel(void)
 
     LoadSpriteSheet(&sSpriteSheet_Knight);
     LoadSpritePalette(&sSpritePalette_Knight);
+    LoadSpriteSheet(&sSpriteSheet_Enemies);
+    LoadSpritePalette(&sSpritePalette_Enemies);
     FindPlayerStart();
     ResetPlayer();
     sPocketKnight->spriteId = CreateSprite(&sSpriteTemplate_Knight, 0, 0, 0);
+    SpawnEnemies();
 
     sPocketKnight->cameraX = 0;
     for (col = 0; col < LEVEL_MAP_WIDTH; col++)
@@ -637,6 +863,8 @@ static void LoadLevel(void)
     DrawScenery();
     UpdateScroll();
     UpdatePlayerSprite();
+    ClearWindowTilemap(WIN_TITLE);
+    ClearWindowTilemap(WIN_PROMPT);
     PrintHud();
 }
 
@@ -763,6 +991,7 @@ static void Task_Level_Main(u8 taskId)
     }
 
     UpdatePlayer();
+    UpdateEnemies();
     UpdateLevelColumns();
     UpdateScroll();
 }
