@@ -109,6 +109,7 @@ enum {
     WIN_TITLE,
     WIN_PROMPT,
     WIN_HUD,
+    WIN_CONTROLS,
 };
 
 // Frames in graphics/pocket_knight/knight.png (16x16 each, stacked)
@@ -190,8 +191,9 @@ static const u8 sSecretName[] = _("Joe F.");
 
 static const u8 sText_TitleTop[] = _("POCKET KNIGHT");
 static const u8 sText_TitleBottom[] = _("ADVENTURES");
-static const u8 sText_TitleControls[] = _("A: JUMP  B: BOOST  START: QUIT");
-static const u8 sText_TitlePrompt[] = _("A: START   B: QUIT");
+static const u8 sText_TitleStart[] = _("PRESS A TO START");
+static const u8 sText_TitleQuit[] = _("B: QUIT");
+static const u8 sText_TitleControls[] = _("IN GAME:  A JUMP   B BOOST   START QUIT");
 static const u8 sText_Score[] = _("SCORE ");
 
 static const u32 sLevelTiles_Gfx[] = INCBIN_U32("graphics/pocket_knight/level_tiles.4bpp");
@@ -248,10 +250,12 @@ static const u16 sText_Pal[16] =
     RGB_WHITE,       // 1: text
     RGB(8, 8, 14),   // 2: text shadow
     RGB(31, 25, 4),  // 3: title gold
+    RGB(18, 20, 27), // 4: dim text
 };
 
 static const u8 sTextColors_White[] = {TEXT_COLOR_TRANSPARENT, 1, 2};
 static const u8 sTextColors_Gold[] = {TEXT_COLOR_TRANSPARENT, 3, 2};
+static const u8 sTextColors_Dim[] = {TEXT_COLOR_TRANSPARENT, 4, 2};
 
 // Mountain height (in tiles) for each column of the repeating backdrop.
 // Neighbors differ by at most 1 so the slopes join up.
@@ -298,7 +302,7 @@ static const struct WindowTemplate sWindowTemplates[] =
     [WIN_PROMPT] = {
         .bg = BG_TEXT,
         .tilemapLeft = 2,
-        .tilemapTop = 13,
+        .tilemapTop = 11,
         .width = 26,
         .height = 4,
         .paletteNum = PAL_TEXT,
@@ -312,6 +316,15 @@ static const struct WindowTemplate sWindowTemplates[] =
         .height = 2,
         .paletteNum = PAL_TEXT,
         .baseBlock = 1 + 26 * 4 + 26 * 4
+    },
+    [WIN_CONTROLS] = {
+        .bg = BG_TEXT,
+        .tilemapLeft = 0,
+        .tilemapTop = 17,
+        .width = 30,
+        .height = 2,
+        .paletteNum = PAL_TEXT,
+        .baseBlock = 1 + 26 * 4 + 26 * 4 + 30 * 2
     },
     DUMMY_WIN_TEMPLATE
 };
@@ -348,9 +361,13 @@ static void PrintTitleScreen(void)
     ShowWindow(WIN_TITLE);
 
     FillWindowPixelBuffer(WIN_PROMPT, PIXEL_FILL(0));
-    PrintCentered(WIN_PROMPT, sText_TitleControls, 1, sTextColors_White);
-    PrintCentered(WIN_PROMPT, sText_TitlePrompt, 17, sTextColors_White);
+    PrintCentered(WIN_PROMPT, sText_TitleStart, 1, sTextColors_White);
+    PrintCentered(WIN_PROMPT, sText_TitleQuit, 17, sTextColors_White);
     ShowWindow(WIN_PROMPT);
+
+    FillWindowPixelBuffer(WIN_CONTROLS, PIXEL_FILL(0));
+    PrintCentered(WIN_CONTROLS, sText_TitleControls, 1, sTextColors_Dim);
+    ShowWindow(WIN_CONTROLS);
 
     ScheduleBgCopyTilemapToVram(BG_TEXT);
 }
@@ -865,6 +882,7 @@ static void LoadLevel(void)
     UpdatePlayerSprite();
     ClearWindowTilemap(WIN_TITLE);
     ClearWindowTilemap(WIN_PROMPT);
+    ClearWindowTilemap(WIN_CONTROLS);
     PrintHud();
 }
 
