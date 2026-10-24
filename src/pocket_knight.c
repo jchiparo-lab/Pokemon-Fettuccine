@@ -28,7 +28,8 @@
 //   2. Scrolling level and parallax background
 //   3. Player movement: run, jump (hold A to jump higher), B rocket dash
 //   4. Spikes, walker and flyer enemies (stomp or dash through them), score
-//   5. Win/lose and the Master Ball reward (todo)
+//   5. 3 lives, flagpole win, game over; first clear earns a Master Ball
+//      (given by the bedroom script, tracked with FLAG_POCKET_KNIGHT_CLEARED)
 //   6. Polish (todo)
 //
 // Art lives in graphics/pocket_knight/ as indexed 16-color PNGs, and the
@@ -62,6 +63,7 @@
 #define STOMP_MARGIN      8  // how close to the enemy's top counts as landing on it
 #define ENEMY_ACTIVE_MARGIN 32 // enemies this far offscreen keep moving
 #define SCORE_PER_ENEMY   100
+#define STARTING_LIVES    3
 
 // The level BG is 64 tiles wide and wraps, so new columns are drawn into it
 // as the camera scrolls.
@@ -170,6 +172,9 @@ struct PocketKnight
     u8 animTimer;
     u8 invincibleTimer;
     u8 numEnemies;
+    u8 lives;
+    bool8 won;
+    s32 goalX; // reaching the flagpole wins
     u16 score;
     struct PocketKnightEnemy enemies[MAX_ENEMIES];
 };
@@ -184,6 +189,7 @@ static void Task_Title_HandleInput(u8 taskId);
 static void Task_Title_FadeToLevel(u8 taskId);
 static void Task_Level_WaitFadeIn(u8 taskId);
 static void Task_Level_Main(u8 taskId);
+static void Task_Level_EndScreen(u8 taskId);
 static void Task_Exit(u8 taskId);
 
 // Case-sensitive: "JOE F." and "joe f." don't count
@@ -195,6 +201,10 @@ static const u8 sText_TitleStart[] = _("PRESS A TO START");
 static const u8 sText_TitleQuit[] = _("B: QUIT");
 static const u8 sText_TitleControls[] = _("IN GAME:  A JUMP   B BOOST   START QUIT");
 static const u8 sText_Score[] = _("SCORE ");
+static const u8 sText_Lives[] = _("LIVES ");
+static const u8 sText_YouWin[] = _("YOU WIN!");
+static const u8 sText_GameOver[] = _("GAME OVER");
+static const u8 sText_PressA[] = _("PRESS A");
 
 static const u32 sLevelTiles_Gfx[] = INCBIN_U32("graphics/pocket_knight/level_tiles.4bpp");
 static const u16 sLevelTiles_Pal[] = INCBIN_U16("graphics/pocket_knight/level_tiles.gbapal");
@@ -251,11 +261,14 @@ static const u16 sText_Pal[16] =
     RGB(8, 8, 14),   // 2: text shadow
     RGB(31, 25, 4),  // 3: title gold
     RGB(18, 20, 27), // 4: dim text
+    RGB(2, 3, 10),   // 5: box background (dark navy)
 };
 
 static const u8 sTextColors_White[] = {TEXT_COLOR_TRANSPARENT, 1, 2};
 static const u8 sTextColors_Gold[] = {TEXT_COLOR_TRANSPARENT, 3, 2};
 static const u8 sTextColors_Dim[] = {TEXT_COLOR_TRANSPARENT, 4, 2};
+static const u8 sTextColors_BoxWhite[] = {5, 1, 2};
+static const u8 sTextColors_BoxGold[] = {5, 3, 2};
 
 // Mountain height (in tiles) for each column of the repeating backdrop.
 // Neighbors differ by at most 1 so the slopes join up.
@@ -379,6 +392,10 @@ static void PrintHud(void)
     ConvertIntToDecimalStringN(end, sPocketKnight->score, STR_CONV_MODE_LEADING_ZEROS, 5);
     FillWindowPixelBuffer(WIN_HUD, PIXEL_FILL(0));
     AddTextPrinterParameterized3(WIN_HUD, FONT_NORMAL, 4, 1, sTextColors_White, TEXT_SKIP_DRAW, gStringVar4);
+
+    end = StringCopy(gStringVar4, sText_Lives);
+    ConvertIntToDecimalStringN(end, sPocketKnight->lives, STR_CONV_MODE_LEFT_ALIGN, 1);
+    AddTextPrinterParameterized3(WIN_HUD, FONT_NORMAL, 190, 1, sTextColors_White, TEXT_SKIP_DRAW, gStringVar4);
     ShowWindow(WIN_HUD);
     ScheduleBgCopyTilemapToVram(BG_TEXT);
 }
@@ -510,20 +527,22 @@ static bool32 IsSpikesAt(s32 px, s32 py)
     return GetLevelChar(px >> 3, py >> 3) == '^';
 }
 
-static void FindPlayerStart(void)
+static void FindPlayerStartAndGoal(void)
 {
     s32 col, row;
 
+    sPocketKnight->goalX = LEVEL_PIXEL_WIDTH;
     for (row = 0; row < POCKET_KNIGHT_LEVEL_HEIGHT; row++)
     {
         for (col = 0; col < POCKET_KNIGHT_LEVEL_WIDTH; col++)
         {
+            if (sLevelLayout[row][col] == '|')
+                sPocketKnight->goalX = min(sPocketKnight->goalX, col * 8 + 3); // the pole is drawn 3px into its tile
             if (sLevelLayout[row][col] == 'S')
             {
                 // Stand on the bottom of the S tile
                 sPocketKnight->startX = (col * 8) << 8;
                 sPocketKnight->startY = ((row + 1) * 8 - PLAYER_HEIGHT) << 8;
-                return;
             }
         }
     }
@@ -541,12 +560,43 @@ static void ResetPlayer(void)
     sPocketKnight->dashTimer = 0;
 }
 
-// For now a hit sends the player back to the start; lives come in step 5
+static void ShowEndScreen(const u8 *title)
+{
+    u8 *end;
+
+    FillWindowPixelBuffer(WIN_TITLE, PIXEL_FILL(5));
+    PrintCentered(WIN_TITLE, title, 1, sTextColors_BoxGold);
+    end = StringCopy(gStringVar4, sText_Score);
+    ConvertIntToDecimalStringN(end, sPocketKnight->score, STR_CONV_MODE_LEADING_ZEROS, 5);
+    PrintCentered(WIN_TITLE, gStringVar4, 17, sTextColors_BoxWhite);
+    ShowWindow(WIN_TITLE);
+
+    FillWindowPixelBuffer(WIN_PROMPT, PIXEL_FILL(0));
+    PrintCentered(WIN_PROMPT, sText_PressA, 1, sTextColors_White);
+    ShowWindow(WIN_PROMPT);
+    ScheduleBgCopyTilemapToVram(BG_TEXT);
+}
+
+// A hit costs a life and sends the player back to the start
 static void HurtPlayer(void)
 {
+    sPocketKnight->lives--;
+    PrintHud();
+    if (sPocketKnight->lives == 0)
+    {
+        gSprites[sPocketKnight->spriteId].invisible = TRUE;
+        PlayFanfare(MUS_TOO_BAD);
+        ShowEndScreen(sText_GameOver);
+        return;
+    }
     PlaySE(SE_NOT_EFFECTIVE);
     ResetPlayer();
     sPocketKnight->invincibleTimer = INVINCIBLE_FRAMES;
+}
+
+static bool32 IsGameOver(void)
+{
+    return sPocketKnight->lives == 0 || sPocketKnight->won;
 }
 
 static void MovePlayerX(void)
@@ -713,6 +763,18 @@ static void UpdatePlayer(void)
             HurtPlayer();
     }
 
+    if (IsGameOver())
+        return;
+
+    if ((sPocketKnight->x >> 8) + PLAYER_WIDTH > sPocketKnight->goalX)
+    {
+        sPocketKnight->won = TRUE;
+        sPocketKnight->velX = 0;
+        sPocketKnight->dashTimer = 0;
+        PlayFanfare(MUS_LEVEL_UP);
+        ShowEndScreen(sText_YouWin);
+    }
+
     UpdateCamera();
     UpdatePlayerSprite();
 }
@@ -837,6 +899,8 @@ static void UpdateEnemies(void)
         }
 
         CheckEnemyHitsPlayer(enemy);
+        if (IsGameOver())
+            return;
         if (!enemy->alive)
             continue;
 
@@ -866,8 +930,9 @@ static void LoadLevel(void)
     LoadSpritePalette(&sSpritePalette_Knight);
     LoadSpriteSheet(&sSpriteSheet_Enemies);
     LoadSpritePalette(&sSpritePalette_Enemies);
-    FindPlayerStart();
+    FindPlayerStartAndGoal();
     ResetPlayer();
+    sPocketKnight->lives = STARTING_LIVES;
     sPocketKnight->spriteId = CreateSprite(&sSpriteTemplate_Knight, 0, 0, 0);
     SpawnEnemies();
 
@@ -1009,17 +1074,31 @@ static void Task_Level_Main(u8 taskId)
     }
 
     UpdatePlayer();
-    UpdateEnemies();
+    if (!IsGameOver())
+        UpdateEnemies();
     UpdateLevelColumns();
     UpdateScroll();
+
+    if (IsGameOver())
+        gTasks[taskId].func = Task_Level_EndScreen;
+}
+
+static void Task_Level_EndScreen(u8 taskId)
+{
+    if (JOY_NEW(A_BUTTON) && IsFanfareTaskInactive())
+    {
+        PlaySE(SE_SELECT);
+        BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
+        gTasks[taskId].func = Task_Exit;
+    }
 }
 
 static void Task_Exit(u8 taskId)
 {
     if (!gPaletteFade.active)
     {
-        // No wins yet; the reward check comes in a later step
-        gSpecialVar_Result = FALSE;
+        // The bedroom script gives the Master Ball on the first win
+        gSpecialVar_Result = (sPocketKnight != NULL && sPocketKnight->won);
         FreeAllWindowBuffers();
         UnsetBgTilemapBuffer(BG_LEVEL);
         UnsetBgTilemapBuffer(BG_SCENERY);

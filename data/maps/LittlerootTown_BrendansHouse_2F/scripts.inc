@@ -285,9 +285,14 @@ PlayersHouse_2F_EventScript_PocketKnight::
 	closemessage
 	fadescreen FADE_TO_BLACK
 	special StartPocketKnightAdventures
-	releaseall
-	end
-
+	goto_if_eq VAR_RESULT, FALSE, PlayersHouse_2F_EventScript_PocketKnightDone
+	goto_if_set FLAG_POCKET_KNIGHT_CLEARED, PlayersHouse_2F_EventScript_PocketKnightDone
+	@ First clear: a one-time Master Ball (if the bag is full, the next win tries again)
+	msgbox PlayersHouse_2F_Text_SomethingPoppedOut, MSGBOX_DEFAULT
+	giveitem ITEM_MASTER_BALL
+	goto_if_eq VAR_RESULT, FALSE, PlayersHouse_2F_EventScript_PocketKnightDone
+	setflag FLAG_POCKET_KNIGHT_CLEARED
+PlayersHouse_2F_EventScript_PocketKnightDone::
 PlayersHouse_2F_EventScript_PocketKnightDecline::
 	releaseall
 	end
@@ -340,6 +345,10 @@ PlayersHouse_2F_Text_BootUpPocketKnight:
 	.string "There's a copy of Pocket Knight\n"
 	.string "Adventures in it…\p"
 	.string "Boot up the game?$"
+
+PlayersHouse_2F_Text_SomethingPoppedOut:
+	.string "Something popped out of the\n"
+	.string "cartridge slot!$"
 
 RivalsHouse_2F_Text_ItsASuperNintendo:
 	.string "It's a Super Nintendo. BRIAN's\n"
