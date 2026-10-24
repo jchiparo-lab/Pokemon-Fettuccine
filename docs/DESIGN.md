@@ -129,11 +129,13 @@ Brian is a proud Canadian who hates all Italian food. He wants to become Champio
 7. **Victory Road (replaces Wally's final battle).** After losing, Brian is furious and runs ahead to the Elite Four.
 8. **Champion battle.** Brian beats the Elite Four before the player arrives and becomes the new Champion. The player has to beat him one last time to become Champion.
 
-### Wallace at the Pokémon League
+### Mike at the Pokémon League (replaces Wallace)
 
-- Wallace is no longer the Champion. After Victory Road, he's standing outside the Elite Four entrance in Fettuccine Grande.
+- **Decided:** **Mike** (Joe's cousin) takes Wallace's place. Wallace is no longer the Champion; after Victory Road, Mike is standing outside the Elite Four entrance in Fettuccine Grande.
 - Talking to him gets a line along the lines of: "That angry fellow who hates pasta just stormed through here... and he's the new Champion!" (draft wording)
-- **Decided:** In the post-game, after the player becomes Champion, Wallace stays in the same spot. Talking to him starts a challenge to see whether the new Champion is the real deal, using his original Emerald Champion team.
+- **Decided:** In the post-game, after the player becomes Champion, Mike stays in the same spot. Talking to him starts a challenge to see whether the new Champion is the real deal.
+- **Decided:** Mike's ace is an **overpowered Spearow**. Both Mike and his Spearow get custom sprite work by Joe; a placeholder sprite is used until the art is ready.
+- **Open:** the rest of Mike's team (Wallace's original Emerald Champion team with Spearow as ace, or something new), and whether Mike also replaces Wallace in Sugopolis (where Wallace gives HM Waterfall).
 
 ### Notes on merging the roles
 
@@ -195,11 +197,11 @@ Status:
 | --- | --- | --- |
 | Alan | Professor Birch | Gives the player their starter and introduces the world |
 | Sam | Steven Stone | Kind mentor, gives the player the Mega Ring, secret post-game boss |
-| Joe | Game designer (Cove Lily Motel, Linguicove) | Awards the diploma for completing the Pokédex |
+| Joe Fettuccine | Game designer (Cove Lily Motel, Linguicove) | Awards the diploma for completing the Pokédex |
 | Brian | The rival, Wally, and Wallace (Champion) | See Brian's story |
 | Jason | Every shopkeeper | Runs every Retro Salvage Games shop |
 
-**Decided:** Alan, Sam, and Joe all get custom sprites (overworld; Sam also needs a battle sprite; Alan also needs the large Birch portrait from the opening scene).
+**Decided:** Alan, Sam, and Joe Fettuccine all get custom sprites (overworld; Sam also needs a battle sprite; Alan also needs the large Birch portrait from the opening scene).
 
 ### Alan as Birch
 
@@ -232,10 +234,27 @@ Every Pokémon is from Gens 1–3 and has a cheese connection.
 - **Balance:** Ground is the biggest weakness, hitting Metagross, Raichu, and Ampharos (Lunatone is immune thanks to Levitate). Give the team coverage moves for Ground types, such as Grass Knot on Raichu, Ice Punch on Metagross, and Earthquake on Tauros.
 - As a post-game boss, the whole team should have high levels, good items, and strong movesets.
 
-### Joe as the game designer
+### Joe Fettuccine as the game designer
 
 - Replaces the Game Freak developer cameo in the Cove Lily Motel.
 - Awards the diploma for completing the Pokédex.
+
+## Joe's cousins
+
+| Person | Replaces | Role in the game |
+| --- | --- | --- |
+| Mike | Wallace | Waits outside the Elite Four; post-game challenge with an overpowered Spearow ace (see "Mike at the Pokémon League") |
+| Joe Q | Scott | Scott's role, with dialogue changes |
+
+- **Decided:** Joe Q is a different person from Joe Fettuccine (the game designer).
+- **Decided:** Mike and his Spearow get custom sprites (placeholder for now). Joe Q keeps Scott's sprite.
+
+## Trainer and Gym Leader teams
+
+- **Decided:** every trainer and Gym Leader gets a different team from base Emerald, drawn from Pokémon of Gens 1–9. Each keeps their current theme (for example, a Bug Catcher still uses Bug types and a Gym Leader keeps their gym's type).
+- **Decided:** this is a fixed set of new teams that every player gets. It is separate from the optional randomizer at New Game.
+- **Decided:** from the 3rd gym on, each Gym Leader has a Mega-Evolving Pokémon.
+- **Decided:** trainers' names are replaced with names from the Retrotopia community. Joe will supply the list; build this near the end.
 
 ## Pokémon, moves, items and abilities
 
@@ -340,8 +359,13 @@ Mostly quality-of-life config options. Feature names change between expansion ve
 - **Faster HP drain.**
 - **Simultaneous HP reduction** for spread moves in doubles.
 - **Faster AI calculations** (AI config flags plus possible code tuning).
+- **Decided: battle speed option.** A setting in the Options menu that doubles battle speed without speeding up the overworld.
 
 ## Overworld and menus
+
+- **Done: the player starts with the Running Shoes.** Mom's scene in Lil Ragu Town after getting the starter is now just a goodbye.
+- **Done: the player starts with the Shiny Charm** in the bag (it only works from the bag, not the PC).
+- **Decided: faster berry picking**, quick or near instant.
 
 - **HMs are not permanent.** HM moves can be forgotten like normal moves. **Decided:** field moves only need the badge plus the HM in the bag; no Pokémon has to know the move. Forgetting HMs is **done** (config). Using field moves without knowing them is still custom work.
 - **Move relearner in the party menu.** A "Relearn" option on each Pokémon. This version already has a relearner on the summary screen's moves page. **Decided:** add it as a party-menu option anyway (custom).
@@ -377,8 +401,11 @@ A yes/no choice at New Game that randomizes Pokémon for that save file. It must
 | Main character sprites (Ethan and Kris) | Community sprites, no recolor | Not started |
 | Brian as rival (sprites, name, logic, anti-pasta story) | Art plus code and dialogue | Not started (rival teams still use old Hoenn starters) |
 | Brian replaces Wally (Petalburg catch, Mauville, Victory Road) | Scripts and dialogue | Not started |
-| Brian as Champion, Wallace outside the Elite Four | Scripts, trainer data, dialogue | Not started |
-| Retrotopia cast: Alan (Birch), Sam (Steven), Joe (designer) | Custom sprites, scripts, dialogue | Not started |
+| Brian as Champion, Mike (replaces Wallace) outside the Elite Four | Scripts, trainer data, dialogue, custom sprites | Not started |
+| Joe Q replaces Scott | Dialogue, names | Not started |
+| New themed teams for all trainers and Gym Leaders (Gens 1–9, Megas from gym 3) | Trainer data | Not started |
+| Trainer names from the Retrotopia community | Text (waiting on Joe's list) | Not started |
+| Retrotopia cast: Alan (Birch), Sam (Steven), Joe Fettuccine (designer) | Custom sprites, scripts, dialogue | Not started |
 | All Pokémon through Gen IX | Built in; plan placement | Not started |
 | Items, abilities, move effects through Gen IX | Built in; plan placement | Not started |
 | Physical/special split | Built in | Done (built in) |
@@ -393,9 +420,13 @@ A yes/no choice at New Game that randomizes Pokémon for that save file. It must
 | Faster HP drain | Config toggle | Done (built in) |
 | Simultaneous HP reduction | Verify in config | Done (built in) |
 | Faster AI calculations | Config plus tuning | Not started |
+| Battle speed option (battles only) | Custom (Options menu) | Not started |
 | Non-permanent HMs | Config toggle | Partly done: HMs forgettable (config); field moves without knowing the move still custom |
 | Move relearner in party menu | Custom (party-menu option) | Not started (summary-screen relearner already exists) |
 | PC access via bag item, "Move" default in storage | Custom (small) | Not started |
+| Start with Running Shoes | New-game setup, Mom's script | Done |
+| Start with Shiny Charm | New-game setup | Done |
+| Faster berry picking | Config or small code change | Not started |
 | Randomizer at New Game | Custom (large) | Not started |
 
 ## Suggested build order
