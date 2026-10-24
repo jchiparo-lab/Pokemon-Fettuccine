@@ -481,6 +481,17 @@ Mostly quality-of-life config options. Feature names change between expansion ve
 - Build it as its own callback/task screen (like the Berry Blender or Pokéblock minigames), separate from the battle and overworld systems. Check how pokeemerald-expansion structures existing minigames before writing anything new.
 - Do it in steps, building and committing after each: (1) name check plus placeholder screen, (2) scrolling background, (3) player movement, (4) obstacles and enemies, (5) win/lose and return, (6) polish.
 
+**Done** (with placeholder art; the polish step was skipped):
+
+- Title screen ("PRESS A TO START", "B: QUIT", in-game controls listed) leads into one side-scrolling level about four screens wide, with a parallax mountain backdrop. Code is in `src/pocket_knight.c`.
+- Controls: D-pad runs, A jumps (hold for higher), B is a rocket dash (once per jump, recharged on landing or by stomping), START quits.
+- Two original enemies: Clank (walker, turns at walls and ledges) and Buzz (flying drone that bobs up and down). Stomp or dash through them for 100 points each. Spikes and pits hurt too.
+- 3 lives. A hit restarts the level from the beginning with a short invincibility flicker. GAME OVER plays the "too bad" jingle; touching the flagpole shows YOU WIN! with the score and the level-up fanfare.
+- The first win gives one Master Ball back in the bedroom ("Something popped out of the cartridge slot!"), tracked with `FLAG_POCKET_KNIGHT_CLEARED` (the former unused flag 0x1AA). If the bag is full, the next win tries again.
+- **Art to replace (Joe, in Aseprite):** `graphics/pocket_knight/knight.png` (five 16×16 frames stacked: stand, run 1, run 2, jump, boost), `enemies.png` (Clank ×2, Buzz ×2), `level_tiles.png` and `background.png` (8×8 tiles in a row; keep the tile order). All are 16-color indexed PNGs.
+- **Level layout** is ASCII art in `src/data/pocket_knight_level.h` (`#` ground, `=` brick, `^` spikes, `E` walker, `Y` flyer, `S` start, `|` flagpole). Every row must stay 128 characters.
+- Not done (optional): saved high score, death animation, checkpoints, its own music.
+
 ## Randomizer option at game start
 
 A yes/no choice at New Game that randomizes Pokémon for that save file. It must run inside the ROM at runtime (save-file flag plus a seed), not as a separate patching tool. **Build this last.**
@@ -537,7 +548,7 @@ A yes/no choice at New Game that randomizes Pokémon for that save file. It must
 | Start with Running Shoes | New-game setup, Mom's script | Done |
 | Start with Shiny Charm | New-game setup | Done |
 | Faster berry picking | Berry tree script | Done |
-| Secret Pocket Knight Adventures minigame (name "Joe F.") | Custom minigame, original sprites (late-build bonus: after the main custom features, before or alongside the randomizer) | Not started |
+| Secret Pocket Knight Adventures minigame (name "Joe F.") | Custom minigame, original sprites | Done (placeholder art; Joe's sprites still to swap in) |
 | Randomizer at New Game | Custom (large) | Not started |
 
 ## Suggested build order
