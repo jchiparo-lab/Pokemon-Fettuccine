@@ -6253,45 +6253,50 @@ Double Battle: No
 AI: Basic Trainer
 Mugshot: Yellow
 
-Wailord
+Mr. Mime @ Light Clay
 Level: 57
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Rain Dance
-- Water Spout
-- Double Edge
+Ability: Filter
+- Reflect
+- Light Screen
+- Psychic
+- Dazzling Gleam
+
+Magmar @ Eviolite
+Level: 57
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ability: Flame Body
+- Flamethrower
+- Thunderbolt
+- Focus Blast
+- Will-O-Wisp
+
+Arboliva @ Sitrus Berry
+Level: 58
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ability: Seed Sower
+- Energy Ball
+- Hyper Voice
+- Earth Power
+- Strength Sap
+
+Vanilluxe @ Never-Melt Ice
+Level: 58
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ability: Snow Warning
 - Blizzard
+- Freeze-Dry
+- Flash Cannon
+- Mirror Coat
 
-Tentacruel
-Level: 55
+Primarina @ Leftovers
+Level: 58
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Toxic
-- Hydro Pump
-- Sludge Bomb
+Ability: Liquid Voice
+- Sparkling Aria
+- Moonblast
 - Ice Beam
-
-Ludicolo
-Level: 56
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Giga Drain
-- Surf
-- Leech Seed
-- Double Team
-
-Whiscash
-Level: 56
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Earthquake
-- Surf
-- Amnesia
-- Hyper Beam
-
-Gyarados
-Level: 56
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Dragon Dance
-- Earthquake
-- Hyper Beam
-- Surf
+- Calm Mind
 
 Spearow-Mike @ Life Orb
 Level: 60
