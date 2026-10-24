@@ -176,6 +176,13 @@ Brian is a proud Canadian who hates all Italian food. He wants to become Champio
 - **Watch out for Fire.** Abomasnow, Sawsbuck, and Ninetales are all weak to it. Bibarel and Swanna can switch in against Fire types; give the others coverage moves.
 - Earlier battles use pre-evolved forms (Ducklett, Snover, Bidoof, Stantler, Deerling, Alolan Vulpix) as the team grows.
 
+### Brian's bedroom: SNES and Time Toggle
+
+- **Decided:** the GameCube in Brian's bedroom (the rival's house, second floor, in Lil Ragu) is described as a Super Nintendo with a copy of *Time Toggle* in it. Text only: no minigame, no new code, no sprite change.
+- New text: "It's a Super Nintendo. Brian's copy of Time Toggle is in it... a mediocre RPG that certain people won't stop calling the greatest game ever made." Break it to fit the text box with `\n` and `\p`.
+- Change only the rival's-room GameCube. The player's bedroom GameCube has its own secret (see "Secret minigame: Pocket Knight Adventures").
+- The boy and girl houses swap roles depending on the player's gender, so check whether they share a script and apply the change wherever Brian's room is used.
+
 ## Villain teams: White Sauce vs. Red Sauce
 
 Decided: Team Aqua and Team Magma become two rival sauce fanatics, each convinced theirs is the one true sauce. (This replaced the earlier "sauce vs. boil" theme, Team Marinara vs. Team Al Dente.)
@@ -211,6 +218,7 @@ Status:
 | Joe Fettuccine | Game designer (Cove Lily Motel, Linguicove) | Awards the diploma for completing the Pokédex |
 | Brian | The rival, Wally, and Wallace (Champion) | See Brian's story |
 | Jason | Every shopkeeper | Runs every Retro Salvage Games shop |
+| Joe Q | Scott | Talent scout who keeps turning up to watch the player battle, then invites them to the Bucatini Frontier |
 
 **Decided:** Alan, Sam, and Joe Fettuccine all get custom sprites (overworld; Sam also needs a battle sprite; Alan also needs the large Birch portrait from the opening scene).
 
@@ -250,16 +258,48 @@ Every Pokémon is from Gens 1–3 and has a cheese connection.
 - Replaces the Game Freak developer cameo in the Cove Lily Motel.
 - Awards the diploma for completing the Pokédex.
 
+### Joe Q as Scott
+
+**Decided:** Joe Q, Joe's older cousin and a guest on the RetroBytes Neo nostalgia episode (July 2026), replaces Scott.
+
+- **Decided:** Joe Q is a different person from Joe Fettuccine (the game designer). His in-game name is "Joe Q" so he isn't confused with Joe.
+- **Decided:** Joe Q keeps Scott's sprite.
+- **Done:** every SCOTT in dialogue and the PokéNav now says JOE Q (the Battle Frontier guide calls him "MR. Q").
+
+**Who he is:**
+
+- **"Big Joe."** Joe's older cousin. Because of him, Joe was called "Little Joe" well into his 20s. He jokes that he was kind of a big deal in Downriver, Michigan.
+- **Radio and podcast veteran.** He did internet radio before podcasting had a name and has thousands of hours of shows behind him, including a World of Warcraft radio show and a podcast called *Just Cool Enough* (about 500 episodes). He also covered the video game industry.
+- **Now:** almost 40, works a corporate job, has two kids, and supports Retrotopia on the lowest Patreon tier ("the bare minimum").
+- **Gaming roots:** a hand-me-down NES with Duck Hunt and Super Mario Bros., shareware on an IBM 386, The Sims, and Age of Empires (he loved it but was never good at it). He'd buy a PlayStation just to play Heli Attack 2 again.
+- **Personality:** warm, self-deprecating, and passionate. He hates corporate cash grabs, believes in voting with your wallet, and grieves what's happened to Star Wars.
+
+**Running jokes for his dialogue:**
+
+- **"Just Cool Enough."** Scott's job is scouting talent, so Joe Q scouts trainers who are "just cool enough." When he invites the player to the Bucatini Frontier, it's the highest compliment he gives.
+- **The Pokémon intervention.** On the episode, he told Joe, as his bigger cousin, to stop spending money on Pokémon games. In-game, he can warn the player not to waste money, even at Retro Salvage Games.
+- **Kid mode.** He played Spider-Man on kid mode with the door shut so nobody would know. He can admit to secretly playing on easy.
+- **Kind of a big deal.** He introduces himself as someone everyone around here has heard of.
+- **Old radio host.** He talks like he's still on the air.
+
+**Scene notes:**
+
+- Keep all of Scott's existing appearances and their place in the story. Rewrite only his name and dialogue.
+- His final scene is the post-game invitation to the Bucatini Frontier, where he declares the player "just cool enough."
+- Starting point: search `data/maps/` for every line Scott speaks and list each one with its map and story order before rewriting.
+
+**Open:**
+
+- [ ] Final dialogue for each scene (Joe will draft or approve)
+
 ## Joe's cousins
 
 | Person | Replaces | Role in the game |
 | --- | --- | --- |
 | Mike | Wallace | Waits outside the Elite Four; post-game challenge with an overpowered Spearow ace (see "Mike at the Pokémon League") |
-| Joe Q | Scott | Scott's role, with dialogue changes |
+| Joe Q | Scott | Talent scout and Bucatini Frontier recruiter (see "Joe Q as Scott" under Retrotopia cast) |
 
-- **Decided:** Joe Q is a different person from Joe Fettuccine (the game designer).
-- **Done:** every SCOTT in dialogue and the PokéNav now says JOE Q (the Battle Frontier guide calls him "MR. Q"). **Open:** Joe Q's personality and dialogue rewrite, to do later.
-- **Decided:** Mike and his Spearow get custom sprites (placeholder for now). Joe Q keeps Scott's sprite.
+- **Decided:** Mike and his Spearow get custom sprites (placeholder for now).
 
 ## Trainer and Gym Leader teams
 
@@ -407,6 +447,41 @@ Mostly quality-of-life config options. Feature names change between expansion ve
 - **PC access anywhere via a bag item.** A key item that opens the storage system. Likely custom.
 - **"Move" as the default PC option.** Storage opens straight into Move mode. Small code change. "Move Pokémon" is already the first PC menu option, with the cursor on it; skipping the menu entirely would be a further small change.
 
+## Secret minigame: Pocket Knight Adventures
+
+**Decided:** the GameCube in the player's bedroom in Lil Ragu is a secret unlock. If the player's name is exactly **Joe F.**, interacting with it starts a simple side-scrolling rocket-pack minigame, *Pocket Knight Adventures*: a homemade tribute to Rocket Knight Adventures (Sega Genesis), and a nod to it being a tiny game inside a GBA game. **Late-build bonus:** do it after the main custom features, before or alongside the randomizer.
+
+- **Decided:** in-game, the console is described as a Sega Genesis for every player, secret name or not.
+- **Decided:** the name match is exact and case-sensitive: uppercase J, lowercase o, lowercase e, space, uppercase F, period. "JOE F." or "joe f." does not unlock it. It's 6 characters (within Emerald's 7-character limit), and the space and period are both on the naming screen.
+
+**Constraints:**
+
+- **Do not emulate or include Rocket Knight Adventures.** The GBA can't emulate the Genesis, and putting Konami's ROM in a shared hack would be piracy.
+- The minigame must be **original**: original code and original sprites. It can nod to the style (a jetpack hero, side-scrolling, Genesis-era feel) but must not copy Konami's characters, art, music, or levels.
+- Keep the scope small. This is a bonus feature, not a second game.
+
+**Unlock logic:**
+
+- The GameCube's script compares `gSaveBlock2Ptr->playerName` to "Joe F." (exact, case-sensitive).
+- Match: ask "Boot up the game?" (yes/no) and launch the minigame.
+- No match: show this text instead (no minigame): "It's a Sega Genesis. There's a copy of Pocket Knight Adventures in it... universally agreed upon to be the greatest 2D platformer of all time." Break it to fit the text box with `\n` and `\p`.
+- Returning from the minigame drops the player back in the bedroom without disturbing the overworld state.
+
+**Minigame scope (first pass):**
+
+- One screen-scrolling level, or a short endless runner.
+- **Decided:** the hero is a generic blue armored knight with a rocket pack, as an original sprite. Not an opossum or any other animal, so it doesn't copy Sparkster.
+- Controls: D-pad to move, A to jump, B for a rocket-boost dash.
+- A few obstacle and enemy types, plus a goal or score counter.
+- Win or lose screen, then return to the bedroom.
+- Optional: a high score saved to a spare save variable.
+- **Decided:** the first clear gives one Master Ball (one time only, tracked with a flag; replays give nothing extra).
+
+**Suggested approach:**
+
+- Build it as its own callback/task screen (like the Berry Blender or Pokéblock minigames), separate from the battle and overworld systems. Check how pokeemerald-expansion structures existing minigames before writing anything new.
+- Do it in steps, building and committing after each: (1) name check plus placeholder screen, (2) scrolling background, (3) player movement, (4) obstacles and enemies, (5) win/lose and return, (6) polish.
+
 ## Randomizer option at game start
 
 A yes/no choice at New Game that randomizes Pokémon for that save file. It must run inside the ROM at runtime (save-file flag plus a seed), not as a separate patching tool. **Build this last.**
@@ -437,7 +512,8 @@ A yes/no choice at New Game that randomizes Pokémon for that save file. It must
 | Brian as rival (sprites, name, logic, anti-pasta story) | Art plus code and dialogue | Not started (rival teams still use old Hoenn starters) |
 | Brian replaces Wally (Petalburg catch, Mauville, Victory Road) | Scripts and dialogue | Not started |
 | Brian as Champion, Mike (replaces Wallace) outside the Elite Four | Scripts, trainer data, dialogue, custom sprites | Not started |
-| Joe Q replaces Scott | Dialogue, names | Name done; dialogue rewrite later |
+| Brian's room SNES / Time Toggle text | Text edit | Not started |
+| Joe Q replaces Scott | Dialogue rewrite (keeps Scott's sprite) | Name done; dialogue rewrite not started |
 | New themed teams for all trainers and Gym Leaders (Gens 1–9, Megas from gym 3) | Trainer data | Done |
 | Trainer names from the Retrotopia community | Text (waiting on Joe's list) | Not started |
 | Retrotopia cast: Alan (Birch), Sam (Steven), Joe Fettuccine (designer) | Custom sprites, scripts, dialogue | Not started |
@@ -462,6 +538,7 @@ A yes/no choice at New Game that randomizes Pokémon for that save file. It must
 | Start with Running Shoes | New-game setup, Mom's script | Done |
 | Start with Shiny Charm | New-game setup | Done |
 | Faster berry picking | Berry tree script | Done |
+| Secret Pocket Knight Adventures minigame (name "Joe F.") | Custom minigame, original sprites (late-build bonus: after the main custom features, before or alongside the randomizer) | Not started |
 | Randomizer at New Game | Custom (large) | Not started |
 
 ## Suggested build order
