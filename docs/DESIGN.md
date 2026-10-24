@@ -258,6 +258,7 @@ Every Pokémon is from Gens 1–3 and has a cheese connection.
 | Joe Q | Scott | Scott's role, with dialogue changes |
 
 - **Decided:** Joe Q is a different person from Joe Fettuccine (the game designer).
+- **Done:** every SCOTT in dialogue and the PokéNav now says JOE Q (the Battle Frontier guide calls him "MR. Q"). **Open:** Joe Q's personality and dialogue rewrite, to do later.
 - **Decided:** Mike and his Spearow get custom sprites (placeholder for now). Joe Q keeps Scott's sprite.
 
 ## Trainer and Gym Leader teams
@@ -413,7 +414,7 @@ A yes/no choice at New Game that randomizes Pokémon for that save file. It must
 | Brian as rival (sprites, name, logic, anti-pasta story) | Art plus code and dialogue | Not started (rival teams still use old Hoenn starters) |
 | Brian replaces Wally (Petalburg catch, Mauville, Victory Road) | Scripts and dialogue | Not started |
 | Brian as Champion, Mike (replaces Wallace) outside the Elite Four | Scripts, trainer data, dialogue, custom sprites | Not started |
-| Joe Q replaces Scott | Dialogue, names | Not started |
+| Joe Q replaces Scott | Dialogue, names | Name done; dialogue rewrite later |
 | New themed teams for all trainers and Gym Leaders (Gens 1–9, Megas from gym 3) | Trainer data | Not started |
 | Trainer names from the Retrotopia community | Text (waiting on Joe's list) | Not started |
 | Retrotopia cast: Alan (Birch), Sam (Steven), Joe Fettuccine (designer) | Custom sprites, scripts, dialogue | Not started |
