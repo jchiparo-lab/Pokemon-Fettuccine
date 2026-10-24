@@ -220,27 +220,19 @@ EverGrandeCity_ChampionsRoom_Movement_BirchArrives:
 	step_end
 
 EverGrandeCity_ChampionsRoom_Text_IntroSpeech:
-	.string "MIKE: Welcome, {PLAYER}{KUN}.\p"
-	.string "That incident in SUGOPOLIS CITY…\n"
-	.string "That was superb work, putting an end\l"
-	.string "to that crisis all by yourself.\p"
-	.string "Oops!\p"
-	.string "It wouldn't be fair to say that you\n"
-	.string "alone ended the crisis.\p"
-	.string "You overcame that difficult situation\n"
-	.string "by working as one with your POKéMON.\p"
-	.string "We TRAINERS raise POKéMON by giving\n"
-	.string "them items and by teaching them new\l"
-	.string "techniques for battle.\p"
-	.string "But we ourselves also learn many\n"
-	.string "things from POKéMON.\p"
-	.string "And this is where your achievements\n"
-	.string "are put to the test against what\l"
-	.string "others like you have achieved.\p"
-	.string "Now!\p"
-	.string "Who can most elegantly dance with\n"
-	.string "their POKéMON in PASTALIA?\p"
-	.string "Show me right here and now!$"
+	.string "MIKE: Ayyy, {PLAYER}!\n"
+	.string "Welcome to the top.\p"
+	.string "What you did in SUGOPOLIS CITY?\n"
+	.string "That was somethin' else.\p"
+	.string "But you didn't do it alone, right?\n"
+	.string "You and your POKéMON, together.\p"
+	.string "Like pasta and sauce. One's good,\n"
+	.string "but together? Bellissimo!\p"
+	.string "We teach 'em moves, we give 'em\n"
+	.string "items… but they teach us plenty too.\p"
+	.string "So let's see what you got.\p"
+	.string "I'm not gonna go easy on you.\n"
+	.string "Ready? Andiamo!$"
 
 EverGrandeCity_ChampionsRoom_Text_Defeat:
 	.string "I, the CHAMPION, fall in defeat…\p"
@@ -252,19 +244,15 @@ EverGrandeCity_ChampionsRoom_Text_Defeat:
 	.string "TRAINER!$"
 
 EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech:
-	.string "MIKE: The POKéMON you sent into\n"
-	.string "battle…\p"
-	.string "At times they danced like a spring\n"
-	.string "breeze, and at times they struck\l"
-	.string "like lightning.\p"
-	.string "It was with light, yet surefooted,\n"
-	.string "elegance that you led your POKéMON.\p"
-	.string "Even I felt bedazzled by your\n"
-	.string "masterful performance!\p"
-	.string "You now stand at the glorious peak\n"
-	.string "of the POKéMON LEAGUE.\p"
-	.string "I now proclaim you to be the new\n"
-	.string "PASTALIA region…$"
+	.string "MIKE: Ayyy…\p"
+	.string "Your POKéMON came in smooth and hit\n"
+	.string "like a ton of meatballs.\p"
+	.string "You beat me fair and square.\n"
+	.string "Respect.\p"
+	.string "You're standin' at the top of the\n"
+	.string "POKéMON LEAGUE now.\p"
+	.string "So let me make it official.\n"
+	.string "You're the new PASTALIA region…$"
 
 EverGrandeCity_ChampionsRoom_Text_MayAdvice:
 	.string "MAY: {PLAYER}{KUN}!\p"
@@ -310,16 +298,16 @@ EverGrandeCity_ChampionsRoom_Text_BirchCongratulations:
 	.string "Now, go proudly into the final room!$"
 
 EverGrandeCity_ChampionsRoom_Text_WallaceComeWithMe:
-	.string "MIKE: {PLAYER}{KUN}…\p"
-	.string "No, let me rephrase that properly.\p"
+	.string "MIKE: {PLAYER}…\p"
+	.string "Nah, let me say it right.\p"
 	.string "The new CHAMPION!\p"
-	.string "Come with me.$"
+	.string "C'mon, follow me.$"
 
 EverGrandeCity_ChampionsRoom_Text_WallaceWaitOutside:
-	.string "MIKE: I'm sorry, but…\p"
-	.string "From here on, only those TRAINERS who\n"
-	.string "have become CHAMPIONS may enter.\p"
-	.string "You'll have to wait outside with\n"
+	.string "MIKE: Sorry, pal…\p"
+	.string "Only CHAMPIONS get to go past\n"
+	.string "this point.\p"
+	.string "You gotta wait outside with\n"
 	.string "PROF. BIRCH.$"
 
 EverGrandeCity_ChampionsRoom_Text_MayCongratulations:

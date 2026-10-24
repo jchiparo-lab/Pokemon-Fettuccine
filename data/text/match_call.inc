@@ -2294,18 +2294,15 @@ MatchCall_Text_Drake::
 	.string "Don't you agree, {PLAYER}?$"
 
 MatchCall_Text_Wallace::
-	.string "MIKE: Hello, {PLAYER}{KUN}.\n"
-	.string "Have you met STEVEN?\p"
-	.string "He is…\n"
-	.string "Actually incredibly skilled.\p"
-	.string "However, he's an odd soul who\n"
-	.string "rarely battles.\p"
-	.string "Instead, he would rather look for\n"
-	.string "rare stones.\p"
-	.string "I'm sure he's digging in a cave or\n"
-	.string "a craggy mountain somewhere.\p"
-	.string "But what is a rare stone exactly?\n"
-	.string "All I can think of is a METEORITE…$"
+	.string "MIKE: Ayyy, {PLAYER}!\n"
+	.string "You met STEVEN yet?\p"
+	.string "Strong guy. Real strong.\n"
+	.string "But he hardly ever battles.\p"
+	.string "He'd rather go diggin' for rare\n"
+	.string "stones in some cave.\p"
+	.string "Me? Give me a rare plate of\n"
+	.string "truffle pasta any day.\p"
+	.string "Now THAT'S a treasure.$"
 
 MatchCall_Text_MayRayquazaCall:
 	.string "… … … … … …\n"

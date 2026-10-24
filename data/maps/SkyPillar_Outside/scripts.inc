@@ -140,21 +140,21 @@ SkyPillar_Outside_Text_DoorIsClosed:
 	.string "The door is closed.$"
 
 SkyPillar_Outside_Text_OpenedDoorToSkyPillar:
-	.string "MIKE: Oh, my, I'm terribly sorry!\p"
-	.string "In my haste, I didn't notice that\n"
-	.string "I'd left you behind!\p"
-	.string "I've opened the locked door of\n"
-	.string "the SKY BREADSTICK.\p"
-	.string "{PLAYER}{KUN}, let's be on our way!$"
+	.string "MIKE: Ayyy, my bad!\p"
+	.string "I got so fired up, I left you\n"
+	.string "in the dust!\p"
+	.string "Door was locked, so I gave it a\n"
+	.string "little tap. Works every time.\p"
+	.string "{PLAYER}, let's roll!$"
 
 SkyPillar_Outside_Text_EarthquakeNotMomentToWaste:
-	.string "MIKE: It's an earthquake!\p"
-	.string "There's not a moment to waste!\n"
-	.string "We've got to hurry!$"
+	.string "MIKE: Whoa! An earthquake!\p"
+	.string "No time to lose!\n"
+	.string "We gotta move!$"
 
 SkyPillar_Outside_Text_SituationGettingWorse:
 	.string "MIKE: Hmm…\n"
-	.string "The situation is getting worse…$"
+	.string "This is lookin' bad…$"
 
 SkyPillar_Outside_Text_GotToGoBackForSootopolis:
 	.string "MIKE: This isn't good…\p"
