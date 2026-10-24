@@ -6293,13 +6293,15 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Hyper Beam
 - Surf
 
-Milotic @ Sitrus Berry
-Level: 58
+Spearow-Mike @ Life Orb
+Level: 60
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Recover
-- Surf
-- Ice Beam
-- Toxic
+EVs: 252 Atk / 4 HP / 252 Spe
+Nature: Jolly
+- Brave Bird
+- Double-Edge
+- Drill Run
+- U-turn
 
 === TRAINER_ANDREW ===
 Name: ANDREW

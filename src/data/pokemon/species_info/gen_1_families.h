@@ -2564,6 +2564,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sSpearowTeachableLearnset,
         .eggMoveLearnset = sSpearowEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_FEAROW}),
+        .formSpeciesIdTable = sSpearowFormSpeciesIdTable,
     },
 
     [SPECIES_FEAROW] =
@@ -2639,6 +2640,78 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .levelUpLearnset = sFearowLevelUpLearnset,
         .teachableLearnset = sFearowTeachableLearnset,
+    },
+    // Placeholder art: uses Spearow's sprites until Mike's Spearow is drawn
+    [SPECIES_SPEAROW_MIKE] =
+    {
+        // Mike's ace: boosted stats (600 total, vs. 262 for a normal Spearow)
+        .baseHP        = 80,
+        .baseAttack    = 145,
+        .baseDefense   = 90,
+        .baseSpeed     = 140,
+        .baseSpAttack  = 55,
+        .baseSpDefense = 90,
+        .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
+        .catchRate = 3,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 52 : 58,
+        .evYield_Speed = 1,
+        .itemRare = ITEM_SHARP_BEAK,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_KEEN_EYE, ABILITY_NONE, ABILITY_SNIPER },
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("Spearow"),
+        .cryId = CRY_SPEAROW,
+        .natDexNum = NATIONAL_DEX_SPEAROW,
+        .categoryName = _("Tiny Bird"),
+        .height = 3,
+        .weight = 20,
+        .description = COMPOUND_STRING(
+            "Its loud cry can be heard over half a mile\n"
+            "away. If its high, keening cry is heard\n"
+            "echoing all around, it is a sign that they\n"
+            "are warning each other of danger."),
+        .pokemonScale = 571,
+        .pokemonOffset = 22,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Spearow,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(32, 40) : MON_COORDS_SIZE(40, 40),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 15 : 12,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 11),
+            ANIMCMD_FRAME(0, 11),
+            ANIMCMD_FRAME(1, 11),
+            ANIMCMD_FRAME(0, 1),
+        ),
+        .frontAnimId = P_GBA_STYLE_SPECIES_GFX ? ANIM_RISING_WOBBLE : ANIM_V_JUMPS_SMALL,
+        .backPic = gMonBackPic_Spearow,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 40) : MON_COORDS_SIZE(56, 56),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 12 : 6,
+        .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
+        .palette = gMonPalette_Spearow,
+        .shinyPalette = gMonShinyPalette_Spearow,
+        .iconSprite = gMonIcon_Spearow,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(0, 1, SHADOW_SIZE_S)
+        FOOTPRINT(Spearow)
+        OVERWORLD(
+            sPicTable_Spearow,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Spearow,
+            gShinyOverworldPalette_Spearow
+        )
+        .isSkyBattleBanned = B_SKY_BATTLE_STRICT_ELIGIBILITY,
+        .levelUpLearnset = sSpearowLevelUpLearnset,
+        .teachableLearnset = sSpearowTeachableLearnset,
+        .formSpeciesIdTable = sSpearowFormSpeciesIdTable,
     },
 #endif //P_FAMILY_SPEAROW
 

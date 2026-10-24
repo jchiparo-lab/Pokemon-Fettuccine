@@ -87,6 +87,14 @@ static const u16 sRaticateFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_RATTATA
 
+#if P_FAMILY_SPEAROW
+static const u16 sSpearowFormSpeciesIdTable[] = {
+    SPECIES_SPEAROW,
+    SPECIES_SPEAROW_MIKE,
+    FORM_SPECIES_END,
+};
+#endif //P_FAMILY_SPEAROW
+
 #if P_FAMILY_PIKACHU
 #if P_GEN_2_CROSS_EVOS
 static const u16 sPichuFormSpeciesIdTable[] = {
