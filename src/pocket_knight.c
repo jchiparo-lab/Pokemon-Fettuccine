@@ -338,10 +338,12 @@ static u16 GetLevelTile(s32 col, s32 row)
 static void DrawLevelColumn(s32 col)
 {
     s32 row;
-    u16 *dest = &sPocketKnight->levelTilemap[col % LEVEL_MAP_WIDTH];
+    s32 mapCol = col % LEVEL_MAP_WIDTH;
+    // A 64-wide BG is stored as two 32x32 blocks (left half, then right half)
+    u16 *dest = &sPocketKnight->levelTilemap[(mapCol / 32) * 32 * 32 + (mapCol % 32)];
 
     for (row = 0; row < POCKET_KNIGHT_LEVEL_HEIGHT; row++)
-        dest[row * LEVEL_MAP_WIDTH] = GetLevelTile(col, row) | (PAL_LEVEL << 12);
+        dest[row * 32] = GetLevelTile(col, row) | (PAL_LEVEL << 12);
 }
 
 // Makes sure every column the camera can see is drawn into the wrapping tilemap.
