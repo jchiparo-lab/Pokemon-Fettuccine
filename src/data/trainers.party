@@ -6253,50 +6253,50 @@ Double Battle: No
 AI: Basic Trainer
 Mugshot: Yellow
 
-Mr. Mime @ Light Clay
+Smeargle @ Focus Sash
 Level: 57
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Ability: Filter
-- Reflect
-- Light Screen
-- Psychic
-- Dazzling Gleam
+Ability: Own Tempo
+- Spore
+- Sticky Web
+- Stealth Rock
+- Taunt
 
-Magmar @ Eviolite
+Chandelure @ Wise Glasses
 Level: 57
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Ability: Flame Body
+Ability: Flash Fire
+- Shadow Ball
 - Flamethrower
-- Thunderbolt
-- Focus Blast
-- Will-O-Wisp
-
-Arboliva @ Sitrus Berry
-Level: 58
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Ability: Seed Sower
 - Energy Ball
-- Hyper Voice
-- Earth Power
-- Strength Sap
-
-Vanilluxe @ Never-Melt Ice
-Level: 58
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Ability: Snow Warning
-- Blizzard
-- Freeze-Dry
-- Flash Cannon
-- Mirror Coat
-
-Primarina @ Leftovers
-Level: 58
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Ability: Liquid Voice
-- Sparkling Aria
-- Moonblast
-- Ice Beam
 - Calm Mind
+
+Lapras @ Leftovers
+Level: 58
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ability: Water Absorb
+- Surf
+- Ice Beam
+- Thunderbolt
+- Sing
+
+Snorlax @ Chesto Berry
+Level: 58
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ability: Thick Fat
+- Body Slam
+- Earthquake
+- Curse
+- Rest
+
+Gallade @ Galladite
+Level: 59
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ability: Sharpness
+- Sacred Sword
+- Psycho Cut
+- Leaf Blade
+- Swords Dance
 
 Spearow-Mike @ Life Orb
 Level: 60

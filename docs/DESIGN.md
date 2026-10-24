@@ -136,15 +136,15 @@ Brian is a proud Canadian who hates all Italian food. He wants to become Champio
 - **Decided:** In the post-game, after the player becomes Champion, Mike stays in the same spot. Talking to him starts a challenge to see whether the new Champion is the real deal.
 - **Decided:** Mike replaces Wallace **everywhere** (Sugopolis and HM Waterfall, Cave of Origin, Sky Pillar, Mostaccideep, the Champion's Room until Brian takes it over, and every line that mentions him). **Done:** all dialogue and his trainer name say MIKE. Wallace's sprites are his placeholder.
 - **Decided:** Mike's ace is an **overpowered Spearow**, a unique Spearow form only he has (`SPECIES_SPEAROW_MIKE`). Wild Spearow are unaffected. Both Mike and his Spearow get custom sprite work by Joe. **Done:** the form exists with boosted stats (80 HP / 145 Atk / 90 Def / 55 SpA / 90 SpD / 140 Spe, 600 total, vs. 262 for Spearow), using Spearow's sprites as a placeholder. Moves: Brave Bird, Double-Edge, Drill Run, U-turn, with a Life Orb.
-- **Decided: Mike's team is hyper-Italian,** with three Gen 1 Pokémon counting Spearow. **Done** (levels 57–60, Spearow last):
+- **Decided: Mike's team is hyper-Italian,** with three Gen 1 Pokémon counting Spearow, and a Mega (Gallade). **Done** (levels 57–60, Spearow last):
 
 | Pokémon | Gen | Type | Italian theme |
 | --- | --- | --- | --- |
-| Mr. Mime | 1 | Psychic/Fairy | Commedia dell'arte mime (sets up Reflect and Light Screen) |
-| Magmar | 1 | Fire | Wood-fired pizza oven |
-| Arboliva | 9 | Grass/Normal | Olive oil |
-| Vanilluxe | 5 | Ice | Gelato |
-| Primarina | 7 | Water/Fairy | Opera singer |
+| Smeargle | 2 | Normal | Renaissance painter (leads with Spore and Sticky Web) |
+| Chandelure | 5 | Ghost/Fire | Murano glass chandelier |
+| Lapras | 1 | Water/Ice | Venetian gondola (knows Sing, like a gondolier) |
+| Snorlax | 1 | Normal | The nap after a big pasta lunch |
+| Gallade (Mega) | 4 | Psychic/Fighting | Roman gladiator; holds a Galladite and Mega Evolves |
 | Spearow (Mike's form, ace) | 1 | Normal/Flying | Mike's overpowered ace |
 
 ### Notes on merging the roles
