@@ -393,7 +393,7 @@ Mostly quality-of-life config options. Feature names change between expansion ve
 - **Faster HP drain.**
 - **Simultaneous HP reduction** for spread moves in doubles.
 - **Faster AI calculations** (AI config flags plus possible code tuning).
-- **Decided: battle speed option.** A setting in the Options menu that doubles battle speed without speeding up the overworld.
+- **Done: battle speed option.** BATTLE SPEED (1X / 2X) in the Options menu, 4th row. At 2X the battle runs twice per frame (animations, HP bars, text); the overworld and music are unaffected, and each button press only counts once. Off in link and recorded battles. Defaults to 1X; existing saves start at 1X. To fit 8 rows, the title and list now share one frame.
 
 ## Overworld and menus
 
@@ -454,7 +454,7 @@ A yes/no choice at New Game that randomizes Pokémon for that save file. It must
 | Faster HP drain | Config toggle | Done (built in) |
 | Simultaneous HP reduction | Verify in config | Done (built in) |
 | Faster AI calculations | Config plus tuning | Not started |
-| Battle speed option (battles only) | Custom (Options menu) | Not started |
+| Battle speed option (battles only) | Custom (Options menu) | Done |
 | Non-permanent HMs | Config toggle | Partly done: HMs forgettable (config); field moves without knowing the move still custom |
 | Move relearner in party menu | Custom (party-menu option) | Not started (summary-screen relearner already exists) |
 | PC access via bag item, "Move" default in storage | Custom (small) | Not started |

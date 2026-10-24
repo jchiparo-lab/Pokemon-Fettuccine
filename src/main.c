@@ -19,6 +19,7 @@
 #include "sound.h"
 #include "battle.h"
 #include "battle_controllers.h"
+#include "battle_main.h"
 #include "text.h"
 #include "intro.h"
 #include "main.h"
@@ -190,6 +191,13 @@ static void InitMainCallbacks(void)
     gPokemonStoragePtr = &gPokemonStorage.block;
 }
 
+static bool32 IsBattleSpeedUpActive(void)
+{
+    return gSaveBlock2Ptr->optionsBattleSpeed
+        && gMain.callback2 == BattleMainCB2
+        && !(gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_RECORDED));
+}
+
 static void CallCallbacks(void)
 {
     if (gMain.callback1)
@@ -197,6 +205,20 @@ static void CallCallbacks(void)
 
     if (gMain.callback2)
         gMain.callback2();
+
+    // BATTLE SPEED 2X option: run the battle a second time this frame.
+    // Button presses only count once, so a single press can't skip two things.
+    if (IsBattleSpeedUpActive())
+    {
+        gMain.newKeys = 0;
+        gMain.newAndRepeatedKeys = 0;
+
+        if (gMain.callback1)
+            gMain.callback1();
+
+        if (gMain.callback2)
+            gMain.callback2();
+    }
 }
 
 void SetMainCallback2(MainCallback callback)
