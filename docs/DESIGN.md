@@ -275,7 +275,19 @@ Every Pokémon is from Gens 1–3 and has a cheese connection.
   - Elite Four keep their specialty: Sidney Dark, Phoebe Ghost, Glacia Ice, Drake Dragon.
   - **Sauce grunts:** Team Marinara uses red-bodied Pokémon; Team Alfredo uses white- or cream-bodied Pokémon.
   - Villain bosses and admins keep their aces (Camerupt and Sharpedo lines, and Matt's Golbat); the rest of their teams follow the sauce colors.
-  - Not changed: Gym Leaders (item #7), Brian, Sam, Mike, Wally's battles (Brian's), and the Frontier Brains.
+  - Not changed: Brian, Sam, Mike, Wally's battles (Brian's), and the Frontier Brains.
+- **Done: hand-picked Gym Leader teams.** No Pokémon from their Emerald teams (including rematches); same team sizes and levels; automatic moves. Rematches keep the same lineup, evolved, with one or two additions.
+
+| Leader | Type | First battle (ace last) | Rematch additions |
+| --- | --- | --- | --- |
+| Roxanne | Rock | Rolycoly, Nacli, Tyrunt | Lycanroc, Archeops, Tyranitar |
+| Brawly | Fighting | Timburr, Mienfoo, Crabrawler | Pangoro, Sawk, Annihilape |
+| Wattson | Electric | Joltik, Helioptile, Dedenne, **Mega Manectric** | Pawmot, Vikavolt, Kilowattrel |
+| Flannery | Fire | Litleo, Salandit, Torracat, **Mega Houndoom** | Centiskorch, Armarouge |
+| Norman | Normal | Oinkologne, Furret, Ambipom, **Mega Kangaskhan** | Bewear, Ursaluna, Snorlax |
+| Winona | Flying | Hawlucha, Corvisquire, Toucannon, Cramorant, **Mega Altaria** | Staraptor |
+| Tate & Liza | Psychic | Gothitelle, Reuniclus, Espeon, **Mega Alakazam** | Bronzong, Hatterene |
+| Juan | Water | Primarina, Lanturn, Golisopod, Barraskewda, **Mega Gyarados** | Dondozo |
 - **Decided:** trainers' names are replaced with names from the Retrotopia community. Joe will supply the list; build this near the end.
 
 ## Pokémon, moves, items and abilities
@@ -425,7 +437,7 @@ A yes/no choice at New Game that randomizes Pokémon for that save file. It must
 | Brian replaces Wally (Petalburg catch, Mauville, Victory Road) | Scripts and dialogue | Not started |
 | Brian as Champion, Mike (replaces Wallace) outside the Elite Four | Scripts, trainer data, dialogue, custom sprites | Not started |
 | Joe Q replaces Scott | Dialogue, names | Name done; dialogue rewrite later |
-| New themed teams for all trainers and Gym Leaders (Gens 1–9, Megas from gym 3) | Trainer data | Trainers and Elite Four done; Gym Leaders not started |
+| New themed teams for all trainers and Gym Leaders (Gens 1–9, Megas from gym 3) | Trainer data | Done |
 | Trainer names from the Retrotopia community | Text (waiting on Joe's list) | Not started |
 | Retrotopia cast: Alan (Birch), Sam (Steven), Joe Fettuccine (designer) | Custom sprites, scripts, dialogue | Not started |
 | All Pokémon through Gen IX | Built in; plan placement | Not started |
