@@ -270,8 +270,26 @@ LittlerootTown_BrendansHouse_2F_EventScript_GameCube::
 	goto_if_eq VAR_RESULT, FEMALE, RivalsHouse_2F_EventScript_SuperNintendo
 	goto PlayersHouse_2F_EventScript_GameCube
 
+@ The player's GameCube is a Sega Genesis. If the player is named exactly
+@ "Joe F.", it boots the secret Pocket Knight Adventures minigame.
 PlayersHouse_2F_EventScript_GameCube::
-	msgbox PlayersHouse_2F_Text_ItsAGameCube, MSGBOX_SIGN
+	special IsPlayerNamedJoeF
+	goto_if_eq VAR_RESULT, TRUE, PlayersHouse_2F_EventScript_PocketKnight
+	msgbox PlayersHouse_2F_Text_ItsASegaGenesis, MSGBOX_SIGN
+	end
+
+PlayersHouse_2F_EventScript_PocketKnight::
+	lockall
+	msgbox PlayersHouse_2F_Text_BootUpPocketKnight, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, PlayersHouse_2F_EventScript_PocketKnightDecline
+	closemessage
+	fadescreen FADE_TO_BLACK
+	special StartPocketKnightAdventures
+	releaseall
+	end
+
+PlayersHouse_2F_EventScript_PocketKnightDecline::
+	releaseall
 	end
 
 @ Brian's room has a Super Nintendo instead of a GameCube
@@ -309,6 +327,19 @@ PlayersHouse_2F_Text_ItsAGameCube:
 	.string "It's a Nintendo GameCube.\p"
 	.string "A Game Boy Advance is connected to\n"
 	.string "serve as the Controller.$"
+
+PlayersHouse_2F_Text_ItsASegaGenesis:
+	.string "It's a Sega Genesis.\p"
+	.string "There's a copy of Pocket Knight\n"
+	.string "Adventures in it…\p"
+	.string "universally agreed upon to be the\n"
+	.string "greatest 2D platformer of all time.$"
+
+PlayersHouse_2F_Text_BootUpPocketKnight:
+	.string "It's a Sega Genesis.\p"
+	.string "There's a copy of Pocket Knight\n"
+	.string "Adventures in it…\p"
+	.string "Boot up the game?$"
 
 RivalsHouse_2F_Text_ItsASuperNintendo:
 	.string "It's a Super Nintendo. BRIAN's\n"

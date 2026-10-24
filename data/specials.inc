@@ -638,3 +638,5 @@ gSpecials::
 	def_special UpdateTrainerCardPhotoIcons
 	def_special StickerManGetBragFlags
 	def_special CheckAddCoins
+	def_special IsPlayerNamedJoeF
+	def_special StartPocketKnightAdventures, waitstate=1
