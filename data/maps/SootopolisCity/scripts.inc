@@ -1539,7 +1539,7 @@ SootopolisCity_Text_LeadSuperiorTrainerToCave:
 	.string "A TRAINER who has knowledge and\n"
 	.string "experience of many kinds of POKéMON…\p"
 	.string "If such a person were to appear, I was\n"
-	.string "instructed by WALLACE to lead that\l"
+	.string "instructed by MIKE to lead that\l"
 	.string "TRAINER to this CAVE.$"
 
 SootopolisCity_Text_AwakenedPokemonClash:
@@ -1659,7 +1659,7 @@ SootopolisCity_Text_DoesThisMakeYourFearPokemon:
 SootopolisCity_Text_HereWereAreHelpWallace:
 	.string "STEVEN: Okay, here we are!\p"
 	.string "Inside here you'll find someone named\n"
-	.string "WALLACE.\p"
+	.string "MIKE.\p"
 	.string "I think you have what's needed to\n"
 	.string "help him…$"
 
@@ -1684,7 +1684,7 @@ SootopolisCity_Text_MaxieArchieLeft:
 	.string "return those ORBS…$"
 
 SootopolisCity_Text_HaventYouScaledSkyPillar:
-	.string "WALLACE: Oh?\n"
+	.string "MIKE: Oh?\n"
 	.string "{PLAYER}{KUN}?\p"
 	.string "Haven't you scaled the SKY BREADSTICK\n"
 	.string "yet?\p"
@@ -1692,7 +1692,7 @@ SootopolisCity_Text_HaventYouScaledSkyPillar:
 	.string "the top of the SKY BREADSTICK…$"
 
 SootopolisCity_Text_AquaMagmaDidntMeanHarm:
-	.string "WALLACE: {PLAYER}{KUN}…\p"
+	.string "MIKE: {PLAYER}{KUN}…\p"
 	.string "The leaders of TEAM MARINARA and\n"
 	.string "ALFREDO, I don't think they meant\l"
 	.string "harm.\p"
@@ -1700,7 +1700,7 @@ SootopolisCity_Text_AquaMagmaDidntMeanHarm:
 	.string "have to say for themselves.$"
 
 SootopolisCity_Text_ThankYouForHelpAcceptThis:
-	.string "WALLACE: {PLAYER}{KUN}…\n"
+	.string "MIKE: {PLAYER}{KUN}…\n"
 	.string "My eyes didn't deceive me.\p"
 	.string "Thanks to your help, SUGOPOLIS…\n"
 	.string "No, all of PASTALIA was saved.\p"
@@ -1709,7 +1709,7 @@ SootopolisCity_Text_ThankYouForHelpAcceptThis:
 	.string "Please accept it.$"
 
 SootopolisCity_Text_WallaceRareMonReports:
-	.string "WALLACE: One more thing, {PLAYER}{KUN}.\p"
+	.string "MIKE: One more thing, {PLAYER}{KUN}.\p"
 	.string "Since the skies cleared, people all\n"
 	.string "over PASTALIA have reported a rare\l"
 	.string "POKéMON flying past.\p"
@@ -1738,6 +1738,6 @@ SootopolisCity_Text_ExplainWaterfallGoToGym:
 	.string "that door.$"
 
 SootopolisCity_Text_DazzledByMentor:
-	.string "WALLACE: I'm sure that you will be\n"
+	.string "MIKE: I'm sure that you will be\n"
 	.string "dazzled by my mentor's breathtakingly\l"
 	.string "elegant battle style.$"
