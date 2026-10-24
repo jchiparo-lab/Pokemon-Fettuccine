@@ -203,6 +203,7 @@ void NewGameInitData(void)
     gSaveBlock1Ptr->registeredItem = ITEM_NONE;
     ClearBag();
     NewGameInitPCItems();
+    AddBagItem(ITEM_SHINY_CHARM, 1);
     ClearPokeblocks();
     ClearDecorationInventories();
     InitEasyChatPhrases();
