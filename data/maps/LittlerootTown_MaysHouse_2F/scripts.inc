@@ -279,6 +279,11 @@ RivalsHouse_2F_EventScript_BrendanWhereShouldIGoNext::
 	msgbox RivalsHouse_2F_Text_BrendanWhereShouldIGoNext, MSGBOX_DEFAULT
 	return
 
+LittlerootTown_MaysHouse_2F_EventScript_GameCube::
+	checkplayergender
+	goto_if_eq VAR_RESULT, MALE, RivalsHouse_2F_EventScript_SuperNintendo
+	goto PlayersHouse_2F_EventScript_GameCube
+
 LittlerootTown_MaysHouse_2F_EventScript_PC::
 	lockall
 	checkplayergender

@@ -265,8 +265,18 @@ PlayersHouse_2F_EventScript_Notebook::
 	msgbox PlayersHouse_2F_Text_Notebook, MSGBOX_SIGN
 	end
 
+LittlerootTown_BrendansHouse_2F_EventScript_GameCube::
+	checkplayergender
+	goto_if_eq VAR_RESULT, FEMALE, RivalsHouse_2F_EventScript_SuperNintendo
+	goto PlayersHouse_2F_EventScript_GameCube
+
 PlayersHouse_2F_EventScript_GameCube::
 	msgbox PlayersHouse_2F_Text_ItsAGameCube, MSGBOX_SIGN
+	end
+
+@ Brian's room has a Super Nintendo instead of a GameCube
+RivalsHouse_2F_EventScript_SuperNintendo::
+	msgbox RivalsHouse_2F_Text_ItsASuperNintendo, MSGBOX_SIGN
 	end
 
 PlayersHouse_2F_Text_ClockIsStopped:
@@ -299,3 +309,10 @@ PlayersHouse_2F_Text_ItsAGameCube:
 	.string "It's a Nintendo GameCube.\p"
 	.string "A Game Boy Advance is connected to\n"
 	.string "serve as the Controller.$"
+
+RivalsHouse_2F_Text_ItsASuperNintendo:
+	.string "It's a Super Nintendo. BRIAN's\n"
+	.string "copy of Time Toggle is in it…\p"
+	.string "a mediocre RPG that certain people\n"
+	.string "won't stop calling the greatest\l"
+	.string "game ever made.$"
