@@ -6280,14 +6280,14 @@ Ability: Water Absorb
 - Thunderbolt
 - Sing
 
-Snorlax @ Chesto Berry
+Falinks @ Sitrus Berry
 Level: 58
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Ability: Thick Fat
-- Body Slam
-- Earthquake
-- Curse
-- Rest
+Ability: Defiant
+- No Retreat
+- Close Combat
+- Iron Head
+- Knock Off
 
 Gallade @ Galladite
 Level: 59
