@@ -377,7 +377,7 @@ Mostly quality-of-life config options. Feature names change between expansion ve
 
 - **Done: the player starts with the Running Shoes.** Mom's scene in Lil Ragu Town after getting the starter is now just a goodbye.
 - **Done: the player starts with the Shiny Charm** in the bag (it only works from the bag, not the PC).
-- **Decided: faster berry picking**, quick or near instant.
+- **Done: faster berry picking.** Talking to a ripe tree picks it right away: no "Do you want to pick?" question, a short sound instead of the fanfare, and one message ("{PLAYER} picked 3 ORAN BERRIES!") instead of two.
 
 - **HMs are not permanent.** HM moves can be forgotten like normal moves. **Decided:** field moves only need the badge plus the HM in the bag; no Pokémon has to know the move. Forgetting HMs is **done** (config). Using field moves without knowing them is still custom work.
 - **Move relearner in the party menu.** A "Relearn" option on each Pokémon. This version already has a relearner on the summary screen's moves page. **Decided:** add it as a party-menu option anyway (custom).
@@ -438,7 +438,7 @@ A yes/no choice at New Game that randomizes Pokémon for that save file. It must
 | PC access via bag item, "Move" default in storage | Custom (small) | Not started |
 | Start with Running Shoes | New-game setup, Mom's script | Done |
 | Start with Shiny Charm | New-game setup | Done |
-| Faster berry picking | Config or small code change | Not started |
+| Faster berry picking | Berry tree script | Done |
 | Randomizer at New Game | Custom (large) | Not started |
 
 ## Suggested build order
