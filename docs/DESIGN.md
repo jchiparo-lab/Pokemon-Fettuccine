@@ -142,7 +142,7 @@ Brian is a proud Canadian who hates all Italian food. He wants to become Champio
 | --- | --- | --- | --- |
 | Smeargle | 2 | Normal | Renaissance painter (leads with Spore and Sticky Web) |
 | Chandelure | 5 | Ghost/Fire | Murano glass chandelier |
-| Lapras | 1 | Water/Ice | Venetian gondola (knows Sing, like a gondolier) |
+| Kingambit | 9 | Dark/Steel | Julius Caesar, commanding the Falinks legion |
 | Falinks | 8 | Fighting | A Roman legion marching in shield formation |
 | Gallade (Mega) | 4 | Psychic/Fighting | Roman gladiator; holds a Galladite and Mega Evolves |
 | Spearow (Mike's form, ace) | 1 | Normal/Flying | Mike's overpowered ace |
