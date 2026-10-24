@@ -134,8 +134,9 @@ Brian is a proud Canadian who hates all Italian food. He wants to become Champio
 - **Decided:** **Mike** (Joe's cousin) takes Wallace's place. Wallace is no longer the Champion; after Victory Road, Mike is standing outside the Elite Four entrance in Fettuccine Grande.
 - Talking to him gets a line along the lines of: "That angry fellow who hates pasta just stormed through here... and he's the new Champion!" (draft wording)
 - **Decided:** In the post-game, after the player becomes Champion, Mike stays in the same spot. Talking to him starts a challenge to see whether the new Champion is the real deal.
-- **Decided:** Mike's ace is an **overpowered Spearow**. Both Mike and his Spearow get custom sprite work by Joe; a placeholder sprite is used until the art is ready.
-- **Open:** the rest of Mike's team (Wallace's original Emerald Champion team with Spearow as ace, or something new), and whether Mike also replaces Wallace in Sugopolis (where Wallace gives HM Waterfall).
+- **Decided:** Mike replaces Wallace **everywhere** (Sugopolis and HM Waterfall, Cave of Origin, Sky Pillar, Mostaccideep, the Champion's Room until Brian takes it over, and every line that mentions him). **Done:** all dialogue and his trainer name say MIKE. Wallace's sprites are his placeholder.
+- **Decided:** Mike's ace is an **overpowered Spearow**, a unique Spearow form only he has (`SPECIES_SPEAROW_MIKE`). Wild Spearow are unaffected. Both Mike and his Spearow get custom sprite work by Joe. **Done:** the form exists with boosted stats (80 HP / 145 Atk / 90 Def / 55 SpA / 90 SpD / 140 Spe, 600 total, vs. 262 for Spearow), using Spearow's sprites as a placeholder. Moves: Brave Bird, Double-Edge, Drill Run, U-turn, with a Life Orb.
+- **Open:** the rest of Mike's team. Joe will pick it. Until then, Mike has Wallace's old team with the Spearow in Milotic's place.
 
 ### Notes on merging the roles
 
