@@ -14,31 +14,31 @@ Music: Male
 AI: Basic Trainer
 
 Metang
-Brave Nature
+Adamant Nature
 Level: 42
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 252 Atk / 252 Def / 6 SpA
-- Light Screen
-- Psychic
-- Reflect
+EVs: 252 Atk / 252 Def / 6 HP
+- Zen Headbutt
 - Metal Claw
+- Bullet Punch
+- Light Screen
 
-Skarmory
+Miltank
 Impish Nature
 Level: 43
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 252 HP / 6 SpA / 252 SpD
-- Toxic
-- Aerial Ace
-- Protect
-- Steel Wing
+EVs: 252 HP / 252 Def / 6 Atk
+- Body Slam
+- Milk Drink
+- Rock Slide
+- Water Pulse
 
-Aggron
-Adamant Nature
+Ampharos
+Modest Nature
 Level: 44
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 252 Atk / 252 SpA / 6 SpD
-- Thunder
-- Protect
-- Solar Beam
-- Dragon Claw
+EVs: 252 HP / 252 SpA / 6 SpD
+- Thunderbolt
+- Power Gem
+- Reflect
+- Thunder Wave

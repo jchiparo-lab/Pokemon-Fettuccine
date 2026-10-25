@@ -15710,53 +15710,72 @@ Items: Full Restore / Full Restore / Full Restore / Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Skarmory
-Level: 77
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Toxic
-- Aerial Ace
-- Spikes
-- Steel Wing
-
-Claydol
+Lunatone @ Leftovers
 Level: 75
+Ability: Levitate
+Nature: Modest
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Reflect
-- Light Screen
-- Ancient Power
-- Earthquake
-
-Aggron
-Level: 76
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Thunder
-- Earthquake
-- Solar Beam
-- Dragon Claw
-
-Cradily
-Level: 76
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Giga Drain
-- Ancient Power
-- Ingrain
-- Confuse Ray
-
-Armaldo
-Level: 76
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Water Pulse
-- Ancient Power
-- Aerial Ace
-- Slash
-
-Metagross @ Sitrus Berry
-Level: 78
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Earthquake
+EVs: 4 HP / 252 SpA / 252 Spe
+- Calm Mind
+- Moonblast
 - Psychic
+- Ice Beam
+
+Miltank @ Leftovers
+Level: 75
+Ability: Thick Fat
+Nature: Impish
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 4 Atk / 252 Def
+- Body Slam
+- Milk Drink
+- Ice Punch
+- Earthquake
+
+Tauros @ Life Orb
+Level: 76
+Ability: Intimidate
+Nature: Jolly
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 HP / 252 Atk / 252 Spe
+- Double-Edge
+- Earthquake
+- Zen Headbutt
+- Rock Slide
+
+Raichu @ Expert Belt
+Level: 76
+Ability: Lightning Rod
+Nature: Timid
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 HP / 252 SpA / 252 Spe
+- Nasty Plot
+- Thunderbolt
+- Surf
+- Thunder Wave
+
+Ampharos @ Air Balloon
+Level: 76
+Ability: Static
+Nature: Modest
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 SpA / 4 SpD
+- Thunderbolt
+- Dragon Pulse
+- Power Gem
+- Light Screen
+
+Metagross @ Metagrossite
+Level: 78
+Ability: Clear Body
+Nature: Jolly
+Shiny: Yes
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 HP / 252 Atk / 252 Spe
 - Meteor Mash
-- Shadow Ball
+- Zen Headbutt
+- Ice Punch
+- Earthquake
 
 === TRAINER_ANABEL ===
 Name: ANABEL
