@@ -627,9 +627,9 @@ A yes/no choice at New Game that randomizes Pokémon for that save file. It must
 | Simultaneous HP reduction | Verify in config | Done (built in) |
 | Faster AI calculations | Config plus tuning | Not started |
 | Battle speed option (battles only) | Custom (Options menu) | Done |
-| Non-permanent HMs | Config toggle | Partly done: HMs forgettable (config); field moves without knowing the move still custom |
-| Move relearner in party menu | Custom (party-menu option) | Not started (summary-screen relearner already exists) |
-| PC access via bag item, "Move" default in storage | Custom (small) | Not started |
+| Non-permanent HMs | Config toggle plus custom | Done: HMs forgettable (config); with the badge and HM in the bag, a phantom Magikarp uses the move; FLY and FLASH also in every party menu and usable from HM02/HM05 in the bag |
+| Move relearner in party menu | Custom (party-menu option) | Done: RELEARN appears for Pokémon with moves to relearn (summary-screen relearner also still there) |
+| PC access via bag item, "Move" default in storage | Built in | Done: Pkmn Box Link (from Alan with the starter); MOVE POKéMON is already the default option |
 | Start with Running Shoes | New-game setup, Mom's script | Done |
 | Start with Shiny Charm | New-game setup | Done |
 | Faster berry picking | Berry tree script | Done |
