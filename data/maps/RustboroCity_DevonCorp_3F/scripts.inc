@@ -207,8 +207,10 @@ RustboroCity_DevonCorp_3F_Text_MrStoneIHaveFavor:
 	.string "package to SPAGHETTIPORT's SHIPYARD.\p"
 	.string "Well, on the way, could you stop off in\n"
 	.string "DITALINFORD TOWN?\p"
-	.string "I was hoping that you'd deliver a\n"
-	.string "LETTER to STEVEN in DITALINFORD.$"
+	.string "An old friend of mine, SAM, is\n"
+	.string "exploring the cave there.\p"
+	.string "Would you deliver this LETTER\n"
+	.string "to him?$"
 
 RustboroCity_DevonCorp_3F_Text_MrStoneWantYouToHaveThis:
 	.string "MR. STONE: Now, you should know that\n"

@@ -257,8 +257,8 @@ static const struct MatchCallStructNPC sStevenMatchCallHeader =
     .type = MC_TYPE_NPC,
     .mapSec = MAPSEC_NONE,
     .flag = FLAG_REGISTERED_STEVEN_POKENAV,
-    .desc = COMPOUND_STRING("HARD AS ROCK"),
-    .name = COMPOUND_STRING("STEVEN"),
+    .desc = COMPOUND_STRING("BIG CHEESE"),
+    .name = COMPOUND_STRING("SAM"),
     .textData = (const match_call_text_data_t[]) {
         { MatchCall_Text_Steven1, ALWAYS_AVAILABLE,                    NO_FLAG_TO_SET },
         { MatchCall_Text_Steven2, FLAG_RUSTURF_TUNNEL_OPENED,          NO_FLAG_TO_SET },

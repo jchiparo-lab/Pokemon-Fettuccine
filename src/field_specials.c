@@ -181,7 +181,7 @@ static const u8 sText_SpaceSeconds[] = _(" seconds");
 static const u8 sText_SpaceTimes[] = _(" time(s)");
 
 static const u8 sText_Wallace[] = _("MIKE");
-static const u8 sText_Steven[] = _("STEVEN");
+static const u8 sText_Steven[] = _("SAM");
 static const u8 sText_Brawly[] = _("BRAWLY");
 static const u8 sText_Winona[] = _("WINONA");
 static const u8 sText_Phoebe[] = _("PHOEBE");

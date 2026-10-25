@@ -12,8 +12,9 @@ FortreeCity_House3_EventScript_SchoolKidM::
 FortreeCity_House3_Text_MetStevenHadAmazingPokemon:
 	.string "While speaking about POKéDEXES,\n"
 	.string "I remembered something.\p"
-	.string "I met this TRAINER, STEVEN, when\n"
-	.string "I was searching for rare stones.\p"
+	.string "I met this TRAINER, SAM, out in\n"
+	.string "the wild. He was looking for rare\l"
+	.string "cheeses.\p"
 	.string "Hoo, boy, he had some amazing POKéMON\n"
 	.string "with him.\p"
 	.string "They weren't just rare, they were\n"
