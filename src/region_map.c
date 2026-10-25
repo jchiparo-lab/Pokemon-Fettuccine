@@ -5,6 +5,7 @@
 #include "malloc.h"
 #include "gpu_regs.h"
 #include "palette.h"
+#include "item_menu.h"
 #include "party_menu.h"
 #include "trig.h"
 #include "overworld.h"
@@ -79,6 +80,7 @@ static EWRAM_DATA struct {
     u8 nameBuffer[0x26]; // never read
     bool8 choseFlyLocation;
 } *sFlyMap = NULL;
+static EWRAM_DATA bool8 sFlyMapReturnToBag = FALSE;
 
 static bool32 sDrawFlyDestTextWindow;
 
@@ -1942,6 +1944,12 @@ bool32 IsEventIslandMapSecId(mapsec_u8_t mapSecId)
     return FALSE;
 }
 
+// Fettuccine: when Fly is used from HM02 in the bag, cancelling goes back to the bag
+void SetFlyMapReturnToBag(void)
+{
+    sFlyMapReturnToBag = TRUE;
+}
+
 void CB2_OpenFlyMap(void)
 {
     switch (gMain.state)
@@ -2488,10 +2496,15 @@ static void CB_ExitFlyMap(void)
                 SetFlyDestination(tempRegionMap);
                 ReturnToFieldFromFlyMapSelect();
             }
+            else if (sFlyMapReturnToBag)
+            {
+                SetMainCallback2(CB2_ReturnToBagMenuPocket);
+            }
             else
             {
                 SetMainCallback2(CB2_ReturnToPartyMenuFromFlyMap);
             }
+            sFlyMapReturnToBag = FALSE;
             TRY_FREE_AND_SET_NULL(sFlyMap);
             FreeAllWindowBuffers();
         }

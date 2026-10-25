@@ -12,6 +12,7 @@
 #include "event_data.h"
 #include "event_object_movement.h"
 #include "event_scripts.h"
+#include "field_move.h"
 #include "field_player_avatar.h"
 #include "field_specials.h"
 #include "graphics.h"
@@ -34,6 +35,7 @@
 #include "player_pc.h"
 #include "pokemon.h"
 #include "pokemon_summary_screen.h"
+#include "region_map.h"
 #include "scanline_effect.h"
 #include "script.h"
 #include "shop.h"
@@ -92,6 +94,8 @@ enum {
     ACTION_BY_TYPE,
     ACTION_BY_AMOUNT,
     ACTION_BY_INDEX,
+    ACTION_FLY,
+    ACTION_FLASH,
     ACTION_DUMMY,
 };
 
@@ -205,6 +209,7 @@ static void ItemMenu_CheckTag(u8);
 static void ItemMenu_Show(u8);
 static void ItemMenu_GiveFavorLady(u8);
 static void ItemMenu_ConfirmQuizLady(u8);
+static void ItemMenu_HMFieldMove(u8);
 static void Task_ItemContext_Normal(u8);
 static void Task_ItemContext_GiveToParty(u8);
 static void Task_ItemContext_Sell(u8);
@@ -308,6 +313,8 @@ static const struct MenuAction sItemMenuActions[] = {
     [ACTION_BY_TYPE]           = {COMPOUND_STRING("Type"),      {ItemMenu_SortByType}},
     [ACTION_BY_AMOUNT]         = {COMPOUND_STRING("Amount"),    {ItemMenu_SortByAmount}},
     [ACTION_BY_INDEX]          = {COMPOUND_STRING("Index"),     {ItemMenu_SortByIndex}},
+    [ACTION_FLY]               = {COMPOUND_STRING("FLY"),       {ItemMenu_HMFieldMove}},
+    [ACTION_FLASH]             = {COMPOUND_STRING("FLASH"),     {ItemMenu_HMFieldMove}},
     [ACTION_DUMMY]             = {gText_EmptyString2, {NULL}}
 };
 
@@ -1721,8 +1728,17 @@ static void OpenContextMenu(u8 taskId)
                 gBagMenu->contextMenuNumItems = ARRAY_COUNT(sContextMenuItems_BallsPocket);
                 break;
             case POCKET_TM_HM:
-                gBagMenu->contextMenuItemsPtr = sContextMenuItems_TmHmPocket;
+                gBagMenu->contextMenuItemsPtr = gBagMenu->contextMenuItemsBuffer;
                 gBagMenu->contextMenuNumItems = ARRAY_COUNT(sContextMenuItems_TmHmPocket);
+                memcpy(&gBagMenu->contextMenuItemsBuffer, &sContextMenuItems_TmHmPocket, sizeof(sContextMenuItems_TmHmPocket));
+                // Fettuccine: with the badge, HM02 and HM05 can be used straight from the bag
+                if (gBagPosition.location == ITEMMENULOCATION_FIELD)
+                {
+                    if (gSpecialVar_ItemId == ITEM_HM_FLY && IsFieldMoveUnlocked(FIELD_MOVE_FLY))
+                        gBagMenu->contextMenuItemsBuffer[2] = ACTION_FLY;
+                    else if (gSpecialVar_ItemId == ITEM_HM_FLASH && IsFieldMoveUnlocked(FIELD_MOVE_FLASH))
+                        gBagMenu->contextMenuItemsBuffer[2] = ACTION_FLASH;
+                }
                 break;
             case POCKET_BERRIES:
                 gBagMenu->contextMenuItemsPtr = sContextMenuItems_BerriesPocket;
@@ -2508,6 +2524,30 @@ static void ItemMenu_Show(u8 taskId)
     gSpecialVar_0x8005 = gSpecialVar_ItemId;
     gSpecialVar_Result = TRUE;
     RemoveContextWindow();
+    Task_FadeAndCloseBagMenu(taskId);
+}
+
+// Fettuccine: a phantom Magikarp uses FLY or FLASH from the HM in the bag
+static void ItemMenu_HMFieldMove(u8 taskId)
+{
+    enum FieldMove fieldMove = (gSpecialVar_ItemId == ITEM_HM_FLY) ? FIELD_MOVE_FLY : FIELD_MOVE_FLASH;
+
+    RemoveContextWindow();
+    if (!SetUpFieldMove(fieldMove))
+    {
+        DisplayItemMessage(taskId, FONT_NORMAL, gText_DadsAdvice, CloseItemMessage);
+        return;
+    }
+    SetFieldMoveByPhantom();
+    if (fieldMove == FIELD_MOVE_FLY)
+    {
+        SetFlyMapReturnToBag();
+        gBagMenu->newScreenCallback = CB2_OpenFlyMap;
+    }
+    else
+    {
+        gBagMenu->newScreenCallback = CB2_ReturnToField;
+    }
     Task_FadeAndCloseBagMenu(taskId);
 }
 
