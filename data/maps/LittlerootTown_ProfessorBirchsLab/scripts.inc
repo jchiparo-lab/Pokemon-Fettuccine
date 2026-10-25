@@ -123,6 +123,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_NicknameStarter::
 	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_GoSeeRival::
+	call LittlerootTown_ProfessorBirchsLab_EventScript_GiveBoxLink
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_MightBeGoodIdeaToGoSeeRival, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, LittlerootTown_ProfessorBirchsLab_EventScript_AgreeToSeeRival
 	goto_if_eq VAR_RESULT, NO, LittlerootTown_ProfessorBirchsLab_EventScript_DeclineSeeingRival
@@ -1036,3 +1037,25 @@ LittlerootTown_ProfessorBirchsLab_Text_StarterMegaStonesExplained:
 	.string "PROF. BIRCH: If you catch any of\n"
 	.string "those POKéMON, raise them well.\p"
 	.string "I'd love to hear how they do!$"
+
+@ Fettuccine: Birch (Alan) gives the Pokemon Box Link with the starter,
+@ so the player can open Pokemon Storage from the bag anywhere.
+LittlerootTown_ProfessorBirchsLab_EventScript_GiveBoxLink:
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_TakeBoxLink, MSGBOX_DEFAULT
+	giveitem ITEM_POKEMON_BOX_LINK
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_BoxLinkExplained, MSGBOX_DEFAULT
+	return
+
+LittlerootTown_ProfessorBirchsLab_Text_TakeBoxLink:
+	.string "PROF. BIRCH: Oh, and before you\n"
+	.string "dash off, take this as well.$"
+
+LittlerootTown_ProfessorBirchsLab_Text_BoxLinkExplained:
+	.string "PROF. BIRCH: That's a POKéMON BOX\n"
+	.string "LINK. Open it from your BAG to use\l"
+	.string "the POKéMON STORAGE SYSTEM from\l"
+	.string "anywhere at all.\p"
+	.string "I keep mine in my coat pocket, right\n"
+	.string "next to my hip flask.\p"
+	.string "Purely for medicinal purposes,\n"
+	.string "of course!$"
