@@ -257,28 +257,30 @@ Route101_Movement_BirchApproachPlayer:
 	step_end
 
 Route101_Text_HelpMe:
-	.string "H-help me!$"
+	.string "H-help! Somebody!$"
 
 Route101_Text_PleaseHelp:
-	.string "Hello! You over there!\n"
-	.string "Please! Help!\p"
+	.string "I say! You there!\n"
+	.string "Please, help!\p"
 	.string "In my BAG!\n"
 	.string "There's a POKé BALL!$"
 
 Route101_Text_DontLeaveMe:
-	.string "Wh-Where are you going?!\n"
+	.string "I say, where are you off to?!\n"
 	.string "Don't leave me like this!$"
 
 Route101_Text_YouSavedMe:
-	.string "PROF. BIRCH: Whew…\p"
-	.string "I was in the tall grass studying wild\n"
-	.string "POKéMON when I was jumped.\p"
-	.string "You saved me.\n"
-	.string "Thanks a lot!\p"
+	.string "PROF. ALAN: Phew…\p"
+	.string "I was in the tall grass studying\n"
+	.string "wild POKéMON when the blighter\l"
+	.string "jumped me.\p"
+	.string "You saved my bacon.\n"
+	.string "Thank you ever so much!\p"
 	.string "Oh?\p"
-	.string "Hi, you're {PLAYER}{KUN}!\p"
-	.string "This is not the place to chat, so come\n"
-	.string "by my POKéMON LAB later, okay?$"
+	.string "Why, you must be {PLAYER}{KUN}!\p"
+	.string "This is no place for a natter.\n"
+	.string "Come by my POKéMON LAB later,\l"
+	.string "won't you?$"
 
 Route101_Text_TakeTiredPokemonToPokeCenter:
 	.string "If POKéMON get tired, take them to\n"

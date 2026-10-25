@@ -960,9 +960,9 @@ Route110_Text_ThereIsNoRecord:
 	.string "challenge. There is no record…$"
 
 Route110_Text_ImagineSeeingYouHere:
-	.string "PROF. BIRCH: Oh, {PLAYER}{KUN}!\n"
-	.string "Imagine seeing you here!\p"
-	.string "And where might my {RIVAL} be?$"
+	.string "PROF. ALAN: Well, I never!\n"
+	.string "{PLAYER}{KUN}! Fancy seeing you here!\p"
+	.string "And where's BRIAN got to?$"
 
 Route110_Text_HeardYouInstallMatchCall:
 	.string "Oh, I see!\n"
@@ -977,14 +977,15 @@ Route110_Text_HeardYouInstallMatchCall:
 	.string "… … … … … …$"
 
 Route110_Text_RegisteredBirchInPokenav:
-	.string "Registered PROF. BIRCH\n"
+	.string "Registered PROF. ALAN\n"
 	.string "in the POKéNAV.$"
 
 Route110_Text_KeepAnEyeOutForRival:
-	.string "PROF. BIRCH: {PLAYER}…\p"
-	.string "Please keep an eye on BRIAN for me. His\n"
-	.string "mother worries about him.\p"
-	.string "… … … … … …\p"
-	.string "Well, I had better get going. See you\n"
-	.string "again, {PLAYER}!$"
+	.string "PROF. ALAN: {PLAYER}…\p"
+	.string "Do keep an eye on BRIAN for me.\n"
+	.string "His mother worries about him.\p"
+	.string "Between you and me, so do I.\n"
+	.string "The lad lives on chicken wings.\p"
+	.string "Well, I'd best be off.\n"
+	.string "Cheerio, {PLAYER}!$"
 

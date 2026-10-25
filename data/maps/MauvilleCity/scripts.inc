@@ -640,7 +640,7 @@ MauvilleCity_EventScript_BirchRegionalFormsCall::
 MauvilleCity_Text_BirchRegionalFormsCall:
 	.string "… … … … … …\n"
 	.string "… … … … … Beep!\p"
-	.string "PROF. BIRCH: Hello, {PLAYER}{KUN}!\n"
+	.string "PROF. ALAN: Hello, {PLAYER}{KUN}!\n"
 	.string "Three BADGES! Splendid work!\p"
 	.string "I've been up late studying\n"
 	.string "regional forms, with a wee\l"

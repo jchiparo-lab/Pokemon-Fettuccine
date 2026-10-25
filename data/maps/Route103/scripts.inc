@@ -293,7 +293,7 @@ Route103_Text_MayRoute103Pokemon:
 
 Route103_Text_MayLetsBattle:
 	.string "Hey, it's {PLAYER}!\p"
-	.string "…Oh, PROF. BIRCH gave you a POKéMON.\p"
+	.string "…Oh, PROF. ALAN gave you a POKéMON.\p"
 	.string "Perfect. If I'm going to be CHAMPION, I\n"
 	.string "need the practice.\p"
 	.string "Sorry in advance!$"
@@ -318,7 +318,7 @@ Route103_Text_BrendanRoute103Pokemon:
 
 Route103_Text_BrendanLetsBattle:
 	.string "Hey, it's {PLAYER}!\p"
-	.string "…Oh, PROF. BIRCH gave you a POKéMON.\p"
+	.string "…Oh, PROF. ALAN gave you a POKéMON.\p"
 	.string "Perfect. If I'm going to be CHAMPION, I\n"
 	.string "need the practice.\p"
 	.string "Sorry in advance!$"

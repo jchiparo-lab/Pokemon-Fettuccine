@@ -490,7 +490,7 @@ Route119_EventScript_BirchMegaStonesCall::
 Route119_Text_BirchMegaStonesCall:
 	.string "… … … … … …\n"
 	.string "… … … … … Beep!\p"
-	.string "PROF. BIRCH: Hello, {PLAYER}{KUN}!\n"
+	.string "PROF. ALAN: Hello, {PLAYER}{KUN}!\n"
 	.string "I heard you earned your sixth BADGE!\p"
 	.string "I've been studying how certain\n"
 	.string "starter POKéMON MEGA EVOLVE.\p"

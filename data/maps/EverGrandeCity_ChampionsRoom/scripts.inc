@@ -260,24 +260,24 @@ EverGrandeCity_ChampionsRoom_Text_BrendanYouveWon:
 	.string "You've beaten the CHAMPION?$"
 
 EverGrandeCity_ChampionsRoom_Text_BirchArriveRatePokedex:
-	.string "PROF. BIRCH: Ah, there you are!\p"
-	.string "BRIAN, my boy, you put up a splendid\n"
-	.string "fight.\p"
-	.string "… … … … … … … … {PLAYER}, you've finally\n"
-	.string "done it.\p"
-	.string "When I heard that you defeated your\n"
-	.string "own father at the PESTOBURG GYM, I\l"
-	.string "thought perhaps you had a chance…\p"
-	.string "But to think you've actually become\n"
-	.string "the CHAMPION!\p"
-	.string "Ah, yes!\p"
-	.string "What became of your POKéDEX? Here, let\n"
-	.string "me see.$"
+	.string "PROF. ALAN: Ah, there you are!\p"
+	.string "BRIAN, my boy, you put up a\n"
+	.string "splendid fight.\p"
+	.string "… … … … … … … …\n"
+	.string "{PLAYER}, you've finally done it.\p"
+	.string "When I heard you'd beaten your own\n"
+	.string "father at the PESTOBURG GYM, I\l"
+	.string "thought you might have a chance…\p"
+	.string "But to actually become the\n"
+	.string "CHAMPION! I may need a stiff drink.\p"
+	.string "Ah, yes! How's your POKéDEX coming\n"
+	.string "along? Here, let me see.$"
 
 EverGrandeCity_ChampionsRoom_Text_BirchCongratulations:
-	.string "PROF. BIRCH: Anyways,\n"
+	.string "PROF. ALAN: Right then, many\n"
 	.string "congratulations!\p"
-	.string "Now, go proudly into the final room!$"
+	.string "Now, head proudly into the\n"
+	.string "final room!$"
 
 EverGrandeCity_ChampionsRoom_Text_WallaceComeWithMe:
 	.string "BRIAN: {PLAYER}…\p"
@@ -292,7 +292,7 @@ EverGrandeCity_ChampionsRoom_Text_WallaceWaitOutside:
 	.string "Rules are rules.$"
 
 EverGrandeCity_ChampionsRoom_Text_MayCongratulations:
-	.string "PROF. BIRCH: Quite right, quite right!\p"
+	.string "PROF. ALAN: Quite right, quite right!\p"
 	.string "Off you go, {PLAYER}!$"
 
 EverGrandeCity_ChampionsRoom_Text_BrendanCongratulations:
