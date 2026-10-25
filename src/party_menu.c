@@ -110,6 +110,7 @@ enum {
     MENU_CATALOG_MOWER,
     MENU_CHANGE_FORM,
     MENU_CHANGE_ABILITY,
+    MENU_RELEARN,
     MENU_FIELD_MOVES
 };
 
@@ -475,6 +476,7 @@ static void CursorCb_Trade1(u8);
 static void CursorCb_Trade2(u8);
 static void CursorCb_Toss(u8);
 static void CursorCb_FieldMove(u8);
+static void CursorCb_Relearn(u8);
 static void CursorCb_CatalogBulb(u8);
 static void CursorCb_CatalogOven(u8);
 static void CursorCb_CatalogWashing(u8);
@@ -2965,6 +2967,21 @@ static void SetPartyMonSelectionActions(struct Pokemon *mons, u8 slotId, u8 acti
     }
 }
 
+// Also picks which kind of relearnable moves (level-up, egg, etc.) the relearner opens on
+static bool32 CanMonRelearnMoves(struct Pokemon *mon)
+{
+    for (u32 i = 0; i < MOVE_RELEARNER_COUNT; i++)
+    {
+        enum MoveRelearnerStates state = (gMoveRelearnerState + i) % MOVE_RELEARNER_COUNT;
+        if (CanBoxMonRelearnMoves(&mon->box, state))
+        {
+            gMoveRelearnerState = state;
+            return TRUE;
+        }
+    }
+    return FALSE;
+}
+
 static void TryAppendPhantomFieldMove(struct Pokemon *mon, enum FieldMove fieldMove)
 {
     // Leave room for SWITCH, ITEM and CANCEL
@@ -2999,6 +3016,11 @@ static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
             }
         }
     }
+
+    // Fettuccine: RELEARN for Pokémon that have moves to relearn
+    if (sPartyMenuInternal->numActions < ARRAY_COUNT(sPartyMenuInternal->actions) - 3
+     && CanMonRelearnMoves(&mons[slotId]))
+        AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_RELEARN);
 
     // Fettuccine: with the badge and the HM in the bag, every Pokémon gets FLY and FLASH
     TryAppendPhantomFieldMove(&mons[slotId], FIELD_MOVE_FLY);
@@ -3162,6 +3184,21 @@ static void CursorCb_Summary(u8 taskId)
     PlaySE(SE_SELECT);
     sPartyMenuInternal->exitCallback = CB2_ShowPokemonSummaryScreen;
     Task_ClosePartyMenu(taskId);
+}
+
+// Fettuccine: open the move relearner from the party menu
+static void CursorCb_Relearn(u8 taskId)
+{
+    PlaySE(SE_SELECT);
+    gSpecialVar_0x8004 = gPartyMenu.slotId;
+    gRelearnMode = RELEARN_MODE_PARTY_MENU;
+    sPartyMenuInternal->exitCallback = CB2_InitLearnMove;
+    Task_ClosePartyMenu(taskId);
+}
+
+void CB2_ReturnToPartyMenuFromMoveRelearner(void)
+{
+    InitPartyMenu(PARTY_MENU_TYPE_FIELD, PARTY_LAYOUT_SINGLE, PARTY_ACTION_CHOOSE_MON, TRUE, PARTY_MSG_CHOOSE_MON, Task_HandleChooseMonInput, CB2_ReturnToFieldWithOpenMenu);
 }
 
 static void CB2_ShowPokemonSummaryScreen(void)
