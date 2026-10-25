@@ -63,7 +63,7 @@ EverGrandeCity_ChampionsRoom_EventScript_Defeated::
 	end
 
 EverGrandeCity_ChampionsRoom_EventScript_PlayMayMusic::
-	playbgm MUS_ENCOUNTER_MAY, FALSE
+	playbgm MUS_ENCOUNTER_BRENDAN, FALSE
 	return
 
 EverGrandeCity_ChampionsRoom_EventScript_PlayBrendanMusic::

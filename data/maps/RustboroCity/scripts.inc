@@ -682,7 +682,7 @@ RustboroCity_EventScript_PlayRivalMusic::
 	return
 
 RustboroCity_EventScript_PlayMayMusic::
-	playbgm MUS_ENCOUNTER_MAY, TRUE
+	playbgm MUS_ENCOUNTER_BRENDAN, TRUE
 	return
 
 RustboroCity_EventScript_PlayBrendanMusic::

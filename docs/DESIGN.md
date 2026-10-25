@@ -120,7 +120,7 @@ Brian is a proud Canadian who hates all Italian food. He wants to become Champio
 
 **Decided:** Brian is **not** Prof. Birch's (Alan's) son. In Emerald the rival is Birch's child, so the rival's "my dad" lines get written out in the dialogue rewrite.
 
-**Done (step 1):** the rival is named BRIAN for both genders (dialogue, PokéNav, trainer names, Fan Club), and his mom calls him her son. Both versions of the rival use Brendan's overworld, bike, battle, and PokéNav sprites as a placeholder. The rival's May scenes still play May's encounter music.
+**Done (step 1):** the rival is named BRIAN for both genders (dialogue, PokéNav, trainer names, Fan Club), and his mom calls him her son. Both versions of the rival use Brendan's overworld, bike, battle, and PokéNav sprites as a placeholder. Both versions play Brendan's encounter music.
 
 **Decided:** Brian fills three roles from Emerald: **the rival, Wally, and the Champion** (replacing Wallace). His appearances:
 
