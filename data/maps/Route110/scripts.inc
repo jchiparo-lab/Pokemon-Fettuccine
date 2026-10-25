@@ -755,56 +755,56 @@ Route110_Text_AquaActionsBringSmiles:
 	.string "smiles to people's faces!$"
 
 Route110_Text_MayLetsBattle:
-	.string "BRIAN: Hi, {PLAYER}{KUN}, long time no see!\p"
-	.string "While I was searching for other\n"
-	.string "POKéMON, my POKéMON grew stronger.\p"
-	.string "So…\n"
-	.string "How about a little battle?$"
+	.string "BRIAN: {PLAYER}. So this is where you\n"
+	.string "were.\p"
+	.string "Every GYM I go to, you've already been\n"
+	.string "there.\p"
+	.string "If you keep this up, you'll reach the\n"
+	.string "POKéMON LEAGUE before me.\p"
+	.string "I can't let that happen. Let's battle!$"
 
 Route110_Text_MayDefeated:
-	.string "Yikes!\n"
-	.string "You're better than I expected!$"
+	.string "No…\p"
+	.string "You're actually getting in my way.$"
 
 Route110_Text_MayTakeThis:
-	.string "BRIAN: {PLAYER}{KUN}, you've been busy\n"
-	.string "training, too, haven't you?\p"
-	.string "I think you deserve a reward!\n"
-	.string "This is from me!$"
+	.string "BRIAN: …Fine. You're good.\p"
+	.string "Here. My mom told me to give you this if\n"
+	.string "I saw you.$"
 
 Route110_Text_MayExplainItemfinder:
 	.string "BRIAN: That's an ITEMFINDER.\p"
-	.string "Try it out. If there is an item that's\n"
-	.string "not visible, it emits a sound.\p"
-	.string "Okay, {PLAYER}{KUN}, let's meet again!\p"
-	.string "I know it's a little silly coming from\n"
-	.string "me, but I think you should train a lot\l"
-	.string "harder for the next time.$"
+	.string "If there's a hidden item nearby, it\n"
+	.string "makes a sound.\p"
+	.string "It's never chicken wings. I've checked.\p"
+	.string "Don't thank me. Thank my mom.\p"
+	.string "I'm off to MACAROVILLE. MACARONI. Ugh.$"
 
 Route110_Text_BrendanLetsBattle:
-	.string "BRIAN: Hey, {PLAYER}.\n"
-	.string "So this is where you were.\l"
-	.string "How's it going?\p"
-	.string "Have you been raising your POKéMON?\n"
-	.string "I'll check for you.$"
+	.string "BRIAN: {PLAYER}. So this is where you\n"
+	.string "were.\p"
+	.string "Every GYM I go to, you've already been\n"
+	.string "there.\p"
+	.string "If you keep this up, you'll reach the\n"
+	.string "POKéMON LEAGUE before me.\p"
+	.string "I can't let that happen. Let's battle!$"
 
 Route110_Text_BrendanDefeated:
-	.string "Hmm…\n"
-	.string "You're pretty good.$"
+	.string "No…\p"
+	.string "You're actually getting in my way.$"
 
 Route110_Text_BrendanTakeThis:
-	.string "BRIAN: {PLAYER}, you've trained\n"
-	.string "without me noticing…\p"
-	.string "Good enough!\n"
-	.string "Here, take this.$"
+	.string "BRIAN: …Fine. You're good.\p"
+	.string "Here. My mom told me to give you this if\n"
+	.string "I saw you.$"
 
 Route110_Text_BrendanExplainItemfinder:
 	.string "BRIAN: That's an ITEMFINDER.\p"
-	.string "Use it to root around for items that\n"
-	.string "aren't visible.\p"
-	.string "If it senses something, it emits\n"
-	.string "a sound.\p"
-	.string "Anyway, I'm off to look for new\n"
-	.string "POKéMON.$"
+	.string "If there's a hidden item nearby, it\n"
+	.string "makes a sound.\p"
+	.string "It's never chicken wings. I've checked.\p"
+	.string "Don't thank me. Thank my mom.\p"
+	.string "I'm off to MACAROVILLE. MACARONI. Ugh.$"
 
 Route110_Text_RideBikeAtFullSpeed:
 	.string "Wouldn't it be great to ride a BIKE\n"
@@ -981,9 +981,10 @@ Route110_Text_RegisteredBirchInPokenav:
 	.string "in the POKéNAV.$"
 
 Route110_Text_KeepAnEyeOutForRival:
-	.string "PROF. BIRCH: {PLAYER}{KUN}…\p"
-	.string "Please keep an eye out for my {RIVAL}.\n"
+	.string "PROF. BIRCH: {PLAYER}…\p"
+	.string "Please keep an eye on BRIAN for me. His\n"
+	.string "mother worries about him.\p"
 	.string "… … … … … …\p"
-	.string "Well, I had better get going.\n"
-	.string "See you again, {PLAYER}{KUN}!$"
+	.string "Well, I had better get going. See you\n"
+	.string "again, {PLAYER}!$"
 

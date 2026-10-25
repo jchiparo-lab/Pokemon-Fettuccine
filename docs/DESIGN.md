@@ -118,7 +118,11 @@ Brian is a proud Canadian who hates all Italian food. He wants to become Champio
 
 **Decided:** Brian stays a pasta hater forever, even after he loses.
 
+**Decided: Brian's backstory and running jokes.** His mom moved the family to Pastalia from Canada, and his Ducklett came with him. He's rude about pasta but compulsively polite as a Canadian ("Sorry in advance!"). He's **obsessed with chicken wings**, his favorite food and his main running joke; other jokes are maple syrup, poutine, renaming Rotiniboro "Mapleboro", and his mom's lasagna. His anger grows across the game: annoyed at first, then he sees the player as an obstacle (Route 110), then furious (Route 119).
+
 **Decided:** Brian is **not** Prof. Birch's (Alan's) son. In Emerald the rival is Birch's child, so the rival's "my dad" lines get written out in the dialogue rewrite.
+
+**Done (step 3): Brian's dialogue** in Lil Ragu (his mom and his bedroom), Prof. Birch's lab (including post-game), Route 103, Oldale, Rotiniboro and Route 104, Lasagnaridge, Route 110, Route 119, Linguicove, his 16 PokéNav calls, and his PokéNav profile (strategy: "Battle first, Wings after."). Both rival versions now share the same lines. Petalburg, Macaroville and Victory Road come with the Wally scenes; the Champion's Room comes with the Champion step.
 
 **Done (step 1):** the rival is named BRIAN for both genders (dialogue, PokéNav, trainer names, Fan Club), and his mom calls him her son. Both versions of the rival use Brendan's overworld, bike, battle, and PokéNav sprites as a placeholder. Both versions play Brendan's encounter music.
 
@@ -540,7 +544,7 @@ A yes/no choice at New Game that randomizes Pokémon for that save file. It must
 | Nurse Joy Jammie Dodger heal (plus blackout cookie) | One shared script change | Done |
 | Retro Salvage Games shops (Jason, orange roofs) | Sprite recolor, palette, tiles, dialogue | Not started |
 | Main character sprites (Ethan and Kris) | Community sprites, no recolor | Not started |
-| Brian as rival (sprites, name, logic, anti-pasta story) | Art plus code and dialogue | Partly done: named BRIAN for both genders, uses Brendan's sprites as a placeholder; rival teams done (Macaroville, Victory Road and Champion teams come with those steps); dialogue and custom sprites still to do |
+| Brian as rival (sprites, name, logic, anti-pasta story) | Art plus code and dialogue | Partly done: named BRIAN for both genders, uses Brendan's sprites as a placeholder; rival teams and dialogue done (Macaroville, Victory Road and Champion come with those steps); custom sprites still to do |
 | Brian replaces Wally (Petalburg catch, Mauville, Victory Road) | Scripts and dialogue | Not started |
 | Brian as Champion, Mike (replaces Wallace) outside the Elite Four | Scripts, trainer data, dialogue, custom sprites | Not started |
 | Brian's room SNES / Time Toggle text | Text edit | Done |

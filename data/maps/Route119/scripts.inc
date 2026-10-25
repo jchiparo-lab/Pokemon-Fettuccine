@@ -500,62 +500,56 @@ Route119_Text_BirchMegaStonesCall:
 	.string "… … … … … Click!$"
 
 Route119_Text_MayIntro:
-	.string "BRIAN: {PLAYER}{KUN}!\n"
-	.string "Where were you? I was looking for you!\p"
-	.string "How much stronger have you gotten?\n"
-	.string "Let me check for you!\p"
-	.string "Ready with your POKéMON?\n"
-	.string "Of course you are! Go!$"
+	.string "BRIAN: {PLAYER}! There you are!\p"
+	.string "Everywhere I go, it's pasta, pasta,\n"
+	.string "PASTA!\p"
+	.string "And everywhere I go, there's YOU!\p"
+	.string "You're the only thing standing between\n"
+	.string "me and a pasta-free PASTALIA!\p"
+	.string "Battle me! Now!$"
 
 Route119_Text_MayDefeat:
-	.string "Achah!\n"
-	.string "{PLAYER}{KUN}, you're strong!\p"
-	.string "I was worried that you might be\n"
-	.string "struggling with your training.$"
+	.string "WHY?!\p"
+	.string "Why can't I beat you?!$"
 
 Route119_Text_MayPresentForYou:
-	.string "BRIAN: But I had absolutely nothing to\n"
-	.string "worry about! Keep it up!\p"
-	.string "And, here! I have a present for you.$"
+	.string "BRIAN: …Sorry for yelling. That wasn't\n"
+	.string "very polite.\p"
+	.string "Here. I don't need this anymore.$"
 
 Route119_Text_MayExplainFly:
 	.string "BRIAN: Use FLY, and your POKéMON will\n"
-	.string "instantly carry you to any town you've\l"
-	.string "already visited.\p"
-	.string "But, to use FLY, you have to get\n"
-	.string "the GYM BADGE from FORTELLINI CITY.\l"
-	.string "That's important, so don't forget.\p"
-	.string "You should FLY home and visit\n"
-	.string "LIL RAGU for a change.\p"
-	.string "I bet your mom's worried about you,\n"
-	.string "{PLAYER}{KUN}.\p"
-	.string "Well, let's meet again somewhere!$"
+	.string "carry you to any town you've already\l"
+	.string "visited.\p"
+	.string "But you need the FORTELLINI GYM BADGE\n"
+	.string "to use it.\p"
+	.string "Next time, I'm winning. I mean it.$"
 
 Route119_Text_BrendanIntro:
-	.string "BRIAN: {PLAYER}! So this is where\n"
-	.string "you've been looking for POKéMON?\p"
-	.string "Let me see how good you got.\n"
-	.string "I'll test you!\p"
-	.string "Now!\n"
-	.string "It's a battle, so battle!$"
+	.string "BRIAN: {PLAYER}! There you are!\p"
+	.string "Everywhere I go, it's pasta, pasta,\n"
+	.string "PASTA!\p"
+	.string "And everywhere I go, there's YOU!\p"
+	.string "You're the only thing standing between\n"
+	.string "me and a pasta-free PASTALIA!\p"
+	.string "Battle me! Now!$"
 
 Route119_Text_BrendanDefeat:
-	.string "Hmm…\n"
-	.string "You've gotten pretty darn decent.$"
+	.string "WHY?!\p"
+	.string "Why can't I beat you?!$"
 
 Route119_Text_BrendanIllGiveYouThis:
-	.string "BRIAN: I'd say you're good enough\n"
-	.string "to search for POKéMON anywhere.\p"
-	.string "Here, I'll give you this.\n"
-	.string "Try it out.$"
+	.string "BRIAN: …Sorry for yelling. That wasn't\n"
+	.string "very polite.\p"
+	.string "Here. I don't need this anymore.$"
 
 Route119_Text_BrendanExplainFly:
-	.string "BRIAN: Use FLY, and your POKéMON\n"
-	.string "instantly carries you to any town\l"
-	.string "you've already visited.\p"
-	.string "But you need the FORTELLINI GYM BADGE \n"
-	.string "to do that.\p"
-	.string "Anyway, I have to move along.$"
+	.string "BRIAN: Use FLY, and your POKéMON will\n"
+	.string "carry you to any town you've already\l"
+	.string "visited.\p"
+	.string "But you need the FORTELLINI GYM BADGE\n"
+	.string "to use it.\p"
+	.string "Next time, I'm winning. I mean it.$"
 
 Route119_Text_ScottWayToGoBeSeeingYou:
 	.string "JOE Q: Hahahah!\n"

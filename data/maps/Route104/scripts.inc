@@ -1078,91 +1078,95 @@ Route104_Text_TrainerTipsDoubleBattles:
 	.string "Watch how POKéMON are lined up.$"
 
 Route104_Text_MayWeShouldRegister:
-	.string "BRIAN: Oh, hi, {PLAYER}{KUN}!\p"
-	.string "DEVON upgraded your POKéNAV with\n"
-	.string "the MATCH CALL system, huh?\p"
-	.string "We should register each other so we\n"
-	.string "can get in contact anytime.$"
+	.string "BRIAN: Oh, hey, {PLAYER}. You got MATCH\n"
+	.string "CALL on your POKéNAV.\p"
+	.string "We should register each other.\p"
+	.string "Not because we're friends. Just so I\n"
+	.string "know where you are.$"
 
 Route104_Text_RegisteredMay:
 	.string "{PLAYER} registered BRIAN\n"
 	.string "in the POKéNAV.$"
 
 Route104_Text_MayHowsYourPokedex:
-	.string "BRIAN: Oh, by the way, {PLAYER}{KUN},\n"
-	.string "how's your POKéDEX coming along?$"
+	.string "BRIAN: Do you know what ROTINI is?\p"
+	.string "It's a PASTA. A SPIRAL one. They named\n"
+	.string "a whole CITY after it, just up the road.$"
 
 Route104_Text_MayMinesDecentLetsBattle:
-	.string "Mine's looking pretty decent.\n"
-	.string "So…\l"
-	.string "How about a little battle?$"
+	.string "When I'm CHAMPION, I'm renaming it.\n"
+	.string "MAPLEBORO.\p"
+	.string "And every pasta shop becomes a wing\n"
+	.string "place.\p"
+	.string "Now, how about a battle?$"
 
 Route104_Text_MayHaventRaisedPokemon:
-	.string "BRIAN: Oh, what's the matter?\p"
-	.string "Haven't you caught or raised your\n"
-	.string "POKéMON very much?\p"
-	.string "That's not very good for a TRAINER!$"
+	.string "BRIAN: What's the matter? Scared?\p"
+	.string "…Sorry. Some other time, then.$"
 
 Route104_Text_MayLetsBattle:
-	.string "BRIAN: So, what do you think?\n"
-	.string "How about a little battle here?$"
+	.string "BRIAN: Ready now? How about a battle?$"
 
 Route104_Text_MayIntro:
-	.string "BRIAN: You just became a TRAINER,\n"
-	.string "{PLAYER}{KUN}. I'm not going to lose!$"
+	.string "BRIAN: You just became a TRAINER, but\n"
+	.string "I won't go easy. Sorry!$"
 
 Route104_Text_MayDefeat:
-	.string "Yikes!\n"
-	.string "You're better than I expected!$"
+	.string "What?! Lost again…\p"
+	.string "Right next to a city named after\n"
+	.string "NOODLES.$"
 
 Route104_Text_MayPostBattle:
-	.string "BRIAN: I can tell you've gotten pretty\n"
-	.string "good with the way you handle POKéMON.\p"
-	.string "But instead of only making them\n"
-	.string "battle, you should be like MR. BRINEY.\p"
-	.string "It's important to become friends with\n"
-	.string "POKéMON, too.$"
+	.string "BRIAN: You know MR. BRINEY? That's his\n"
+	.string "cottage.\p"
+	.string "He was once a great sailor.\p"
+	.string "He's probably the only person in\n"
+	.string "PASTALIA who doesn't talk about pasta\l"
+	.string "all day.$"
 
 Route104_Text_BrendanWeShouldRegister:
-	.string "BRIAN: Oh, hey, {PLAYER}!\p"
-	.string "Cool, you had DEVON install the MATCH\n"
-	.string "CALL system on your POKéNAV!\p"
-	.string "Let's register each other in our\n"
-	.string "POKéNAVS so we can keep in touch.$"
+	.string "BRIAN: Oh, hey, {PLAYER}. You got MATCH\n"
+	.string "CALL on your POKéNAV.\p"
+	.string "We should register each other.\p"
+	.string "Not because we're friends. Just so I\n"
+	.string "know where you are.$"
 
 Route104_Text_RegisteredBrendan:
 	.string "{PLAYER} registered BRIAN\n"
 	.string "in the POKéNAV.$"
 
 Route104_Text_BrendanHowsYourPokedex:
-	.string "BRIAN: {PLAYER}, how's your POKéDEX?\n"
-	.string "Have you filled in any pages yet?$"
+	.string "BRIAN: Do you know what ROTINI is?\p"
+	.string "It's a PASTA. A SPIRAL one. They named\n"
+	.string "a whole CITY after it, just up the road.$"
 
 Route104_Text_BrendanDoingGreatLetsBattle:
-	.string "Me, I'm doing great!\p"
-	.string "Want to check out how good I am with\n"
-	.string "a battle?$"
+	.string "When I'm CHAMPION, I'm renaming it.\n"
+	.string "MAPLEBORO.\p"
+	.string "And every pasta shop becomes a wing\n"
+	.string "place.\p"
+	.string "Now, how about a battle?$"
 
 Route104_Text_BrendanNoConfidence:
-	.string "BRIAN: What's the matter? Don't have\n"
-	.string "any confidence in your POKéMON?$"
+	.string "BRIAN: What's the matter? Scared?\p"
+	.string "…Sorry. Some other time, then.$"
 
 Route104_Text_BrendanLetsBattle:
-	.string "BRIAN: What's up?\n"
-	.string "Want to have a battle with me?$"
+	.string "BRIAN: Ready now? How about a battle?$"
 
 Route104_Text_BrendanIntro:
-	.string "BRIAN: I know you just became\n"
-	.string "a TRAINER, but I won't go easy!$"
+	.string "BRIAN: You just became a TRAINER, but\n"
+	.string "I won't go easy. Sorry!$"
 
 Route104_Text_BrendanDefeat:
-	.string "Hmm…\n"
-	.string "You're pretty good.$"
+	.string "What?! Lost again…\p"
+	.string "Right next to a city named after\n"
+	.string "NOODLES.$"
 
 Route104_Text_BrendanPostBattle:
-	.string "BRIAN: You've gotten pretty decent\n"
-	.string "at handling POKéMON.\p"
-	.string "But, you know, you shouldn't just be\n"
-	.string "making POKéMON battle.\p"
-	.string "Like MR. BRINEY, it's important to\n"
-	.string "become friends with your POKéMON.$"
+	.string "BRIAN: You know MR. BRINEY? That's his\n"
+	.string "cottage.\p"
+	.string "He was once a great sailor.\p"
+	.string "He's probably the only person in\n"
+	.string "PASTALIA who doesn't talk about pasta\l"
+	.string "all day.$"

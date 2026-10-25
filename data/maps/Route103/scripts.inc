@@ -287,56 +287,54 @@ Route103_EventScript_Isabelle::
 	end
 
 Route103_Text_MayRoute103Pokemon:
-	.string "BRIAN: Let's see… The POKéMON found\n"
-	.string "on ROUTE 103 include…$"
+	.string "BRIAN: Let's see… The POKéMON on ROUTE\n"
+	.string "103 include…\p"
+	.string "Ugh. Even the grass smells like garlic.$"
 
 Route103_Text_MayLetsBattle:
-	.string "Oh, hi, {PLAYER}{KUN}!\p"
-	.string "…Oh, I see, my dad gave you\n"
-	.string "a POKéMON as a gift.\p"
-	.string "Since we're here, let's have a quick\n"
-	.string "battle!\p"
-	.string "I'll give you a taste of what being\n"
-	.string "a TRAINER is like.$"
+	.string "Hey, it's {PLAYER}!\p"
+	.string "…Oh, PROF. BIRCH gave you a POKéMON.\p"
+	.string "Perfect. If I'm going to be CHAMPION, I\n"
+	.string "need the practice.\p"
+	.string "Sorry in advance!$"
 
 Route103_Text_MayDefeated:
-	.string "Wow! That's great!\n"
-	.string "{PLAYER}{KUN}, you're pretty good!$"
+	.string "Sorry… I mean, what?!\p"
+	.string "You beat me?$"
 
 Route103_Text_MayTimeToHeadBack:
-	.string "BRIAN: I think I know why my dad has\n"
-	.string "an eye out for you now.\p"
-	.string "I mean, you just got that POKéMON,\n"
-	.string "but it already likes you.\p"
-	.string "You might be able to befriend any\n"
-	.string "kind of POKéMON easily.\p"
-	.string "Well, it's time to head back to\n"
-	.string "the LAB.$"
+	.string "BRIAN: Okay. That was a fluke.\p"
+	.string "You just got that POKéMON, and it\n"
+	.string "already likes you. That's… annoying.\p"
+	.string "I'm going to be CHAMPION, {PLAYER}.\n"
+	.string "Don't get in my way.\p"
+	.string "Anyway, the PROF wants us back at the\n"
+	.string "LAB.$"
 
 Route103_Text_BrendanRoute103Pokemon:
-	.string "BRIAN: Okay, so it's this one and\n"
-	.string "that one that live on ROUTE 103…$"
+	.string "BRIAN: Let's see… The POKéMON on ROUTE\n"
+	.string "103 include…\p"
+	.string "Ugh. Even the grass smells like garlic.$"
 
 Route103_Text_BrendanLetsBattle:
 	.string "Hey, it's {PLAYER}!\p"
-	.string "…Oh, yeah, Dad gave you a POKéMON.\p"
-	.string "Since we're here, how about a little\n"
-	.string "battle?\p"
-	.string "I'll teach you what being a TRAINER's\n"
-	.string "about!$"
+	.string "…Oh, PROF. BIRCH gave you a POKéMON.\p"
+	.string "Perfect. If I'm going to be CHAMPION, I\n"
+	.string "need the practice.\p"
+	.string "Sorry in advance!$"
 
 Route103_Text_BrendanDefeated:
-	.string "Huh, {PLAYER}, you're not too shabby.$"
+	.string "Sorry… I mean, what?!\p"
+	.string "You beat me?$"
 
 Route103_Text_BrendanTimeToHeadBack:
-	.string "BRIAN: I think I get it.\n"
-	.string "I think I know why my dad has his eye\l"
-	.string "out for you now.\p"
-	.string "Look, your POKéMON already likes you,\n"
-	.string "even though you just got it.\p"
-	.string "{PLAYER}, I get the feeling that you\n"
-	.string "could befriend any POKéMON with ease.\p"
-	.string "We should head back to the LAB.$"
+	.string "BRIAN: Okay. That was a fluke.\p"
+	.string "You just got that POKéMON, and it\n"
+	.string "already likes you. That's… annoying.\p"
+	.string "I'm going to be CHAMPION, {PLAYER}.\n"
+	.string "Don't get in my way.\p"
+	.string "Anyway, the PROF wants us back at the\n"
+	.string "LAB.$"
 
 Route103_Text_ShouldHaveBroughtPotion:
 	.string "My POKéMON is staggeringly tired…\n"

@@ -1126,11 +1126,11 @@ RustboroCity_Text_PleaseComeWithMe:
 	.string "Please come with me!$"
 
 RustboroCity_Text_MayHiLetsRegister:
-	.string "BRIAN: Oh, hi, {PLAYER}{KUN}!\p"
-	.string "You had a MATCH CALL feature put\n"
-	.string "on your POKéNAV!\p"
-	.string "Let's register each other so we can\n"
-	.string "contact one another anytime!\p"
+	.string "BRIAN: Oh, hey, {PLAYER}. You got MATCH\n"
+	.string "CALL on your POKéNAV.\p"
+	.string "We should register each other.\p"
+	.string "Not because we're friends. Just so I\n"
+	.string "know where you are.\p"
 	.string "… … … … … …$"
 
 RustboroCity_Text_RegisteredMay:
@@ -1138,46 +1138,45 @@ RustboroCity_Text_RegisteredMay:
 	.string "in the POKéNAV.$"
 
 RustboroCity_Text_MayPassedBrineyWantToBattle:
-	.string "BRIAN: Oh, by the way, I passed\n"
-	.string "MR. BRINEY in PESTOBURG WOODS.\p"
-	.string "I guess he's on his way home to his\n"
-	.string "cottage by the sea.\p"
-	.string "How's your POKéDEX coming along,\n"
-	.string "{PLAYER}{KUN}? Mine's looking pretty decent!\p"
-	.string "So…\n"
-	.string "How about a little battle?$"
+	.string "BRIAN: Do you know what ROTINI is?\p"
+	.string "It's a PASTA. A SPIRAL one. They named\n"
+	.string "a whole CITY after it.\p"
+	.string "When I'm CHAMPION, the first thing I'm\n"
+	.string "doing is renaming it. MAPLEBORO.\p"
+	.string "And every pasta shop becomes a wing\n"
+	.string "place.\p"
+	.string "Now, how about a battle?$"
 
 RustboroCity_Text_MayOhHaventRaisedPokemonEnough:
-	.string "BRIAN: Oh, what's the matter?\p"
-	.string "Haven't you caught or raised your\n"
-	.string "POKéMON very much?\p"
-	.string "That's not very good for a TRAINER!$"
+	.string "BRIAN: What's the matter? Scared?\p"
+	.string "…Sorry. Some other time, then.$"
 
 RustboroCity_Text_MayWantToBattle:
-	.string "BRIAN: So, what do you think?\n"
-	.string "How about a little battle here?$"
+	.string "BRIAN: Ready now? How about a battle?$"
 
 RustboroCity_Text_MayImNotGoingToLose:
-	.string "BRIAN: You just became a TRAINER,\n"
-	.string "{PLAYER}{KUN}. I'm not going to lose!$"
+	.string "BRIAN: You just became a TRAINER, but\n"
+	.string "I won't go easy. Sorry!$"
 
 RustboroCity_Text_MayDefeat:
-	.string "Yikes!\n"
-	.string "You're better than I expected!$"
+	.string "What?! Lost again…\p"
+	.string "In a city named after NOODLES.$"
 
 RustboroCity_Text_MayMrBrineyHint:
-	.string "BRIAN: Oh, by the way, MR. BRINEY, who\n"
-	.string "I just passed…\p"
-	.string "{PLAYER}{KUN}, you just moved here so you\n"
-	.string "might not know this, but MR. BRINEY\l"
-	.string "was once a revered seafarer.$"
+	.string "BRIAN: By the way, you know MR. BRINEY?\n"
+	.string "The guy I passed in PESTOBURG WOODS?\p"
+	.string "You just moved here, so you might not\n"
+	.string "know, but he was once a great sailor.\p"
+	.string "He's probably the only person in\n"
+	.string "PASTALIA who doesn't talk about pasta\l"
+	.string "all day.$"
 
 RustboroCity_Text_BrendanHiLetsRegister:
-	.string "BRIAN: Oh, hey, {PLAYER}!\p"
-	.string "You had a MATCH CALL feature put\n"
-	.string "on your POKéNAV! Cool!\p"
-	.string "Let's register each other so we can\n"
-	.string "get in touch anytime!\p"
+	.string "BRIAN: Oh, hey, {PLAYER}. You got MATCH\n"
+	.string "CALL on your POKéNAV.\p"
+	.string "We should register each other.\p"
+	.string "Not because we're friends. Just so I\n"
+	.string "know where you are.\p"
 	.string "… … … … … …$"
 
 RustboroCity_Text_RegisteredBrendan:
@@ -1185,38 +1184,38 @@ RustboroCity_Text_RegisteredBrendan:
 	.string "in the POKéNAV.$"
 
 RustboroCity_Text_BrendanPassedBrineyWantToBattle:
-	.string "BRIAN: By the way, {PLAYER}, I walked\n"
-	.string "by MR. BRINEY in PESTOBURG WOODS.\p"
-	.string "I bet he was on his way home to his\n"
-	.string "cottage by the sea.\p"
-	.string "{PLAYER}, how's your POKéDEX?\n"
-	.string "Have you filled in any pages yet?\p"
-	.string "Mine rules.\p"
-	.string "Want to have a battle to test how\n"
-	.string "far you've progressed?$"
+	.string "BRIAN: Do you know what ROTINI is?\p"
+	.string "It's a PASTA. A SPIRAL one. They named\n"
+	.string "a whole CITY after it.\p"
+	.string "When I'm CHAMPION, the first thing I'm\n"
+	.string "doing is renaming it. MAPLEBORO.\p"
+	.string "And every pasta shop becomes a wing\n"
+	.string "place.\p"
+	.string "Now, how about a battle?$"
 
 RustboroCity_Text_BrendanNoConfidenceInPokemon:
-	.string "BRIAN: What's the matter? Don't have\n"
-	.string "any confidence in your POKéMON?$"
+	.string "BRIAN: What's the matter? Scared?\p"
+	.string "…Sorry. Some other time, then.$"
 
 RustboroCity_Text_BrendanWantToBattle:
-	.string "BRIAN: What's up?\n"
-	.string "Want to have a battle with me?$"
+	.string "BRIAN: Ready now? How about a battle?$"
 
 RustboroCity_Text_BrendanIWontGoEasy:
-	.string "BRIAN: I know you just became\n"
-	.string "a TRAINER, but I won't go easy!$"
+	.string "BRIAN: You just became a TRAINER, but\n"
+	.string "I won't go easy. Sorry!$"
 
 RustboroCity_Text_BrendanDefeat:
-	.string "Hmm…\n"
-	.string "You're pretty good.$"
+	.string "What?! Lost again…\p"
+	.string "In a city named after NOODLES.$"
 
 RustboroCity_Text_BrendanMrBrineyHint:
-	.string "BRIAN: By the way, you know\n"
-	.string "MR. BRINEY? The guy I just passed?\p"
-	.string "I bet you didn't know this, since you\n"
-	.string "just moved here, {PLAYER}, but\l"
-	.string "MR. BRINEY was once a great sailor.$"
+	.string "BRIAN: By the way, you know MR. BRINEY?\n"
+	.string "The guy I passed in PESTOBURG WOODS?\p"
+	.string "You just moved here, so you might not\n"
+	.string "know, but he was once a great sailor.\p"
+	.string "He's probably the only person in\n"
+	.string "PASTALIA who doesn't talk about pasta\l"
+	.string "all day.$"
 
 RustboroCity_Text_TunnelNearingCompletion:
 	.string "“Timesaving tunnel nearing\n"
