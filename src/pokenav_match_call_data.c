@@ -226,7 +226,7 @@ static const struct MatchCallBirch sProfBirchMatchCallHeader =
     .type = MC_TYPE_BIRCH,
     .mapSec = 0,
     .flag = FLAG_ENABLE_PROF_BIRCH_MATCH_CALL,
-    .desc = COMPOUND_STRING("{PKMN} PROF."),
+    .desc = COMPOUND_STRING("GENTLEMAN"),
     .name = COMPOUND_STRING("PROF. ALAN")
 };
 
