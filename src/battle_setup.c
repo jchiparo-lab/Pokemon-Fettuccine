@@ -510,10 +510,10 @@ static void DoBattlePyramidTrainerHillBattle(void)
     TryUpdateGymLeaderRematchFromTrainer();
 }
 
-// Initiates battle where Wally catches Ralts
+// Initiates battle where Brian (in Wally's place) catches Bidoof
 void StartWallyTutorialBattle(void)
 {
-    CreateMaleMon(&gParties[B_TRAINER_OPPONENT_A][0], SPECIES_RALTS, 5);
+    CreateMaleMon(&gParties[B_TRAINER_OPPONENT_A][0], SPECIES_BIDOOF, 5);
     LockPlayerFieldControls();
     gMain.savedCallback = CB2_ReturnToFieldContinueScriptPlayMapMusic;
     gBattleTypeFlags = BATTLE_TYPE_CATCH_TUTORIAL;

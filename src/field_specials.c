@@ -1522,13 +1522,14 @@ void SetShoalItemFlag(u16 unused)
     FlagSet(FLAG_SYS_SHOAL_ITEM);
 }
 
+// Brian uses his own Ducklett in the catching tutorial (the name is kept for the script special)
 void LoadWallyZigzagoon(void)
 {
     u16 monData;
-    CreateRandomMon(&gParties[B_TRAINER_PLAYER][0], SPECIES_ZIGZAGOON, 7);
+    CreateRandomMon(&gParties[B_TRAINER_PLAYER][0], SPECIES_DUCKLETT, 7);
     monData = TRUE;
     SetMonData(&gParties[B_TRAINER_PLAYER][0], MON_DATA_ABILITY_NUM, &monData);
-    monData = MOVE_TACKLE;
+    monData = MOVE_WATER_GUN;
     SetMonData(&gParties[B_TRAINER_PLAYER][0], MON_DATA_MOVE1, &monData);
     monData = MOVE_NONE;
     SetMonData(&gParties[B_TRAINER_PLAYER][0], MON_DATA_MOVE2, &monData);
