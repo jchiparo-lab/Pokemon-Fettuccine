@@ -94,6 +94,7 @@ RARE_MAX_RATE = 5
 MAX_NEW = {'land_mons': 3, 'water_mons': 1, 'fishing_mons': 1, 'rock_smash_mons': 1}
 MAX_NEW_EARLY = 2  # land tables at level 8 or lower
 SPREAD_PENALTY = 6  # per new Pokémon already in the same area and time
+HOMES = 3  # different areas each Pokémon line is placed in
 
 # Families whose species data is built from shared templates the parser can't read,
 # plus White-Striped Basculin (the only way to get Basculegion). Placed by hand.
@@ -395,7 +396,7 @@ def place(species, roots, slots):
             opts.append((pts, -idx, idx, stage))
         return sorted(opts, reverse=True)
 
-    for round_no in range(2):  # every Pokémon gets up to two homes
+    for round_no in range(HOMES):  # every Pokémon gets up to HOMES homes
         for strict in (True, False):
             pending = [r for r in roots if len(placements[r]) == round_no]
             counted = sorted(pending, key=lambda r: (len(options(r, strict, set())), r))
@@ -452,7 +453,8 @@ def write_report(species, roots, placements, gaps, slots):
     unplaced = [r for r in roots if not placements[r]]
     lines += ['## Summary', '',
               '- Pokémon lines placed: %d' % sum(1 for r in roots if placements[r]),
-              '- Placed in two areas: %d' % sum(1 for r in roots if len(placements[r]) >= 2),
+              '- Placed in %d areas: %d' % (HOMES, sum(1 for r in roots if len(placements[r]) >= HOMES)),
+              '- Placed in fewer areas: %d' % sum(1 for r in roots if 0 < len(placements[r]) < HOMES),
               '- Not placed (no room): %d' % len(unplaced),
               '- Free slots left over: %d' % sum(1 for s in slots if not s['taken']), '']
     if unplaced:
@@ -499,7 +501,8 @@ def main():
 
     placed = sum(1 for r in roots if placements[r])
     print('Species data: %d entries; already obtainable: %d' % (len(species), len(got)))
-    print('Lines to place: %d; placed: %d; in two areas: %d' % (len(roots), placed, sum(1 for r in roots if len(placements[r]) >= 2)))
+    print('Lines to place: %d; placed: %d; in %d areas: %d' % (len(roots), placed, HOMES, sum(1 for r in roots if len(placements[r]) >= HOMES)))
+    print('Fewer than %d areas:' % HOMES, ', '.join('%s (%d)' % (pretty(r), len(placements[r])) for r in roots if 0 < len(placements[r]) < HOMES) or 'none')
     print('Free slots: %d; used: %d' % (len(slots), sum(1 for s in slots if s['taken'])))
     print('Unplaced:', ', '.join(pretty(r) for r in roots if not placements[r]) or 'none')
     print('Regional gaps:', ', '.join(pretty(g) for g in gaps) or 'none')

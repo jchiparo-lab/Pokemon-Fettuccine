@@ -7,9 +7,10 @@ fill the duplicate slots. "Rate" is the slot's chance within that encounter type
 ## Summary
 
 - Pokémon lines placed: 315
-- Placed in two areas: 315
+- Placed in 3 areas: 315
+- Placed in fewer areas: 0
 - Not placed (no room): 0
-- Free slots left over: 3442
+- Free slots left over: 3127
 
 ### Regional evolutions that need another method
 
@@ -40,6 +41,7 @@ These only evolve "in" their home region, so they can't be reached yet:
 | Tirtouga | Day | fishing | 40% | 30 |
 | Chewtle | Day | surfing | 30% | 5 |
 | Shellos West | Evening | fishing | 40% | 30 |
+| Buizel | Evening | surfing | 30% | 5 |
 | Bibarel | Night | fishing | 40% | 30 |
 
 ### AbandonedShip_Rooms_B1F
@@ -47,9 +49,11 @@ These only evolve "in" their home region, so they can't be reached yet:
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
 | Cramorant | Morning | fishing | 40% | 30 |
+| Arrokuda | Morning | surfing | 30% | 5 |
 | Araquanid | Day | fishing | 40% | 30 |
 | Surskit | Day | surfing | 30% | 5 |
 | Tatsugiri Curly | Evening | fishing | 40% | 30 |
+| Chewtle | Evening | surfing | 30% | 5 |
 | Ducklett | Night | fishing | 40% | 30 |
 | Buizel | Night | surfing | 30% | 5 |
 
@@ -58,20 +62,32 @@ These only evolve "in" their home region, so they can't be reached yet:
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
 | Bergmite | Morning | grass/cave | 20% | 12 |
+| Farfetchd Galar | Morning | grass/cave | 10% | 14 |
 | Cetoddle | Day | grass/cave | 20% | 12 |
 | Salandit | Day | grass/cave | 10% | 8 |
+| Skorupi | Day | grass/cave | 10% | 14 |
 | Cubchoo | Evening | grass/cave | 20% | 12 |
+| Shroodle | Evening | grass/cave | 10% | 8 |
 | Darumaka Galar | Night | grass/cave | 20% | 12 |
 | Zigzagoon Galar | Night | grass/cave | 10% | 8 |
+| Litwick | Night | grass/cave | 10% | 14 |
 
 ### ArtisanCave_1F
 
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
 | Dunsparce | Morning | grass/cave | 20% | 41 |
+| Komala | Morning | grass/cave | 10% | 42 |
+| Greedent | Morning | grass/cave | 10% | 43 |
 | Orthworm | Day | grass/cave | 20% | 41 |
+| Duraludon | Day | grass/cave | 10% | 42 |
+| Yungoos | Day | grass/cave | 10% | 43 |
 | Oranguru | Evening | grass/cave | 20% | 41 |
+| Comfey | Evening | grass/cave | 10% | 42 |
+| Minccino | Evening | grass/cave | 10% | 43 |
 | Squawkabilly Green | Night | grass/cave | 20% | 41 |
+| Dubwool | Night | grass/cave | 10% | 42 |
+| Sawsbuck Spring | Night | grass/cave | 10% | 43 |
 
 ### ArtisanCave_B1F
 
@@ -79,18 +95,30 @@ These only evolve "in" their home region, so they can't be reached yet:
 | --- | --- | --- | --- | --- |
 | Duraludon | Morning | grass/cave | 20% | 41 |
 | Diggersby | Morning | grass/cave | 10% | 42 |
+| Watchog | Morning | grass/cave | 10% | 43 |
 | Komala | Day | grass/cave | 20% | 41 |
+| Bouffalant | Day | grass/cave | 10% | 42 |
+| Porygon | Day | grass/cave | 10% | 43 |
 | Comfey | Evening | grass/cave | 20% | 41 |
+| Zangoose | Evening | grass/cave | 10% | 42 |
+| Cleffa | Evening | grass/cave | 10% | 43 |
 | Furfrou | Night | grass/cave | 20% | 41 |
+| Tauros | Night | grass/cave | 10% | 42 |
+| Raticate | Night | grass/cave | 10% | 43 |
 
 ### CaveOfOrigin_1F
 
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
 | Stunfisk Galar | Morning | grass/cave | 20% | 31 |
+| Jangmo O | Morning | grass/cave | 5% | 33 |
 | Applin | Day | grass/cave | 20% | 31 |
+| Cyclizar | Day | grass/cave | 10% | 34 |
 | Flittle | Evening | grass/cave | 20% | 31 |
+| Sigilyph | Evening | grass/cave | 10% | 32 |
+| Woobat | Evening | grass/cave | 10% | 32 |
 | Spiritomb | Night | grass/cave | 20% | 31 |
+| Mimikyu Disguised | Night | grass/cave | 10% | 32 |
 | Drifblim | Night | grass/cave | 10% | 34 |
 
 ### CaveOfOrigin_Entrance
@@ -98,10 +126,15 @@ These only evolve "in" their home region, so they can't be reached yet:
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
 | Stunfisk | Morning | grass/cave | 20% | 31 |
+| Dragonair | Morning | grass/cave | 5% | 34 |
 | Turtonator | Day | grass/cave | 20% | 31 |
+| Goomy | Day | grass/cave | 5% | 34 |
 | Indeedee M | Evening | grass/cave | 20% | 31 |
+| Druddigon | Evening | grass/cave | 10% | 32 |
+| Hypno | Evening | grass/cave | 10% | 33 |
 | Mimikyu Disguised | Night | grass/cave | 20% | 31 |
 | Spiritomb | Night | grass/cave | 10% | 32 |
+| Drifblim | Night | grass/cave | 10% | 33 |
 
 ### DesertUnderpass
 
@@ -109,11 +142,16 @@ These only evolve "in" their home region, so they can't be reached yet:
 | --- | --- | --- | --- | --- |
 | Diggersby | Morning | grass/cave | 10% | 40 |
 | Bewear | Morning | grass/cave | 10% | 41 |
+| Chatot | Morning | grass/cave | 10% | 36 |
 | Bouffalant | Day | grass/cave | 10% | 40 |
 | Sawsbuck Spring | Day | grass/cave | 10% | 41 |
+| Lechonk | Day | grass/cave | 10% | 36 |
 | Komala | Evening | grass/cave | 10% | 40 |
+| Furfrou | Evening | grass/cave | 10% | 41 |
+| Lickitung | Evening | grass/cave | 10% | 36 |
 | Dhelmise | Night | grass/cave | 10% | 40 |
 | Zoroark Hisui | Night | grass/cave | 10% | 41 |
+| Stoutland | Night | grass/cave | 10% | 36 |
 
 ### DewfordTown
 
@@ -129,10 +167,14 @@ These only evolve "in" their home region, so they can't be reached yet:
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
 | Ekans | Morning | grass/cave | 10% | 16 |
+| Croagunk | Morning | grass/cave | 5% | 16 |
+| Darumaka | Day | grass/cave | 10% | 16 |
 | Fennekin | Day | grass/cave | 5% | 16 |
 | Fuecoco | Day | grass/cave | 5% | 16 |
 | Nidoran F | Evening | grass/cave | 10% | 16 |
+| Silicobra | Evening | grass/cave | 5% | 16 |
 | Nidoran M | Night | grass/cave | 10% | 16 |
+| Cubone | Night | grass/cave | 5% | 16 |
 
 ### GraniteCave_1F
 
@@ -154,44 +196,64 @@ These only evolve "in" their home region, so they can't be reached yet:
 | --- | --- | --- | --- | --- |
 | Clobbopus | Morning | grass/cave | 10% | 9 |
 | Glimmet | Morning | grass/cave | 10% | 11 |
+| Diglett | Morning | grass/cave | 10% | 10 |
 | Tyrogue | Day | grass/cave | 10% | 9 |
 | Geodude Alola | Day | grass/cave | 10% | 11 |
+| Hippopotas | Day | grass/cave | 10% | 10 |
 | Mankey | Evening | grass/cave | 10% | 9 |
 | Togepi | Evening | grass/cave | 10% | 11 |
+| Varoom | Evening | grass/cave | 10% | 10 |
 | Sinistea Phony | Night | grass/cave | 10% | 9 |
 | Maschiff | Night | grass/cave | 10% | 11 |
+| Zorua | Night | grass/cave | 10% | 10 |
 
 ### GraniteCave_B2F
 
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
 | Timburr | Morning | grass/cave | 10% | 10 |
+| Mienfoo | Morning | grass/cave | 10% | 11 |
+| Drilbur | Morning | grass/cave | 10% | 12 |
 | Klink | Day | grass/cave | 10% | 10 |
+| Pancham | Day | grass/cave | 10% | 11 |
+| Toedscool | Day | grass/cave | 10% | 12 |
 | Silicobra | Evening | grass/cave | 10% | 10 |
+| Diglett Alola | Evening | grass/cave | 10% | 11 |
 | Lunatone | Evening | grass/cave | 10% | 12 |
 | Yamask | Night | grass/cave | 10% | 10 |
 | Zorua | Night | grass/cave | 10% | 11 |
+| Nickit | Night | grass/cave | 10% | 12 |
 
 ### GraniteCave_StevensRoom
 
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
 | Cubone | Morning | grass/cave | 10% | 7 |
+| Clobbopus | Morning | grass/cave | 10% | 8 |
 | Diglett | Day | grass/cave | 10% | 7 |
+| Mankey | Day | grass/cave | 10% | 8 |
 | Hippopotas | Evening | grass/cave | 10% | 7 |
+| Tyrogue | Evening | grass/cave | 10% | 8 |
+| Bronzor | Evening | grass/cave | 10% | 9 |
 | Pumpkaboo Average | Night | grass/cave | 10% | 7 |
 | Purrloin | Night | grass/cave | 10% | 8 |
+| Meowth Alola | Night | grass/cave | 10% | 9 |
 
 ### JaggedPass
 
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
 | Farfetchd Galar | Morning | grass/cave | 20% | 21 |
+| Crabrawler | Morning | grass/cave | 10% | 20 |
+| Growlithe Hisui | Morning | grass/cave | 10% | 20 |
 | Ponyta | Day | grass/cave | 20% | 21 |
 | Torracat | Day | grass/cave | 5% | 21 |
+| Crocalor | Day | grass/cave | 5% | 22 |
 | Mienfoo | Evening | grass/cave | 20% | 21 |
+| Timburr | Evening | grass/cave | 10% | 20 |
 | Pancham | Night | grass/cave | 20% | 21 |
 | Golett | Night | grass/cave | 10% | 20 |
+| Yamask Galar | Night | grass/cave | 10% | 20 |
 
 ### LilycoveCity
 
@@ -207,11 +269,15 @@ These only evolve "in" their home region, so they can't be reached yet:
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
 | Clodsire | Morning | grass/cave | 10% | 28 |
+| Magby | Morning | grass/cave | 10% | 30 |
 | Ponyta | Day | grass/cave | 10% | 28 |
 | Oricorio Baile | Day | grass/cave | 10% | 30 |
+| Torracat | Day | grass/cave | 5% | 30 |
+| Charcadet | Evening | grass/cave | 10% | 28 |
 | Orthworm | Evening | grass/cave | 10% | 30 |
 | Grimer Alola | Night | grass/cave | 10% | 28 |
 | Stunky | Night | grass/cave | 10% | 30 |
+| Golett | Night | grass/cave | 10% | 29 |
 
 ### MagmaHideout_2F_1R
 
@@ -221,82 +287,114 @@ These only evolve "in" their home region, so they can't be reached yet:
 | Clodsire | Morning | grass/cave | 10% | 30 |
 | Litleo | Day | grass/cave | 10% | 28 |
 | Oricorio Baile | Day | grass/cave | 10% | 30 |
+| Ponyta | Day | grass/cave | 10% | 29 |
 | Charcadet | Evening | grass/cave | 10% | 28 |
+| Orthworm | Evening | grass/cave | 10% | 30 |
 | Stunky | Night | grass/cave | 10% | 28 |
 | Grimer Alola | Night | grass/cave | 10% | 30 |
+| Sandile | Night | grass/cave | 10% | 29 |
 
 ### MagmaHideout_2F_2R
 
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
+| Clodsire | Morning | grass/cave | 10% | 28 |
 | Stunfisk | Morning | grass/cave | 10% | 30 |
+| Turtonator | Morning | grass/cave | 4% | 31 |
 | Sizzlipede | Day | grass/cave | 10% | 28 |
+| Oricorio Baile | Day | grass/cave | 10% | 30 |
 | Pignite | Day | grass/cave | 5% | 30 |
+| Arbok | Evening | grass/cave | 10% | 28 |
 | Klefki | Evening | grass/cave | 10% | 30 |
 | Golett | Night | grass/cave | 10% | 28 |
 | Yamask Galar | Night | grass/cave | 10% | 30 |
+| Grimer Alola | Night | grass/cave | 10% | 29 |
 
 ### MagmaHideout_2F_3R
 
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
 | Croagunk | Morning | grass/cave | 10% | 28 |
+| Fletchinder | Morning | grass/cave | 10% | 30 |
 | Magby | Day | grass/cave | 10% | 28 |
+| Braixen | Day | grass/cave | 5% | 30 |
 | Heatmor | Day | grass/cave | 4% | 31 |
 | Drilbur | Evening | grass/cave | 10% | 28 |
+| Litleo | Evening | grass/cave | 10% | 30 |
 | Varoom | Night | grass/cave | 10% | 28 |
+| Mudbray | Night | grass/cave | 10% | 30 |
 
 ### MagmaHideout_3F_1R
 
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
 | Stunfisk Galar | Morning | grass/cave | 10% | 30 |
+| Stunfisk | Morning | grass/cave | 10% | 29 |
 | Salandit | Day | grass/cave | 10% | 28 |
+| Growlithe | Day | grass/cave | 10% | 30 |
 | Monferno | Day | grass/cave | 5% | 30 |
 | Trubbish | Evening | grass/cave | 10% | 28 |
+| Klefki | Evening | grass/cave | 10% | 30 |
 | Yamask Galar | Night | grass/cave | 10% | 28 |
 | Sandile | Night | grass/cave | 10% | 30 |
+| Stunky | Night | grass/cave | 10% | 29 |
 
 ### MagmaHideout_3F_2R
 
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
 | Arbok | Morning | grass/cave | 10% | 28 |
+| Sizzlipede | Morning | grass/cave | 10% | 30 |
 | Skorupi | Day | grass/cave | 10% | 28 |
+| Pansear | Day | grass/cave | 10% | 30 |
 | Braixen | Day | grass/cave | 5% | 30 |
 | Nidorina | Evening | grass/cave | 10% | 28 |
+| Nidorino | Evening | grass/cave | 10% | 30 |
 | Sandile | Night | grass/cave | 10% | 28 |
+| Trubbish | Night | grass/cave | 10% | 30 |
 
 ### MagmaHideout_3F_3R
 
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
 | Mudbray | Morning | grass/cave | 10% | 28 |
+| Klink | Morning | grass/cave | 10% | 30 |
 | Growlithe Hisui | Day | grass/cave | 10% | 28 |
 | Growlithe | Day | grass/cave | 10% | 30 |
+| Pignite | Day | grass/cave | 5% | 30 |
 | Fletchinder | Evening | grass/cave | 10% | 28 |
+| Cufant | Evening | grass/cave | 10% | 30 |
 | Shroodle | Night | grass/cave | 10% | 28 |
+| Meowth Galar | Night | grass/cave | 10% | 30 |
 
 ### MagmaHideout_4F
 
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
 | Nidorino | Morning | grass/cave | 10% | 28 |
+| Nidorina | Morning | grass/cave | 10% | 30 |
 | Fletchinder | Day | grass/cave | 10% | 28 |
 | Darumaka | Day | grass/cave | 10% | 30 |
+| Monferno | Day | grass/cave | 5% | 30 |
 | Sizzlipede | Evening | grass/cave | 10% | 28 |
+| Stunfisk Galar | Evening | grass/cave | 10% | 30 |
 | Litleo | Night | grass/cave | 10% | 28 |
+| Salandit | Night | grass/cave | 10% | 30 |
 
 ### MeteorFalls_1F_1R
 
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
+| Seel | Morning | fishing | 40% | 30 |
 | Axew | Morning | grass/cave | 20% | 17 |
 | Binacle | Morning | surfing | 30% | 30 |
+| Araquanid | Day | fishing | 40% | 30 |
 | Applin | Day | grass/cave | 20% | 17 |
 | Kabuto | Day | surfing | 30% | 30 |
+| Bibarel | Evening | fishing | 40% | 30 |
 | Gothita | Evening | grass/cave | 20% | 17 |
 | Skrelp | Evening | surfing | 30% | 30 |
+| Mantyke | Night | fishing | 40% | 30 |
 | Inkay | Night | grass/cave | 20% | 17 |
 | Mareanie | Night | surfing | 30% | 30 |
 
@@ -304,11 +402,16 @@ These only evolve "in" their home region, so they can't be reached yet:
 
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
+| Shellos West | Morning | fishing | 40% | 30 |
 | Arctovish | Morning | grass/cave | 20% | 35 |
 | Binacle | Morning | surfing | 30% | 30 |
+| Ducklett | Day | fishing | 40% | 30 |
 | Dracovish | Day | grass/cave | 20% | 35 |
 | Kabuto | Day | surfing | 30% | 30 |
+| Qwilfish | Evening | fishing | 40% | 30 |
 | Carbink | Evening | grass/cave | 20% | 35 |
+| Oranguru | Evening | grass/cave | 10% | 33 |
+| Palpitoad | Night | fishing | 40% | 30 |
 | Munna | Night | grass/cave | 20% | 35 |
 | Omanyte | Night | surfing | 30% | 30 |
 
@@ -316,11 +419,16 @@ These only evolve "in" their home region, so they can't be reached yet:
 
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
+| Tirtouga | Morning | fishing | 40% | 30 |
 | Dracozolt | Morning | grass/cave | 20% | 35 |
 | Omanyte | Morning | surfing | 30% | 30 |
 | Turtonator | Day | grass/cave | 20% | 35 |
 | Dragonair | Day | grass/cave | 5% | 35 |
+| Mareanie | Day | surfing | 30% | 30 |
 | Hattrem | Evening | grass/cave | 20% | 35 |
+| Indeedee M | Evening | grass/cave | 10% | 33 |
+| Binacle | Evening | surfing | 30% | 30 |
+| Frillish | Night | fishing | 40% | 30 |
 | Duosion | Night | grass/cave | 20% | 35 |
 | Goomy | Night | grass/cave | 5% | 35 |
 
@@ -330,11 +438,15 @@ These only evolve "in" their home region, so they can't be reached yet:
 | --- | --- | --- | --- | --- |
 | Qwilfish | Morning | fishing | 40% | 30 |
 | Druddigon | Morning | grass/cave | 20% | 35 |
+| Skrelp | Morning | surfing | 30% | 30 |
+| Finizen | Day | fishing | 40% | 30 |
 | Cyclizar | Day | grass/cave | 20% | 35 |
 | Carkol | Day | grass/cave | 10% | 35 |
 | Sigilyph | Evening | grass/cave | 20% | 35 |
 | Hattrem | Evening | grass/cave | 10% | 35 |
+| Gothorita | Evening | grass/cave | 10% | 37 |
 | Axew | Night | grass/cave | 20% | 35 |
+| Malamar | Night | grass/cave | 10% | 35 |
 | Dreepy | Night | grass/cave | 5% | 25 |
 
 ### MeteorFalls_StevensCave
@@ -344,7 +456,9 @@ These only evolve "in" their home region, so they can't be reached yet:
 | Druddigon | Morning | grass/cave | 20% | 35 |
 | Sigilyph | Day | grass/cave | 20% | 35 |
 | Munna | Evening | grass/cave | 20% | 35 |
+| Unown | Evening | grass/cave | 10% | 33 |
 | Cyclizar | Night | grass/cave | 20% | 35 |
+| Dreepy | Night | grass/cave | 5% | 35 |
 
 ### MirageTower_1F
 
@@ -352,58 +466,82 @@ These only evolve "in" their home region, so they can't be reached yet:
 | --- | --- | --- | --- | --- |
 | Shelmet | Morning | grass/cave | 10% | 20 |
 | Dwebble | Morning | grass/cave | 10% | 20 |
+| Sewaddle | Morning | grass/cave | 10% | 20 |
 | Kricketune | Day | grass/cave | 10% | 20 |
 | Karrablast | Day | grass/cave | 10% | 20 |
 | Larvesta | Day | grass/cave | 10% | 20 |
 | Spidops | Evening | grass/cave | 10% | 20 |
+| Burmy Plant | Evening | grass/cave | 10% | 20 |
+| Combee | Evening | grass/cave | 10% | 20 |
 | Sandygast | Night | grass/cave | 10% | 20 |
 | Phantump | Night | grass/cave | 10% | 20 |
+| Vivillon | Night | grass/cave | 10% | 20 |
 
 ### MirageTower_2F
 
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
 | Yanma | Morning | grass/cave | 10% | 20 |
+| Spidops | Morning | grass/cave | 10% | 20 |
+| Butterfree | Morning | grass/cave | 10% | 20 |
 | Karrablast | Day | grass/cave | 10% | 20 |
 | Kricketune | Day | grass/cave | 10% | 20 |
 | Venipede | Day | grass/cave | 10% | 20 |
 | Grubbin | Evening | grass/cave | 10% | 20 |
+| Shelmet | Evening | grass/cave | 10% | 20 |
+| Cutiefly | Evening | grass/cave | 10% | 20 |
 | Joltik | Night | grass/cave | 10% | 20 |
 | Litwick | Night | grass/cave | 10% | 20 |
+| Larvesta | Night | grass/cave | 10% | 20 |
 
 ### MirageTower_3F
 
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
 | Paras | Morning | grass/cave | 10% | 20 |
+| Kricketune | Morning | grass/cave | 10% | 20 |
+| Venipede | Morning | grass/cave | 10% | 20 |
 | Burmy Plant | Day | grass/cave | 10% | 20 |
 | Rellor | Day | grass/cave | 10% | 20 |
 | Venonat | Day | grass/cave | 10% | 20 |
 | Sewaddle | Evening | grass/cave | 10% | 20 |
+| Karrablast | Evening | grass/cave | 10% | 20 |
+| Dottler | Evening | grass/cave | 10% | 20 |
 | Vivillon | Night | grass/cave | 10% | 20 |
 | Sandygast | Night | grass/cave | 10% | 20 |
+| Phantump | Night | grass/cave | 10% | 20 |
 
 ### MirageTower_4F
 
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
 | Butterfree | Morning | grass/cave | 10% | 20 |
+| Grubbin | Morning | grass/cave | 10% | 20 |
+| Venonat | Morning | grass/cave | 10% | 20 |
 | Rellor | Day | grass/cave | 10% | 20 |
 | Burmy Plant | Day | grass/cave | 10% | 20 |
 | Dottler | Day | grass/cave | 10% | 20 |
 | Combee | Evening | grass/cave | 10% | 20 |
+| Joltik | Evening | grass/cave | 10% | 20 |
+| Dwebble | Evening | grass/cave | 10% | 20 |
 | Cutiefly | Night | grass/cave | 10% | 20 |
+| Yanma | Night | grass/cave | 10% | 20 |
+| Pumpkaboo Average | Night | grass/cave | 10% | 20 |
 
 ### MtPyre_1F
 
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
 | Solosis | Morning | grass/cave | 20% | 28 |
+| Togepi | Morning | grass/cave | 10% | 25 |
 | Mime Jr | Day | grass/cave | 20% | 28 |
+| Exeggcute | Day | grass/cave | 10% | 25 |
 | Ponyta Galar | Evening | grass/cave | 20% | 28 |
 | Flittle | Evening | grass/cave | 10% | 25 |
+| Munna | Evening | grass/cave | 10% | 29 |
 | Misdreavus | Night | grass/cave | 20% | 28 |
 | Corsola Galar | Night | grass/cave | 10% | 25 |
+| Maschiff | Night | grass/cave | 10% | 29 |
 
 ### MtPyre_2F
 
@@ -413,7 +551,9 @@ These only evolve "in" their home region, so they can't be reached yet:
 | Exeggcute | Day | grass/cave | 20% | 28 |
 | Espurr | Evening | grass/cave | 20% | 28 |
 | Drowzee | Evening | grass/cave | 10% | 25 |
+| Flittle | Evening | grass/cave | 10% | 29 |
 | Corsola Galar | Night | grass/cave | 20% | 28 |
+| Misdreavus | Night | grass/cave | 10% | 25 |
 | Thievul | Night | grass/cave | 10% | 29 |
 
 ### MtPyre_3F
@@ -424,8 +564,10 @@ These only evolve "in" their home region, so they can't be reached yet:
 | Dottler | Day | grass/cave | 20% | 28 |
 | Elgyem | Evening | grass/cave | 20% | 28 |
 | Mime Jr | Evening | grass/cave | 10% | 25 |
+| Slowpoke Galar | Evening | grass/cave | 10% | 29 |
 | Maschiff | Night | grass/cave | 20% | 28 |
 | Gimmighoul Chest | Night | grass/cave | 10% | 25 |
+| Corsola Galar | Night | grass/cave | 10% | 29 |
 
 ### MtPyre_4F
 
@@ -435,8 +577,10 @@ These only evolve "in" their home region, so they can't be reached yet:
 | Espurr | Day | grass/cave | 20% | 28 |
 | Unown | Evening | grass/cave | 20% | 28 |
 | Woobat | Evening | grass/cave | 10% | 25 |
+| Solosis | Evening | grass/cave | 10% | 29 |
 | Zorua | Night | grass/cave | 20% | 28 |
 | Greavard | Night | grass/cave | 10% | 25 |
+| Gimmighoul Chest | Night | grass/cave | 10% | 29 |
 
 ### MtPyre_5F
 
@@ -445,8 +589,11 @@ These only evolve "in" their home region, so they can't be reached yet:
 | Elgyem | Morning | grass/cave | 20% | 28 |
 | Unown | Day | grass/cave | 20% | 28 |
 | Slowpoke Galar | Evening | grass/cave | 20% | 28 |
+| Ponyta Galar | Evening | grass/cave | 10% | 25 |
+| Hatenna | Evening | grass/cave | 10% | 29 |
 | Gimmighoul Chest | Night | grass/cave | 20% | 28 |
 | Yamask | Night | grass/cave | 10% | 25 |
+| Greavard | Night | grass/cave | 10% | 29 |
 
 ### MtPyre_6F
 
@@ -455,8 +602,11 @@ These only evolve "in" their home region, so they can't be reached yet:
 | Slowpoke Galar | Morning | grass/cave | 20% | 28 |
 | Gothita | Day | grass/cave | 20% | 28 |
 | Drowzee | Evening | grass/cave | 20% | 28 |
+| Espurr | Evening | grass/cave | 10% | 25 |
+| Mime Jr | Evening | grass/cave | 10% | 29 |
 | Greavard | Night | grass/cave | 20% | 28 |
 | Sinistea Phony | Night | grass/cave | 10% | 25 |
+| Yamask | Night | grass/cave | 10% | 29 |
 
 ### MtPyre_Exterior
 
@@ -464,23 +614,29 @@ These only evolve "in" their home region, so they can't be reached yet:
 | --- | --- | --- | --- | --- |
 | Fidough | Morning | grass/cave | 20% | 27 |
 | Dolliv | Morning | grass/cave | 10% | 29 |
+| Skiploom | Morning | grass/cave | 10% | 27 |
 | Carnivine | Day | grass/cave | 20% | 27 |
 | Budew | Day | grass/cave | 10% | 29 |
 | Maractus | Day | grass/cave | 10% | 27 |
 | Spritzee | Evening | grass/cave | 20% | 27 |
 | Floette | Evening | grass/cave | 10% | 29 |
+| Swirlix | Evening | grass/cave | 10% | 27 |
 | Cleffa | Night | grass/cave | 20% | 27 |
 | Weepinbell | Night | grass/cave | 10% | 29 |
+| Shiinotic | Night | grass/cave | 10% | 27 |
 
 ### MtPyre_Summit
 
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
 | Floette | Morning | grass/cave | 20% | 29 |
+| Noibat | Morning | grass/cave | 10% | 26 |
 | Milcery | Day | grass/cave | 20% | 29 |
 | Swirlix | Evening | grass/cave | 20% | 29 |
 | Tinkatink | Evening | grass/cave | 10% | 26 |
+| Dachsbun | Evening | grass/cave | 10% | 30 |
 | Corvisquire | Night | grass/cave | 20% | 29 |
+| Sinistea Phony | Night | grass/cave | 10% | 26 |
 | Mimikyu Disguised | Night | grass/cave | 10% | 30 |
 
 ### NewMauville_Entrance
@@ -489,8 +645,13 @@ These only evolve "in" their home region, so they can't be reached yet:
 | --- | --- | --- | --- | --- |
 | Elekid | Morning | grass/cave | 10% | 25 |
 | Toxel | Morning | grass/cave | 10% | 25 |
+| Helioptile | Morning | grass/cave | 10% | 23 |
 | Yamper | Day | grass/cave | 10% | 25 |
+| Pincurchin | Day | grass/cave | 10% | 25 |
+| Voltorb Hisui | Day | grass/cave | 10% | 23 |
 | Luxio | Evening | grass/cave | 10% | 25 |
+| Pachirisu | Evening | grass/cave | 10% | 25 |
+| Togedemaru | Evening | grass/cave | 10% | 23 |
 | Honedge | Night | grass/cave | 10% | 25 |
 | Morpeko Full Belly | Night | grass/cave | 10% | 25 |
 
@@ -500,20 +661,28 @@ These only evolve "in" their home region, so they can't be reached yet:
 | --- | --- | --- | --- | --- |
 | Toxel | Morning | grass/cave | 10% | 25 |
 | Helioptile | Morning | grass/cave | 10% | 25 |
+| Wattrel | Morning | grass/cave | 10% | 23 |
 | Pincurchin | Day | grass/cave | 10% | 25 |
 | Voltorb Hisui | Day | grass/cave | 10% | 25 |
+| Emolga | Day | grass/cave | 10% | 23 |
 | Pachirisu | Evening | grass/cave | 10% | 25 |
 | Togedemaru | Evening | grass/cave | 10% | 25 |
+| Dedenne | Evening | grass/cave | 10% | 23 |
 | Morpeko Full Belly | Night | grass/cave | 10% | 25 |
 | Rotom | Night | grass/cave | 10% | 25 |
+| Pawmo | Night | grass/cave | 10% | 23 |
 
 ### PetalburgCity
 
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
+| Cramorant | Morning | fishing | 40% | 30 |
 | Buizel | Morning | surfing | 30% | 10 |
+| Tatsugiri Curly | Day | fishing | 40% | 30 |
 | Surskit | Day | surfing | 30% | 10 |
+| Bruxish | Evening | fishing | 40% | 30 |
 | Arrokuda | Evening | surfing | 30% | 10 |
+| Pyukumuku | Night | fishing | 40% | 30 |
 | Chewtle | Night | surfing | 30% | 10 |
 
 ### PetalburgWoods
@@ -521,9 +690,11 @@ These only evolve "in" their home region, so they can't be reached yet:
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
 | Skwovet | Morning | grass/cave | 10% | 6 |
+| Grookey | Morning | grass/cave | 5% | 6 |
 | Capsakid | Day | grass/cave | 10% | 6 |
 | Chespin | Day | grass/cave | 5% | 6 |
 | Tandemaus | Evening | grass/cave | 10% | 6 |
+| Snivy | Evening | grass/cave | 5% | 6 |
 | Yungoos | Night | grass/cave | 10% | 6 |
 | Poltchageist Counterfeit | Night | grass/cave | 5% | 6 |
 
@@ -546,10 +717,14 @@ These only evolve "in" their home region, so they can't be reached yet:
 | --- | --- | --- | --- | --- |
 | Dondozo | Morning | fishing | 1% | 40 |
 | Tynamo | Morning | grass/cave | 10% | 4 |
+| Blitzle | Morning | grass/cave | 10% | 4 |
+| Lapras | Day | fishing | 40% | 30 |
 | Tarountula | Day | grass/cave | 10% | 4 |
 | Snivy | Day | grass/cave | 5% | 3 |
+| Veluza | Evening | fishing | 40% | 30 |
 | Mankey | Evening | grass/cave | 10% | 4 |
 | Tadbulb | Evening | grass/cave | 10% | 4 |
+| Clauncher | Night | fishing | 40% | 30 |
 | Timburr | Night | grass/cave | 10% | 4 |
 | Poltchageist Counterfeit | Night | grass/cave | 10% | 4 |
 
@@ -570,12 +745,16 @@ These only evolve "in" their home region, so they can't be reached yet:
 
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
+| Finneon | Morning | fishing | 40% | 30 |
 | Tyrogue | Morning | grass/cave | 10% | 4 |
 | Capsakid | Morning | grass/cave | 10% | 5 |
+| Wimpod | Day | fishing | 40% | 30 |
 | Joltik | Day | grass/cave | 10% | 4 |
 | Turtwig | Day | grass/cave | 5% | 5 |
+| Krabby | Evening | fishing | 40% | 30 |
 | Cleffa | Evening | grass/cave | 10% | 4 |
 | Trubbish | Evening | grass/cave | 10% | 5 |
+| Wishiwashi Solo | Night | fishing | 40% | 30 |
 | Sentret | Night | grass/cave | 10% | 4 |
 | Zorua Hisui | Night | grass/cave | 10% | 5 |
 
@@ -631,26 +810,34 @@ These only evolve "in" their home region, so they can't be reached yet:
 | --- | --- | --- | --- | --- |
 | Bibarel | Morning | fishing | 40% | 30 |
 | Rufflet | Morning | grass/cave | 10% | 13 |
+| Farfetchd | Morning | grass/cave | 5% | 13 |
 | Voltorb Hisui | Day | grass/cave | 10% | 13 |
 | Grookey | Day | grass/cave | 5% | 13 |
 | Turtwig | Day | grass/cave | 5% | 13 |
 | Shellos West | Evening | fishing | 40% | 30 |
 | Eevee | Evening | grass/cave | 10% | 13 |
+| Pidove | Evening | grass/cave | 5% | 13 |
 | Glameow | Night | grass/cave | 10% | 13 |
 | Deino | Night | grass/cave | 5% | 13 |
+| Spearow | Night | grass/cave | 5% | 13 |
 
 ### Route111
 
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
 | Chatot | Morning | grass/cave | 10% | 21 |
+| Dunsparce | Morning | grass/cave | 10% | 21 |
 | Cubone | Morning | Rock Smash | 30% | 5 |
 | Grubbin | Day | grass/cave | 10% | 21 |
+| Rellor | Day | grass/cave | 10% | 21 |
 | Monferno | Day | grass/cave | 5% | 19 |
 | Bronzor | Day | Rock Smash | 30% | 5 |
 | Happiny | Evening | grass/cave | 10% | 21 |
+| Munchlax | Evening | grass/cave | 10% | 21 |
 | Diglett | Evening | Rock Smash | 30% | 5 |
 | Lechonk | Night | grass/cave | 10% | 21 |
+| Squawkabilly Green | Night | grass/cave | 10% | 21 |
+| Zorua Hisui | Night | grass/cave | 10% | 21 |
 | Hippopotas | Night | Rock Smash | 30% | 5 |
 
 ### Route112
@@ -659,13 +846,16 @@ These only evolve "in" their home region, so they can't be reached yet:
 | --- | --- | --- | --- | --- |
 | Gossifleur | Morning | grass/cave | 20% | 15 |
 | Cottonee | Morning | grass/cave | 10% | 14 |
+| Petilil | Morning | grass/cave | 10% | 14 |
 | Skiddo | Day | grass/cave | 20% | 15 |
 | Morelull | Day | grass/cave | 10% | 14 |
 | Pansage | Day | grass/cave | 10% | 14 |
 | Munchlax | Evening | grass/cave | 20% | 15 |
 | Fomantis | Evening | grass/cave | 10% | 14 |
+| Cherubi | Evening | grass/cave | 10% | 14 |
 | Darumaka | Night | grass/cave | 20% | 15 |
 | Bounsweet | Night | grass/cave | 10% | 14 |
+| Capsakid | Night | grass/cave | 10% | 14 |
 
 ### Route113
 
@@ -673,26 +863,33 @@ These only evolve "in" their home region, so they can't be reached yet:
 | --- | --- | --- | --- | --- |
 | Growlithe | Morning | grass/cave | 20% | 15 |
 | Wooloo | Morning | grass/cave | 10% | 14 |
+| Eevee | Morning | grass/cave | 10% | 14 |
 | Charcadet | Day | grass/cave | 20% | 15 |
 | Growlithe Hisui | Day | grass/cave | 10% | 14 |
 | Tepig | Day | grass/cave | 5% | 16 |
 | Magby | Evening | grass/cave | 20% | 15 |
 | Sentret | Evening | grass/cave | 10% | 14 |
+| Tandemaus | Evening | grass/cave | 10% | 14 |
 | Pansear | Night | grass/cave | 20% | 15 |
 | Happiny | Night | grass/cave | 10% | 14 |
+| Glameow | Night | grass/cave | 10% | 14 |
 
 ### Route114
 
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
+| Tangela | Morning | grass/cave | 10% | 17 |
 | Dratini | Morning | grass/cave | 5% | 16 |
 | Silicobra | Morning | Rock Smash | 30% | 5 |
 | Hoppip | Day | grass/cave | 10% | 17 |
 | Skiddo | Day | grass/cave | 10% | 15 |
 | Goomy | Day | grass/cave | 5% | 16 |
 | Cufant | Day | Rock Smash | 30% | 5 |
+| Bounsweet | Evening | grass/cave | 10% | 17 |
 | Jangmo O | Evening | grass/cave | 5% | 16 |
 | Drilbur | Evening | Rock Smash | 30% | 5 |
+| Cottonee | Night | grass/cave | 10% | 17 |
+| Poltchageist Counterfeit | Night | grass/cave | 10% | 15 |
 | Frigibax | Night | grass/cave | 5% | 16 |
 | Varoom | Night | Rock Smash | 30% | 5 |
 
@@ -702,22 +899,27 @@ These only evolve "in" their home region, so they can't be reached yet:
 | --- | --- | --- | --- | --- |
 | Togedemaru | Morning | grass/cave | 10% | 25 |
 | Squawkabilly Green | Morning | grass/cave | 10% | 24 |
+| Skiddo | Morning | grass/cave | 10% | 25 |
 | Cherubi | Day | grass/cave | 10% | 25 |
 | Paras | Day | grass/cave | 10% | 24 |
 | Tangela | Day | grass/cave | 10% | 25 |
 | Helioptile | Evening | grass/cave | 10% | 25 |
 | Dedenne | Evening | grass/cave | 10% | 24 |
+| Tadbulb | Evening | grass/cave | 10% | 25 |
 | Rotom | Night | grass/cave | 10% | 25 |
 | Chatot | Night | grass/cave | 10% | 24 |
+| Fomantis | Night | grass/cave | 10% | 25 |
 
 ### Route116
 
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
 | Lickitung | Morning | grass/cave | 10% | 7 |
+| Yamper | Morning | grass/cave | 5% | 7 |
 | Pansage | Day | grass/cave | 10% | 7 |
 | Snivy | Day | grass/cave | 5% | 7 |
 | Lillipup | Evening | grass/cave | 10% | 7 |
+| Gossifleur | Evening | grass/cave | 5% | 7 |
 | Minccino | Night | grass/cave | 10% | 7 |
 | Bramblin | Night | grass/cave | 5% | 7 |
 
@@ -727,13 +929,16 @@ These only evolve "in" their home region, so they can't be reached yet:
 | --- | --- | --- | --- | --- |
 | Patrat | Morning | grass/cave | 10% | 14 |
 | Wattrel | Morning | grass/cave | 10% | 14 |
+| Elekid | Morning | grass/cave | 10% | 13 |
 | Bounsweet | Day | grass/cave | 10% | 14 |
 | Spewpa | Day | grass/cave | 10% | 14 |
 | Gossifleur | Day | grass/cave | 10% | 13 |
 | Porygon | Evening | grass/cave | 10% | 14 |
 | Spritzee | Evening | grass/cave | 10% | 14 |
+| Shinx | Evening | grass/cave | 10% | 13 |
 | Rattata | Night | grass/cave | 10% | 14 |
 | Pawmi | Night | grass/cave | 10% | 14 |
+| Tynamo | Night | grass/cave | 10% | 13 |
 
 ### Route118
 
@@ -741,13 +946,16 @@ These only evolve "in" their home region, so they can't be reached yet:
 | --- | --- | --- | --- | --- |
 | Emolga | Morning | grass/cave | 10% | 26 |
 | Farfetchd Galar | Morning | grass/cave | 10% | 26 |
+| Rufflet | Morning | grass/cave | 5% | 25 |
 | Yanma | Day | grass/cave | 10% | 26 |
 | Butterfree | Day | grass/cave | 10% | 26 |
 | Budew | Day | grass/cave | 5% | 25 |
 | Dedenne | Evening | grass/cave | 10% | 26 |
 | Tauros | Evening | grass/cave | 10% | 26 |
+| Staravia | Evening | grass/cave | 5% | 25 |
 | Sneasel Hisui | Night | grass/cave | 10% | 26 |
 | Dunsparce | Night | grass/cave | 10% | 26 |
+| Trumbeak | Night | grass/cave | 5% | 25 |
 
 ### Route119
 
@@ -755,13 +963,16 @@ These only evolve "in" their home region, so they can't be reached yet:
 | --- | --- | --- | --- | --- |
 | Stufful | Morning | grass/cave | 10% | 27 |
 | Zangoose | Morning | grass/cave | 10% | 27 |
+| Pansage | Morning | grass/cave | 10% | 26 |
 | Cottonee | Day | grass/cave | 10% | 27 |
 | Swadloon | Day | grass/cave | 10% | 27 |
 | Carnivine | Day | grass/cave | 10% | 26 |
 | Farfetchd | Evening | grass/cave | 10% | 27 |
 | Shiinotic | Evening | grass/cave | 10% | 27 |
+| Furret | Evening | grass/cave | 10% | 26 |
 | Tranquill | Night | grass/cave | 10% | 27 |
 | Skiploom | Night | grass/cave | 10% | 27 |
+| Paras | Night | grass/cave | 10% | 26 |
 
 ### Route120
 
@@ -769,13 +980,16 @@ These only evolve "in" their home region, so they can't be reached yet:
 | --- | --- | --- | --- | --- |
 | Vanillite | Morning | grass/cave | 10% | 27 |
 | Eevee | Morning | grass/cave | 10% | 26 |
+| Stufful | Morning | grass/cave | 5% | 27 |
 | Vulpix Alola | Day | grass/cave | 10% | 27 |
 | Cutiefly | Day | grass/cave | 10% | 26 |
 | Foongus | Day | grass/cave | 5% | 27 |
 | Delibird | Evening | grass/cave | 10% | 27 |
 | Glameow | Evening | grass/cave | 10% | 26 |
+| Weepinbell | Evening | grass/cave | 5% | 27 |
 | Trumbeak | Night | grass/cave | 10% | 27 |
 | Skwovet | Night | grass/cave | 10% | 26 |
+| Rotom | Night | grass/cave | 5% | 27 |
 
 ### Route121
 
@@ -783,13 +997,16 @@ These only evolve "in" their home region, so they can't be reached yet:
 | --- | --- | --- | --- | --- |
 | Fearow | Morning | grass/cave | 10% | 28 |
 | Tandemaus | Morning | grass/cave | 10% | 28 |
+| Foongus | Morning | grass/cave | 5% | 28 |
 | Fomantis | Day | grass/cave | 10% | 28 |
 | Dolliv | Day | grass/cave | 10% | 28 |
 | Ferroseed | Day | grass/cave | 5% | 28 |
 | Staravia | Evening | grass/cave | 10% | 28 |
 | Yungoos | Evening | grass/cave | 10% | 28 |
+| Budew | Evening | grass/cave | 5% | 28 |
 | Drifloon | Night | grass/cave | 10% | 28 |
 | Misdreavus | Night | grass/cave | 10% | 28 |
+| Deino | Night | grass/cave | 5% | 28 |
 
 ### Route122
 
@@ -798,6 +1015,7 @@ These only evolve "in" their home region, so they can't be reached yet:
 | Dondozo | Morning | fishing | 1% | 40 |
 | Arctovish | Day | fishing | 4% | 35 |
 | Dracovish | Evening | fishing | 4% | 35 |
+| Tauros Paldea Aqua | Night | fishing | 4% | 35 |
 
 ### Route123
 
@@ -805,12 +1023,16 @@ These only evolve "in" their home region, so they can't be reached yet:
 | --- | --- | --- | --- | --- |
 | Sawk | Morning | grass/cave | 10% | 28 |
 | Watchog | Morning | grass/cave | 10% | 28 |
+| Diggersby | Morning | grass/cave | 5% | 28 |
 | Throh | Day | grass/cave | 10% | 28 |
 | Weepinbell | Day | grass/cave | 10% | 28 |
+| Maractus | Day | grass/cave | 5% | 28 |
 | Shroodle | Evening | grass/cave | 10% | 28 |
 | Porygon | Evening | grass/cave | 10% | 28 |
+| Ferroseed | Evening | grass/cave | 5% | 28 |
 | Croagunk | Night | grass/cave | 10% | 28 |
 | Raticate | Night | grass/cave | 10% | 28 |
+| Bramblin | Night | grass/cave | 5% | 28 |
 
 ### Route124
 
@@ -825,7 +1047,25 @@ These only evolve "in" their home region, so they can't be reached yet:
 
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
+| Dondozo | Morning | fishing | 1% | 40 |
+| Arctovish | Day | fishing | 4% | 35 |
 | Primarina | Evening | fishing | 1% | 40 |
+| Dracovish | Night | fishing | 4% | 35 |
+
+### Route126
+
+| Pokémon | Time | Where | Rate | Level |
+| --- | --- | --- | --- | --- |
+| Sobble | Morning | surfing | 5% | 15 |
+| Oshawott | Day | surfing | 5% | 15 |
+| Primarina | Evening | fishing | 1% | 40 |
+| Quaxly | Night | surfing | 5% | 15 |
+
+### Route127
+
+| Pokémon | Time | Where | Rate | Level |
+| --- | --- | --- | --- | --- |
+| Piplup | Morning | surfing | 5% | 15 |
 
 ### Route130
 
@@ -833,10 +1073,12 @@ These only evolve "in" their home region, so they can't be reached yet:
 | --- | --- | --- | --- | --- |
 | Arctozolt | Morning | grass/cave | 20% | 35 |
 | Throh | Morning | grass/cave | 10% | 40 |
+| Sawk | Morning | grass/cave | 10% | 45 |
 | Passimian | Day | grass/cave | 20% | 35 |
 | Larvesta | Day | grass/cave | 10% | 25 |
 | Durant | Day | grass/cave | 10% | 40 |
 | Tauros Paldea Combat | Evening | grass/cave | 20% | 35 |
+| Spritzee | Evening | grass/cave | 10% | 25 |
 | Comfey | Evening | grass/cave | 10% | 40 |
 | Bouffalant | Night | grass/cave | 20% | 35 |
 | Drapion | Night | grass/cave | 10% | 45 |
@@ -860,11 +1102,14 @@ These only evolve "in" their home region, so they can't be reached yet:
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
 | Falinks | Morning | grass/cave | 10% | 29 |
+| Happiny | Morning | grass/cave | 10% | 29 |
 | Diglett Alola | Morning | Rock Smash | 30% | 5 |
 | Eiscue Ice | Day | grass/cave | 10% | 29 |
 | Whirlipede | Day | grass/cave | 10% | 29 |
+| Dolliv | Day | grass/cave | 5% | 31 |
 | Meowth Galar | Day | Rock Smash | 30% | 5 |
 | Furfrou | Evening | grass/cave | 10% | 29 |
+| Floette | Evening | grass/cave | 10% | 29 |
 | Cufant | Evening | Rock Smash | 30% | 5 |
 | Farfetchd | Night | grass/cave | 10% | 29 |
 | Lokix | Night | grass/cave | 10% | 29 |
@@ -875,13 +1120,17 @@ These only evolve "in" their home region, so they can't be reached yet:
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
 | Drampa | Morning | grass/cave | 10% | 35 |
+| Arctozolt | Morning | grass/cave | 10% | 36 |
 | Meowth Galar | Morning | Rock Smash | 30% | 20 |
 | Durant | Day | grass/cave | 10% | 35 |
 | Cherrim Overcast | Day | grass/cave | 10% | 36 |
 | Toedscool | Day | Rock Smash | 30% | 20 |
 | Toucannon | Evening | grass/cave | 10% | 35 |
+| Milcery | Evening | grass/cave | 10% | 36 |
 | Mudbray | Evening | Rock Smash | 30% | 20 |
+| Dracozolt | Night | grass/cave | 10% | 35 |
 | Incineroar | Night | grass/cave | 1% | 39 |
+| Meowscarada | Night | grass/cave | 1% | 40 |
 | Pawniard | Night | Rock Smash | 30% | 20 |
 
 ### SafariZone_Northwest
@@ -890,12 +1139,16 @@ These only evolve "in" their home region, so they can't be reached yet:
 | --- | --- | --- | --- | --- |
 | Noibat | Morning | grass/cave | 10% | 29 |
 | Tranquill | Morning | grass/cave | 10% | 29 |
+| Drampa | Morning | grass/cave | 5% | 31 |
 | Petilil | Day | grass/cave | 10% | 29 |
 | Venonat | Day | grass/cave | 10% | 29 |
+| Heatmor | Day | grass/cave | 5% | 31 |
 | Sandshrew Alola | Evening | grass/cave | 10% | 29 |
 | Fearow | Evening | grass/cave | 10% | 29 |
+| Toxel | Evening | grass/cave | 5% | 31 |
 | Lokix | Night | grass/cave | 10% | 29 |
 | Staravia | Night | grass/cave | 10% | 29 |
+| Bombirdier | Night | grass/cave | 5% | 31 |
 
 ### SafariZone_South
 
@@ -905,10 +1158,12 @@ These only evolve "in" their home region, so they can't be reached yet:
 | Emolga | Morning | grass/cave | 10% | 27 |
 | Maractus | Day | grass/cave | 20% | 27 |
 | Combee | Day | grass/cave | 10% | 27 |
+| Quilladin | Day | grass/cave | 1% | 27 |
 | Pachirisu | Evening | grass/cave | 20% | 27 |
 | Swirlix | Evening | grass/cave | 10% | 27 |
 | Zangoose | Night | grass/cave | 20% | 27 |
 | Munchlax | Night | grass/cave | 10% | 27 |
+| Lokix | Night | grass/cave | 1% | 27 |
 
 ### SafariZone_Southeast
 
@@ -918,8 +1173,10 @@ These only evolve "in" their home region, so they can't be reached yet:
 | Arctozolt | Morning | grass/cave | 10% | 36 |
 | Heatmor | Day | grass/cave | 10% | 35 |
 | Ferroseed | Day | grass/cave | 10% | 36 |
+| Torterra | Day | grass/cave | 1% | 39 |
 | Drampa | Evening | grass/cave | 10% | 35 |
 | Oranguru | Evening | grass/cave | 10% | 36 |
+| Durant | Night | grass/cave | 10% | 35 |
 | Skeledirge | Night | grass/cave | 1% | 39 |
 | Meowscarada | Night | grass/cave | 1% | 40 |
 
@@ -927,14 +1184,18 @@ These only evolve "in" their home region, so they can't be reached yet:
 
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
+| Panpour | Morning | fishing | 40% | 30 |
 | Elekid | Morning | grass/cave | 20% | 27 |
 | Rufflet | Morning | grass/cave | 10% | 27 |
 | Tangela | Day | grass/cave | 20% | 27 |
 | Foongus | Day | grass/cave | 10% | 27 |
+| Carnivine | Day | grass/cave | 4% | 27 |
 | Tauros | Evening | grass/cave | 20% | 27 |
 | Milcery | Evening | grass/cave | 10% | 27 |
+| Tinkatuff | Evening | grass/cave | 4% | 27 |
 | Cryogonal | Night | grass/cave | 20% | 27 |
 | Sneasel Hisui | Night | grass/cave | 10% | 27 |
+| Morpeko Full Belly | Night | grass/cave | 4% | 27 |
 
 ### SeafloorCavern_Entrance
 
@@ -950,50 +1211,68 @@ These only evolve "in" their home region, so they can't be reached yet:
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
 | Stonjourner | Morning | grass/cave | 20% | 31 |
+| Archen | Morning | grass/cave | 10% | 32 |
 | Klawf | Day | grass/cave | 20% | 31 |
+| Cranidos | Day | grass/cave | 10% | 32 |
 | Minior | Evening | grass/cave | 20% | 31 |
+| Naclstack | Evening | grass/cave | 10% | 32 |
 | Thievul | Night | grass/cave | 20% | 31 |
 | Meowth Alola | Night | grass/cave | 10% | 32 |
+| Liepard | Night | grass/cave | 10% | 33 |
 
 ### SeafloorCavern_Room2
 
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
 | Archen | Morning | grass/cave | 20% | 31 |
+| Stonjourner | Morning | grass/cave | 10% | 32 |
 | Cranidos | Day | grass/cave | 20% | 31 |
+| Klawf | Day | grass/cave | 10% | 32 |
 | Shieldon | Evening | grass/cave | 20% | 31 |
+| Minior | Evening | grass/cave | 10% | 32 |
 | Liepard | Night | grass/cave | 20% | 31 |
 | Murkrow | Night | grass/cave | 10% | 32 |
+| Vullaby | Night | grass/cave | 10% | 33 |
 
 ### SeafloorCavern_Room3
 
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
 | Tyrunt | Morning | grass/cave | 20% | 31 |
+| Rockruff | Morning | grass/cave | 10% | 32 |
 | Amaura | Day | grass/cave | 20% | 31 |
+| Boldore | Day | grass/cave | 10% | 32 |
 | Naclstack | Evening | grass/cave | 20% | 31 |
+| Shieldon | Evening | grass/cave | 10% | 32 |
 | Meowth Alola | Night | grass/cave | 20% | 31 |
 | Vullaby | Night | grass/cave | 10% | 32 |
+| Murkrow | Night | grass/cave | 10% | 33 |
 
 ### SeafloorCavern_Room4
 
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
 | Rockruff | Morning | grass/cave | 20% | 31 |
+| Amaura | Morning | grass/cave | 10% | 32 |
 | Boldore | Day | grass/cave | 20% | 31 |
+| Tyrunt | Day | grass/cave | 10% | 32 |
 | Glimmet | Evening | grass/cave | 20% | 31 |
+| Graveler Alola | Evening | grass/cave | 10% | 32 |
 | Murkrow | Night | grass/cave | 20% | 31 |
 | Sneasel | Night | grass/cave | 10% | 32 |
+| Scraggy | Night | grass/cave | 10% | 33 |
 
 ### SeafloorCavern_Room5
 
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
 | Graveler Alola | Morning | grass/cave | 20% | 31 |
+| Glimmet | Morning | grass/cave | 10% | 32 |
 | Carkol | Day | grass/cave | 20% | 31 |
 | Lunatone | Evening | grass/cave | 20% | 31 |
 | Sneasel | Night | grass/cave | 20% | 31 |
 | Scraggy | Night | grass/cave | 10% | 32 |
+| Qwilfish Hisui | Night | grass/cave | 10% | 33 |
 
 ### SeafloorCavern_Room6
 
@@ -1001,11 +1280,13 @@ These only evolve "in" their home region, so they can't be reached yet:
 | --- | --- | --- | --- | --- |
 | Ducklett | Morning | fishing | 40% | 30 |
 | Archen | Morning | grass/cave | 20% | 31 |
+| Alomomola | Day | fishing | 40% | 30 |
 | Dwebble | Day | grass/cave | 20% | 31 |
 | Qwilfish | Evening | fishing | 40% | 30 |
 | Cranidos | Evening | grass/cave | 20% | 31 |
 | Vullaby | Night | grass/cave | 20% | 31 |
 | Qwilfish Hisui | Night | grass/cave | 10% | 32 |
+| Sneasel | Night | grass/cave | 10% | 33 |
 
 ### SeafloorCavern_Room7
 
@@ -1019,6 +1300,7 @@ These only evolve "in" their home region, so they can't be reached yet:
 | Shieldon | Evening | grass/cave | 20% | 31 |
 | Scraggy | Night | grass/cave | 20% | 31 |
 | Impidimp | Night | grass/cave | 10% | 32 |
+| Linoone Galar | Night | grass/cave | 10% | 33 |
 
 ### SeafloorCavern_Room8
 
@@ -1026,18 +1308,25 @@ These only evolve "in" their home region, so they can't be reached yet:
 | --- | --- | --- | --- | --- |
 | Stonjourner | Morning | grass/cave | 20% | 31 |
 | Klawf | Day | grass/cave | 20% | 31 |
+| Carkol | Day | grass/cave | 10% | 32 |
 | Minior | Evening | grass/cave | 20% | 31 |
+| Lunatone | Evening | grass/cave | 10% | 32 |
 | Qwilfish Hisui | Night | grass/cave | 20% | 31 |
 | Pawniard | Night | grass/cave | 10% | 32 |
+| Impidimp | Night | grass/cave | 10% | 33 |
 
 ### ShoalCave_LowTideEntranceRoom
 
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
 | Sandshrew Alola | Morning | grass/cave | 10% | 28 |
+| Delibird | Morning | grass/cave | 10% | 28 |
+| Basculin Red Striped | Day | fishing | 40% | 30 |
 | Snom | Day | grass/cave | 10% | 28 |
+| Basculin White Striped | Evening | fishing | 40% | 30 |
 | Smoochum | Evening | grass/cave | 10% | 28 |
 | Cramorant | Night | fishing | 40% | 30 |
+| Swinub | Night | grass/cave | 10% | 28 |
 
 ### ShoalCave_LowTideIceRoom
 
@@ -1052,9 +1341,14 @@ These only evolve "in" their home region, so they can't be reached yet:
 
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
+| Kabuto | Morning | fishing | 40% | 30 |
 | Darumaka Galar | Morning | grass/cave | 10% | 28 |
+| Sandshrew Alola | Morning | grass/cave | 10% | 28 |
+| Omanyte | Day | fishing | 40% | 30 |
 | Vanillite | Day | grass/cave | 10% | 28 |
+| Snom | Day | grass/cave | 10% | 28 |
 | Vulpix Alola | Evening | grass/cave | 10% | 28 |
+| Smoochum | Evening | grass/cave | 10% | 28 |
 | Frillish | Night | fishing | 40% | 30 |
 | Delibird | Night | grass/cave | 10% | 28 |
 
@@ -1063,17 +1357,25 @@ These only evolve "in" their home region, so they can't be reached yet:
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
 | Cryogonal | Morning | grass/cave | 10% | 28 |
+| Eiscue Ice | Morning | grass/cave | 10% | 30 |
 | Bergmite | Day | grass/cave | 10% | 28 |
+| Darumaka Galar | Day | grass/cave | 10% | 28 |
 | Cetoddle | Evening | grass/cave | 10% | 28 |
+| Vanillite | Evening | grass/cave | 10% | 28 |
 | Cubchoo | Night | grass/cave | 10% | 28 |
+| Vulpix Alola | Night | grass/cave | 10% | 28 |
 
 ### ShoalCave_LowTideStairsRoom
 
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
 | Swinub | Morning | grass/cave | 10% | 28 |
+| Cryogonal | Morning | grass/cave | 10% | 28 |
 | Snom | Day | grass/cave | 10% | 28 |
+| Bergmite | Day | grass/cave | 10% | 28 |
 | Smoochum | Evening | grass/cave | 10% | 28 |
+| Cubchoo | Evening | grass/cave | 10% | 28 |
+| Cetoddle | Night | grass/cave | 10% | 28 |
 | Eiscue Ice | Night | grass/cave | 10% | 30 |
 
 ### SkyPillar_1F
@@ -1081,9 +1383,13 @@ These only evolve "in" their home region, so they can't be reached yet:
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
 | Flamigo | Morning | grass/cave | 10% | 35 |
+| Corvisquire | Morning | grass/cave | 10% | 34 |
+| Axew | Day | grass/cave | 10% | 35 |
 | Hakamo O | Day | grass/cave | 5% | 38 |
 | Indeedee M | Evening | grass/cave | 10% | 35 |
+| Arctibax | Evening | grass/cave | 5% | 38 |
 | Bombirdier | Night | grass/cave | 10% | 35 |
+| Spiritomb | Night | grass/cave | 10% | 34 |
 | Dhelmise | Night | grass/cave | 5% | 38 |
 
 ### SkyPillar_3F
@@ -1091,20 +1397,26 @@ These only evolve "in" their home region, so they can't be reached yet:
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
 | Flamigo | Morning | grass/cave | 10% | 35 |
+| Applin | Day | grass/cave | 10% | 35 |
 | Arctibax | Day | grass/cave | 5% | 38 |
 | Corvisquire | Evening | grass/cave | 10% | 35 |
+| Carbink | Evening | grass/cave | 10% | 34 |
 | Phantump | Night | grass/cave | 10% | 35 |
 | Bombirdier | Night | grass/cave | 10% | 34 |
+| Dhelmise | Night | grass/cave | 5% | 38 |
 
 ### SkyPillar_5F
 
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
 | Noibat | Morning | grass/cave | 10% | 35 |
+| Flamigo | Morning | grass/cave | 10% | 34 |
 | Exeggcute | Day | grass/cave | 10% | 35 |
 | Carbink | Evening | grass/cave | 10% | 35 |
+| Elgyem | Evening | grass/cave | 10% | 34 |
 | Litwick | Night | grass/cave | 10% | 35 |
 | Pumpkaboo Average | Night | grass/cave | 10% | 34 |
+| Sandygast | Night | grass/cave | 5% | 38 |
 
 ### SlateportCity
 
@@ -1121,6 +1433,7 @@ These only evolve "in" their home region, so they can't be reached yet:
 | --- | --- | --- | --- | --- |
 | Wishiwashi Solo | Morning | fishing | 40% | 30 |
 | Poliwhirl | Day | fishing | 40% | 30 |
+| Surskit | Day | surfing | 30% | 10 |
 | Wugtrio | Evening | fishing | 40% | 30 |
 | Seel | Night | fishing | 40% | 30 |
 
@@ -1138,30 +1451,43 @@ These only evolve "in" their home region, so they can't be reached yet:
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
 | Tauros Paldea Combat | Morning | grass/cave | 5% | 38 |
+| Throh | Morning | grass/cave | 5% | 38 |
 | Falinks | Day | grass/cave | 5% | 38 |
+| Tauros Paldea Blaze | Day | grass/cave | 5% | 38 |
 | Sawk | Evening | grass/cave | 5% | 38 |
+| Hawlucha | Evening | grass/cave | 5% | 38 |
 | Dreepy | Night | grass/cave | 5% | 38 |
 | Rattata Alola | Night | grass/cave | 5% | 38 |
+| Pawniard | Night | grass/cave | 1% | 36 |
 
 ### VictoryRoad_B1F
 
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
 | Hawlucha | Morning | grass/cave | 10% | 40 |
+| Passimian | Morning | grass/cave | 10% | 38 |
+| Sneasel Hisui | Morning | grass/cave | 10% | 38 |
 | Tauros Paldea Blaze | Day | grass/cave | 10% | 40 |
+| Tauros Paldea Combat | Day | grass/cave | 10% | 38 |
 | Klefki | Evening | grass/cave | 10% | 40 |
+| Falinks | Evening | grass/cave | 10% | 38 |
 | Tauros Paldea Aqua | Night | grass/cave | 10% | 40 |
 | Doublade | Night | grass/cave | 10% | 38 |
+| Rattata Alola | Night | grass/cave | 10% | 38 |
 
 ### VictoryRoad_B2F
 
 | Pokémon | Time | Where | Rate | Level |
 | --- | --- | --- | --- | --- |
+| Shellder | Morning | fishing | 40% | 30 |
 | Duraludon | Morning | grass/cave | 10% | 40 |
 | Skrelp | Morning | surfing | 30% | 25 |
+| Poliwhirl | Day | fishing | 40% | 30 |
 | Tauros Paldea Blaze | Day | grass/cave | 10% | 40 |
 | Mareanie | Day | surfing | 30% | 25 |
+| Wugtrio | Evening | fishing | 40% | 30 |
 | Passimian | Evening | grass/cave | 10% | 40 |
 | Hawlucha | Evening | grass/cave | 10% | 42 |
 | Morgrem | Night | grass/cave | 10% | 40 |
 | Tauros Paldea Aqua | Night | grass/cave | 10% | 42 |
+| Doublade | Night | grass/cave | 10% | 42 |
