@@ -720,7 +720,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .teachableLearnset = sDewottTeachableLearnset,
         .evolutions = EVOLUTION(
                             #if P_HISUIAN_FORMS
-                                {EVO_LEVEL, 36, SPECIES_SAMUROTT_HISUI, CONDITIONS({IF_IN_MAPSEC, MAPSEC_FORTREE_CITY})},
+                                {EVO_LEVEL, 36, SPECIES_SAMUROTT_HISUI, CONDITIONS({IF_IN_MAPSEC, MAPSEC_ROUTE_119})},
                             #endif
                                 {EVO_LEVEL, 36, SPECIES_SAMUROTT, CONDITIONS({IF_NOT_REGION, REGION_HISUI})}
                             ),
@@ -11793,7 +11793,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .teachableLearnset = sRuffletTeachableLearnset,
         .evolutions = EVOLUTION(
                             #if P_HISUIAN_FORMS
-                                {EVO_LEVEL, 54, SPECIES_BRAVIARY_HISUI, CONDITIONS({IF_IN_MAPSEC, MAPSEC_FORTREE_CITY})},
+                                {EVO_LEVEL, 54, SPECIES_BRAVIARY_HISUI, CONDITIONS({IF_IN_MAPSEC, MAPSEC_ROUTE_119})},
                             #endif
                                 {EVO_LEVEL, 54, SPECIES_BRAVIARY, CONDITIONS({IF_NOT_REGION, REGION_HISUI})}
                             ),

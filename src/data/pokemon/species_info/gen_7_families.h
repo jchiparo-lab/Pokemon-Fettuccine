@@ -140,7 +140,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .teachableLearnset = sDartrixTeachableLearnset,
         .evolutions = EVOLUTION(
                             #if P_HISUIAN_FORMS
-                                {EVO_LEVEL, 34, SPECIES_DECIDUEYE_HISUI, CONDITIONS({IF_IN_MAPSEC, MAPSEC_FORTREE_CITY})},
+                                {EVO_LEVEL, 34, SPECIES_DECIDUEYE_HISUI, CONDITIONS({IF_IN_MAPSEC, MAPSEC_ROUTE_119})},
                             #endif
                                 {EVO_LEVEL, 34, SPECIES_DECIDUEYE, CONDITIONS({IF_NOT_REGION, REGION_HISUI})}
                             ),
