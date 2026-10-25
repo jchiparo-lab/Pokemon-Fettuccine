@@ -1,5 +1,10 @@
 CaveOfOrigin_B1F_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, CaveOfOrigin_B1F_OnTransition
 	.byte 0
+
+CaveOfOrigin_B1F_OnTransition:
+	call CaveOfOrigin_B1F_EventScript_SetupLegendDarkrai
+	end
 
 CaveOfOrigin_B1F_EventScript_Wallace::
 	lock
@@ -113,3 +118,33 @@ CaveOfOrigin_B1F_Text_WellHeadToSkyPillar:
 	.string "{PLAYER}, no time to waste!\n"
 	.string "To the SKY BREADSTICK, pronto!$"
 
+@ Fettuccine: post-game Darkrai. Appears after the Hall of Fame, until it's caught.
+CaveOfOrigin_B1F_EventScript_SetupLegendDarkrai::
+	setflag FLAG_HIDE_LEGEND_DARKRAI
+	goto_if_unset FLAG_SYS_GAME_CLEAR, CaveOfOrigin_B1F_EventScript_SetupLegendDarkraiDone
+	getcaughtmon SPECIES_DARKRAI
+	goto_if_eq VAR_RESULT, TRUE, CaveOfOrigin_B1F_EventScript_SetupLegendDarkraiDone
+	clearflag FLAG_HIDE_LEGEND_DARKRAI
+CaveOfOrigin_B1F_EventScript_SetupLegendDarkraiDone::
+	return
+
+CaveOfOrigin_B1F_EventScript_LegendDarkrai::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_DARKRAI, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_DARKRAI, 50
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	dowildbattle
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_CAUGHT, CaveOfOrigin_B1F_EventScript_CaughtLegendDarkrai
+	release
+	end
+
+CaveOfOrigin_B1F_EventScript_CaughtLegendDarkrai::
+	setflag FLAG_HIDE_LEGEND_DARKRAI
+	goto Common_EventScript_RemoveStaticPokemon
+	end

@@ -386,7 +386,7 @@ All built into pokeemerald-expansion; the work is deciding where things appear.
 | Mystic Ticket | Navel Rock | Lugia and Ho-Oh (Lv 70) | Joe Q, his house at the Bucatini Frontier |
 | Aurora Ticket | Birth Island | Deoxys (Lv 50) | Scientist, Mostaccideep Space Center 1F |
 
-**Decided: themed one-offs (27), not started.** Levels: Arceus 80; cover legendaries 70; other legendaries 60; mythicals 50.
+**Done: themed one-offs (27).** Levels: Arceus 80; cover legendaries 70; other legendaries 60; mythicals 50. Each is hidden until the Hall of Fame (and until its prerequisites are caught), and disappears once it's registered as caught in the Pokédex. Spots were picked automatically on open floor that can't block a path, so Joe may want to move some in Porymap (look for `OBJ_EVENT_GFX_SPECIES(...)` objects). Flags `FLAG_HIDE_LEGEND_*` (0x264–0x27E).
 
 | Pokémon | Where |
 | --- | --- |
@@ -411,7 +411,7 @@ All built into pokeemerald-expansion; the work is deciding where things appear.
 | Zygarde | Desert Underpass |
 | Xerneas | Safari Zone, forest area |
 | Yveltal | Route 113 |
-| Solgaleo | Mirage Tower, top |
+| Solgaleo | Route 111 desert (the Mirage Tower vanishes for good once its fossil is taken, so it can't be used post-game) |
 | Lunala | Altering Cave |
 | Genesect | Weather Institute lab |
 | Marshadow | Granite Cave B2F |
@@ -607,7 +607,7 @@ A yes/no choice at New Game that randomizes Pokémon for that save file. It must
 | New themed teams for all trainers and Gym Leaders (Gens 1–9, Megas from gym 3) | Trainer data | Done |
 | Trainer names from the Retrotopia community | Text (waiting on Joe's list) | Not started |
 | Retrotopia cast: Alan (Birch), Sam (Steven), Joe Fettuccine (designer) | Custom sprites, scripts, dialogue | Not started |
-| All Pokémon through Gen IX | Built in; plan placement | Wild placement done (time-of-day tables); event islands unlocked; 27 themed legendary one-offs and 13 regional evolutions still to do |
+| All Pokémon through Gen IX | Built in; plan placement | Wild placement, event islands and 27 legendary one-offs done; 13 regional evolutions still to do |
 | Items, abilities, move effects through Gen IX | Built in; plan placement | Not started |
 | Physical/special split | Built in | Done (built in) |
 | Mega Evolution (Mega Ring from Sam in Granite Cave) | Built in; place Mega Ring and Mega Stones | Done |

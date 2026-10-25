@@ -1,5 +1,10 @@
 SeafloorCavern_Room9_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, SeafloorCavern_Room9_OnTransition
 	.byte 0
+
+SeafloorCavern_Room9_OnTransition:
+	call SeafloorCavern_Room9_EventScript_SetupLegendManaphy
+	end
 
 SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 	lockall
@@ -314,3 +319,34 @@ SeafloorCavern_Room9_Text_MaxieWeDontHaveTimeToArgue:
 SeafloorCavern_Room9_Text_MaxieComeOnPlayer:
 	.string "MARZANO: {PLAYER}, come on, you have\n"
 	.string "to get out of here, too!$"
+
+@ Fettuccine: post-game Manaphy. Appears after the Hall of Fame, until it's caught.
+SeafloorCavern_Room9_EventScript_SetupLegendManaphy::
+	setflag FLAG_HIDE_LEGEND_MANAPHY
+	goto_if_unset FLAG_SYS_GAME_CLEAR, SeafloorCavern_Room9_EventScript_SetupLegendManaphyDone
+	getcaughtmon SPECIES_MANAPHY
+	goto_if_eq VAR_RESULT, TRUE, SeafloorCavern_Room9_EventScript_SetupLegendManaphyDone
+	clearflag FLAG_HIDE_LEGEND_MANAPHY
+SeafloorCavern_Room9_EventScript_SetupLegendManaphyDone::
+	return
+
+SeafloorCavern_Room9_EventScript_LegendManaphy::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_MANAPHY, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_MANAPHY, 50
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	dowildbattle
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_CAUGHT, SeafloorCavern_Room9_EventScript_CaughtLegendManaphy
+	release
+	end
+
+SeafloorCavern_Room9_EventScript_CaughtLegendManaphy::
+	setflag FLAG_HIDE_LEGEND_MANAPHY
+	goto Common_EventScript_RemoveStaticPokemon
+	end

@@ -3,6 +3,7 @@ MtPyre_Summit_MapScripts::
 	.byte 0
 
 MtPyre_Summit_OnTransition:
+	call MtPyre_Summit_EventScript_SetupLegendGiratina
 	call_if_eq VAR_MT_PYRE_STATE, 2, MtPyre_Summit_EventScript_SetArchieMaxiePositions
 	end
 
@@ -663,3 +664,33 @@ MtPyre_Summit_Text_HoennTrioTale:
 	.string "Then, its duty done, the green POKéMON\n"
 	.string "flew off into the wild blue yonder…$"
 
+@ Fettuccine: post-game Giratina. Appears after the Hall of Fame, until it's caught.
+MtPyre_Summit_EventScript_SetupLegendGiratina::
+	setflag FLAG_HIDE_LEGEND_GIRATINA
+	goto_if_unset FLAG_SYS_GAME_CLEAR, MtPyre_Summit_EventScript_SetupLegendGiratinaDone
+	getcaughtmon SPECIES_GIRATINA
+	goto_if_eq VAR_RESULT, TRUE, MtPyre_Summit_EventScript_SetupLegendGiratinaDone
+	clearflag FLAG_HIDE_LEGEND_GIRATINA
+MtPyre_Summit_EventScript_SetupLegendGiratinaDone::
+	return
+
+MtPyre_Summit_EventScript_LegendGiratina::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_GIRATINA, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_GIRATINA, 70
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	dowildbattle
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_CAUGHT, MtPyre_Summit_EventScript_CaughtLegendGiratina
+	release
+	end
+
+MtPyre_Summit_EventScript_CaughtLegendGiratina::
+	setflag FLAG_HIDE_LEGEND_GIRATINA
+	goto Common_EventScript_RemoveStaticPokemon
+	end

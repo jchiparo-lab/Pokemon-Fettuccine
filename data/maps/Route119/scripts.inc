@@ -14,6 +14,7 @@ Route119_EventScript_TryRemoveKecleon::
 	return
 
 Route119_OnTransition:
+	call Route119_EventScript_SetupLegendSuicune
 	call Common_EventScript_SetupRivalGfxId
 	call Common_EventScript_SetupRivalOnBikeGfxId
 	call_if_eq VAR_WEATHER_INSTITUTE_STATE, 1, Route119_EventScript_MoveInstituteWorkersDownstairs
@@ -632,3 +633,34 @@ Route119_Text_TrainerTipsDecoration:
 	.string "Pick your favorite items and create\n"
 	.string "your very own SECRET BASE exactly the\l"
 	.string "way you want.$"
+
+@ Fettuccine: post-game Suicune. Appears after the Hall of Fame, until it's caught.
+Route119_EventScript_SetupLegendSuicune::
+	setflag FLAG_HIDE_LEGEND_SUICUNE
+	goto_if_unset FLAG_SYS_GAME_CLEAR, Route119_EventScript_SetupLegendSuicuneDone
+	getcaughtmon SPECIES_SUICUNE
+	goto_if_eq VAR_RESULT, TRUE, Route119_EventScript_SetupLegendSuicuneDone
+	clearflag FLAG_HIDE_LEGEND_SUICUNE
+Route119_EventScript_SetupLegendSuicuneDone::
+	return
+
+Route119_EventScript_LegendSuicune::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_SUICUNE, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_SUICUNE, 60
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	dowildbattle
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_CAUGHT, Route119_EventScript_CaughtLegendSuicune
+	release
+	end
+
+Route119_EventScript_CaughtLegendSuicune::
+	setflag FLAG_HIDE_LEGEND_SUICUNE
+	goto Common_EventScript_RemoveStaticPokemon
+	end

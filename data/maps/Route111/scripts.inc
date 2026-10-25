@@ -38,6 +38,7 @@ Route111_EventScript_ShowTemporaryMirageTower::
 	return
 
 Route111_OnTransition:
+	call Route111_EventScript_SetupLegendSolgaleo
 	setvar VAR_TRAINER_HILL_IS_ACTIVE, 0
 	special SetMirageTowerVisibility
 	call_if_unset FLAG_MIRAGE_TOWER_VISIBLE, Route111_EventScript_SetLayoutNoMirageTower
@@ -715,3 +716,33 @@ Route111_Text_TrainerHillSign:
 	.string "“Scale the heights, you hot-blooded\n"
 	.string "TRAINERS!”$"
 
+@ Fettuccine: post-game Solgaleo. Appears after the Hall of Fame, until it's caught.
+Route111_EventScript_SetupLegendSolgaleo::
+	setflag FLAG_HIDE_LEGEND_SOLGALEO
+	goto_if_unset FLAG_SYS_GAME_CLEAR, Route111_EventScript_SetupLegendSolgaleoDone
+	getcaughtmon SPECIES_SOLGALEO
+	goto_if_eq VAR_RESULT, TRUE, Route111_EventScript_SetupLegendSolgaleoDone
+	clearflag FLAG_HIDE_LEGEND_SOLGALEO
+Route111_EventScript_SetupLegendSolgaleoDone::
+	return
+
+Route111_EventScript_LegendSolgaleo::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_SOLGALEO, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_SOLGALEO, 70
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	dowildbattle
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_CAUGHT, Route111_EventScript_CaughtLegendSolgaleo
+	release
+	end
+
+Route111_EventScript_CaughtLegendSolgaleo::
+	setflag FLAG_HIDE_LEGEND_SOLGALEO
+	goto Common_EventScript_RemoveStaticPokemon
+	end

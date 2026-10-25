@@ -8,6 +8,7 @@ Route113_OnResume:
 	end
 
 Route113_OnTransition:
+	call Route113_EventScript_SetupLegendYveltal
 	clearflag FLAG_FORCE_MIRAGE_TOWER_VISIBLE
 	call Route113_EventScript_CheckSetAshWeather
 	end
@@ -164,3 +165,33 @@ Route113_Text_GlassWorkshopSign:
 	.string "GLASS WORKSHOP\n"
 	.string "“Turning Volcanic Ash into Glass Items”$"
 
+@ Fettuccine: post-game Yveltal. Appears after the Hall of Fame, until it's caught.
+Route113_EventScript_SetupLegendYveltal::
+	setflag FLAG_HIDE_LEGEND_YVELTAL
+	goto_if_unset FLAG_SYS_GAME_CLEAR, Route113_EventScript_SetupLegendYveltalDone
+	getcaughtmon SPECIES_YVELTAL
+	goto_if_eq VAR_RESULT, TRUE, Route113_EventScript_SetupLegendYveltalDone
+	clearflag FLAG_HIDE_LEGEND_YVELTAL
+Route113_EventScript_SetupLegendYveltalDone::
+	return
+
+Route113_EventScript_LegendYveltal::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_YVELTAL, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_YVELTAL, 70
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	dowildbattle
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_CAUGHT, Route113_EventScript_CaughtLegendYveltal
+	release
+	end
+
+Route113_EventScript_CaughtLegendYveltal::
+	setflag FLAG_HIDE_LEGEND_YVELTAL
+	goto Common_EventScript_RemoveStaticPokemon
+	end

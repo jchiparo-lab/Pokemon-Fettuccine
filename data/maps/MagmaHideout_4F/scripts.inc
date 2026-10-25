@@ -1,5 +1,10 @@
 MagmaHideout_4F_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, MagmaHideout_4F_OnTransition
 	.byte 0
+
+MagmaHideout_4F_OnTransition:
+	call MagmaHideout_4F_EventScript_SetupLegendHeatran
+	end
 
 MagmaHideout_4F_EventScript_Maxie::
 	lockall
@@ -223,3 +228,34 @@ MagmaHideout_4F_Text_MaxieImGoingAfterGroudon:
 	.string "any need for this blasted volcano.\p"
 	.string "I am going after GROUDON, so this\n"
 	.string "is where we part!$"
+
+@ Fettuccine: post-game Heatran. Appears after the Hall of Fame, until it's caught.
+MagmaHideout_4F_EventScript_SetupLegendHeatran::
+	setflag FLAG_HIDE_LEGEND_HEATRAN
+	goto_if_unset FLAG_SYS_GAME_CLEAR, MagmaHideout_4F_EventScript_SetupLegendHeatranDone
+	getcaughtmon SPECIES_HEATRAN
+	goto_if_eq VAR_RESULT, TRUE, MagmaHideout_4F_EventScript_SetupLegendHeatranDone
+	clearflag FLAG_HIDE_LEGEND_HEATRAN
+MagmaHideout_4F_EventScript_SetupLegendHeatranDone::
+	return
+
+MagmaHideout_4F_EventScript_LegendHeatran::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_HEATRAN, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_HEATRAN, 60
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	dowildbattle
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_CAUGHT, MagmaHideout_4F_EventScript_CaughtLegendHeatran
+	release
+	end
+
+MagmaHideout_4F_EventScript_CaughtLegendHeatran::
+	setflag FLAG_HIDE_LEGEND_HEATRAN
+	goto Common_EventScript_RemoveStaticPokemon
+	end

@@ -664,33 +664,33 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_123_RARE_CANDY                (FLAG_HIDDEN_ITEMS_START + 0x6E)
 #define FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL                 (FLAG_HIDDEN_ITEMS_START + 0x6F)
 
-#define FLAG_UNUSED_0x264  0x264 // Unused Flag
-#define FLAG_UNUSED_0x265  0x265 // Unused Flag
-#define FLAG_UNUSED_0x266  0x266 // Unused Flag
-#define FLAG_UNUSED_0x267  0x267 // Unused Flag
-#define FLAG_UNUSED_0x268  0x268 // Unused Flag
-#define FLAG_UNUSED_0x269  0x269 // Unused Flag
-#define FLAG_UNUSED_0x26A  0x26A // Unused Flag
-#define FLAG_UNUSED_0x26B  0x26B // Unused Flag
-#define FLAG_UNUSED_0x26C  0x26C // Unused Flag
-#define FLAG_UNUSED_0x26D  0x26D // Unused Flag
-#define FLAG_UNUSED_0x26E  0x26E // Unused Flag
-#define FLAG_UNUSED_0x26F  0x26F // Unused Flag
-#define FLAG_UNUSED_0x270  0x270 // Unused Flag
-#define FLAG_UNUSED_0x271  0x271 // Unused Flag
-#define FLAG_UNUSED_0x272  0x272 // Unused Flag
-#define FLAG_UNUSED_0x273  0x273 // Unused Flag
-#define FLAG_UNUSED_0x274  0x274 // Unused Flag
-#define FLAG_UNUSED_0x275  0x275 // Unused Flag
-#define FLAG_UNUSED_0x276  0x276 // Unused Flag
-#define FLAG_UNUSED_0x277  0x277 // Unused Flag
-#define FLAG_UNUSED_0x278  0x278 // Unused Flag
-#define FLAG_UNUSED_0x279  0x279 // Unused Flag
-#define FLAG_UNUSED_0x27A  0x27A // Unused Flag
-#define FLAG_UNUSED_0x27B  0x27B // Unused Flag
-#define FLAG_UNUSED_0x27C  0x27C // Unused Flag
-#define FLAG_UNUSED_0x27D  0x27D // Unused Flag
-#define FLAG_UNUSED_0x27E  0x27E // Unused Flag
+#define FLAG_HIDE_LEGEND_ARTICUNO          0x264 // Fettuccine: post-game Articuno
+#define FLAG_HIDE_LEGEND_ZAPDOS            0x265 // Fettuccine: post-game Zapdos
+#define FLAG_HIDE_LEGEND_MOLTRES           0x266 // Fettuccine: post-game Moltres
+#define FLAG_HIDE_LEGEND_RAIKOU            0x267 // Fettuccine: post-game Raikou
+#define FLAG_HIDE_LEGEND_ENTEI             0x268 // Fettuccine: post-game Entei
+#define FLAG_HIDE_LEGEND_SUICUNE           0x269 // Fettuccine: post-game Suicune
+#define FLAG_HIDE_LEGEND_CELEBI            0x26A // Fettuccine: post-game Celebi
+#define FLAG_HIDE_LEGEND_JIRACHI           0x26B // Fettuccine: post-game Jirachi
+#define FLAG_HIDE_LEGEND_DARKRAI           0x26C // Fettuccine: post-game Darkrai
+#define FLAG_HIDE_LEGEND_SHAYMIN           0x26D // Fettuccine: post-game Shaymin
+#define FLAG_HIDE_LEGEND_MANAPHY           0x26E // Fettuccine: post-game Manaphy
+#define FLAG_HIDE_LEGEND_DIALGA            0x26F // Fettuccine: post-game Dialga
+#define FLAG_HIDE_LEGEND_PALKIA            0x270 // Fettuccine: post-game Palkia
+#define FLAG_HIDE_LEGEND_ARCEUS            0x271 // Fettuccine: post-game Arceus
+#define FLAG_HIDE_LEGEND_GIRATINA          0x272 // Fettuccine: post-game Giratina
+#define FLAG_HIDE_LEGEND_CRESSELIA         0x273 // Fettuccine: post-game Cresselia
+#define FLAG_HIDE_LEGEND_HEATRAN           0x274 // Fettuccine: post-game Heatran
+#define FLAG_HIDE_LEGEND_REGIGIGAS         0x275 // Fettuccine: post-game Regigigas
+#define FLAG_HIDE_LEGEND_KYUREM            0x276 // Fettuccine: post-game Kyurem
+#define FLAG_HIDE_LEGEND_ZYGARDE           0x277 // Fettuccine: post-game Zygarde
+#define FLAG_HIDE_LEGEND_XERNEAS           0x278 // Fettuccine: post-game Xerneas
+#define FLAG_HIDE_LEGEND_YVELTAL           0x279 // Fettuccine: post-game Yveltal
+#define FLAG_HIDE_LEGEND_SOLGALEO          0x27A // Fettuccine: post-game Solgaleo
+#define FLAG_HIDE_LEGEND_LUNALA            0x27B // Fettuccine: post-game Lunala
+#define FLAG_HIDE_LEGEND_GENESECT          0x27C // Fettuccine: post-game Genesect
+#define FLAG_HIDE_LEGEND_MARSHADOW         0x27D // Fettuccine: post-game Marshadow
+#define FLAG_HIDE_LEGEND_ZERAORA           0x27E // Fettuccine: post-game Zeraora
 #define FLAG_UNUSED_0x27F  0x27F // Unused Flag
 #define FLAG_UNUSED_0x280  0x280 // Unused Flag
 #define FLAG_UNUSED_0x281  0x281 // Unused Flag

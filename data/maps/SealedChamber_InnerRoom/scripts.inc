@@ -1,5 +1,10 @@
 SealedChamber_InnerRoom_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, SealedChamber_InnerRoom_OnTransition
 	.byte 0
+
+SealedChamber_InnerRoom_OnTransition:
+	call SealedChamber_InnerRoom_EventScript_SetupLegendRegigigas
+	end
 
 SealedChamber_InnerRoom_EventScript_BrailleBackWall::
 	lockall
@@ -67,3 +72,39 @@ SealedChamber_InnerRoom_EventScript_BrailleStoryPart6::
 	releaseall
 	end
 
+@ Fettuccine: post-game Regigigas. Appears after the Hall of Fame and once Regirock, Regice, Registeel are caught, until it's caught.
+SealedChamber_InnerRoom_EventScript_SetupLegendRegigigas::
+	setflag FLAG_HIDE_LEGEND_REGIGIGAS
+	goto_if_unset FLAG_SYS_GAME_CLEAR, SealedChamber_InnerRoom_EventScript_SetupLegendRegigigasDone
+	getcaughtmon SPECIES_REGIGIGAS
+	goto_if_eq VAR_RESULT, TRUE, SealedChamber_InnerRoom_EventScript_SetupLegendRegigigasDone
+	getcaughtmon SPECIES_REGIROCK
+	goto_if_eq VAR_RESULT, FALSE, SealedChamber_InnerRoom_EventScript_SetupLegendRegigigasDone
+	getcaughtmon SPECIES_REGICE
+	goto_if_eq VAR_RESULT, FALSE, SealedChamber_InnerRoom_EventScript_SetupLegendRegigigasDone
+	getcaughtmon SPECIES_REGISTEEL
+	goto_if_eq VAR_RESULT, FALSE, SealedChamber_InnerRoom_EventScript_SetupLegendRegigigasDone
+	clearflag FLAG_HIDE_LEGEND_REGIGIGAS
+SealedChamber_InnerRoom_EventScript_SetupLegendRegigigasDone::
+	return
+
+SealedChamber_InnerRoom_EventScript_LegendRegigigas::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_REGIGIGAS, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_REGIGIGAS, 60
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	dowildbattle
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_CAUGHT, SealedChamber_InnerRoom_EventScript_CaughtLegendRegigigas
+	release
+	end
+
+SealedChamber_InnerRoom_EventScript_CaughtLegendRegigigas::
+	setflag FLAG_HIDE_LEGEND_REGIGIGAS
+	goto Common_EventScript_RemoveStaticPokemon
+	end

@@ -4,6 +4,7 @@ MtChimney_MapScripts::
 	.byte 0
 
 MtChimney_OnTransition:
+	call MtChimney_EventScript_SetupLegendEntei
 	setvar VAR_JAGGED_PASS_ASH_WEATHER, 1
 	end
 
@@ -858,3 +859,34 @@ MtChimney_Text_SawyerRematchDefeat:
 MtChimney_Text_SawyerPostRematch:
 	.string "Actually, it really is hot here.\n"
 	.string "I'm overdressed for these parts.$"
+
+@ Fettuccine: post-game Entei. Appears after the Hall of Fame, until it's caught.
+MtChimney_EventScript_SetupLegendEntei::
+	setflag FLAG_HIDE_LEGEND_ENTEI
+	goto_if_unset FLAG_SYS_GAME_CLEAR, MtChimney_EventScript_SetupLegendEnteiDone
+	getcaughtmon SPECIES_ENTEI
+	goto_if_eq VAR_RESULT, TRUE, MtChimney_EventScript_SetupLegendEnteiDone
+	clearflag FLAG_HIDE_LEGEND_ENTEI
+MtChimney_EventScript_SetupLegendEnteiDone::
+	return
+
+MtChimney_EventScript_LegendEntei::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_ENTEI, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_ENTEI, 60
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	dowildbattle
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_CAUGHT, MtChimney_EventScript_CaughtLegendEntei
+	release
+	end
+
+MtChimney_EventScript_CaughtLegendEntei::
+	setflag FLAG_HIDE_LEGEND_ENTEI
+	goto Common_EventScript_RemoveStaticPokemon
+	end

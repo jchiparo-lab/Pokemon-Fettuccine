@@ -3,6 +3,7 @@ Route119_WeatherInstitute_2F_MapScripts::
 	.byte 0
 
 Route119_WeatherInstitute_2F_OnTransition:
+	call Route119_WeatherInstitute_2F_EventScript_SetupLegendGenesect
 	call_if_eq VAR_WEATHER_INSTITUTE_STATE, 0, Route119_WeatherInstitute_2F_EventScript_SetScientistPosAquaHere
 	call_if_eq VAR_WEATHER_INSTITUTE_STATE, 1, Route119_WeatherInstitute_2F_EventScript_SetScientistPosAquaGone
 	call_if_set FLAG_SYS_GAME_CLEAR, Route119_WeatherInstitute_2F_EventScript_SetScientistPosGameClear
@@ -331,3 +332,33 @@ Route119_WeatherInstitute_2F_Text_NoAbnormalWeather:
 	.string "The occasional rainfall is a blessing,\n"
 	.string "really.$"
 
+@ Fettuccine: post-game Genesect. Appears after the Hall of Fame, until it's caught.
+Route119_WeatherInstitute_2F_EventScript_SetupLegendGenesect::
+	setflag FLAG_HIDE_LEGEND_GENESECT
+	goto_if_unset FLAG_SYS_GAME_CLEAR, Route119_WeatherInstitute_2F_EventScript_SetupLegendGenesectDone
+	getcaughtmon SPECIES_GENESECT
+	goto_if_eq VAR_RESULT, TRUE, Route119_WeatherInstitute_2F_EventScript_SetupLegendGenesectDone
+	clearflag FLAG_HIDE_LEGEND_GENESECT
+Route119_WeatherInstitute_2F_EventScript_SetupLegendGenesectDone::
+	return
+
+Route119_WeatherInstitute_2F_EventScript_LegendGenesect::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_GENESECT, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_GENESECT, 50
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	dowildbattle
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_CAUGHT, Route119_WeatherInstitute_2F_EventScript_CaughtLegendGenesect
+	release
+	end
+
+Route119_WeatherInstitute_2F_EventScript_CaughtLegendGenesect::
+	setflag FLAG_HIDE_LEGEND_GENESECT
+	goto Common_EventScript_RemoveStaticPokemon
+	end

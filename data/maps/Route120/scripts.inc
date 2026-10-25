@@ -54,6 +54,7 @@ Route120_EventScript_SetBridgeKecleonMovement::
 	return
 
 Route120_OnTransition:
+	call Route120_EventScript_SetupLegendRaikou
 	call GabbyAndTy_EventScript_UpdateLocation
 	call Route120_EventScript_SetWeather
 	end
@@ -427,3 +428,34 @@ Route120_Text_RouteSignFortree:
 Route120_Text_RouteSign121:
 	.string "{RIGHT_ARROW} ROUTE 121\n"
 	.string "{LEFT_ARROW} ROUTE 120$"
+
+@ Fettuccine: post-game Raikou. Appears after the Hall of Fame, until it's caught.
+Route120_EventScript_SetupLegendRaikou::
+	setflag FLAG_HIDE_LEGEND_RAIKOU
+	goto_if_unset FLAG_SYS_GAME_CLEAR, Route120_EventScript_SetupLegendRaikouDone
+	getcaughtmon SPECIES_RAIKOU
+	goto_if_eq VAR_RESULT, TRUE, Route120_EventScript_SetupLegendRaikouDone
+	clearflag FLAG_HIDE_LEGEND_RAIKOU
+Route120_EventScript_SetupLegendRaikouDone::
+	return
+
+Route120_EventScript_LegendRaikou::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_RAIKOU, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_RAIKOU, 60
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	dowildbattle
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_CAUGHT, Route120_EventScript_CaughtLegendRaikou
+	release
+	end
+
+Route120_EventScript_CaughtLegendRaikou::
+	setflag FLAG_HIDE_LEGEND_RAIKOU
+	goto Common_EventScript_RemoveStaticPokemon
+	end

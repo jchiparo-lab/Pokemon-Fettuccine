@@ -64,6 +64,19 @@
       "trainer_sight_or_berry_tree_id": "ITEM_PINSIRITE",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_SAFARI_ZONE_NORTHWEST_PINSIRITE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(XERNEAS)",
+      "x": 30,
+      "y": 18,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SafariZone_Northwest_EventScript_LegendXerneas",
+      "flag": "FLAG_HIDE_LEGEND_XERNEAS"
     }
   ],
   "warp_events": [],

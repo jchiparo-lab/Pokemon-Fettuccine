@@ -1,3 +1,38 @@
 ShoalCave_LowTideIceRoom_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, ShoalCave_LowTideIceRoom_OnTransition
 	.byte 0
 
+ShoalCave_LowTideIceRoom_OnTransition:
+	call ShoalCave_LowTideIceRoom_EventScript_SetupLegendArticuno
+	end
+
+@ Fettuccine: post-game Articuno. Appears after the Hall of Fame, until it's caught.
+ShoalCave_LowTideIceRoom_EventScript_SetupLegendArticuno::
+	setflag FLAG_HIDE_LEGEND_ARTICUNO
+	goto_if_unset FLAG_SYS_GAME_CLEAR, ShoalCave_LowTideIceRoom_EventScript_SetupLegendArticunoDone
+	getcaughtmon SPECIES_ARTICUNO
+	goto_if_eq VAR_RESULT, TRUE, ShoalCave_LowTideIceRoom_EventScript_SetupLegendArticunoDone
+	clearflag FLAG_HIDE_LEGEND_ARTICUNO
+ShoalCave_LowTideIceRoom_EventScript_SetupLegendArticunoDone::
+	return
+
+ShoalCave_LowTideIceRoom_EventScript_LegendArticuno::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_ARTICUNO, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_ARTICUNO, 60
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	dowildbattle
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_CAUGHT, ShoalCave_LowTideIceRoom_EventScript_CaughtLegendArticuno
+	release
+	end
+
+ShoalCave_LowTideIceRoom_EventScript_CaughtLegendArticuno::
+	setflag FLAG_HIDE_LEGEND_ARTICUNO
+	goto Common_EventScript_RemoveStaticPokemon
+	end

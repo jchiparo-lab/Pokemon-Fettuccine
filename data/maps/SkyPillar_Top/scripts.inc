@@ -15,6 +15,7 @@ SkyPillar_Top_EventScript_TryRemoveRayquaza::
 	return
 
 SkyPillar_Top_OnTransition:
+	call SkyPillar_Top_EventScript_SetupLegendArceus
 	call_if_lt VAR_SKY_PILLAR_STATE, 2, SkyPillar_Top_EventScript_SetCleanLayout
 	call_if_ge VAR_SKY_PILLAR_STATE, 2, SkyPillar_Top_EventScript_TryShowRayquaza
 	end
@@ -180,3 +181,39 @@ SkyPillar_Top_Movement_CameraPanDown:
 SkyPillar_Top_Text_RayquazaFlewOff:
 	.string "The awakened RAYQUAZA flew off…$"
 
+@ Fettuccine: post-game Arceus. Appears after the Hall of Fame and once Dialga, Palkia, Giratina are caught, until it's caught.
+SkyPillar_Top_EventScript_SetupLegendArceus::
+	setflag FLAG_HIDE_LEGEND_ARCEUS
+	goto_if_unset FLAG_SYS_GAME_CLEAR, SkyPillar_Top_EventScript_SetupLegendArceusDone
+	getcaughtmon SPECIES_ARCEUS
+	goto_if_eq VAR_RESULT, TRUE, SkyPillar_Top_EventScript_SetupLegendArceusDone
+	getcaughtmon SPECIES_DIALGA
+	goto_if_eq VAR_RESULT, FALSE, SkyPillar_Top_EventScript_SetupLegendArceusDone
+	getcaughtmon SPECIES_PALKIA
+	goto_if_eq VAR_RESULT, FALSE, SkyPillar_Top_EventScript_SetupLegendArceusDone
+	getcaughtmon SPECIES_GIRATINA
+	goto_if_eq VAR_RESULT, FALSE, SkyPillar_Top_EventScript_SetupLegendArceusDone
+	clearflag FLAG_HIDE_LEGEND_ARCEUS
+SkyPillar_Top_EventScript_SetupLegendArceusDone::
+	return
+
+SkyPillar_Top_EventScript_LegendArceus::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_ARCEUS, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_ARCEUS, 80
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	dowildbattle
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_CAUGHT, SkyPillar_Top_EventScript_CaughtLegendArceus
+	release
+	end
+
+SkyPillar_Top_EventScript_CaughtLegendArceus::
+	setflag FLAG_HIDE_LEGEND_ARCEUS
+	goto Common_EventScript_RemoveStaticPokemon
+	end

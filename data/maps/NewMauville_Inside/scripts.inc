@@ -17,6 +17,7 @@ NewMauville_Inside_EventScript_TryRemoveVoltorb::
 	return
 
 NewMauville_Inside_OnTransition:
+	call NewMauville_Inside_EventScript_SetupLegendZapdos
 	setvar VAR_TEMP_1, 0
 	setvar VAR_TEMP_2, 0
 	call_if_unset FLAG_DEFEATED_VOLTORB_1_NEW_MAUVILLE, NewMauville_Inside_EventScript_ShowVoltorb1
@@ -261,3 +262,34 @@ NewMauville_Inside_Text_SteppedOnSwitchGeneratorStopped:
 	.string "… … … … … … … …\p"
 	.string "The generator appears to have\n"
 	.string "stopped…$"
+
+@ Fettuccine: post-game Zapdos. Appears after the Hall of Fame, until it's caught.
+NewMauville_Inside_EventScript_SetupLegendZapdos::
+	setflag FLAG_HIDE_LEGEND_ZAPDOS
+	goto_if_unset FLAG_SYS_GAME_CLEAR, NewMauville_Inside_EventScript_SetupLegendZapdosDone
+	getcaughtmon SPECIES_ZAPDOS
+	goto_if_eq VAR_RESULT, TRUE, NewMauville_Inside_EventScript_SetupLegendZapdosDone
+	clearflag FLAG_HIDE_LEGEND_ZAPDOS
+NewMauville_Inside_EventScript_SetupLegendZapdosDone::
+	return
+
+NewMauville_Inside_EventScript_LegendZapdos::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_ZAPDOS, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_ZAPDOS, 60
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	dowildbattle
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_CAUGHT, NewMauville_Inside_EventScript_CaughtLegendZapdos
+	release
+	end
+
+NewMauville_Inside_EventScript_CaughtLegendZapdos::
+	setflag FLAG_HIDE_LEGEND_ZAPDOS
+	goto Common_EventScript_RemoveStaticPokemon
+	end

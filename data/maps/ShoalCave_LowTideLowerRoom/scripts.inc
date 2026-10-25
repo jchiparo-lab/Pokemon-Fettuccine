@@ -1,6 +1,11 @@
 ShoalCave_LowTideLowerRoom_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, ShoalCave_LowTideLowerRoom_OnTransition
 	map_script MAP_SCRIPT_ON_LOAD, ShoalCave_LowTideLowerRoom_OnLoad
 	.byte 0
+
+ShoalCave_LowTideLowerRoom_OnTransition:
+	call ShoalCave_LowTideLowerRoom_EventScript_SetupLegendKyurem
+	end
 
 ShoalCave_LowTideLowerRoom_OnLoad:
 	call ShoalCave_LowTideLowerRoom_EventScript_SetShoalItemMetatiles
@@ -56,3 +61,33 @@ ShoalCave_LowTideLowerRoom_Text_CanOvercomeColdWithFocus:
 ShoalCave_LowTideLowerRoom_Text_EverythingStartsWithFocus:
 	.string "Everything starts with focus!$"
 
+@ Fettuccine: post-game Kyurem. Appears after the Hall of Fame, until it's caught.
+ShoalCave_LowTideLowerRoom_EventScript_SetupLegendKyurem::
+	setflag FLAG_HIDE_LEGEND_KYUREM
+	goto_if_unset FLAG_SYS_GAME_CLEAR, ShoalCave_LowTideLowerRoom_EventScript_SetupLegendKyuremDone
+	getcaughtmon SPECIES_KYUREM
+	goto_if_eq VAR_RESULT, TRUE, ShoalCave_LowTideLowerRoom_EventScript_SetupLegendKyuremDone
+	clearflag FLAG_HIDE_LEGEND_KYUREM
+ShoalCave_LowTideLowerRoom_EventScript_SetupLegendKyuremDone::
+	return
+
+ShoalCave_LowTideLowerRoom_EventScript_LegendKyurem::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_KYUREM, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_KYUREM, 70
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	dowildbattle
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_CAUGHT, ShoalCave_LowTideLowerRoom_EventScript_CaughtLegendKyurem
+	release
+	end
+
+ShoalCave_LowTideLowerRoom_EventScript_CaughtLegendKyurem::
+	setflag FLAG_HIDE_LEGEND_KYUREM
+	goto Common_EventScript_RemoveStaticPokemon
+	end
