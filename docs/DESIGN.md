@@ -526,10 +526,10 @@ Mostly quality-of-life config options. Feature names change between expansion ve
 - **Done: the player starts with the Shiny Charm** in the bag (it only works from the bag, not the PC).
 - **Done: faster berry picking.** Talking to a ripe tree picks it right away: no "Do you want to pick?" question, a short sound instead of the fanfare, and one message ("{PLAYER} picked 3 ORAN BERRIES!") instead of two.
 
-- **HMs are not permanent.** HM moves can be forgotten like normal moves. **Decided:** field moves only need the badge plus the HM in the bag; no Pokémon has to know the move. Forgetting HMs is **done** (config). Using field moves without knowing them is still custom work.
-- **Move relearner in the party menu.** A "Relearn" option on each Pokémon. This version already has a relearner on the summary screen's moves page. **Decided:** add it as a party-menu option anyway (custom).
-- **PC access anywhere via a bag item.** A key item that opens the storage system. Likely custom.
-- **"Move" as the default PC option.** Storage opens straight into Move mode. Small code change. "Move Pokémon" is already the first PC menu option, with the cursor on it; skipping the menu entirely would be a further small change.
+- **HMs are not permanent.** HM moves can be forgotten like normal moves. **Decided:** field moves only need the badge plus the HM in the bag; no Pokémon has to know the move. Forgetting HMs is **done** (config). **Done:** using field moves without knowing them. If no party Pokémon knows the move, a phantom Magikarp uses it ("MAGIKARP used CUT!", Magikarp in the animation), even with no Magikarp in the party. FLY and FLASH appear in every Pokémon's party menu once the badge and HM are in hand, and can also be used straight from HM02 and HM05 in the bag (USE still teaches the move).
+- **Move relearner in the party menu.** A "Relearn" option on each Pokémon. This version already has a relearner on the summary screen's moves page. **Decided:** add it as a party-menu option anyway (custom). **Done:** RELEARN appears for any Pokémon with moves to relearn and returns to the party menu when finished. It's free, like the summary-screen relearner.
+- **PC access anywhere via a bag item.** A key item that opens the storage system. **Done (built in):** the expansion's Pkmn Box Link. Alan gives it with the starter in his lab.
+- **"Move" as the default PC option.** **Done (built in):** MOVE POKéMON is the first PC menu option, with the cursor on it, in every PC and the Box Link. **Decided:** keep the menu rather than skipping straight into Move mode, so MOVE ITEMS stays available.
 
 ## Secret minigame: Pocket Knight Adventures
 
@@ -644,8 +644,8 @@ Work from easiest to hardest so there's always a playable build.
 2. ~~Audit `include/config/` and report which "Verify" features exist in this version.~~ **Done.**
 3. ~~Turn on the config toggles (battle speed, double wilds, HMs) and playtest.~~ **Done.** Legends Z-A Megas turned off.
 4. ~~Small visible changes: town names, Nurse Joy, starters.~~ **Done**, plus landmark names.
-5. Script the Mega Ring (Sam in Granite Cave), Mega Stones, and Orbs into the story.
+5. ~~Script the Mega Ring (Sam in Granite Cave), Mega Stones, and Orbs into the story.~~ **Done.**
 6. Story and character changes: Brian (rival, Wally, Champion), the Retrotopia cast, Retro Salvage Games.
-7. Small custom features: PC item and Move-default storage; party-menu relearner if needed.
+7. ~~Small custom features: PC item and Move-default storage; party-menu relearner if needed.~~ **Done**, plus HM field moves without knowing the move.
 8. Sprites (as art becomes available).
 9. Randomizer, last.
