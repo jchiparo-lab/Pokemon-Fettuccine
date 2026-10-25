@@ -7,6 +7,7 @@
 #include "field_control_avatar.h"
 #include "field_effect.h"
 #include "field_effect_helpers.h"
+#include "field_move.h"
 #include "field_player_avatar.h"
 #include "field_screen_effect.h"
 #include "field_weather.h"
@@ -2938,6 +2939,16 @@ bool8 FldEff_FieldMoveShowMonInit(void)
 {
     struct Pokemon *pokemon;
     bool32 noDucking = gFieldEffectArguments[0] & SHOW_MON_CRY_NO_DUCKING;
+    if ((u8)gFieldEffectArguments[0] == FIELD_MOVE_PHANTOM_SLOT)
+    {
+        gFieldEffectArguments[0] = FIELD_MOVE_PHANTOM_SPECIES;
+        gFieldEffectArguments[1] = FALSE;
+        gFieldEffectArguments[2] = 0;
+        gFieldEffectArguments[0] |= noDucking;
+        FieldEffectStart(FLDEFF_FIELD_MOVE_SHOW_MON);
+        FieldEffectActiveListRemove(FLDEFF_FIELD_MOVE_SHOW_MON_INIT);
+        return FALSE;
+    }
     pokemon = &gParties[B_TRAINER_PLAYER][(u8)gFieldEffectArguments[0]];
     gFieldEffectArguments[0] = GetMonData(pokemon, MON_DATA_SPECIES);
     gFieldEffectArguments[1] = GetMonData(pokemon, MON_DATA_IS_SHINY);

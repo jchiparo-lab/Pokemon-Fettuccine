@@ -2140,6 +2140,11 @@ bool8 ScrCmd_bufferpartymonnick(struct ScriptContext *ctx)
 
     Script_RequestEffects(SCREFF_V1);
 
+    if (partyIndex == FIELD_MOVE_PHANTOM_SLOT)
+    {
+        StringCopy(GetStringVar(stringVarIndex), GetSpeciesName(FIELD_MOVE_PHANTOM_SPECIES));
+        return FALSE;
+    }
     GetMonData(&gParties[B_TRAINER_PLAYER][partyIndex], MON_DATA_NICKNAME, GetStringVar(stringVarIndex));
     StringGet_Nickname(GetStringVar(stringVarIndex));
     return FALSE;
@@ -2315,6 +2320,13 @@ bool8 ScrCmd_checkfieldmove(struct ScriptContext *ctx)
             gSpecialVar_0x8004 = species;
             break;
         }
+    }
+
+    // Fettuccine: nobody knows the move, but the HM is in the bag
+    if (gSpecialVar_Result == PARTY_SIZE && HasHMForFieldMove(fieldMove))
+    {
+        gSpecialVar_Result = FIELD_MOVE_PHANTOM_SLOT;
+        gSpecialVar_0x8004 = FIELD_MOVE_PHANTOM_SPECIES;
     }
 
     return FALSE;

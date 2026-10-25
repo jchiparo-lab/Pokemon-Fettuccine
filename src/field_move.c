@@ -3,6 +3,7 @@
 #include "field_move.h"
 #include "fldeff.h"
 #include "fldeff_misc.h"
+#include "item.h"
 #include "party_menu.h"
 #include "strings.h"
 #include "constants/field_move.h"
@@ -42,6 +43,16 @@ const struct FieldMoveUnlock gFieldMoveUnlocks[FIELD_MOVE_UNLOCK_COUNT] =
         .lockedMessage = gText_CantUseUntilNewBadge,
     },
 };
+
+// Fettuccine: whether the HM that teaches this field move is in the bag
+bool32 HasHMForFieldMove(enum FieldMove fieldMove)
+{
+    enum Item item = GetTMHMItemIdFromMoveId(FieldMove_GetMoveId(fieldMove));
+
+    if (item < ITEM_HM01 || item > ITEM_HM08)
+        return FALSE;
+    return CheckBagHasItem(item, 1);
+}
 
 #define FLAG_TO_BADGE(flag) flag - FLAG_BADGE01_GET
 

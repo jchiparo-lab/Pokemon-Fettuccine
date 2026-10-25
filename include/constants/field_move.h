@@ -23,5 +23,10 @@ enum FieldMove
     FIELD_MOVES_COUNT
 };
 
+// Fettuccine: when no party Pokémon knows an HM move but its HM is in the bag,
+// a phantom Magikarp uses the move. This slot number stands for that Magikarp.
+#define FIELD_MOVE_PHANTOM_SLOT    (PARTY_SIZE + 1)
+#define FIELD_MOVE_PHANTOM_SPECIES SPECIES_MAGIKARP
+
 
 #endif //GUARD_CONSTANTS_FIELD_MOVE_H

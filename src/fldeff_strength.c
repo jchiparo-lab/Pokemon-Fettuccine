@@ -4,10 +4,12 @@
 #include "field_effect.h"
 #include "fldeff.h"
 #include "party_menu.h"
+#include "pokemon.h"
 #include "script.h"
 #include "string_util.h"
 #include "task.h"
 #include "constants/event_objects.h"
+#include "constants/field_move.h"
 #include "constants/field_effects.h"
 
 // static functions
@@ -39,7 +41,10 @@ bool8 FldEff_UseStrength(void)
     u8 taskId = CreateFieldMoveTask();
     gTasks[taskId].data[8] = (u32)StartStrengthFieldEffect >> 16;
     gTasks[taskId].data[9] = (u32)StartStrengthFieldEffect;
-    GetMonNickname(&gParties[B_TRAINER_PLAYER][gFieldEffectArguments[0]], gStringVar1);
+    if (gFieldEffectArguments[0] == FIELD_MOVE_PHANTOM_SLOT)
+        StringCopy(gStringVar1, GetSpeciesName(FIELD_MOVE_PHANTOM_SPECIES));
+    else
+        GetMonNickname(&gParties[B_TRAINER_PLAYER][gFieldEffectArguments[0]], gStringVar1);
     return FALSE;
 }
 
