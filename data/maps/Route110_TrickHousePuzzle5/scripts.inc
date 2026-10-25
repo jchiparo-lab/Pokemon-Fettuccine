@@ -947,8 +947,8 @@ Route110_TrickHousePuzzle5_Text_Mechadoll2Intro:
 
 Route110_TrickHousePuzzle5_Text_Mechadoll2Quiz1:
 	.string "MECHADOLL 2 QUIZ.\p"
-	.string "Which of these POKéMON did WALLY\n"
-	.string "borrow from your father?$"
+	.string "Which of these POKéMON did BRIAN\n"
+	.string "catch on ROUTE 102?$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll2Quiz2:
 	.string "MECHADOLL 2 QUIZ.\p"

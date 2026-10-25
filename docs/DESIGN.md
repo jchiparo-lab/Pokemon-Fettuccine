@@ -122,7 +122,9 @@ Brian is a proud Canadian who hates all Italian food. He wants to become Champio
 
 **Decided:** Brian is **not** Prof. Birch's (Alan's) son. In Emerald the rival is Birch's child, so the rival's "my dad" lines get written out in the dialogue rewrite.
 
-**Done (step 3): Brian's dialogue** in Lil Ragu (his mom and his bedroom), Prof. Birch's lab (including post-game), Route 103, Oldale, Rotiniboro and Route 104, Lasagnaridge, Route 110, Route 119, Linguicove, his 16 PokéNav calls, and his PokéNav profile (strategy: "Battle first, Wings after."). Both rival versions now share the same lines. Petalburg, Macaroville and Victory Road come with the Wally scenes; the Champion's Room comes with the Champion step.
+**Done (step 4): Brian replaces Wally.** Pestoburg Gym and Route 102: Brian asks Norman for help, uses his own Ducklett in the catching tutorial, and catches a Bidoof (no Zigzagoon loan). Macaroville: Brian waits outside the gym alone after losing to Wattson (Wally's uncle removed; Wally is never registered in the PokéNav). Victory Road: Brian shows off his Mega Ring, battles, then storms off toward the Elite Four. **Decided:** Wally's post-game Victory Road rematches are dropped. **Decided:** Wally's house in Pestoburg is now **THE CARBONARA FAMILY**, big fans of the Pestoburg Gym; the father still gives HM Surf after the player beats Norman. Wally's relatives in Cavatapurf are now just Wanda's family (Wally removed). The Trick House quiz asks which Pokémon Brian caught on Route 102 (Bidoof). Every Brian battle now uses the rival battle music.
+
+**Done (step 3): Brian's dialogue** in Lil Ragu (his mom and his bedroom), Prof. Birch's lab (including post-game), Route 103, Oldale, Rotiniboro and Route 104, Lasagnaridge, Route 110, Route 119, Linguicove, his 16 PokéNav calls, and his PokéNav profile (strategy: "Battle first, Wings after."). Both rival versions now share the same lines. The Champion's Room comes with the Champion step.
 
 **Done (step 1):** the rival is named BRIAN for both genders (dialogue, PokéNav, trainer names, Fan Club), and his mom calls him her son. Both versions of the rival use Brendan's overworld, bike, battle, and PokéNav sprites as a placeholder. Both versions play Brendan's encounter music.
 
@@ -193,10 +195,10 @@ Eight battles, in play order (the Linguicove battle stays optional, as in Emeral
 | 1 | Route 103 | Ducklett 5 | 0 | Done |
 | 2 | Rotiniboro | Bidoof 13, Ducklett 15 | 6 | Done |
 | 3 | Route 110 | Snover 17, Bibarel 19, Ducklett 21 | 9 | Done |
-| 4 | Macaroville | Snover 19, Stantler 20, Bibarel 21, Ducklett 22 | 12 | With the Wally scenes |
+| 4 | Macaroville | Snover 19, Stantler 20, Bibarel 21, Ducklett 22 | 12 | Done |
 | 5 | Route 119 | Deerling 28, Stantler 29, Bibarel 29, Snover 30, Ducklett 31 | 15 | Done |
 | 6 | Linguicove (optional) | Bibarel 32, Stantler 32, Deerling 32, Snover 33, Swanna 35 (shiny; 35 for every starter) | 18 | Done |
-| 7 | Victory Road | Alolan Ninetales 44, Wyrdeer 44, Bibarel 44, Sawsbuck 45, Mega Abomasnow 46, Swanna 47 | 24 | With the Wally scenes |
+| 7 | Victory Road | Alolan Ninetales 44, Wyrdeer 44, Bibarel 44, Sawsbuck 45, Mega Abomasnow 46, Swanna 47 | 24 | Done |
 | 8 | Champion | Alolan Ninetales 55, Wyrdeer 56, Bibarel 55, Sawsbuck 56, Mega Abomasnow 57, Swanna 58 | 31 | With the Champion step |
 
 Deerling and Sawsbuck are Autumn form. Champion sets: Ninetales (Light Clay, Snow Warning) Aurora Veil, Freeze-Dry, Dazzling Gleam, Nasty Plot; Wyrdeer (Sitrus Berry, Intimidate) Psyshield Bash, Double-Edge, Earthquake, Thunder Wave; Bibarel (Sitrus Berry, Simple) Swords Dance, Waterfall, Crunch, Aqua Jet; Sawsbuck (Lum Berry, Sap Sipper) Horn Leech, Double-Edge, Megahorn, Swords Dance; Abomasnow (Abomasite, Snow Warning) Blizzard, Wood Hammer, Earthquake, Ice Shard; Swanna (Life Orb) Hurricane, Surf, Ice Beam, Roost. Victory Road uses the same idea at lower levels (Abomasnow: Ice Beam instead of Blizzard; Swanna: Brave Bird instead of Hurricane).
@@ -545,7 +547,7 @@ A yes/no choice at New Game that randomizes Pokémon for that save file. It must
 | Retro Salvage Games shops (Jason, orange roofs) | Sprite recolor, palette, tiles, dialogue | Not started |
 | Main character sprites (Ethan and Kris) | Community sprites, no recolor | Not started |
 | Brian as rival (sprites, name, logic, anti-pasta story) | Art plus code and dialogue | Partly done: named BRIAN for both genders, uses Brendan's sprites as a placeholder; rival teams and dialogue done (Macaroville, Victory Road and Champion come with those steps); custom sprites still to do |
-| Brian replaces Wally (Petalburg catch, Mauville, Victory Road) | Scripts and dialogue | Not started |
+| Brian replaces Wally (Petalburg catch, Mauville, Victory Road) | Scripts and dialogue | Done (Brendan's sprites as placeholder) |
 | Brian as Champion, Mike (replaces Wallace) outside the Elite Four | Scripts, trainer data, dialogue, custom sprites | Not started |
 | Brian's room SNES / Time Toggle text | Text edit | Done |
 | Joe Q replaces Scott | Dialogue rewrite (keeps Scott's sprite) | Name and dialogue done (keeps Scott's sprite) |
