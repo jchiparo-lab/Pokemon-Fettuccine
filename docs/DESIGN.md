@@ -366,12 +366,58 @@ Every Pokémon is from Gens 1–3 and has a cheese connection.
 All built into pokeemerald-expansion; the work is deciding where things appear.
 
 - **All Pokémon through Gen IX.** **Decided:** every Gen 3 Pokémon stays where it is in Emerald.
-  - **Decided:** every non-legendary Pokémon is catchable (not a curated set); **time-of-day encounters are on** (Morning, Day, Evening, Night); some legendaries become one-off encounters (which ones and where: still to plan); the Pokédex keeps the **National Dex order**.
+  - **Decided:** every non-legendary Pokémon is catchable (not a curated set); **time-of-day encounters are on** (Morning, Day, Evening, Night); some legendaries become one-off encounters (see "Legendary one-off encounters"); the Pokédex keeps the **National Dex order**.
   - **Done: wild placement** by a one-time script, `tools/fettuccine/place_wild_pokemon.py`. Each Emerald area now has four time-of-day tables. Every Emerald Pokémon keeps its best slot in every table; 315 missing Pokémon lines fill duplicate slots, each in three different areas, matched by type to the area and by level (stronger Pokémon only appear at higher levels, and they're placed already evolved where the level allows). Ghost and Dark types lean toward night, Grass/Bug/Fire toward day. Starters and pseudo-legendary lines only get rare slots (5% or less). At most 3 new Pokémon per area and time (2 on the first routes), 1 per surfing, Rock Smash or fishing-rod table. The full list by area is in `docs/wild_pokemon_placements.md`.
   - **Still unreachable:** 13 regional evolutions that only evolve "in" their home region (Alolan Raichu, Exeggutor and Marowak; Galarian Weezing and Mr. Mime (so Mr. Rime too); Hisuian Typhlosion, Samurott, Lilligant, Braviary, Sliggoo/Goodra, Avalugg and Decidueye; Ursaluna). They need another method later.
 - **Every item, ability, and move effect through Gen IX.** Still to plan: where items are found or sold, and which TMs exist.
   - **Done: evolution counter.** A third clerk on the Linguicove Department Store's 3rd floor sells all 51 items any Pokémon uses to evolve: every evolution stone, the Linking Cord, every held trade item (Metal Coat, King's Rock, Dragon Scale, Up-Grade…), and the newer items (apples, teacups, sweets, Galarica items, armors, Black Augurite, Peat Block, Metal Alloy, both Scrolls). The Scrolls had no price, so they now cost ¥3,000.
 - **Physical/special split.** Built in and on by default.
+
+## Legendary one-off encounters
+
+**Decided:** legendaries and mythicals only (no Ultra Beasts or Paradox Pokémon). Mewtwo and Diancie stay mid-game; everything new unlocks after the Hall of Fame. Each stands on the map with its overworld sprite and can be retried if it faints or the player runs.
+
+**Done: the four event islands** are unlocked in-game. The ferry at the Linguicove harbor takes the player there once they have the ticket (post-game only, as in Emerald):
+
+| Ticket | Island | Pokémon | Given by |
+| --- | --- | --- | --- |
+| Eon Ticket | Southern Island | Whichever of Latias/Latios didn't roam (Lv 50) | Mike, the first time the player beats him |
+| Old Sea Map | Faraway Island | Mew (Lv 50) | Joe Fettuccine, Cove Lily Motel |
+| Mystic Ticket | Navel Rock | Lugia and Ho-Oh (Lv 70) | Joe Q, his house at the Bucatini Frontier |
+| Aurora Ticket | Birth Island | Deoxys (Lv 50) | Scientist, Mostaccideep Space Center 1F |
+
+**Decided: themed one-offs (27), not started.** Levels: Arceus 80; cover legendaries 70; other legendaries 60; mythicals 50.
+
+| Pokémon | Where |
+| --- | --- |
+| Articuno | Shoal Cave, Ice Room |
+| Zapdos | New Macaroville, generator room |
+| Moltres | Fiery Path |
+| Raikou | Route 120 |
+| Entei | Mt. Calzone summit |
+| Suicune | Route 119, by the waterfall |
+| Celebi | Pestoburg Woods |
+| Jirachi | Meatball Falls 1F |
+| Darkrai | Cave of Oregano |
+| Shaymin | Route 117 flower fields |
+| Manaphy | Seafloor Cavern |
+| Dialga, Palkia | Sky Breadstick 3F and 5F, after catching Rayquaza |
+| Arceus | Sky Breadstick summit, after catching Dialga, Palkia and Giratina |
+| Giratina | Mt. Penne summit |
+| Cresselia | Mt. Penne exterior |
+| Heatran | Marinara Hideout, deepest room |
+| Regigigas | Sealed Chamber, after catching the three Regis |
+| Kyurem | Shoal Cave, low-tide lower room |
+| Zygarde | Desert Underpass |
+| Xerneas | Safari Zone, forest area |
+| Yveltal | Route 113 |
+| Solgaleo | Mirage Tower, top |
+| Lunala | Altering Cave |
+| Genesect | Weather Institute lab |
+| Marshadow | Granite Cave B2F |
+| Zeraora | New Macaroville entrance |
+
+Not included for now: the other legendaries, mythicals, Ultra Beasts and Paradox Pokémon (about 110).
 
 ## Battle mechanics
 
@@ -561,7 +607,7 @@ A yes/no choice at New Game that randomizes Pokémon for that save file. It must
 | New themed teams for all trainers and Gym Leaders (Gens 1–9, Megas from gym 3) | Trainer data | Done |
 | Trainer names from the Retrotopia community | Text (waiting on Joe's list) | Not started |
 | Retrotopia cast: Alan (Birch), Sam (Steven), Joe Fettuccine (designer) | Custom sprites, scripts, dialogue | Not started |
-| All Pokémon through Gen IX | Built in; plan placement | Wild placement done (time-of-day tables); legendary one-off encounters and 13 regional evolutions still to do |
+| All Pokémon through Gen IX | Built in; plan placement | Wild placement done (time-of-day tables); event islands unlocked; 27 themed legendary one-offs and 13 regional evolutions still to do |
 | Items, abilities, move effects through Gen IX | Built in; plan placement | Not started |
 | Physical/special split | Built in | Done (built in) |
 | Mega Evolution (Mega Ring from Sam in Granite Cave) | Built in; place Mega Ring and Mega Stones | Done |

@@ -89,6 +89,9 @@ MossdeepCity_SpaceCenter_1F_EventScript_ShowLaunchNumberMagma::
 MossdeepCity_SpaceCenter_1F_EventScript_Scientist::
 	lock
 	faceplayer
+	goto_if_unset FLAG_SYS_GAME_CLEAR, MossdeepCity_SpaceCenter_1F_EventScript_ScientistNormal
+	goto_if_unset FLAG_ENABLE_SHIP_BIRTH_ISLAND, MossdeepCity_SpaceCenter_1F_EventScript_GiveAuroraTicket
+MossdeepCity_SpaceCenter_1F_EventScript_ScientistNormal::
 	goto_if_eq VAR_MOSSDEEP_CITY_STATE, 2, MossdeepCity_SpaceCenter_1F_EventScript_ScientistMagma
 	msgbox MossdeepCity_SpaceCenter_1F_Text_RocketLaunchDemandsPerfection, MSGBOX_DEFAULT
 	release
@@ -422,3 +425,39 @@ MossdeepCity_SpaceCenter_1F_Text_MagmaIntentToStealNotice:
 	.string "We will take the fuel no matter what.\p"
 	.string "“Let the volcanoes run red!\n"
 	.string "                                          TEAM MARINARA”$"
+
+@ Post-game: a scientist gives the AURORA TICKET (Birth Island)
+MossdeepCity_SpaceCenter_1F_EventScript_GiveAuroraTicket::
+	msgbox MossdeepCity_SpaceCenter_1F_Text_AuroraTicketOffer, MSGBOX_DEFAULT
+	checkitemspace ITEM_AURORA_TICKET
+	goto_if_eq VAR_RESULT, FALSE, MossdeepCity_SpaceCenter_1F_EventScript_GiveAuroraTicketBagFull
+	giveitem ITEM_AURORA_TICKET
+	setflag FLAG_ENABLE_SHIP_BIRTH_ISLAND
+	setflag FLAG_RECEIVED_AURORA_TICKET
+	msgbox MossdeepCity_SpaceCenter_1F_Text_AuroraTicketUseAtPort, MSGBOX_DEFAULT
+	release
+	end
+
+MossdeepCity_SpaceCenter_1F_EventScript_GiveAuroraTicketBagFull::
+	msgbox MossdeepCity_SpaceCenter_1F_Text_AuroraTicketBagFull, MSGBOX_DEFAULT
+	release
+	end
+
+MossdeepCity_SpaceCenter_1F_Text_AuroraTicketOffer:
+	.string "Oh, you're the CHAMPION!\p"
+	.string "Our telescope picked up a strange\n"
+	.string "signal from a tiny island far out at\l"
+	.string "sea.\p"
+	.string "It looked like something from space. We\n"
+	.string "can't spare anyone to check, but you\l"
+	.string "could.\p"
+	.string "Take this AURORA TICKET.$"
+
+MossdeepCity_SpaceCenter_1F_Text_AuroraTicketUseAtPort:
+	.string "Show it at the LINGUICOVE harbor. The\n"
+	.string "ferry will take you to BIRTH ISLAND.\p"
+	.string "Let us know what you find!$"
+
+MossdeepCity_SpaceCenter_1F_Text_AuroraTicketBagFull:
+	.string "Your BAG is full! Come back when you've\n"
+	.string "made some room.$"

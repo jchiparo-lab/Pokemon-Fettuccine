@@ -4,6 +4,7 @@ BattleFrontier_ScottsHouse_MapScripts::
 BattleFrontier_ScottsHouse_EventScript_Scott::
 	lock
 	faceplayer
+	goto_if_unset FLAG_ENABLE_SHIP_NAVEL_ROCK, BattleFrontier_ScottsHouse_EventScript_GiveMysticTicket
 	goto_if_set FLAG_TEMP_4, BattleFrontier_ScottsHouse_EventScript_GivenBerry
 	goto_if_set FLAG_TEMP_3, BattleFrontier_ScottsHouse_EventScript_GivenShield
 	goto_if_set FLAG_TEMP_2, BattleFrontier_ScottsHouse_EventScript_GivenBattlePoints
@@ -351,3 +352,37 @@ BattleFrontier_ScottsHouse_Text_ComeBackForThisLater:
 	.string "Oops, well, if you have too much\n"
 	.string "stuff, come back for this later.$"
 
+@ JOE Q gives the MYSTIC TICKET (Navel Rock). The Frontier is only reachable post-game.
+BattleFrontier_ScottsHouse_EventScript_GiveMysticTicket::
+	msgbox BattleFrontier_ScottsHouse_Text_MysticTicketOffer, MSGBOX_DEFAULT
+	checkitemspace ITEM_MYSTIC_TICKET
+	goto_if_eq VAR_RESULT, FALSE, BattleFrontier_ScottsHouse_EventScript_GiveMysticTicketBagFull
+	giveitem ITEM_MYSTIC_TICKET
+	setflag FLAG_ENABLE_SHIP_NAVEL_ROCK
+	setflag FLAG_RECEIVED_MYSTIC_TICKET
+	msgbox BattleFrontier_ScottsHouse_Text_MysticTicketUseAtPort, MSGBOX_DEFAULT
+	release
+	end
+
+BattleFrontier_ScottsHouse_EventScript_GiveMysticTicketBagFull::
+	msgbox BattleFrontier_ScottsHouse_Text_MysticTicketBagFull, MSGBOX_DEFAULT
+	release
+	end
+
+BattleFrontier_ScottsHouse_Text_MysticTicketOffer:
+	.string "JOE Q: Hehe… {PLAYER}! Welcome to my\n"
+	.string "place.\p"
+	.string "A TRAINER of your caliber deserves to\n"
+	.string "see something special.\p"
+	.string "Take this MYSTIC TICKET.$"
+
+BattleFrontier_ScottsHouse_Text_MysticTicketUseAtPort:
+	.string "JOE Q: Show it at the LINGUICOVE\n"
+	.string "harbor. The ferry will take you to\l"
+	.string "NAVEL ROCK.\p"
+	.string "They say two legendary birds rest\n"
+	.string "there. Just cool enough!$"
+
+BattleFrontier_ScottsHouse_Text_MysticTicketBagFull:
+	.string "JOE Q: Hehe… Your BAG's full. Make some\n"
+	.string "room, and I'll have something for you.$"

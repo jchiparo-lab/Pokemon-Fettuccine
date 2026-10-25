@@ -123,6 +123,23 @@ EverGrandeCity_PokemonLeague_1F_EventScript_MikeBattle::
 	msgbox EverGrandeCity_PokemonLeague_1F_Text_MikeAndiamo, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_WALLACE, EverGrandeCity_PokemonLeague_1F_Text_MikeDefeat
 	msgbox EverGrandeCity_PokemonLeague_1F_Text_MikePostBattle, MSGBOX_DEFAULT
+	goto_if_unset FLAG_ENABLE_SHIP_SOUTHERN_ISLAND, EverGrandeCity_PokemonLeague_1F_EventScript_MikeGiveEonTicket
+	release
+	end
+
+@ Post-game: MIKE gives the EON TICKET (Southern Island) the first time he's beaten
+EverGrandeCity_PokemonLeague_1F_EventScript_MikeGiveEonTicket::
+	msgbox EverGrandeCity_PokemonLeague_1F_Text_MikeEonTicketOffer, MSGBOX_DEFAULT
+	checkitemspace ITEM_EON_TICKET
+	goto_if_eq VAR_RESULT, FALSE, EverGrandeCity_PokemonLeague_1F_EventScript_MikeGiveEonTicketBagFull
+	giveitem ITEM_EON_TICKET
+	setflag FLAG_ENABLE_SHIP_SOUTHERN_ISLAND
+	msgbox EverGrandeCity_PokemonLeague_1F_Text_MikeEonTicketUseAtPort, MSGBOX_DEFAULT
+	release
+	end
+
+EverGrandeCity_PokemonLeague_1F_EventScript_MikeGiveEonTicketBagFull::
+	msgbox EverGrandeCity_PokemonLeague_1F_Text_MikeEonTicketBagFull, MSGBOX_DEFAULT
 	release
 	end
 
@@ -211,3 +228,20 @@ EverGrandeCity_PokemonLeague_1F_Text_MikePostBattle:
 EverGrandeCity_PokemonLeague_1F_Text_MikeDecline:
 	.string "MIKE: No? Eh, take your time.\p"
 	.string "I ain't goin' anywhere.$"
+
+EverGrandeCity_PokemonLeague_1F_Text_MikeEonTicketOffer:
+	.string "MIKE: Ayyy, one more thing.\p"
+	.string "A buddy of mine says there's an island\n"
+	.string "way down south where a rare POKéMON\l"
+	.string "hangs out.\p"
+	.string "You earned this. Take my EON TICKET.$"
+
+EverGrandeCity_PokemonLeague_1F_Text_MikeEonTicketUseAtPort:
+	.string "MIKE: Show it at the LINGUICOVE\n"
+	.string "harbor, and the ferry'll take you to\l"
+	.string "SOUTHERN ISLAND. Capisce?$"
+
+EverGrandeCity_PokemonLeague_1F_Text_MikeEonTicketBagFull:
+	.string "MIKE: Ayyy, your BAG's stuffed like a\n"
+	.string "cannoli!\p"
+	.string "Make some room and come see me.$"

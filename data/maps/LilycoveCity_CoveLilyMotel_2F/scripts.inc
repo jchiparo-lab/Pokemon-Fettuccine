@@ -4,6 +4,9 @@ LilycoveCity_CoveLilyMotel_2F_MapScripts::
 LilycoveCity_CoveLilyMotel_2F_EventScript_GameDesigner::
 	lock
 	faceplayer
+	goto_if_unset FLAG_SYS_GAME_CLEAR, LilycoveCity_CoveLilyMotel_2F_EventScript_GameDesignerDex
+	goto_if_unset FLAG_ENABLE_SHIP_FARAWAY_ISLAND, LilycoveCity_CoveLilyMotel_2F_EventScript_GiveOldSeaMap
+LilycoveCity_CoveLilyMotel_2F_EventScript_GameDesignerDex::
 	call_if_unset FLAG_TEMP_2, LilycoveCity_CoveLilyMotel_2F_EventScript_ShowMeCompletedDex
 	call_if_set FLAG_TEMP_2, LilycoveCity_CoveLilyMotel_2F_EventScript_ShowDiploma
 	specialvar VAR_RESULT, HasAllHoennMons
@@ -130,3 +133,37 @@ LilycoveCity_CoveLilyMotel_2F_Text_ContestsDoTakeStrategy:
 	.string "JOE Q: Don't tell anyone about\n"
 	.string "the kid mode thing.$"
 
+@ Post-game: the GAME DESIGNER gives the OLD SEA MAP (Faraway Island)
+LilycoveCity_CoveLilyMotel_2F_EventScript_GiveOldSeaMap::
+	msgbox LilycoveCity_CoveLilyMotel_2F_Text_OldSeaMapOffer, MSGBOX_DEFAULT
+	checkitemspace ITEM_OLD_SEA_MAP
+	goto_if_eq VAR_RESULT, FALSE, LilycoveCity_CoveLilyMotel_2F_EventScript_GiveOldSeaMapBagFull
+	giveitem ITEM_OLD_SEA_MAP
+	setflag FLAG_ENABLE_SHIP_FARAWAY_ISLAND
+	setflag FLAG_RECEIVED_OLD_SEA_MAP
+	msgbox LilycoveCity_CoveLilyMotel_2F_Text_OldSeaMapUseAtPort, MSGBOX_DEFAULT
+	release
+	end
+
+LilycoveCity_CoveLilyMotel_2F_EventScript_GiveOldSeaMapBagFull::
+	msgbox LilycoveCity_CoveLilyMotel_2F_Text_OldSeaMapBagFull, MSGBOX_DEFAULT
+	release
+	end
+
+LilycoveCity_CoveLilyMotel_2F_Text_OldSeaMapOffer:
+	.string "Oh! You're the new CHAMPION!\p"
+	.string "Want to know a secret? I hid an island\n"
+	.string "in this region that nobody has ever\l"
+	.string "found.\p"
+	.string "Not even my testers. Here, take this\n"
+	.string "OLD SEA MAP.$"
+
+LilycoveCity_CoveLilyMotel_2F_Text_OldSeaMapUseAtPort:
+	.string "Show it at the LINGUICOVE harbor. The\n"
+	.string "ferry will take you to FARAWAY ISLAND.\p"
+	.string "Don't tell anyone I told you!$"
+
+LilycoveCity_CoveLilyMotel_2F_Text_OldSeaMapBagFull:
+	.string "Your BAG is full! Come back when you've\n"
+	.string "made some room, and I'll tell you my\l"
+	.string "secret.$"
