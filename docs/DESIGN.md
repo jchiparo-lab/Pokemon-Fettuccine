@@ -122,6 +122,8 @@ Brian is a proud Canadian who hates all Italian food. He wants to become Champio
 
 **Decided:** Brian is **not** Prof. Birch's (Alan's) son. In Emerald the rival is Birch's child, so the rival's "my dad" lines get written out in the dialogue rewrite.
 
+**Done (step 5): Brian as Champion.** Brian sits in the Champion's Room and battles with his own trainer entry (`TRAINER_BRIAN_CHAMPION`). After he loses, Prof. Birch arrives (the old rival run-in is cut), and Brian escorts the player to the Hall of Fame because "it's a rule." **Decided:** Brian is still in the Champion's seat on post-game League re-challenges, while also appearing in Prof. Birch's lab.
+
 **Done (step 4): Brian replaces Wally.** Pestoburg Gym and Route 102: Brian asks Norman for help, uses his own Ducklett in the catching tutorial, and catches a Bidoof (no Zigzagoon loan). Macaroville: Brian waits outside the gym alone after losing to Wattson (Wally's uncle removed; Wally is never registered in the PokéNav). Victory Road: Brian shows off his Mega Ring, battles, then storms off toward the Elite Four. **Decided:** Wally's post-game Victory Road rematches are dropped. **Decided:** Wally's house in Pestoburg is now **THE CARBONARA FAMILY**, big fans of the Pestoburg Gym; the father still gives HM Surf after the player beats Norman. Wally's relatives in Cavatapurf are now just Wanda's family (Wally removed). The Trick House quiz asks which Pokémon Brian caught on Route 102 (Bidoof). Every Brian battle now uses the rival battle music.
 
 **Done (step 3): Brian's dialogue** in Lil Ragu (his mom and his bedroom), Prof. Birch's lab (including post-game), Route 103, Oldale, Rotiniboro and Route 104, Lasagnaridge, Route 110, Route 119, Linguicove, his 16 PokéNav calls, and his PokéNav profile (strategy: "Battle first, Wings after."). Both rival versions now share the same lines. The Champion's Room comes with the Champion step.
@@ -144,9 +146,11 @@ Brian is a proud Canadian who hates all Italian food. He wants to become Champio
 - **Decided:** **Mike** (Joe's cousin) takes Wallace's place. Wallace is no longer the Champion; after Victory Road, Mike is standing outside the Elite Four entrance in Fettuccine Grande.
 - Talking to him gets a line along the lines of: "That angry fellow who hates pasta just stormed through here... and he's the new Champion!" (draft wording)
 - **Decided:** In the post-game, after the player becomes Champion, Mike stays in the same spot. Talking to him starts a challenge to see whether the new Champion is the real deal.
+- **Decided:** Mike is outside because **Brian beat him** for the title just before the player arrives. Mike's post-game challenge is **repeatable**.
+- **Done:** Mike stands in the Pokémon League lobby, right of the Elite Four door (tile 13, 3; Joe may move him in Porymap). Before the Hall of Fame he tells the player a kid from Canada beat him; after it, he offers a battle (yes/no) every time he's talked to, using his trainer data (`TRAINER_WALLACE`, levels 57–60).
 - **Decided:** Mike replaces Wallace **everywhere** (Sugopolis and HM Waterfall, Cave of Origin, Sky Pillar, Mostaccideep, the Champion's Room until Brian takes it over, and every line that mentions him). **Done:** all dialogue and his trainer name say MIKE. Wallace's sprites are his placeholder.
 - **Decided:** Mike's ace is an **overpowered Spearow**, a unique Spearow form only he has (`SPECIES_SPEAROW_MIKE`). Wild Spearow are unaffected. Both Mike and his Spearow get custom sprite work by Joe. **Done:** the form exists with boosted stats (80 HP / 145 Atk / 90 Def / 55 SpA / 90 SpD / 140 Spe, 600 total, vs. 262 for Spearow), using Spearow's sprites as a placeholder. Moves: Brave Bird, Double-Edge, Drill Run, U-turn, with a Life Orb.
-- **Decided: Mike's personality** is an over-the-top Italian stereotype mixed with the Fonz ("Ayyy!", "Correctamundo!", "Capisce?"). He's confident but not overconfident: he knows he's strong and doesn't rub it in. Above all he's a proud Pastalian with a deep love for every pasta and sauce, so he won't take a side between red and white sauce. He keeps Wallace's backstory (former Sugopolis Gym Leader, Juan's student). **Done:** all his lines in Sugopolis, the Cave of Oregano, the Sky Breadstick, the Champion's Room, the Hall of Fame, and his PokéNav call and profile. (The Champion's Room and Hall of Fame lines will move to Brian when he becomes Champion.)
+- **Decided: Mike's personality** is an over-the-top Italian stereotype mixed with the Fonz ("Ayyy!", "Correctamundo!", "Capisce?"). He's confident but not overconfident: he knows he's strong and doesn't rub it in. Above all he's a proud Pastalian with a deep love for every pasta and sauce, so he won't take a side between red and white sauce. He keeps Wallace's backstory (former Sugopolis Gym Leader, Juan's student). **Done:** all his lines in Sugopolis, the Cave of Oregano, the Sky Breadstick, the Champion's Room, the Hall of Fame, and his PokéNav call and profile. (The Champion's Room and Hall of Fame lines have since moved to Brian.)
 - **Decided: Mike's team is hyper-Italian,** with a Mega (Gallade). (The earlier three-Gen-1 rule was dropped when Falinks replaced Snorlax.) **Done** (levels 57–60, Spearow last):
 
 | Pokémon | Gen | Type | Italian theme |
@@ -199,7 +203,7 @@ Eight battles, in play order (the Linguicove battle stays optional, as in Emeral
 | 5 | Route 119 | Deerling 28, Stantler 29, Bibarel 29, Snover 30, Ducklett 31 | 15 | Done |
 | 6 | Linguicove (optional) | Bibarel 32, Stantler 32, Deerling 32, Snover 33, Swanna 35 (shiny; 35 for every starter) | 18 | Done |
 | 7 | Victory Road | Alolan Ninetales 44, Wyrdeer 44, Bibarel 44, Sawsbuck 45, Mega Abomasnow 46, Swanna 47 | 24 | Done |
-| 8 | Champion | Alolan Ninetales 55, Wyrdeer 56, Bibarel 55, Sawsbuck 56, Mega Abomasnow 57, Swanna 58 | 31 | With the Champion step |
+| 8 | Champion | Alolan Ninetales 55, Wyrdeer 56, Bibarel 55, Sawsbuck 56, Mega Abomasnow 57, Swanna 58 | 31 | Done |
 
 Deerling and Sawsbuck are Autumn form. Champion sets: Ninetales (Light Clay, Snow Warning) Aurora Veil, Freeze-Dry, Dazzling Gleam, Nasty Plot; Wyrdeer (Sitrus Berry, Intimidate) Psyshield Bash, Double-Edge, Earthquake, Thunder Wave; Bibarel (Sitrus Berry, Simple) Swords Dance, Waterfall, Crunch, Aqua Jet; Sawsbuck (Lum Berry, Sap Sipper) Horn Leech, Double-Edge, Megahorn, Swords Dance; Abomasnow (Abomasite, Snow Warning) Blizzard, Wood Hammer, Earthquake, Ice Shard; Swanna (Life Orb) Hurricane, Surf, Ice Beam, Roost. Victory Road uses the same idea at lower levels (Abomasnow: Ice Beam instead of Blizzard; Swanna: Brave Bird instead of Hurricane).
 
@@ -548,7 +552,7 @@ A yes/no choice at New Game that randomizes Pokémon for that save file. It must
 | Main character sprites (Ethan and Kris) | Community sprites, no recolor | Not started |
 | Brian as rival (sprites, name, logic, anti-pasta story) | Art plus code and dialogue | Partly done: named BRIAN for both genders, uses Brendan's sprites as a placeholder; rival teams and dialogue done (Macaroville, Victory Road and Champion come with those steps); custom sprites still to do |
 | Brian replaces Wally (Petalburg catch, Mauville, Victory Road) | Scripts and dialogue | Done (Brendan's sprites as placeholder) |
-| Brian as Champion, Mike (replaces Wallace) outside the Elite Four | Scripts, trainer data, dialogue, custom sprites | Not started |
+| Brian as Champion, Mike (replaces Wallace) outside the Elite Four | Scripts, trainer data, dialogue, custom sprites | Done (placeholder sprites: Brendan for Brian, Wallace for Mike) |
 | Brian's room SNES / Time Toggle text | Text edit | Done |
 | Joe Q replaces Scott | Dialogue rewrite (keeps Scott's sprite) | Name and dialogue done (keeps Scott's sprite) |
 | New themed teams for all trainers and Gym Leaders (Gens 1–9, Megas from gym 3) | Trainer data | Done |

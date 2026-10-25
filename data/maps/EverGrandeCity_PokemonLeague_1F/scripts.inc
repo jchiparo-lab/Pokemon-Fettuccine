@@ -97,6 +97,40 @@ EverGrandeCity_PokemonLeague_1F_EventScript_GoForth::
 	releaseall
 	end
 
+@ MIKE, the former CHAMPION Brian beat, waits by the ELITE FOUR door.
+@ After the HALL OF FAME he challenges the player, and can be battled again any time.
+EverGrandeCity_PokemonLeague_1F_EventScript_Mike::
+	lock
+	faceplayer
+	goto_if_set FLAG_SYS_GAME_CLEAR, EverGrandeCity_PokemonLeague_1F_EventScript_MikeChallenge
+	msgbox EverGrandeCity_PokemonLeague_1F_Text_MikeBrianBeatMe, MSGBOX_DEFAULT
+	release
+	end
+
+EverGrandeCity_PokemonLeague_1F_EventScript_MikeChallenge::
+	goto_if_defeated TRAINER_WALLACE, EverGrandeCity_PokemonLeague_1F_EventScript_MikeRematch
+	msgbox EverGrandeCity_PokemonLeague_1F_Text_MikeChallenge, MSGBOX_YESNO
+	goto EverGrandeCity_PokemonLeague_1F_EventScript_MikeBattle
+	end
+
+EverGrandeCity_PokemonLeague_1F_EventScript_MikeRematch::
+	msgbox EverGrandeCity_PokemonLeague_1F_Text_MikeRematch, MSGBOX_YESNO
+	goto EverGrandeCity_PokemonLeague_1F_EventScript_MikeBattle
+	end
+
+EverGrandeCity_PokemonLeague_1F_EventScript_MikeBattle::
+	goto_if_eq VAR_RESULT, NO, EverGrandeCity_PokemonLeague_1F_EventScript_MikeDecline
+	msgbox EverGrandeCity_PokemonLeague_1F_Text_MikeAndiamo, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_WALLACE, EverGrandeCity_PokemonLeague_1F_Text_MikeDefeat
+	msgbox EverGrandeCity_PokemonLeague_1F_Text_MikePostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+EverGrandeCity_PokemonLeague_1F_EventScript_MikeDecline::
+	msgbox EverGrandeCity_PokemonLeague_1F_Text_MikeDecline, MSGBOX_DEFAULT
+	release
+	end
+
 EverGrandeCity_PokemonLeague_1F_Movement_MoveToFrontFromRight:
 	walk_down
 	walk_left
@@ -135,3 +169,45 @@ EverGrandeCity_PokemonLeague_1F_Text_GoForth:
 	.string "TRAINER! Believe in yourself and your\n"
 	.string "POKéMON, and go forth!$"
 
+EverGrandeCity_PokemonLeague_1F_Text_MikeBrianBeatMe:
+	.string "MIKE: Ayyy, {PLAYER}.\p"
+	.string "Yeah, you heard right. A kid from\n"
+	.string "CANADA beat me. Took the CHAMPION's\l"
+	.string "chair right out from under me.\p"
+	.string "His ABOMASNOW froze my whole team\n"
+	.string "solid. Gotta respect that.\p"
+	.string "But now he says he's gonna ban pasta.\n"
+	.string "PASTA! In PASTALIA! Fuhgeddaboudit.\p"
+	.string "Go on in there and show him what\n"
+	.string "PASTALIA's made of.$"
+
+EverGrandeCity_PokemonLeague_1F_Text_MikeChallenge:
+	.string "MIKE: Ayyy, the new CHAMPION!\p"
+	.string "You beat the kid who beat me.\n"
+	.string "Correctamundo.\p"
+	.string "But I gotta see for myself if you're\n"
+	.string "the real deal.\p"
+	.string "You and me, one battle. Capisce?$"
+
+EverGrandeCity_PokemonLeague_1F_Text_MikeRematch:
+	.string "MIKE: Ayyy, {PLAYER}! Back for another\n"
+	.string "round?\p"
+	.string "You and me, one more time. Capisce?$"
+
+EverGrandeCity_PokemonLeague_1F_Text_MikeAndiamo:
+	.string "MIKE: That's what I like to hear.\n"
+	.string "Andiamo!$"
+
+EverGrandeCity_PokemonLeague_1F_Text_MikeDefeat:
+	.string "MIKE: Ayyy…\p"
+	.string "Now THAT's a CHAMPION.$"
+
+EverGrandeCity_PokemonLeague_1F_Text_MikePostBattle:
+	.string "MIKE: You're the real deal, {PLAYER}.\n"
+	.string "PASTALIA's in good hands.\p"
+	.string "Come back anytime. I'll make you my\n"
+	.string "nonna's lasagna.$"
+
+EverGrandeCity_PokemonLeague_1F_Text_MikeDecline:
+	.string "MIKE: No? Eh, take your time.\p"
+	.string "I ain't goin' anywhere.$"
