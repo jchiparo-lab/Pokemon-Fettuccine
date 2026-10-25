@@ -222,6 +222,7 @@ static EWRAM_DATA enum Item sPartyMenuItemId = 0;
 EWRAM_DATA u8 gBattlePartyCurrentOrder[PARTY_SIZE / 2] = {0}; // bits 0-3 are the current pos of Slot 1, 4-7 are Slot 2, and so on
 static EWRAM_DATA u8 sInitialLevel = 0;
 static EWRAM_DATA u8 sFinalLevel = 0;
+static EWRAM_DATA bool8 sFieldMoveByPhantom = FALSE; // Fettuccine: a phantom Magikarp uses the field move
 
 // IWRAM common
 COMMON_DATA void (*gItemUseCB)(u8, TaskFunc) = NULL;
@@ -1463,6 +1464,23 @@ static void Task_ClosePartyMenuAndSetCB2(u8 taskId)
 u8 GetCursorSelectionMonId(void)
 {
     return gPartyMenu.slotId;
+}
+
+// Fettuccine: FLY and FLASH can be used by a phantom Magikarp (HM in the bag).
+// Returns the party slot of the Pokémon using the field move, then resets.
+u8 GetFieldMoveUserMonId(void)
+{
+    bool8 byPhantom = sFieldMoveByPhantom;
+
+    sFieldMoveByPhantom = FALSE;
+    if (byPhantom)
+        return FIELD_MOVE_PHANTOM_SLOT;
+    return gPartyMenu.slotId;
+}
+
+void SetFieldMoveByPhantom(void)
+{
+    sFieldMoveByPhantom = TRUE;
 }
 
 u8 GetPartyMenuType(void)
@@ -2947,6 +2965,18 @@ static void SetPartyMonSelectionActions(struct Pokemon *mons, u8 slotId, u8 acti
     }
 }
 
+static void TryAppendPhantomFieldMove(struct Pokemon *mon, enum FieldMove fieldMove)
+{
+    // Leave room for SWITCH, ITEM and CANCEL
+    if (sPartyMenuInternal->numActions >= ARRAY_COUNT(sPartyMenuInternal->actions) - 3)
+        return;
+    if (MonKnowsMove(mon, FieldMove_GetMoveId(fieldMove))
+     || !IsFieldMoveUnlocked(fieldMove)
+     || !HasHMForFieldMove(fieldMove))
+        return;
+    AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, fieldMove + MENU_FIELD_MOVES);
+}
+
 static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
 {
     u8 i, j;
@@ -2969,6 +2999,10 @@ static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
             }
         }
     }
+
+    // Fettuccine: with the badge and the HM in the bag, every Pokémon gets FLY and FLASH
+    TryAppendPhantomFieldMove(&mons[slotId], FIELD_MOVE_FLY);
+    TryAppendPhantomFieldMove(&mons[slotId], FIELD_MOVE_FLASH);
 
     if (!InBattlePike())
     {
@@ -4093,6 +4127,8 @@ static void CursorCb_FieldMove(u8 taskId)
     PlaySE(SE_SELECT);
     if (gFieldMoveInfo[fieldMove].fieldMoveFunc == NULL)
         return;
+
+    sFieldMoveByPhantom = !MonKnowsMove(&gParties[B_TRAINER_PLAYER][gPartyMenu.slotId], FieldMove_GetMoveId(fieldMove));
 
     PartyMenuRemoveWindow(&sPartyMenuInternal->windowId[0]);
     PartyMenuRemoveWindow(&sPartyMenuInternal->windowId[1]);

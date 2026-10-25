@@ -70,6 +70,8 @@ extern const struct SpriteTemplate gSpriteTemplate_StatusIcons;
 void AnimatePartySlot(u8 slot, u8 animNum);
 bool8 IsMultiBattle(void);
 u8 GetCursorSelectionMonId(void);
+u8 GetFieldMoveUserMonId(void);
+void SetFieldMoveByPhantom(void);
 u8 GetPartyMenuType(void);
 void Task_HandleChooseMonInput(u8 taskId);
 u8 *GetMonNickname(struct Pokemon *mon, u8 *dest);

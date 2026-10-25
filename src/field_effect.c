@@ -1530,8 +1530,8 @@ static void Task_UseFly(u8 taskId)
             if (!IsWeatherNotFadingIn())
                 return;
 
-            gFieldEffectArguments[0] = GetCursorSelectionMonId();
-            if ((int)gFieldEffectArguments[0] > PARTY_SIZE - 1)
+            gFieldEffectArguments[0] = GetFieldMoveUserMonId();
+            if ((int)gFieldEffectArguments[0] > PARTY_SIZE - 1 && gFieldEffectArguments[0] != FIELD_MOVE_PHANTOM_SLOT)
                 gFieldEffectArguments[0] = 0;
 
             FieldEffectStart(FLDEFF_USE_FLY);
