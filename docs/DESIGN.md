@@ -118,6 +118,10 @@ Brian is a proud Canadian who hates all Italian food. He wants to become Champio
 
 **Decided:** Brian stays a pasta hater forever, even after he loses.
 
+**Decided:** Brian is **not** Prof. Birch's (Alan's) son. In Emerald the rival is Birch's child, so the rival's "my dad" lines get written out in the dialogue rewrite.
+
+**Done (step 1):** the rival is named BRIAN for both genders (dialogue, PokéNav, trainer names, Fan Club), and his mom calls him her son. Both versions of the rival use Brendan's overworld, bike, battle, and PokéNav sprites as a placeholder. The rival's May scenes still play May's encounter music.
+
 **Decided:** Brian fills three roles from Emerald: **the rival, Wally, and the Champion** (replacing Wallace). His appearances:
 
 1. **Route 103 (first battle).** Introduces his hatred of Italian food and his goal of becoming Champion.
@@ -519,7 +523,7 @@ A yes/no choice at New Game that randomizes Pokémon for that save file. It must
 | Nurse Joy Jammie Dodger heal (plus blackout cookie) | One shared script change | Done |
 | Retro Salvage Games shops (Jason, orange roofs) | Sprite recolor, palette, tiles, dialogue | Not started |
 | Main character sprites (Ethan and Kris) | Community sprites, no recolor | Not started |
-| Brian as rival (sprites, name, logic, anti-pasta story) | Art plus code and dialogue | Not started (rival teams still use old Hoenn starters) |
+| Brian as rival (sprites, name, logic, anti-pasta story) | Art plus code and dialogue | Partly done: named BRIAN for both genders, uses Brendan's sprites as a placeholder; teams (still old Hoenn starters), dialogue and custom sprites still to do |
 | Brian replaces Wally (Petalburg catch, Mauville, Victory Road) | Scripts and dialogue | Not started |
 | Brian as Champion, Mike (replaces Wallace) outside the Elite Four | Scripts, trainer data, dialogue, custom sprites | Not started |
 | Brian's room SNES / Time Toggle text | Text edit | Done |
