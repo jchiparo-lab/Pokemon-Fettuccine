@@ -425,6 +425,24 @@ bool32 ShouldDoWallyCall(void)
     return TRUE;
 }
 
+// Fettuccine: Prof. Birch calls about regional forms on the first outdoor step after badge 3
+bool32 ShouldDoBirchRegionalFormsCall(void)
+{
+    if (!FlagGet(FLAG_BIRCH_REGIONAL_FORMS_CALL))
+        return FALSE;
+
+    switch (gMapHeader.mapType)
+    {
+    case MAP_TYPE_TOWN:
+    case MAP_TYPE_CITY:
+    case MAP_TYPE_ROUTE:
+    case MAP_TYPE_OCEAN_ROUTE:
+        return TRUE;
+    default:
+        return FALSE;
+    }
+}
+
 bool32 ShouldDoScottFortreeCall(void)
 {
     if (FlagGet(FLAG_SCOTT_CALL_FORTREE_GYM))

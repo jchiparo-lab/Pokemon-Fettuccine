@@ -626,3 +626,39 @@ MauvilleCity_Text_ExplainTV:
 
 MauvilleCity_Text_BeenCheckingOutTV:
 	.string "Hi, have you been checking out TVs?$"
+
+@ Fettuccine: after badge 3, Prof. Birch (Alan) calls to explain where
+@ regional forms evolve (see the evolutions in src/data/pokemon/species_info).
+MauvilleCity_EventScript_BirchRegionalFormsCall::
+	lockall
+	pokenavcall MauvilleCity_Text_BirchRegionalFormsCall
+	waitmessage
+	clearflag FLAG_BIRCH_REGIONAL_FORMS_CALL
+	releaseall
+	end
+
+MauvilleCity_Text_BirchRegionalFormsCall:
+	.string "… … … … … …\n"
+	.string "… … … … … Beep!\p"
+	.string "PROF. BIRCH: Hello, {PLAYER}{KUN}!\n"
+	.string "Three BADGES! Splendid work!\p"
+	.string "I've been up late studying\n"
+	.string "regional forms, with a wee\l"
+	.string "glass of whiskey for company.\p"
+	.string "Some POKéMON take a special\n"
+	.string "form, depending on where\l"
+	.string "they evolve!\p"
+	.string "ALOLAN forms: level up on\n"
+	.string "ROUTE 106, or use a stone in\l"
+	.string "DITALINFORD TOWN.\p"
+	.string "GALARIAN forms: level up on\n"
+	.string "ROUTE 117.\p"
+	.string "HISUIAN forms: level up on\n"
+	.string "ROUTE 119, or use an item in\l"
+	.string "FORTELLINI CITY.\p"
+	.string "Anywhere else, they evolve\n"
+	.string "into their usual forms.\p"
+	.string "Right, back to my… research.\n"
+	.string "Cheerio!\p"
+	.string "… … … … … …\n"
+	.string "… … … … … Click!$"
