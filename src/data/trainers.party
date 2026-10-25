@@ -9004,9 +9004,10 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Treecko
+Ducklett
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Water Gun
 
 === TRAINER_BRENDAN_ROUTE_110_MUDKIP ===
 Name: BRIAN
@@ -9017,17 +9018,29 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Slugma
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Snover
+Level: 17
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+- Powder Snow
+- Leafage
+- Ice Shard
+- Mist
 
-Wingull
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Bibarel
+Level: 19
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+- Headbutt
+- Water Gun
+- Rollout
+- Defense Curl
 
-Grovyle
-Level: 20
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Ducklett
+Level: 21
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+- Bubble Beam
+- Aerial Ace
+- Feather Dance
+- Defog
 
 === TRAINER_BRENDAN_ROUTE_119_MUDKIP ===
 Name: BRIAN
@@ -9038,17 +9051,45 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Slugma
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Deerling-Autumn
+Level: 28
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Energy Ball
+- Take Down
+- Double Kick
+- Leech Seed
 
-Pelipper
+Stantler
 Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Stomp
+- Take Down
+- Hypnosis
+- Confuse Ray
 
-Grovyle
+Bibarel
+Level: 29
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Crunch
+- Headbutt
+- Water Gun
+- Yawn
+
+Snover
+Level: 30
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Razor Leaf
+- Icy Wind
+- Ice Shard
+- Mist
+
+Ducklett
 Level: 31
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Air Slash
+- Bubble Beam
+- Roost
+- Feather Dance
 
 === TRAINER_BRENDAN_ROUTE_103_TREECKO ===
 Name: BRIAN
@@ -9059,9 +9100,10 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Force Setup First Turn
 
-Torchic
+Ducklett
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Water Gun
 
 === TRAINER_BRENDAN_ROUTE_110_TREECKO ===
 Name: BRIAN
@@ -9072,17 +9114,28 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Wingull
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Snover
+Level: 16
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+- Leer
+- Leafage
+- Mist
 
-Lombre
+Bibarel
 Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+- Headbutt
+- Water Gun
+- Rollout
+- Defense Curl
 
-Combusken
+Ducklett
 Level: 20
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+- Bubble Beam
+- Aerial Ace
+- Water Pulse
+- Defog
 
 === TRAINER_BRENDAN_ROUTE_119_TREECKO ===
 Name: BRIAN
@@ -9093,17 +9146,45 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Pelipper
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Deerling-Autumn
+Level: 27
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Bullet Seed
+- Take Down
+- Double Kick
+- Leech Seed
 
-Lombre
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Stantler
+Level: 28
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Stomp
+- Take Down
+- Hypnosis
+- Confuse Ray
 
-Combusken
-Level: 31
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Bibarel
+Level: 28
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Crunch
+- Headbutt
+- Water Gun
+- Yawn
+
+Snover
+Level: 29
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Razor Leaf
+- Icy Wind
+- Leer
+- Mist
+
+Ducklett
+Level: 30
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Air Slash
+- Bubble Beam
+- Roost
+- Feather Dance
 
 === TRAINER_BRENDAN_ROUTE_103_TORCHIC ===
 Name: BRIAN
@@ -9114,9 +9195,10 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Mudkip
+Ducklett
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Water Gun
 
 === TRAINER_BRENDAN_ROUTE_110_TORCHIC ===
 Name: BRIAN
@@ -9127,17 +9209,29 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Lombre
+Snover
 Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+- Powder Snow
+- Leafage
+- Ice Shard
+- Mist
 
-Slugma
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-
-Marshtomp
+Bibarel
 Level: 20
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+- Aqua Jet
+- Water Gun
+- Headbutt
+- Defense Curl
+
+Ducklett
+Level: 22
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+- Bubble Beam
+- Water Pulse
+- Aerial Ace
+- Feather Dance
 
 === TRAINER_BRENDAN_ROUTE_119_TORCHIC ===
 Name: BRIAN
@@ -9148,17 +9242,45 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Lombre
+Deerling-Autumn
 Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Energy Ball
+- Take Down
+- Double Kick
+- Leech Seed
 
-Slugma
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Stantler
+Level: 30
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Stomp
+- Take Down
+- Hypnosis
+- Confuse Ray
 
-Marshtomp
+Bibarel
+Level: 30
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Surf
+- Crunch
+- Aqua Jet
+- Yawn
+
+Snover
 Level: 31
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Razor Leaf
+- Icy Wind
+- Ice Shard
+- Mist
+
+Ducklett
+Level: 32
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Air Slash
+- Bubble Beam
+- Water Pulse
+- Roost
 
 === TRAINER_MAY_ROUTE_103_MUDKIP ===
 Name: BRIAN
@@ -9169,9 +9291,10 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Treecko
+Ducklett
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Water Gun
 
 === TRAINER_MAY_ROUTE_110_MUDKIP ===
 Name: BRIAN
@@ -9182,17 +9305,29 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Wingull
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Snover
+Level: 17
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+- Powder Snow
+- Leafage
+- Ice Shard
+- Mist
 
-Slugma
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Bibarel
+Level: 19
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+- Headbutt
+- Water Gun
+- Rollout
+- Defense Curl
 
-Grovyle
-Level: 20
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Ducklett
+Level: 21
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+- Bubble Beam
+- Aerial Ace
+- Feather Dance
+- Defog
 
 === TRAINER_MAY_ROUTE_119_MUDKIP ===
 Name: BRIAN
@@ -9203,17 +9338,45 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Slugma
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Deerling-Autumn
+Level: 28
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Energy Ball
+- Take Down
+- Double Kick
+- Leech Seed
 
-Lombre
+Stantler
 Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Stomp
+- Take Down
+- Hypnosis
+- Confuse Ray
 
-Grovyle
+Bibarel
+Level: 29
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Crunch
+- Headbutt
+- Water Gun
+- Yawn
+
+Snover
+Level: 30
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Razor Leaf
+- Icy Wind
+- Ice Shard
+- Mist
+
+Ducklett
 Level: 31
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Air Slash
+- Bubble Beam
+- Roost
+- Feather Dance
 
 === TRAINER_MAY_ROUTE_103_TREECKO ===
 Name: BRIAN
@@ -9224,9 +9387,10 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Torchic
+Ducklett
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Water Gun
 
 === TRAINER_MAY_ROUTE_110_TREECKO ===
 Name: BRIAN
@@ -9237,17 +9401,28 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Wingull
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Snover
+Level: 16
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+- Leer
+- Leafage
+- Mist
 
-Lombre
+Bibarel
 Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+- Headbutt
+- Water Gun
+- Rollout
+- Defense Curl
 
-Combusken
+Ducklett
 Level: 20
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+- Bubble Beam
+- Aerial Ace
+- Water Pulse
+- Defog
 
 === TRAINER_MAY_ROUTE_119_TREECKO ===
 Name: BRIAN
@@ -9258,17 +9433,45 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Pelipper
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Deerling-Autumn
+Level: 27
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Bullet Seed
+- Take Down
+- Double Kick
+- Leech Seed
 
-Lombre
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Stantler
+Level: 28
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Stomp
+- Take Down
+- Hypnosis
+- Confuse Ray
 
-Combusken
-Level: 31
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Bibarel
+Level: 28
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Crunch
+- Headbutt
+- Water Gun
+- Yawn
+
+Snover
+Level: 29
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Razor Leaf
+- Icy Wind
+- Leer
+- Mist
+
+Ducklett
+Level: 30
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Air Slash
+- Bubble Beam
+- Roost
+- Feather Dance
 
 === TRAINER_MAY_ROUTE_103_TORCHIC ===
 Name: BRIAN
@@ -9279,9 +9482,10 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Mudkip
+Ducklett
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Water Gun
 
 === TRAINER_MAY_ROUTE_110_TORCHIC ===
 Name: BRIAN
@@ -9292,17 +9496,29 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Lombre
+Snover
 Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+- Powder Snow
+- Leafage
+- Ice Shard
+- Mist
 
-Slugma
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-
-Marshtomp
+Bibarel
 Level: 20
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+- Aqua Jet
+- Water Gun
+- Headbutt
+- Defense Curl
+
+Ducklett
+Level: 22
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+- Bubble Beam
+- Water Pulse
+- Aerial Ace
+- Feather Dance
 
 === TRAINER_MAY_ROUTE_119_TORCHIC ===
 Name: BRIAN
@@ -9313,17 +9529,45 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Lombre
+Deerling-Autumn
 Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Energy Ball
+- Take Down
+- Double Kick
+- Leech Seed
 
-Slugma
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Stantler
+Level: 30
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Stomp
+- Take Down
+- Hypnosis
+- Confuse Ray
 
-Marshtomp
+Bibarel
+Level: 30
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Surf
+- Crunch
+- Aqua Jet
+- Yawn
+
+Snover
 Level: 31
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Razor Leaf
+- Icy Wind
+- Ice Shard
+- Mist
+
+Ducklett
+Level: 32
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Air Slash
+- Bubble Beam
+- Water Pulse
+- Roost
 
 === TRAINER_ISAAC_1 ===
 Name: ISAAC
@@ -10332,13 +10576,21 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Lotad
-Level: 13
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-
-Torchic
-Level: 15
+Bidoof
+Level: 12
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Tackle
+- Growl
+- Defense Curl
+- Rollout
+
+Ducklett
+Level: 14
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Water Gun
+- Wing Attack
+- Water Pulse
+- Defog
 
 === TRAINER_BRENDAN_RUSTBORO_MUDKIP ===
 Name: BRIAN
@@ -10349,13 +10601,21 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Wingull
+Bidoof
 Level: 13
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Tackle
+- Defense Curl
+- Rollout
+- Headbutt
 
-Treecko
+Ducklett
 Level: 15
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Water Gun
+- Wing Attack
+- Water Pulse
+- Aerial Ace
 
 === TRAINER_PAXTON ===
 Name: PAXTON
@@ -10456,13 +10716,21 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Slugma
-Level: 13
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-
-Mudkip
-Level: 15
+Bidoof
+Level: 14
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Tackle
+- Defense Curl
+- Rollout
+- Headbutt
+
+Ducklett
+Level: 16
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Water Gun
+- Wing Attack
+- Water Pulse
+- Aerial Ace
 
 === TRAINER_MAY_RUSTBORO_MUDKIP ===
 Name: BRIAN
@@ -10473,13 +10741,21 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Force Setup First Turn
 
-Wingull
+Bidoof
 Level: 13
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Tackle
+- Defense Curl
+- Rollout
+- Headbutt
 
-Treecko
+Ducklett
 Level: 15
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Water Gun
+- Wing Attack
+- Water Pulse
+- Aerial Ace
 
 === TRAINER_MAXIE_MAGMA_HIDEOUT ===
 Name: MARZANO
@@ -11689,21 +11965,46 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Tropius
-Level: 31
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-
-Slugma
+Bibarel
 Level: 32
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Crunch
+- Surf
+- Headbutt
+- Yawn
 
-Pelipper
+Stantler
 Level: 32
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Take Down
+- Stomp
+- Hypnosis
+- Confuse Ray
 
-Grovyle
-Level: 34
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+Deerling-Autumn
+Level: 32
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Energy Ball
+- Zen Headbutt
+- Take Down
+- Leech Seed
+
+Snover
+Level: 33
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Razor Leaf
+- Icy Wind
+- Ice Shard
+- Swagger
+
+Swanna
+Level: 35
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Shiny: Yes
+- Air Slash
+- Surf
+- Roost
+- Feather Dance
 
 === TRAINER_BRENDAN_LILYCOVE_TREECKO ===
 Name: BRIAN
@@ -11714,21 +12015,46 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Tropius
+Bibarel
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Crunch
+- Surf
+- Headbutt
+- Yawn
 
-Pelipper
+Stantler
+Level: 31
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Take Down
+- Stomp
+- Hypnosis
+- Confuse Ray
+
+Deerling-Autumn
+Level: 31
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Energy Ball
+- Zen Headbutt
+- Take Down
+- Leech Seed
+
+Snover
 Level: 32
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Razor Leaf
+- Icy Wind
+- Leer
+- Mist
 
-Ludicolo
-Level: 32
+Swanna
+Level: 35
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-
-Combusken
-Level: 34
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+Shiny: Yes
+- Air Slash
+- Surf
+- Roost
+- Feather Dance
 
 === TRAINER_BRENDAN_LILYCOVE_TORCHIC ===
 Name: BRIAN
@@ -11739,21 +12065,46 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Tropius
-Level: 31
+Bibarel
+Level: 33
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Surf
+- Crunch
+- Aqua Jet
+- Yawn
 
-Ludicolo
-Level: 32
+Stantler
+Level: 33
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Take Down
+- Stomp
+- Hypnosis
+- Confuse Ray
 
-Slugma
-Level: 32
+Deerling-Autumn
+Level: 33
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Energy Ball
+- Zen Headbutt
+- Take Down
+- Leech Seed
 
-Marshtomp
+Snover
 Level: 34
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Razor Leaf
+- Icy Wind
+- Ice Shard
+- Swagger
+
+Swanna
+Level: 36
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Shiny: Yes
+- Air Slash
+- Surf
+- Roost
+- Feather Dance
 
 === TRAINER_MAY_LILYCOVE_MUDKIP ===
 Name: BRIAN
@@ -11764,21 +12115,46 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Tropius
-Level: 31
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-
-Slugma
+Bibarel
 Level: 32
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Crunch
+- Surf
+- Headbutt
+- Yawn
 
-Pelipper
+Stantler
 Level: 32
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Take Down
+- Stomp
+- Hypnosis
+- Confuse Ray
 
-Grovyle
-Level: 34
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+Deerling-Autumn
+Level: 32
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Energy Ball
+- Zen Headbutt
+- Take Down
+- Leech Seed
+
+Snover
+Level: 33
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Razor Leaf
+- Icy Wind
+- Ice Shard
+- Swagger
+
+Swanna
+Level: 35
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Shiny: Yes
+- Air Slash
+- Surf
+- Roost
+- Feather Dance
 
 === TRAINER_MAY_LILYCOVE_TREECKO ===
 Name: BRIAN
@@ -11789,21 +12165,46 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Tropius
+Bibarel
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Crunch
+- Surf
+- Headbutt
+- Yawn
 
-Pelipper
+Stantler
+Level: 31
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Take Down
+- Stomp
+- Hypnosis
+- Confuse Ray
+
+Deerling-Autumn
+Level: 31
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Energy Ball
+- Zen Headbutt
+- Take Down
+- Leech Seed
+
+Snover
 Level: 32
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Razor Leaf
+- Icy Wind
+- Leer
+- Mist
 
-Ludicolo
-Level: 32
+Swanna
+Level: 35
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-
-Combusken
-Level: 34
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+Shiny: Yes
+- Air Slash
+- Surf
+- Roost
+- Feather Dance
 
 === TRAINER_MAY_LILYCOVE_TORCHIC ===
 Name: BRIAN
@@ -11814,21 +12215,46 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Tropius
-Level: 31
+Bibarel
+Level: 33
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Surf
+- Crunch
+- Aqua Jet
+- Yawn
 
-Ludicolo
-Level: 32
+Stantler
+Level: 33
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Take Down
+- Stomp
+- Hypnosis
+- Confuse Ray
 
-Slugma
-Level: 32
+Deerling-Autumn
+Level: 33
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Energy Ball
+- Zen Headbutt
+- Take Down
+- Leech Seed
 
-Marshtomp
+Snover
 Level: 34
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Razor Leaf
+- Icy Wind
+- Ice Shard
+- Swagger
+
+Swanna
+Level: 36
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Shiny: Yes
+- Air Slash
+- Surf
+- Roost
+- Feather Dance
 
 === TRAINER_JONAH ===
 Name: JONAH
@@ -13497,13 +13923,21 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Lotad
-Level: 13
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-
-Torchic
-Level: 15
+Bidoof
+Level: 12
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Tackle
+- Growl
+- Defense Curl
+- Rollout
+
+Ducklett
+Level: 14
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Water Gun
+- Wing Attack
+- Water Pulse
+- Defog
 
 === TRAINER_MAY_RUSTBORO_TORCHIC ===
 Name: BRIAN
@@ -13514,13 +13948,21 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Torkoal
-Level: 13
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-
-Mudkip
-Level: 15
+Bidoof
+Level: 14
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Tackle
+- Defense Curl
+- Rollout
+- Headbutt
+
+Ducklett
+Level: 16
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Water Gun
+- Wing Attack
+- Water Pulse
+- Aerial Ace
 
 === TRAINER_ROXANNE_2 ===
 Name: ROXANNE

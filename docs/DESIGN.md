@@ -80,7 +80,7 @@ Balance notes:
 
 **Done.** Birch's bag offers Rowlet (left), Scorbunny (middle), and Froakie (right). The woman in the Pestoburg Pokémon Center who explains your starter's type is updated too.
 
-- **Until the Brian feature is done,** the rival's teams still use Treecko, Torchic, and Mudkip.
+- **Done:** the rival's teams no longer use Treecko, Torchic, or Mudkip (see Brian's battles).
 
 ## Shops and Pokémon Centers
 
@@ -125,7 +125,7 @@ Brian is a proud Canadian who hates all Italian food. He wants to become Champio
 **Decided:** Brian fills three roles from Emerald: **the rival, Wally, and the Champion** (replacing Wallace). His appearances:
 
 1. **Route 103 (first battle).** Introduces his hatred of Italian food and his goal of becoming Champion.
-2. **Petalburg City and Route 102 (replaces Wally's catch scene).** Instead of meeting Wally, the player finds Brian demanding that Norman help him catch his second Pokémon. The scene plays out as normal, with the player helping Brian catch **Snover** (his future Mega Abomasnow). This is a scene, not a battle.
+2. **Petalburg City and Route 102 (replaces Wally's catch scene).** Instead of meeting Wally, the player finds Brian demanding that Norman help him catch his second Pokémon. The scene plays out as normal, with the player helping Brian catch **Bidoof** (his future Bibarel). This is a scene, not a battle. (Changed from Snover.)
 3. **Rotiniboro City.** Complains about the town's name and vows to rename it once he wins.
 4. **Macaroville City (replaces Wally's battle in Mauville).** Brian just lost to the Mauville Gym and takes his anger out on the player. (It doesn't help that the city is named after macaroni.)
 5. **Route 110.** Starts to see the player as a real obstacle to his plan.
@@ -172,13 +172,30 @@ Brian is a proud Canadian who hates all Italian food. He wants to become Champio
 | Sawsbuck (Autumn form) | Normal/Grass | Maple-leaf colors, a nod to maple syrup |
 | Alolan Ninetales | Ice/Fairy | Arctic fox; its Aurora Veil move is the northern lights |
 
-- **Swanna is his ace,** saved for last, and its shiny Canada goose colors are the big reveal. Give it an ace build (highest level, perfect IVs, a good item and strong moveset); its stats are modest for an ace, so consider buffing its base stats.
-- **Swanna is also his day-one partner.** Players never see the rival pick a starter, so Ducklett is his first Pokémon and the one he uses in the Route 103 battle. Bidoof joins later.
+- **Swanna is his ace,** saved for last, and its shiny Canada goose colors are the big reveal. Give it an ace build (highest level, perfect IVs, a good item and strong moveset); its stats are modest for an ace. **Decided:** no stat buff; it's an ace through level, perfect IVs and its item.
+- **Swanna is also his day-one partner.** Players never see the rival pick a starter, so Ducklett is his first Pokémon and the one he uses in the Route 103 battle. Bidoof (caught on Route 102) is his second; Snover joins by Route 110.
 - **Abomasnow Mega Evolves** in later battles, so Brian needs a Mega Ring in the story (story flavor only: trainers Mega Evolve without one).
 - **Lock Sawsbuck to its Autumn form** in his trainer data.
 - **Decided: Brian's Swanna is recolored as a Canada goose:** black head and neck, a white chinstrap patch, a gray-brown body, a pale chest, and a black beak and tail. Same approach as Sam's Metagross: Brian's Swanna is shiny in his trainer data, and Swanna's shiny palette gets the goose colors, so any shiny Swanna the player finds is a Canada goose too. Because the white chinstrap and black neck may share a color with the rest of the body, the sprite probably needs a few pixel edits in Aseprite as well as the palette change. Brian's Ducklett stays normal-colored in earlier battles, so the goose colors are a surprise when it evolves.
 - **Watch out for Fire.** Abomasnow, Sawsbuck, and Ninetales are all weak to it. Bibarel and Swanna can switch in against Fire types; give the others coverage moves.
 - Earlier battles use pre-evolved forms (Ducklett, Snover, Bidoof, Stantler, Deerling, Alolan Vulpix) as the team grows.
+
+#### Brian's battles (Decided)
+
+Eight battles, in play order (the Linguicove battle stays optional, as in Emerald). Levels are for a Froakie player; against **Rowlet** (his hardest matchup) Brian is 1 level lower from Rotiniboro on and his Snover has no Ice move until Route 119, then only Icy Wind; against **Scorbunny** (his easiest) he's 1 level higher and Ducklett/Bibarel lead with Water moves. Macaroville, Victory Road and the Champion battle are the same for every starter.
+
+| # | Battle | Team (ace last) | IVs | Status |
+| --- | --- | --- | --- | --- |
+| 1 | Route 103 | Ducklett 5 | 0 | Done |
+| 2 | Rotiniboro | Bidoof 13, Ducklett 15 | 6 | Done |
+| 3 | Route 110 | Snover 17, Bibarel 19, Ducklett 21 | 9 | Done |
+| 4 | Macaroville | Snover 19, Stantler 20, Bibarel 21, Ducklett 22 | 12 | With the Wally scenes |
+| 5 | Route 119 | Deerling 28, Stantler 29, Bibarel 29, Snover 30, Ducklett 31 | 15 | Done |
+| 6 | Linguicove (optional) | Bibarel 32, Stantler 32, Deerling 32, Snover 33, Swanna 35 (shiny; 35 for every starter) | 18 | Done |
+| 7 | Victory Road | Alolan Ninetales 44, Wyrdeer 44, Bibarel 44, Sawsbuck 45, Mega Abomasnow 46, Swanna 47 | 24 | With the Wally scenes |
+| 8 | Champion | Alolan Ninetales 55, Wyrdeer 56, Bibarel 55, Sawsbuck 56, Mega Abomasnow 57, Swanna 58 | 31 | With the Champion step |
+
+Deerling and Sawsbuck are Autumn form. Champion sets: Ninetales (Light Clay, Snow Warning) Aurora Veil, Freeze-Dry, Dazzling Gleam, Nasty Plot; Wyrdeer (Sitrus Berry, Intimidate) Psyshield Bash, Double-Edge, Earthquake, Thunder Wave; Bibarel (Sitrus Berry, Simple) Swords Dance, Waterfall, Crunch, Aqua Jet; Sawsbuck (Lum Berry, Sap Sipper) Horn Leech, Double-Edge, Megahorn, Swords Dance; Abomasnow (Abomasite, Snow Warning) Blizzard, Wood Hammer, Earthquake, Ice Shard; Swanna (Life Orb) Hurricane, Surf, Ice Beam, Roost. Victory Road uses the same idea at lower levels (Abomasnow: Ice Beam instead of Blizzard; Swanna: Brave Bird instead of Hurricane).
 
 ### Brian's bedroom: SNES and Time Toggle
 
@@ -523,7 +540,7 @@ A yes/no choice at New Game that randomizes Pokémon for that save file. It must
 | Nurse Joy Jammie Dodger heal (plus blackout cookie) | One shared script change | Done |
 | Retro Salvage Games shops (Jason, orange roofs) | Sprite recolor, palette, tiles, dialogue | Not started |
 | Main character sprites (Ethan and Kris) | Community sprites, no recolor | Not started |
-| Brian as rival (sprites, name, logic, anti-pasta story) | Art plus code and dialogue | Partly done: named BRIAN for both genders, uses Brendan's sprites as a placeholder; teams (still old Hoenn starters), dialogue and custom sprites still to do |
+| Brian as rival (sprites, name, logic, anti-pasta story) | Art plus code and dialogue | Partly done: named BRIAN for both genders, uses Brendan's sprites as a placeholder; rival teams done (Macaroville, Victory Road and Champion teams come with those steps); dialogue and custom sprites still to do |
 | Brian replaces Wally (Petalburg catch, Mauville, Victory Road) | Scripts and dialogue | Not started |
 | Brian as Champion, Mike (replaces Wallace) outside the Elite Four | Scripts, trainer data, dialogue, custom sprites | Not started |
 | Brian's room SNES / Time Toggle text | Text edit | Done |
