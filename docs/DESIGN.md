@@ -518,7 +518,7 @@ Mostly quality-of-life config options. Feature names change between expansion ve
 - **Faster HP drain.**
 - **Simultaneous HP reduction** for spread moves in doubles.
 - **Faster AI calculations** (AI config flags plus possible code tuning).
-- **Done: battle speed option.** BATTLE SPEED (1X / 2X) in the Options menu, 4th row. At 2X the battle runs twice per frame (animations, HP bars, text); the overworld and music are unaffected, and each button press only counts once. Off in link and recorded battles. Defaults to 1X; existing saves start at 1X. To fit 8 rows, the title and list now share one frame.
+- **Done: battle speed option.** BATTLE SPEED (1X / 2X) in the Options menu, 4th row. At 2X the battle runs twice per frame (animations, HP bars, text); the overworld and music are unaffected, and each button press only counts once. Off in link and recorded battles. Defaults to 1X; existing saves start at 1X. To fit 8 rows, the title and list now share one frame. Screen fades always run at 1X: running them twice per frame could stop a fade from ever finishing, which froze the game after forgetting a move to learn a new one in battle (found in Playtest 2, fixed in the rebuilt Playtest 2).
 
 ## Overworld and menus
 
