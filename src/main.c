@@ -20,6 +20,7 @@
 #include "battle.h"
 #include "battle_controllers.h"
 #include "battle_main.h"
+#include "palette.h"
 #include "text.h"
 #include "intro.h"
 #include "main.h"
@@ -191,10 +192,14 @@ static void InitMainCallbacks(void)
     gPokemonStoragePtr = &gPokemonStorage.block;
 }
 
+// Screen fades are left at normal speed: they expect the screen to refresh
+// between updates, and updating twice can stop a fade from ever finishing
+// (this froze the game when returning from the "forget a move" screen).
 static bool32 IsBattleSpeedUpActive(void)
 {
     return gSaveBlock2Ptr->optionsBattleSpeed
         && gMain.callback2 == BattleMainCB2
+        && !gPaletteFade.active
         && !(gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_RECORDED));
 }
 
