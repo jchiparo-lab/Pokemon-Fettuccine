@@ -190,10 +190,8 @@ LittlerootTown_ProfessorBirchsLab_EventScript_UpgradeToNationalDex::
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_OkayAllDone, MSGBOX_DEFAULT
-	playfanfare MUS_OBTAIN_ITEM
-	message LittlerootTown_ProfessorBirchsLab_Text_PokedexUpgradedToNational
-	waitmessage
-	waitfanfare
+	@ Fettuccine: the Pokédex is already National, so Alan just backs up
+	@ the data. This also switches on the National Dex for older saves.
 	setflag FLAG_SYS_NATIONAL_DEX
 	special EnableNationalPokedex
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting2, MSGBOX_DEFAULT
@@ -831,14 +829,13 @@ LittlerootTown_ProfessorBirchsLab_Text_OtherRegionsUpgradeToNational:
 	.string "been helping me study POKéMON.\p"
 	.string "Thanks to you, all sorts of new\n"
 	.string "facts are coming to light.\p"
-	.string "It seems PASTALIA is also home to\n"
-	.string "POKéMON from other regions.\p"
+	.string "POKéMON from every corner of the\n"
+	.string "world, all living in PASTALIA!\p"
 	.string "Just goes to show how rich and\n"
 	.string "varied PASTALIA is.\l"
 	.string "Like a good bolognese!\p"
-	.string "So I think it's high time I\n"
-	.string "upgraded your POKéDEX to the\l"
-	.string "NATIONAL Mode.\p"
+	.string "Let me back up your POKéDEX data\n"
+	.string "on my PC. For science!\p"
 	.string "Here, hand over your POKéDEX units.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayUpgradeSoCool:
@@ -846,28 +843,30 @@ LittlerootTown_ProfessorBirchsLab_Text_MayUpgradeSoCool:
 	.string "back because the PROF says there are\l"
 	.string "POKéMON from other regions.\p"
 	.string "Regions with NO pasta!\p"
-	.string "…I helped get you that NATIONAL Mode,\n"
-	.string "by the way. You're welcome.$"
+	.string "If you find out where they're from,\n"
+	.string "tell me first. I'm moving there.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanYouCanThankMe:
 	.string "BRIAN: Don't get excited. I only came\n"
 	.string "back because the PROF says there are\l"
 	.string "POKéMON from other regions.\p"
 	.string "Regions with NO pasta!\p"
-	.string "…I helped get you that NATIONAL Mode,\n"
-	.string "by the way. You're welcome.$"
+	.string "If you find out where they're from,\n"
+	.string "tell me first. I'm moving there.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_OkayAllDone:
-	.string "PROF. ALAN: Right, all done!$"
-
-LittlerootTown_ProfessorBirchsLab_Text_PokedexUpgradedToNational:
-	.string "{PLAYER}'s POKéDEX was upgraded\n"
-	.string "to the NATIONAL Mode!$"
+	.string "PROF. ALAN: Right, all saved!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting2:
 	.string "PROF. ALAN: But listen. You may be\n"
 	.string "the CHAMPION, but your POKéMON\l"
 	.string "journey isn't over.\p"
+	.string "Fill in every PASTALIA entry in your\n"
+	.string "POKéDEX and pop back to the LAB.\l"
+	.string "I'll have a little something for you.\p"
+	.string "And the game designer at the\n"
+	.string "COVE LILY MOTEL in LINGUICOVE\l"
+	.string "would love to see it, too.\p"
 	.string "There's no end to the road\n"
 	.string "that is POKéMON.\p"
 	.string "Somewhere out there, a patch of\n"

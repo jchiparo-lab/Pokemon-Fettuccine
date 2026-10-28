@@ -1002,8 +1002,8 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 	.string "I knew there was something special\n"
 	.string "about you the moment we met,\l"
 	.string "but this!\p"
-	.string "Oh, yes. Have you still got that\n"
-	.string "POKéDEX I gave you?\p"
+	.string "Oh, yes. How's that POKéDEX of\n"
+	.string "yours coming along?\p"
 	.string "I've something to show you.\n"
 	.string "Let's nip over to my LAB.$"
 
