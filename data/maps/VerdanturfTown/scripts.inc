@@ -103,7 +103,7 @@ VerdanturfTown_Text_EasyToGetToRustboroNow:
 	.string "That cave next to the POKéMON MART\n"
 	.string "is now a tunnel to the other side.\p"
 	.string "It's great--it's easy to go shop for\n"
-	.string "new DEVON products in ROTINIBORO now.$"
+	.string "new GARLIC products in ROTINIBORO now.$"
 
 VerdanturfTown_Text_TownSign:
 	.string "CAVATAPURF TOWN\p"

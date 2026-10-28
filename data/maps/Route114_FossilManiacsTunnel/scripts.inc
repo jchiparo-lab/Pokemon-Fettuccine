@@ -70,7 +70,7 @@ Route114_FossilManiacsTunnel_Text_DevonCorpRevivingFossils:
 	.string "That's so nice… It's so dreamy…\p"
 	.string "What are you going to do with that\n"
 	.string "FOSSIL?\p"
-	.string "From what I've heard, DEVON is doing\n"
+	.string "From what I've heard, GARLIC is doing\n"
 	.string "research on reviving POKéMON from\l"
 	.string "FOSSILS…\p"
 	.string "I love my FOSSILS, so I would never\n"
@@ -108,6 +108,6 @@ Route114_FossilManiacsTunnel_Text_TakeOldAmber:
 
 Route114_FossilManiacsTunnel_Text_DevonCanReviveAmber:
 	.string "There's a POKéMON sealed inside!\p"
-	.string "I hear the DEVON CORPORATION in\n"
+	.string "I hear the GARLIC CORPORATION in\n"
 	.string "ROTINIBORO can bring fossils back\l"
 	.string "to life. Give it a try!$"

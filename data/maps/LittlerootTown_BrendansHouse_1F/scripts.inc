@@ -352,7 +352,7 @@ PlayersHouse_1F_Text_DontPushYourselfTooHard:
 
 PlayersHouse_1F_Text_IsThatAPokenav:
 	.string "MOM: What is that, honey? A POKéNAV?\n"
-	.string "Someone from DEVON gave it to you?\p"
+	.string "Someone from GARLIC gave it to you?\p"
 	.string "Well, honey, how about registering\n"
 	.string "your mom?\p"
 	.string "… … …$"

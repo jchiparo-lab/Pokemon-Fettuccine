@@ -1102,7 +1102,7 @@ MatchCall_PersonalizedText39::
 	.string "I just put on some suntan oil.\p"
 	.string "So my POKéNAV went whoopsy\n"
 	.string "out of my hand into the water!\p"
-	.string "But, boy, DEVON's POKéNAV is built\n"
+	.string "But, boy, GARLIC's POKéNAV is built\n"
 	.string "tough. It survived that dunking!\p"
 	.string "Anyways, I'm busy sunbathing,\n"
 	.string "so let's chat another time.$"
@@ -2841,7 +2841,7 @@ MatchCall_Text_MrStone3::
 
 MatchCall_Text_MrStone4::
 	.string "MR. STONE: Oh! {PLAYER}{KUN}!\p"
-	.string "Did you know that DEVON was\n"
+	.string "Did you know that GARLIC was\n"
 	.string "digging the ROTIPURF TUNNEL?\p"
 	.string "But we shut down the operation to\n"
 	.string "protect the POKéMON in the area.\p"
@@ -2867,7 +2867,7 @@ MatchCall_Text_MrStone6::
 
 MatchCall_Text_MrStone7::
 	.string "Hello!\n"
-	.string "This is DEVON CORPORATI…\l"
+	.string "This is GARLIC CORPORATI…\l"
 	.string "Oh, hello, {PLAYER}!\p"
 	.string "Our PRESIDENT was here a little\n"
 	.string "while ago, but he's gone out.\p"
@@ -2903,5 +2903,5 @@ MatchCall_Text_MrStone11::
 	.string "Is this maybe {PLAYER}{KUN}?\p"
 	.string "Your voice is so full of confidence,\n"
 	.string "I didn't recognize you right off!\p"
-	.string "Hm! You must come visit us at DEVON\n"
+	.string "Hm! You must come visit us at GARLIC\n"
 	.string "sometime!$"

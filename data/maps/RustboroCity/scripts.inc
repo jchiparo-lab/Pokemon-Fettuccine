@@ -1013,8 +1013,8 @@ RustboroCity_EventScript_Boy1::
 	end
 
 RustboroCity_Text_WeShortenItToDevon:
-	.string "The DEVON CORPORATION…\n"
-	.string "We all just shorten it to DEVON.\p"
+	.string "The GARLIC CORPORATION…\n"
+	.string "We all just shorten it to GARLIC.\p"
 	.string "That company makes all sorts of\n"
 	.string "convenient products.$"
 
@@ -1100,7 +1100,7 @@ RustboroCity_Text_HelpMeIWasRobbed:
 	.string "You're that fantastic TRAINER who\n"
 	.string "helped me in PESTOBURG WOODS!\p"
 	.string "Help me! I was robbed by TEAM ALFREDO!\n"
-	.string "I have to get the DEVON GOODS back!\p"
+	.string "I have to get the GARLIC GOODS back!\p"
 	.string "If I don't…\n"
 	.string "I'm going to be in serious trouble.$"
 
@@ -1110,7 +1110,7 @@ RustboroCity_Text_ShadyCharacterTookOffTowardsTunnel:
 
 RustboroCity_Text_YouGotItThankYou:
 	.string "Oh! How did it go?\n"
-	.string "The DEVON GOODS?\p"
+	.string "The GARLIC GOODS?\p"
 	.string "You did!\n"
 	.string "You got them back!\p"
 	.string "You really are a great TRAINER!\p"
@@ -1225,7 +1225,7 @@ RustboroCity_Text_TunnelNearingCompletion:
 	.string "across it in red paint…$"
 
 RustboroCity_Text_DevonCorpSign:
-	.string "DEVON CORPORATION\p"
+	.string "GARLIC CORPORATION\p"
 	.string "“For all your living needs, we make\n"
 	.string "it all.”$"
 
@@ -1235,8 +1235,8 @@ RustboroCity_Text_GymSign:
 	.string "“The ROCK-loving honors student!”$"
 
 RustboroCity_Text_DevonCorpBranchOfficeSign:
-	.string "DEVON CORP. BRANCH OFFICE\p"
-	.string "“Access limited to DEVON employees\n"
+	.string "GARLIC CORP. BRANCH OFFICE\p"
+	.string "“Access limited to GARLIC employees\n"
 	.string "and authorized personnel.”$"
 
 RustboroCity_Text_CitySign:

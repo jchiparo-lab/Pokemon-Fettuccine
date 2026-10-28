@@ -14426,7 +14426,7 @@ const struct ItemInfo gItemsInfo[] =
         .description = COMPOUND_STRING(
             "A letter to Steven\n"
             "from the President\n"
-            "of the Devon Corp."),
+            "of the Garlic Corp."),
         .importance = 2,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -14437,12 +14437,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DEVON_PARTS] =
     {
-        .name = ITEM_NAME("Devon Parts"),
-        .pluralName = ITEM_PLURAL_NAME("Devon Parts"),
+        .name = ITEM_NAME("Garlic Parts"),
+        .pluralName = ITEM_PLURAL_NAME("Garlic Parts"),
         .price = 0,
         .description = COMPOUND_STRING(
             "A package that\n"
-            "contains Devon's\n"
+            "contains Garlic's\n"
             "machine parts."),
         .importance = 2,
         .pocket = POCKET_KEY_ITEMS,
@@ -14471,10 +14471,10 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DEVON_SCOPE] =
     {
-        .name = ITEM_NAME("Devon Scope"),
+        .name = ITEM_NAME("Garlic Scope"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "A device by Devon\n"
+            "A device by Garlic\n"
             "that signals any\n"
             "unseeable Pokémon."),
         .importance = 1,

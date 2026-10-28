@@ -181,7 +181,7 @@ static const struct MatchCallStructNPC sMrStoneMatchCallHeader =
     .type = MC_TYPE_NPC,
     .mapSec = MAPSEC_RUSTBORO_CITY,
     .flag = 0xFFFF,
-    .desc = COMPOUND_STRING("DEVON PRES"),
+    .desc = COMPOUND_STRING("GARLIC PRES"),
     .name = COMPOUND_STRING("MR. STONE"),
     .textData = (const match_call_text_data_t[]) {
         { MatchCall_Text_MrStone1,  ALWAYS_AVAILABLE,                    FLAG_ENABLE_MR_STONE_POKENAV },

@@ -197,7 +197,7 @@ RustboroCity_DevonCorp_3F_EventScript_RareRocksDisplay::
 
 RustboroCity_DevonCorp_3F_Text_MrStoneIHaveFavor:
 	.string "I'm MR. STONE, the PRESIDENT of\n"
-	.string "the DEVON CORPORATION.\p"
+	.string "the GARLIC CORPORATION.\p"
 	.string "I'd just got word about you!\p"
 	.string "You saved our staff not just once,\n"
 	.string "but twice!\p"
@@ -269,7 +269,7 @@ RustboroCity_DevonCorp_3F_Text_NotFamiliarWithTrends:
 	.string "TRAINERS in the POKéMON LEAGUE?$"
 
 RustboroCity_DevonCorp_3F_Text_ThisIs3rdFloorWaitHere:
-	.string "This is the DEVON CORPORATION's\n"
+	.string "This is the GARLIC CORPORATION's\n"
 	.string "third floor.\p"
 	.string "Our PRESIDENT's OFFICE is on\n"
 	.string "this floor.\p"
@@ -300,9 +300,9 @@ RustboroCity_DevonCorp_3F_Text_VisitCaptSternShipyard:
 	.string "see CAPT. STERN.$"
 
 RustboroCity_DevonCorp_3F_Text_RepeatAndTimerHugelyPopular:
-	.string "DEVON's new products, the REPEAT BALL\n"
-	.string "and TIMER BALL, have become hugely\l"
-	.string "popular among TRAINERS.$"
+	.string "GARLIC's new products, the REPEAT\n"
+	.string "BALL and TIMER BALL, have become\l"
+	.string "hugely popular among TRAINERS.$"
 
 RustboroCity_DevonCorp_3F_Text_RareRocksDisplay:
 	.string "It's a collection of rare rocks and\n"

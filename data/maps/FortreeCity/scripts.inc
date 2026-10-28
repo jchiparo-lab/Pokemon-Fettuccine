@@ -135,10 +135,10 @@ FortreeCity_Text_SomethingUnseeable:
 
 FortreeCity_Text_UnseeableUseDevonScope:
 	.string "Something unseeable is in the way.\p"
-	.string "Want to use the DEVON SCOPE?$"
+	.string "Want to use the GARLIC SCOPE?$"
 
 FortreeCity_Text_UsedDevonScopePokemonFled:
-	.string "{PLAYER} used the DEVON SCOPE.\p"
+	.string "{PLAYER} used the GARLIC SCOPE.\p"
 	.string "An invisible POKéMON became completely\n"
 	.string "visible!\p"
 	.string "The startled POKéMON fled!$"
