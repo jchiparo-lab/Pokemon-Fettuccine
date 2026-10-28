@@ -299,12 +299,16 @@ Route110_TrickHouseEnd_Text_FountainOfIdeasRunDry:
 	.string "Wh-what should I do?\n"
 	.string "My fountain of ideas for tricks has\l"
 	.string "run dry…\p"
+	.string "Is this how it ends? Again?\n"
+	.string "Just like my last kingdom…\p"
 	.string "Perhaps it is time I toured the country\n"
 	.string "on a quest to devise new tricks…$"
 
 Route110_TrickHouseEnd_Text_DefeatedMePreferWhichTent:
 	.string "I hate to admit defeat, but you have\n"
 	.string "bested me!\p"
+	.string "Not since that pasta-hating BRIAN\n"
+	.string "has anyone humbled me so!\p"
 	.string "Still, you must have been reeled in by\n"
 	.string "my charisma for you to visit me again\l"
 	.string "and again. Yes, you must have!\p"
@@ -328,6 +332,12 @@ Route110_TrickHouseEnd_Text_LeavingOnJourney:
 	.string "… … … … … …\p"
 	.string "I am leaving on a journey of discovery.\n"
 	.string "A quest in search of new tricks.\p"
+	.string "Who knows? Maybe I'll start a podcast.\n"
+	.string "With BRIAN, of all people!\l"
+	.string "Wahahaha! As if!\p"
+	.string "And if anyone asks, I am NOT some\n"
+	.string "game designer at a motel in\l"
+	.string "LINGUICOVE. Never heard of him!\p"
 	.string "I wish that you will one day visit and\n"
 	.string "entertain me again.\p"
 	.string "And now, farewell!$"
@@ -347,10 +357,11 @@ Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou:
 	.string "It's much too early to think you've won!\p"
 	.string "I'll make new tricks to stump you, I will.\n"
 	.string "You may mock me only when you're done.\p"
-	.string "Come back for the next exciting\n"
-	.string "installment!$"
+	.string "Tune in next time for the TRICK\n"
+	.string "HOUSE WEEKLY REKAP!$"
 
 Route110_TrickHouseEnd_Text_YoureIgnoringMe:
 	.string "Now, now! You're ignoring me now?\n"
+	.string "BRIAN used to do that, too!\p"
 	.string "Now that, I consider heartbreaking!$"
 

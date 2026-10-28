@@ -740,8 +740,10 @@ Route110_TrickHouseEntrance_Text_ConcealedBeneathCushion:
 Route110_TrickHouseEntrance_Text_TheyCallMeTrickMaster:
 	.string "Behold!\p"
 	.string "For I am the greatest living mystery\n"
-	.string "of a man in all of PASTALIA!\l"
-	.string "Banned from servers far and wide!\p"
+	.string "of a man in all of PASTALIA!\p"
+	.string "Former KART KING of MARIO KART\n"
+	.string "NIGHT! Banned from servers far\l"
+	.string "and wide!\p"
 	.string "They call me…\p"
 	.string "WILDCARD!\n"
 	.string "Wahahaha! Glad to meet you!$"
@@ -751,6 +753,9 @@ Route110_TrickHouseEntrance_Text_ComeToChallengeTrickHouse:
 	.string "my TRICK HOUSE, haven't you?\p"
 	.string "That's why you're here, isn't it?\n"
 	.string "Yes, it is!\p"
+	.string "My old kingdom may have crashed and\n"
+	.string "burned, but this one shall stand\l"
+	.string "forever!\p"
 	.string "Consider your challenge accepted!\p"
 	.string "Enter through the scroll there,\n"
 	.string "and let your challenge commence!\p"
@@ -771,16 +776,16 @@ Route110_TrickHouseEntrance_Text_LeavingOnJourneyNote:
 Route110_TrickHouseEntrance_Text_NextTimeUseThisTrick:
 	.string "For the next time, I'll use this trick,\n"
 	.string "and that scheme, and those ruses…\p"
-	.string "Mufufufu… If I may say so, it's\n"
-	.string "brilliantly difficult, even for me!$"
+	.string "Mufufufu… Not even a blue shell\n"
+	.string "could get you through this one!$"
 
 Route110_TrickHouseEntrance_Text_InMidstOfDevisingNewChallenges:
 	.string "Hah? What?!\n"
 	.string "Oh, it's you!\p"
 	.string "I'm in the midst of devising new tricky\n"
 	.string "challenges!\p"
-	.string "It's not too much to ask for a bit more\n"
-	.string "time for me to think, is it now?\l"
+	.string "Even a KING needs a pit stop now\n"
+	.string "and then, doesn't he?\l"
 	.string "You wouldn't begrudge me that?\l"
 	.string "Come back in a little while!$"
 
