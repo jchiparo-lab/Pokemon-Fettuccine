@@ -642,8 +642,8 @@ DewfordTown_Text_GymSign:
 	.string "“A big wave in fighting!”$"
 
 DewfordTown_Text_HallSign:
-	.string "DITALINFORD HALL\n"
-	.string "“Everyone's information exchange!”$"
+	.string "RETROTOPIA PROMO OFFICE\n"
+	.string "“Tune in, retro fans!”$"
 
 Route104_Text_LandedInDewfordDeliverLetter:
 	.string "MR. BRINEY: Ahoy!\n"

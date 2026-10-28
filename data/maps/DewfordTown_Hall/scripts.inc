@@ -4,22 +4,13 @@ DewfordTown_Hall_MapScripts::
 DewfordTown_Hall_EventScript_Girl::
 	lock
 	faceplayer
-	call Common_EventScript_BufferTrendyPhrase
-	special IsTrendyPhraseBoring
-	goto_if_eq VAR_RESULT, TRUE, DewfordTown_Hall_EventScript_GirlBoredOfTrend
 	msgbox DewfordTown_Hall_Text_CantImagineLifeWithoutTrend, MSGBOX_DEFAULT
-	release
-	end
-
-DewfordTown_Hall_EventScript_GirlBoredOfTrend::
-	msgbox DewfordTown_Hall_Text_GettingBoredOfTrend, MSGBOX_DEFAULT
 	release
 	end
 
 DewfordTown_Hall_EventScript_Woman::
 	lock
 	faceplayer
-	call Common_EventScript_BufferTrendyPhrase
 	msgbox DewfordTown_Hall_Text_TeachingMonAboutTrend, MSGBOX_DEFAULT
 	release
 	end
@@ -27,8 +18,6 @@ DewfordTown_Hall_EventScript_Woman::
 DewfordTown_Hall_EventScript_Man::
 	lock
 	faceplayer
-	call Common_EventScript_BufferTrendyPhrase
-	special BufferDeepLinkPhrase
 	msgbox DewfordTown_Hall_Text_DeepLinkBetweenXAndY, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, DewfordTown_Hall_EventScript_ConfirmTrendLink
 	goto_if_eq VAR_RESULT, NO, DewfordTown_Hall_EventScript_RejectTrendLink
@@ -47,7 +36,6 @@ DewfordTown_Hall_EventScript_RejectTrendLink::
 DewfordTown_Hall_EventScript_ExpertM::
 	lock
 	faceplayer
-	call Common_EventScript_BufferTrendyPhrase
 	msgbox DewfordTown_Hall_Text_TVShowAboutTrend, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_DEWFORD_HALL_EXPERT_M, Common_Movement_WalkInPlaceFasterUp
@@ -58,7 +46,6 @@ DewfordTown_Hall_EventScript_ExpertM::
 DewfordTown_Hall_EventScript_Twin::
 	lock
 	faceplayer
-	call Common_EventScript_BufferTrendyPhrase
 	msgbox DewfordTown_Hall_Text_IsTrendMorePopularAcrossSea, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_DEWFORD_HALL_TWIN, Common_Movement_WalkInPlaceFasterUp
@@ -69,51 +56,18 @@ DewfordTown_Hall_EventScript_Twin::
 DewfordTown_Hall_EventScript_LittleBoy::
 	lock
 	faceplayer
-	call Common_EventScript_BufferTrendyPhrase
 	msgbox DewfordTown_Hall_Text_CollectTrendMerchandise, MSGBOX_DEFAULT
 	release
 	end
 
 DewfordTown_Hall_EventScript_Bookshelf::
 	lockall
-	call Common_EventScript_BufferTrendyPhrase
 	msgbox DewfordTown_Hall_Text_BooksAboutTrend, MSGBOX_DEFAULT
 	releaseall
 	end
 
 DewfordTown_Hall_EventScript_Painting::
-	lockall
-	call Common_EventScript_BufferTrendyPhrase
-	special GetDewfordHallPaintingNameIndex
-	switch VAR_RESULT
-	case 0, DewfordTown_Hall_EventScript_ScreamTitle
-	case 4, DewfordTown_Hall_EventScript_ScreamTitle
-	case 1, DewfordTown_Hall_EventScript_SmileTitle
-	case 5, DewfordTown_Hall_EventScript_ScreamTitle
-	case 2, DewfordTown_Hall_EventScript_LastTitle
-	case 6, DewfordTown_Hall_EventScript_LastTitle
-	case 3, DewfordTown_Hall_EventScript_BirthTitle
-	case 7, DewfordTown_Hall_EventScript_LastTitle
-	end
-
-DewfordTown_Hall_EventScript_ScreamTitle::
-	msgbox DewfordTown_Hall_Text_TrendsScream, MSGBOX_DEFAULT
-	releaseall
-	end
-
-DewfordTown_Hall_EventScript_SmileTitle::
-	msgbox DewfordTown_Hall_Text_TrendsSmile, MSGBOX_DEFAULT
-	releaseall
-	end
-
-DewfordTown_Hall_EventScript_LastTitle::
-	msgbox DewfordTown_Hall_Text_LastTrend, MSGBOX_DEFAULT
-	releaseall
-	end
-
-DewfordTown_Hall_EventScript_BirthTitle::
-	msgbox DewfordTown_Hall_Text_BirthOfTrend, MSGBOX_DEFAULT
-	releaseall
+	msgbox DewfordTown_Hall_Text_RetrotopiaPoster, MSGBOX_SIGN
 	end
 
 DewfordTown_Hall_EventScript_SchoolKidM::
@@ -129,17 +83,13 @@ DewfordTown_Hall_EventScript_PsychicM::
 	end
 
 DewfordTown_Hall_EventScript_DoTrendDebate::
-	call Common_EventScript_BufferTrendyPhrase
-	special GetDewfordHallPaintingNameIndex
+	random 5
 	switch VAR_RESULT
 	case 0, DewfordTown_Hall_EventScript_TrendDebate1
-	case 1, DewfordTown_Hall_EventScript_TrendDebate1
-	case 2, DewfordTown_Hall_EventScript_TrendDebate2
-	case 3, DewfordTown_Hall_EventScript_TrendDebate2
-	case 4, DewfordTown_Hall_EventScript_TrendDebate3
-	case 5, DewfordTown_Hall_EventScript_TrendDebate3
-	case 6, DewfordTown_Hall_EventScript_TrendDebate4
-	case 7, DewfordTown_Hall_EventScript_TrendDebate5
+	case 1, DewfordTown_Hall_EventScript_TrendDebate2
+	case 2, DewfordTown_Hall_EventScript_TrendDebate3
+	case 3, DewfordTown_Hall_EventScript_TrendDebate4
+	case 4, DewfordTown_Hall_EventScript_TrendDebate5
 	end
 
 DewfordTown_Hall_EventScript_TrendDebate1::
@@ -240,7 +190,6 @@ DewfordTown_Hall_Movement_SchoolKidWalkInPlaceRight:
 DewfordTown_Hall_EventScript_SludgeBombMan::
 	lock
 	faceplayer
-	call Common_EventScript_BufferTrendyPhrase
 	goto_if_set FLAG_RECEIVED_TM_SLUDGE_BOMB, DewfordTown_Hall_EventScript_ReceivedSludgeBomb
 	msgbox DewfordTown_Hall_Text_GiveYouSludgeBomb, MSGBOX_DEFAULT
 	giveitem ITEM_TM_SLUDGE_BOMB
@@ -255,186 +204,130 @@ DewfordTown_Hall_EventScript_ReceivedSludgeBomb::
 	end
 
 DewfordTown_Hall_Text_CantImagineLifeWithoutTrend:
-	.string "What's in vogue? Why, it has to be\n"
-	.string "“{STR_VAR_1}”!\p"
-	.string "I can't imagine what life would be like\n"
-	.string "without “{STR_VAR_1}”!$"
-
-DewfordTown_Hall_Text_GettingBoredOfTrend:
-	.string "What's in vogue? Why, it has to be\n"
-	.string "“{STR_VAR_1}”!\p"
-	.string "But I'm getting kind of bored with it.\p"
-	.string "I should look for the next big thing.$"
+	.string "I found RETROTOPIA last week, and\n"
+	.string "I've already heard every episode!\p"
+	.string "I can't imagine life without it now!$"
 
 DewfordTown_Hall_Text_TeachingMonAboutTrend:
-	.string "I'm teaching my POKéMON about\n"
-	.string "“{STR_VAR_1},”\l"
-	.string "but it's not going well.\p"
-	.string "It's a bit too much, I think.$"
+	.string "I play RETROTOPIA for my POKéMON\n"
+	.string "while we train.\p"
+	.string "They don't understand a word,\n"
+	.string "but they love it anyway!$"
 
 DewfordTown_Hall_Text_DeepLinkBetweenXAndY:
-	.string "I'm studying up on the hip and trendy\n"
-	.string "“{STR_VAR_1}” now.\p"
-	.string "Is it true that there's a deep link\n"
-	.string "between “{STR_VAR_1}”\l"
-	.string "and “{STR_VAR_2}”?$"
+	.string "All the young folks are talking about\n"
+	.string "this RETROTOPIA show.\p"
+	.string "Is it true that it's all about\n"
+	.string "classic video games?$"
 
 DewfordTown_Hall_Text_MyHunchWasRight:
 	.string "Oh!\n"
 	.string "So, my hunch was right!\p"
-	.string "I'm one step closer to being hip and\n"
-	.string "happening, yowza!$"
+	.string "The games from my day are back in\n"
+	.string "style! Yowza!$"
 
 DewfordTown_Hall_Text_NotEasyToKeepUp:
 	.string "What?!\n"
 	.string "Is that so?!\p"
-	.string "It's not easy for an older fellow like\n"
-	.string "me to keep up with trends!$"
+	.string "Then what have I been listening to\n"
+	.string "all this time?!$"
 
 DewfordTown_Hall_Text_TVShowAboutTrend:
-	.string "This whole business about\n"
-	.string "“{STR_VAR_1}”…\l"
-	.string "Isn't there a TV show on it?$"
+	.string "I hung that RETROTOPIA poster\n"
+	.string "up myself.\p"
+	.string "Pretty sharp, isn't it?$"
 
 DewfordTown_Hall_Text_IsTrendMorePopularAcrossSea:
 	.string "Across the sea…\p"
-	.string "Is “{STR_VAR_1}”\n"
-	.string "even more popular?$"
+	.string "Do they listen to RETROTOPIA\n"
+	.string "over there, too?$"
 
 DewfordTown_Hall_Text_CollectTrendMerchandise:
-	.string "I collect official\n"
-	.string "“{STR_VAR_1}”\l"
-	.string "licensed merchandise.\p"
-	.string "I have official\n"
-	.string "“{STR_VAR_1}” DOLLS…\p"
-	.string "Official “{STR_VAR_1}”\n"
-	.string "brand clothing…\p"
-	.string "And officially licensed\n"
-	.string "“{STR_VAR_1}”\l"
-	.string "picture books.\p"
-	.string "Heheh, I own!\n"
-	.string "I'm not sharing anything with you!$"
+	.string "I'm RETROTOPIA's number one fan!\p"
+	.string "I've told every kid at school\n"
+	.string "to listen.\p"
+	.string "Some of them even did!\p"
+	.string "Heheh, I'm basically part of\n"
+	.string "the show now!$"
 
 DewfordTown_Hall_Text_BooksAboutTrend:
-	.string "IDENTIFYING GOOD\n"
-	.string "“{STR_VAR_1}” &\l"
-	.string "BAD “{STR_VAR_1}”…\p"
-	.string "THE LINK BETWEEN\n"
-	.string "“{STR_VAR_1}” AND\l"
-	.string "POKéMON…\p"
-	.string "USEFUL\n"
-	.string "“{STR_VAR_1}”…\p"
-	.string "It's neatly jammed with books about\n"
-	.string "“{STR_VAR_1}.”$"
+	.string "THE RETROTOPIA EPISODE GUIDE…\p"
+	.string "CLASSIC GAMES YOU MISSED…\p"
+	.string "HOW TO START A PODCAST…\p"
+	.string "It's packed with books and old\n"
+	.string "game magazines.$"
 
-DewfordTown_Hall_Text_TrendsScream:
-	.string "“{STR_VAR_1}'S\n"
-	.string "SCREAM” is the title.$"
-
-DewfordTown_Hall_Text_TrendsSmile:
-	.string "“{STR_VAR_1}'S\n"
-	.string "SMILE” is the title.$"
-
-DewfordTown_Hall_Text_LastTrend:
-	.string "It's titled “THE LAST\n"
-	.string "{STR_VAR_1}”.$"
-
-DewfordTown_Hall_Text_BirthOfTrend:
-	.string "It's titled “THE BIRTH OF\n"
-	.string "{STR_VAR_1}”.$"
+DewfordTown_Hall_Text_RetrotopiaPoster:
+	.string "It's a RETROTOPIA poster.\n"
+	.string "“New episodes! Tune in!”$"
 
 DewfordTown_Hall_Text_SawTrendCoolestThing:
-	.string "I saw “{STR_VAR_1}”!\n"
-	.string "Cool, huh?\p"
-	.string "It's, like, the coolest thing going!\p"
-	.string "It was awesome!\n"
-	.string "It was the real thing, oh yeah!$"
+	.string "I heard the newest RETROTOPIA\n"
+	.string "episode!\p"
+	.string "It was the best one yet!\n"
+	.string "It was awesome, oh yeah!$"
 
 DewfordTown_Hall_Text_AllegedTrendNotAuthentic:
 	.string "Oh, no, no, no.\p"
-	.string "That alleged\n"
-	.string "“{STR_VAR_1}”\l"
-	.string "you claim to have seen--it's not.\p"
-	.string "The authentic article is much…\n"
-	.string "How should I say it?\l"
-	.string "Sharper, yet more mellow!\p"
-	.string "Ah, no matter. It's astonishing!$"
+	.string "The best episode was an older one,\n"
+	.string "my friend.\p"
+	.string "Ah, no matter.\n"
+	.string "They're all smashing listens!$"
 
 DewfordTown_Hall_Text_ComposedTrendThemeSong:
-	.string "Hey, listen, I composed a theme song\n"
-	.string "for “{STR_VAR_1}.”\p"
-	.string "“{STR_VAR_1}”\n"
-	.string "is really popular right now.\p"
+	.string "Hey, listen, I wrote a theme song\n"
+	.string "for RETROTOPIA!\p"
 	.string "Okay, listen!\n"
 	.string "… …\p"
 	.string "Oh!\n"
-	.string "{STR_VAR_1}!\p"
+	.string "RETROTOPIA!\p"
 	.string "Wonderful\n"
-	.string "{STR_VAR_1}!$"
+	.string "RETROTOPIA!$"
 
 DewfordTown_Hall_Text_WorkOnYourSinging:
 	.string "… …\p"
-	.string "I dare say, chap, it would pay for you\n"
-	.string "to work on your singing before you\l"
-	.string "trifle yourself with\l"
-	.string "“{STR_VAR_1}.”$"
+	.string "I dare say, chap, it would pay for\n"
+	.string "you to work on your singing first.$"
 
 DewfordTown_Hall_Text_OrganizeTrendParty:
-	.string "Anyway, as I was saying earlier, we\n"
-	.string "should get together and organize a\l"
-	.string "“{STR_VAR_1}” party\l"
+	.string "Anyway, as I was saying, we should\n"
+	.string "throw a RETROTOPIA listening party\l"
 	.string "on the island.$"
 
 DewfordTown_Hall_Text_BrilliantIndeed:
 	.string "Oh, a smashing good idea!\p"
-	.string "It will settle once and for all\n"
-	.string "who is the best at\l"
-	.string "“{STR_VAR_1}.”\l"
-	.string "Brilliant, indeed!\p"
-	.string "Starting today, our lives will revolve\n"
-	.string "around “{STR_VAR_1}”!$"
+	.string "Starting today, our lives will\n"
+	.string "revolve around RETROTOPIA!$"
 
 DewfordTown_Hall_Text_TrendHasBecomePartOfLife:
 	.string "I was thinking, though…\p"
-	.string "Wouldn't you agree that\n"
-	.string "“{STR_VAR_1}” has\l"
-	.string "grown from being something trendy to\l"
-	.string "being a part of our daily lives?$"
+	.string "RETROTOPIA isn't just a show.\n"
+	.string "It's part of my daily life!$"
 
 DewfordTown_Hall_Text_TrendWeighsHeavilyOnMind:
-	.string "Beg pardon?\n"
-	.string "That much, what?\p"
-	.string "However, it's true that\n"
-	.string "“{STR_VAR_1}”\l"
-	.string "weighs heavily on your mind, whether\l"
-	.string "you're awake or asleep.\p"
-	.string "Absolutely, you're the\n"
-	.string "“{STR_VAR_1}”\l"
-	.string "PROFESSOR, old sport!$"
+	.string "Absolutely, old sport!\p"
+	.string "You're a true RETROTOPIA\n"
+	.string "PROFESSOR!$"
 
 DewfordTown_Hall_Text_IfWeTeamUpWellBeInvincible:
-	.string "If you and me team up as a combo,\n"
-	.string "we'll be invincible when it comes to all\l"
-	.string "things “{STR_VAR_1}”!$"
+	.string "If you and me team up, we'll be the\n"
+	.string "biggest RETROTOPIA fans ever!$"
 
 DewfordTown_Hall_Text_WellBeTrendDuo:
 	.string "Spot on, my friend!\p"
 	.string "We shall be the\n"
-	.string "“{STR_VAR_1}” DUO!\p"
+	.string "RETROTOPIA DUO!\p"
 	.string "Isn't that a ripe image?\n"
 	.string "Hahahah!$"
 
 DewfordTown_Hall_Text_GiveYouSludgeBomb:
-	.string "For me, SLUDGE BOMB is at the peak\n"
+	.string "For me, RETROTOPIA is at the peak\n"
 	.string "of popularity. It's the one.\p"
-	.string "Hunh? You're telling me that you don't\n"
-	.string "know about SLUDGE BOMB?\p"
-	.string "That's outright pitiful.\n"
-	.string "I'll give you one.$"
+	.string "Hunh? You've never listened?\n"
+	.string "That's outright pitiful.\p"
+	.string "Here, take this while you catch up.$"
 
 DewfordTown_Hall_Text_LoveSludgeBombButTrendInToo:
-	.string "I love SLUDGE BOMB.\p"
-	.string "But POKéMON with the move\n"
-	.string "“{STR_VAR_1}”\l"
-	.string "are in, too.$"
-
+	.string "I love RETROTOPIA.\p"
+	.string "New episodes are the best part\n"
+	.string "of my week!$"
