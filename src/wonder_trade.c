@@ -6,10 +6,11 @@
 
 // Wonder Trade: the right-hand counter upstairs in every Pokémon Center.
 // The player sends one Pokémon and gets a random non-legendary one back at
-// the same level. The trade itself reuses the in-game trade scene in trade.c,
-// which swaps the player's Pokémon with gParties[B_TRAINER_OPPONENT_A][0].
+// the same level (mythicals can come back too). The trade itself reuses the
+// in-game trade scene in trade.c, which swaps the player's Pokémon with
+// gParties[B_TRAINER_OPPONENT_A][0].
 
-// Placeholder trainer names until the Retrotopia community list is ready.
+// Pasta-named trading partners.
 static const u8 sWonderTradeOtNames[][PLAYER_NAME_LENGTH + 1] =
 {
     _("PENNE"),
@@ -31,7 +32,7 @@ static bool32 IsWonderTradeSpecies(enum Species species)
     if (species == SPECIES_NONE || species >= NUM_SPECIES || !IsSpeciesEnabled(species))
         return FALSE;
 
-    if (info->isRestrictedLegendary || info->isSubLegendary || info->isMythical || info->isUltraBeast)
+    if (info->isRestrictedLegendary || info->isSubLegendary || info->isUltraBeast)
         return FALSE;
 
     if (info->cannotBeTraded || info->isTotem || info->isMegaEvolution || info->isPrimalReversion

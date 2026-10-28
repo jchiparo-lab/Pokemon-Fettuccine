@@ -1,6 +1,6 @@
 @ Wonder Trade: the right-hand counter upstairs in every Pokémon Center
 @ (replaces the Direct Corner). The player sends one Pokémon and gets a
-@ random non-legendary one back at the same level.
+@ random non-legendary one back at the same level (mythicals included).
 
 WonderTrade_EventScript_Attendant::
 	lock
