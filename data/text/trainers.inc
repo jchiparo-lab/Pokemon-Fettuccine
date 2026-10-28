@@ -3646,7 +3646,8 @@ Route124_Text_JennyRematchDefeat:
 
 Route124_Text_JennyPostRematch:
 	.string "This has nothing to do with anything,\n"
-	.string "but maybe I'll visit the TRICK HOUSE.$"
+	.string "but maybe I'll visit WILDCARD'S\l"
+	.string "CASTLE.$"
 
 Route124_Text_GraceIntro:
 	.string "I'm growing bored of swimming…\n"

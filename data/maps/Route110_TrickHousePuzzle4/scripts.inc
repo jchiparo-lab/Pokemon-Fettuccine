@@ -59,8 +59,8 @@ Route110_TrickHousePuzzle4_Text_YujiPostBattle:
 	.string "You have to use your head. Be brainy!$"
 
 Route110_TrickHousePuzzle4_Text_PaulaIntro:
-	.string "The TRICK HOUSE is getting trickier,\n"
-	.string "isn't it?$"
+	.string "WILDCARD'S CASTLE is getting\n"
+	.string "trickier, isn't it?$"
 
 Route110_TrickHousePuzzle4_Text_PaulaDefeat:
 	.string "Aaak!$"

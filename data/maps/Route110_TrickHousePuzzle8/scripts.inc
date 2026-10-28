@@ -58,8 +58,8 @@ Route110_TrickHousePuzzle8_Text_KeiraPostBattle:
 	.string "You can brag about it.$"
 
 Route110_TrickHousePuzzle8_Text_LeroyIntro:
-	.string "You've been slugging through the TRICK\n"
-	.string "HOUSE challenge, too.$"
+	.string "You've been slugging through\n"
+	.string "WILDCARD'S CASTLE, too.$"
 
 Route110_TrickHousePuzzle8_Text_LeroyDefeat:
 	.string "I see…\n"

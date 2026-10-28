@@ -360,8 +360,8 @@ Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou:
 	.string "It's much too early to think you've won!\p"
 	.string "I'll make new tricks to stump you, I will.\n"
 	.string "You may mock me only when you're done.\p"
-	.string "Tune in next time for the TRICK\n"
-	.string "HOUSE WEEKLY REKAP!$"
+	.string "Tune in next time for the CASTLE\n"
+	.string "WEEKLY REKAP!$"
 
 Route110_TrickHouseEnd_Text_YoureIgnoringMe:
 	.string "Now, now! You're ignoring me now?\n"
