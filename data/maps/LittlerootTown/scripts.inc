@@ -994,7 +994,7 @@ LittlerootTown_Text_PlayersHouse:
 	.string "{PLAYER}'s HOUSE$"
 
 LittlerootTown_Text_ProfBirchsHouse:
-	.string "PROF. ALAN'S HOUSE$"
+	.string "BRIAN'S HOUSE$"
 
 LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 	.string "PROF. ALAN: Well, well, {PLAYER}{KUN}!\n"
