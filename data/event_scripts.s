@@ -1058,6 +1058,7 @@ gStdScripts_End::
 	.include "data/scripts/config.inc"
 	.include "data/scripts/debug.inc"
 	.include "data/scripts/debug_story_beats.inc"
+	.include "data/scripts/wonder_trade.inc"
 
 EventScript_WhiteOut::
 	call EverGrandeCity_HallOfFame_EventScript_ResetEliteFour
@@ -1605,7 +1606,8 @@ Common_EventScript_DirectCornerAttendant::
 #if IS_FRLG
 	call CableClub_EventScript_DirectCornerAttendant_Frlg
 #else
-	call CableClub_EventScript_DirectCornerAttendant
+	@ Fettuccine: the Direct Corner counter is now Wonder Trade
+	goto WonderTrade_EventScript_Attendant
 #endif
 	end
 
