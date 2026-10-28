@@ -102,7 +102,7 @@ Route110_TrickHousePuzzle2_EventScript_Georgia::
 Route110_TrickHousePuzzle2_Text_WroteSecretCodeLockOpened:
 	.string "{PLAYER} wrote down the secret code\n"
 	.string "on the door.\p"
-	.string "“TRICK MASTER is smart.”\n"
+	.string "“WILDCARD is smart.”\n"
 	.string "… … … … … … … …\p"
 	.string "The lock clicked open!$"
 
@@ -125,7 +125,7 @@ Route110_TrickHousePuzzle2_Text_PaulDefeat:
 	.string "You're good at battling too?$"
 
 Route110_TrickHousePuzzle2_Text_PaulPostBattle:
-	.string "The TRICK MASTER rigged all the tricks\n"
+	.string "WILDCARD rigged all the tricks\n"
 	.string "in this house all by himself.$"
 
 Route110_TrickHousePuzzle2_Text_GeorgiaIntro:
