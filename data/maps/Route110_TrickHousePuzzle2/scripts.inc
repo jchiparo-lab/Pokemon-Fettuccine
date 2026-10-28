@@ -126,7 +126,9 @@ Route110_TrickHousePuzzle2_Text_PaulDefeat:
 
 Route110_TrickHousePuzzle2_Text_PaulPostBattle:
 	.string "WILDCARD rigged all the tricks\n"
-	.string "in this house all by himself.$"
+	.string "in this house all by himself.\p"
+	.string "He says it's easier than surviving\n"
+	.string "BLUE SHELL HELL.$"
 
 Route110_TrickHousePuzzle2_Text_GeorgiaIntro:
 	.string "I want to make my own GYM one day.\n"

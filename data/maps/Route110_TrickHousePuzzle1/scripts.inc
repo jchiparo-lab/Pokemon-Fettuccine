@@ -66,7 +66,9 @@ Route110_TrickHousePuzzle1_Text_EddiePostBattle:
 	.string "now even more lost… I can't get out…$"
 
 Route110_TrickHousePuzzle1_Text_RobinIntro:
-	.string "Just who is WILDCARD?$"
+	.string "Just who is WILDCARD?\p"
+	.string "They say he used to be a KING\n"
+	.string "of some kind…$"
 
 Route110_TrickHousePuzzle1_Text_RobinDefeat:
 	.string "I lost while I was lost in thought!$"

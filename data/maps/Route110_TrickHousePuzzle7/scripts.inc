@@ -323,7 +323,9 @@ Route110_TrickHousePuzzle7_Text_WroteSecretCodeLockOpened::
 
 Route110_TrickHousePuzzle7_Text_JoshuaIntro:
 	.string "WILDCARD always vanishes\n"
-	.string "like smoke. How does he do it?$"
+	.string "like smoke. How does he do it?\p"
+	.string "I heard he did the same thing\n"
+	.string "when his old kingdom fell.$"
 
 Route110_TrickHousePuzzle7_Text_JoshuaDefeat:
 	.string "Aiyeeeh! You're much too strong!\n"
