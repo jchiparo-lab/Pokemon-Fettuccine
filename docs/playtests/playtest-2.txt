@@ -1,0 +1,84 @@
+POKEMON FETTUCCINE VERSION - PLAYTEST 2
+=======================================
+
+Thanks for testing!
+
+
+UPDATED BUILD (BUG FIX)
+-----------------------
+This rebuilt patch fixes a freeze with BATTLE SPEED set to 2X:
+the game could lock up after you chose a move to forget so your
+Pokemon could learn a new one in battle.
+
+If you already started Playtest 2, apply this new patch to your
+clean Emerald ROM again. Your save keeps working: give the new ROM
+the same file name as before (so the save file matches) or copy
+the .sav across. If a save is stuck in that freeze, load a save
+from before the battle.
+
+
+HOW TO PLAY
+-----------
+1. You need a clean US Pokemon Emerald ROM (not included).
+   It should match:
+     CRC32: 1F1C08FB
+     SHA-1: f3ae088181bf583e55daf962a92bb46f4f1d07b7
+2. Apply fettuccine-playtest-2.bps to it. Either of these works:
+     - Rom Patcher JS (in your browser): https://www.marcrobledo.com/RomPatcher.js/
+     - Floating IPS (Flips)
+3. Play the patched ROM in mGBA or any GBA emulator.
+
+PLEASE START A NEW GAME. Several changes only happen at the start
+(Running Shoes, Shiny Charm, and Prof. Alan's Box Link), so
+Playtest 1 saves will miss them.
+
+
+NEW SINCE PLAYTEST 1
+--------------------
+- Brian is your rival, takes Wally's scenes, and is the Champion.
+  Mike (who replaces Wallace) waits outside the Elite Four with his
+  overpowered Spearow.
+- Joe Q replaces Scott, Prof. Alan replaces Prof. Birch, and Sam
+  (a rare-cheese collector) replaces Steven, all with new dialogue.
+- New teams for every trainer and Gym Leader, with Mega Evolution
+  from the third gym on.
+- Every Pokemon through Gen IX lives in the wild somewhere. There are
+  regional evolutions, and the post-game adds the event islands and
+  27 legendary encounters.
+- You start with the Running Shoes and the Shiny Charm.
+  Prof. Alan gives you a Pokemon Box Link (PC storage from the bag).
+- HM moves only need the badge and the HM in your bag.
+  Fly and Flash work from the party menu or the bag.
+- New RELEARN option in the party menu, a BATTLE SPEED option,
+  and faster berry picking.
+- A secret minigame, if you can find it.
+
+
+DEBUG MENU
+----------
+This build has the developer's debug menus turned on, so you can
+skip ahead or set up a test:
+  - Overworld: hold R and press START (mGBA keyboard: hold S, Enter)
+  - In battle: press SELECT on the battle menu (mGBA: Backspace)
+  - Sprite viewer: SELECT on a summary screen (mGBA: Backspace)
+Use a separate save or a save state first, and say in your report
+if that save used the debug menu.
+
+
+KNOWN PLACEHOLDERS
+------------------
+- Brian, Prof. Alan, Sam, Mike and Joe Q still use the old Emerald
+  sprites.
+- A few map graphics still say HOENN.
+- Sam's shiny Metagross isn't cheddar-yellow yet.
+
+
+PLEASE REPORT
+-------------
+- Crashes or freezes
+- Text that runs off the box
+- Anything that blocks progress
+- Battles that feel too hard or too easy
+
+If you can, say where you were and what you were doing, and send a
+screenshot or your save file.
