@@ -46,7 +46,7 @@ MeteorFalls_StevensCave_Text_StevenDefeat:
 
 MeteorFalls_StevensCave_Text_MyPredictionCameTrue:
 	.string "SAM: You know, ever since we first\n"
-	.string "met in GRANITE CAVE in DITALINFORD,\l"
+	.string "met in GOUDA GROTTO in DITALINFORD,\l"
 	.string "I had this feeling.\p"
 	.string "I thought you'd become the\n"
 	.string "CHAMPION someday.\p"

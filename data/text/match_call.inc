@@ -2734,7 +2734,7 @@ MatchCall_Text_Steven1::
 	.string "yet?\p"
 	.string "You should visit the BIKE SHOP\n"
 	.string "and get a MACH BIKE.\p"
-	.string "Then try exploring GRANITE CAVE\n"
+	.string "Then try exploring GOUDA GROTTO\n"
 	.string "really thoroughly.\p"
 	.string "You might find something there.\n"
 	.string "Not cheese, sadly.$"
