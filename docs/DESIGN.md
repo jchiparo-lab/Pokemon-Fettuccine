@@ -559,7 +559,7 @@ Mostly quality-of-life config options. Feature names change between expansion ve
 - **Simultaneous HP reduction** for spread moves in doubles.
 - **Faster AI calculations** (AI config flags plus possible code tuning).
 - **Done: battle speed option.** BATTLE SPEED (1X / 2X) in the Options menu, 4th row. At 2X the battle runs twice per frame (animations, HP bars, text); the overworld and music are unaffected, and each button press only counts once. Off in link and recorded battles. Defaults to 1X; existing saves start at 1X. To fit 8 rows, the title and list now share one frame. Screen fades always run at 1X: running them twice per frame could stop a fade from ever finishing, which froze the game after forgetting a move to learn a new one in battle (found in Playtest 2, fixed in the rebuilt Playtest 2).
-- **Open bug: player walks down forever after a capture.** Seen twice (mGBA on the Mac and the mGBA core on the Anbernic), both times right after catching a new Pokémon with 2X speed on. The player keeps walking south and bumps into walls; no button works (Up doesn't override, Start won't open even at a wall). Not reproducible from the save. Next step: Joe grabs a save state when it happens so the game's memory can be inspected.
+- **Walking-down bug: safety net in place (Playtest 4); root cause still open.** Seen three times (mGBA on the Mac and the mGBA core on the Anbernic), always right after catching a Pokémon with 2X speed on. The player keeps walking south and bumps into walls; no button works (Up doesn't override, Start won't open). A save state from Playtest 3 showed why: the main loop keeps a few values in CPU registers for the whole game (one is the address of the button register), and they had been overwritten with leftovers from the end-of-battle cleanup (`FreeBattleResources`). The game was reading "buttons" from battle memory, which happened to say DOWN. Not an emulator problem: the stuck value has bits no controller can produce. **Done:** the main loop now runs each frame as its own function (`RunFrame` in `src/main.c`), so those values are reloaded every frame and the game recovers on the next frame. **Open:** what corrupts the registers at the end of a wild battle is still unknown and could cause other glitches; testers are asked to send a save state if anything odd happens right after a battle.
 
 ## Overworld and menus
 
@@ -568,7 +568,7 @@ Mostly quality-of-life config options. Feature names change between expansion ve
 - **Done: INSTANT text speed.** TEXT SPEED in the Options menu cycles SLOW / MID / FAST / INSTANT with Left and Right; only the chosen speed is shown, like FRAME.
 - **Done: faster berry picking.** Talking to a ripe tree picks it right away: no "Do you want to pick?" question, a short sound instead of the fanfare, and one message ("{PLAYER} picked 3 ORAN BERRIES!") instead of two.
 
-- **HMs are not permanent.** HM moves can be forgotten like normal moves. **Decided:** field moves only need the badge plus the HM in the bag; no Pokémon has to know the move. Forgetting HMs is **done** (config). **Done:** using field moves without knowing them. If no party Pokémon knows the move, a phantom Magikarp uses it ("MAGIKARP used CUT!", Magikarp in the animation), even with no Magikarp in the party. FLY and FLASH appear in every Pokémon's party menu once the badge and HM are in hand, and can also be used straight from HM02 and HM05 in the bag (USE still teaches the move).
+- **HMs are not permanent.** HM moves can be forgotten like normal moves. **Decided:** field moves only need the badge plus the HM in the bag; no Pokémon has to know the move. Forgetting HMs is **done** (config). **Done:** using field moves without knowing them. If no party Pokémon knows the move, a phantom Magikarp uses it (Magikarp in the animation), even with no Magikarp in the party. FLY and FLASH appear in every Pokémon's party menu once the badge and HM are in hand, and can also be used straight from HM02 and HM05 in the bag (USE still teaches the move). **Done (Playtest 4): faster HMs.** CUT, ROCK SMASH, STRENGTH, SURF, WATERFALL and DIVE (down and up) ask a single "Use CUT?" (etc.) YES/NO and act right away; the description pages and the "MAGIKARP used CUT!" / "used STRENGTH!" messages are gone. Without the HM or badge, the tree, rock or boulder still explains what it is. Pressing A on a boulder with Strength already on still says STRENGTH is active.
 - **Move relearner in the party menu.** A "Relearn" option on each Pokémon. This version already has a relearner on the summary screen's moves page. **Decided:** add it as a party-menu option anyway (custom). **Done:** RELEARN appears for any Pokémon with moves to relearn and returns to the party menu when finished. It's free, like the summary-screen relearner.
 - **PC access anywhere via a bag item.** A key item that opens the storage system. **Done (built in):** the expansion's Pkmn Box Link. Alan gives it with the starter in his lab.
 - **"Move" as the default PC option.** **Done (built in):** MOVE POKéMON is the first PC menu option, with the cursor on it, in every PC and the Box Link. **Decided:** keep the menu rather than skipping straight into Move mode, so MOVE ITEMS stays available.
@@ -669,7 +669,7 @@ A yes/no choice at New Game that randomizes Pokémon for that save file. It must
 | Simultaneous HP reduction | Verify in config | Done (built in) |
 | Faster AI calculations | Config plus tuning | Not started |
 | Battle speed option (battles only) | Custom (Options menu) | Done |
-| Non-permanent HMs | Config toggle plus custom | Done: HMs forgettable (config); with the badge and HM in the bag, a phantom Magikarp uses the move; FLY and FLASH also in every party menu and usable from HM02/HM05 in the bag |
+| Non-permanent HMs | Config toggle plus custom | Done: HMs forgettable (config); with the badge and HM in the bag, a phantom Magikarp uses the move; FLY and FLASH also in every party menu and usable from HM02/HM05 in the bag; one-question "Use CUT?" prompts |
 | Move relearner in party menu | Custom (party-menu option) | Done: RELEARN appears for Pokémon with moves to relearn (summary-screen relearner also still there) |
 | PC access via bag item, "Move" default in storage | Built in | Done: Pkmn Box Link (from Alan with the starter); MOVE POKéMON is already the default option |
 | Start with Running Shoes | New-game setup, Mom's script | Done |
@@ -688,6 +688,17 @@ A yes/no choice at New Game that randomizes Pokémon for that save file. It must
 | WILDCARD and Wildcard's Castle (Trick Master, Trick House) | Dialogue, sprite swap | Done (Joe Fettuccine's placeholder sprite) |
 | Alan's post-game lab scene | Dialogue | Done |
 | Brian's house sign and ANTI-PASTA PokéNav tag | Text | Done |
+
+## Playtests
+
+Testers download from **https://github.com/jchiparo-lab/Pokemon-Fettuccine/releases/latest**, which always opens the newest playtest. Each release is a zip with a `.bps` patch (applied to a clean US Emerald ROM) and a README; the ROM itself is never shared. Tester notes live in `docs/playtests/playtest-N.txt`, and `tools/fettuccine/make_playtest.sh N` builds, patches, checks and zips a playtest. Builds include the debug menus.
+
+| Playtest | Highlights |
+|---|---|
+| 1 | First build |
+| 2 | Brian, Retrotopia cast, new teams, every Pokémon in the wild, battle speed; rebuilt to fix the 2X move-forget freeze |
+| 3 | Wonder Trade, National Dex from the start, reusable TMs, level-up trade evolutions, INSTANT text, Wildcard's Castle, Gouda Grotto, Garlic Corp. |
+| 4 | Faster HMs, walking-down bug safety net |
 
 ## Suggested build order
 
