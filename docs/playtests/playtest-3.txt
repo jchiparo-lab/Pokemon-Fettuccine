@@ -1,0 +1,80 @@
+POKEMON FETTUCCINE VERSION - PLAYTEST 3
+=======================================
+
+Thanks for testing!
+
+
+HOW TO PLAY
+-----------
+1. You need a clean US Pokemon Emerald ROM (not included).
+   It should match:
+     CRC32: 1F1C08FB
+     SHA-1: f3ae088181bf583e55daf962a92bb46f4f1d07b7
+2. Apply fettuccine-playtest-3.bps to it. Either of these works:
+     - Rom Patcher JS (in your browser): https://www.marcrobledo.com/RomPatcher.js/
+     - Floating IPS (Flips)
+3. Play the patched ROM in mGBA or any GBA emulator.
+
+Your Playtest 2 save should keep working: give the new ROM the same
+file name as before (so the save file matches) or copy the .sav
+across. One change only shows up in a new game: the Pokedex being
+the National Dex from the start.
+
+
+NEW SINCE PLAYTEST 2
+--------------------
+- WONDER TRADE: the right-hand counter upstairs in every Pokemon
+  Center. Send a Pokemon from your party or PC and get a random one
+  back at the same level. Anything except legendaries and Ultra
+  Beasts can show up, even mythicals.
+- The Pokedex is the National Dex as soon as Prof. Alan gives it to
+  you, so every Pokemon you catch is registered.
+- TMs are reusable.
+- No more trading to evolve. Kadabra, Machoke, Graveler, Haunter,
+  Boldore, Gurdurr, Phantump, Pumpkaboo, Karrablast and Shelmet now
+  evolve by level.
+- New INSTANT setting for TEXT SPEED in the Options menu.
+- The Trick House is now WILDCARD'S CASTLE, run by WILDCARD, the
+  disgraced former Kart King.
+- Ditalinford Hall is now the Retrotopia promo office.
+- Granite Cave is GOUDA GROTTO, and Devon Corporation is GARLIC CORP.
+- Brian's house has its own sign, and Prof. Alan has a new scene
+  after the Hall of Fame.
+
+
+DEBUG MENU
+----------
+This build has the developer's debug menus turned on, so you can
+skip ahead or set up a test:
+  - Overworld: hold R and press START (mGBA keyboard: hold S, Enter)
+  - In battle: press SELECT on the battle menu (mGBA: Backspace)
+  - Sprite viewer: SELECT on a summary screen (mGBA: Backspace)
+Use a separate save or a save state first, and say in your report
+if that save used the debug menu.
+
+
+KNOWN BUG - PLEASE HELP CATCH IT
+--------------------------------
+Rarely, right after catching a Pokemon, the player keeps walking
+down on their own and no button works. If this happens to you,
+make a SAVE STATE right away (mGBA: File > Save State) and send
+it in. It's the only way to track this one down.
+
+
+KNOWN PLACEHOLDERS
+------------------
+- Brian, Prof. Alan, Sam, Mike, Joe Q and WILDCARD still use old
+  Emerald sprites.
+- A few map graphics still say HOENN.
+- Sam's shiny Metagross isn't cheddar-yellow yet.
+
+
+PLEASE REPORT
+-------------
+- Crashes or freezes
+- Text that runs off the box
+- Anything that blocks progress
+- Battles that feel too hard or too easy
+
+If you can, say where you were and what you were doing, and send a
+screenshot or your save file.
