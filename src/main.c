@@ -133,46 +133,54 @@ void AgbMain(void)
     AgbMainLoop();
 }
 
-void AgbMainLoop(void)
+// Safety net for the "walking down forever" bug: something at the end of a
+// wild battle can leave garbage in CPU registers that the main loop keeps for
+// the whole game (one of them is the address of the button register). Running
+// each frame as its own function makes it reload everything every frame, so
+// the game recovers on the next frame instead of staying stuck.
+static NOINLINE void RunFrame(void)
 {
-    for (;;)
+    ReadKeys();
+
+    if (gSoftResetDisabled == FALSE
+     && JOY_HELD_RAW(A_BUTTON)
+     && JOY_HELD_RAW(B_START_SELECT) == B_START_SELECT)
     {
-        ReadKeys();
+        rfu_REQ_stopMode();
+        rfu_waitREQComplete();
+        DoSoftReset();
+    }
 
-        if (gSoftResetDisabled == FALSE
-         && JOY_HELD_RAW(A_BUTTON)
-         && JOY_HELD_RAW(B_START_SELECT) == B_START_SELECT)
-        {
-            rfu_REQ_stopMode();
-            rfu_waitREQComplete();
-            DoSoftReset();
-        }
+    if (Overworld_SendKeysToLinkIsRunning() == TRUE)
+    {
+        gLinkTransferringData = TRUE;
+        UpdateLinkAndCallCallbacks();
+        gLinkTransferringData = FALSE;
+    }
+    else
+    {
+        gLinkTransferringData = FALSE;
+        UpdateLinkAndCallCallbacks();
 
-        if (Overworld_SendKeysToLinkIsRunning() == TRUE)
+        if (Overworld_RecvKeysFromLinkIsRunning() == TRUE)
         {
+            gMain.newKeys = 0;
+            ClearSpriteCopyRequests();
             gLinkTransferringData = TRUE;
             UpdateLinkAndCallCallbacks();
             gLinkTransferringData = FALSE;
         }
-        else
-        {
-            gLinkTransferringData = FALSE;
-            UpdateLinkAndCallCallbacks();
-
-            if (Overworld_RecvKeysFromLinkIsRunning() == TRUE)
-            {
-                gMain.newKeys = 0;
-                ClearSpriteCopyRequests();
-                gLinkTransferringData = TRUE;
-                UpdateLinkAndCallCallbacks();
-                gLinkTransferringData = FALSE;
-            }
-        }
-
-        PlayTimeCounter_Update();
-        MapMusicMain();
-        WaitForVBlank();
     }
+
+    PlayTimeCounter_Update();
+    MapMusicMain();
+    WaitForVBlank();
+}
+
+void AgbMainLoop(void)
+{
+    for (;;)
+        RunFrame();
 }
 
 static void UpdateLinkAndCallCallbacks(void)
