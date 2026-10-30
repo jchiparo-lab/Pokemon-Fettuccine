@@ -462,7 +462,6 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ReceivedJohtoStarter::
 LittlerootTown_ProfessorBirchsLab_EventScript_Birch::
 	lock
 	faceplayer
-	call_if_set FLAG_BIRCH_STARTER_MEGA_STONES_READY, LittlerootTown_ProfessorBirchsLab_EventScript_TryGiveStarterMegaStones
 	goto_if_eq VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 5, LittlerootTown_ProfessorBirchsLab_EventScript_CanHaveAnyOneOfRarePokemon
 	goto_if_eq VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 2, LittlerootTown_ProfessorBirchsLab_EventScript_GrassyPatchWaiting
 	goto_if_unset FLAG_HAS_MATCH_CALL, LittlerootTown_ProfessorBirchsLab_EventScript_TryRatePokedexOrRegister
@@ -1009,40 +1008,6 @@ LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall:
 	.string "we meet. I'll be waiting!\p"
 	.string "… … … … … …\n"
 	.string "… … … … … Click!$"
-
-@ Fettuccine: Birch (Alan) gives every starter Mega Stone after the player's
-@ sixth badge. Pokemon from older regions' starter lines can be caught in the wild.
-LittlerootTown_ProfessorBirchsLab_EventScript_TryGiveStarterMegaStones::
-	goto_if_set FLAG_RECEIVED_STARTER_MEGA_STONES, LittlerootTown_ProfessorBirchsLab_EventScript_TryGiveStarterMegaStonesEnd
-	msgbox LittlerootTown_ProfessorBirchsLab_Text_HereAreStarterMegaStones, MSGBOX_DEFAULT
-	giveitem ITEM_SCEPTILITE
-	giveitem ITEM_BLAZIKENITE
-	giveitem ITEM_SWAMPERTITE
-	giveitem ITEM_VENUSAURITE
-	giveitem ITEM_CHARIZARDITE_X
-	giveitem ITEM_CHARIZARDITE_Y
-	giveitem ITEM_BLASTOISINITE
-	setflag FLAG_RECEIVED_STARTER_MEGA_STONES
-	msgbox LittlerootTown_ProfessorBirchsLab_Text_StarterMegaStonesExplained, MSGBOX_DEFAULT
-	release
-	end
-LittlerootTown_ProfessorBirchsLab_EventScript_TryGiveStarterMegaStonesEnd:
-	return
-
-LittlerootTown_ProfessorBirchsLab_Text_HereAreStarterMegaStones:
-	.string "PROF. ALAN: There you are,\n"
-	.string "{PLAYER}{KUN}! Thanks for coming.\p"
-	.string "TREECKO, TORCHIC and MUDKIP used to\n"
-	.string "be the starters here, you know.\p"
-	.string "Now they live in the wild, along with\n"
-	.string "BULBASAUR, CHARMANDER and SQUIRTLE.\p"
-	.string "These MEGA STONES let their final\n"
-	.string "forms MEGA EVOLVE. Take them all!$"
-
-LittlerootTown_ProfessorBirchsLab_Text_StarterMegaStonesExplained:
-	.string "PROF. ALAN: If you catch any of\n"
-	.string "those POKéMON, raise them well.\p"
-	.string "I'd love to hear how they do!$"
 
 @ Fettuccine: Birch (Alan) gives the Pokemon Box Link with the starter,
 @ so the player can open Pokemon Storage from the bag anywhere.

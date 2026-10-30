@@ -82,8 +82,8 @@
 #define FLAG_RECEIVED_RIOLU_EGG    0x3C
 #define FLAG_HIDE_METEOR_FALLS_DIANCIE    0x3D
 #define FLAG_HIDE_VICTORY_ROAD_MEWTWO    0x3E
-#define FLAG_BIRCH_STARTER_MEGA_STONES_READY    0x3F
-#define FLAG_RECEIVED_STARTER_MEGA_STONES    0x40
+#define FLAG_UNUSED_0x03F                    0x3F // Fettuccine: was Alan's starter Mega Stone call (removed)
+#define FLAG_UNUSED_0x040                    0x40 // Fettuccine: was Alan's starter Mega Stone gift (removed)
 #define FLAG_ITEM_ROUTE_110_BEEDRILLITE    0x41
 #define FLAG_ITEM_FORTREE_CITY_PIDGEOTITE    0x42
 #define FLAG_ITEM_VERDANTURF_TOWN_LOPUNNITE    0x43

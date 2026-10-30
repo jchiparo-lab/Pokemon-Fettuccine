@@ -471,34 +471,10 @@ Route119_EventScript_ScottWonAtFortreeGymCall::
 	lockall
 	pokenavcall Route119_Text_ScottYouWonAtFortreeGym
 	waitmessage
-	call Route119_EventScript_BirchMegaStonesCall
 	clearflag FLAG_SCOTT_CALL_FORTREE_GYM
 	addvar VAR_SCOTT_STATE, 1
 	releaseall
 	end
-
-@ Fettuccine: right after Scott's call, Prof. Birch (Alan) calls about the
-@ starter Mega Stones waiting at his lab.
-Route119_EventScript_BirchMegaStonesCall::
-	closemessage
-	delay 30
-	pokenavcall Route119_Text_BirchMegaStonesCall
-	waitmessage
-	setflag FLAG_BIRCH_STARTER_MEGA_STONES_READY
-	return
-
-Route119_Text_BirchMegaStonesCall:
-	.string "… … … … … …\n"
-	.string "… … … … … Beep!\p"
-	.string "PROF. ALAN: Hello, {PLAYER}{KUN}!\n"
-	.string "I heard you earned your sixth BADGE!\p"
-	.string "I've been studying how certain\n"
-	.string "starter POKéMON MEGA EVOLVE.\p"
-	.string "I have something for you!\n"
-	.string "Stop by my LAB in LIL RAGU TOWN\l"
-	.string "when you get the chance.\p"
-	.string "… … … … … …\n"
-	.string "… … … … … Click!$"
 
 Route119_Text_MayIntro:
 	.string "BRIAN: {PLAYER}! There you are!\p"
