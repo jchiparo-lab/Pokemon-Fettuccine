@@ -5763,16 +5763,13 @@ void SetDefaultSearchModeAndOrder(u8 taskId)
 {
     u16 selected;
 
-    switch (sPokedexView->dexModeBackup)
-    {
-    default:
-    case DEX_MODE_HOENN:
-        selected = DEX_MODE_HOENN;
-        break;
-    case DEX_MODE_NATIONAL:
+    // Fettuccine: search the National Dex by default (it's unlocked from the
+    // start), so Pokémon outside the Pastalia Dex can be found even when
+    // browsing the Pastalia list.
+    if (IsNationalPokedexEnabled())
         selected = DEX_MODE_NATIONAL;
-        break;
-    }
+    else
+        selected = DEX_MODE_HOENN;
     gTasks[taskId].tCursorPos_Mode = selected;
 
     switch (sPokedexView->dexOrderBackup)
