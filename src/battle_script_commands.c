@@ -8375,6 +8375,9 @@ static void Cmd_givecaughtmon(void)
                 break;
         }
 
+        // Fettuccine: caught Pokémon arrive fully healed (HP, status and PP).
+        HealPokemon(caughtMon);
+
         if (GiveCapturedMonToPlayer(caughtMon) != MON_GIVEN_TO_PARTY
          && gBattleCommunication[MULTISTRING_CHOOSER] != B_MSG_SWAPPED_INTO_PARTY)
         {
