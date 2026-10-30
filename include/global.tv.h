@@ -513,7 +513,7 @@ struct GabbyAndTyData
              u8 playerUsedHealingItem:1;
              u8 playerThrewABall:1;
              u8 onAir:1;
-             u8 valA_5:3;
+             u8 butterAnswer:3; // Fettuccine: was unused. See BUTTER_ANSWER_* in tv.c
     /*2BAF*/ u8 battleTookMoreThanOneTurn2:1;
              u8 playerLostAMon2:1;
              u8 playerUsedHealingItem2:1;

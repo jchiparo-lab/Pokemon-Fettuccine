@@ -196,6 +196,9 @@ gSpecials::
 	def_special DoTVShowInSearchOfTrainers
 	def_special IsGabbyAndTyShowOnTheAir
 	def_special GabbyAndTyGetLastQuote
+	def_special GabbyAndTyGetButterAnswer
+	def_special GabbyAndTySetButterAnswer
+	def_special GabbyAndTyFlipButterAnswer
 	def_special GabbyAndTyGetLastBattleTrivia
 	def_special GetGabbyAndTyLocalIds
 	def_special GetBattleOutcome

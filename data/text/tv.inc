@@ -2761,18 +2761,46 @@ GabbyAndTy_Text_InterviewAgain:
 	.string "Anyway, what do you think?\n"
 	.string "Do you want to be interviewed again?$"
 
-GabbyAndTy_Text_DescribeYourFeelings:
-	.string "You will?\n"
+GabbyAndTy_Text_ButterQuestion:
+	.string "GABBY: You will?\n"
 	.string "Thank you!\p"
-	.string "Okay, I need you to describe your\n"
-	.string "feelings about our battle, but it\l"
-	.string "has to be short and sweet. Go!$"
+	.string "One question is tearing PASTALIA\n"
+	.string "apart, and we want YOUR answer!\p"
+	.string "Does butter belong on a sandwich?$"
+
+GabbyAndTy_Text_ButterYes:
+	.string "GABBY: Butter on a sandwich!\n"
+	.string "A bold, buttery stance!\p"
+	.string "TY, tell me you got that!\p"
+	.string "TY: …\n"
+	.string "(Thumbs up.)$"
+
+GabbyAndTy_Text_ButterNo:
+	.string "GABBY: No butter! Dry bread and\n"
+	.string "proud of it!\p"
+	.string "The people have spoken!\p"
+	.string "TY: …\n"
+	.string "(Nods solemnly.)$"
+
+GabbyAndTy_Text_StillStandingByIt:
+	.string "GABBY: Last time, you told us\n"
+	.string "butter {STR_VAR_1} on a\l"
+	.string "sandwich.\p"
+	.string "Are you still standing by it?$"
+
+GabbyAndTy_Text_Unshakable:
+	.string "GABBY: Unshakable!\n"
+	.string "Now THAT's a TRAINER with\l"
+	.string "conviction!$"
+
+GabbyAndTy_Text_FlipFlop:
+	.string "GABBY: A FLIP-FLOP!\n"
+	.string "This is huge!\p"
+	.string "TY, roll the cameras!$"
 
 GabbyAndTy_Text_PerfectWellBeSeeingYou:
-	.string "GABBY: Mmm, yeah!\n"
-	.string "That's the perfect clincher!\p"
-	.string "I get the feeling that this will make\n"
-	.string "a great TV show.\p"
+	.string "GABBY: I get the feeling that this\n"
+	.string "will make a great TV show.\p"
 	.string "There's a chance that they'll air this\n"
 	.string "on TV, so make sure to look for us!\p"
 	.string "Okay!\n"
@@ -2914,16 +2942,14 @@ gTVInSearchOfTrainersText07::
 	.string "you have a ways to go, {PLAYER}!$"
 
 gTVInSearchOfTrainersText08::
-	.string "After our battle, we asked {PLAYER} for\n"
-	.string "a succinct summary.\p"
-	.string "The TRAINER replied, “{STR_VAR_1}.”\p"
-	.string "{PLAYER}'s POKéMON {STR_VAR_2} and\n"
-	.string "{STR_VAR_3}…\l"
-	.string "And “{STR_VAR_1}”…\p"
-	.string "Mmm! That's deep! There's deep\n"
-	.string "significance behind that quote!\p"
-	.string "It's no surprise--a good TRAINER has\n"
-	.string "good things to say.\p"
+	.string "After our battle, we asked {PLAYER}\n"
+	.string "the big question:\p"
+	.string "Does butter belong on a sandwich?\p"
+	.string "BREAKING: {PLAYER} says butter\n"
+	.string "{STR_VAR_1} on a sandwich!\p"
+	.string "Even {PLAYER}'s {STR_VAR_2} and\n"
+	.string "{STR_VAR_3} were stunned!\p"
+	.string "The debate rages on!\p"
 	.string "That's all for today!\n"
 	.string "See you again on our next broadcast!$"
 

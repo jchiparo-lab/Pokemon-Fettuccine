@@ -238,9 +238,8 @@ GabbyAndTy_EventScript_RequestInterview::
 	call_if_eq VAR_FACING, DIR_SOUTH, GabbyAndTy_EventScript_FacePlayerSouth
 	call_if_eq VAR_FACING, DIR_EAST, GabbyAndTy_EventScript_FacePlayerEast
 	goto_if_set FLAG_TEMP_SKIP_GABBY_INTERVIEW, GabbyAndTy_EventScript_KeepingAnEyeOutForYou
-	specialvar VAR_RESULT, GabbyAndTyGetLastQuote
+	specialvar VAR_RESULT, GabbyAndTyGetButterAnswer
 	goto_if_eq VAR_RESULT, 0, GabbyAndTy_EventScript_DidntInterviewLastTime
-	msgbox GabbyAndTy_Text_QuoteFromLastInterview, MSGBOX_DEFAULT
 	specialvar VAR_RESULT, GabbyAndTyGetLastBattleTrivia
 	switch VAR_RESULT
 	case 0, GabbyAndTy_EventScript_RequestInterviewNoTrivia
@@ -292,14 +291,42 @@ GabbyAndTy_EventScript_RequestInterviewLostAMon::
 	goto GabbyAndTy_EventScript_Interview
 	end
 
+@ Fettuccine: the interview is one question, "Does butter belong on a
+@ sandwich?" (a known Retrotopia debate). Later interviews ask whether the
+@ player still stands by their last answer.
 GabbyAndTy_EventScript_Interview::
 	goto_if_eq VAR_RESULT, NO, GabbyAndTy_EventScript_DontGiveUpKeepingEyeOut
-	msgbox GabbyAndTy_Text_DescribeYourFeelings, MSGBOX_DEFAULT
-	setvar VAR_0x8004, EASY_CHAT_TYPE_GABBY_AND_TY
-	call Common_ShowEasyChatScreen
-	lock
-	faceplayer
-	goto_if_eq VAR_RESULT, 0, GabbyAndTy_EventScript_DontGiveUpKeepingEyeOut
+	specialvar VAR_RESULT, GabbyAndTyGetButterAnswer
+	goto_if_ne VAR_RESULT, 0, GabbyAndTy_EventScript_AskStillStandingByIt
+	msgbox GabbyAndTy_Text_ButterQuestion, MSGBOX_YESNO
+	special GabbyAndTySetButterAnswer
+	call_if_eq VAR_RESULT, YES, GabbyAndTy_EventScript_ButterYes
+	call_if_eq VAR_RESULT, NO, GabbyAndTy_EventScript_ButterNo
+	goto GabbyAndTy_EventScript_FinishInterview
+	end
+
+GabbyAndTy_EventScript_ButterYes::
+	msgbox GabbyAndTy_Text_ButterYes, MSGBOX_DEFAULT
+	return
+
+GabbyAndTy_EventScript_ButterNo::
+	msgbox GabbyAndTy_Text_ButterNo, MSGBOX_DEFAULT
+	return
+
+GabbyAndTy_EventScript_AskStillStandingByIt::
+	msgbox GabbyAndTy_Text_StillStandingByIt, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, GabbyAndTy_EventScript_FlipFlop
+	msgbox GabbyAndTy_Text_Unshakable, MSGBOX_DEFAULT
+	goto GabbyAndTy_EventScript_FinishInterview
+	end
+
+GabbyAndTy_EventScript_FlipFlop::
+	special GabbyAndTyFlipButterAnswer
+	msgbox GabbyAndTy_Text_FlipFlop, MSGBOX_DEFAULT
+	goto GabbyAndTy_EventScript_FinishInterview
+	end
+
+GabbyAndTy_EventScript_FinishInterview::
 	msgbox GabbyAndTy_Text_PerfectWellBeSeeingYou, MSGBOX_DEFAULT
 	special GabbyAndTyAfterInterview
 	setflag FLAG_TEMP_SKIP_GABBY_INTERVIEW

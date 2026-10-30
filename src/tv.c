@@ -78,6 +78,14 @@ static u8 GetTVGroupByShowId(u8);
 static void SetTVMetatilesOnMap(int, int, u16);
 static u8 FindAnyPokeNewsOnTheAir(void);
 static void TakeGabbyAndTyOffTheAir(void);
+
+// Fettuccine: Gabby and Ty's butter question (gabbyAndTyData.butterAnswer)
+enum {
+    BUTTER_ANSWER_NONE,
+    BUTTER_ANSWER_YES,
+    BUTTER_ANSWER_NO,
+};
+
 static s8 FindFirstEmptyRecordMixTVShowSlot(TVShow *);
 static bool8 IsRecordMixShowAlreadySpawned(u8, bool8);
 static void StorePlayerIdInRecordMixShow(TVShow *);
@@ -826,7 +834,7 @@ void ResetGabbyAndTy(void)
     gSaveBlock1Ptr->gabbyAndTyData.playerUsedHealingItem = FALSE;
     gSaveBlock1Ptr->gabbyAndTyData.playerThrewABall = FALSE;
     gSaveBlock1Ptr->gabbyAndTyData.onAir = FALSE;
-    gSaveBlock1Ptr->gabbyAndTyData.valA_5 = 0;
+    gSaveBlock1Ptr->gabbyAndTyData.butterAnswer = BUTTER_ANSWER_NONE;
     gSaveBlock1Ptr->gabbyAndTyData.battleTookMoreThanOneTurn2 = FALSE;
     gSaveBlock1Ptr->gabbyAndTyData.playerLostAMon2 = FALSE;
     gSaveBlock1Ptr->gabbyAndTyData.playerUsedHealingItem2 = FALSE;
@@ -900,6 +908,48 @@ u8 GabbyAndTyGetBattleNum(void)
 bool8 IsGabbyAndTyShowOnTheAir(void)
 {
     return gSaveBlock1Ptr->gabbyAndTyData.onAir;
+}
+
+// Fettuccine: Gabby and Ty's interview is one question, "Does butter belong
+// on a sandwich?" The answer is kept for the TV show and the next interview.
+static void BufferButterAnswer(u8 *dest)
+{
+    switch (gSaveBlock1Ptr->gabbyAndTyData.butterAnswer)
+    {
+    case BUTTER_ANSWER_YES:
+        StringCopy(dest, COMPOUND_STRING("belongs"));
+        break;
+    case BUTTER_ANSWER_NO:
+        StringCopy(dest, COMPOUND_STRING("does NOT belong"));
+        break;
+    default:
+        StringCopy(dest, COMPOUND_STRING("might belong"));
+        break;
+    }
+}
+
+// Returns the last answer (BUTTER_ANSWER_*) and buffers it in STR_VAR_1.
+u8 GabbyAndTyGetButterAnswer(void)
+{
+    BufferButterAnswer(gStringVar1);
+    return gSaveBlock1Ptr->gabbyAndTyData.butterAnswer;
+}
+
+// Stores the player's YES/NO from VAR_RESULT.
+void GabbyAndTySetButterAnswer(void)
+{
+    if (gSpecialVar_Result != 0) // YES
+        gSaveBlock1Ptr->gabbyAndTyData.butterAnswer = BUTTER_ANSWER_YES;
+    else
+        gSaveBlock1Ptr->gabbyAndTyData.butterAnswer = BUTTER_ANSWER_NO;
+}
+
+void GabbyAndTyFlipButterAnswer(void)
+{
+    if (gSaveBlock1Ptr->gabbyAndTyData.butterAnswer == BUTTER_ANSWER_YES)
+        gSaveBlock1Ptr->gabbyAndTyData.butterAnswer = BUTTER_ANSWER_NO;
+    else
+        gSaveBlock1Ptr->gabbyAndTyData.butterAnswer = BUTTER_ANSWER_YES;
 }
 
 bool8 GabbyAndTyGetLastQuote(void)
@@ -5205,7 +5255,7 @@ void DoTVShowInSearchOfTrainers(void)
         sTVShowState = 8;
         break;
     case 8:
-        CopyEasyChatWord(gStringVar1, gSaveBlock1Ptr->gabbyAndTyData.quote[0]);
+        BufferButterAnswer(gStringVar1);
         StringCopy(gStringVar2, GetSpeciesName(gSaveBlock1Ptr->gabbyAndTyData.mon1));
         StringCopy(gStringVar3, GetSpeciesName(gSaveBlock1Ptr->gabbyAndTyData.mon2));
         gSpecialVar_Result = TRUE;
