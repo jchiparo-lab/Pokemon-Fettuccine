@@ -1,5 +1,6 @@
 #include "global.h"
 #include "item.h"
+#include "mega_stone_case.h"
 #include "berry.h"
 #include "pokeball.h"
 #include "string_util.h"
@@ -223,6 +224,9 @@ bool32 CheckBagHasItem(enum Item itemId, u16 count)
     if (CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE || FlagGet(FLAG_STORING_ITEMS_IN_PYRAMID_BAG) == TRUE)
         return CheckPyramidBagHasItem(itemId, count);
 
+    if (IsItemInMegaStoneCase(itemId))
+        return TRUE;
+
     return BagPocket_CheckHasItem(&gBagPockets[GetItemPocket(itemId)], itemId, count);
 }
 
@@ -254,6 +258,9 @@ bool32 CheckBagHasSpace(enum Item itemId, u16 count)
 
     if (CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE || FlagGet(FLAG_STORING_ITEMS_IN_PYRAMID_BAG) == TRUE)
         return CheckPyramidBagHasSpace(itemId, count);
+
+    if (IsItemInMegaStoneCase(itemId))
+        return TRUE;
 
     return GetFreeSpaceForItemInBag(itemId) >= count;
 }
@@ -357,6 +364,10 @@ bool32 AddBagItem(enum Item itemId, u16 count)
     if (CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE || FlagGet(FLAG_STORING_ITEMS_IN_PYRAMID_BAG) == TRUE)
         return AddPyramidBagItem(itemId, count);
 
+    // Fettuccine: a Mega Stone goes back into the Mega Stone Case.
+    if (IsItemInMegaStoneCase(itemId))
+        return TRUE;
+
     return BagPocket_AddItem(&gBagPockets[GetItemPocket(itemId)], itemId, count);
 }
 
@@ -413,6 +424,21 @@ bool32 RemoveBagItem(enum Item itemId, u16 count)
     // check Battle Pyramid Bag
     if (CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE || FlagGet(FLAG_STORING_ITEMS_IN_PYRAMID_BAG) == TRUE)
         return RemovePyramidBagItem(itemId, count);
+
+    // Fettuccine: the Mega Stone Case never runs out.
+    if (IsItemInMegaStoneCase(itemId))
+        return TRUE;
+
+    return BagPocket_RemoveItem(&gBagPockets[GetItemPocket(itemId)], itemId, count);
+}
+
+// Removes an item from the bag itself, even a Mega Stone while the player has
+// the Mega Stone Case (used to clear old saves' stones out of the Items pocket).
+bool32 RemoveBagItem_IgnoreMegaStoneCase(enum Item itemId, u16 count)
+{
+    itemId = SanitizeBagItemId(itemId);
+    if (itemId == ITEM_NONE)
+        return FALSE;
 
     return BagPocket_RemoveItem(&gBagPockets[GetItemPocket(itemId)], itemId, count);
 }

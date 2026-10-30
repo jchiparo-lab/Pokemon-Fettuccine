@@ -7542,6 +7542,15 @@ void ChooseMonForTradingBoard(enum PartyMenuType menuType, MainCallback callback
     InitPartyMenu(menuType, PARTY_LAYOUT_SINGLE, PARTY_ACTION_CHOOSE_MON, FALSE, PARTY_MSG_CHOOSE_MON, Task_HandleChooseMonInput, callback);
 }
 
+// Fettuccine: script special for the Mega Stone Case. Gives gSpecialVar_ItemId
+// to the chosen Pokémon, then returns to the field and continues the script.
+// The screen must already be faded out.
+void ChooseMonToGiveMegaStone(void)
+{
+    InitPartyMenu(PARTY_MENU_TYPE_FIELD, PARTY_LAYOUT_SINGLE, PARTY_ACTION_GIVE_ITEM, FALSE, PARTY_MSG_GIVE_TO_WHICH_MON, Task_HandleChooseMonInput, CB2_ReturnToFieldContinueScriptPlayMapMusic);
+    gPartyMenu.bagItem = gSpecialVar_ItemId;
+}
+
 void ChooseMonForMoveTutor(void)
 {
     InitPartyMenu(PARTY_MENU_TYPE_FIELD, PARTY_LAYOUT_SINGLE, PARTY_ACTION_MOVE_TUTOR, FALSE, PARTY_MSG_TEACH_WHICH_MON, Task_HandleChooseMonInput, CB2_ReturnToFieldContinueScriptPlayMapMusic);

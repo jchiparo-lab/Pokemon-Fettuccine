@@ -13955,6 +13955,22 @@ const struct ItemInfo gItemsInfo[] =
         .iconPalette = gItemIconPalette_MegaRing,
     },
 
+    [ITEM_MEGA_STONE_CASE] =
+    {
+        .name = ITEM_NAME("Mega Stone Case"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "Holds every Mega\n"
+            "Stone. Give one to\n"
+            "a Pokémon to hold."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_FIELD,
+        .fieldUseFunc = ItemUseOutOfBattle_MegaStoneCase,
+        .iconPic = gItemIcon_TMCase,
+        .iconPalette = gItemIconPalette_TMCase,
+    },
+
     [ITEM_Z_POWER_RING] =
     {
         .name = ITEM_NAME("Z-Power Ring"),

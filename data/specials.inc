@@ -199,6 +199,10 @@ gSpecials::
 	def_special GabbyAndTyGetButterAnswer
 	def_special GabbyAndTySetButterAnswer
 	def_special GabbyAndTyFlipButterAnswer
+	def_special MegaStoneCase_PushChoices
+	def_special MegaStoneCase_SetChosenStone
+	def_special MegaStoneCase_ClearBagStones
+	def_special ChooseMonToGiveMegaStone
 	def_special GabbyAndTyGetLastBattleTrivia
 	def_special GetGabbyAndTyLocalIds
 	def_special GetBattleOutcome

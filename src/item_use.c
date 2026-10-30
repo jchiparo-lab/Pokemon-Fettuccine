@@ -61,6 +61,7 @@ static void PlayerFaceHiddenItem(enum Direction);
 static void CheckForHiddenItemsInMapConnection(u8);
 static void Task_OpenRegisteredPokeblockCase(u8);
 static void Task_AccessPokemonBoxLink(u8);
+static void Task_UseMegaStoneCase(u8);
 static void ItemUseOnFieldCB_Bike(u8);
 static void ItemUseOnFieldCB_Rod(u8);
 static void ItemUseOnFieldCB_Itemfinder(u8);
@@ -743,6 +744,19 @@ void ItemUseOutOfBattle_PokemonBoxLink(u8 taskId)
 static void Task_AccessPokemonBoxLink(u8 taskId)
 {
     ScriptContext_SetupScript(EventScript_AccessPokemonBoxLink);
+    DestroyTask(taskId);
+}
+
+// Fettuccine: Mega Stone Case
+void ItemUseOutOfBattle_MegaStoneCase(u8 taskId)
+{
+    sItemUseOnFieldCB = Task_UseMegaStoneCase;
+    SetUpItemUseOnFieldCallback(taskId);
+}
+
+static void Task_UseMegaStoneCase(u8 taskId)
+{
+    ScriptContext_SetupScript(EventScript_UseMegaStoneCase);
     DestroyTask(taskId);
 }
 

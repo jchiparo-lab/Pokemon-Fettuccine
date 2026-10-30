@@ -1051,6 +1051,7 @@ enum __attribute__((packed)) Item
     ITEM_BAXCALIBRITE = 871,
     ITEM_TATSUGIRINITE = 872,
     ITEM_GLIMMORANITE = 873,
+    ITEM_MEGA_STONE_CASE = 874, // Fettuccine: holds every Mega Stone (see mega_stone_case.c)
 
     ITEMS_COUNT,
     ITEM_FIELD_ARROW = ITEMS_COUNT,

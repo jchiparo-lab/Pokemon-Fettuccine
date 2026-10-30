@@ -1059,6 +1059,7 @@ gStdScripts_End::
 	.include "data/scripts/debug.inc"
 	.include "data/scripts/debug_story_beats.inc"
 	.include "data/scripts/wonder_trade.inc"
+	.include "data/scripts/mega_stone_case.inc"
 
 EventScript_WhiteOut::
 	call EverGrandeCity_HallOfFame_EventScript_ResetEliteFour
