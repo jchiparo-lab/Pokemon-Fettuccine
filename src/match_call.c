@@ -1157,6 +1157,12 @@ static u32 GetActiveMatchCallTrainerId(u32 activeMatchCallId)
 */
 bool32 TryStartMatchCall(void)
 {
+    // Fettuccine: no random calls from trainers. Story calls (Alan, Brian,
+    // Joe Q, etc.) come from scripts and are unaffected, and the player can
+    // still call registered trainers from the PokéNav.
+    if (TRUE)
+        return FALSE;
+
     if (FlagGet(FLAG_HAS_MATCH_CALL)
         && UpdateMatchCallStepCounter()
         && UpdateMatchCallMinutesCounter()
