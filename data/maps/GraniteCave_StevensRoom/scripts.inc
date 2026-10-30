@@ -15,6 +15,9 @@ GraniteCave_StevensRoom_EventScript_Steven::
 	msgbox GraniteCave_StevensRoom_Text_TakeMegaRing, MSGBOX_DEFAULT
 	giveitem ITEM_MEGA_RING
 	msgbox GraniteCave_StevensRoom_Text_ExplainMegaRing, MSGBOX_DEFAULT
+	giveitem ITEM_MEGA_STONE_CASE
+	special MegaStoneCase_ClearBagStones
+	msgbox GraniteCave_StevensRoom_Text_ExplainMegaStoneCase, MSGBOX_DEFAULT
 	msgbox GraniteCave_StevensRoom_Text_CouldBecomeChampionLetsRegister, MSGBOX_DEFAULT
 	closemessage
 	delay 30
@@ -137,7 +140,16 @@ GraniteCave_StevensRoom_Text_ExplainMegaRing:
 	.string "When a POKéMON holds its MEGA STONE,\n"
 	.string "the MEGA RING lets it MEGA EVOLVE\l"
 	.string "in battle.\p"
-	.string "MEGA STONES are hidden all over\n"
-	.string "PASTALIA.\p"
-	.string "In fact, I hear there's one deep\n"
-	.string "inside this very cave…$"
+	.string "And a MEGA RING is no good without\n"
+	.string "MEGA STONES, so take these too!$"
+
+GraniteCave_StevensRoom_Text_ExplainMegaStoneCase:
+	.string "SAM: That case holds a MEGA STONE\n"
+	.string "for every POKéMON that can\l"
+	.string "MEGA EVOLVE.\p"
+	.string "Open it from your BAG and give a\n"
+	.string "stone to a POKéMON to hold.\p"
+	.string "Take a stone back, and it goes right\n"
+	.string "back in the case. It never runs out!\p"
+	.string "I've been collecting them for years.\n"
+	.string "Almost as long as my cheeses!$"

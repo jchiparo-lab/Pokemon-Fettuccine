@@ -7,6 +7,7 @@ Common_EventScript_PkmnCenterNurse::
 	waitfanfare
 	special HealPlayerParty
 	callnative UpdateFollowingPokemon
+	call EventScript_PkmnCenterNurse_TryGiveMegaStoneCase
 	goto_if_unset FLAG_POKERUS_EXPLAINED, EventScript_PkmnCenterNurse_CheckPokerus
 	goto EventScript_PkmnCenterNurse_CheckTrainerHillAndUnionRoom
 	end
@@ -74,3 +75,26 @@ Movement_PkmnCenterNurse_Bow:
 Movement_PkmnCenterNurse_Turn:
 	walk_in_place_faster_left
 	step_end
+
+@ Fettuccine: saves from before the Mega Stone Case already have the Mega
+@ Ring from Sam but not the case. Hand it over here and clear the old
+@ Mega Stones out of the Items pocket.
+EventScript_PkmnCenterNurse_TryGiveMegaStoneCase::
+	checkitem ITEM_MEGA_RING
+	goto_if_eq VAR_RESULT, FALSE, EventScript_PkmnCenterNurse_TryGiveMegaStoneCaseEnd
+	checkitem ITEM_MEGA_STONE_CASE
+	goto_if_eq VAR_RESULT, TRUE, EventScript_PkmnCenterNurse_TryGiveMegaStoneCaseEnd
+	msgbox gText_SamLeftMegaStoneCase, MSGBOX_DEFAULT
+	giveitem ITEM_MEGA_STONE_CASE
+	goto_if_eq VAR_RESULT, FALSE, EventScript_PkmnCenterNurse_TryGiveMegaStoneCaseEnd
+	special MegaStoneCase_ClearBagStones
+	msgbox gText_SamLeftMegaStoneCaseExplain, MSGBOX_DEFAULT
+EventScript_PkmnCenterNurse_TryGiveMegaStoneCaseEnd:
+	return
+
+gText_SamLeftMegaStoneCase:
+	.string "Oh, and SAM left this here for you!$"
+
+gText_SamLeftMegaStoneCaseExplain:
+	.string "It holds every MEGA STONE, so the\n"
+	.string "ones in your BAG went inside it.$"
