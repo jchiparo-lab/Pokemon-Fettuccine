@@ -30,6 +30,36 @@ These only evolve "in" their home region, so they can't be reached yet:
 - Avalugg Hisui
 - Decidueye Hisui
 
+### First stages added later
+
+Added by `tools/fettuccine/add_first_stages.py`. These lines had only been placed already evolved,
+so their first stage couldn't be caught. Each is now in one early area at every time of day
+(Morning, Day, Evening and Night), in a slot whose Pokémon also fills another slot there.
+
+| Pokémon | Where | Rate | Level |
+| --- | --- | --- | --- |
+| Litten | Route 113, grass | 5% | 16 |
+| Popplio | Route 104, grass | 4–5% | 4 |
+| Sprigatito | Route 102, grass | 5% | 3 |
+| Chimchar | Route 112, grass | 5% | 16 |
+| Pikipek | Route 101, grass | 10% | 3 |
+| Fletchling | Route 103, grass | 10% | 2–4 |
+| Rookidee | Route 116, grass | 10% | 6 |
+| Starly | Petalburg Woods | 4% | 5 |
+| Bidoof | Rusturf Tunnel | 10% | 7 |
+| Bunnelby | Route 103, grass | 10% | 2–3 |
+| Blipbug | Route 102, grass | 5–10% | 3 |
+| Dewpider | Route 110, grass | 4–10% | 12 |
+| Kricketot | Route 101, grass | 10% | 3 |
+| Nacli | Granite Cave B2F | 5% | 10 |
+| Nymble | Route 104, grass | 4–10% | 4–5 |
+| Roggenrola | Granite Cave B1F | 5% | 10 |
+| Rolycoly | Granite Cave 1F | 5% | 6–10 |
+| Smoliv | Petalburg Woods | 4% | 5 |
+| Tympole | Meteor Falls 1F | 10% | 18 |
+| Wiglett | Route 117, surfing | 4% | 5 |
+| Wooper (Paldea) | Route 114, grass | 10% | 15 |
+
 ## By area
 
 ### AbandonedShip_HiddenFloorCorridors
