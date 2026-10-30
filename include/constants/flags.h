@@ -691,7 +691,7 @@
 #define FLAG_HIDE_LEGEND_GENESECT          0x27C // Fettuccine: post-game Genesect
 #define FLAG_HIDE_LEGEND_MARSHADOW         0x27D // Fettuccine: post-game Marshadow
 #define FLAG_HIDE_LEGEND_ZERAORA           0x27E // Fettuccine: post-game Zeraora
-#define FLAG_BIRCH_REGIONAL_FORMS_CALL     0x27F // Fettuccine: Prof. Birch calls about regional forms after badge 3
+#define FLAG_BIRCH_REGIONAL_FORMS_CALL     0x27F // Fettuccine: Prof. Birch calls about regional forms on the first visit to Mauville
 #define FLAG_UNUSED_0x280  0x280 // Unused Flag
 #define FLAG_UNUSED_0x281  0x281 // Unused Flag
 #define FLAG_UNUSED_0x282  0x282 // Unused Flag

@@ -425,7 +425,7 @@ bool32 ShouldDoWallyCall(void)
     return TRUE;
 }
 
-// Fettuccine: Prof. Birch calls about regional forms on the first outdoor step after badge 3
+// Fettuccine: Prof. Birch calls about regional forms on the first outdoor step after the flag is set (first visit to Mauville)
 bool32 ShouldDoBirchRegionalFormsCall(void)
 {
     if (!FlagGet(FLAG_BIRCH_REGIONAL_FORMS_CALL))

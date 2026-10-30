@@ -3,6 +3,7 @@ MauvilleCity_MapScripts::
 	.byte 0
 
 MauvilleCity_OnTransition:
+	call_if_unset FLAG_VISITED_MAUVILLE_CITY, MauvilleCity_EventScript_QueueBirchRegionalFormsCall
 	setflag FLAG_VISITED_MAUVILLE_CITY
 	setflag FLAG_HIDE_MAUVILLE_CITY_WALLYS_UNCLE @ Brian comes without an uncle
 	clearflag FLAG_FORCE_MIRAGE_TOWER_VISIBLE
@@ -627,8 +628,13 @@ MauvilleCity_Text_ExplainTV:
 MauvilleCity_Text_BeenCheckingOutTV:
 	.string "Hi, have you been checking out TVs?$"
 
-@ Fettuccine: after badge 3, Prof. Birch (Alan) calls to explain where
-@ regional forms evolve (see the evolutions in src/data/pokemon/species_info).
+@ Fettuccine: on the first visit to Macaroville, Prof. Birch (Alan) calls to
+@ explain where regional forms evolve (see the evolutions in
+@ src/data/pokemon/species_info). The call starts on the first step in town.
+MauvilleCity_EventScript_QueueBirchRegionalFormsCall::
+	setflag FLAG_BIRCH_REGIONAL_FORMS_CALL
+	return
+
 MauvilleCity_EventScript_BirchRegionalFormsCall::
 	lockall
 	pokenavcall MauvilleCity_Text_BirchRegionalFormsCall
@@ -641,7 +647,7 @@ MauvilleCity_Text_BirchRegionalFormsCall:
 	.string "… … … … … …\n"
 	.string "… … … … … Beep!\p"
 	.string "PROF. ALAN: Hello, {PLAYER}{KUN}!\n"
-	.string "Three BADGES! Splendid work!\p"
+	.string "Made it to MACAROVILLE, have you?\p"
 	.string "I've been up late studying\n"
 	.string "regional forms, with a wee\l"
 	.string "glass of whiskey for company.\p"
