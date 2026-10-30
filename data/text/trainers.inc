@@ -1586,8 +1586,8 @@ Route112_Text_CarolPostBattle:
 	.string "If you have the most fun, you win!$"
 
 Route112_Text_BryantIntro:
-	.string "I caught hot POKéMON in FIERY PATH!\n"
-	.string "Take a look!$"
+	.string "I caught hot POKéMON in\n"
+	.string "PEPERONCINO PATH! Take a look!$"
 
 Route112_Text_BryantDefeat:
 	.string "What a bumpy ride that was!$"
