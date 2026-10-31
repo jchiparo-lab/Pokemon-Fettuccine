@@ -25,6 +25,10 @@ PetalburgCity_Mart_Pokemart_Basic:
 	.2byte ITEM_X_ATTACK
 	.2byte ITEM_X_DEFENSE
 	.2byte ITEM_ORANGE_MAIL
+	.2byte ITEM_TM_CRUNCH
+	.2byte ITEM_TM_DRAIN_PUNCH
+	.2byte ITEM_TM_KNOCK_OFF
+	.2byte ITEM_TM_SUBSTITUTE
 	pokemartlistend
 
 PetalburgCity_Mart_EventScript_ExpandedItems::
@@ -48,6 +52,10 @@ PetalburgCity_Mart_Pokemart_Expanded:
 	.2byte ITEM_X_ATTACK
 	.2byte ITEM_X_DEFENSE
 	.2byte ITEM_ORANGE_MAIL
+	.2byte ITEM_TM_CRUNCH
+	.2byte ITEM_TM_DRAIN_PUNCH
+	.2byte ITEM_TM_KNOCK_OFF
+	.2byte ITEM_TM_SUBSTITUTE
 	pokemartlistend
 
 PetalburgCity_Mart_EventScript_Woman::

@@ -25,6 +25,10 @@ MauvilleCity_Mart_Pokemart:
 	.2byte ITEM_GUARD_SPEC
 	.2byte ITEM_DIRE_HIT
 	.2byte ITEM_X_ACCURACY
+	.2byte ITEM_TM_THUNDER_PUNCH
+	.2byte ITEM_TM_FIRE_PUNCH
+	.2byte ITEM_TM_ICE_PUNCH
+	.2byte ITEM_TM_WILD_CHARGE
 	pokemartlistend
 
 MauvilleCity_Mart_EventScript_ExpertM::

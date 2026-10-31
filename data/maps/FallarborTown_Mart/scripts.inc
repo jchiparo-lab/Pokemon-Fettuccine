@@ -25,6 +25,9 @@ FallarborTown_Mart_Pokemart:
 	.2byte ITEM_X_DEFENSE
 	.2byte ITEM_DIRE_HIT
 	.2byte ITEM_GUARD_SPEC
+	.2byte ITEM_TM_ROCK_SLIDE
+	.2byte ITEM_TM_POISON_JAB
+	.2byte ITEM_TM_SHADOW_CLAW
 	pokemartlistend
 
 FallarborTown_Mart_EventScript_Woman::

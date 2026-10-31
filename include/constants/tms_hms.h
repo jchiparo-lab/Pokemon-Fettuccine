@@ -51,7 +51,58 @@
     F(STEEL_WING) \
     F(SKILL_SWAP) \
     F(SNATCH) \
-    F(OVERHEAT)
+    F(OVERHEAT) \
+    /* Fettuccine: TM51-TM100 */ \
+    F(BULLDOZE) \
+    F(THUNDER_WAVE) \
+    F(ICY_WIND) \
+    F(ACROBATICS) \
+    F(DRAINING_KISS) \
+    F(THUNDER_PUNCH) \
+    F(FIRE_PUNCH) \
+    F(ICE_PUNCH) \
+    F(WILD_CHARGE) \
+    F(SEED_BOMB) \
+    F(HEX) \
+    F(SWORDS_DANCE) \
+    F(ROCK_SLIDE) \
+    F(POISON_JAB) \
+    F(SHADOW_CLAW) \
+    F(HEAT_WAVE) \
+    F(WILL_O_WISP) \
+    F(ZEN_HEADBUTT) \
+    F(CRUNCH) \
+    F(DRAIN_PUNCH) \
+    F(KNOCK_OFF) \
+    F(SUBSTITUTE) \
+    F(U_TURN) \
+    F(AIR_SLASH) \
+    F(BRAVE_BIRD) \
+    F(ROOST) \
+    F(X_SCISSOR) \
+    F(BUG_BUZZ) \
+    F(DARK_PULSE) \
+    F(NASTY_PLOT) \
+    F(DRAGON_PULSE) \
+    F(PLAY_ROUGH) \
+    F(DAZZLING_GLEAM) \
+    F(ENERGY_BALL) \
+    F(EARTH_POWER) \
+    F(PSYSHOCK) \
+    F(TRICK_ROOM) \
+    F(STEALTH_ROCK) \
+    F(IRON_HEAD) \
+    F(FLASH_CANNON) \
+    F(SCALD) \
+    F(LIQUIDATION) \
+    F(VOLT_SWITCH) \
+    F(FOCUS_BLAST) \
+    F(STONE_EDGE) \
+    F(HYDRO_PUMP) \
+    F(OUTRAGE) \
+    F(DRAGON_DANCE) \
+    F(CLOSE_COMBAT) \
+    F(FLARE_BLITZ)
 
 #define FOREACH_HM(F) \
     F(CUT) \

@@ -22,6 +22,9 @@ SootopolisCity_Mart_Pokemart:
 	.2byte ITEM_X_ATTACK
 	.2byte ITEM_X_DEFENSE
 	.2byte ITEM_SHADOW_MAIL
+	.2byte ITEM_TM_HYDRO_PUMP
+	.2byte ITEM_TM_OUTRAGE
+	.2byte ITEM_TM_DRAGON_DANCE
 	pokemartlistend
 
 SootopolisCity_Mart_EventScript_FatMan::

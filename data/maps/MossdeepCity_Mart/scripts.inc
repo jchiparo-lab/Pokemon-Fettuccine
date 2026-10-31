@@ -22,6 +22,9 @@ MossdeepCity_Mart_Pokemart:
 	.2byte ITEM_MAX_REPEL
 	.2byte ITEM_X_ATTACK
 	.2byte ITEM_X_DEFENSE
+	.2byte ITEM_TM_VOLT_SWITCH
+	.2byte ITEM_TM_FOCUS_BLAST
+	.2byte ITEM_TM_STONE_EDGE
 	pokemartlistend
 
 MossdeepCity_Mart_EventScript_Woman::

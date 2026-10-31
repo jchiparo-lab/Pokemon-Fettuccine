@@ -36,6 +36,22 @@ LilycoveCity_DepartmentStore_2F_Pokemart1:
 	.2byte ITEM_ICE_HEAL
 	.2byte ITEM_AWAKENING
 	.2byte ITEM_FLUFFY_TAIL
+	.2byte ITEM_TM_X_SCISSOR
+	.2byte ITEM_TM_BUG_BUZZ
+	.2byte ITEM_TM_DARK_PULSE
+	.2byte ITEM_TM_NASTY_PLOT
+	.2byte ITEM_TM_DRAGON_PULSE
+	.2byte ITEM_TM_PLAY_ROUGH
+	.2byte ITEM_TM_DAZZLING_GLEAM
+	.2byte ITEM_TM_ENERGY_BALL
+	.2byte ITEM_TM_EARTH_POWER
+	.2byte ITEM_TM_PSYSHOCK
+	.2byte ITEM_TM_TRICK_ROOM
+	.2byte ITEM_TM_STEALTH_ROCK
+	.2byte ITEM_TM_IRON_HEAD
+	.2byte ITEM_TM_FLASH_CANNON
+	.2byte ITEM_TM_SCALD
+	.2byte ITEM_TM_LIQUIDATION
 	pokemartlistend
 
 LilycoveCity_DepartmentStore_2F_EventScript_ClerkRight::
