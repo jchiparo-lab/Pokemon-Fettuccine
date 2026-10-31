@@ -4,10 +4,10 @@ SlateportCity_Mart_MapScripts::
 SlateportCity_Mart_EventScript_Clerk::
 	lock
 	faceplayer
-	message gText_HowMayIServeYou
+	message SlateportCity_Mart_Text_JasonGreeting
 	waitmessage
 	pokemart SlateportCity_Mart_Pokemart
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	msgbox gText_RetroSalvageGames_ThanksForShopping, MSGBOX_DEFAULT
 	release
 	end
 
@@ -33,14 +33,19 @@ SlateportCity_Mart_EventScript_Man::
 	end
 
 SlateportCity_Mart_Text_SomeItemsOnlyAtMart:
-	.string "The MARKET does have some interesting\n"
-	.string "merchandise.\p"
-	.string "But there are some items you can only\n"
-	.string "get at a POKéMON MART.$"
+	.string "The MARKET has some neat stuff.\p"
+	.string "But RETRO SALVAGE GAMES has things\n"
+	.string "you can't find anywhere else!$"
 
 SlateportCity_Mart_Text_GreatBallIsBetter:
-	.string "A GREAT BALL is better than a POKé BALL\n"
-	.string "at catching POKéMON.\p"
-	.string "With this, I should be able to get that\n"
-	.string "elusive POKéMON…$"
+	.string "A GREAT BALL catches\n"
+	.string "better than a POKé BALL.\p"
+	.string "That elusive POKéMON\n"
+	.string "is mine! Thanks, JASON!$"
 
+SlateportCity_Mart_Text_JasonGreeting:
+	.string "JASON: Welcome!\p"
+	.string "Ships bring new stuff into\n"
+	.string "SPAGHETTIPORT every day. I'm\l"
+	.string "the guy who wants the OLD stuff!\p"
+	.string "What'll it be?$"

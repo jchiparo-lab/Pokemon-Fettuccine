@@ -16,10 +16,10 @@ LilycoveCity_DepartmentStore_2F_EventScript_Sailor::
 LilycoveCity_DepartmentStore_2F_EventScript_ClerkLeft::
 	lock
 	faceplayer
-	message gText_HowMayIServeYou
+	message LilycoveCity_DepartmentStore_2F_Text_JasonGreeting
 	waitmessage
 	pokemart LilycoveCity_DepartmentStore_2F_Pokemart1
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	msgbox gText_RetroSalvageGames_ThanksForShopping, MSGBOX_DEFAULT
 	release
 	end
 
@@ -74,3 +74,8 @@ LilycoveCity_DepartmentStore_2F_Text_StockUpOnItems:
 	.string "I'm leaving on a long journey soon.\n"
 	.string "I need to stock up on items.$"
 
+LilycoveCity_DepartmentStore_2F_Text_JasonGreeting:
+	.string "JASON: Surprised?\p"
+	.string "RETRO SALVAGE GAMES has a counter\n"
+	.string "in the DEPARTMENT STORE too!\p"
+	.string "What can I get you?$"

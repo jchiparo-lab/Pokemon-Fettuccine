@@ -4,10 +4,10 @@ MauvilleCity_Mart_MapScripts::
 MauvilleCity_Mart_EventScript_Clerk::
 	lock
 	faceplayer
-	message gText_HowMayIServeYou
+	message MauvilleCity_Mart_Text_JasonGreeting
 	waitmessage
 	pokemart MauvilleCity_Mart_Pokemart
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	msgbox gText_RetroSalvageGames_ThanksForShopping, MSGBOX_DEFAULT
 	release
 	end
 
@@ -36,16 +36,18 @@ MauvilleCity_Mart_EventScript_Man::
 	end
 
 MauvilleCity_Mart_Text_ItemsToTemporarilyElevateStats:
-	.string "There are items that temporarily\n"
-	.string "elevate the stats of POKéMON.\p"
-	.string "The ones I know you use in battle\n"
-	.string "are X ATTACK and X DEFEND…\p"
-	.string "I do believe that there are others\n"
-	.string "like them.$"
+	.string "Some items raise a POKéMON's stats\n"
+	.string "in battle, like X ATTACK and X DEFEND.\p"
+	.string "RETRO SALVAGE GAMES stocks them all!$"
 
 MauvilleCity_Mart_Text_DecisionsDetermineBattle:
-	.string "Use a certain move, or use an item\n"
-	.string "instead…\p"
-	.string "The TRAINER's decisions determine how\n"
-	.string "battles turn out, I think.$"
+	.string "Use a move, or use an item…\p"
+	.string "A TRAINER's choices decide the battle.\p"
+	.string "My best choice? Shopping here!$"
 
+MauvilleCity_Mart_Text_JasonGreeting:
+	.string "JASON: Welcome!\p"
+	.string "MACAROVILLE runs on\n"
+	.string "electricity, and so does every\l"
+	.string "console in here. Mind the cables!\p"
+	.string "What do you need?$"

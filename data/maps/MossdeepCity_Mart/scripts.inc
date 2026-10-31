@@ -4,10 +4,10 @@ MossdeepCity_Mart_MapScripts::
 MossdeepCity_Mart_EventScript_Clerk::
 	lock
 	faceplayer
-	message gText_HowMayIServeYou
+	message MossdeepCity_Mart_Text_JasonGreeting
 	waitmessage
 	pokemart MossdeepCity_Mart_Pokemart
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	msgbox gText_RetroSalvageGames_ThanksForShopping, MSGBOX_DEFAULT
 	release
 	end
 
@@ -38,22 +38,26 @@ MossdeepCity_Mart_EventScript_Sailor::
 
 MossdeepCity_Mart_Text_ReviveIsFantastic:
 	.string "REVIVE is fantastic!\p"
-	.string "Give it to a fainted POKéMON,\n"
-	.string "and the POKéMON will arise.\p"
-	.string "But be careful, REVIVE doesn't restore\n"
-	.string "the used-up PP of moves.$"
+	.string "It wakes up a fainted POKéMON,\n"
+	.string "but it doesn't restore PP.\p"
+	.string "RETRO SALVAGE GAMES\n"
+	.string "saves the day again!$"
 
 MossdeepCity_Mart_Text_MaxRepelLastsLongest:
-	.string "MAX REPEL keeps all weak POKéMON away.\p"
-	.string "Out of all the REPEL sprays, it lasts\n"
-	.string "the longest.$"
+	.string "MAX REPEL keeps weak POKéMON\n"
+	.string "away the longest of any REPEL.\p"
+	.string "JASON recommended\n"
+	.string "it. He's never wrong!$"
 
 MossdeepCity_Mart_Text_NetAndDiveBallsRare:
-	.string "The NET and DIVE BALLS are rare POKé\n"
-	.string "BALLS that are only made in\l"
-	.string "MOSTACCIDEEP.\p"
-	.string "A NET BALL is effective against\n"
-	.string "BUG-type and WATER-type POKéMON.\p"
-	.string "A DIVE BALL works best on POKéMON\n"
-	.string "at the bottom of the sea.$"
+	.string "NET and DIVE BALLS are\n"
+	.string "only made in MOSTACCIDEEP.\p"
+	.string "NET BALLS work on BUG and WATER\n"
+	.string "types, DIVE BALLS under the sea.\p"
+	.string "Only at RETRO SALVAGE GAMES!$"
 
+MossdeepCity_Mart_Text_JasonGreeting:
+	.string "JASON: They launch rockets\n"
+	.string "at the SPACE CENTER.\p"
+	.string "Me? I launch DEALS!\p"
+	.string "What'll it be?$"

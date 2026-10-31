@@ -4,10 +4,10 @@ FallarborTown_Mart_MapScripts::
 FallarborTown_Mart_EventScript_Clerk::
 	lock
 	faceplayer
-	message gText_HowMayIServeYou
+	message FallarborTown_Mart_Text_JasonGreeting
 	waitmessage
 	pokemart FallarborTown_Mart_Pokemart
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	msgbox gText_RetroSalvageGames_ThanksForShopping, MSGBOX_DEFAULT
 	release
 	end
 
@@ -46,19 +46,23 @@ FallarborTown_Mart_EventScript_Skitty::
 	end
 
 FallarborTown_Mart_Text_DecidingSkittyEvolve:
-	.string "I'm having a hard time deciding if I\n"
-	.string "should make my SKITTY evolve or not.\p"
-	.string "I only have to use this MOON STONE,\n"
-	.string "but it's so hard to decide…\p"
-	.string "If I make it evolve, it will become\n"
-	.string "much stronger.\p"
-	.string "But it will look so different, too.$"
+	.string "Should I use this MOON\n"
+	.string "STONE on my SKITTY?\p"
+	.string "It'd be stronger, but\n"
+	.string "look so different…\p"
+	.string "I'll think it over while I browse!$"
 
 FallarborTown_Mart_Text_Skitty:
 	.string "SKITTY: Miyao?$"
 
 FallarborTown_Mart_Text_SellNuggetIFound:
-	.string "This NUGGET I found here…\n"
-	.string "I suppose I'll have to sell it, seeing\l"
-	.string "as how it has no other use.$"
+	.string "I found this NUGGET and it has\n"
+	.string "no other use, so I'm selling it.\p"
+	.string "JASON pays a fair price!$"
 
+FallarborTown_Mart_Text_JasonGreeting:
+	.string "JASON: Ash from MT. CALZONE\n"
+	.string "gets everywhere around here.\p"
+	.string "I wipe down every cartridge\n"
+	.string "before it hits the shelf!\p"
+	.string "What'll it be?$"

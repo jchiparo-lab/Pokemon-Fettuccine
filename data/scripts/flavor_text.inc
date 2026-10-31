@@ -145,8 +145,8 @@ Text_Snacks::
 	.string "There's a pile of snacks here.$"
 
 Text_PokemartSign::
-	.string "All your item needs fulfilled!\n"
-	.string "POKéMON MART$"
+	.string "“Keep it retro!”\n"
+	.string "RETRO SALVAGE GAMES$"
 
 Text_PokecenterSign::
 	.string "Heal Your POKéMON!\n"

@@ -4,10 +4,10 @@ BattleFrontier_Mart_MapScripts::
 BattleFrontier_Mart_EventScript_Clerk::
 	lock
 	faceplayer
-	message gText_HowMayIServeYou
+	message BattleFrontier_Mart_Text_JasonGreeting
 	waitmessage
 	pokemart BattleFrontier_Mart_Pokemart
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	msgbox gText_RetroSalvageGames_ThanksForShopping, MSGBOX_DEFAULT
 	release
 	end
 
@@ -45,21 +45,24 @@ BattleFrontier_Mart_EventScript_Boy::
 	end
 
 BattleFrontier_Mart_Text_ChaperonGrandson:
-	.string "We came here to chaperon our\n"
-	.string "grandson.\p"
-	.string "But since we're here, we thought\n"
-	.string "we should get some souvenirs.$"
+	.string "We came to watch our grandson battle.\p"
+	.string "While we're here, we're picking up\n"
+	.string "souvenirs. What a lovely shop!$"
 
 BattleFrontier_Mart_Text_ProteinMakeNiceGift:
-	.string "Dear, what do you think of this?\n"
-	.string "Wouldn't this make a nice gift?\p"
-	.string "It's…PRO…TE…IN?\n"
-	.string "It sounds delicious, doesn't it?$"
+	.string "Dear, wouldn't this make a nice gift?\p"
+	.string "It's… PRO… TE… IN?\p"
+	.string "It sounds delicious.\n"
+	.string "Everything here does!$"
 
 BattleFrontier_Mart_Text_FacilitiesDontAllowItems:
-	.string "A lot of the BUCATINI FRONTIER's\n"
-	.string "facilities don't allow the use of items\l"
-	.string "during battles.\p"
-	.string "That rule makes things tougher than\n"
-	.string "they already are!$"
+	.string "Most BUCATINI FRONTIER facilities\n"
+	.string "don't allow items in battle.\p"
+	.string "I still stock up at\n"
+	.string "RETRO SALVAGE GAMES. Old habits!$"
 
+BattleFrontier_Mart_Text_JasonGreeting:
+	.string "JASON: Battling all day?\n"
+	.string "Even champions need a\l"
+	.string "break with a good old game.\p"
+	.string "What can I get you?$"

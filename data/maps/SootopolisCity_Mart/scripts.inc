@@ -4,10 +4,10 @@ SootopolisCity_Mart_MapScripts::
 SootopolisCity_Mart_EventScript_Clerk::
 	lock
 	faceplayer
-	message gText_HowMayIServeYou
+	message SootopolisCity_Mart_Text_JasonGreeting
 	waitmessage
 	pokemart SootopolisCity_Mart_Pokemart
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	msgbox gText_RetroSalvageGames_ThanksForShopping, MSGBOX_DEFAULT
 	release
 	end
 
@@ -54,22 +54,26 @@ SootopolisCity_Mart_EventScript_GentlemanNoLegendaries::
 
 SootopolisCity_Mart_Text_PPUpIsGreat:
 	.string "PP UP is great!\p"
-	.string "It raises the POWER POINTS, the PP,\n"
-	.string "of a POKéMON move.$"
+	.string "It raises a move's POWER POINTS.\p"
+	.string "Thank goodness for\n"
+	.string "RETRO SALVAGE GAMES!$"
 
 SootopolisCity_Mart_Text_TooScaryOutside:
-	.string "What…\n"
-	.string "What is happening?\p"
-	.string "I really want to know, but it's too\n"
-	.string "scary to go outside.$"
+	.string "What… What is happening?\p"
+	.string "It's too scary to go outside. I'm\n"
+	.string "staying in RETRO SALVAGE GAMES\l"
+	.string "until it's over!$"
 
 SootopolisCity_Mart_Text_FullRestoreItemOfDreams:
-	.string "Do you know FULL RESTORE?\p"
-	.string "Full restoration of HP!\n"
-	.string "Eradication of all status problems!\p"
-	.string "It's truly an item of your dreams!$"
+	.string "FULL RESTORE heals all HP\n"
+	.string "and every status problem!\p"
+	.string "A dream item, and JASON stocks it!$"
 
 SootopolisCity_Mart_Text_DidSomethingAwaken:
-	.string "This weather…\n"
-	.string "Did something awaken?$"
+	.string "This weather… Did something awaken?\p"
+	.string "At least JASON's still open.$"
 
+SootopolisCity_Mart_Text_JasonGreeting:
+	.string "JASON: You know how hard it is to stock\n"
+	.string "a shop you have to DIVE to reach?\p"
+	.string "Worth it! What can I get you?$"

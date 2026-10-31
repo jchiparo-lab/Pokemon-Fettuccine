@@ -4,10 +4,10 @@ LavaridgeTown_Mart_MapScripts::
 LavaridgeTown_Mart_EventScript_Clerk::
 	lock
 	faceplayer
-	message gText_HowMayIServeYou
+	message LavaridgeTown_Mart_Text_JasonGreeting
 	waitmessage
 	pokemart LavaridgeTown_Mart_Pokemart
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	msgbox gText_RetroSalvageGames_ThanksForShopping, MSGBOX_DEFAULT
 	release
 	end
 
@@ -33,13 +33,19 @@ LavaridgeTown_Mart_EventScript_OldWoman::
 	end
 
 LavaridgeTown_Mart_Text_XSpeedFirstStrike:
-	.string "Use X SPEED to add to a POKéMON's\n"
-	.string "SPEED in battle.\p"
-	.string "That will help it get in the first\n"
-	.string "strike--a decided advantage!$"
+	.string "X SPEED raises a POKéMON's SPEED\n"
+	.string "in battle so it strikes first.\p"
+	.string "RETRO SALVAGE GAMES always has some!$"
 
 LavaridgeTown_Mart_Text_LocalSpecialtyOnMtChimney:
-	.string "On MT. CALZONE's peak, there's a local\n"
-	.string "specialty that you can buy only there.\p"
-	.string "Give it to a POKéMON--it will be elated.$"
+	.string "MT. CALZONE's peak sells a treat\n"
+	.string "you can't buy anywhere else.\p"
+	.string "Not even here, and this\n"
+	.string "place has EVERYTHING!$"
 
+LavaridgeTown_Mart_Text_JasonGreeting:
+	.string "JASON: Hot springs\n"
+	.string "outside, hot deals inside!\p"
+	.string "Just don't take any\n"
+	.string "cartridges into the water.\p"
+	.string "What can I get you?$"

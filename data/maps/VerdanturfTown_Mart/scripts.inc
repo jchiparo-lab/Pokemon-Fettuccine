@@ -4,10 +4,10 @@ VerdanturfTown_Mart_MapScripts::
 VerdanturfTown_Mart_EventScript_Clerk::
 	lock
 	faceplayer
-	message gText_HowMayIServeYou
+	message VerdanturfTown_Mart_Text_JasonGreeting
 	waitmessage
 	pokemart VerdanturfTown_Mart_Pokemart
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	msgbox gText_RetroSalvageGames_ThanksForShopping, MSGBOX_DEFAULT
 	release
 	end
 
@@ -39,20 +39,23 @@ VerdanturfTown_Mart_EventScript_Lass::
 	end
 
 VerdanturfTown_Mart_Text_XSpecialIsCrucial:
-	.string "For any POKéMON match, X SPECIAL\n"
-	.string "is crucial.\p"
-	.string "It jacks up the power of some moves\n"
-	.string "even though it's only for one battle.$"
+	.string "X SP. ATK powers up special\n"
+	.string "moves for one battle. Crucial!\p"
+	.string "Lucky for me, JASON keeps it in stock.$"
 
 VerdanturfTown_Mart_Text_NoStrategyGuidesForBattleTent:
-	.string "They don't seem to sell any winning\n"
-	.string "strategy guides for the BATTLE TENT…\p"
-	.string "It seems one must rely on one's\n"
-	.string "own wits after all…$"
+	.string "JASON has old strategy guides for\n"
+	.string "every game… except the BATTLE TENT.\p"
+	.string "Guess I'll have to use my own wits!$"
 
 VerdanturfTown_Mart_Text_NestBallOnWeakenedPokemon:
-	.string "The NEST BALL works better on\n"
-	.string "weakened POKéMON.\p"
-	.string "CAVATAPURF is the only place you can\n"
-	.string "buy it.$"
+	.string "The NEST BALL works better\n"
+	.string "on low-level POKéMON.\p"
+	.string "This is the only\n"
+	.string "RETRO SALVAGE GAMES that sells it!$"
 
+VerdanturfTown_Mart_Text_JasonGreeting:
+	.string "JASON: The air in CAVATAPURF\n"
+	.string "is so clean, it keeps the\l"
+	.string "dust off my circuit boards!\p"
+	.string "What can I get you?$"

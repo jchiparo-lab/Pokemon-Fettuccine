@@ -2,6 +2,11 @@ gText_HowMayIServeYou::
 	.string "Welcome!\p"
 	.string "How may I serve you?$"
 
+gText_RetroSalvageGames_ThanksForShopping::
+	.string "Thanks for shopping at\n"
+	.string "RETRO SALVAGE GAMES!\p"
+	.string "By Collectors, For Everyone.$"
+
 gText_PleaseComeAgain::
 	.string "Please come again!$"
 

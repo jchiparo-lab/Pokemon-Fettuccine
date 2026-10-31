@@ -99,7 +99,9 @@ Balance notes:
 - **Decided:** Jason's sprite is a recolor of an existing NPC sprite (palette edit only, no new drawing).
 - **Decided:** Shop roofs are orange instead of blue. This is a palette change; check that no other buildings share that palette, or they'll turn orange too.
 - The "MART" sign on the roof is part of the building's tile graphics and needs a new tile.
-- Replace any in-game text that says "Poké Mart."
+- **Done: dialogue (approved by Joe).** Jason greets the player with a different line in every shop (13 shops, the Pokémon League counter, and the left clerk on the Linguicove Department Store's 2F), and every shop ends with "Thanks for shopping at RETRO SALVAGE GAMES! By Collectors, For Everyone." Every shop customer praises the shop while keeping their original tip (Potions, Repels, Nest Balls…); the Sugopolis customers' crisis lines stay crisis lines. Dialogue stays general: no specific claims about the real store or Jason. Jason uses the regular clerk sprite until his recolor exists.
+- **Done:** every "POKéMON MART" in the game now says RETRO SALVAGE GAMES, including the shop signs ("“Keep it retro!” RETRO SALVAGE GAMES"), the Orzodale shop worker who gives a Potion, Mom's and Nurse Joy's Potion tips, and a few townsfolk. The Orzodale worker's "look for our blue roof" was dropped; add "orange roof" when the roof recolor is done.
+- The department store's other clerks, and the herb, flower and decoration shops, keep the regular shop lines.
 
 ### Nurse Joy and the Jammie Dodger
 
@@ -619,7 +621,7 @@ A yes/no choice at New Game that randomizes Pokémon for that save file. It must
 | Pasta region name: Pastalia (replaces Hoenn) | Text, plus 2 PokéNav graphics and 1 Pokédex graphic | Text done; PokéNav "HOENN MAP" and Pokédex "HOENN" art still to redraw |
 | Starters: Rowlet, Scorbunny, Froakie | Script and data change | Done |
 | Nurse Joy Jammie Dodger heal (plus blackout cookie) | One shared script change | Done |
-| Retro Salvage Games shops (Jason, orange roofs) | Sprite recolor, palette, tiles, dialogue | Not started |
+| Retro Salvage Games shops (Jason, orange roofs) | Sprite recolor, palette, tiles | Dialogue done; Jason sprite, orange roofs and sign tile still to do |
 | Main character sprites (Ethan and Kris) | Community sprites, no recolor | Not started |
 | Brian as rival (sprites, name, logic, anti-pasta story) | Art plus code and dialogue | Partly done: named BRIAN for both genders, uses Brendan's sprites as a placeholder; rival teams and dialogue done (Macaroville, Victory Road and Champion come with those steps); custom sprites still to do |
 | Brian replaces Wally (Petalburg catch, Mauville, Victory Road) | Scripts and dialogue | Done (Brendan's sprites as placeholder) |
@@ -671,7 +673,7 @@ A yes/no choice at New Game that randomizes Pokémon for that save file. It must
 | Peperoncino Path (Fiery Path) | Text | Done |
 | Gabby and Ty butter question | Script | Done |
 | Wildcard's Castle quiz (WILDCARD and Retrotopia questions) | Dialogue | Done |
-| Retro Salvage Games shop dialogue | Dialogue | Not started |
+| Retro Salvage Games shop dialogue | Dialogue | Done |
 
 ## Playtests
 

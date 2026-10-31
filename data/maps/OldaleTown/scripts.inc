@@ -344,17 +344,15 @@ OldaleTown_Text_SavingMyProgress:
 	.string "progress.$"
 
 OldaleTown_Text_IWorkAtPokemonMart:
-	.string "Hi!\n"
-	.string "I work at a POKéMON MART.\p"
+	.string "Hi! I work at RETRO SALVAGE GAMES.\p"
 	.string "Can I get you to come with me?$"
 
 OldaleTown_Text_ThisIsAPokemonMart:
-	.string "This is a POKéMON MART.\n"
-	.string "Just look for our blue roof.\p"
-	.string "We sell a variety of goods including\n"
+	.string "This is RETRO SALVAGE GAMES.\p"
+	.string "We sell all kinds of goods, including\n"
 	.string "POKé BALLS for catching POKéMON.\p"
-	.string "Here, I'd like you to have this as\n"
-	.string "a promotional item.$"
+	.string "Here, I'd like you to have\n"
+	.string "this as a promotional item.$"
 
 OldaleTown_Text_PotionExplanation:
 	.string "A POTION can be used anytime, so it's\n"

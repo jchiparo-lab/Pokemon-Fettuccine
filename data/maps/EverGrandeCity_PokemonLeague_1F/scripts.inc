@@ -25,10 +25,10 @@ EverGrandeCity_PokemonLeague_1F_EventScript_Nurse::
 EverGrandeCity_PokemonLeague_1F_EventScript_Clerk::
 	lock
 	faceplayer
-	message gText_HowMayIServeYou
+	message EverGrandeCity_PokemonLeague_1F_Text_JasonGreeting
 	waitmessage
 	pokemart EverGrandeCity_PokemonLeague_1F_Pokemart
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	msgbox gText_RetroSalvageGames_ThanksForShopping, MSGBOX_DEFAULT
 	release
 	end
 
@@ -245,3 +245,9 @@ EverGrandeCity_PokemonLeague_1F_Text_MikeEonTicketBagFull:
 	.string "MIKE: Ayyy, your BAG's stuffed like a\n"
 	.string "cannoli!\p"
 	.string "Make some room and come see me.$"
+
+EverGrandeCity_PokemonLeague_1F_Text_JasonGreeting:
+	.string "JASON: You made it to\n"
+	.string "the POKéMON LEAGUE!\p"
+	.string "RETRO SALVAGE GAMES has your back.\n"
+	.string "Stock up before the ELITE FOUR!$"

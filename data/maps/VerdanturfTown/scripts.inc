@@ -91,19 +91,20 @@ VerdanturfTown_Text_MakeBattleTentDebut:
 	.string "debut in this town.$"
 
 VerdanturfTown_Text_GuyTryingToBustThroughCave:
-	.string "Did you see the cave next to the\n"
-	.string "POKéMON MART?\p"
-	.string "There's a guy in there who's trying to\n"
-	.string "bust up boulders so he can bust out\l"
-	.string "through to the other side.\p"
+	.string "Did you see the cave next\n"
+	.string "to RETRO SALVAGE GAMES?\p"
+	.string "There's a guy in there who's trying\n"
+	.string "to bust up boulders so he can bust\l"
+	.string "out through to the other side.\p"
 	.string "It'd be great if we could go through…\n"
 	.string "It'll make it easy to visit ROTINIBORO.$"
 
 VerdanturfTown_Text_EasyToGetToRustboroNow:
-	.string "That cave next to the POKéMON MART\n"
+	.string "That cave next to RETRO SALVAGE GAMES\n"
 	.string "is now a tunnel to the other side.\p"
-	.string "It's great--it's easy to go shop for\n"
-	.string "new GARLIC products in ROTINIBORO now.$"
+	.string "It's great--it's easy\n"
+	.string "to go shop for new GARLIC\l"
+	.string "products in ROTINIBORO now.$"
 
 VerdanturfTown_Text_TownSign:
 	.string "CAVATAPURF TOWN\p"
