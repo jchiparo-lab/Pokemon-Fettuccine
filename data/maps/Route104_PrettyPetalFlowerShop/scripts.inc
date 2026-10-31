@@ -125,6 +125,10 @@ Route104_PrettyPetalFlowerShop_Pokemart_BerryFlorist:
 	.2byte ITEM_COLBUR_BERRY
 	.2byte ITEM_BABIRI_BERRY
 	.2byte ITEM_ROSELI_BERRY
+	.2byte ITEM_GRACIDEA
+	.2byte ITEM_YELLOW_NECTAR
+	.2byte ITEM_PINK_NECTAR
+	.2byte ITEM_PURPLE_NECTAR
 	pokemartlistend
 
 Route104_PrettyPetalFlowerShop_Text_BerryFlorist:

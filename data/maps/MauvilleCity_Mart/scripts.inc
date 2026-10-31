@@ -34,6 +34,7 @@ MauvilleCity_Mart_Pokemart:
 	.2byte ITEM_MUSCLE_BAND
 	.2byte ITEM_WISE_GLASSES
 	.2byte ITEM_TERRAIN_EXTENDER
+	.2byte ITEM_ROTOM_CATALOG
 	pokemartlistend
 
 MauvilleCity_Mart_EventScript_ExpertM::
