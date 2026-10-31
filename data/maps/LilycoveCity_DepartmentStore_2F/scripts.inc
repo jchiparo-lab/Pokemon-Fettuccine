@@ -44,6 +44,7 @@ LilycoveCity_DepartmentStore_2F_Pokemart1:
 	.2byte ITEM_TM_PLAY_ROUGH
 	.2byte ITEM_TM_DAZZLING_GLEAM
 	.2byte ITEM_TM_ENERGY_BALL
+	.2byte ITEM_LOVE_BALL
 	.2byte ITEM_TM_EARTH_POWER
 	.2byte ITEM_TM_PSYSHOCK
 	.2byte ITEM_TM_TRICK_ROOM
