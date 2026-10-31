@@ -1214,6 +1214,8 @@ struct SaveBlock1
     // Fettuccine: the Medicine pocket lives at the very end so older saves still line up.
     // TryMoveMedicineToMedicinePocket sets it up the first time an older save loads.
     struct ItemSlot bagMedicine[BAG_MEDICINE_COUNT];
+    // Fettuccine: which TMs/HMs the player owns, one bit each; replaces bag.TMsHMs (see item.c)
+    u8 tmHmOwned[BAG_TMHM_OWNED_BYTES];
     // sizeof: 0x3???
 };
 

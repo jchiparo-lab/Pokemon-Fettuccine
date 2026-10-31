@@ -215,6 +215,9 @@ static inline enum Item BerryTypeToItemId(enum BerryId berryId)
 void BagPocket_SetSlotData(struct BagPocket *pocket, u32 pocketPos, struct ItemSlot newSlot);
 struct ItemSlot BagPocket_GetSlotData(struct BagPocket *pocket, u32 pocketPos);
 
+// Fettuccine: the TM pocket holds every TM and HM item (TM01-TM100, HM01-HM08)
+#define BAG_TMHM_POCKET_CAPACITY (ITEM_HM08 - ITEM_TM01 + 1)
+
 static inline void BagPocket_SetSlotItemIdAndCount(struct BagPocket *pocket, u32 pocketPos, enum Item itemId, u16 quantity)
 {
     BagPocket_SetSlotData(pocket, pocketPos, (struct ItemSlot) {itemId, quantity});
@@ -260,6 +263,7 @@ void MoveItemSlotInPocket(enum Pocket pocketId, u32 from, u32 to);
 void MoveItemSlotInPC(struct ItemSlot *itemSlots, u32 from, u32 to);
 void ClearBag(void);
 void TryMoveMedicineToMedicinePocket(void);
+void TryMoveTMsToOwnedBits(void);
 u16 CountTotalItemQuantityInBag(enum Item itemId);
 bool32 AddPyramidBagItem(enum Item itemId, u16 count);
 bool32 RemovePyramidBagItem(enum Item itemId, u16 count);

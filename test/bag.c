@@ -37,15 +37,58 @@ TEST("TMs and HMs are sorted correctly in the bag")
 
     SortItemsInBag(&gBagPockets[POCKET_TM_HM], SORT_BY_INDEX);
 
-    EXPECT_EQ(pocket->itemSlots[0].itemId, ITEM_TM01);
-    EXPECT_EQ(pocket->itemSlots[1].itemId, ITEM_TM05);
-    EXPECT_EQ(pocket->itemSlots[2].itemId, ITEM_TM14);
-    EXPECT_EQ(pocket->itemSlots[3].itemId, ITEM_TM25);
-    EXPECT_EQ(pocket->itemSlots[4].itemId, ITEM_TM42);
-    EXPECT_EQ(pocket->itemSlots[5].itemId, ITEM_HM02);
-    EXPECT_EQ(pocket->itemSlots[6].itemId, ITEM_HM05);
-    EXPECT_EQ(pocket->itemSlots[7].itemId, ITEM_HM07);
-    EXPECT_EQ(pocket->itemSlots[8].itemId, ITEM_NONE);
+    // Fettuccine: the TM pocket is stored as owned bits, so read it through the slot accessor
+    EXPECT_EQ(BagPocket_GetSlotData(pocket, 0).itemId, ITEM_TM01);
+    EXPECT_EQ(BagPocket_GetSlotData(pocket, 1).itemId, ITEM_TM05);
+    EXPECT_EQ(BagPocket_GetSlotData(pocket, 2).itemId, ITEM_TM14);
+    EXPECT_EQ(BagPocket_GetSlotData(pocket, 3).itemId, ITEM_TM25);
+    EXPECT_EQ(BagPocket_GetSlotData(pocket, 4).itemId, ITEM_TM42);
+    EXPECT_EQ(BagPocket_GetSlotData(pocket, 5).itemId, ITEM_HM02);
+    EXPECT_EQ(BagPocket_GetSlotData(pocket, 6).itemId, ITEM_HM05);
+    EXPECT_EQ(BagPocket_GetSlotData(pocket, 7).itemId, ITEM_HM07);
+    EXPECT_EQ(BagPocket_GetSlotData(pocket, 8).itemId, ITEM_NONE);
+}
+
+TEST("Fettuccine: the TM pocket holds every TM and HM")
+{
+    u32 i;
+
+    ClearBag();
+    for (i = ITEM_TM01; i <= ITEM_HM08; i++)
+        EXPECT(AddBagItem(i, 1));
+    for (i = ITEM_TM01; i <= ITEM_HM08; i++)
+        EXPECT(CheckBagHasItem(i, 1));
+    EXPECT_EQ(BagPocket_GetSlotData(&gBagPockets[POCKET_TM_HM], BAG_TMHM_POCKET_CAPACITY - 1).itemId, ITEM_HM08);
+    EXPECT_EQ(BagPocket_GetSlotData(&gBagPockets[POCKET_TM_HM], 0).quantity, 1);
+}
+
+TEST("Fettuccine: removing a TM only drops that TM")
+{
+    struct BagPocket *pocket = &gBagPockets[POCKET_TM_HM];
+
+    ClearBag();
+    AddBagItem(ITEM_TM20, 1);
+    AddBagItem(ITEM_TM05, 1);
+    AddBagItem(ITEM_TM10, 1);
+    EXPECT(RemoveBagItem(ITEM_TM10, 1));
+    EXPECT_EQ(BagPocket_GetSlotData(pocket, 0).itemId, ITEM_TM05);
+    EXPECT_EQ(BagPocket_GetSlotData(pocket, 1).itemId, ITEM_TM20);
+    EXPECT_EQ(BagPocket_GetSlotData(pocket, 2).itemId, ITEM_NONE);
+    EXPECT(!CheckBagHasItem(ITEM_TM10, 1));
+}
+
+TEST("Fettuccine: TMs from an older save move into the owned bits")
+{
+    ClearBag();
+    gSaveBlock1Ptr->bag.TMsHMs[0].itemId = ITEM_TM07;
+    gSaveBlock1Ptr->bag.TMsHMs[0].quantity = 1;
+    gSaveBlock1Ptr->bag.TMsHMs[1].itemId = ITEM_HM03;
+    gSaveBlock1Ptr->bag.TMsHMs[1].quantity = 1;
+    TryMoveTMsToOwnedBits();
+    EXPECT(CheckBagHasItem(ITEM_TM07, 1));
+    EXPECT(CheckBagHasItem(ITEM_HM03, 1));
+    EXPECT_EQ(gSaveBlock1Ptr->bag.TMsHMs[0].itemId, ITEM_NONE);
+    EXPECT_EQ(gSaveBlock1Ptr->bag.TMsHMs[1].itemId, ITEM_NONE);
 }
 
 TEST("Berries are sorted correctly in the bag")

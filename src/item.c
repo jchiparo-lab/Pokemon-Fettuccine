@@ -92,6 +92,47 @@ static inline void NONNULL BagPocket_SetSlotDataPC(struct BagPocket *pocket, u32
     pocket->itemSlots[pocketPos].quantity = newSlot.quantity;
 }
 
+// Fettuccine: TMs and HMs are reusable, so the TM pocket only stores which ones the player owns,
+// one bit each (tmHmOwned at the end of SaveBlock1). That fits all 108 without the 64-slot limit.
+// The pocket always lists them in number order; setting a slot marks that item as owned, and
+// emptying a slot drops whichever TM/HM is listed there.
+STATIC_ASSERT(BAG_TMHM_POCKET_CAPACITY <= 8 * BAG_TMHM_OWNED_BYTES, TmHmOwnedBitsTooSmall);
+
+static bool32 IsTMHMOwned(u32 index)
+{
+    return (gSaveBlock1Ptr->tmHmOwned[index / 8] >> (index % 8)) & 1;
+}
+
+static void SetTMHMOwned(enum Item itemId, bool32 owned)
+{
+    u32 index = itemId - ITEM_TM01;
+
+    if (itemId < ITEM_TM01 || index >= BAG_TMHM_POCKET_CAPACITY)
+        return;
+    if (owned)
+        gSaveBlock1Ptr->tmHmOwned[index / 8] |= 1 << (index % 8);
+    else
+        gSaveBlock1Ptr->tmHmOwned[index / 8] &= ~(1 << (index % 8));
+}
+
+static struct ItemSlot BagPocket_GetSlotDataTMHM(u32 pocketPos)
+{
+    for (u32 i = 0; i < BAG_TMHM_POCKET_CAPACITY; i++)
+    {
+        if (IsTMHMOwned(i) && pocketPos-- == 0)
+            return (struct ItemSlot) {ITEM_TM01 + i, 1};
+    }
+    return (struct ItemSlot) {ITEM_NONE, 0};
+}
+
+static void BagPocket_SetSlotDataTMHM(u32 pocketPos, struct ItemSlot newSlot)
+{
+    if (newSlot.itemId != ITEM_NONE)
+        SetTMHMOwned(newSlot.itemId, TRUE);
+    else
+        SetTMHMOwned(BagPocket_GetSlotDataTMHM(pocketPos).itemId, FALSE);
+}
+
 struct ItemSlot NONNULL BagPocket_GetSlotData(struct BagPocket *pocket, u32 pocketPos)
 {
     switch (pocket->id)
@@ -100,9 +141,10 @@ struct ItemSlot NONNULL BagPocket_GetSlotData(struct BagPocket *pocket, u32 pock
     case POCKET_MEDICINE:
     case POCKET_KEY_ITEMS:
     case POCKET_POKE_BALLS:
-    case POCKET_TM_HM:
     case POCKET_BERRIES:
         return BagPocket_GetSlotDataGeneric(pocket, pocketPos);
+    case POCKET_TM_HM:
+        return BagPocket_GetSlotDataTMHM(pocketPos);
     case POCKET_DUMMY:
         return BagPocket_GetSlotDataPC(pocket, pocketPos);
     }
@@ -124,9 +166,11 @@ void NONNULL BagPocket_SetSlotData(struct BagPocket *pocket, u32 pocketPos, stru
     case POCKET_MEDICINE:
     case POCKET_KEY_ITEMS:
     case POCKET_POKE_BALLS:
-    case POCKET_TM_HM:
     case POCKET_BERRIES:
         BagPocket_SetSlotDataGeneric(pocket, pocketPos, newSlot);
+        break;
+    case POCKET_TM_HM:
+        BagPocket_SetSlotDataTMHM(pocketPos, newSlot);
         break;
     case POCKET_DUMMY:
         BagPocket_SetSlotDataPC(pocket, pocketPos, newSlot);
@@ -140,6 +184,8 @@ void ApplyNewEncryptionKeyToBagItems(u32 newKey)
     enum Item item;
     for (pocketId = 0; pocketId < POCKETS_COUNT; pocketId++)
     {
+        if (pocketId == POCKET_TM_HM) // owned bits, no quantities to encrypt
+            continue;
         for (item = ITEM_NONE; item < gBagPockets[pocketId].capacity; item++)
             ApplyNewEncryptionKeyToHword(&(gBagPockets[pocketId].itemSlots[item].quantity), newKey);
     }
@@ -163,8 +209,8 @@ void SetBagItemsPointers(void)
     gBagPockets[POCKET_POKE_BALLS].capacity = BAG_POKEBALLS_COUNT;
     gBagPockets[POCKET_POKE_BALLS].id = POCKET_POKE_BALLS;
 
-    gBagPockets[POCKET_TM_HM].itemSlots = gSaveBlock1Ptr->bag.TMsHMs;
-    gBagPockets[POCKET_TM_HM].capacity = BAG_TMHM_COUNT;
+    gBagPockets[POCKET_TM_HM].itemSlots = NULL; // owned bits instead, see BagPocket_GetSlotDataTMHM
+    gBagPockets[POCKET_TM_HM].capacity = BAG_TMHM_POCKET_CAPACITY;
     gBagPockets[POCKET_TM_HM].id = POCKET_TM_HM;
 
     gBagPockets[POCKET_BERRIES].itemSlots = gSaveBlock1Ptr->bag.berries;
@@ -593,6 +639,19 @@ void ClearBag(void)
 {
     CpuFastFill(0, &gSaveBlock1Ptr->bag, sizeof(struct Bag));
     CpuFastFill(0, gSaveBlock1Ptr->bagMedicine, sizeof(gSaveBlock1Ptr->bagMedicine));
+    memset(gSaveBlock1Ptr->tmHmOwned, 0, sizeof(gSaveBlock1Ptr->tmHmOwned));
+}
+
+// Fettuccine: older saves keep their TMs/HMs in the old 64-slot list. Mark each one as owned,
+// then empty the list, so this only does anything the first time an older save loads.
+void TryMoveTMsToOwnedBits(void)
+{
+    for (u32 i = 0; i < BAG_TMHM_COUNT; i++)
+    {
+        if (gSaveBlock1Ptr->bag.TMsHMs[i].itemId != ITEM_NONE)
+            SetTMHMOwned(gSaveBlock1Ptr->bag.TMsHMs[i].itemId, TRUE);
+    }
+    memset(gSaveBlock1Ptr->bag.TMsHMs, 0, sizeof(gSaveBlock1Ptr->bag.TMsHMs));
 }
 
 // Fettuccine: the Medicine pocket's slots sit in what used to be unused save space. The first

@@ -116,6 +116,7 @@ enum Language
 #define BAG_TMHM_COUNT 64
 #define BAG_BERRIES_COUNT 46
 #define BAG_MEDICINE_COUNT 40 // Fettuccine: stored at the end of SaveBlock1, not in struct Bag
+#define BAG_TMHM_OWNED_BYTES 14 // Fettuccine: one bit per TM01-TM100 and HM01-HM08 (see item.c)
 
 // Number of facilities for Ranking Hall.
 // 7 facilities for single mode + tower double mode + tower multi mode.

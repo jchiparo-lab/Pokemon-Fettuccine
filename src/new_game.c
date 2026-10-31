@@ -204,6 +204,7 @@ void NewGameInitData(void)
     gSaveBlock1Ptr->registeredItem = ITEM_NONE;
     ClearBag();
     TryMoveMedicineToMedicinePocket();
+    TryMoveTMsToOwnedBits();
     NewGameInitPCItems();
     AddBagItem(ITEM_SHINY_CHARM, 1);
     FlagSet(FLAG_SYS_B_DASH);
