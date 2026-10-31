@@ -1531,7 +1531,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Ability Capsule"),
     #if I_PRICE >= GEN_9
-        .price = 100000,
+        .price = 50000, // Fettuccine: half the official price
     #elif I_PRICE >= GEN_7
         .price = 10000,
     #else
@@ -1554,7 +1554,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Ability Patch"),
         .pluralName = ITEM_PLURAL_NAME("Ability Patches"),
-        .price = (I_PRICE >= GEN_9) ? 250000 : 20,
+        .price = 125000, // Fettuccine: half the official price
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
             "Changes a regular\n"
