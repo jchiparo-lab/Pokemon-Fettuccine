@@ -62,6 +62,7 @@ Every town gets a pasta-themed name that echoes the original. Update the locatio
 | Marine Cave (Kyogre) | Marsala Cave | Marsala sauce (renamed from Marinara Cave to avoid clashing with Team Marinara) |
 | Granite Cave | Gouda Grotto | Gouda, for Sam the cheese collector |
 | Trick House | Wildcard's Castle | WILDCARD's new kingdom (see "WILDCARD and his castle") |
+| Fiery Path | Peperoncino Path | Peperoncino, the Italian hot chili pepper |
 
 - **Done: Gouda Grotto** in the location name, Town Map, Sam's Meteor Falls line, and the PokéNav call that mentions it.
 - **Done: Devon Corporation is now GARLIC CORP.** Every DEVON in dialogue, signs and PokéNav calls says GARLIC; the Devon Goods and Devon Scope are the **Garlic Parts** and **Garlic Scope**; Mr. Stone's PokéNav tag is **GARLIC PRES**. A contest trainer whose personal name is Devon is unchanged. Internal map names (`RustboroCity_DevonCorp_1F`, etc.) are unchanged.
@@ -119,6 +120,7 @@ Balance notes:
 - Eggs can't be sent. A held item goes with the Pokémon that's sent.
 - It's a real trade: the received Pokémon is registered in the Pokédex and trade evolutions trigger. Traded Pokémon follow the usual badge-based obedience rules.
 - **Decided:** trading partners have pasta names (PENNE, ZITI, ORZO, FUSILLI, GNOCCHI, RAVIOLI, LASAGNA, ROTINI, CAPELLI, PASTINA).
+- **Done:** the trade scene shows the incoming Pokémon's own nickname and trainer (it used to show names from Emerald's in-game trade table, like "PLUSES"), and the upstairs attendant's first-visit and help text now describes all three counters, Wonder Trade included.
 - Code: `src/wonder_trade.c`, `data/scripts/wonder_trade.inc`.
 
 ## Characters and sprites
@@ -280,13 +282,13 @@ Status:
 - Loves Italian food, which makes him a natural foil for Brian.
 - **Decided:** His love of whiskey is a running joke in his dialogue.
 - The Jammie Dodgers at the Pokémon Centers can come from Alan's own stash.
-- **Done: post-game lab scene rewritten.** The Pokédex is National from the start, so after the Hall of Fame Alan no longer "upgrades" it. He asks how the player's Pokédex is coming along, says Pokémon from every corner of the world live in Pastalia ("Like a good bolognese!"), and backs up the player's Pokédex data on his PC. Brian: "Regions with NO pasta! If you find out where they're from, tell me first. I'm moving there." Alan's send-off points the player to the post-game: fill every PASTALIA entry for "a little something" (the Johto starter reward, unchanged) and show the game designer at the Cove Lily Motel. The scene still switches on the National Dex silently, which fixes saves from before the National Dex change.
+- **Done: post-game lab scene rewritten.** The Pokédex is National from the start, so after the Hall of Fame Alan no longer "upgrades" it. He asks how the player's Pokédex is coming along, says Pokémon from every corner of the world live in Pastalia ("Like a good bolognese!"), and backs up the player's Pokédex data on his PC. Brian: "Regions with NO pasta! If you find out where they're from, tell me first. I'm moving there." Alan's send-off points the player to the post-game: fill every PASTALIA entry for "a little something" (now Treecko, Torchic and Mudkip instead of the Johto starters) and show the game designer at the Cove Lily Motel. The scene still switches on the National Dex silently, which fixes saves from before the National Dex change.
 
 ### Sam as Steven
 
 - The heart of Retrotopia: kind and always looking out for the player.
 - Instead of rare stones, Sam collects rare Wisconsin cheeses.
-- **Decided:** Sam gives the player the **Mega Ring in Gouda Grotto** when they first meet him. Spread Mega Stones across the rest of the game so players can't Mega Evolve something powerful too early.
+- **Decided:** Sam gives the player the **Mega Ring and the Mega Stone Case in Gouda Grotto** when they first meet him (see Mega Evolution). This replaced the earlier plan to spread Mega Stones across the game.
 - Steven's post-game battle at Meteor Falls becomes Sam's.
 
 #### Sam's team (post-game battle)
@@ -320,7 +322,8 @@ Every Pokémon is from Gens 1–3 and has a cheese connection.
 - The Trick House is **WILDCARD'S CASTLE** everywhere: dialogue, the Route 110 sign, and the Town Map landmark. His "tricks" are still called tricks. Internal map names (`Route110_TrickHouse…`) are unchanged.
 - Every TRICK MASTER is now **WILDCARD**, including the secret door codes ("WILDCARD is huggable.").
 - **Sprite:** WILDCARD and the room-5 Mechadolls use Joe Fettuccine's placeholder sprite (`OBJ_EVENT_GFX_MAN_3`). When Joe Fettuccine's custom sprite is made, switch WILDCARD over too if it's a new graphics ID.
-- **Dialogue:** introduces himself as the "Former KART KING of MARIO KART NIGHT! Banned from servers far and wide!"; says his old kingdom crashed and burned but this one will stand forever; teases rooms as cruel as BLUE SHELL HELL and as explosive as BULLETS OVER BOMBSWAY; jokes that not even a blue shell could get you through; needs "a pit stop"; is humbled like no one since "that pasta-hating BRIAN"; brags that he invented both game modes when his ideas run dry; signs off with "Tune in next time for the CASTLE WEEKLY REKAP!"; and in his farewell jokes about starting a podcast "With BRIAN, of all people! As if!" and denies being "some game designer at a motel in LINGUICOVE."
+- **Dialogue:** introduces himself as the "Former KART KING of MARIO KART NIGHT! Banned from servers far and wide!"; says his old kingdom crashed and burned but this one will stand forever; teases rooms as cruel as BLUE SHELL HELL and as explosive as BULLETS OVER BOMBSWAY; jokes that not even a blue shell could get you through; needs "a pit stop"; is humbled like no one since "that pasta-hating BRIAN"; brags that he invented BLUE SHELL HELL (and was there for BULLETS OVER BOMBSWAY) when his ideas run dry; signs off with "Tune in next time for the CASTLE WEEKLY REKAP!"; and in his farewell jokes about starting a podcast "With BRIAN, of all people! As if!" and denies being "some game designer at a motel in LINGUICOVE."
+- **Done: the Mechadoll quiz.** All 15 questions are about Mario Kart Night, the ReKap, RetroBytes Neo and the Retrotopia crew (one still asks which Pokémon Brian caught on Route 102).
 - **Trainers gossip:** Robin (room 1) heard he used to be a KING; Paul (room 2) says rigging tricks is easier than surviving BLUE SHELL HELL; Joshua (room 7) heard he vanished when his old kingdom fell; Leroy (room 8) isn't sure if he'll be pleased or furious.
 
 ### Joe Q as Scott
@@ -403,15 +406,18 @@ Every Pokémon is from Gens 1–3 and has a cheese connection.
 All built into pokeemerald-expansion; the work is deciding where things appear.
 
 - **All Pokémon through Gen IX.** **Decided:** every Gen 3 Pokémon stays where it is in Emerald.
-  - **Decided:** every non-legendary Pokémon is catchable (not a curated set); **time-of-day encounters are on** (Morning, Day, Evening, Night); some legendaries become one-off encounters (see "Legendary one-off encounters"); the Pokédex keeps the **National Dex order**.
+  - **Decided:** every non-legendary Pokémon is catchable (not a curated set); **no time-of-day encounters** (changed Oct 2026; every Pokémon in an area appears at all hours); some legendaries become one-off encounters (see "Legendary one-off encounters"); the Pokédex keeps the **National Dex order**.
   - **Done: the Pokédex is the National Dex from the moment Alan gives it** (in Emerald it unlocked after the Hall of Fame). See Alan's post-game scene for the follow-up.
-  - **Done: wild placement** by a one-time script, `tools/fettuccine/place_wild_pokemon.py`. Each Emerald area now has four time-of-day tables. Every Emerald Pokémon keeps its best slot in every table; 315 missing Pokémon lines fill duplicate slots, each in three different areas, matched by type to the area and by level (stronger Pokémon only appear at higher levels, and they're placed already evolved where the level allows). Ghost and Dark types lean toward night, Grass/Bug/Fire toward day. Starters and pseudo-legendary lines only get rare slots (5% or less). At most 3 new Pokémon per area and time (2 on the first routes), 1 per surfing, Rock Smash or fishing-rod table. The full list by area is in `docs/wild_pokemon_placements.md`.
+  - **Done (Oct 2026): encounters don't depend on the time of day.** Each area's four time tables were merged into one. **Decided:** no wild Pokémon is rarer than 4%; common ones can be higher. Grass, surfing, Rock Smash and the Super Rod have 25 slots at 4% each, the Old Rod 10 slots at 10% and the Good Rod 20 slots at 5%, so a Pokémon's chance is how many slots it fills (edit rates in Porymap by adding or removing copies). Rates came from each Pokémon's average over the four times, reviewed by Joe; he hand-set the surfing, fishing and Rock Smash tables on Routes 102–104, 111, 114, 117, 118 and 120. The build fails on purpose if the slot percentages stop being even. Lures no longer favor rare slots (there are none) but still raise levels.
+  - **Done:** the first stage of 21 lines that were only placed evolved (Litten, Popplio, Sprigatito, Chimchar and others) now appears in an early area.
+  - **Done: Feebas evolves into Milotic at Lv 35;** the Prism Scale still works.
+  - **Done (original placement):** wild placement by a one-time script, `tools/fettuccine/place_wild_pokemon.py`. Each Emerald area had four time-of-day tables (merged since). Every Emerald Pokémon keeps its best slot in every table; 315 missing Pokémon lines fill duplicate slots, each in three different areas, matched by type to the area and by level (stronger Pokémon only appear at higher levels, and they're placed already evolved where the level allows). Ghost and Dark types lean toward night, Grass/Bug/Fire toward day. Starters and pseudo-legendary lines only get rare slots (5% or less). At most 3 new Pokémon per area and time (2 on the first routes), 1 per surfing, Rock Smash or fishing-rod table. The full list by area is in `docs/wild_pokemon_placements.md`.
   - **Done: regional evolutions.** The 13 regional forms that only evolve "in" their home region now evolve in a Hoenn spot standing in for that region. Level-up evolutions happen on a route (players level up by battling); item evolutions happen in the neighboring town. Evolving anywhere else gives the normal form.
     - **Alola:** level up on Route 106 (Alolan Marowak, Lv 28 at night); use a stone in Ditalinford Town (Alolan Raichu, Alolan Exeggutor).
     - **Galar:** level up on Route 117 (Galarian Weezing; Galarian Mr. Mime from Mime Jr. knowing Mimic, which then evolves into Mr. Rime as normal).
     - **Hisui:** level up on Route 119 (Hisuian Typhlosion, Samurott, Decidueye, Braviary, Sliggoo, Avalugg; Hisuian Goodra still needs rain or fog anywhere); use an item in Fortellini City (Hisuian Lilligant with a Sun Stone; Ursaluna with a Peat Block at night).
     - Hisuian Decidueye evolves at Lv 34 (was 36) so it doesn't overlap with regular Decidueye.
-    - **Prof. Birch (Alan) calls** on the player's first step outside after the third badge (Macaroville Gym) to explain all three spots.
+    - **Prof. Birch (Alan) calls** on the player's first visit to Macaroville to explain all three spots (it used to wait for the third badge).
 - **Every item, ability, and move effect through Gen IX.** Still to plan: where items are found or sold, and which TMs exist.
   - **Done: TMs are reusable** (`I_REUSABLE_TMS`).
   - **Done: evolution counter.** A third clerk on the Linguicove Department Store's 3rd floor sells all 51 items any Pokémon uses to evolve: every evolution stone, the Linking Cord, every held trade item (Metal Coat, King's Rock, Dragon Scale, Up-Grade…), and the newer items (apples, teacups, sweets, Galarica items, armors, Black Augurite, Peat Block, Metal Alloy, both Scrolls). The Scrolls had no price, so they now cost ¥3,000.
@@ -436,7 +442,7 @@ All built into pokeemerald-expansion; the work is deciding where things appear.
 | --- | --- |
 | Articuno | Shoal Cave, Ice Room |
 | Zapdos | New Macaroville, generator room |
-| Moltres | Fiery Path |
+| Moltres | Peperoncino Path |
 | Raikou | Route 120 |
 | Entei | Mt. Calzone summit |
 | Suicune | Route 119, by the waterfall |
@@ -465,49 +471,12 @@ Not included for now: the other legendaries, mythicals, Ultra Beasts and Paradox
 
 ## Battle mechanics
 
-- **Mega Evolution.** Built in. **Done:** Steven (Sam) gives the **Mega Ring** in Gouda Grotto, right after TM Steel Wing, and hints that a Mega Stone is hidden in the same cave (the Aggronite). **Decided:** the item keeps the engine's name, Mega Ring (Joe briefly tried "Key Stone" and switched back). **Decided:** the new Megas from Legends Z-A are excluded for now.
-  - **Decided: no Mega Stone is locked behind the post-game.** Every stone is obtainable before the final battle with Brian. Stones are found as item balls, and each appears around when its Pokémon can reach its final form.
-  - **Done: every Mega-capable Pokémon is now obtainable before Brian** (see "Pokémon added for Mega Evolution" below), so all 46 non-Z-A Mega Stones are in the game.
+- **Mega Evolution.** Built in. **Done:** Steven (Sam) gives the **Mega Ring** in Gouda Grotto, right after TM Steel Wing, followed by the Mega Stone Case. **Decided:** the item keeps the engine's name, Mega Ring (Joe briefly tried "Key Stone" and switched back). **Decided:** the new Megas from Legends Z-A are excluded for now.
+  - **Decided (Oct 2026): every Mega is available from badge 1.** Sam gives the **Mega Stone Case** along with the Mega Ring. It holds every Mega Stone and never runs out, so two Pokémon can hold the same stone. This replaces the earlier plan of spreading stones out as item balls; Joe accepted that Megas are no longer gated by progress.
+  - **Done: Mega Stone Case** (key item, `ITEM_MEGA_STONE_CASE`, code in `src/mega_stone_case.c`). While the player has it, the bag treats every Mega Stone as owned: giving one takes nothing, and taking one off a Pokémon returns it to the case. Using the case lists every stone, then opens the party menu to give the chosen one.
+  - **Done:** all 39 Mega Stone item balls and Alan's 7 starter-stone gift are removed. The Dawn Stone and the two Metal Coats stay on the map. **Old saves:** Nurse Joy gives the case to anyone who already has the Mega Ring, and Mega Stones in their bag move into it.
   - **Decided: Marzano Mega Evolves Camerupt** (Space Center double battle) and **Parmigiano Mega Evolves Sharpedo** (Seafloor Cavern).
-  - **Done: all Mega Stones placed.** 39 are item balls (Joe may move any of them in Porymap), and Prof. Birch (Alan) gives the 7 starter stones.
-
-| Stone | Where | Unlocked by |
-| --- | --- | --- |
-| Aggronite | Gouda Grotto B2F | Early (Aggron is level 42) |
-| Manectite | New Macaroville | Basement Key, after Gym 3 |
-| Gardevoirite, Galladite | Pestoburg City, north pond | Surf, after Gym 5 |
-| Dawn Stone (for Gallade) | Pestoburg City, southwest | Early |
-| Banettite | Mt. Penne 5F | Mid-game |
-| Cameruptite | Marinara Hideout 4F | Marinara Hideout |
-| Sharpedonite | Alfredo Hideout B2F | Alfredo Hideout |
-| Pinsirite, Heracronite | Safari Zone (Northwest, North) | Linguicove |
-| Ampharosite, Houndoominite | Safari Zone expansion (Southeast, Northeast) | Linguicove |
-| Altarianite | Fortellini City, by the Gym | Fortellini |
-| Absolite | Route 120 | After Fortellini |
-| Glalitite | Shoal Cave, ice room | Mostaccideep area |
-| Alakazite | Mostaccideep City | Gym 7 area |
-| Metagrossite | Sam's house, Mostaccideep | Mostaccideep (Beldum is a gift there after the Space Center) |
-| Gyaradosite | Sugopolis City, by the Pokémon Center | Dive |
-| Sablenite | Cave of Oregano 1F | Sugopolis |
-| Latiasite, Latiosite | Routes 132 and 133, near Raviolog | Late game |
-| Salamencite | Meatball Falls B1F (back room) | Waterfall |
-| Mawilite | Victory Road B1F | Victory Road |
-| Beedrillite | Route 110 | After Gym 3 |
-| Lopunnite, Audinite | Cavatapurf Town, by the Pokémon Center | Mid-game |
-| Gengarite | Mt. Penne 6F | Mid-game |
-| Medichamite | Route 118 | After Gym 5 |
-| Aerodactylite | Route 111 desert | Go-Goggles |
-| Pidgeotite | Fortellini City, by the Gym | Fortellini |
-| Scizorite | Route 120 | After Fortellini |
-| Lucarionite | Route 121 | After Gym 6 |
-| Slowbronite | Linguicove City | Linguicove |
-| Kangaskhanite | Safari Zone South | Linguicove |
-| Abomasite | Shoal Cave, ice room | Mostaccideep area |
-| Diancite | Meatball Falls B1F (back room), next to Diancie | Waterfall |
-| Steelixite, Garchompite, Tyranitarite | Victory Road | Victory Road |
-| Mewtwonite X and Y | Victory Road, near Mewtwo | Victory Road |
-| Sceptilite, Blazikenite, Swampertite, Venusaurite, Charizardite X and Y, Blastoisinite | Gift from Prof. Birch (Alan) at his lab | He calls right after Scott's call, once you have 6 badges |
-
+  - **Done: every Mega-capable Pokémon is obtainable before Brian** (see "Pokémon added for Mega Evolution" below).
   - **Done: Safari Zone expansion open from the start** (Mareep and Houndour live there; in Emerald it opened after the Hall of Fame).
   - **Done: the Latias/Latios roamer starts after the Sugopolis crisis,** when Wallace gives HM Waterfall and mentions reports of a rare red or blue Pokémon (picked at random). In Emerald it started after the Hall of Fame.
   - **Done: Beldum is offered by Steven (Sam) with HM Dive** after the Space Center, instead of after the Hall of Fame.
@@ -530,7 +499,7 @@ Not included for now: the other legendaries, mythicals, Ultra Beasts and Paradox
 | Meditite | Mt. Penne outside and summit |
 | Larvitar, Gible | Route 111 desert (rare) |
 | Scyther, Treecko | Route 119 (rare) |
-| Torchic | Fiery Path (rare) |
+| Torchic | Peperoncino Path (rare) |
 | Charmander | Route 112 (rare) |
 | Squirtle | Route 118 (surfing) |
 | Mudkip | Route 120 (rare) |
@@ -549,7 +518,7 @@ Diancie and Mewtwo stay put if the player knocks them out or runs, so they can b
 
 Mostly quality-of-life config options. Feature names change between expansion versions, so read `include/config/` and report what this copy offers before editing.
 
-**Done** except faster AI. Most were already on by default; Run shortcut and skipping the intro slide were turned on. Simultaneous HP reduction is built in (confirmed in playtest). Faster AI has no speed setting: it means choosing simpler AI flags for ordinary trainers, measured with `DEBUG_AI_DELAY_TIMER`.
+**Done.** Most were already on by default; Run shortcut and skipping the intro slide were turned on. Simultaneous HP reduction is built in (confirmed in playtest). **Decided (Oct 2026): faster AI calculations are dropped;** the AI stays as it is.
 
 - **Poké Ball quick menu** ("last used ball" shortcut). R throws the last ball; hold R and press the D-Pad to switch.
 - **Move description menu** in the fight menu. Press L while choosing a move.
@@ -557,7 +526,7 @@ Mostly quality-of-life config options. Feature names change between expansion ve
 - **Faster battle intro.**
 - **Faster HP drain.**
 - **Simultaneous HP reduction** for spread moves in doubles.
-- **Faster AI calculations** (AI config flags plus possible code tuning).
+- **Done: caught Pokémon are fully healed** (HP, status and PP) as soon as they're caught.
 - **Done: battle speed option.** BATTLE SPEED (1X / 2X) in the Options menu, 4th row. At 2X the battle runs twice per frame (animations, HP bars, text); the overworld and music are unaffected, and each button press only counts once. Off in link and recorded battles. Defaults to 1X; existing saves start at 1X. To fit 8 rows, the title and list now share one frame. Screen fades always run at 1X: running them twice per frame could stop a fade from ever finishing, which froze the game after forgetting a move to learn a new one in battle (found in Playtest 2, fixed in the rebuilt Playtest 2).
 - **Walking-down bug: safety net in place (Playtest 4); root cause still open.** Seen three times (mGBA on the Mac and the mGBA core on the Anbernic), always right after catching a Pokémon with 2X speed on. The player keeps walking south and bumps into walls; no button works (Up doesn't override, Start won't open). A save state from Playtest 3 showed why: the main loop keeps a few values in CPU registers for the whole game (one is the address of the button register), and they had been overwritten with leftovers from the end-of-battle cleanup (`FreeBattleResources`). The game was reading "buttons" from battle memory, which happened to say DOWN. Not an emulator problem: the stuck value has bits no controller can produce. **Done:** the main loop now runs each frame as its own function (`RunFrame` in `src/main.c`), so those values are reloaded every frame and the game recovers on the next frame. **Open:** what corrupts the registers at the end of a wild battle is still unknown and could cause other glitches; testers are asked to send a save state if anything odd happens right after a battle.
 
@@ -566,6 +535,12 @@ Mostly quality-of-life config options. Feature names change between expansion ve
 - **Done: the player starts with the Running Shoes.** Mom's scene in Lil Ragu Town after getting the starter is now just a goodbye.
 - **Done: the player starts with the Shiny Charm** in the bag (it only works from the bag, not the PC).
 - **Done: INSTANT text speed.** TEXT SPEED in the Options menu cycles SLOW / MID / FAST / INSTANT with Left and Right; only the chosen speed is shown, like FRAME.
+- **Done: one combined BIKE.** Rydel gives a single BIKE. Press **B** while riding to switch between **FAST mode** (Mach Bike) and **ACRO mode** (Acro Bike); the bike bell rings and the sprite changes. In Acro mode, **R** does wheelies, bunny hops and jumps (they used to be on B). The bike remembers the last mode (`FLAG_BIKE_ACRO_MODE`). Switching is blocked mid-trick and on rails, bumpy slopes and sandy slopes. **Decided:** two modes, not three (a "normal" mode would have ridden exactly like Acro mode). Both old bike items are now named "Bike" and work the same, so old saves need nothing. Rydel's handbooks, Ethan (Jagged Pass), Sam's call and the Cycling Road gatekeeper talk about modes.
+- **Done: MEDICINE pocket.** 68 items (potions, revives, status heals, PP restorers, vitamins, feathers, mochi, Rare Candy, Exp. Candies) moved from Items to a new 40-slot pocket between ITEMS and POKé BALLS. Honey and Dynamax Candy stay in Items. Its slots use spare space at the end of the save, so **old saves still load**; the first load moves their medicine over (`FLAG_MEDICINE_POCKET_READY`). Wally's (Brian's) catching tutorial starts on this pocket so it still lands on Poké Balls. **Art to do (Joe):** the bag picture reuses the Items one; add a 7th 64×64 frame to the bottom of `graphics/bag/bag_male.png` and `bag_female.png` (same palette).
+- **Done: Pokédex search by typed name.** The Name list has **TYPE A NAME** below DON'T SPECIFY. It opens the nickname keyboard ("Which POKéMON?"); the search screen comes back with the name filled in and every other setting kept. It finds names that start with the typed text (upper/lower case doesn't matter) and combines with color, type and order. Search also defaults to the National Dex, so Pokémon outside the Pastalia Dex are found.
+- **Done: no random PokéNav calls from trainers.** Story calls (Alan, Sam, Mom, etc.) are unchanged.
+- **Done: Route 111's smashed rocks stay broken** (Rotipurf Tunnel's already did).
+- **Done: Gabby and Ty ask one YES/NO question:** "Does butter belong on a sandwich?" Later interviews ask if the player still stands by it, and the TV show reports the answer.
 - **Done: faster berry picking.** Talking to a ripe tree picks it right away: no "Do you want to pick?" question, a short sound instead of the fanfare, and one message ("{PLAYER} picked 3 ORAN BERRIES!") instead of two.
 
 - **HMs are not permanent.** HM moves can be forgotten like normal moves. **Decided:** field moves only need the badge plus the HM in the bag; no Pokémon has to know the move. Forgetting HMs is **done** (config). **Done:** using field moves without knowing them. If no party Pokémon knows the move, a phantom Magikarp uses it (Magikarp in the animation), even with no Magikarp in the party. FLY and FLASH appear in every Pokémon's party menu once the badge and HM are in hand, and can also be used straight from HM02 and HM05 in the bag (USE still teaches the move). **Done (Playtest 4): faster HMs.** CUT, ROCK SMASH, STRENGTH, SURF, WATERFALL and DIVE (down and up) ask a single "Use CUT?" (etc.) YES/NO and act right away; the description pages and the "MAGIKARP used CUT!" / "used STRENGTH!" messages are gone. Without the HM or badge, the tree, rock or boulder still explains what it is. Pressing A on a boulder with Strength already on still says STRENGTH is active.
@@ -657,7 +632,7 @@ A yes/no choice at New Game that randomizes Pokémon for that save file. It must
 | All Pokémon through Gen IX | Built in; plan placement | Done: wild placement, event islands, 27 legendary one-offs, regional evolutions |
 | Items, abilities, move effects through Gen IX | Built in; plan placement | Not started |
 | Physical/special split | Built in | Done (built in) |
-| Mega Evolution (Mega Ring from Sam in Gouda Grotto) | Built in; place Mega Ring and Mega Stones | Done |
+| Mega Evolution (Mega Ring and Mega Stone Case from Sam in Gouda Grotto) | Built in, plus custom key item | Done |
 | Primal Reversion | Built in; place Blue/Red Orbs | Done (orbs given at Mt. Penne) |
 | Double wild battles | Config toggle | Done (config, 15%) |
 | 1v2 / 2v1 battles | Event scripting | Not started |
@@ -667,7 +642,6 @@ A yes/no choice at New Game that randomizes Pokémon for that save file. It must
 | Faster battle intro | Config toggle | Done (config) |
 | Faster HP drain | Config toggle | Done (built in) |
 | Simultaneous HP reduction | Verify in config | Done (built in) |
-| Faster AI calculations | Config plus tuning | Not started |
 | Battle speed option (battles only) | Custom (Options menu) | Done |
 | Non-permanent HMs | Config toggle plus custom | Done: HMs forgettable (config); with the badge and HM in the bag, a phantom Magikarp uses the move; FLY and FLASH also in every party menu and usable from HM02/HM05 in the bag; one-question "Use CUT?" prompts |
 | Move relearner in party menu | Custom (party-menu option) | Done: RELEARN appears for Pokémon with moves to relearn (summary-screen relearner also still there) |
@@ -688,6 +662,16 @@ A yes/no choice at New Game that randomizes Pokémon for that save file. It must
 | WILDCARD and Wildcard's Castle (Trick Master, Trick House) | Dialogue, sprite swap | Done (Joe Fettuccine's placeholder sprite) |
 | Alan's post-game lab scene | Dialogue | Done |
 | Brian's house sign and ANTI-PASTA PokéNav tag | Text | Done |
+| One combined BIKE (B: Fast/Acro, R: tricks) | Custom | Done |
+| MEDICINE bag pocket | Custom | Done (bag picture is a placeholder) |
+| Pokédex search by typed name | Custom | Done |
+| Wild encounters without time of day (4% minimum) | Data plus engine change | Done |
+| Caught Pokémon fully healed | Custom | Done |
+| No random trainer PokéNav calls | Custom | Done |
+| Peperoncino Path (Fiery Path) | Text | Done |
+| Gabby and Ty butter question | Script | Done |
+| Wildcard's Castle quiz (WILDCARD and Retrotopia questions) | Dialogue | Done |
+| Retro Salvage Games shop dialogue | Dialogue | Not started |
 
 ## Playtests
 
@@ -699,6 +683,8 @@ Testers download from **https://github.com/jchiparo-lab/Pokemon-Fettuccine/relea
 | 2 | Brian, Retrotopia cast, new teams, every Pokémon in the wild, battle speed; rebuilt to fix the 2X move-forget freeze |
 | 3 | Wonder Trade, National Dex from the start, reusable TMs, level-up trade evolutions, INSTANT text, Wildcard's Castle, Gouda Grotto, Garlic Corp. |
 | 4 | Faster HMs, walking-down bug safety net |
+
+**Idea (not scheduled): free up save space.** `include/config/save.h` can switch off unused save data (Mystery Event, record-mixing Hall records, Mystery Gift, Union Room chat, Battle Tower e-Reader and smaller ones), about 3.7 KB in all. Any of these shifts the save layout and breaks existing saves, so do them together, once, in a playtest where testers start a new save. Keep Match Call (the story calls use it).
 
 ## Suggested build order
 
