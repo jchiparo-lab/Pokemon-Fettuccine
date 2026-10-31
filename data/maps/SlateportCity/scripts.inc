@@ -547,6 +547,24 @@ SlateportCity_EventScript_PowerTMClerk::
 SlateportCity_Pokemart_PowerTMs:
 	.2byte ITEM_TM_HIDDEN_POWER
 	.2byte ITEM_TM_SECRET_POWER
+	.2byte ITEM_NORMAL_GEM
+	.2byte ITEM_FIRE_GEM
+	.2byte ITEM_WATER_GEM
+	.2byte ITEM_ELECTRIC_GEM
+	.2byte ITEM_GRASS_GEM
+	.2byte ITEM_ICE_GEM
+	.2byte ITEM_FIGHTING_GEM
+	.2byte ITEM_POISON_GEM
+	.2byte ITEM_GROUND_GEM
+	.2byte ITEM_FLYING_GEM
+	.2byte ITEM_PSYCHIC_GEM
+	.2byte ITEM_BUG_GEM
+	.2byte ITEM_ROCK_GEM
+	.2byte ITEM_GHOST_GEM
+	.2byte ITEM_DRAGON_GEM
+	.2byte ITEM_DARK_GEM
+	.2byte ITEM_STEEL_GEM
+	.2byte ITEM_FAIRY_GEM
 	pokemartlistend
 
 @ Scene with Capt Sterns interview and Team Aqua announcing plans to steal Submarine

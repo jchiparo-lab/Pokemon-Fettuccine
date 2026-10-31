@@ -30,6 +30,7 @@ MossdeepCity_Mart_Pokemart:
 	.2byte ITEM_ZOOM_LENS
 	.2byte ITEM_ODD_INCENSE
 	.2byte ITEM_ICY_ROCK
+	.2byte ITEM_MAX_LURE
 	pokemartlistend
 
 MossdeepCity_Mart_EventScript_Woman::

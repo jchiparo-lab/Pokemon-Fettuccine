@@ -7309,7 +7309,7 @@ const struct ItemInfo gItemsInfo[] =
 
 // Gems
 #if I_PRICE >= GEN_9
-    #define GEM_PRICE 15000
+    #define GEM_PRICE 4000 // Fettuccine: the Gen 7 price (officially 15000)
 #elif I_PRICE >= GEN_7
     #define GEM_PRICE 4000
 #else

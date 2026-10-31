@@ -32,6 +32,7 @@ FortreeCity_Mart_Pokemart:
 	.2byte ITEM_FLOAT_STONE
 	.2byte ITEM_AIR_BALLOON
 	.2byte ITEM_UTILITY_UMBRELLA
+	.2byte ITEM_SUPER_LURE
 	pokemartlistend
 
 FortreeCity_Mart_EventScript_Woman::

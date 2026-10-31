@@ -54,6 +54,7 @@ LilycoveCity_DepartmentStore_2F_Pokemart1:
 	.2byte ITEM_TM_SCALD
 	.2byte ITEM_TM_LIQUIDATION
 	.2byte ITEM_CATCHING_CHARM
+	.2byte ITEM_RETRO_MAIL
 	pokemartlistend
 
 LilycoveCity_DepartmentStore_2F_EventScript_ClerkRight::
@@ -78,6 +79,21 @@ LilycoveCity_DepartmentStore_2F_Pokemart2:
 	.2byte ITEM_MAX_REPEL
 	.2byte ITEM_WAVE_MAIL
 	.2byte ITEM_MECH_MAIL
+	.2byte ITEM_SWEET_HEART
+	.2byte ITEM_MAX_HONEY
+	.2byte ITEM_REMEDY
+	.2byte ITEM_FINE_REMEDY
+	.2byte ITEM_SUPERB_REMEDY
+	.2byte ITEM_PEWTER_CRUNCHIES
+	.2byte ITEM_RAGE_CANDY_BAR
+	.2byte ITEM_OLD_GATEAU
+	.2byte ITEM_CASTELIACONE
+	.2byte ITEM_LUMIOSE_GALETTE
+	.2byte ITEM_SHALOUR_SABLE
+	.2byte ITEM_BIG_MALASADA
+	.2byte ITEM_JUBILIFE_MUFFIN
+	.2byte ITEM_DREAM_MAIL
+	.2byte ITEM_FAB_MAIL
 	pokemartlistend
 
 LilycoveCity_DepartmentStore_2F_Text_LearnToUseItemsProperly:
