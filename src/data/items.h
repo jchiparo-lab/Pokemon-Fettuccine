@@ -15032,12 +15032,12 @@ const struct ItemInfo gItemsInfo[] =
         .price = 3000,
         .description = COMPOUND_STRING(
             "A shard of a blade.\n"
-            "Bisharp that head\n"
-            "a group hold it."),
+            "It makes Bisharp\n"
+            "evolve."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .type = ITEM_USE_PARTY_MENU, // Fettuccine: used like an evolution stone
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .iconPic = gItemIcon_LeadersCrest,
         .iconPalette = gItemIconPalette_LeadersCrest,
     },

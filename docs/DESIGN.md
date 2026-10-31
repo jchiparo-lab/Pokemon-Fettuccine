@@ -423,6 +423,7 @@ All built into pokeemerald-expansion; the work is deciding where things appear.
 - **Every item, ability, and move effect through Gen IX.** Still to plan: where items are found or sold, and which TMs exist.
   - **Done: TMs are reusable** (`I_REUSABLE_TMS`).
   - **Done: evolution counter.** A third clerk on the Linguicove Department Store's 3rd floor sells all 51 items any Pokémon uses to evolve: every evolution stone, the Linking Cord, every held trade item (Metal Coat, King's Rock, Dragon Scale, Up-Grade…), and the newer items (apples, teacups, sweets, Galarica items, armors, Black Augurite, Peat Block, Metal Alloy, both Scrolls). The Scrolls had no price, so they now cost ¥3,000.
+  - **Done: Kingambit and Gholdengo are obtainable.** The counter also sells the **Leader's Crest** (¥3,000), which now works like an evolution stone on Bisharp (it used to need Bisharp to defeat three Bisharp holding one). A gentleman beside the counter gives **999 Gimmighoul Coins**; Gimmighoul evolves into Gholdengo when it levels up with 999 coins in the bag (unchanged), which uses them up, so he gives another 999 whenever the player has none left.
 - **Physical/special split.** Built in and on by default.
 
 ## Legendary one-off encounters

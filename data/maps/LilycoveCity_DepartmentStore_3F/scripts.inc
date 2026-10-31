@@ -134,4 +134,41 @@ LilycoveCity_DepartmentStore_3F_Pokemart_EvolutionItems:
 	.2byte ITEM_METAL_ALLOY
 	.2byte ITEM_SCROLL_OF_DARKNESS
 	.2byte ITEM_SCROLL_OF_WATERS
+	.2byte ITEM_LEADERS_CREST
 	pokemartlistend
+
+@ Fettuccine: gives 999 Gimmighoul Coins (what Gimmighoul needs to evolve), again whenever the player has none
+LilycoveCity_DepartmentStore_3F_EventScript_CoinCollector::
+	lock
+	faceplayer
+	checkitem ITEM_GIMMIGHOUL_COIN
+	goto_if_eq VAR_RESULT, TRUE, LilycoveCity_DepartmentStore_3F_EventScript_CoinCollectorStillHasCoins
+	msgbox LilycoveCity_DepartmentStore_3F_Text_TakeTheseCoins, MSGBOX_DEFAULT
+	giveitem ITEM_GIMMIGHOUL_COIN, 999
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	msgbox LilycoveCity_DepartmentStore_3F_Text_LevelUpGimmighoul, MSGBOX_DEFAULT
+	release
+	end
+
+LilycoveCity_DepartmentStore_3F_EventScript_CoinCollectorStillHasCoins::
+	msgbox LilycoveCity_DepartmentStore_3F_Text_YouStillHaveCoins, MSGBOX_DEFAULT
+	release
+	end
+
+LilycoveCity_DepartmentStore_3F_Text_TakeTheseCoins:
+	.string "I collect GIMMIGHOUL COINS.\n"
+	.string "Far too many of them, honestly.\p"
+	.string "A GIMMIGHOUL evolves once you\n"
+	.string "carry 999 of them. Here, take a pile!$"
+
+LilycoveCity_DepartmentStore_3F_Text_LevelUpGimmighoul:
+	.string "Level up a GIMMIGHOUL while\n"
+	.string "those coins are in your BAG,\l"
+	.string "and watch what happens!\p"
+	.string "Used them all? Come back for more.$"
+
+LilycoveCity_DepartmentStore_3F_Text_YouStillHaveCoins:
+	.string "You've still got some\n"
+	.string "GIMMIGHOUL COINS!\p"
+	.string "Come back once they're all spent,\n"
+	.string "and I'll give you another 999.$"
