@@ -13877,7 +13877,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_OVAL_CHARM] =
     {
         .name = ITEM_NAME("Oval Charm"),
-        .price = 0,
+        .price = 30000, // Fettuccine: no official shop price
         .importance = 1,
         .description = COMPOUND_STRING(
             "Increases the\n"
@@ -13909,7 +13909,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_CATCHING_CHARM] =
     {
         .name = ITEM_NAME("Catching Charm"),
-        .price = 0,
+        .price = 30000, // Fettuccine: no official shop price
         .importance = 1,
         .description = COMPOUND_STRING(
             "Increases the\n"
@@ -13925,7 +13925,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_EXP_CHARM] =
     {
         .name = ITEM_NAME("Exp. Charm"),
-        .price = 0,
+        .price = 30000, // Fettuccine: no official shop price
         .importance = 1,
         .description = COMPOUND_STRING(
             "Increases the\n"

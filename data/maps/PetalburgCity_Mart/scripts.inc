@@ -38,6 +38,7 @@ PetalburgCity_Mart_Pokemart_Basic:
 	.2byte ITEM_POWER_BAND
 	.2byte ITEM_POWER_ANKLET
 	.2byte ITEM_PUNCHING_GLOVE
+	.2byte ITEM_EXP_CHARM
 	pokemartlistend
 
 PetalburgCity_Mart_EventScript_ExpandedItems::
@@ -74,6 +75,7 @@ PetalburgCity_Mart_Pokemart_Expanded:
 	.2byte ITEM_POWER_BAND
 	.2byte ITEM_POWER_ANKLET
 	.2byte ITEM_PUNCHING_GLOVE
+	.2byte ITEM_EXP_CHARM
 	pokemartlistend
 
 PetalburgCity_Mart_EventScript_Woman::

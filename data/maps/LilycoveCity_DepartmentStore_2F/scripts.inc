@@ -53,6 +53,7 @@ LilycoveCity_DepartmentStore_2F_Pokemart1:
 	.2byte ITEM_TM_FLASH_CANNON
 	.2byte ITEM_TM_SCALD
 	.2byte ITEM_TM_LIQUIDATION
+	.2byte ITEM_CATCHING_CHARM
 	pokemartlistend
 
 LilycoveCity_DepartmentStore_2F_EventScript_ClerkRight::

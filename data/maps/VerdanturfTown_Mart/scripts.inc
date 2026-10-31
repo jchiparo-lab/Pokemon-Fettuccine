@@ -30,6 +30,7 @@ VerdanturfTown_Mart_Pokemart:
 	.2byte ITEM_ROSE_INCENSE
 	.2byte ITEM_BIG_ROOT
 	.2byte ITEM_DESTINY_KNOT
+	.2byte ITEM_OVAL_CHARM
 	pokemartlistend
 
 VerdanturfTown_Mart_EventScript_Boy::
