@@ -93,3 +93,43 @@ Route104_PrettyPetalFlowerShop_EventScript_AlreadyReceivedBerry::
 	msgbox Route104_PrettyPetalFlowerShop_Text_MachineMixesBerries, MSGBOX_DEFAULT
 	release
 	end
+
+@ Fettuccine: sells the type-resist berries
+Route104_PrettyPetalFlowerShop_EventScript_BerryFlorist::
+	lock
+	faceplayer
+	message Route104_PrettyPetalFlowerShop_Text_BerryFlorist
+	waitmessage
+	pokemart Route104_PrettyPetalFlowerShop_Pokemart_BerryFlorist
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+Route104_PrettyPetalFlowerShop_Pokemart_BerryFlorist:
+	.2byte ITEM_CHILAN_BERRY
+	.2byte ITEM_OCCA_BERRY
+	.2byte ITEM_PASSHO_BERRY
+	.2byte ITEM_WACAN_BERRY
+	.2byte ITEM_RINDO_BERRY
+	.2byte ITEM_YACHE_BERRY
+	.2byte ITEM_CHOPLE_BERRY
+	.2byte ITEM_KEBIA_BERRY
+	.2byte ITEM_SHUCA_BERRY
+	.2byte ITEM_COBA_BERRY
+	.2byte ITEM_PAYAPA_BERRY
+	.2byte ITEM_TANGA_BERRY
+	.2byte ITEM_CHARTI_BERRY
+	.2byte ITEM_KASIB_BERRY
+	.2byte ITEM_HABAN_BERRY
+	.2byte ITEM_COLBUR_BERRY
+	.2byte ITEM_BABIRI_BERRY
+	.2byte ITEM_ROSELI_BERRY
+	pokemartlistend
+
+Route104_PrettyPetalFlowerShop_Text_BerryFlorist:
+	.string "Flowers are lovely, but\n"
+	.string "BERRIES are lovelier!\p"
+	.string "These ones soften a\n"
+	.string "super-effective hit.\p"
+	.string "Plant them, and you'll never run out!$"

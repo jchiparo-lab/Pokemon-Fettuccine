@@ -120,3 +120,33 @@ Route123_BerryMastersHouse_EventScript_GaveBerry::
 	release
 	end
 
+@ Fettuccine: the Berry Master's apprentice sells the battle berries
+Route123_BerryMastersHouse_EventScript_BerryApprentice::
+	lock
+	faceplayer
+	message Route123_BerryMastersHouse_Text_BerryApprentice
+	waitmessage
+	pokemart Route123_BerryMastersHouse_Pokemart_BerryApprentice
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+Route123_BerryMastersHouse_Pokemart_BerryApprentice:
+	.2byte ITEM_GANLON_BERRY
+	.2byte ITEM_SALAC_BERRY
+	.2byte ITEM_PETAYA_BERRY
+	.2byte ITEM_APICOT_BERRY
+	.2byte ITEM_MICLE_BERRY
+	.2byte ITEM_CUSTAP_BERRY
+	.2byte ITEM_JABOCA_BERRY
+	.2byte ITEM_ROWAP_BERRY
+	.2byte ITEM_KEE_BERRY
+	.2byte ITEM_MARANGA_BERRY
+	.2byte ITEM_ENIGMA_BERRY
+	pokemartlistend
+
+Route123_BerryMastersHouse_Text_BerryApprentice:
+	.string "I'm studying under the BERRY MASTER!\p"
+	.string "He grows the common ones. I grow the\n"
+	.string "berries that turn a battle around!$"
