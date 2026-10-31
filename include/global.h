@@ -1211,6 +1211,9 @@ struct SaveBlock1
     u8 rivalName[PLAYER_NAME_LENGTH + 1];
     struct DaycareMon route5DayCareMon;
 #endif
+    // Fettuccine: the Medicine pocket lives at the very end so older saves still line up.
+    // TryMoveMedicineToMedicinePocket sets it up the first time an older save loads.
+    struct ItemSlot bagMedicine[BAG_MEDICINE_COUNT];
     // sizeof: 0x3???
 };
 

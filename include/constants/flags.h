@@ -525,7 +525,7 @@
 #define FLAG_DEFEATED_LUGIA                  0x1DD
 
 #define FLAG_BIKE_ACRO_MODE                  0x1DE // Fettuccine: combined BIKE was last ridden in Acro mode
-#define FLAG_UNUSED_0x1DF                    0x1DF // Unused Flag
+#define FLAG_MEDICINE_POCKET_READY           0x1DF // Fettuccine: Medicine pocket slots set up (see TryMoveMedicineToMedicinePocket)
 #define FLAG_UNUSED_0x1E0                    0x1E0 // Unused Flag
 #define FLAG_UNUSED_0x1E1                    0x1E1 // Unused Flag
 #define FLAG_UNUSED_0x1E2                    0x1E2 // Unused Flag

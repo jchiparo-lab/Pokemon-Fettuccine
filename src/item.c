@@ -97,6 +97,7 @@ struct ItemSlot NONNULL BagPocket_GetSlotData(struct BagPocket *pocket, u32 pock
     switch (pocket->id)
     {
     case POCKET_ITEMS:
+    case POCKET_MEDICINE:
     case POCKET_KEY_ITEMS:
     case POCKET_POKE_BALLS:
     case POCKET_TM_HM:
@@ -120,6 +121,7 @@ void NONNULL BagPocket_SetSlotData(struct BagPocket *pocket, u32 pocketPos, stru
     switch (pocket->id)
     {
     case POCKET_ITEMS:
+    case POCKET_MEDICINE:
     case POCKET_KEY_ITEMS:
     case POCKET_POKE_BALLS:
     case POCKET_TM_HM:
@@ -148,6 +150,10 @@ void SetBagItemsPointers(void)
     gBagPockets[POCKET_ITEMS].itemSlots = gSaveBlock1Ptr->bag.items;
     gBagPockets[POCKET_ITEMS].capacity = BAG_ITEMS_COUNT;
     gBagPockets[POCKET_ITEMS].id = POCKET_ITEMS;
+
+    gBagPockets[POCKET_MEDICINE].itemSlots = gSaveBlock1Ptr->bagMedicine;
+    gBagPockets[POCKET_MEDICINE].capacity = BAG_MEDICINE_COUNT;
+    gBagPockets[POCKET_MEDICINE].id = POCKET_MEDICINE;
 
     gBagPockets[POCKET_KEY_ITEMS].itemSlots = gSaveBlock1Ptr->bag.keyItems;
     gBagPockets[POCKET_KEY_ITEMS].capacity = BAG_KEYITEMS_COUNT;
@@ -586,6 +592,34 @@ void MoveItemSlotInPC(struct ItemSlot *itemSlots, u32 from, u32 to)
 void ClearBag(void)
 {
     CpuFastFill(0, &gSaveBlock1Ptr->bag, sizeof(struct Bag));
+    CpuFastFill(0, gSaveBlock1Ptr->bagMedicine, sizeof(gSaveBlock1Ptr->bagMedicine));
+}
+
+// Fettuccine: the Medicine pocket's slots sit in what used to be unused save space. The first
+// time a save runs this (new game, or an older save on Continue), clear those slots and move
+// any medicine out of the Items pocket.
+void TryMoveMedicineToMedicinePocket(void)
+{
+    struct BagPocket *items = &gBagPockets[POCKET_ITEMS];
+    struct BagPocket *medicine = &gBagPockets[POCKET_MEDICINE];
+    struct ItemSlot slot;
+    u32 i;
+
+    if (FlagGet(FLAG_MEDICINE_POCKET_READY))
+        return;
+
+    for (i = 0; i < medicine->capacity; i++)
+        BagPocket_SetSlotData(medicine, i, (struct ItemSlot) {ITEM_NONE, 0});
+
+    for (i = 0; i < items->capacity; i++)
+    {
+        slot = BagPocket_GetSlotData(items, i);
+        if (slot.itemId != ITEM_NONE && GetItemPocket(slot.itemId) == POCKET_MEDICINE
+         && BagPocket_AddItem(medicine, slot.itemId, slot.quantity))
+            BagPocket_SetSlotData(items, i, (struct ItemSlot) {ITEM_NONE, 0});
+    }
+    BagPocket_CompactItems(items);
+    FlagSet(FLAG_MEDICINE_POCKET_READY);
 }
 
 static inline u16 NONNULL BagPocket_CountTotalItemQuantity(struct BagPocket *pocket, enum Item itemId)

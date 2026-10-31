@@ -203,6 +203,7 @@ void NewGameInitData(void)
     DeactivateAllRoamers();
     gSaveBlock1Ptr->registeredItem = ITEM_NONE;
     ClearBag();
+    TryMoveMedicineToMedicinePocket();
     NewGameInitPCItems();
     AddBagItem(ITEM_SHINY_CHARM, 1);
     FlagSet(FLAG_SYS_B_DASH);
