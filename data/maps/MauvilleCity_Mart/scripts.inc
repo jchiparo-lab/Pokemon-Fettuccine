@@ -29,6 +29,9 @@ MauvilleCity_Mart_Pokemart:
 	.2byte ITEM_TM_FIRE_PUNCH
 	.2byte ITEM_TM_ICE_PUNCH
 	.2byte ITEM_TM_WILD_CHARGE
+	.2byte ITEM_MUSCLE_BAND
+	.2byte ITEM_WISE_GLASSES
+	.2byte ITEM_TERRAIN_EXTENDER
 	pokemartlistend
 
 MauvilleCity_Mart_EventScript_ExpertM::

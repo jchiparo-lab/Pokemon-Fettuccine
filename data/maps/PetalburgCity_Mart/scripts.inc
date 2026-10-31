@@ -29,6 +29,14 @@ PetalburgCity_Mart_Pokemart_Basic:
 	.2byte ITEM_TM_DRAIN_PUNCH
 	.2byte ITEM_TM_KNOCK_OFF
 	.2byte ITEM_TM_SUBSTITUTE
+	.2byte ITEM_LUCKY_EGG
+	.2byte ITEM_POWER_WEIGHT
+	.2byte ITEM_POWER_BRACER
+	.2byte ITEM_POWER_BELT
+	.2byte ITEM_POWER_LENS
+	.2byte ITEM_POWER_BAND
+	.2byte ITEM_POWER_ANKLET
+	.2byte ITEM_PUNCHING_GLOVE
 	pokemartlistend
 
 PetalburgCity_Mart_EventScript_ExpandedItems::
@@ -56,6 +64,14 @@ PetalburgCity_Mart_Pokemart_Expanded:
 	.2byte ITEM_TM_DRAIN_PUNCH
 	.2byte ITEM_TM_KNOCK_OFF
 	.2byte ITEM_TM_SUBSTITUTE
+	.2byte ITEM_LUCKY_EGG
+	.2byte ITEM_POWER_WEIGHT
+	.2byte ITEM_POWER_BRACER
+	.2byte ITEM_POWER_BELT
+	.2byte ITEM_POWER_LENS
+	.2byte ITEM_POWER_BAND
+	.2byte ITEM_POWER_ANKLET
+	.2byte ITEM_PUNCHING_GLOVE
 	pokemartlistend
 
 PetalburgCity_Mart_EventScript_Woman::

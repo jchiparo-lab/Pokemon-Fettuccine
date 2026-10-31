@@ -28,6 +28,8 @@ FallarborTown_Mart_Pokemart:
 	.2byte ITEM_TM_ROCK_SLIDE
 	.2byte ITEM_TM_POISON_JAB
 	.2byte ITEM_TM_SHADOW_CLAW
+	.2byte ITEM_SMOOTH_ROCK
+	.2byte ITEM_SAFETY_GOGGLES
 	pokemartlistend
 
 FallarborTown_Mart_EventScript_Woman::

@@ -30,6 +30,7 @@ RustboroCity_Mart_Pokemart_Basic:
 	.2byte ITEM_X_DEFENSE
 	.2byte ITEM_TM_BULLDOZE
 	.2byte ITEM_TM_THUNDER_WAVE
+	.2byte ITEM_ROCK_INCENSE
 	pokemartlistend
 
 RustboroCity_Mart_EventScript_PokemartExpanded::
@@ -54,6 +55,7 @@ RustboroCity_Mart_Pokemart_Expanded:
 	.2byte ITEM_X_DEFENSE
 	.2byte ITEM_TM_BULLDOZE
 	.2byte ITEM_TM_THUNDER_WAVE
+	.2byte ITEM_ROCK_INCENSE
 	pokemartlistend
 
 RustboroCity_Mart_EventScript_PokefanF::

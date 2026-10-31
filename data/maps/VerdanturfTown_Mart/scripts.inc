@@ -27,6 +27,9 @@ VerdanturfTown_Mart_Pokemart:
 	.2byte ITEM_TM_SEED_BOMB
 	.2byte ITEM_TM_HEX
 	.2byte ITEM_TM_SWORDS_DANCE
+	.2byte ITEM_ROSE_INCENSE
+	.2byte ITEM_BIG_ROOT
+	.2byte ITEM_DESTINY_KNOT
 	pokemartlistend
 
 VerdanturfTown_Mart_EventScript_Boy::

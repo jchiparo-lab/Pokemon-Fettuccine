@@ -27,6 +27,10 @@ FortreeCity_Mart_Pokemart:
 	.2byte ITEM_TM_AIR_SLASH
 	.2byte ITEM_TM_BRAVE_BIRD
 	.2byte ITEM_TM_ROOST
+	.2byte ITEM_DAMP_ROCK
+	.2byte ITEM_FLOAT_STONE
+	.2byte ITEM_AIR_BALLOON
+	.2byte ITEM_UTILITY_UMBRELLA
 	pokemartlistend
 
 FortreeCity_Mart_EventScript_Woman::

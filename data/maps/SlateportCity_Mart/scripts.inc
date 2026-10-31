@@ -25,6 +25,8 @@ SlateportCity_Mart_Pokemart:
 	.2byte ITEM_TM_ICY_WIND
 	.2byte ITEM_TM_ACROBATICS
 	.2byte ITEM_TM_DRAINING_KISS
+	.2byte ITEM_WAVE_INCENSE
+	.2byte ITEM_FAIRY_FEATHER
 	pokemartlistend
 
 SlateportCity_Mart_EventScript_BlackBelt::

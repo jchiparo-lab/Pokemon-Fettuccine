@@ -25,6 +25,9 @@ LavaridgeTown_Mart_Pokemart:
 	.2byte ITEM_TM_HEAT_WAVE
 	.2byte ITEM_TM_WILL_O_WISP
 	.2byte ITEM_TM_ZEN_HEADBUTT
+	.2byte ITEM_HEAT_ROCK
+	.2byte ITEM_FLAME_ORB
+	.2byte ITEM_TOXIC_ORB
 	pokemartlistend
 
 LavaridgeTown_Mart_EventScript_ExpertM::

@@ -25,6 +25,10 @@ MossdeepCity_Mart_Pokemart:
 	.2byte ITEM_TM_VOLT_SWITCH
 	.2byte ITEM_TM_FOCUS_BLAST
 	.2byte ITEM_TM_STONE_EDGE
+	.2byte ITEM_SCOPE_LENS
+	.2byte ITEM_ZOOM_LENS
+	.2byte ITEM_ODD_INCENSE
+	.2byte ITEM_ICY_ROCK
 	pokemartlistend
 
 MossdeepCity_Mart_EventScript_Woman::

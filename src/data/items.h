@@ -9328,7 +9328,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Choice Band"),
     #if I_PRICE >= GEN_9
-        .price = 100000,
+        .price = 50000, // Fettuccine: half the official price
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -9353,7 +9353,7 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("Choice Specs"),
         .pluralName = ITEM_PLURAL_NAME("Choice Specs"),
     #if I_PRICE >= GEN_9
-        .price = 100000,
+        .price = 50000, // Fettuccine: half the official price
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -9378,7 +9378,7 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("Choice Scarf"),
         .pluralName = ITEM_PLURAL_NAME("Choice Scarves"),
     #if I_PRICE >= GEN_9
-        .price = 100000,
+        .price = 50000, // Fettuccine: half the official price
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
