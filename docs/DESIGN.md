@@ -514,6 +514,7 @@ Not included for now: the other legendaries, mythicals, Ultra Beasts and Paradox
 
 Diancie and Mewtwo stay put if the player knocks them out or runs, so they can be retried.
 - **Primal Reversion (Kyogre and Groudon).** Built in; triggers when they hold the Blue Orb or Red Orb. **Decided:** the orbs come from the elderly couple at the Mt. Pyre summit, as in Omega Ruby/Alpha Sapphire (Emerald never gives them to the player). **Done:** after Marzano and Parmigiano return the orbs (after Sugopolis, before the Elite Four), the old woman gives the player both orbs. If the bag is full, she offers them again later. **Done:** Terramisu Cave (Groudon) and Marsala Cave (Kyogre) open at the same point instead of after the Hall of Fame: the Weather Institute scientist (2F) reports the abnormal weather once the orbs are returned, and the old woman points the player there.
+- **Decided (Oct 2026): no Z-Moves, Terastallization or Dynamax.** They stay switched off: the player can never get the key items they need (Z-Power Ring, Tera Orb, Dynamax Band), and no trainer uses them. Z-Crystals, Tera Shards, Max Mushrooms, Dynamax Candy and the like stay out of the game.
 - **Double wild battles.** Config option with an adjustable encounter chance. **Done:** 15% chance; always a single battle when the player has only one usable Pokémon.
 - **1v2 / 2v1 battles.** Supported by the engine; set up per trainer encounter in event scripts.
 
