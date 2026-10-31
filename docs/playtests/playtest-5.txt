@@ -1,0 +1,127 @@
+POKEMON FETTUCCINE VERSION - PLAYTEST 5
+=======================================
+
+Thanks for testing! This is a big one.
+
+
+HOW TO PLAY
+-----------
+1. You need a clean US Pokemon Emerald ROM (not included).
+   It should match:
+     CRC32: 1F1C08FB
+     SHA-1: f3ae088181bf583e55daf962a92bb46f4f1d07b7
+2. Apply fettuccine-playtest-5.bps to it. Either of these works:
+     - Rom Patcher JS (in your browser): https://www.marcrobledo.com/RomPatcher.js/
+     - Floating IPS (Flips)
+3. Play the patched ROM in mGBA or any GBA emulator.
+
+Your Playtest 4 save keeps working: give the new ROM the same file
+name as before (so the save file matches) or copy the .sav across.
+Use an in-game save, not a save state from an older playtest.
+The first time you load it, your medicine moves into the new
+MEDICINE pocket and your TMs move into the new TM pocket by
+themselves. If you already have the Mega Ring, talk to Nurse Joy
+to get the new MEGA STONE CASE.
+
+
+NEW SINCE PLAYTEST 4
+--------------------
+Getting around
+- One BIKE: Rydel gives a single BIKE. Press B while riding to
+  switch between FAST mode and ACRO mode. In ACRO mode, the R
+  button does wheelies, bunny hops and jumps.
+- Wild Pokemon no longer depend on the time of day. Every Pokemon
+  in an area shows up at any hour, and nothing is rarer than 4%.
+- 21 Pokemon that only appeared evolved (Litten, Popplio,
+  Sprigatito, Chimchar and others) now have their first stage in
+  an early area.
+
+Bag and Pokedex
+- New MEDICINE pocket for Potions, status heals, Revives, vitamins
+  and candies.
+- The TM pocket now holds every TM and HM.
+- Pokedex search: pick TYPE A NAME in the Name list to type a
+  Pokemon's name. Search now looks through the National Dex by
+  default.
+
+Shops and items
+- Every Poke Mart is now RETRO SALVAGE GAMES, run by JASON.
+- 50 new TMs (TM51-TM100) with moves from newer games, sold at
+  Retro Salvage Games as you go through the story.
+- About 270 new items to buy: held items (Choice items, Life Orb,
+  Focus Sash...), Nature Mints, Ability Capsule, Exp. Candies,
+  newer Poke Balls, newer Berries, Gems, charms and more.
+  The Linguicove Department Store's 2nd and 3rd floors are the
+  big ones.
+- Sam gives a MEGA STONE CASE with the Mega Ring. It holds every
+  Mega Stone, so all Megas are available from the start.
+- Kingambit (Leader's Crest) and Gholdengo (Gimmighoul Coins) can
+  now be obtained. Both are at the Linguicove Department Store 3F.
+
+Smaller changes
+- Caught Pokemon are fully healed.
+- Wonder Trade shows the right names in the trade scene.
+- Prof. Alan's reward for the PASTALIA Dex is now Treecko, Torchic
+  and Mudkip, and his regional forms call comes on your first
+  visit to Macaroville.
+- No more random calls from trainers.
+- Feebas evolves into Milotic at level 35.
+- Fiery Path is now PEPERONCINO PATH.
+- Route 111's smashed rocks stay smashed.
+- Gabby and Ty have a very important question about butter.
+- WILDCARD'S CASTLE quiz has all-new questions.
+
+
+PLEASE TRY
+----------
+- Switch BIKE modes with B, including at full speed. Try the
+  white rails and bumpy slopes in ACRO mode, and the sandy slopes
+  in FAST mode.
+- If you already have a save: check your MEDICINE and TM pockets
+  look right after loading.
+- Search the Pokedex by typing a name.
+- Talk to JASON in a few shops and buy some of the new stuff:
+  a new TM, a held item, a Mint, a new Poke Ball.
+- Use the MEGA STONE CASE to give a stone to a Pokemon.
+- Walk around a route at different times of day.
+
+
+DEBUG MENU
+----------
+This build has the developer's debug menus turned on, so you can
+skip ahead or set up a test:
+  - Overworld: hold R and press START (mGBA keyboard: hold S, Enter)
+  - In battle: press SELECT on the battle menu (mGBA: Backspace)
+  - Sprite viewer: SELECT on a summary screen (mGBA: Backspace)
+Use a separate save or a save state first, and say in your report
+if that save used the debug menu.
+
+
+AFTER-BATTLE GLITCHES
+---------------------
+If anything odd happens right after a battle (the player moving on
+their own, buttons not working, a freeze, strange graphics), make a
+SAVE STATE right away (mGBA: File > Save State) and send it in.
+
+
+KNOWN PLACEHOLDERS
+------------------
+- Brian, Prof. Alan, Sam, Mike, Joe Q, WILDCARD and JASON still use
+  old Emerald sprites.
+- Retro Salvage Games shops still have blue roofs and MART signs.
+- The MEDICINE pocket shows the ITEMS bag picture.
+- A few map graphics still say HOENN.
+- Sam's shiny Metagross isn't cheddar-yellow yet.
+
+
+PLEASE REPORT
+-------------
+- Crashes or freezes
+- Text that runs off the box
+- Anything that blocks progress
+- Items missing from your bag after loading an old save
+- Battles that feel too hard or too easy
+- Prices that feel off
+
+If you can, say where you were and what you were doing, and send a
+screenshot or your save file.
