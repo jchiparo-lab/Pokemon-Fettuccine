@@ -1,9 +1,11 @@
 #include "global.h"
 #include "bike.h"
+#include "event_data.h"
 #include "event_object_movement.h"
 #include "field_player_avatar.h"
 #include "fieldmap.h"
 #include "field_specials.h"
+#include "follower_npc.h"
 #include "metatile_behavior.h"
 #include "oras_dowse.h"
 #include "overworld.h"
@@ -56,6 +58,7 @@ static void Bike_TryAdvanceCyclingRoadCollisions();
 static u8 CanBikeFaceDirOnMetatile(enum Direction, u8);
 static bool8 WillPlayerCollideWithCollision(enum Collision, enum Direction);
 static void Bike_SetBikeStill(void);
+static bool32 TrySwitchBikeMode(void);
 static void MovePlayerOnStandardBike(u8 direction, u16 newKeys, u16 heldKeys);
 static void StandardBikeTransition_FaceDirection(u8);
 static void StandardBikeTransition_TurnDirection(u8);
@@ -66,6 +69,10 @@ static u8 GetStandardBikeTransitionId(u8 *, u16, u16);
 static u8 StandardBikeInputHandler_Normal(u8 *, u16, u16);
 static u8 StandardBikeInputHandler_Turning(u8 *, u16, u16);
 static u8 StandardBikeInputHandler_Slope(u8 *, u16, u16);
+
+// Fettuccine: the Mach and Acro Bikes are one BIKE. B switches between Fast (Mach) and
+// Acro mode, so the Acro tricks that used to be on B are on R instead.
+#define ACRO_TRICK_BUTTON R_BUTTON
 
 // const rom data
 
@@ -150,6 +157,7 @@ static const u8 sAcroBikeJumpTimerList[] = {4, 0};
 // this is a list of history inputs to do in order to do the check to retrieve a jump direction for acro bike. it seems to be an extensible list, so its possible that Game Freak may have intended for the Acro Bike to have more complex tricks at some point. The final list only has the acro jump.
 static const struct BikeHistoryInputInfo sAcroBikeTricksList[] =
 {
+    // B_BUTTON here stands for ACRO_TRICK_BUTTON; see AcroBike_TryHistoryUpdate.
     // the 0xF is a mask performed with each byte of the array in order to perform the check on only the last entry of the history list, otherwise the check wouldn't work as there can be 0xF0 as opposed to 0x0F.
     {DIR_SOUTH, B_BUTTON, 0xF, 0xF, sAcroBikeJumpTimerList, sAcroBikeJumpTimerList, DIR_SOUTH},
     {DIR_NORTH, B_BUTTON, 0xF, 0xF, sAcroBikeJumpTimerList, sAcroBikeJumpTimerList, DIR_NORTH},
@@ -160,6 +168,9 @@ static const struct BikeHistoryInputInfo sAcroBikeTricksList[] =
 // code
 void MovePlayerOnBike(enum Direction direction, u16 newKeys, u16 heldKeys)
 {
+    if ((newKeys & B_BUTTON) && TrySwitchBikeMode())
+        return;
+
     if ((gPlayerAvatar.flags & PLAYER_AVATAR_FLAG_MACH_BIKE) && (gPlayerAvatar.flags & PLAYER_AVATAR_FLAG_ACRO_BIKE))
         MovePlayerOnStandardBike(direction, newKeys, heldKeys);
     else if (gPlayerAvatar.flags & PLAYER_AVATAR_FLAG_MACH_BIKE)
@@ -523,7 +534,7 @@ static enum AcroTransition AcroBikeHandleInputNormal(enum Direction *newDirectio
     gPlayerAvatar.bikeFrameCounter = 0;
     if (MetatileBehavior_IsCyclingRoadPullDownTile(playerObjEvent->currentMetatileBehavior) == TRUE)
     {
-        if (!JOY_HELD(B_BUTTON))
+        if (!JOY_HELD(ACRO_TRICK_BUTTON))
         {
             gPlayerAvatar.acroBikeState = ACRO_STATE_SLOPE;
             gPlayerAvatar.runningState = MOVING;
@@ -544,9 +555,9 @@ static enum AcroTransition AcroBikeHandleInputNormal(enum Direction *newDirectio
     }
     if (*newDirection == DIR_NONE)
     {
-        if (newKeys & B_BUTTON)
+        if (newKeys & ACRO_TRICK_BUTTON)
         {
-            //We're standing still with the B button held.
+            //We're standing still with the trick button held.
             //Do a wheelie.
             *newDirection = direction;
             gPlayerAvatar.runningState = NOT_MOVING;
@@ -560,7 +571,7 @@ static enum AcroTransition AcroBikeHandleInputNormal(enum Direction *newDirectio
             return ACRO_TRANS_FACE_DIRECTION;
         }
     }
-    if (*newDirection == direction && (heldKeys & B_BUTTON) && gPlayerAvatar.bikeSpeed == PLAYER_SPEED_STANDING)
+    if (*newDirection == direction && (heldKeys & ACRO_TRICK_BUTTON) && gPlayerAvatar.bikeSpeed == PLAYER_SPEED_STANDING)
     {
         gPlayerAvatar.bikeSpeed++;
         gPlayerAvatar.acroBikeState = ACRO_STATE_WHEELIE_MOVING;
@@ -626,7 +637,7 @@ static enum AcroTransition AcroBikeHandleInputWheelieStanding(enum Direction *ne
     playerObjEvent = &gObjectEvents[gPlayerAvatar.objectEventId];
     gPlayerAvatar.runningState = NOT_MOVING;
 
-    if (heldKeys & B_BUTTON)
+    if (heldKeys & ACRO_TRICK_BUTTON)
     {
         gPlayerAvatar.bikeFrameCounter++;
     }
@@ -673,9 +684,9 @@ static enum AcroTransition AcroBikeHandleInputBunnyHop(enum Direction *newDirect
 
     direction = GetPlayerMovementDirection();
     playerObjEvent = &gObjectEvents[gPlayerAvatar.objectEventId];
-    if (!(heldKeys & B_BUTTON))
+    if (!(heldKeys & ACRO_TRICK_BUTTON))
     {
-        // B button was released
+        // trick button was released
         Bike_SetBikeStill();
         if (MetatileBehavior_IsBumpySlope(playerObjEvent->currentMetatileBehavior))
         {
@@ -720,7 +731,7 @@ static enum AcroTransition AcroBikeHandleInputWheelieMoving(enum Direction *newD
 
     direction = GetPlayerFacingDirection();
     playerObjEvent = &gObjectEvents[gPlayerAvatar.objectEventId];
-    if (!(heldKeys & B_BUTTON))
+    if (!(heldKeys & ACRO_TRICK_BUTTON))
     {
         // we were moving on a wheelie, but we let go while moving. reset bike still status
         Bike_SetBikeStill();
@@ -1078,7 +1089,10 @@ static void AcroBike_TryHistoryUpdate(u16 newKeys, u16 heldKeys) // newKeys is u
         gPlayerAvatar.bikeSpeed = PLAYER_SPEED_STANDING;
     }
 
-    direction = heldKeys & (A_BUTTON | B_BUTTON | SELECT_BUTTON | START_BUTTON); // directions is reused for some reason.
+    direction = heldKeys & (A_BUTTON | SELECT_BUTTON | START_BUTTON); // directions is reused for some reason.
+    // The history only has room for A/B/Select/Start, so the trick button is stored in B's slot.
+    if (heldKeys & ACRO_TRICK_BUTTON)
+        direction |= B_BUTTON;
     if (direction == (gPlayerAvatar.abStartSelectHistory & 0xF))
     {
         if (gPlayerAvatar.abStartSelectTimerHistory[0] < 0xFF)
@@ -1317,6 +1331,37 @@ void Bike_UpdateBikeCounterSpeed(u8 counter)
 {
     gPlayerAvatar.bikeFrameCounter = counter;
     gPlayerAvatar.bikeSpeed = gPlayerAvatar.bikeFrameCounter + (gPlayerAvatar.bikeFrameCounter >> 1); // lazy way of multiplying by 1.5.
+}
+
+// Swaps between Fast (Mach) and Acro mode. Not allowed mid-trick or on tiles that only
+// one mode can handle, so the player can't get stuck.
+static bool32 TrySwitchBikeMode(void)
+{
+    u8 behavior = gObjectEvents[gPlayerAvatar.objectEventId].currentMetatileBehavior;
+
+    if (gPlayerAvatar.acroBikeState != ACRO_STATE_NORMAL
+     || MetatileBehavior_IsVerticalRail(behavior)
+     || MetatileBehavior_IsHorizontalRail(behavior)
+     || MetatileBehavior_IsIsolatedVerticalRail(behavior)
+     || MetatileBehavior_IsIsolatedHorizontalRail(behavior)
+     || MetatileBehavior_IsBumpySlope(behavior)
+     || MetatileBehavior_IsMuddySlope(behavior)
+     || MetatileBehavior_IsCyclingRoadPullDownTile(behavior))
+        return FALSE;
+
+    if (gPlayerAvatar.flags & PLAYER_AVATAR_FLAG_MACH_BIKE)
+    {
+        FlagSet(FLAG_BIKE_ACRO_MODE);
+        SetPlayerAvatarTransitionFlags(PLAYER_AVATAR_FLAG_ACRO_BIKE);
+    }
+    else
+    {
+        FlagClear(FLAG_BIKE_ACRO_MODE);
+        SetPlayerAvatarTransitionFlags(PLAYER_AVATAR_FLAG_MACH_BIKE);
+    }
+    FollowerNPC_HandleBike();
+    PlaySE(SE_BIKE_BELL);
+    return TRUE;
 }
 
 static void Bike_SetBikeStill(void)

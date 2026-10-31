@@ -200,8 +200,8 @@ JaggedPass_Text_EthanDefeat:
 	.string "trying to find a good footing…$"
 
 JaggedPass_Text_EthanPostBattle:
-	.string "If I had an ACRO BIKE, I'd be able to\n"
-	.string "jump ledges.$"
+	.string "If I had a BIKE in ACRO mode, I'd be\n"
+	.string "able to jump ledges.$"
 
 JaggedPass_Text_EthanRegister:
 	.string "When I get more used to this bumpiness,\n"
@@ -217,7 +217,7 @@ JaggedPass_Text_EthanRematchDefeat:
 	.string "bumpy ground…$"
 
 JaggedPass_Text_EthanPostRematch:
-	.string "I should get an ACRO BIKE from RYDEL\n"
+	.string "I should get a BIKE from RYDEL\n"
 	.string "in MACAROVILLE CITY…$"
 
 JaggedPass_Text_GruntIntro:
