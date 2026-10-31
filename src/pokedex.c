@@ -9,6 +9,7 @@
 #include "graphics.h"
 #include "international_string_util.h"
 #include "main.h"
+#include "naming_screen.h"
 #include "malloc.h"
 #include "menu.h"
 #include "m4a.h"
@@ -37,6 +38,16 @@
 EWRAM_DATA struct PokedexView *sPokedexView = NULL;
 static EWRAM_DATA u16 sLastSelectedPokemon = 0;
 static EWRAM_DATA u8 sPokeBallRotation = 0;
+
+// Fettuccine: typed-name search. The Pokédex closes while the keyboard is open, so the
+// search menu's settings are kept here and restored when it reopens.
+static EWRAM_DATA u8 sSearchName[POKEMON_NAME_LENGTH + 1] = {0};
+static EWRAM_DATA bool8 sReturningFromNameEntry = FALSE;
+static EWRAM_DATA s16 sSavedSearchTaskData[NUM_TASK_DATA] = {0};
+static EWRAM_DATA u16 sSavedSelectedPokemonBackup = 0;
+static EWRAM_DATA u16 sSavedPokeBallRotationBackup = 0;
+static EWRAM_DATA u16 sSavedDexModeBackup = 0;
+static EWRAM_DATA u16 sSavedDexOrderBackup = 0;
 EWRAM_DATA struct PokedexListItem *sPokedexListItem = NULL;
 
 COMMON_DATA void (*gPokedexVBlankCB)(void) = NULL;
@@ -150,6 +161,8 @@ static void Task_SearchCompleteWaitForInput(u8);
 static void Task_SelectSearchMenuItem(u8);
 static void Task_HandleSearchParameterInput(u8);
 static void Task_ExitSearch(u8);
+static void Task_OpenNameEntry(u8);
+static void Task_ReturnFromNameEntry(u8);
 static void Task_ExitSearchWaitForFade(u8);
 static void HighlightSelectedSearchMenuItem(u8, u8);
 static void DrawOrEraseSearchParameterBox(bool8);
@@ -1200,6 +1213,7 @@ static const struct SearchOptionText sDexOrderOptions[] =
 static const struct SearchOptionText sDexSearchNameOptions[] =
 {
     {sText_DexEmptyString, sText_DexSearchDontSpecify},
+    [NAME_TYPED] = {COMPOUND_STRING("Type a POKéMON's name using\nthe keyboard."), COMPOUND_STRING("TYPE A NAME")},
     [NAME_ABC] = {sText_DexEmptyString, COMPOUND_STRING("ABC")},
     [NAME_DEF] = {sText_DexEmptyString, COMPOUND_STRING("DEF")},
     [NAME_GHI] = {sText_DexEmptyString, COMPOUND_STRING("GHI")},
@@ -1466,7 +1480,10 @@ void CB2_OpenPokedex(void)
     case 2:
         sPokedexView = AllocZeroed(sizeof(struct PokedexView));
         ResetPokedexView(sPokedexView);
-        CreateTask(Task_OpenPokedexMainPage, 0);
+        if (sReturningFromNameEntry)
+            CreateTask(Task_ReturnFromNameEntry, 0);
+        else
+            CreateTask(Task_OpenPokedexMainPage, 0);
         sPokedexView->dexMode = gSaveBlock2Ptr->pokedex.mode;
         if (!IsNationalPokedexEnabled())
             sPokedexView->dexMode = DEX_MODE_HOENN;
@@ -1706,6 +1723,17 @@ static void Task_WaitForExitSearch(u8 taskId)
             gTasks[taskId].func = Task_OpenPokedexMainPage;
         }
     }
+}
+
+// Fettuccine: back from typing a name. Reopen the search menu where the player left it.
+static void Task_ReturnFromNameEntry(u8 taskId)
+{
+    sPokedexView->selectedPokemonBackup = sSavedSelectedPokemonBackup;
+    sPokedexView->pokeBallRotationBackup = sSavedPokeBallRotationBackup;
+    sPokedexView->dexModeBackup = sSavedDexModeBackup;
+    sPokedexView->dexOrderBackup = sSavedDexOrderBackup;
+    gTasks[taskId].tLoadScreenTaskId = LoadSearchMenu();
+    gTasks[taskId].func = Task_WaitForExitSearch;
 }
 
 static void Task_ClosePokedex(u8 taskId)
@@ -4912,6 +4940,26 @@ u16 CreateSizeScreenTrainerPic(u16 species, s16 x, s16 y, s8 paletteSlot)
     return CreateTrainerPicSprite(species, TRUE, x, y, paletteSlot, TAG_NONE);
 }
 
+static u8 ToUpperLetter(u8 c)
+{
+    if (c >= CHAR_a && c <= CHAR_z)
+        return c - CHAR_a + CHAR_A;
+    return c;
+}
+
+// Case-insensitive check that name begins with prefix
+static bool32 SpeciesNameStartsWith(const u8 *name, const u8 *prefix)
+{
+    u32 i;
+
+    for (i = 0; prefix[i] != EOS; i++)
+    {
+        if (name[i] == EOS || ToUpperLetter(name[i]) != ToUpperLetter(prefix[i]))
+            return FALSE;
+    }
+    return TRUE;
+}
+
 static int DoPokedexSearch(u8 dexMode, u8 order, u8 abcGroup, enum BodyColor bodyColor, enum Type type1, enum Type type2)
 {
     enum Species species;
@@ -4931,8 +4979,22 @@ static int DoPokedexSearch(u8 dexMode, u8 order, u8 abcGroup, enum BodyColor bod
     }
     sPokedexView->pokemonListCount = resultsCount;
 
+    // Search by typed name (Fettuccine)
+    if (abcGroup == NAME_TYPED)
+    {
+        for (i = 0, resultsCount = 0; i < sPokedexView->pokemonListCount; i++)
+        {
+            species = NationalPokedexNumToSpeciesForm(sPokedexView->pokedexList[i].dexNum);
+            if (SpeciesNameStartsWith(GetSpeciesName(species), sSearchName))
+            {
+                sPokedexView->pokedexList[resultsCount] = sPokedexView->pokedexList[i];
+                resultsCount++;
+            }
+        }
+        sPokedexView->pokemonListCount = resultsCount;
+    }
     // Search by name
-    if (abcGroup != 0xFF)
+    else if (abcGroup != 0xFF)
     {
         for (i = 0, resultsCount = 0; i < sPokedexView->pokemonListCount; i++)
         {
@@ -5108,6 +5170,21 @@ static void Task_LoadSearchMenu(u8 taskId)
         for (i = 0; i < NUM_TASK_DATA; i++)
             gTasks[taskId].data[i] = 0;
         SetDefaultSearchModeAndOrder(taskId);
+        if (sReturningFromNameEntry)
+        {
+            u32 len = StringLength(sSearchName);
+
+            for (i = 0; i < NUM_TASK_DATA; i++)
+                gTasks[taskId].data[i] = sSavedSearchTaskData[i];
+            // Ignore trailing spaces; if nothing was typed, go back to DON'T SPECIFY
+            while (len > 0 && sSearchName[len - 1] == CHAR_SPACE)
+                sSearchName[--len] = EOS;
+            if (len == 0)
+            {
+                gTasks[taskId].tCursorPos_Name = 0;
+                gTasks[taskId].tScrollOffset_Name = 0;
+            }
+        }
         HighlightSelectedSearchTopBarItem(SEARCH_TOPBAR_SEARCH);
         PrintSelectedSearchParameters(taskId);
         CopyWindowToVram(0, COPYWIN_FULL);
@@ -5134,7 +5211,11 @@ static void Task_LoadSearchMenu(u8 taskId)
     case 4:
         if (!gPaletteFade.active)
         {
-            gTasks[taskId].func = Task_SwitchToSearchMenuTopBar;
+            if (sReturningFromNameEntry)
+                gTasks[taskId].func = Task_SwitchToSearchMenu;
+            else
+                gTasks[taskId].func = Task_SwitchToSearchMenuTopBar;
+            sReturningFromNameEntry = FALSE;
             gMain.state = 0;
         }
         break;
@@ -5408,6 +5489,13 @@ static void Task_HandleSearchParameterInput(u8 taskId)
     cursorPos = &gTasks[taskId].data[sSearchOptions[menuItem].taskDataCursorPos];
     scrollOffset = &gTasks[taskId].data[sSearchOptions[menuItem].taskDataScrollOffset];
     maxOption = sSearchOptions[menuItem].numOptions - 1;
+    if (JOY_NEW(A_BUTTON) && menuItem == SEARCH_NAME && *cursorPos + *scrollOffset == NAME_TYPED)
+    {
+        PlaySE(SE_SELECT);
+        BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
+        gTasks[taskId].func = Task_OpenNameEntry;
+        return;
+    }
     if (JOY_NEW(A_BUTTON))
     {
         PlaySE(SE_PIN);
@@ -5483,6 +5571,30 @@ static void Task_HandleSearchParameterInput(u8 taskId)
         }
         return;
     }
+}
+
+// Fettuccine: close the Pokédex and open the keyboard. CB2_OpenPokedex brings the
+// player back to the search menu afterwards (see Task_ReturnFromNameEntry).
+static void Task_OpenNameEntry(u8 taskId)
+{
+    u32 i;
+
+    if (gPaletteFade.active)
+        return;
+
+    for (i = 0; i < NUM_TASK_DATA; i++)
+        sSavedSearchTaskData[i] = gTasks[taskId].data[i];
+    sSavedSelectedPokemonBackup = sPokedexView->selectedPokemonBackup;
+    sSavedPokeBallRotationBackup = sPokedexView->pokeBallRotationBackup;
+    sSavedDexModeBackup = sPokedexView->dexModeBackup;
+    sSavedDexOrderBackup = sPokedexView->dexOrderBackup;
+    sReturningFromNameEntry = TRUE;
+    sSearchName[0] = EOS;
+
+    ClearMonSprites();
+    FreeSearchWindowAndBgBuffers();
+    FREE_AND_SET_NULL(sPokedexView);
+    DoNamingScreen(NAMING_SCREEN_DEX_SEARCH, sSearchName, 0, 0, 0, CB2_OpenPokedex);
 }
 
 static void Task_ExitSearch(u8 taskId)
@@ -5657,7 +5769,10 @@ void PrintSelectedSearchParameters(u8 taskId)
     ClearSearchMenuRect(40, 16, 96, 80);
 
     searchParamId = gTasks[taskId].tCursorPos_Name + gTasks[taskId].tScrollOffset_Name;
-    PrintSearchText(sDexSearchNameOptions[searchParamId].title, 0x2D, 0x11);
+    if (searchParamId == NAME_TYPED)
+        PrintSearchTextToFit(sSearchName, 0x2D, 0x11, 88);
+    else
+        PrintSearchText(sDexSearchNameOptions[searchParamId].title, 0x2D, 0x11);
 
     searchParamId = gTasks[taskId].tCursorPos_Color + gTasks[taskId].tScrollOffset_Color;
     PrintSearchText(sDexSearchColorOptions[searchParamId].title, 0x2D, 0x21);

@@ -59,7 +59,8 @@ enum
 
 enum
 {
-    NAME_ABC = 1,
+    NAME_TYPED = 1, // Fettuccine: name typed on the keyboard
+    NAME_ABC,
     NAME_DEF,
     NAME_GHI,
     NAME_JKL,
